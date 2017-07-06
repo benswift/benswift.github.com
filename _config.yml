@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
+title:       benswift.me
+email:       ben.swift@anu.edu.au
+author:      Ben Swift
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://benswift.me"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -17,14 +17,14 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-animated:             false
+animated:             true
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
-enable_mathjax: false
+enable_mathjax: true
 extended_fonts: false
-enable_anchorjs: false
+enable_anchorjs: true
 # Preview image for social media aka og:image and twitter:image
 post_preview_image: false
 
@@ -48,10 +48,10 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: benswift
 bitbucket_username:
-stackoverflow_id:
-twitter_username:
+stackoverflow_id: benswift
+twitter_username: benswift
 skype_username:
 steam_nickname:
 google_plus_id:
@@ -108,17 +108,16 @@ text:
       sent:     'Message sent!'
       error:    'Error!'
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-  og_locale: 'en_US'
+  og_locale: 'en_AU'
 
 # Build settings
 markdown:     kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+highlight:    none
 permalink:    pretty
-paginate:     4
+paginate:     10
 sass:
   style: compressed
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
