@@ -39,14 +39,14 @@ Here are some of the things I'm working on.
 </article>
 
 
-{% assign related_posts = site.posts | where_exp:"post", "post.tags contains 'testtag'" %}
+{% assign related_posts = site.posts | where_exp:"post", "post.tags contains project.title" %}
 <h3>Related blog posts</h3>
 <ul class="list-reset" >
 {% for post in related_posts limit:5 %}
-<div class="post">
+<li>
 <p class="post-meta">{{ post.date | date: site.date_format }}</p>
 <a href="{{ post.url | prepend: "/blog" | absoluteurl }}" class="post-link"><h3 class="post-title">{{ post.title }}</h3></a>
-</div>
+</li>
 {% endfor %}
 </ul>
 {% endunless %}
