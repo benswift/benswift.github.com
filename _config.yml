@@ -20,7 +20,7 @@ bing_verification:
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: true
 extended_fonts: false
