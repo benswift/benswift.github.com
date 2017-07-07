@@ -14,7 +14,6 @@ I've been lucky to work with some amazing students.
 {{ student.content | markdownify }}
 </article>
 {% assign name_slug = student.name | slugify %}
-{{ name_slug | inspect }}
 {% include related_posts.html tag=name_slug %}
 {% endunless %}
 {% endfor %}
