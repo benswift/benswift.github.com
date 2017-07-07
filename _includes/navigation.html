@@ -1,10 +1,4 @@
-{% for page in site.pages %}
-    {% if page.tags contains "about" %}
-        <a href="{{ page.url }}">{{ page.title }}</a>
-    {% endif %}
-{% endfor %}
-{% for page in site.pages %}
-    {% if page.tags contains "contact" %}
-        <a href="{{ page.url }}">{{ page.title }}</a>
-    {% endif %}
-{% endfor %}
+<a href={{ "/projects/" | absoluteurl }}>Projects</a>
+<a href={{ "/students/" | absoluteurl }}>Students</a>
+<a href={{ "/contact/" | absoluteurl }}>Contact</a>
+<a href={{ "/blog/" | absoluteurl }}>Blog</a>
