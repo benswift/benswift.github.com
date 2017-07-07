@@ -4,4 +4,9 @@ title: A test post
 categories:
 ---
 
-Here's a test of the infrastructure.
+Here's a test of the infrastructure, with some code:
+
+``` javascript
+let x = 100;
+let numbers = [1, 85, 4545];
+```
