@@ -1,4 +1,5 @@
 {% assign related_posts = site.posts | where_exp:"post", "post.tags contains include.tag" %}
+{% if related_posts.size > 0 %}
 <h3>Related blog posts</h3>
 <ul class="list-reset">
 {% for post in related_posts limit:5 %}
@@ -8,3 +9,4 @@
 </li>
 {% endfor %}
 </ul>
+{% endif %}
