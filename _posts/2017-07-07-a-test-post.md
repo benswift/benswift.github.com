@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A test post
-tags: testtag
+tags:
 categories:
 ---
 
