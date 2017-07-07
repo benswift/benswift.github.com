@@ -1,6 +1,6 @@
 ---
 title: Outreach
-layout: page
+display_order: 2
 ---
 
 - Code like a 5-year old (Girls in ICT)

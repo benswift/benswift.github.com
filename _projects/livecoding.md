@@ -1,6 +1,6 @@
 ---
 title: Livecoding
-layout: page
+display_order: 1
 ---
 
 Livecoding. It's great.
