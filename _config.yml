@@ -63,6 +63,7 @@ paypal_url:
 flattr_button:
 telegram_username:
 vk_id:
+vimeo_username: benswift
 
 # Post sharing icons
 show_sharing_icons: false
