@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "benswift.me update: July 2017 edition"
+title: "benswift.me update (July 2017 edition)"
 categories:
 ---
 
