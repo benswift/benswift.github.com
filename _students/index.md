@@ -13,7 +13,6 @@ I've been lucky to work with some amazing students.
 <article class="post-content">
 {{ student.content | markdownify }}
 </article>
-{% assign name_slug = student.name | slugify %}
 {% include related_posts.html tag=name_slug %}
 {% endunless %}
 {% endfor %}

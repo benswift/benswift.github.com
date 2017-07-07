@@ -1,4 +1,5 @@
-{% assign related_posts = site.posts | where_exp:"post", "post.tags contains include.tag" %}
+{% assign tag_name = include.tag | slugify %}
+{% assign related_posts = site.posts | where_exp:"post", "post.tags contains tag_name" %}
 {% if related_posts.size > 0 %}
 <h3>Related blog posts</h3>
 <ul class="list-reset">
