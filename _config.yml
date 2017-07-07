@@ -126,3 +126,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+collections:
+  projects:
+    output: true
