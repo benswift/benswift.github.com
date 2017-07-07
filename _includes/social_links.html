@@ -43,6 +43,9 @@
     {% if site.vimeo_username %}
       <a class="fa fa-vimeo" href="https://vimeo.com/{{ site.vimeo_username }}"></a>
     {% endif %}
+    {% if site.google_scholar_id %}
+      <a class="fa fa-graduation-cap" href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}"></a>
+    {% endif %}
   </div>
   <div class="right">
     {% if site.bitcoin_url %}
