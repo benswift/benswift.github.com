@@ -37,18 +37,7 @@ Here are some of the things I'm working on.
 <article class="post-content">
 {{ project.content | markdownify }}
 </article>
-
-
-{% assign related_posts = site.posts | where_exp:"post", "post.tags contains project.title" %}
-<h3>Related blog posts</h3>
-<ul class="list-reset" >
-{% for post in related_posts limit:5 %}
-<li>
-<p class="post-meta">{{ post.date | date: site.date_format }}</p>
-<a href="{{ post.url | prepend: "/blog" | absoluteurl }}" class="post-link"><h3 class="post-title">{{ post.title }}</h3></a>
-</li>
-{% endfor %}
-</ul>
+{% include related_posts.html tag=project.title %}
 {% endunless %}
 
 {% endfor %}
