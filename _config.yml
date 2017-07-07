@@ -131,3 +131,5 @@ exclude:
 collections:
   projects:
     output: true
+  students:
+    output: true
