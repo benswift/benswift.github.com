@@ -31,10 +31,24 @@ Here are some of the things I'm working on.
 
 {% assign sorted_projects = site.projects | sort: 'display_order' %}
 {% for project in sorted_projects %}
-  {% unless project.hidden %}
-  <h2>{{ project.title }}</h2>
-  <article class="post-content">
-    {{ project.content | markdownify }}
-  </article>
-  {% endunless %}
+
+{% unless project.hidden %}
+<h2>{{ project.title }}</h2>
+<article class="post-content">
+{{ project.content | markdownify }}
+</article>
+
+
+{% assign related_posts = site.posts | where_exp:"post", "post.tags contains 'testtag'" %}
+<h3>Related blog posts</h3>
+<ul class="list-reset" >
+{% for post in related_posts limit:5 %}
+<div class="post">
+<p class="post-meta">{{ post.date | date: site.date_format }}</p>
+<a href="{{ post.url | prepend: "/blog" | absoluteurl }}" class="post-link"><h3 class="post-title">{{ post.title }}</h3></a>
+</div>
+{% endfor %}
+</ul>
+{% endunless %}
+
 {% endfor %}
