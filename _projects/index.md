@@ -34,7 +34,7 @@ Here are some of the things I'm working on.
   {% unless project.hidden %}
   <h2>{{ project.title }}</h2>
   <article class="post-content">
-    {{ project.content }}
+    {{ project.content | markdownify }}
   </article>
   {% endunless %}
 {% endfor %}

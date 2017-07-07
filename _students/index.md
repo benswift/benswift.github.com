@@ -11,7 +11,7 @@ I've been lucky to work with some amazing students.
   {% unless student.hidden %}
   <h2>{{ student.name }}</h2>
   <article class="post-content">
-    {{ student.content }}
+    {{ student.content | markdownify }}
   </article>
   {% endunless %}
 {% endfor %}
