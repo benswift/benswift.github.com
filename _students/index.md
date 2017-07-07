@@ -8,12 +8,15 @@ permalink: /students/
 I've been lucky to work with some amazing students.
 
 {% for student in site.students %}
-  {% unless student.hidden %}
-  <h2>{{ student.name }}</h2>
-  <article class="post-content">
-    {{ student.content | markdownify }}
-  </article>
-  {% endunless %}
+{% unless student.hidden %}
+<h2>{{ student.name }}</h2>
+<article class="post-content">
+{{ student.content | markdownify }}
+</article>
+{% assign name_slug = student.name | slugify %}
+{{ name_slug | inspect }}
+{% include related_posts.html tag=name_slug %}
+{% endunless %}
 {% endfor %}
 
 ## Potential students
