@@ -1,13 +1,16 @@
 {% assign tag_name = include.tag | slugify %}
 {% assign related_posts = site.posts | where_exp:"post", "post.tags contains tag_name" %}
 {% if related_posts.size > 0 %}
-<h3>Related blog posts</h3>
-<ul class="list-reset">
+<div class="posts">
+    <h3 class="related-post-title">Related blog posts</h3>
 {% for post in related_posts limit:5 %}
-<li>
-<p class="post-meta">{{ post.date | date: site.date_format }}</p>
-<a href="{{ post.url | absoluteurl }}" class="post-link"><h3 class="post-title">{{ post.title }}</h3></a>
-</li>
+<div class="post ml2">
+    <a href="{{ post.url | absoluteurl }}" class="post-link">
+        <h4 class="post-title">{{ post.title }}</h4>
+    </a>
+    <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+</div>
 {% endfor %}
-</ul>
+</div>
 {% endif %}
+
