@@ -27,7 +27,7 @@ my [livecoding on vimeo](https://vimeo.com/benswift/videos).
 If you want to get in touch, email is best---you can reach me on
 <ben.swift@anu.edu.au>.
 
-Here are some of the things I'm working on.
+<!-- Here are some of the things I'm working on. -->
 
 {% assign sorted_projects = site.projects | sort: 'display_order' %}
 {% for project in sorted_projects %}
