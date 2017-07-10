@@ -3,13 +3,12 @@ title: Teaching
 display_order: 3
 ---
 
-<!-- Computers are just so *useful* in all domains of human endeavour, and giving -->
-<!-- people the skills to do interesting things with them is really important work. -->
-<!-- Because of this, I put a lot of effort into teaching undergraduate and -->
-<!-- masters-level Computer Science in my current job in the Research School of -->
-<!-- Computer Science at the Australian National University. -->
+Computers are just so *useful* in all domains of human endeavour, and giving
+people the skills to do interesting things with them is really important work. I
+really enjoy it, too :)
 
-I'm currently teaching two courses:
+I'm currently teaching two courses in the
+[ANU Research School of Computer Science](https://cs.anu.edu.au/courses/comp2300/)
 
 - in **Semester 1 (Feb-Jun)** I teach [*COMP2300: Computer Organisation and
   Program Execution*](https://cs.anu.edu.au/courses/comp2300/)
