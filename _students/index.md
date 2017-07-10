@@ -18,7 +18,7 @@ highlight some of their work here (or link to their own blogs).
 {% endunless %}
 {% endfor %}
 
-## Potential students
+## Prospective students
 
 If you're interested in doing Honours/Masters/PhD research with
 me, [send me an email](mailto:ben.swift@anu.edu.au). I always have a few project
