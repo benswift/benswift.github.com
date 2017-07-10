@@ -36,14 +36,15 @@ project on GitHub, an academic paper---even an interesting blog post.
 
 I'm currently teaching two courses:
 
-- in **Semester 1 (Feb-Jun)** I teach *COMP2300: Computer Organisation and
-  Program Execution*
+- in **Semester 1 (Feb-Jun)** I teach [*COMP2300: Computer Organisation and
+  Program Execution*](https://cs.anu.edu.au/courses/comp2300/)
 
-- in **Semester 2 (Jul-Nov)** I teach *COMP1720: Art & Interaction in New
-  Media*
+- in **Semester 2 (Jul-Nov)** I teach [*COMP1720: Art & Interaction in New
+  Media*](https://cs.anu.edu.au/courses/comp1720/)
 
 If you're a student at the ANU, then I encourage you to take one (or both!) of
 these courses---I think they're pretty great :)
 
-In addition to this, I also give regular guest lectures & run workshops on
-various topics in my areas of expertise.
+I also give regular guest lectures & run workshops on various topics in my areas
+of expertise. If you're interested in hiring me as a
+speaker, [get in touch](mailto:ben.swift@anu.edu.au).
