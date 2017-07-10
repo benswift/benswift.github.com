@@ -5,7 +5,8 @@ hidden: true
 permalink: /students/
 ---
 
-I've been lucky to work with some amazing students.
+I've been lucky to work with some amazing students. In the future, I'll
+highlight some of their work here (or link to their own blogs).
 
 {% for student in site.students %}
 {% unless student.hidden %}
