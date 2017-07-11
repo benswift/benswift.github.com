@@ -1,0 +1,3 @@
+[submodule "sketches/logo-sketch"]
+	path = sketches/logo-sketch
+	url = git@gitlab.cecs.anu.edu.au:comp1720/comp1720-logo-sketch.git
