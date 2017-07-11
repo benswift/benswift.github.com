@@ -20,6 +20,8 @@
 
 .site-header nav a {
   color: #666;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .site-header nav a:hover,
@@ -28,10 +30,6 @@
   color: #444;
   opacity: 1;
   border-bottom: 2px solid #444;
-}
-
-.site-nav a + a {
-  margin-left: 1em;
 }
 
 .site-header a:hover,
