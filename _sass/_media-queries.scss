@@ -1,19 +1,15 @@
 @media (min-width: $viewport-small) {
 
-  .site-nav {
-    margin-top: 0;
-    font-size: $h5;
+  .site-header {
+    font-size: $h3;
   }
 
   .site-header .site-title {
-    font-size: $h4;
     float: left;
   }
 
   .site-header .site-nav {
     float: right;
-    font-size: $h5;
-    margin-top: .25rem;
   }
 
   blockquote {
