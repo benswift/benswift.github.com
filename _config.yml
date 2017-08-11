@@ -147,4 +147,3 @@ defaults:
       type: students
     values:
       layout: page
-      hidden: true
