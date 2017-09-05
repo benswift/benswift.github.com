@@ -1,3 +1,6 @@
 [submodule "sketches/logo-sketch"]
 	path = sketches/logo-sketch
 	url = git@gitlab.cecs.anu.edu.au:comp1720/comp1720-logo-sketch.git
+[submodule "p5-hour-of-code"]
+	path = p5-hour-of-code
+	url = git@gitlab.cecs.anu.edu.au:u2548636/p5-hour-of-code.git
