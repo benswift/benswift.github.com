@@ -1,0 +1,196 @@
+/*
+ * (Unofficial) ANU theme for reveal.js
+ *
+ * Copyright (C) 2017  Ben Swift
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,600,600i');
+
+// colors
+$anuWhite: #FFF;
+$anuGrey: #262626;
+$anuGreen: #4C6E78;
+$anuBlue: #80A2CC;
+$anuCecsRed: #960022;
+
+// if you change this, make sure you change the "width" variable in top-level
+// makefile (a bit of a hack, I know)
+$sidePadding: 5vw;
+
+// top/bottom borders
+$borderTop: 7vh;
+$borderBottom: 3vh;
+
+// for rem purposes
+html { font-size: 4vh; }
+
+.reveal {
+    background-color: $anuWhite;
+
+    // text
+    color: $anuGrey;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    strong {font-weight: 600;}
+    em {font-style: italic;}
+
+    // anu-style grey header
+    box-sizing: border-box;
+    border-top-color: $anuGrey;
+    border-top-style: solid;
+    border-top-width: $borderTop;
+
+    // bottom progress bar
+    .progress {
+        height: $borderBottom;
+        background-color: lighten($anuBlue, 20%);
+        span {background-color: $anuBlue;}
+    }
+
+    // this keeps everything (horizontally) on the page
+    .slides > section {width: calc(100vw - #{$sidePadding} * 2);}
+
+    .slides {
+        text-align: left;
+        padding: 0 $sidePadding 0 $sidePadding;
+
+        // lists
+        ul,ol {
+            list-style-position: inside;
+            list-style: none;
+
+            li + li {
+                padding-top: 0.8rem;
+            }
+
+            li li {
+                margin-left: 0.5rem;
+                padding-top: 0.3rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        // titlecard level
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: $borderTop;
+            font-weight: 300;
+        }
+
+        // slide level
+        h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-top: $borderTop;
+            margin-bottom: 0.5em;
+        }
+
+        // higlight text (e.g. for use with image background)
+        .text-hl {
+            h1,h2,h3,p,li {
+                color: $anuGrey;
+                background-color: adjust-color($anuWhite, $alpha: -0.25);
+                display: inline-block;
+            }
+        }
+
+        // impact slides
+        .impact {
+            font-size: 2rem;
+            vertical-align: middle;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 1rem;
+            background-color: $anuGrey;
+            color: $anuWhite;
+            font-weight: 600;
+            strong {
+                color: lighten($anuBlue, 5%);
+            }
+            code {
+                color: lighten($anuGrey, 10%);
+            }
+        }
+
+        // don't underline links
+        a {
+            color: darken($anuBlue, 10%);
+            text-decoration: none;
+            font-weight: 400;
+
+            &:hover {
+                color: $anuWhite;
+                background-color: darken($anuBlue, 10%);
+            }
+        }
+        // source code
+        code {
+            font-family: 'Source Code Pro', monospace;
+            padding: 0 0.1em;
+            background-color: #ddd;
+            box-sizing: border-box;
+        }
+
+        pre > code {
+            background-color: #fafafa;
+            text-align: left;
+            margin: 1em 0;
+            line-height: 1.2;
+            font-size: 0.9em;
+            font-weight: 400;
+        }
+
+        p.prose {
+            font-size: 0.9rem;
+            line-height: 1.2;
+            padding-bottom: 0.5rem;
+        }
+        // from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
+        blockquote {
+            font-size: 0.9rem;
+            background: #fafafa;
+            border-left: 10px solid #ccc;
+            margin: 1.5em 10px;
+            padding: 0.5em 10px;
+            quotes: "\201C""\201D""\2018""\2019";
+        }
+        blockquote:before {
+            color: #ccc;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+        }
+        blockquote p {
+            display: inline;
+        }
+    }
+}
+
+// responsive
+
+@media (max-width: 400px) {
+    html { font-size: 6vw; }
+}
