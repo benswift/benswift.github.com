@@ -1,7 +1,7 @@
 ---
 title: Students
 layout: page
-hidden: true
+published: false
 permalink: /students/
 ---
 

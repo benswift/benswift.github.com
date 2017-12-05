@@ -1,7 +1,7 @@
 ---
 title: Projects
 layout: page
-hidden: true
+published: false
 permalink: /projects/
 ---
 
