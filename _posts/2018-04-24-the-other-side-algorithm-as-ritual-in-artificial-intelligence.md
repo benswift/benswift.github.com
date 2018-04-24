@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Other Side: Algorithm as Ritual in Artificial Intelligence
+title: "The Other Side: Algorithm as Ritual in Artificial Intelligence"
 date: 2018-04-24 09:50
 tags: kieran-browne
 ---
