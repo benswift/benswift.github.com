@@ -26,18 +26,3 @@ both local and international arts festivals---you can find examples of my
 
 If you want to get in touch, email is best---you can reach me on
 <ben.swift@anu.edu.au>.
-
-<!-- Here are some of the things I'm working on. -->
-
-<!-- {% assign sorted_projects = site.projects | sort: 'display_order' %} -->
-<!-- {% for project in sorted_projects %} -->
-
-<!-- {% unless project.hidden %} -->
-<!-- <h2>{{ project.title }}</h2> -->
-<!-- <article class="post-content"> -->
-<!-- {{ project.content | markdownify }} -->
-<!-- </article> -->
-<!-- {% include related_posts.html tag=project.title %} -->
-<!-- {% endunless %} -->
-
-<!-- {% endfor %} -->
