@@ -2,7 +2,7 @@
 title:       benswift.me
 email:       ben.swift@anu.edu.au
 author:      Ben Swift
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+description: "My work and other things - code, creativity, culture"
 baseurl:     ""
 url:         "http://benswift.me"
 date_format: "%b %-d, %Y"
