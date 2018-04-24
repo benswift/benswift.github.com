@@ -2,10 +2,10 @@
 title: Students
 layout: page
 permalink: /students/
+hidden: true
 ---
 
-I've been lucky to work with some amazing students. In the future, I'll
-highlight some of their work here (or link to their own blogs).
+I've been lucky to work with some amazing students.
 
 {% for student in site.students %}
 {% unless student.hidden %}
@@ -27,7 +27,3 @@ around, but I'm also open to hearing about the project/big idea that excites
 1. a **one-paragraph** description of what you're interested in, and
 2. a link to something you've made: a livecoding video, a project on GitHub, an
    academic paper---even a blog post
-
-Here are a few recent posts from my blog tagged "student projects".
-
-{% include related_posts.html tag="student-projects" %}
