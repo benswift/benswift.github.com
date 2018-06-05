@@ -9,7 +9,7 @@ tags:
 answer to these questions (because they've been asked before). Mine's [The
 Castle](https://www.imdb.com/title/tt0118826/).
 
-![Cast of "The Castle"]({{ "/assets/images/the-castle.jpg" | absoluteurl }})
+![Cast of "The Castle"]({{ "/assets/images/the-castle.jpg" | absoluteurl }}){: style="width:100%;"}
 
 *What's your favourite scientist or scientific theory/fact?* This one is harder,
 but thanks to great work by many
