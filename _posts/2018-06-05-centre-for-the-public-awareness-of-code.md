@@ -6,11 +6,16 @@ tags:
 ---
 
 *What's your favourite movie? Favourite band/album?* Most folks already have an
-answer to these questions (because they've been asked before). *What's your
-favourite scientist or scientific theory/fact?* This one is harder, but thanks
-to great work by many [gifted](https://en.wikipedia.org/wiki/Carl_Sagan)
-[science](http://drkarl.com/) [communicators](https://twitter.com/ANU_CPAS)
-people increasingly have an answer to those questions.
+answer to these questions (because they've been asked before). Mine's [The
+Castle](https://www.imdb.com/title/tt0118826/).
+
+![Cast of "The Castle"]({{ "/assets/images/the-castle.jpg" | absoluteurl }})
+
+*What's your favourite scientist or scientific theory/fact?* This one is harder,
+but thanks to great work by many
+[gifted](https://en.wikipedia.org/wiki/Carl_Sagan) [science](http://drkarl.com/)
+[communicators](https://twitter.com/ANU_CPAS) people increasingly have an answer
+to those questions.
 
 *What's your favourite bit of (software) code? What's your favourite algorithm?*
 I reckon that most people will struggle to have an answer. In fact, most folks
@@ -35,4 +40,7 @@ some ideas about how we could do it ([musical
 livecoding](https://vimeo.com/269115310) is one of them) but I'm sure there are
 other ways as well.
 
-Agree/disagree? Let's discuss on [twitter](https://twitter.com/benswift) :)
+I know that there are a lot of people (and organisations) who are working hard
+at this problem right now, all over the world. Which angles are they attacking
+the problem from? Who's doing it best? What can we all learn from each other?
+Let's discuss on [twitter](https://twitter.com/benswift) :)
