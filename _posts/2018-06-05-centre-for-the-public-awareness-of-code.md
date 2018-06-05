@@ -5,11 +5,16 @@ date: 2018-06-05 09:13
 tags:
 ---
 
-*What's your favourite movie? Favourite band/album?* Most folks already have an
-answer to these questions (because they've been asked before). Mine's [The
+*What's your favourite movie? Most folks already have an answer to this
+questions (because they've been asked before). Mine's [The
 Castle](https://www.imdb.com/title/tt0118826/).
 
 ![Cast of "The Castle"]({{ "/assets/images/the-castle.jpg" | absoluteurl }}){: style="width:100%;"}
+
+*What's your favourite band/album?* Again, a pretty standard "dinner party" line
+of questioning. As a muso (at least in the loose sense of the word) I find this
+a much tougher one to answer, partially because I have so many favourites, and
+partially because I'm trying t
 
 *What's your favourite scientist or scientific theory/fact?* This one is harder,
 but thanks to great work by many
@@ -17,11 +22,18 @@ but thanks to great work by many
 [communicators](https://twitter.com/ANU_CPAS) people increasingly have an answer
 to those questions.
 
-*What's your favourite bit of (software) code? What's your favourite algorithm?*
-I reckon that most people will struggle to have an answer. In fact, most folks
-probably won't understand the question. Yet code (and the algorithms they
-manifest) *does* impact the world today. Mark Zuckerberg is still travelling
-around with a suit and a haircut apologising for that fact.
+***What's your favourite bit of (software) code? What's your favourite
+algorithm?*** I reckon that most people will struggle to have an answer for this
+one. In fact, most folks probably won't understand the question. Yet code (and
+the algorithms they manifest) *does* impact the world today. Mark Zuckerberg is
+still
+[travelling](https://www.washingtonpost.com/news/the-switch/wp/2018/04/11/zuckerberg-facebook-hearing-congress-house-testimony/)
+[around](http://www.latimes.com/business/technology/la-fi-tn-facebook-zuckerberg-europe-20180522-story.html)
+with a suit and a haircut apologising for the way his code changed the course of
+history. It also true that a naive "code doesn't kill people; people kill
+people" techno-dualism doesn't really stack up in practice. The modern world is
+a complex, socio-technical assemblage (a glorious hot mess!) and everything
+affects everything else.
 
 This isn't about setting up a dichotomy between those who "get" code and those
 who don't, and it certainly isn't about adding a moral dimension to code
