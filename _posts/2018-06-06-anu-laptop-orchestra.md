@@ -15,7 +15,7 @@ job of her first livecoding set.
 <!-- <p><a href="https://vimeo.com/269115310">live @ soundscapes #21</a> from <a href="https://vimeo.com/benswift">Ben Swift</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
 
 Somehow I've managed to make that stuff part of my day job as a (*cough*)
-respectable computer science lecturer, because Laptop Orchestras (or _LOrk_s)
+respectable computer science lecturer, because Laptop Orchestras (or *LOrk*s)
 are a thing. Seriously, [look it up on the
 internet](https://en.wikipedia.org/wiki/Laptop_orchestra). But ANU doesn't have
 one---sadface. And it's time to fix that.
