@@ -36,7 +36,7 @@ one---sadface. And it's time to fix that.
      even laptop orchestras need agents
 
 - **and** you want to get together with like (and unlike!)-minded folks and play
-  some gigs **for university credit**, and you have 6--12 credit points (1--2
+  some gigs *for university credit*, and you have 6--12 credit points (1--2
   courses) of room in your ANU degree in S2 2018 and S1 2019
 
 - **then** you need to get in touch with me (<ben.swift@anu.edu.au>), perhaps
