@@ -11,7 +11,7 @@ set I did at Smiths as part of [Soundscapes
 shout-out to Ushini Attanayake (not in the video, sadly) who did a **fantastic**
 job of her first livecoding set.
 
-<iframe src="https://player.vimeo.com/video/269115310" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/269115310" width="640" height="1138" frameborder="0" style="margin:0 auto;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <!-- <p><a href="https://vimeo.com/269115310">live @ soundscapes #21</a> from <a href="https://vimeo.com/benswift">Ben Swift</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
 
 Somehow I've managed to make that stuff part of my day job as a (*cough*)
