@@ -5,17 +5,9 @@ permalink: /students/
 hidden: true
 ---
 
-I've been lucky to work with some amazing students.
-
-{% for student in site.students %}
-{% unless student.hidden %}
-<h2>{{ student.name }}</h2>
-<article class="post-content">
-{{ student.content | markdownify }}
-</article>
-{% include related_posts.html tag=name_slug %}
-{% endunless %}
-{% endfor %}
+I've been lucky to work with some amazing students. Head to the [c/c/c group
+people page](https://cs.anu.edu.au/code-creativity-culture/people/) to see what
+the current crop are up to.
 
 ## Come study with me
 

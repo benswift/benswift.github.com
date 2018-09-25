@@ -10,7 +10,10 @@ University](http://people.cecs.anu.edu.au/user/4919). I'm interested in
 computational art, data visualisation, human-computer interaction, cybersecurity
 (particularly in embedded devices) and the the intersection of code, creativity
 and culture as those boundaries dissolve in the modern world. I lead the
-code/creativity/culture group at the ANU Research School of Computer Science.
+[code/creativity/culture group](https://cs.anu.edu.au/code-creativity-culture/)
+at the ANU Research School of Computer Science (you should check out the [c/c/c
+group's projects page](https://cs.anu.edu.au/code-creativity-culture/projects/)
+as well).
 
 I love building things, and one thing I'm particularly excited about in these
 areas is the potential of **liveness** (real-time human-in-the-loop
