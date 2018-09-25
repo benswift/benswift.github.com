@@ -2,7 +2,7 @@
 layout: page
 ---
 
-![Me performing live]({{ "/assets/images/theremin-75.jpg" | absoluteurl }})
+{% asset images/theremin-75.jpg alt="Ben performing live" style="width:100%;" %}
 
 Hi, I'm Ben Swift---I'm a hacker, digital artist and computer science lecturer
 at the Australian National University in Canberra, Australia. I lead the

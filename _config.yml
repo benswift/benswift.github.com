@@ -147,3 +147,14 @@ defaults:
       type: students
     values:
       layout: page
+
+# assets plugin
+
+assets:
+  sources:
+    - _assets/
+    # - reveal.js-3.6.0/css/theme/source/ # required to pick up the ANU reveal.js theme file
+  assets:
+    - "*.png"
+    - "*.jpg"
+    - "*.jpeg"
