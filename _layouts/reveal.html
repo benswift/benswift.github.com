@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="jekyll">
+    <title>{{ page.title | escape }}</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <script src="{{site.baseurl}}/reveal.js-3.6.0/js/head.load.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="{{site.baseurl}}/reveal.js-3.6.0/css/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	{% asset anu.scss %}
+  </head>
+  <body>
+    {{ content | revealify }}
+    <script src="{{site.baseurl}}/reveal.js-3.6.0/js/reveal.js" type="text/javascript"></script>
+    <script>
+     Reveal.initialize({
+       center: false,
+       controls: false,
+       transition: 'fade',
+       width: 1920,
+       height: 1080,
+       margin: 0.1,
+       history: true,
+       slideNumber: true,
+	   math: {
+		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js',
+		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	   },
+       dependencies: [
+         { src: "{{site.baseurl}}/reveal.js-3.6.0/plugin/chalkboard/chalkboard.js", async: true },
+         { src: "{{site.baseurl}}/reveal.js-3.6.0/plugin/mathsvg/math.js", async: true }
+       ],
+       keyboard: {
+         // chalkboard keyboard shortcuts
+         67: function() { RevealChalkboard.toggleNotesCanvas() }, // toggle notes canvas when 'c' is pressed
+         66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+         46: function() { RevealChalkboard.clear() }, // clear chalkboard when 'DEL' is pressed
+         8: function() { RevealChalkboard.reset(true) },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+         68: function() { RevealChalkboard.download() },	// download recorded chalkboard drawing when 'd' is pressed
+       }
+     });
+    </script>
+	<script>
+     hljs.initHighlightingOnLoad();
+	</script>
+  </body>
+</html>
