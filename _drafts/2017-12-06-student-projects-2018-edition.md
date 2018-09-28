@@ -236,12 +236,12 @@ demonstrates these techniques in action.
 
 [^17]: <http://benswift.me/2012-10-15-playing-an-instrument-part-i.html>
 
-[^18]: <http://benswift.me/2012-09-26-interacting-with-the-extempore-compiler.html>
+[^18]: <https://benswift.me/2012-09-26-interacting-with-the-extempore-compiler.html>
 
 [^19]: <http://extempore.moso.com.au>
 
-[^20]: <http://benswift.me/2012-10-15-playing-an-instrument-part-i.html>
+[^20]: <https://benswift.me/2012-10-15-playing-an-instrument-part-i.html>
 
-[^21]: <http://benswift.me/2012-10-15-time-in-extempore.html>
+[^21]: <https://benswift.me/2012-10-15-time-in-extempore.html>
 
-[^22]: <http://benswift.me/2012-08-09-xtlang-type-reference.html>
+[^22]: <https://benswift.me/2012-08-09-xtlang-type-reference.html>
