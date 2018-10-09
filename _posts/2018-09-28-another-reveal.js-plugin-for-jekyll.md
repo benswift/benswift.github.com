@@ -144,9 +144,6 @@ tweak to suit your own presentation.
 
  });
 </script>
-<script>
- hljs.initHighlightingOnLoad();
-</script>
 ```
 
 *Note:* I'm ommitting some details here about how to set up everything (e.g.
