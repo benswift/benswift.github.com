@@ -3,6 +3,7 @@ title: another reveal.js plugin for Jekyll
 date: "2018-09-28 13:42:26 +1000"
 tags: software
 ---
+
 I use [Jekyll](https://jekyllrb.com/) to create my course websites and
 [reveal.js](https://github.com/hakimel/reveal.js/) to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great
@@ -92,46 +93,64 @@ Liquid::Template.register_filter(Jekyll::Revealify)
 You'll need a new [layout](https://jekyllrb.com/docs/layouts/) as well: create a
 `reveal.html` file in your Jekyll `_layouts` directory and make sure that the
 body tag has this in it (you'll need to make sure it's got the right paths &
-other stuff for your setup). The key part is that first `{{ content | revealify
-}}` line---that takes the content of your page (the jekyll `.md` file with
-`layout: reveal` in the frontmatter) and passes it through the filter defined in
-the [revealify filter](#the-revealify-filter).
+other stuff for your setup). The key part is that first `{% raw %}{{ content |
+revealify }}{% endraw %}` line---that takes the content of your page (the jekyll
+`.md` file with `layout: reveal` in the frontmatter) and passes it through the
+filter defined in the [revealify filter](#the-revealify-filter).
+
+The configuration stuff here is just the example config from
+[reveal.js](https://github.com/hakimel/reveal.js#configuration), so feel free to
+tweak to suit your own presentation.
 
 ```html
-    {% raw %}{{ content | revealify }}{% endraw %}
-    <script src="{{site.baseurl}}/reveal.js-3.6.0/js/reveal.js" type="text/javascript"></script>
-    <script>
-     Reveal.initialize({
-       center: false,
-       controls: false,
-       transition: 'fade',
-       width: 1920,
-       height: 1080,
-       margin: 0.1,
-       history: true,
-       slideNumber: true,
-	   math: {
-		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js',
-		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
-	   },
-       dependencies: [
-         { src: "{{site.baseurl}}/reveal.js-3.6.0/plugin/chalkboard/chalkboard.js", async: true },
-         { src: "{{site.baseurl}}/reveal.js-3.6.0/plugin/mathsvg/math.js", async: true }
-       ],
-       keyboard: {
-         // chalkboard keyboard shortcuts
-         67: function() { RevealChalkboard.toggleNotesCanvas() }, // toggle notes canvas when 'c' is pressed
-         66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
-         46: function() { RevealChalkboard.clear() }, // clear chalkboard when 'DEL' is pressed
-         8: function() { RevealChalkboard.reset(true) },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
-         68: function() { RevealChalkboard.download() },	// download recorded chalkboard drawing when 'd' is pressed
-       }
-     });
-    </script>
-	<script>
-     hljs.initHighlightingOnLoad();
-	</script>
+<!-- this is where the reveailfy filter gets applied -->
+{% raw %}{{ content | revealify }}{% endraw %}
+
+<!-- load the reveal.js source -->
+<script src="{{site.baseurl}}/reveal.js-3.6.0/js/reveal.js" type="text/javascript"></script>
+
+<!-- configure the presentation -->
+<script>
+ Reveal.initialize({
+
+   // Display presentation control arrows
+   controls: true,
+
+   // Help the user learn the controls by providing hints, for example by
+   // bouncing the down arrow when they first encounter a vertical slide
+   controlsTutorial: true,
+
+   // Determines where controls appear, "edges" or "bottom-right"
+   controlsLayout: 'bottom-right',
+
+   // Visibility rule for backwards navigation arrows; "faded", "hidden"
+   // or "visible"
+   controlsBackArrows: 'faded',
+
+   // Display a presentation progress bar
+   progress: true,
+
+   // Display the page number of the current slide
+   slideNumber: false,
+
+   // Push each slide change to the browser history
+   history: false,
+
+   // Enable keyboard shortcuts for navigation
+   keyboard: true,
+
+   // Enable the slide overview mode
+   overview: true,
+
+ });
+</script>
+<script>
+ hljs.initHighlightingOnLoad();
+</script>
 ```
+
+*Note:* I'm ommitting some details here about how to set up everything (e.g.
+putting the reveal.js source folder in the right place).
 
 ## 3. write your slides as markdown content
 
