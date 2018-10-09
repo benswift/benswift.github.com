@@ -98,7 +98,7 @@ other stuff for your setup). The key part is that first `{{ content | revealify
 the [revealify filter](#the-revealify-filter).
 
 ```html
-    {{ content | revealify }}
+    {% raw %}{{ content | revealify }}{% endraw %}
     <script src="{{site.baseurl}}/reveal.js-3.6.0/js/reveal.js" type="text/javascript"></script>
     <script>
      Reveal.initialize({
