@@ -11,4 +11,5 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem "jekyll-assets", "~> 3.0"
+  gem "jekyll-compose"
 end
