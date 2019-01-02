@@ -71,6 +71,8 @@ header {
 
 main {
   grid-area: main; }
+  main article {
+    max-width: 100%; }
 
 footer {
   grid-area: footer;
