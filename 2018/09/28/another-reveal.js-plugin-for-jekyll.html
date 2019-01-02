@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/assets/css/normalize-c2df837b632edb8ab19df9225cd33cf22aa6d5d2104d789296a3565b8b0c899c.css">
+
+  <!-- fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/main-b2dc851dcf4b7e4d353abf212a9b4fbe29423dddc891178020b6df73cf13325c.css">
+</head>
+
+  <body>
+	<div class="container">
+	  <header>
+
+  <nav class="logo">
+	<a href="/">benswift.me</a>
+  </nav>
+
+  <nav class="navigation">
+	<!-- in-site navigation -->
+	<a href="/blog/">blog</a>
+	<a href="/projects/">projects</a>
+	<a href="/students.html">students</a>
+	<a href="/bio/">bio</a>
+
+	<!-- social icons -->
+	<a href="https://github.com/benswift"><i class="fab fa-github"></i></a>
+	<a href="https://twitter.com/benswift"><i class="fab fa-twitter"></i></a>
+	<a href="https://vimeo.com/benswift"><i class="fab fa-vimeo"></i></a>
+	<a href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ"><i class="fas fa-graduation-cap"></i></a>
+	<a href="/feed.xml"><i class="fas fa-rss"></i></a>
+	<a href="mailto:ben@benswift.me"><i class="fas fa-envelope"></i></a>
+  </nav>
+
+</header>
+
+	  <main aria-label="Content">
+		<article>
+  <p class="post-date">28 Sep '18</p>
+  <h2>another reveal.js plugin for Jekyll</h2>
+  <p>I use <a href="https://jekyllrb.com/">Jekyll</a> to create my course websites and
+<a href="https://github.com/hakimel/reveal.js/">reveal.js</a> to create my lecture slides.
+Both of them are awesome, and allow me to focus on writing (hopefully) great
+content, and the formatting/presentation stuff stays out of the way until I <code class="highlighter-rouge">git
+push</code> the updates to the server.</p>
+
+<p>There are a few ways of making these two tools (Jekyll and reveal.js) play
+nicely together: see <a href="https://github.com/dploeger/jekyll-revealjs">here</a> and
+<a href="https://medium.com/aerobatic-blog/building-a-reveal-js-presentation-with-jekyll-collections-52bcdba4114a">here</a>
+for example. However, most of these require you to put each slide in a new <code class="highlighter-rouge">.md</code>
+file, which is a pain.</p>
+
+<p>What I want to do is to write one <code class="highlighter-rouge">.md</code> file per presentation, and have the
+sections (separated by <code class="highlighter-rouge">##</code> headings) to determine the slide splits (this is how
+<a href="https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc">pandoc does it</a>).</p>
+
+<p>I wrote a simple <a href="https://jekyllrb.com/docs/plugins/">Jekyll</a> to make this
+happen—which has just a couple of moving parts</p>
+
+<h2 id="the-revealify-filter">1. the revealify <a href="https://jekyllrb.com/docs/plugins/filters/">filter</a></h2>
+
+<p>First, put this code into a <code class="highlighter-rouge">revealify.rb</code> file in your Jekyll <code class="highlighter-rouge">_plugins</code>
+directory:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># (c) Ben Swift 2018, MIT Licence</span>
+<span class="c1"># ben.swift@anu.edu.au</span>
+
+<span class="c1"># a liquid filter for turning regular md output into the &lt;section&gt;-enclosed</span>
+<span class="c1"># chunks required by reveal.js</span>
+
+<span class="nb">require</span> <span class="s1">'jekyll'</span>
+<span class="nb">require</span> <span class="s1">'nokogiri'</span>
+
+<span class="k">module</span> <span class="nn">Jekyll</span>
+
+  <span class="k">module</span> <span class="nn">Revealify</span>
+
+    <span class="k">def</span> <span class="nf">revealify</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+
+      <span class="c1"># parse content</span>
+      <span class="n">content</span> <span class="o">=</span> <span class="no">Nokogiri</span><span class="o">::</span><span class="no">HTML</span><span class="p">.</span><span class="nf">fragment</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+
+      <span class="c1"># create an empty node</span>
+      <span class="n">reveal_div</span> <span class="o">=</span> <span class="no">Nokogiri</span><span class="o">::</span><span class="no">HTML</span><span class="p">.</span><span class="nf">fragment</span><span class="p">(</span><span class="s1">'&lt;div class="reveal"&gt;&lt;div class="slides"&gt;&lt;/div&gt;&lt;/div&gt;'</span><span class="p">,</span> <span class="s1">'UTF-8'</span><span class="p">)</span>
+      <span class="n">slides_div</span> <span class="o">=</span> <span class="n">reveal_div</span><span class="p">.</span><span class="nf">search</span><span class="p">(</span><span class="s1">'.slides'</span><span class="p">).</span><span class="nf">first</span>
+
+      <span class="n">content</span><span class="p">.</span><span class="nf">xpath</span><span class="p">(</span><span class="s2">"*"</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">element</span><span class="o">|</span>
+
+        <span class="c1"># &lt;section&gt; elements should be passed through as-is</span>
+        <span class="k">if</span> <span class="n">element</span><span class="p">.</span><span class="nf">matches?</span> <span class="s2">"section"</span>
+          <span class="n">slides_div</span><span class="p">.</span><span class="nf">add_child</span><span class="p">(</span><span class="n">element</span><span class="p">.</span><span class="nf">dup</span><span class="p">)</span>
+
+        <span class="k">else</span>
+          <span class="c1"># on "split" elements (&lt;h1&gt;, &lt;h2&gt;, &lt;hr&gt;)</span>
+          <span class="k">if</span> <span class="n">element</span><span class="p">.</span><span class="nf">matches?</span> <span class="s2">"h1,h2,hr"</span>
+            <span class="n">current_section</span> <span class="o">=</span> <span class="n">slides_div</span><span class="p">.</span><span class="nf">add_child</span><span class="p">(</span><span class="s2">"&lt;section&gt;"</span><span class="p">).</span><span class="nf">first</span>
+            <span class="c1"># hoist all the header's attributes up to the wrapper element</span>
+            <span class="c1"># not sure if this will always work, but here goes...</span>
+            <span class="n">element</span><span class="p">.</span><span class="nf">keys</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">attribute</span><span class="o">|</span>
+              <span class="c1"># relies on the fact that the "current" wrapper node is the last child in ret</span>
+              <span class="n">current_section</span><span class="p">[</span><span class="n">attribute</span><span class="p">]</span> <span class="o">=</span> <span class="n">element</span><span class="p">[</span><span class="n">attribute</span><span class="p">]</span>
+              <span class="c1"># element.delete attribute</span>
+            <span class="k">end</span>
+          <span class="k">end</span>
+
+          <span class="c1"># add the element to the current &lt;section&gt; (i.e. the current slide)</span>
+          <span class="c1"># unless it's just an &lt;hr&gt; (which are used for splitting only)</span>
+          <span class="n">current_section</span> <span class="o">=</span> <span class="n">slides_div</span><span class="p">.</span><span class="nf">last_element_child</span>
+          <span class="n">current_section</span><span class="p">.</span><span class="nf">add_child</span><span class="p">(</span><span class="n">element</span><span class="p">.</span><span class="nf">dup</span><span class="p">)</span> <span class="k">unless</span> <span class="n">element</span><span class="p">.</span><span class="nf">matches?</span> <span class="s2">"hr"</span>
+        <span class="k">end</span>
+
+      <span class="k">end</span>
+
+      <span class="n">reveal_div</span><span class="p">.</span><span class="nf">to_html</span>
+    <span class="k">end</span>
+
+  <span class="k">end</span>
+
+<span class="k">end</span>
+
+<span class="no">Liquid</span><span class="o">::</span><span class="no">Template</span><span class="p">.</span><span class="nf">register_filter</span><span class="p">(</span><span class="no">Jekyll</span><span class="o">::</span><span class="no">Revealify</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="2-add-a-reveal-layout">2. add a reveal <a href="https://jekyllrb.com/docs/layouts/">layout</a></h2>
+
+<p>You’ll need a new <a href="https://jekyllrb.com/docs/layouts/">layout</a> as well: create a
+<code class="highlighter-rouge">reveal.html</code> file in your Jekyll <code class="highlighter-rouge">_layouts</code> directory and make sure that the
+body tag has this in it (you’ll need to make sure it’s got the right paths &amp;
+other stuff for your setup). The key part is that first <code class="highlighter-rouge">{{ content |
+revealify }}</code> line—that takes the content of your page (the jekyll
+<code class="highlighter-rouge">.md</code> file with <code class="highlighter-rouge">layout: reveal</code> in the frontmatter) and passes it through the
+filter defined in the <a href="#the-revealify-filter">revealify filter</a>.</p>
+
+<p>The configuration stuff here is just the example config from
+<a href="https://github.com/hakimel/reveal.js#configuration">reveal.js</a>, so feel free to
+tweak to suit your own presentation.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- this is where the reveailfy filter gets applied --&gt;</span>
+{{ content | revealify }}
+
+<span class="c">&lt;!-- load the reveal.js source --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/reveal.js-3.6.0/js/reveal.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- configure the presentation --&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+ <span class="nx">Reveal</span><span class="p">.</span><span class="nx">initialize</span><span class="p">({</span>
+
+   <span class="c1">// Display presentation control arrows</span>
+   <span class="na">controls</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+   <span class="c1">// Help the user learn the controls by providing hints, for example by</span>
+   <span class="c1">// bouncing the down arrow when they first encounter a vertical slide</span>
+   <span class="na">controlsTutorial</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+   <span class="c1">// Determines where controls appear, "edges" or "bottom-right"</span>
+   <span class="na">controlsLayout</span><span class="p">:</span> <span class="s1">'bottom-right'</span><span class="p">,</span>
+
+   <span class="c1">// Visibility rule for backwards navigation arrows; "faded", "hidden"</span>
+   <span class="c1">// or "visible"</span>
+   <span class="na">controlsBackArrows</span><span class="p">:</span> <span class="s1">'faded'</span><span class="p">,</span>
+
+   <span class="c1">// Display a presentation progress bar</span>
+   <span class="na">progress</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+   <span class="c1">// Display the page number of the current slide</span>
+   <span class="na">slideNumber</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+
+   <span class="c1">// Push each slide change to the browser history</span>
+   <span class="na">history</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+
+   <span class="c1">// Enable keyboard shortcuts for navigation</span>
+   <span class="na">keyboard</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+   <span class="c1">// Enable the slide overview mode</span>
+   <span class="na">overview</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+ <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p><em>Note:</em> I’m ommitting some details here about how to set up everything (e.g.
+putting the reveal.js source folder in the right place).</p>
+
+<h2 id="3-write-your-slides-as-markdown-content">3. write your slides as markdown content</h2>
+
+<p>Finally, write your content as a regular jekyll post which uses the <code class="highlighter-rouge">reveal</code>
+layout, e.g.</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Week</span><span class="nv"> </span><span class="s">1:</span><span class="nv"> </span><span class="s">intro"</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">reveal</span>
+<span class="nn">---</span>
+
+<span class="gu">## Intro</span>
+<span class="p">
+-</span> welcome to the course
+<span class="p">-</span> we're gonna learn all the things
+
+<span class="gu">## Timeline</span>
+<span class="p">
+-</span> first, we'll sit in boring lectures...
+<span class="p">-</span> ... then, there will be a huge exam!
+
+fun times.
+</code></pre></div></div>
+
+<p>Then, you get all the niceties of the <code class="highlighter-rouge">jekyll watch</code> cycle; livereload,
+auto-compilation of scss assets, etc.</p>
+
+<p>And if you need to do something interesting with the formatting or layout of
+your content, then you can just drop straight into writing HTML (as you can
+always do in a markdown file).</p>
+
+<h2 id="4-write-amazing-content">4. write amazing content</h2>
+
+<p>This is the hard part. But at least if you’ve got a nice workflow for actually
+turning your content into nice looking slides then you’ve got a head start :)</p>
+
+</article>
+
+
+	  </main>
+	  <footer>
+  <p>
+	&copy;  Ben Swift,
+	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
+  </p>
+  <p>
+	Built with <a href="https://jekyllrb.com">Jekyll</a> by Ben,
+	<a href="https://github.com/benswift/benswift.github.io">source on <i class="fab fa-github"></i></a>
+  </p>
+</footer>
+
+	</div>
+  </body>
+</html>

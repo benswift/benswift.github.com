@@ -1,0 +1,79 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+:root {
+  font-family: "Inter UI", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #333;
+  background-color: #fafafa; }
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Inter UI var alt', sans-serif; } }
+a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 900;
+  transition-property: color background-color;
+  transition-duration: 0.5s; }
+  a:hover {
+    color: #fafafa;
+    background-color: #333; }
+
+h1, h2, h3 {
+  font-weight: 900; }
+
+strong {
+  font-weight: 600; }
+
+.container {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-rows: auto;
+  grid-template-areas: ". header ." ". main ." ". footer ."; }
+
+@media screen and (min-width: 1000px) {
+  .container {
+    grid-template-columns: 100px 800px auto; } }
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0 1rem 0; }
+  header nav.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline; }
+    header nav.navigation * {
+      padding: 5px; }
+  header nav.logo > a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #be2edd;
+    color: white;
+    padding: 5px 10px; }
+    header nav.logo > a:hover {
+      color: #be2edd;
+      background-color: #fafafa; }
+  header a {
+    font-weight: 900; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer;
+  border-top: 1px solid #be2edd;
+  color: #777; }
+  footer a {
+    color: #777;
+    font-weight: 900; }
+
+.post-date {
+  font-style: italic;
+  color: #777; }
+
+.post:not(:first-child) {
+  border-top: 1px solid #be2edd; }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/assets/css/normalize-c2df837b632edb8ab19df9225cd33cf22aa6d5d2104d789296a3565b8b0c899c.css">
+
+  <!-- fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/main-b2dc851dcf4b7e4d353abf212a9b4fbe29423dddc891178020b6df73cf13325c.css">
+</head>
+
+  <body>
+	<div class="container">
+	  <header>
+
+  <nav class="logo">
+	<a href="/">benswift.me</a>
+  </nav>
+
+  <nav class="navigation">
+	<!-- in-site navigation -->
+	<a href="/blog/">blog</a>
+	<a href="/projects/">projects</a>
+	<a href="/students.html">students</a>
+	<a href="/bio/">bio</a>
+
+	<!-- social icons -->
+	<a href="https://github.com/benswift"><i class="fab fa-github"></i></a>
+	<a href="https://twitter.com/benswift"><i class="fab fa-twitter"></i></a>
+	<a href="https://vimeo.com/benswift"><i class="fab fa-vimeo"></i></a>
+	<a href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ"><i class="fas fa-graduation-cap"></i></a>
+	<a href="/feed.xml"><i class="fas fa-rss"></i></a>
+	<a href="mailto:ben@benswift.me"><i class="fas fa-envelope"></i></a>
+  </nav>
+
+</header>
+
+	  <main aria-label="Content">
+		<article>
+  <p class="post-date">22 Jun '18</p>
+  <h2>Hosting a self-built jekyll site on GH pages</h2>
+  <p>This blog is built from <a href="http://commonmark.org/help/">md</a> files using
+<a href="https://jekyllrb.com/">Jekyll</a> hosted on <a href="https://pages.github.com/">GitHub
+pages</a>, which saves a lot of hassle involved with DIY
+hosting<sup id="fnref:hassle"><a href="#fn:hassle" class="footnote">1</a></sup>. There are a bunch of <a href="http://blog.teamtreehouse.com/using-github-pages-to-host-your-website">useful
+tutorials</a>
+on how to set all this up.</p>
+
+<p>However, I like to have control over which plugins are used, etc. which GitHub
+pages doesn’t let you do. What it pages <em>does</em> let you do, though, is dump a
+bunch of files (html, js, css) in a repo and bypass the “Jekyll” step by adding
+a <a href="https://blog.github.com/2009-12-29-bypassing-jekyll-on-github-pages/"><code class="highlighter-rouge">.nojekyll</code>
+file</a>.
+This is separate from the blog content, and so you’ll
+probably want a separate repo for your content (e.g. your markdown files) and
+the built site. Handling this stuff can be a hassle, so here’s the <code class="highlighter-rouge">Makefile</code> I
+use to make it easy.</p>
+
+<p>The basic process is:</p>
+
+<ol>
+  <li>
+    <p>create a git repo where you keep your jekyll site (or not, but it’s so nice
+to have your blog content under version control)</p>
+  </li>
+  <li>
+    <p>create a separate project on GitLab called
+<code class="highlighter-rouge">$(GH_USERNAME)/$(GH_USERNAME).github.io.git</code>, but don’t create anything in
+there yet</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">make init</code> will turn the local jekyll build directory into a git repo</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">make push</code> target will build your site (locally) and push it up to GitHub,
+where it’ll be served by GitHub pages</p>
+  </li>
+</ol>
+
+<p>After that, you can work on, commit &amp; push your blog wherever you like (I
+actually keep the content on GitLab) but you can push the built site to GitHub
+so they can serve it for you.</p>
+
+<div class="language-make highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">BASE_HTML_DIR</span><span class="o">=</span>_site
+<span class="nv">GH_USERNAME</span><span class="o">=</span>benswift <span class="c"># change this to your GH username</span>
+
+<span class="nl">all</span><span class="o">:</span> <span class="nf">push</span>
+
+<span class="nl">init</span><span class="o">:</span>
+	<span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$(BASE_HTML_DIR)</span> <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$(BASE_HTML_DIR)</span> <span class="o">&amp;&amp;</span> git init <span class="nb">.</span> <span class="o">&amp;&amp;</span> git remote add origin git@github.com:<span class="nv">$(GH_USERNAME)</span>/<span class="nv">$(GH_USERNAME)</span>.github.io.git
+
+<span class="nl">generate-blog</span><span class="o">:</span>
+	bundle <span class="nb">exec </span>jekyll build
+
+<span class="nl">commit-all</span><span class="o">:</span> <span class="nf">generate-blog</span>
+	<span class="nb">cd</span> <span class="nv">$(BASE_HTML_DIR)</span> <span class="o">&amp;&amp;</span> git add <span class="nb">.</span> <span class="o">&amp;&amp;</span> git commit <span class="nt">-m</span> <span class="s2">"update blog"</span>
+
+<span class="nl">push</span><span class="o">:</span> <span class="nf">commit-all</span>
+	<span class="nb">cd</span> <span class="nv">$(BASE_HTML_DIR)</span> <span class="o">&amp;&amp;</span> git push origin master
+</code></pre></div></div>
+<div class="footnotes">
+  <ol>
+    <li id="fn:hassle">
+
+      <p>I know that it’s not actually <em>that</em> much hassle, especially if you’ve
+already got a webserver set up for other reasons, but zero hassle still
+beats minimal hassle every time when there’s other work to be done. <a href="#fnref:hassle" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+
+	  </main>
+	  <footer>
+  <p>
+	&copy;  Ben Swift,
+	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
+  </p>
+  <p>
+	Built with <a href="https://jekyllrb.com">Jekyll</a> by Ben,
+	<a href="https://github.com/benswift/benswift.github.io">source on <i class="fab fa-github"></i></a>
+  </p>
+</footer>
+
+	</div>
+  </body>
+</html>
