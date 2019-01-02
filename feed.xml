@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-02T17:28:29+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>My work and other things - code, creativity, culture</subtitle><entry><title type="html">another reveal.js plugin for Jekyll</title><link href="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html" rel="alternate" type="text/html" title="another reveal.js plugin for Jekyll" /><published>2018-09-28T13:42:26+10:00</published><updated>2018-09-28T13:42:26+10:00</updated><id>https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
+&lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;reveal.js&lt;/a&gt; to create my lecture slides.
+Both of them are awesome, and allow me to focus on writing (hopefully) great
+content, and the formatting/presentation stuff stays out of the way until I &lt;code class=&quot;highlighter-rouge&quot;&gt;git
+push&lt;/code&gt; the updates to the server.&lt;/p&gt;
+
+&lt;p&gt;There are a few ways of making these two tools (Jekyll and reveal.js) play
+nicely together: see &lt;a href=&quot;https://github.com/dploeger/jekyll-revealjs&quot;&gt;here&lt;/a&gt; and
+&lt;a href=&quot;https://medium.com/aerobatic-blog/building-a-reveal-js-presentation-with-jekyll-collections-52bcdba4114a&quot;&gt;here&lt;/a&gt;
+for example. However, most of these require you to put each slide in a new &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt;
+file, which is a pain.&lt;/p&gt;
+
+&lt;p&gt;What I want to do is to write one &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; file per presentation, and have the
+sections (separated by &lt;code class=&quot;highlighter-rouge&quot;&gt;##&lt;/code&gt; headings) to determine the slide splits (this is how
+&lt;a href=&quot;https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc&quot;&gt;pandoc does it&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;I wrote a simple &lt;a href=&quot;https://jekyllrb.com/docs/plugins/&quot;&gt;Jekyll&lt;/a&gt; to make this
+happen—which has just a couple of moving parts&lt;/p&gt;
+
+&lt;h2 id=&quot;the-revealify-filter&quot;&gt;1. the revealify &lt;a href=&quot;https://jekyllrb.com/docs/plugins/filters/&quot;&gt;filter&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;First, put this code into a &lt;code class=&quot;highlighter-rouge&quot;&gt;revealify.rb&lt;/code&gt; file in your Jekyll &lt;code class=&quot;highlighter-rouge&quot;&gt;_plugins&lt;/code&gt;
+directory:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# (c) Ben Swift 2018, MIT Licence&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# ben.swift@anu.edu.au&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# a liquid filter for turning regular md output into the &amp;lt;section&amp;gt;-enclosed&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# chunks required by reveal.js&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'jekyll'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'nokogiri'&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Jekyll&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Revealify&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;revealify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;# parse content&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Nokogiri&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;HTML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;# create an empty node&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;reveal_div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Nokogiri&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;HTML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&amp;lt;div class=&quot;reveal&quot;&amp;gt;&amp;lt;div class=&quot;slides&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'UTF-8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;slides_div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reveal_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.slides'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;# &amp;lt;section&amp;gt; elements should be passed through as-is&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;matches?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;section&quot;&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;slides_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+          &lt;span class=&quot;c1&quot;&gt;# on &quot;split&quot; elements (&amp;lt;h1&amp;gt;, &amp;lt;h2&amp;gt;, &amp;lt;hr&amp;gt;)&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;matches?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;h1,h2,hr&quot;&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;current_section&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slides_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;section&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;# hoist all the header's attributes up to the wrapper element&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;# not sure if this will always work, but here goes...&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;# relies on the fact that the &quot;current&quot; wrapper node is the last child in ret&lt;/span&gt;
+              &lt;span class=&quot;n&quot;&gt;current_section&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;# element.delete attribute&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+          &lt;span class=&quot;c1&quot;&gt;# add the element to the current &amp;lt;section&amp;gt; (i.e. the current slide)&lt;/span&gt;
+          &lt;span class=&quot;c1&quot;&gt;# unless it's just an &amp;lt;hr&amp;gt; (which are used for splitting only)&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;current_section&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slides_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;last_element_child&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;current_section&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;matches?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hr&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;reveal_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_html&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Liquid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;register_filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Revealify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;2-add-a-reveal-layout&quot;&gt;2. add a reveal &lt;a href=&quot;https://jekyllrb.com/docs/layouts/&quot;&gt;layout&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;You’ll need a new &lt;a href=&quot;https://jekyllrb.com/docs/layouts/&quot;&gt;layout&lt;/a&gt; as well: create a
+&lt;code class=&quot;highlighter-rouge&quot;&gt;reveal.html&lt;/code&gt; file in your Jekyll &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; directory and make sure that the
+body tag has this in it (you’ll need to make sure it’s got the right paths &amp;amp;
+other stuff for your setup). The key part is that first &lt;code class=&quot;highlighter-rouge&quot;&gt;{{ content |
+revealify }}&lt;/code&gt; line—that takes the content of your page (the jekyll
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; file with &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: reveal&lt;/code&gt; in the frontmatter) and passes it through the
+filter defined in the &lt;a href=&quot;#the-revealify-filter&quot;&gt;revealify filter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The configuration stuff here is just the example config from
+&lt;a href=&quot;https://github.com/hakimel/reveal.js#configuration&quot;&gt;reveal.js&lt;/a&gt;, so feel free to
+tweak to suit your own presentation.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- this is where the reveailfy filter gets applied --&amp;gt;&lt;/span&gt;
+{{ content | revealify }}
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- load the reveal.js source --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/reveal.js-3.6.0/js/reveal.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- configure the presentation --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;Reveal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Display presentation control arrows&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Help the user learn the controls by providing hints, for example by&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;// bouncing the down arrow when they first encounter a vertical slide&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;controlsTutorial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Determines where controls appear, &quot;edges&quot; or &quot;bottom-right&quot;&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;controlsLayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bottom-right'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Visibility rule for backwards navigation arrows; &quot;faded&quot;, &quot;hidden&quot;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;// or &quot;visible&quot;&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;controlsBackArrows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'faded'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Display a presentation progress bar&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;progress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Display the page number of the current slide&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;slideNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Push each slide change to the browser history&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Enable keyboard shortcuts for navigation&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;keyboard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;// Enable the slide overview mode&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;overview&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+ &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; I’m ommitting some details here about how to set up everything (e.g.
+putting the reveal.js source folder in the right place).&lt;/p&gt;
+
+&lt;h2 id=&quot;3-write-your-slides-as-markdown-content&quot;&gt;3. write your slides as markdown content&lt;/h2&gt;
+
+&lt;p&gt;Finally, write your content as a regular jekyll post which uses the &lt;code class=&quot;highlighter-rouge&quot;&gt;reveal&lt;/code&gt;
+layout, e.g.&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;1:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;intro&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;reveal&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+
+&lt;span class=&quot;gu&quot;&gt;## Intro&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;
+-&lt;/span&gt; welcome to the course
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; we're gonna learn all the things
+
+&lt;span class=&quot;gu&quot;&gt;## Timeline&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;
+-&lt;/span&gt; first, we'll sit in boring lectures...
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; ... then, there will be a huge exam!
+
+fun times.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then, you get all the niceties of the &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll watch&lt;/code&gt; cycle; livereload,
+auto-compilation of scss assets, etc.&lt;/p&gt;
+
+&lt;p&gt;And if you need to do something interesting with the formatting or layout of
+your content, then you can just drop straight into writing HTML (as you can
+always do in a markdown file).&lt;/p&gt;
+
+&lt;h2 id=&quot;4-write-amazing-content&quot;&gt;4. write amazing content&lt;/h2&gt;
+
+&lt;p&gt;This is the hard part. But at least if you’ve got a nice workflow for actually
+turning your content into nice looking slides then you’ve got a head start :)&lt;/p&gt;</content><author><name></name></author><category term="software" /><summary type="html">I use Jekyll to create my course websites and reveal.js to create my lecture slides. Both of them are awesome, and allow me to focus on writing (hopefully) great content, and the formatting/presentation stuff stays out of the way until I git push the updates to the server.</summary></entry><entry><title type="html">Hosting a self-built jekyll site on GH pages</title><link href="https://benswift.me/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages.html" rel="alternate" type="text/html" title="Hosting a self-built jekyll site on GH pages" /><published>2018-06-22T10:40:00+10:00</published><updated>2018-06-22T10:40:00+10:00</updated><id>https://benswift.me/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages</id><content type="html" xml:base="https://benswift.me/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages.html">&lt;p&gt;This blog is built from &lt;a href=&quot;http://commonmark.org/help/&quot;&gt;md&lt;/a&gt; files using
+&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub
+pages&lt;/a&gt;, which saves a lot of hassle involved with DIY
+hosting&lt;sup id=&quot;fnref:hassle&quot;&gt;&lt;a href=&quot;#fn:hassle&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. There are a bunch of &lt;a href=&quot;http://blog.teamtreehouse.com/using-github-pages-to-host-your-website&quot;&gt;useful
+tutorials&lt;/a&gt;
+on how to set all this up.&lt;/p&gt;
+
+&lt;p&gt;However, I like to have control over which plugins are used, etc. which GitHub
+pages doesn’t let you do. What it pages &lt;em&gt;does&lt;/em&gt; let you do, though, is dump a
+bunch of files (html, js, css) in a repo and bypass the “Jekyll” step by adding
+a &lt;a href=&quot;https://blog.github.com/2009-12-29-bypassing-jekyll-on-github-pages/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.nojekyll&lt;/code&gt;
+file&lt;/a&gt;.
+This is separate from the blog content, and so you’ll
+probably want a separate repo for your content (e.g. your markdown files) and
+the built site. Handling this stuff can be a hassle, so here’s the &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt; I
+use to make it easy.&lt;/p&gt;
+
+&lt;p&gt;The basic process is:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;create a git repo where you keep your jekyll site (or not, but it’s so nice
+to have your blog content under version control)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;create a separate project on GitLab called
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$(GH_USERNAME)/$(GH_USERNAME).github.io.git&lt;/code&gt;, but don’t create anything in
+there yet&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;make init&lt;/code&gt; will turn the local jekyll build directory into a git repo&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;make push&lt;/code&gt; target will build your site (locally) and push it up to GitHub,
+where it’ll be served by GitHub pages&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After that, you can work on, commit &amp;amp; push your blog wherever you like (I
+actually keep the content on GitLab) but you can push the built site to GitHub
+so they can serve it for you.&lt;/p&gt;
+
+&lt;div class=&quot;language-make highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;BASE_HTML_DIR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;_site
+&lt;span class=&quot;nv&quot;&gt;GH_USERNAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;benswift &lt;span class=&quot;c&quot;&gt;# change this to your GH username&lt;/span&gt;
+
+&lt;span class=&quot;nl&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;push&lt;/span&gt;
+
+&lt;span class=&quot;nl&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$(BASE_HTML_DIR)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$(BASE_HTML_DIR)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git init &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git remote add origin git@github.com:&lt;span class=&quot;nv&quot;&gt;$(GH_USERNAME)&lt;/span&gt;/&lt;span class=&quot;nv&quot;&gt;$(GH_USERNAME)&lt;/span&gt;.github.io.git
+
+&lt;span class=&quot;nl&quot;&gt;generate-blog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+	bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll build
+
+&lt;span class=&quot;nl&quot;&gt;commit-all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generate-blog&lt;/span&gt;
+	&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$(BASE_HTML_DIR)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;update blog&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nl&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;commit-all&lt;/span&gt;
+	&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$(BASE_HTML_DIR)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:hassle&quot;&gt;
+
+      &lt;p&gt;I know that it’s not actually &lt;em&gt;that&lt;/em&gt; much hassle, especially if you’ve
+already got a webserver set up for other reasons, but zero hassle still
+beats minimal hassle every time when there’s other work to be done. &lt;a href=&quot;#fnref:hassle&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">This blog is built from md files using Jekyll hosted on GitHub pages, which saves a lot of hassle involved with DIY hosting[^hassle]. There are a bunch of useful tutorials on how to set all this up.</summary></entry><entry><title type="html">CHI hangs</title><link href="https://benswift.me/2018/06/22/chi-hangs.html" rel="alternate" type="text/html" title="CHI hangs" /><published>2018-06-22T10:29:00+10:00</published><updated>2018-06-22T10:29:00+10:00</updated><id>https://benswift.me/2018/06/22/chi-hangs</id><content type="html" xml:base="https://benswift.me/2018/06/22/chi-hangs.html">&lt;p&gt;Here’s a photo of Kieran and I hanging out at CHI. I’ll write a more detailed
+trip report some other time, but from the general chats I had with people (and
+random &lt;a href=&quot;https://eagereyes.org/blog/2018/seven-visualization-talks-that-terrified-me-at-chi&quot;&gt;unsolicited blog
+posts&lt;/a&gt;)
+it seems like &lt;a href=&quot;/2018/04/24/the-other-side-algorithm-as-ritual-in-artificial-intelligence.html&quot;&gt;the ritual&lt;/a&gt; started some conversations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Ben and Kieran at CHI&quot; style=&quot;width:100%;&quot; src=&quot;/assets/images/ben-kieran-at-chi-9938bdd9edaee0b81436cff68521136eadbbfca6e030897dcc4fd6c2c85cb77f.jpg&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Here’s a photo of Kieran and I hanging out at CHI. I’ll write a more detailed trip report some other time, but from the general chats I had with people (and random unsolicited blog posts) it seems like the ritual started some conversations.</summary></entry><entry><title type="html">ANU Laptop Orchestra</title><link href="https://benswift.me/2018/06/06/anu-laptop-orchestra.html" rel="alternate" type="text/html" title="ANU Laptop Orchestra" /><published>2018-06-06T09:20:00+10:00</published><updated>2018-06-06T09:20:00+10:00</updated><id>https://benswift.me/2018/06/06/anu-laptop-orchestra</id><content type="html" xml:base="https://benswift.me/2018/06/06/anu-laptop-orchestra.html">&lt;p&gt;One of the coolest parts of my job is doing livecoding gigs—here’s a recent
+set I did at Smiths as part of &lt;a href=&quot;https://www.smithsalternative.com/events/soundscapes-21-44719&quot;&gt;Soundscapes
+#21&lt;/a&gt;. A big
+shout-out to Ushini Attanayake (not in the video, sadly) who did a &lt;strong&gt;fantastic&lt;/strong&gt;
+job of her first livecoding set.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/269115310&quot; width=&quot;640&quot; height=&quot;1138&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;!-- &lt;p&gt;&lt;a href=&quot;https://vimeo.com/269115310&quot;&gt;live @ soundscapes #21&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/benswift&quot;&gt;Ben Swift&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt; --&gt;
+
+&lt;p&gt;Somehow I’ve managed to make that stuff part of my day job as a (&lt;em&gt;cough&lt;/em&gt;)
+respectable computer science lecturer, because Laptop Orchestras (or &lt;em&gt;LOrk&lt;/em&gt;s)
+are a thing. Seriously, &lt;a href=&quot;https://en.wikipedia.org/wiki/Laptop_orchestra&quot;&gt;look it up on the
+internet&lt;/a&gt;. But ANU doesn’t have
+one—sadface. And it’s time to fix that.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;if&lt;/strong&gt; you’re a current ANU undergrad or coursework-postgrad student (&lt;em&gt;any&lt;/em&gt;
+ANU student, not just in computer science) and you’re into&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;music&lt;/strong&gt;: hi-tech DJing (including livecoding, live patching e.g. Max/MSP,
+PD, live loop manipulation e.g. Ableton), and other instrumentalists who
+want to perform live with the laptop orchestra are invited too&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;visuals&lt;/strong&gt;: VJing, projection mapping, 2D/3D graphics e.g. shaders, Unity,
+etc., and other drawers/dancers/painters/glassblowers who want to perform
+live with the laptop orchestra are invited too&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;organising&lt;/strong&gt;, &lt;strong&gt;managing&lt;/strong&gt; and &lt;strong&gt;promoting&lt;/strong&gt; these sorts of gigs and
+bands so that people actually show up and have an awesome time (because
+even laptop orchestras need agents&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;and&lt;/strong&gt; you want to get together with like (and unlike!)-minded folks and play
+some gigs &lt;em&gt;for university credit&lt;/em&gt;, and you have 6–12 credit points (1–2
+courses) of room in your ANU degree in S2 2018 and S1 2019&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;then&lt;/strong&gt; you need to get in touch with me (&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;ben.swift@anu.edu.au&lt;/a&gt;), perhaps
+with a link to some of your creative work, and we can try and make this
+happen.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m putting together a &lt;a href=&quot;https://en.wikipedia.org/wiki/Laptop_orchestra&quot;&gt;Laptop
+Orchestra&lt;/a&gt; (or, alternately an
+&lt;a href=&quot;https://algorave.com/&quot;&gt;Algorave&lt;/a&gt; group) as a
+&lt;a href=&quot;https://cs.anu.edu.au/TechLauncher/&quot;&gt;TechLauncher&lt;/a&gt; project. Don’t wait till the
+start of semester 2; the groups might be full up by then and you’ll miss out!&lt;/p&gt;
+
+&lt;p&gt;Even if you’re not sure if you’re the right person (e.g. you’re not sure how to
+fit it into your degree program) if you’ve always liked technology, creativity
+and live performance but never found the right outlet for those passions, then
+&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;/a&gt;, there might be ways to make it
+happen.&lt;/p&gt;</content><author><name></name></author><summary type="html">One of the coolest parts of my job is doing livecoding gigs—here’s a recent set I did at Smiths as part of Soundscapes #21. A big shout-out to Ushini Attanayake (not in the video, sadly) who did a fantastic job of her first livecoding set.</summary></entry><entry><title type="html">Centre for the Public Awareness of Code</title><link href="https://benswift.me/2018/06/05/centre-for-the-public-awareness-of-code.html" rel="alternate" type="text/html" title="Centre for the Public Awareness of Code" /><published>2018-06-05T09:13:00+10:00</published><updated>2018-06-05T09:13:00+10:00</updated><id>https://benswift.me/2018/06/05/centre-for-the-public-awareness-of-code</id><content type="html" xml:base="https://benswift.me/2018/06/05/centre-for-the-public-awareness-of-code.html">&lt;p&gt;&lt;em&gt;What’s your favourite movie?&lt;/em&gt; Most folks already have an answer to this
+question (because they’ve been asked before). Mine’s &lt;a href=&quot;https://www.imdb.com/title/tt0118826/&quot;&gt;The
+Castle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Cast of 'The Castle'&quot; style=&quot;width:100%;&quot; src=&quot;/assets/images/the-castle-687b260701eee27445e4308887b662a7fd9c94a3f79842c2ed309ff478e69bc7.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What’s your favourite band/album?&lt;/em&gt; Again, a pretty standard “dinner party” line
+of questioning. As a muso (at least in the loose sense of the word) I find this
+a much tougher one to answer, partially because I have so many favourites, and
+partially because I’m trying t&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What’s your favourite scientist or scientific theory/fact?&lt;/em&gt; This one is harder,
+but thanks to great work by many
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Carl_Sagan&quot;&gt;gifted&lt;/a&gt; &lt;a href=&quot;http://drkarl.com/&quot;&gt;science&lt;/a&gt;
+&lt;a href=&quot;https://twitter.com/ANU_CPAS&quot;&gt;communicators&lt;/a&gt; people increasingly have an answer
+to those questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;What’s your favourite bit of (software) code? What’s your favourite
+algorithm?&lt;/em&gt;&lt;/strong&gt; I reckon that most people will struggle to have an answer for this
+one. In fact, most folks probably won’t understand the question. Yet code (and
+the algorithms they manifest) &lt;em&gt;does&lt;/em&gt; impact the world today. Mark Zuckerberg is
+still
+&lt;a href=&quot;https://www.washingtonpost.com/news/the-switch/wp/2018/04/11/zuckerberg-facebook-hearing-congress-house-testimony/&quot;&gt;travelling&lt;/a&gt;
+&lt;a href=&quot;http://www.latimes.com/business/technology/la-fi-tn-facebook-zuckerberg-europe-20180522-story.html&quot;&gt;around&lt;/a&gt;
+with a suit and a haircut apologising for the way his code changed the course of
+history. It also true that a naive “code doesn’t kill people; people kill
+people” techno-dualism doesn’t really stack up in practice. The modern world is
+a complex, socio-technical assemblage (a glorious hot mess!) and everything
+affects everything else.&lt;/p&gt;
+
+&lt;p&gt;This isn’t about setting up a dichotomy between those who “get” code and those
+who don’t, and it certainly isn’t about adding a moral dimension to code
+literacy (so that if you don’t code, you’re a bad person). There are some
+amazing code communicators out there—check out Dan Shiffman on the &lt;a href=&quot;http://thecodingtrain.com/&quot;&gt;Coding
+Train&lt;/a&gt;. And there’s stuff like &lt;a href=&quot;http://www.electronicbookreview.com/thread/electropoetics/codology&quot;&gt;Critical Code
+Studies
+(CCS)&lt;/a&gt;,
+although that’s more about understanding code-as-text &lt;em&gt;deeply&lt;/em&gt; rather than
+raising awareness of what code is currently doing in the world.&lt;/p&gt;
+
+&lt;p&gt;What we need is a &lt;strong&gt;Centre for the Public Awareness of Code&lt;/strong&gt;, with a bunch of
+folks doing for code/software/algorithms what Carl Sagan did for space science
+with &lt;a href=&quot;https://en.wikipedia.org/wiki/Cosmos:_A_Personal_Voyage&quot;&gt;Cosmos&lt;/a&gt;. I’ve got
+some ideas about how we could do it (&lt;a href=&quot;https://vimeo.com/269115310&quot;&gt;musical
+livecoding&lt;/a&gt; is one of them) but I’m sure there are
+other ways as well.&lt;/p&gt;
+
+&lt;p&gt;I know that there are a lot of people (and organisations) who are working hard
+at this problem right now, all over the world. Which angles are they attacking
+the problem from? Who’s doing it best? What can we all learn from each other?
+Let’s discuss on &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;twitter&lt;/a&gt; :)&lt;/p&gt;</content><author><name></name></author><summary type="html">What’s your favourite movie? Most folks already have an answer to this question (because they’ve been asked before). Mine’s The Castle.</summary></entry><entry><title type="html">The Other Side: Algorithm as Ritual in Artificial Intelligence</title><link href="https://benswift.me/2018/04/24/the-other-side-algorithm-as-ritual-in-artificial-intelligence.html" rel="alternate" type="text/html" title="The Other Side: Algorithm as Ritual in Artificial Intelligence" /><published>2018-04-24T09:50:00+10:00</published><updated>2018-04-24T09:50:00+10:00</updated><id>https://benswift.me/2018/04/24/the-other-side-algorithm-as-ritual-in-artificial-intelligence</id><content type="html" xml:base="https://benswift.me/2018/04/24/the-other-side-algorithm-as-ritual-in-artificial-intelligence.html">&lt;p&gt;Tomorrow morning (Wed April 25, 9am Montréal time) Kieran Browne and I are
+performing an Artificial Intelligence divination ritual as part of the &lt;em&gt;alt.chi&lt;/em&gt;
+session &lt;a href=&quot;https://chi2018.acm.org/technical-program/?sessionId=-L6Uzypel81JpsiUKYQ2&amp;amp;publicationId=-L7SB7rZwtlVgobKgWoH&quot;&gt;Scary, Sporty, Ginger and
+Posh&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is not a talk &lt;em&gt;about&lt;/em&gt; the ritual; we will be performing the ritual &lt;strong&gt;live&lt;/strong&gt;
+at CHI, using an analog computing apparatus to communicate with an artificial
+intelligence to divine the answers to our questions.&lt;/p&gt;
+
+&lt;p&gt;The ritual will &lt;strong&gt;start on time at 9am&lt;/strong&gt; in &lt;a href=&quot;https://chi2018.acm.org/technical-program/?maps=true&quot;&gt;room
+514B&lt;/a&gt;—it’s a small room,
+so please come a touch early to make sure you don’t miss out on a seat.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&quot;http://kieranbrowne.com/works/the-other-side/&quot;&gt;Kieran’s blog&lt;/a&gt; for more
+details about tomorrow’s ritual, and read the
+&lt;a href=&quot;https://doi.org/10.1145/3170427.3188404&quot;&gt;paper&lt;/a&gt; for the full story.&lt;/p&gt;</content><author><name></name></author><category term="kieran-browne" /><summary type="html">Tomorrow morning (Wed April 25, 9am Montréal time) Kieran Browne and I are performing an Artificial Intelligence divination ritual as part of the alt.chi session Scary, Sporty, Ginger and Posh.</summary></entry><entry><title type="html">Telopea Hour of Code</title><link href="https://benswift.me/2017/09/06/telopea-hour-of-code.html" rel="alternate" type="text/html" title="Telopea Hour of Code" /><published>2017-09-06T08:57:00+10:00</published><updated>2017-09-06T08:57:00+10:00</updated><id>https://benswift.me/2017/09/06/telopea-hour-of-code</id><content type="html" xml:base="https://benswift.me/2017/09/06/telopea-hour-of-code.html">&lt;p&gt;Welcome, Telopea Hour of Code students. Here are a couple of links you’ll need
+today: the &lt;a href=&quot;https://alpha.editor.p5js.org/&quot;&gt;p5 web editor&lt;/a&gt; and the &lt;a href=&quot;/p5-hour-of-code/&quot;&gt;slides for
+the presentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Have fun!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome, Telopea Hour of Code students. Here are a couple of links you’ll need today: the p5 web editor and the slides for the presentation.</summary></entry><entry><title type="html">Science Week gig</title><link href="https://benswift.me/2017/08/11/science-week-gig.html" rel="alternate" type="text/html" title="Science Week gig" /><published>2017-08-11T00:00:00+10:00</published><updated>2017-08-11T00:00:00+10:00</updated><id>https://benswift.me/2017/08/11/science-week-gig</id><content type="html" xml:base="https://benswift.me/2017/08/11/science-week-gig.html">&lt;p&gt;I’m playing a livecoding set at the &lt;a href=&quot;https://www.scienceweek.net.au/national-science-week-act-launch-future-earth-festival/?search-location-code=2600&amp;amp;search-location-lat=-35.306768&amp;amp;search-location-lng=149.126355&amp;amp;search-location-name=CANBERRA&amp;amp;search-location-type=T&amp;amp;search-location=ACT&amp;amp;search-date-start=Today&amp;amp;search-date-end=All+dates&amp;amp;text=&amp;amp;audience=All+ages&amp;amp;search-topic=&amp;amp;search-events-count=74&amp;amp;search-online-count=30&amp;amp;utm_content=buffer19391&amp;amp;utm_medium=social&amp;amp;utm_source=facebook.com&amp;amp;utm_campaign=buffer&quot;&gt;ACT Science Week launch party
+tonight&lt;/a&gt;.
+Sorry about the late notice to anyone who uses this blog to come to my gigs—I
+really should set up a newsletter or something. I think there are still a few
+tickets left ($5, available from the website linked above).&lt;/p&gt;</content><author><name></name></author><category term="gigs" /><summary type="html">I’m playing a livecoding set at the ACT Science Week launch party tonight. Sorry about the late notice to anyone who uses this blog to come to my gigs—I really should set up a newsletter or something. I think there are still a few tickets left ($5, available from the website linked above).</summary></entry><entry><title type="html">COMP1720 teaser</title><link href="https://benswift.me/2017/07/10/comp1720-teaser.html" rel="alternate" type="text/html" title="COMP1720 teaser" /><published>2017-07-10T00:00:00+10:00</published><updated>2017-07-10T00:00:00+10:00</updated><id>https://benswift.me/2017/07/10/comp1720-teaser</id><content type="html" xml:base="https://benswift.me/2017/07/10/comp1720-teaser.html">&lt;p&gt;If you’re an ANU student and you want to learn how to make art with code, then
+sign up for &lt;a href=&quot;http://programsandcourses.anu.edu.au/course/COMP1720&quot;&gt;COMP1720/6720 in semester 2,
+2017&lt;/a&gt;. Taught by me and a
+bunch of internationally recognised artists (there’s a weekly computational
+artist guest lecture) it’s the best way to scratch the art+code itch at the ANU.&lt;/p&gt;
+
+&lt;p&gt;No previous programming or artistic experience is required: we’ll teach you both
+things from the ground up, then we’ll teach you to put them together.&lt;/p&gt;
+
+&lt;p&gt;Here are 5 reasons you should take COMP1720 this year (number 4 will &lt;strong&gt;shock&lt;/strong&gt;
+you!):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;the course has been tweaked from last year’s version: this year we’ll make
+art in the browser (with javascript and the &lt;a href=&quot;https://p5js.org/&quot;&gt;p5 library&lt;/a&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the major project theme this year will be ANU Grand Challenges—here’s your
+chance to say something about the big problems facing the world&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if you’re doing a CS degree but find some of the programming stuff a bit
+difficult, here’s a secret: &lt;em&gt;making art with code is how &lt;strong&gt;I&lt;/strong&gt; learned to
+program&lt;/em&gt;. This course is the perfect chance to make sure those fundamentals
+are solid, and will teach you skills you can use in all of your CS courses
+(even the non-arty ones)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;this year we’ll be doing more sound/music stuff than ever before (because, as
+you’ll know if you’ve seen me perform or clicked around this site a bit, I
+love me some code + music)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if you’re not a computer science student, but you’ve heard that computers are
+going to eat all of the jobs in the future and you want to get on board, then
+this is a perfect “intro to programming” course, and you’ll learn about how
+to communicate through interactive digital media&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So head on down to student services and sign up.&lt;/p&gt;</content><author><name></name></author><category term="teaching" /><summary type="html">If you’re an ANU student and you want to learn how to make art with code, then sign up for COMP1720/6720 in semester 2, 2017. Taught by me and a bunch of internationally recognised artists (there’s a weekly computational artist guest lecture) it’s the best way to scratch the art+code itch at the ANU.</summary></entry><entry><title type="html">benswift.me update (July 2017 edition)</title><link href="https://benswift.me/2017/07/06/benswift-me-update-july-2017-edition.html" rel="alternate" type="text/html" title="benswift.me update (July 2017 edition)" /><published>2017-07-06T00:00:00+10:00</published><updated>2017-07-06T00:00:00+10:00</updated><id>https://benswift.me/2017/07/06/benswift-me-update-july-2017-edition</id><content type="html" xml:base="https://benswift.me/2017/07/06/benswift-me-update-july-2017-edition.html">&lt;p&gt;Well, &lt;code class=&quot;highlighter-rouge&quot;&gt;benswift.me&lt;/code&gt; has been given another coat of paint. The content’s still a
+bit sparse, but hopefully this time it’ll be the place to go to keep up with my
+adventures in livecoding, research and just generally making thing with
+computers—and teaching others to do the same.&lt;/p&gt;</content><author><name></name></author><summary type="html">Well, benswift.me has been given another coat of paint. The content’s still a bit sparse, but hopefully this time it’ll be the place to go to keep up with my adventures in livecoding, research and just generally making thing with computers—and teaching others to do the same.</summary></entry></feed>
