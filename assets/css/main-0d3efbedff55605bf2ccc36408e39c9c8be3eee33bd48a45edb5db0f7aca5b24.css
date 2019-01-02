@@ -48,9 +48,6 @@ pre > code {
     grid-template-columns: 1fr 800px 1fr; } }
 header {
   grid-area: header;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 2rem 0 1rem 0; }
   header nav.navigation {
     display: flex;
