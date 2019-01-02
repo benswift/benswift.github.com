@@ -34,15 +34,18 @@ code {
   border-radius: .2rem;
   background: linear-gradient(to right, #f5ddfa, #e1e1e1); }
 
+pre > code {
+  background: #282c34; }
+
 .container {
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 5vw 90vw 5vw;
   grid-template-rows: auto;
   grid-template-areas: ". header ." ". main ." ". footer ."; }
 
 @media screen and (min-width: 1000px) {
   .container {
-    grid-template-columns: 100px 800px auto; } }
+    grid-template-columns: 1fr 800px 1fr; } }
 header {
   grid-area: header;
   display: flex;
@@ -71,8 +74,6 @@ header {
 
 main {
   grid-area: main; }
-  main article {
-    max-width: 100%; }
 
 footer {
   grid-area: footer;

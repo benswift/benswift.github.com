@@ -8,6 +8,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    autoprefixer-rails (9.4.3)
+      execjs
     colorator (1.1.0)
     concurrent-ruby (1.1.4)
     em-websocket (0.5.1)
@@ -57,6 +59,8 @@ GEM
       jekyll (~> 3.1)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-seo-tag (2.5.0)
+      jekyll (~> 3.3)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
     kramdown (1.17.0)
@@ -99,11 +103,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails (~> 9.4)
   jekyll (~> 3.8)
   jekyll-assets (~> 3.0)
   jekyll-compose
   jekyll-feed (~> 0.11)
   jekyll-paginate-v2 (~> 2.0)
+  jekyll-seo-tag (~> 2.5)
 
 BUNDLED WITH
    1.17.2

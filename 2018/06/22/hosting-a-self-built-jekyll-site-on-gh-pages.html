@@ -4,17 +4,38 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/assets/css/normalize-c2df837b632edb8ab19df9225cd33cf22aa6d5d2104d789296a3565b8b0c899c.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
 
-  <!-- fontawesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 
   <link rel="stylesheet"
-		href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-light.min.css">
+		href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
-  <link rel="stylesheet" type="text/css" href="/assets/css/main-a6a5d4976f69b1beea342043f757fb3b0665db5eb918921404ff83bee80e2855.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main-f6881295e153f19a2b0a9afb4c32e0dca309862c86ed0c11fbcc3e90ca2e4297.css">
+
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Hosting a self-built jekyll site on GH pages | benswift.me</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Hosting a self-built jekyll site on GH pages" />
+<meta name="author" content="Ben Swift" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This blog is built from markdown files using Jekyll hosted on GitHub pages, which saves a lot of hassle involved with DIY hosting[^hassle]. There are a bunch of useful tutorials on how to set all this up." />
+<meta property="og:description" content="This blog is built from markdown files using Jekyll hosted on GitHub pages, which saves a lot of hassle involved with DIY hosting[^hassle]. There are a bunch of useful tutorials on how to set all this up." />
+<link rel="canonical" href="https://benswift.me/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages.html" />
+<meta property="og:url" content="https://benswift.me/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages.html" />
+<meta property="og:site_name" content="benswift.me" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-06-22T10:40:00+10:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@benswift" />
+<meta name="twitter:creator" content="@Ben Swift" />
+<script type="application/ld+json">
+{"headline":"Hosting a self-built jekyll site on GH pages","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages.html"},"url":"https://benswift.me/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages.html","author":{"@type":"Person","name":"Ben Swift"},"description":"This blog is built from markdown files using Jekyll hosted on GitHub pages, which saves a lot of hassle involved with DIY hosting[^hassle]. There are a bunch of useful tutorials on how to set all this up.","dateModified":"2018-06-22T10:40:00+10:00","datePublished":"2018-06-22T10:40:00+10:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 </head>
 
   <body>
@@ -47,7 +68,7 @@
 		<article>
   <p class="post-date">22 Jun '18</p>
   <h2>Hosting a self-built jekyll site on GH pages</h2>
-  <p>This blog is built from <a href="http://commonmark.org/help/">md</a> files using
+  <p>This blog is built from <a href="http://commonmark.org/help/">markdown</a> files using
 <a href="https://jekyllrb.com/">Jekyll</a> hosted on <a href="https://pages.github.com/">GitHub
 pages</a>, which saves a lot of hassle involved with DIY
 hosting<sup id="fnref:hassle"><a href="#fn:hassle" class="footnote">1</a></sup>. There are a bunch of <a href="http://blog.teamtreehouse.com/using-github-pages-to-host-your-website">useful
@@ -55,11 +76,9 @@ tutorials</a>
 on how to set all this up.</p>
 
 <p>However, I like to have control over which plugins are used, etc. which GitHub
-pages doesn’t let you do. What it pages <em>does</em> let you do, though, is dump a
-bunch of files (html, js, css) in a repo and bypass the “Jekyll” step by adding
-a <a href="https://blog.github.com/2009-12-29-bypassing-jekyll-on-github-pages/"><code class="highlighter-rouge">.nojekyll</code>
-file</a>.
-This is separate from the blog content, and so you’ll
+pages doesn’t let you do. What it (GH pages) <em>does</em> let you do, though, is dump
+a bunch of files (html, js, css) in a repo and just serve them as-is. These
+files represent the “built” version of your site, not the source, so you’ll
 probably want a separate repo for your content (e.g. your markdown files) and
 the built site. Handling this stuff can be a hassle, so here’s the <code class="highlighter-rouge">Makefile</code> I
 use to make it easy.</p>
@@ -86,8 +105,10 @@ where it’ll be served by GitHub pages</p>
 </ol>
 
 <p>After that, you can work on, commit &amp; push your blog wherever you like (I
-actually keep the content on GitLab) but you can push the built site to GitHub
-so they can serve it for you.</p>
+actually keep the content in the <a href="https://github.com/benswift/benswift.github.io">same GH
+repo</a>, but in a <code class="highlighter-rouge">source</code> branch)
+but you can push the built site to the master branch so GH pages will serve it
+up for you.</p>
 
 <div class="language-make highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">BASE_HTML_DIR</span><span class="o">=</span>_site
 <span class="nv">GH_USERNAME</span><span class="o">=</span>benswift <span class="c"># change this to your GH username</span>
@@ -112,7 +133,7 @@ so they can serve it for you.</p>
 
       <p>I know that it’s not actually <em>that</em> much hassle, especially if you’ve
 already got a webserver set up for other reasons, but zero hassle still
-beats minimal hassle every time when there’s other work to be done. <a href="#fnref:hassle" class="reversefootnote">&#8617;</a></p>
+beats ε hassle ∀ε&gt;0, especially when there’s other work to be done. <a href="#fnref:hassle" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
