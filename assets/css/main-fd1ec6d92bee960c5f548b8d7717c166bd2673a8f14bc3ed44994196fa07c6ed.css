@@ -26,6 +26,14 @@ h1, h2, h3 {
 strong {
   font-weight: 600; }
 
+code {
+  font-size: 90%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+  background: linear-gradient(to right, #f5ddfa, #e1e1e1); }
+
 .container {
   display: grid;
   grid-template-columns: 20px auto 20px;

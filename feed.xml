@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-02T17:30:25+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>My work and other things - code, creativity, culture</subtitle><entry><title type="html">another reveal.js plugin for Jekyll</title><link href="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html" rel="alternate" type="text/html" title="another reveal.js plugin for Jekyll" /><published>2018-09-28T13:42:26+10:00</published><updated>2018-09-28T13:42:26+10:00</updated><id>https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-02T17:54:04+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>My work and other things - code, creativity, culture</subtitle><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+11:00</published><updated>2019-01-02T17:46:00+11:00</updated><id>https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
+grue&lt;/a&gt;—nice one.&lt;/p&gt;
+
+&lt;p&gt;I’ve re-written my blog &lt;a href=&quot;/2017/07/06/benswift-me-update-july-2017-edition.html&quot;&gt;again&lt;/a&gt;, because I figure
+it’s a good way for me to keep up to date with my web skills. Given that I teach
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;web stuff&lt;/a&gt; and that students can sniff
+out a fraud if you’re behind the times, I figure it’s the least that I can do.&lt;/p&gt;
+
+&lt;p&gt;This time I’ve still gone with a &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;-powered static
+site. This time, thoug, I’ve opted for my own lovingly hand-crafted HTML &amp;amp; CSS
+rather than one of the out-of-the-box themes. In doing this, I’ve had a few
+design priorities:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;modern&lt;/em&gt; markup: CSS grid &amp;amp; flexbox &lt;strong&gt;all the way&lt;/strong&gt; (sorry if you’re on an old
+version of IE)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;minimal&lt;/em&gt; markup: there’s really not many elements in each page (I wanted to
+see how far I could push back against the &lt;code class=&quot;highlighter-rouge&quot;&gt;div&lt;/code&gt; soup that’s so common these
+days)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;semantic&lt;/em&gt; markup: we have &lt;code class=&quot;highlighter-rouge&quot;&gt;nav&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;aside&lt;/code&gt;, so
+let’s use them&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;The verdict&lt;/strong&gt;: I was really pleasantly surprised—it came together in about a
+day of hard work. Next time around (i.e. now that I know what I’m doing a bit
+more) it’d be even easier. I particularly liked using &lt;a href=&quot;https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-areas&quot;&gt;grid template
+areas&lt;/a&gt;
+to draw a little ascii-art diagram of my desired layout. Obviously the layout
+for this blog is really boring, but I can imagine this being really handy for
+more complex layouts.&lt;/p&gt;
+
+&lt;p&gt;If it’s broken for you and you’re on a modern-ish browser, then please &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;let me
+know&lt;/a&gt; and I’ll try to fix it if I can. I don’t
+think I’ve broken any (many) links, but again let me know if you find something
+I’ve missed.&lt;/p&gt;
+
+&lt;p&gt;Let me know what you think of my new redesign in the comments. Just
+kidding—there are no comments. But do get in touch in other way (see the icons
+at the top for various options).&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue—nice one.</summary></entry><entry><title type="html">another reveal.js plugin for Jekyll</title><link href="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html" rel="alternate" type="text/html" title="another reveal.js plugin for Jekyll" /><published>2018-09-28T13:42:26+10:00</published><updated>2018-09-28T13:42:26+10:00</updated><id>https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
 &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;reveal.js&lt;/a&gt; to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great
 content, and the formatting/presentation stuff stays out of the way until I &lt;code class=&quot;highlighter-rouge&quot;&gt;git
@@ -422,7 +460,4 @@ to communicate through interactive digital media&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;So head on down to student services and sign up.&lt;/p&gt;</content><author><name></name></author><category term="teaching" /><summary type="html">If you’re an ANU student and you want to learn how to make art with code, then sign up for COMP1720/6720 in semester 2, 2017. Taught by me and a bunch of internationally recognised artists (there’s a weekly computational artist guest lecture) it’s the best way to scratch the art+code itch at the ANU.</summary></entry><entry><title type="html">benswift.me update (July 2017 edition)</title><link href="https://benswift.me/2017/07/06/benswift-me-update-july-2017-edition.html" rel="alternate" type="text/html" title="benswift.me update (July 2017 edition)" /><published>2017-07-06T00:00:00+10:00</published><updated>2017-07-06T00:00:00+10:00</updated><id>https://benswift.me/2017/07/06/benswift-me-update-july-2017-edition</id><content type="html" xml:base="https://benswift.me/2017/07/06/benswift-me-update-july-2017-edition.html">&lt;p&gt;Well, &lt;code class=&quot;highlighter-rouge&quot;&gt;benswift.me&lt;/code&gt; has been given another coat of paint. The content’s still a
-bit sparse, but hopefully this time it’ll be the place to go to keep up with my
-adventures in livecoding, research and just generally making thing with
-computers—and teaching others to do the same.&lt;/p&gt;</content><author><name></name></author><summary type="html">Well, benswift.me has been given another coat of paint. The content’s still a bit sparse, but hopefully this time it’ll be the place to go to keep up with my adventures in livecoding, research and just generally making thing with computers—and teaching others to do the same.</summary></entry></feed>
+&lt;p&gt;So head on down to student services and sign up.&lt;/p&gt;</content><author><name></name></author><category term="teaching" /><summary type="html">If you’re an ANU student and you want to learn how to make art with code, then sign up for COMP1720/6720 in semester 2, 2017. Taught by me and a bunch of internationally recognised artists (there’s a weekly computational artist guest lecture) it’s the best way to scratch the art+code itch at the ANU.</summary></entry></feed>
