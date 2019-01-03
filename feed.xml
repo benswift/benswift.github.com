@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-04T10:28:11+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>My work and other things - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+11:00</published><updated>2019-01-02T17:46:00+11:00</updated><id>https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-04T10:37:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>My work and other things - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+11:00</published><updated>2019-01-02T17:46:00+11:00</updated><id>https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
 grue&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I’ve re-written my blog &lt;a href=&quot;/2017/07/06/benswift-me-update-july-2017-edition.html&quot;&gt;again&lt;/a&gt;, because I figure
-it’s a good way for me to keep up to date with my web skills. Given that I teach
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;web stuff&lt;/a&gt; and that students can sniff
-out a fraud if you’re behind the times, I figure it’s the least that I can do.&lt;/p&gt;
+it’s a good way for me to keep up to date with my web skills. I teach (among
+other things) &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;in-browser code art&lt;/a&gt; for
+a living, and students can sniff out a fraud if you’re behind the times.&lt;/p&gt;
 
 &lt;p&gt;I’ve (once again) gone with a &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;-powered static
 site. This time, though, I’ve opted for my own lovingly hand-crafted HTML &amp;amp; CSS
@@ -21,6 +21,13 @@ days)&lt;/li&gt;
 let’s use them&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;p&gt;Typography-wise, I used &lt;a href=&quot;https://twitter.com/rsms&quot;&gt;@rsms&lt;/a&gt;’s new &lt;a href=&quot;https://rsms.me/inter/&quot;&gt;Inter
+UI&lt;/a&gt; font family, and I really like it. I’m not a
+designer (as you can probably tell) so I kept it simple—one typeface, one
+highlight colour, and then I poke around with
+&lt;a href=&quot;https://www.sass-lang.com&quot;&gt;Sass’s&lt;/a&gt; colour manipulation functions to get a &lt;em&gt;bit&lt;/em&gt;
+more variation.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;The verdict&lt;/strong&gt;: I was really pleasantly surprised—it came together in about a
 day of hard work. Next time around (i.e. now that I know what I’m doing a bit
 more) it’d be even easier. I particularly liked using &lt;a href=&quot;https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-areas&quot;&gt;grid template
@@ -29,14 +36,29 @@ to draw a little ascii-art diagram of my desired layout. Obviously the layout
 for this blog is really boring, but I can imagine this being really handy for
 more complex layouts.&lt;/p&gt;
 
-&lt;p&gt;If it’s broken for you and you’re on a modern-ish browser, then please &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;let me
-know&lt;/a&gt; and I’ll try to fix it if I can. I don’t
-think I’ve broken any (many) links, but again let me know if you find something
-I’ve missed.&lt;/p&gt;
+&lt;p&gt;If it’s broken for you and you’re on a modern browser&lt;sup id=&quot;fnref:ie-shade&quot;&gt;&lt;a href=&quot;#fn:ie-shade&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, then please
+&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;let me know&lt;/a&gt; and I’ll try to fix it if I can. I
+don’t think I’ve broken any (many) links, but again let me know if you find
+something I’ve missed.&lt;/p&gt;
+
+&lt;p&gt;The other thing I really like about this iteration of the annual &lt;code class=&quot;highlighter-rouge&quot;&gt;benswift.me&lt;/code&gt;
+redesign is that I finally understand the whole thing. No more magic themes
+which I hesitantly poke around in “eye-of-newt” style whenever I want to make
+changes, and that’s a nice feeling&lt;sup id=&quot;fnref:control-freak&quot;&gt;&lt;a href=&quot;#fn:control-freak&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Let me know what you think of my new redesign in the comments. Just
-kidding—there are no comments. But do get in touch in other way (see the icons
-at the top for various options).&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue.</summary></entry><entry><title type="html">Another reveal.js plugin for Jekyll</title><link href="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html" rel="alternate" type="text/html" title="Another reveal.js plugin for Jekyll" /><published>2018-09-28T13:42:26+10:00</published><updated>2018-09-28T13:42:26+10:00</updated><id>https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
+kidding—there are no comments. But do get in touch in some other way (see the
+icons at the top for various options).&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:ie-shade&quot;&gt;
+      &lt;p&gt;that’s my subtle way of throwing shade at IE &lt;a href=&quot;#fnref:ie-shade&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:control-freak&quot;&gt;
+      &lt;p&gt;especially if you’re a control freak &lt;a href=&quot;#fnref:control-freak&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue.</summary></entry><entry><title type="html">Another reveal.js plugin for Jekyll</title><link href="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html" rel="alternate" type="text/html" title="Another reveal.js plugin for Jekyll" /><published>2018-09-28T13:42:26+10:00</published><updated>2018-09-28T13:42:26+10:00</updated><id>https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
 &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;reveal.js&lt;/a&gt; to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great
 content, and the formatting/presentation stuff stays out of the way until I &lt;code class=&quot;highlighter-rouge&quot;&gt;git
