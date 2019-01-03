@@ -33,7 +33,7 @@ code {
   word-wrap: break-word;
   padding: .1rem .3rem .2rem;
   border-radius: .2rem;
-  background: linear-gradient(to right, #f5ddfa, #e1e1e1); }
+  background: linear-gradient(to right, #f5ddfa, #e7b2f2); }
 
 pre > code {
   background: #282c34; }
@@ -108,8 +108,11 @@ blockquote p {
   display: inline; }
 
 .hl-para {
-  background-color: #eec8f6;
+  background-color: #f5ddfa;
   border-left: 10px solid #be2edd;
   padding: 1em 1em;
   margin: 1em 0;
   quotes: "“" "”" "‘" "’"; }
+
+img {
+  width: 100%; }
