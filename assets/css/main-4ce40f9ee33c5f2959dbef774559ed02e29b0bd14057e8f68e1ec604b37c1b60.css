@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://rsms.me/inter/inter-ui.css");
 :root {
   font-family: "Inter UI", sans-serif;
@@ -87,3 +88,28 @@ footer {
 
 .post:not(:first-child) {
   border-top: 1px solid #be2edd; }
+
+blockquote {
+  background-color: #e1e1e1;
+  border-left: 10px solid #c7c7c7;
+  padding: 1em 1em;
+  margin: 1em 0;
+  quotes: "“" "”" "‘" "’"; }
+
+blockquote:before {
+  color: #c7c7c7;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+blockquote p {
+  display: inline; }
+
+.hl-para {
+  background-color: #eec8f6;
+  border-left: 10px solid #be2edd;
+  padding: 1em 1em;
+  margin: 1em 0;
+  quotes: "“" "”" "‘" "’"; }
