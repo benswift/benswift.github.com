@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+<link rel="stylesheet"
+		   href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>NYSF 2019 | benswift.me</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="NYSF 2019" />
+<meta name="author" content="Ben Swift" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="NYSF &#39;19 Dr. Ben Swift 10 Jan &#39;19" />
+<meta property="og:description" content="NYSF &#39;19 Dr. Ben Swift 10 Jan &#39;19" />
+<link rel="canonical" href="https://benswift.me/talks/nysf-2019.html" />
+<meta property="og:url" content="https://benswift.me/talks/nysf-2019.html" />
+<meta property="og:site_name" content="benswift.me" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-01-10T10:02:06+11:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@benswift" />
+<meta name="twitter:creator" content="@Ben Swift" />
+<script type="application/ld+json">
+{"dateModified":"2019-01-10T10:02:06+11:00","datePublished":"2019-01-10T10:02:06+11:00","headline":"NYSF 2019","url":"https://benswift.me/talks/nysf-2019.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/nysf-2019.html"},"author":{"@type":"Person","name":"Ben Swift"},"description":"NYSF &#39;19 Dr. Ben Swift 10 Jan &#39;19","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/reveal-eccb4c79d7f3ccbf85c31c62642063088fc3d5ea366a13ba37dacc69078ee28e.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ben-reveal-theme-4504b9e55ad071bd21dab101550bf6648cdd8674eafd1fb48cb6ed1944b107d3.css">
+  </head>
+  <body>
+	<div class="reveal"><div class="slides">
+<section id="title">
+  <h1 class="talk-title">NYSF '19</h1>
+  <p class="talk-name">Dr. Ben Swift</p>
+  <p class="talk-date">10 Jan '19</p>
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+	<img src="/assets/images/pages/by-nc-sa-3ac8e968bc91bde788175da670ff3efe34464b69e39ef471d68b62f3e6495e8f.svg" style="height:2rem; margin-left:0;">
+  </a>
+</section><section data-background-image="/assets/images/talks/nysf-2019/anders-jilden-89745-unsplash-9dac610d4f38af749d02b7f3531fdb954c3f878c785e65e9124e82c573c38342.jpg" data-background-size="cover">
+  
+  <h2>Give a guest lecture? Sure 😊</h2>
+  
+</section><section data-background-image="/assets/images/talks/nysf-2019/marcus-cramer-426515-unsplash-ef435bc07b3fc0d1c638149008f326ce3095880cc4e37edc4b1ee3d501ae4d73.jpg" data-background-size="cover">
+  
+  <h2>Oh, is it January already?</h2>
+  
+</section><section data-background-image="/assets/images/talks/nysf-2019/aditya-chinchure-494048-unsplash-71cfd8b040f5d1ba5be6cecba734952a71247adc5b3f69434e7300dc355b3084.jpg" data-background-size="cover">
+  
+  <h2>Extempore: a livecoding language</h2>
+  
+</section><section data-background-image="/assets/images/talks/nysf-2019/rob-potter-350100-unsplash-c2e0677be17eb8749c035dee512f27530cd286ade2fa4fda93b68f79d7e59da0.jpg" data-background-size="cover">
+  
+  <h2>Livecoding</h2>
+  
+</section><section id="outline"><h2 id="outline">Outline</h2>
+<ul>
+  <li><a href="#pop-production">what’s a producer?</a></li>
+  <li><a href="#modelling-the-domain">modelling the domain</a></li>
+  <li><a href="#production-as-problem-solving">programming as problem solving</a></li>
+</ul></section><section id="what-im-gonna-do"><h2 id="what-im-gonna-do">What I’m gonna do</h2>
+<ul>
+  <li>learn a new song (by ear!)</li>
+  <li>figure out how to turn it into code</li>
+  <li>find a bunch of sounds which sound (approximately) like the recording</li>
+  <li>lay down a vocal track (maybe)</li>
+  <li>make the whole process make sense to you guys</li>
+</ul>
+<p class="fragment">all in 90 minutes</p>
+<p class="fragment"><strong>yikes</strong></p></section><section id="what-youre-gonna-do"><h2 id="what-youre-gonna-do">What you’re gonna do</h2>
+<ul>
+  <li>help me choose the song</li>
+  <li>be kind when I make mistakes</li>
+  <li>clap politely at the end (even if I flame out)</li>
+</ul></section><section class="impact center" data-background-color="#262626"><p>no <strong>Haskell</strong> today</p></section><section id="pop-production" class="center"><h1 id="pop-production" class="center">Pop production</h1></section><section id="whats-a-producer"><h2 id="whats-a-producer">What’s a producer?</h2>
+<p>A
+<a href="https://www.recordingconnection.com/reference-library/recording-entrepreneurs/what-does-a-music-producer-do/">producer</a>
+is someone who makes songs happen</p>
+<p>Pop songs are characterised by:</p>
+<ul>
+  <li>catchy hooks</li>
+  <li>repetitive harmonic patterns (e.g. chord progressions)</li>
+  <li>processed/synthetic sounds (lots of computers involved in the production)</li>
+</ul>
+<p>here’s the <a href="https://www.youtube.com/playlist?list=PLDcnymzs18LWrKzHmzrGH1JzLBqrHi3xQ">youtube playlist</a></p></section><section data-background-image="/assets/images/talks/nysf-2019/quincy-c7a0eb4e1b13a6cb533b2519916b4632f476692f0bf6418bb9ef55a8e62bf1e0.jpg" data-background-size="cover">
+  
+  <h2>Quincy Jones</h2>
+  
+</section><section data-background-image="/assets/images/talks/nysf-2019/max-martin-8f1f1c029a6029fa66582e220780e266730aae5a9121ddc130107c27990312e8.jpg" data-background-size="cover">
+  
+  <h2>Max Martin</h2>
+  
+</section><section class="impact center" data-background-color="#262626"><p>the problem: write a <strong>no. 1</strong> hit</p></section><section id="modelling-the-domain" class="center"><h1 id="modelling-the-domain" class="center">Modelling the domain</h1></section><section class="impact center" data-background-color="#262626"><p><strong>music</strong> <em>(n.)</em>: a series of pitched “events” over time</p></section><section data-background-image="/assets/images/talks/nysf-2019/alex-harvey-44062-unsplash-1fe3dc0e074f372b0923db156324a5eb0ae4b601510fb267f99b80fa5266a6d9.jpg" data-background-size="cover">
+  
+  <h2>Pedantry alert!</h2>
+  
+</section><section data-background-image="/assets/images/talks/nysf-2019/johannes-plenio-473709-unsplash-3a13fa2b6357a40b0f4658cb5a606a98cbc43a93ca1f28b83d7def37b6d58629.jpg" data-background-size="cover">
+  
+</section><section data-background-image="/assets/images/talks/nysf-2019/rawpixel-com-586684-unsplash-c2658bca31ca193e3812884d220d064db32d3321cadac196601ca30fe4c83cb3.jpg" data-background-size="cover">
+  
+</section><section id="dimensions-of-the-domain"><h2 id="dimensions-of-the-domain">Dimensions of the domain</h2>
+<ul>
+  <li>time</li>
+  <li>pitch</li>
+  <li>loudness</li>
+</ul></section><section id="parameterisation"><h2 id="parameterisation">Parameterisation</h2>
+<ul>
+  <li>
+<strong>time</strong> (in beats), e.g. 1, 2, 3, 4, 5, 6, 7, 8</li>
+  <li>
+<strong>pitch</strong> (in MIDI note numbers), e.g. middle C as 60, C# as 61, etc.</li>
+  <li>
+<strong>loudness</strong> (same scale as pitch—0 is silent, 127 is super loud)</li>
+</ul></section><section id="extempore-a-livecoding-language"><h2 id="extempore-a-livecoding-language">Extempore: a livecoding language</h2>
+<p><a href="https://extemporelang.github.io/">Extempore</a> is a programming language designed
+for musical livecoding (written Andrew Sorensen and I)</p>
+<p>Don’t worry about the syntax, I’ll explain enough for you to follow along</p></section><section data-background-image="/assets/images/talks/nysf-2019/bieber-360a0da471bf7e29e1a89ee4bd37839a3d98d866b7631768df5f221158b988a8.jpg" data-background-size="cover">
+  
+  <h2>This guy</h2>
+  
+</section><section class="impact center" data-background-color="#262626"><p>on with the show!</p></section>
+</div></div>
+
+	<script src="/reveal.js-3.7.0/lib/js/head.min.js"></script>
+	<script src="/reveal.js-3.7.0/js/reveal.js"></script>
+    <script>
+	 // this is the reveal config
+     Reveal.initialize({
+       center: false,
+       controls: false,
+       transition: 'fade',
+       width: '100%',
+       height: '100%',
+       margin: 0,
+       history: true,
+       slideNumber: true,
+	   math: {
+		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
+		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	   }
+     });
+    </script>
+  </body>
+</html>
