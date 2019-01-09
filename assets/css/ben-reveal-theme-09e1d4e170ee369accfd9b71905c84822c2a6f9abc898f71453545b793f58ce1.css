@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url("https://rsms.me/inter/inter-ui.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400");
+:root {
+  font-family: "Inter UI", sans-serif;
+  font-weight: 300;
+  font-size: 3vmax;
+  line-height: 1.4;
+  color: #333;
+  background-color: #fafafa; }
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Inter UI var alt', sans-serif; } }
+.reveal .slides section {
+  grid-area: content;
+  text-align: left;
+  width: 90vw;
+  padding: 0 5vw; }
+  .reveal .slides section em {
+    font-style: italic; }
+  .reveal .slides section strong {
+    font-weight: 900; }
+  .reveal .slides section p {
+    margin-bottom: 0.8em; }
+  .reveal .slides section h1 {
+    margin-top: 60vh;
+    font-size: 4rem;
+    font-weight: 900; }
+  .reveal .slides section h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em; }
+  .reveal .slides section.impact {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fafafa;
+    font-weight: 900; }
+    .reveal .slides section.impact strong {
+      color: #f39c12; }
+  .reveal .slides section[data-background-image] h1, .reveal .slides section[data-background-image] h2 {
+    background-color: rgba(255, 255, 255, 0.75);
+    display: inline-block;
+    padding: 0.2em 0.4em; }
+  .reveal .slides section code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.85em;
+    font-weight: 400;
+    padding: 0.1rem 0.3rem 0.2rem;
+    border-radius: 0.2rem;
+    color: #9e1eba;
+    background: linear-gradient(to right, #f7e6fb, #eec8f6); }
+  .reveal .slides section pre > code {
+    color: #fafafa;
+    border: none;
+    background: #282c34;
+    padding: 1em;
+    margin-bottom: 1rem;
+    line-height: 1.2; }
+  .reveal .slides section blockquote {
+    background-color: #e6e6e6;
+    border-left: 10px solid #ccc;
+    padding: 0.5em 0.5em;
+    quotes: "“" "”" "‘" "’"; }
+  .reveal .slides section blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.5em; }
+  .reveal .slides section blockquote p {
+    display: inline;
+    font-style: normal; }
+
+.reveal .slide-number {
+  transition-property: background-color;
+  transition-duration: 0.5s; }
+  .reveal .slide-number a {
+    text-decoration: none;
+    font-size: 1rem; }
+  .reveal .slide-number:hover {
+    background-color: #be2edd; }
+
+.container {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 8vh 90vh 2vh;
+  grid-template-areas: "header" "content" "footer";
+  overflow: hidden; }
+
+header {
+  grid-area: header;
+  background-color: #333; }
+  header nav.logo {
+    margin-bottom: 15px; }
+    header nav.logo a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fafafa;
+      padding: 5vw; }
+      header nav.logo a:hover {
+        color: #be2edd;
+        background-color: #fafafa; }
+
+footer {
+  grid-area: footer;
+  background-color: #bbb; }

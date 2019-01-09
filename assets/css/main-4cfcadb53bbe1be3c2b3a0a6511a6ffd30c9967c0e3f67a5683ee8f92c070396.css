@@ -28,12 +28,13 @@ strong {
   font-weight: 900; }
 
 code {
+  color: #9e1eba;
+  background: linear-gradient(to right, #f7e6fb, #eec8f6);
   font-size: 90%;
   overflow-wrap: break-word;
   word-wrap: break-word;
   padding: .1rem .3rem .2rem;
-  border-radius: .2rem;
-  background: linear-gradient(to right, #f5ddfa, #e7b2f2); }
+  border-radius: .2rem; }
 
 pre > code {
   background: #282c34; }
