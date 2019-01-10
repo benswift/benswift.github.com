@@ -5,11 +5,14 @@
   background-color: #fafafa;
   color: #333;
   font-family: "Inter UI", sans-serif;
-  font-size: 3vmax; }
+  font-size: 3vw; }
 
 @supports (font-variation-settings: normal) {
   :root {
     font-family: 'Inter UI var alt', sans-serif; } }
+@media (max-aspect-ratio: 2 / 3) {
+  :root {
+    font-size: 3vh; } }
 .reveal .slides section {
   width: 90vw;
   padding: 0 5vw;
@@ -23,21 +26,29 @@
     font-style: italic; }
   .reveal .slides section strong {
     font-weight: 900; }
+  .reveal .slides section a {
+    color: #793188;
+    text-decoration: none;
+    font-weight: 900;
+    transition-property: color background-color;
+    transition-duration: 0.5s; }
+    .reveal .slides section a:hover {
+      color: #fafafa;
+      background-color: #333; }
   .reveal .slides section h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900; }
   .reveal .slides section h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 900; }
   .reveal .slides section[data-background-image] h1, .reveal .slides section[data-background-image] h2 {
     background-color: rgba(255, 255, 255, 0.75);
     display: inline-block;
     padding: 0.2em 0.4em; }
   .reveal .slides section .talk-title {
-    color: #fafafa;
-    background: #be2edd;
-    display: inline;
-    padding: 0.1em 0.3em; }
+    border-bottom-color: #be2edd;
+    border-bottom-style: solid;
+    border-bottom-width: 5px; }
   .reveal .slides section .talk-date {
     font-style: italic;
     color: #777; }
@@ -48,6 +59,11 @@
     font-weight: 900; }
     .reveal .slides section.impact strong {
       color: #f39c12; }
+    .reveal .slides section.impact a {
+      color: #cc5ae4; }
+  .reveal .slides section li {
+    list-style: inside;
+    margin-bottom: 0.2rem; }
   .reveal .slides section code {
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
@@ -81,7 +97,7 @@
   transition-duration: 0.5s; }
   .reveal .slide-number a {
     text-decoration: none;
-    font-size: 1rem; }
+    font-size: 0.8rem; }
   .reveal .slide-number:hover {
     background-color: #be2edd; }
 .reveal .progress {

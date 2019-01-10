@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+<link rel="stylesheet"
+		   href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Pop-production as problem-solving | benswift.me</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Pop-production as problem-solving" />
+<meta name="author" content="Ben Swift" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Pop-production as problem-solving Dr. Ben Swift &nbsp; 11 Jan &#39;19" />
+<meta property="og:description" content="Pop-production as problem-solving Dr. Ben Swift &nbsp; 11 Jan &#39;19" />
+<link rel="canonical" href="https://benswift.me/talks/pop-production/" />
+<meta property="og:url" content="https://benswift.me/talks/pop-production/" />
+<meta property="og:site_name" content="benswift.me" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-01-11T10:00:00+11:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@benswift" />
+<meta name="twitter:creator" content="@Ben Swift" />
+<script type="application/ld+json">
+{"dateModified":"2019-01-11T10:00:00+11:00","datePublished":"2019-01-11T10:00:00+11:00","headline":"Pop-production as problem-solving","url":"https://benswift.me/talks/pop-production/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/pop-production/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"Pop-production as problem-solving Dr. Ben Swift &nbsp; 11 Jan &#39;19","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/reveal-eccb4c79d7f3ccbf85c31c62642063088fc3d5ea366a13ba37dacc69078ee28e.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ben-reveal-theme-2bb01573ce5d289d22c854fb4254532e7046c86968dd1bd3ead466174c1af50d.css">
+  </head>
+  <body>
+	<div class="reveal"><div class="slides">
+<section id="title" class="center">
+  <h1 class="talk-title">Pop-production as problem-solving</h1>
+  <p>
+	<a href="https://benswift.me"><span class="talk-name">Dr. Ben Swift</span></a>
+	<span> </span>
+	<span class="talk-date">11 Jan '19</span>
+  </p>
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+	<img src="/assets/images/pages/by-nc-sa-3ac8e968bc91bde788175da670ff3efe34464b69e39ef471d68b62f3e6495e8f.svg" style="height:1.5rem; margin-left:0;">
+  </a>
+</section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/anders-jilden-89745-unsplash-f41849800018a1ec765cc42ba54fbb2a7aac112a6ca876e095367c6ef71235cb.jpg" data-background-size="cover">
+  
+  <h2>give a guest lecture? sure 😊</h2>
+  
+</section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/marcus-cramer-426515-unsplash-47573ea35b0f9dcf54831ca61b793c6add44b77b9c532c97fa20cb7296e8effe.jpg" data-background-size="cover">
+  
+  <h2>oh, is it January already?</h2>
+  
+</section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/aditya-chinchure-494048-unsplash-d71b5d97bee11050fd68ec060615a33db189db8159b044e109b90e33aa4aac97.jpg" data-background-size="cover">
+  
+  <h2>
+<em>extempore</em>: a livecoding language</h2>
+  
+</section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash-2b76bda8aabc7831081cd8681e72cadc2617bbd24e579a3a3dec3631f78e8a71.jpg" data-background-size="cover">
+  
+  <h2>livecoding</h2>
+  
+</section><section id="outline"><h2 id="outline">outline</h2>
+<ul>
+  <li><a href="#pop-production">what’s a producer?</a></li>
+  <li><a href="#modelling-the-domain">modelling the domain</a></li>
+  <li><a href="#crowdsourced-livecoding">crowdsourced livecoding</a></li>
+</ul></section><section id="what-im-gonna-do"><h2 id="what-im-gonna-do">what <em>I’m</em> gonna do</h2>
+<ul>
+  <li>learn a new song (by ear!)</li>
+  <li>figure out how to turn it into code</li>
+  <li>find a bunch of sounds which sound (approximately) like the recording</li>
+  <li>lay down a vocal track (maybe)</li>
+  <li>make the whole process make sense to you guys</li>
+</ul>
+<p class="fragment"><strong>all in 45 minutes ⏲</strong></p>
+<p class="fragment">yikes!</p></section><section id="what-youre-gonna-do"><h2 id="what-youre-gonna-do">what <em>you’re</em> gonna do</h2>
+<ul>
+  <li>help me choose the song</li>
+  <li>be kind when I make mistakes</li>
+  <li>clap politely at the end (even if I flame out)</li>
+</ul></section><section id="pop-production" data-background-image="/assets/images/talks/pop-production-as-problem-solving/bieber-17dfe39cb9274525846e622de2f896bbad5b3c098d4d1f21547cd5c51546a9b3.jpg" data-background-size="cover">
+  
+  <h2>Pop music is <em>produced</em>
+</h2>
+  
+</section><section id="whats-a-producer"><h2 id="whats-a-producer">what’s a producer?</h2>
+<p>a
+<a href="https://www.recordingconnection.com/reference-library/recording-entrepreneurs/what-does-a-music-producer-do/">producer</a>
+is someone who makes songs happen</p>
+<p>pop songs are characterised by:</p>
+<ul>
+  <li>catchy hooks</li>
+  <li>repetitive harmonic patterns (e.g. chord progressions)</li>
+  <li>processed/synthetic sounds (lots of computers involved in the production)</li>
+</ul></section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/quincy-579972faba8730fb395a3ef9e0a687e9339615e1ff31f300cd2df5b221f335d4.jpg" data-background-size="cover">
+  
+  <h2>Quincy Jones</h2>
+  
+</section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/max-martin-d4b77ad0696afea98278fc0d3f93981a91040490b72df84e7db97e6a602dff17.jpg" data-background-size="cover">
+  
+  <h2>Max Martin</h2>
+  
+</section><section class="impact center" data-background-color="#262626"><p>programming as problem solving…</p></section><section class="impact center" data-background-color="#262626"><p>the problem:</p>
+<p class="fragment">write a <strong>no. 1</strong> hit</p></section><section id="modelling-the-domain" data-background-image="/assets/images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash-0dac479421499f7164707c9eda5072017b3f38bdde9248ec647667233bec588e.jpg" data-background-size="cover">
+  
+  <h2>modelling the domain</h2>
+  
+</section><section class="impact center" data-background-color="#262626"><p><strong>music</strong> <em>(n.)</em></p>
+<p>a series of pitched “events” over time</p></section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/alex-harvey-44062-unsplash-e8411cf82cf5739b19c43b42cc48b1292255372ab474337a80ec83c3263a3b99.jpg" data-background-size="cover">
+  
+  <h2>pedantry alert!</h2>
+  
+</section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash-17b1072bb58270725ae0d9b048bca21852b12e10c57e245468674307dfafd0c1.jpg" data-background-size="cover">
+  
+</section><section data-background-image="/assets/images/talks/pop-production-as-problem-solving/rawpixel-com-586684-unsplash-2f93b4825c46957d7a8d421c310bf9762755eaf9f9f523de6e2e584b75d20312.jpg" data-background-size="cover">
+  
+</section><section id="dimensions-of-the-domain"><h2 id="dimensions-of-the-domain">dimensions of the domain</h2>
+<ul>
+  <li>time</li>
+  <li>pitch</li>
+  <li>loudness</li>
+</ul></section><section id="parameterisation"><h2 id="parameterisation">parameterisation</h2>
+<ul>
+  <li>
+<strong>time</strong> (in beats), e.g. 1, 2, 3, 4, 5, 6, 7, 8</li>
+  <li>
+<strong>pitch</strong> (in MIDI note numbers), e.g. middle C as 60, C# as 61, etc.</li>
+  <li>
+<strong>loudness</strong> (0 is silent, 127 is super loud)</li>
+</ul></section><section id="extempore-a-livecoding-language"><h2 id="extempore-a-livecoding-language">
+<em>extempore</em>: a livecoding language</h2>
+<p><a href="https://extemporelang.github.io/">extempore</a> is a programming language designed
+for musical livecoding (written <a href="https://twitter.com/digego">Andrew Sorensen</a>
+and <a href="/">me</a>)</p>
+<p>don’t worry about the syntax, I’ll explain enough for you to follow along</p></section><section id="crowdsourced-livecoding" data-background-image="/assets/images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash-2b76bda8aabc7831081cd8681e72cadc2617bbd24e579a3a3dec3631f78e8a71.jpg" data-background-size="cover">
+  
+  <h2>let's go!</h2>
+  
+</section><section class="impact center" data-background-color="#262626"><p>questions?</p>
+<p>🤔</p>
+<p><a href="https://benswift.me">https://benswift.me</a></p></section>
+</div></div>
+
+	<script src="/reveal.js-3.7.0/lib/js/head.min.js"></script>
+	<script src="/reveal.js-3.7.0/js/reveal.js"></script>
+    <script>
+	 // this is the reveal config
+     Reveal.initialize({
+       center: false,
+       controls: false,
+       transition: 'fade',
+       width: '100%',
+       height: '100%',
+       margin: 0,
+       history: true,
+       slideNumber: true,
+	   math: {
+		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
+		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	   }
+     });
+    </script>
+  </body>
+</html>
