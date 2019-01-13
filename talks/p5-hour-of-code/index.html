@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+<link rel="stylesheet"
+		   href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Drawing like a 5-year-old | benswift.me</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Drawing like a 5-year-old" />
+<meta name="author" content="Ben Swift" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Drawing like a 5-year-oldDr. Ben Swift 06 Sep &#39;17 &nbsp;&nbsp;@benswift" />
+<meta property="og:description" content="Drawing like a 5-year-oldDr. Ben Swift 06 Sep &#39;17 &nbsp;&nbsp;@benswift" />
+<link rel="canonical" href="https://benswift.me/talks/p5-hour-of-code/" />
+<meta property="og:url" content="https://benswift.me/talks/p5-hour-of-code/" />
+<meta property="og:site_name" content="benswift.me" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-09-06T15:00:00+10:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@benswift" />
+<meta name="twitter:creator" content="@Ben Swift" />
+<script type="application/ld+json">
+{"headline":"Drawing like a 5-year-old","dateModified":"2017-09-06T15:00:00+10:00","datePublished":"2017-09-06T15:00:00+10:00","url":"https://benswift.me/talks/p5-hour-of-code/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/p5-hour-of-code/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"Drawing like a 5-year-oldDr. Ben Swift 06 Sep &#39;17 &nbsp;&nbsp;@benswift","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+	<link rel="stylesheet" type="text/css" href="/assets/reveal.js-3.7.0/css/reveal-eccb4c79d7f3ccbf85c31c62642063088fc3d5ea366a13ba37dacc69078ee28e.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ben-reveal-theme-0b1a713c362f325704e016b865bef2415f33bfe1919678a39ddc4c80144af3db.css">
+  </head>
+  <body>
+	<div class="reveal"><div class="slides">
+<section id="title" class="center">
+  <h1 class="talk-title">Drawing like a 5-year-old</h1>
+<p class="talk-name"><a href="https://benswift.me">Dr. Ben Swift</a></p>
+  <p class="talk-date">06 Sep '17</p>
+
+  <nav class="talk-title-navigation">
+	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <i class="fab fa-creative-commons"></i>
+  <i class="fab fa-creative-commons-by"></i>
+  <i class="fab fa-creative-commons-nc"></i>
+  <i class="fab fa-creative-commons-sa"></i>
+</a>
+
+	<a href="https://twitter.com/benswift"><i class="fab fa-twitter"></i>  @benswift</a>
+	<a href="https://github.com/benswift"><i class="fab fa-github"></i></a>
+	<a href="https://vimeo.com/benswift"><i class="fab fa-vimeo"></i></a>
+	<a href="mailto:ben@benswift.me"><i class="fas fa-envelope"></i></a>
+  </nav>
+</section><section data-background-image="/assets/images/talks/p5-hour-of-code/chalk-3d8100a02721d2dc0e5b28a92ae9ff3a34953e73e0669534dd1d04c378f53d36.jpg" data-background-size="cover">
+  
+  <h2>who drew pictures as a 5yo?</h2>
+  
+</section><section id="your-hour-of-code"><h2 id="your-hour-of-code">your “hour of code”</h2>
+<p><a href="https://hourofcode.com/">https://hourofcode.com/</a></p>
+<p>teach the computer to draw a picture</p>
+<p>learn how to deal with its tantrums</p>
+<p>share your stuff with the world</p></section><section id="p5js"><h2 id="p5js">p5.js</h2>
+<p>open up a web browser (e.g. Firefox) and head to <a href="https://editor.p5js.org/">https://editor.p5js.org/</a></p>
+<p><strong>(optional)</strong> if you want to share your work later, create an account (it’s
+super-easy, and free)</p></section><section id="edit-the-code"><h2 id="edit-the-code">edit the code</h2>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">800</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// add this next line on your computer</span>
+  <span class="nx">background</span><span class="p">(</span><span class="mi">220</span><span class="p">);</span>
+  <span class="nx">rect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>don’t forget to hit the play button!</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/collaboration-7545fe36b10c9098e736d705487c9eb6a3a5178255e39b0ab444ab8f89a36129.jpg" data-background-size="cover">
+  
+  <h2>collaboration</h2>
+  
+</section><section id="can-you-draw-the-square-differently"><h2 id="can-you-draw-the-square-differently">can you draw the square <strong>differently</strong>?</h2>
+<ul>
+  <li>bottom right</li>
+  <li>tall and skinny</li>
+  <li>short and fat</li>
+  <li>filling the <strong>whole</strong> top right quarter</li>
+</ul></section><section id="new-shapes"><h2 id="new-shapes">new shapes</h2>
+<p>what happens if you replace <code class="highlighter-rouge">rect</code> with <code class="highlighter-rouge">ellipse</code>?</p>
+<p>you can have multiple lines of code in the <code class="highlighter-rouge">draw</code> function—can you draw a
+square and a circle on top of one another?</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/paint-8d8c7e0f4f124771a7053c058b432d197a3db31d52c3621871e905dc0d2a7b18.jpg" data-background-size="cover">
+  
+  <h2>colours</h2>
+  
+</section><section id="colours-2"><h2 id="colours-2">colours</h2>
+<p>put one of these <strong>before</strong> your <code class="highlighter-rouge">rect</code> line:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">fill</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="c1">// or</span>
+<span class="nx">stroke</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</code></pre></div></div>
+<p class="fragment">try changing the numbers around…</p></section><section id="moar-colours"><h2 id="moar-colours">moar colours</h2>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">fill</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">// each value from 0-255</span>
+</code></pre></div></div>
+<div style="font-size: 33vh; font-weight:600; line-height:1em; text-align:center;">
+<span style="color:#A00;">R</span>
+<span style="color:#0A0;">G</span>
+<span style="color:#00A;">B</span>
+</div></section><section class="impact center" data-background-color="#262626"><p>how do you know what instructions the computer <strong>understands</strong>?</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/yoda-169209556c88b6a3a9d3a5e335e0e968e84da22be8a3a44108d6acd16eec05e0.jpg" data-background-size="cover">
+  
+  <h2>use the <a href="https://p5js.org/reference/">reference</a>
+</h2>
+  
+</section><section data-background-image="/assets/images/talks/p5-hour-of-code/volcano-e1462f60081376f54ac6f0db79b7c0c2c443ca95f472422e2feace72fe60c069.jpg" data-background-size="cover">
+  
+  <h2>dealing with errors</h2>
+  
+<p>like a 5-year-old, you need to be <strong>specific</strong></p>
+<p>don’t forget any brackets, commas, etc.</p>
+<p>learn to <em>understand</em> the tantrums:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ReferenceError: sdfsd is not defined (sketch: line 8)
+SyntaxError: missing ) after argument list (sketch: line 12)
+</code></pre></div></div></section><section data-background-image="/assets/images/talks/p5-hour-of-code/smiley-5be7f3d771d7672dcc26c7cab397113303112aaaac23f5d5eda45e71027f4964.png" data-background-size="cover">
+  
+  <h2>smiley face</h2>
+  
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">800</span><span class="p">);</span>
+  <span class="nx">noStroke</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">background</span><span class="p">(</span><span class="mi">120</span><span class="p">);</span>
+  <span class="c1">// set colour to yellow &amp; draw face</span>
+  <span class="nx">fill</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">);</span>
+  
+  <span class="c1">// set colour to black &amp; draw eyes/mouth</span>
+  <span class="nx">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">350</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">350</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">70</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div></section><section id="interaction"><h2 id="interaction">interaction</h2>
+<p>replace one of the numbers (e.g. a <code class="highlighter-rouge">100</code>) with <code class="highlighter-rouge">mouseX</code></p>
+<p>replace one of the numbers with <code class="highlighter-rouge">frameCount</code></p>
+<p>do some maths (e.g. <code class="highlighter-rouge">+</code>, <code class="highlighter-rouge">-</code>, <code class="highlighter-rouge">*</code>, <code class="highlighter-rouge">/</code>, <code class="highlighter-rouge">%</code>, …)</p></section><section id="what-have-we-done-today"><h2 id="what-have-we-done-today">what have we done today?</h2>
+<p>programming (like any sufficiently complex activity) uses lots of jargon &amp;
+technical terms</p>
+<p>but in the end, it’s just about telling your computer what to do <strong>in language
+it understands</strong></p>
+<p>there’s lots more!</p>
+<p>if you created an account earlier, then you’ll have a <strong>share</strong> tab along the
+top of the screen</p></section><section id="going-further"><h2 id="going-further">going further</h2>
+<p><a href="https://p5js.org/reference/">https://p5js.org/reference/</a></p>
+<p><a href="https://p5js.org/examples/">https://p5js.org/examples/</a></p>
+<p><a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a></p></section>
+</div></div>
+
+	<script src="/assets/reveal.js-3.7.0/lib/js/head.min.js"></script>
+	<script src="/assets/reveal.js-3.7.0/js/reveal.js"></script>
+    <script>
+	 // this is the reveal config
+     Reveal.initialize({
+       center: false,
+       controls: false,
+       transition: 'fade',
+       width: '100%',
+       height: '100%',
+       margin: 0,
+       history: true,
+       slideNumber: true,
+	   math: {
+		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
+		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	   }
+     });
+    </script>
+  </body>
+</html>
