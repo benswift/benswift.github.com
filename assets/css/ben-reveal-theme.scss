@@ -1,6 +1,7 @@
 // fonts and typography
 
 @import "./variables.scss";
+@import "./reveal-box-slides.scss";
 
 @import url('https://rsms.me/inter/inter-ui.css');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&subset=latin-ext');
@@ -43,7 +44,7 @@
 
 	// undecorate links
 	a {
-		color: mix($text-color, $highlight-color, 50%);
+		color: $link-color;
 		text-decoration: none;
 		font-weight: 900;
 
@@ -150,14 +151,19 @@
     }
 
 	.image-credit {
-		$creditOpacity: 0.5;
+		$creditOpacity: 0.8;
         background-color: adjust-color($background-color, $alpha: -$creditOpacity);
 		color: adjust-color($text-color, $alpha: -$creditOpacity);
 		padding: 0.5em;
 		font-size: 0.7em;
 
+		// image credit always shows up in bottom-left
 		position: fixed;
 		bottom: 1em;
+
+		div {
+			margin-bottom: 0;
+		}
 
 		// style the sub-components
 		.image-credit-title { font-style: italic; }
@@ -165,9 +171,9 @@
 
 		// links undecorated except on mouse-over
 		a {
-			color: inherit;
-			&:hover {
-				text-decoration: underline;
+			color: adjust-color($link-color, $alpha: -$creditOpacity);
+			&:hover{
+				color: $background-color;
 			}
 		}
 
