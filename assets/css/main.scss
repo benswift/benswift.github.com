@@ -30,6 +30,10 @@
 	}
 }
 
+h1,h2,h3,p {
+	padding: 0 0.8rem;
+}
+
 a {
 	color: $link-color;
 	text-decoration: none;
@@ -57,53 +61,48 @@ code {
 	font-family: "Courier Prime", "Courier", monospace;
 	color: darken($highlight-color, 10%);
 	background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
-    font-size: 90%;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    padding: .1rem .3rem .2rem;
-    border-radius: .2rem;
+    padding: 0.3rem 0.3rem 0.1rem;
+    border-radius: 0.2rem;
 }
 
 pre > code {
 	background: #282c34;
+	border-radius: 0;
 }
 
 // main grid layout - mobile-first
 
 .container {
 	display: grid;
-	grid-template-columns: 5vw 90vw 5vw;
+	grid-template-columns: 100vw;
 	grid-template-rows: auto;
 	grid-template-areas:
-		". header ."
-		". main ."
-		". footer .";
+		"header"
+		"main"
+		"footer";
 }
 
-// make cap the width of the "main" content on wider screens
-@media screen and (min-width: 1000px) {
-	.container {
-		grid-template-columns: 1fr 800px 1fr;
-	}
-}
-
-// style the grid components
+// navigation (useful in header, but in other places as well)
 
 .navigation {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	color: $text-color;
+	padding: 0 0.6rem;
 
-	* {
-		padding: 5px;
+	&>* {
+		padding: 0.2rem;
+	}
+
+	.disabled {
+		color: $text-grey;
+		cursor: not-allowed;
 	}
 }
 
-.nav-hidden {
-	color: $text-grey;
-	cursor: not-allowed;
-}
 
 header {
 	grid-area: header;
@@ -116,7 +115,7 @@ header {
 			font-weight: 700;
 			background-color: $highlight-color;
 			color: white;
-			padding: 5px 10px;
+			padding: 0.4rem 0.8rem;
 			&:hover {
 				color: $highlight-color;
 				background-color: $background-color;
@@ -191,4 +190,26 @@ blockquote p {
 
 img {
 	width: 100%;
+}
+
+// responsive design, y'all
+@media screen and (min-width: 1000px) {
+	.container {
+		grid-template-columns: 1fr 800px 1fr;
+		grid-template-areas:
+			". header ."
+			". main ."
+			". footer .";
+	}
+	h1,h2,h3,p {
+		padding: 0;
+	}
+	.navigation {
+		padding: 0;
+
+		&>* {
+			padding: 0.4rem 0;
+		}
+
+	}
 }
