@@ -52,16 +52,21 @@ pre > code {
 @media screen and (min-width: 1000px) {
   .container {
     grid-template-columns: 1fr 800px 1fr; } }
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #333; }
+  .navigation * {
+    padding: 5px; }
+
+.nav-hidden {
+  color: #777;
+  cursor: not-allowed; }
+
 header {
   grid-area: header;
   padding: 2rem 0 1rem 0; }
-  header nav.navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: #333; }
-    header nav.navigation * {
-      padding: 5px; }
   header nav.logo {
     margin-bottom: 15px; }
     header nav.logo a {
