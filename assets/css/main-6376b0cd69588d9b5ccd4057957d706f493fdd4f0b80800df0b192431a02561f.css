@@ -39,7 +39,7 @@ code {
   background: linear-gradient(to right, #f7e6fb, #eec8f6);
   overflow-wrap: break-word;
   word-wrap: break-word;
-  padding: 0.3rem 0.3rem 0.1rem;
+  padding: 0.2rem;
   border-radius: 0.2rem; }
 
 pre > code {

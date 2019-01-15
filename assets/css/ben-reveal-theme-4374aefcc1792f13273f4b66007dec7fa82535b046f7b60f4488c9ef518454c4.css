@@ -117,7 +117,7 @@
   .reveal .slides section code {
     font-family: "Courier Prime", "Courier", monospace;
     font-weight: 400;
-    padding: 0.3rem 0.3rem 0.1rem;
+    padding: 0.2rem;
     border-radius: 0.2rem;
     color: #9e1eba;
     background: linear-gradient(to right, #f7e6fb, #eec8f6); }
