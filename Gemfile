@@ -19,6 +19,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0"
   gem "jekyll-paginate-v2", "~> 2"
   gem "jekyll-seo-tag", "~> 2"
+  gem "jekyll-fontawesome-svg"
   # assets
   gem "jekyll-assets", "~> 3"
   gem "autoprefixer-rails", "~> 9"

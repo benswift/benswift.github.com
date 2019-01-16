@@ -84,6 +84,14 @@ pre > code {
 		"footer";
 }
 
+// for FontAwesome SVGs
+
+svg.icon {
+	width: 2em;
+	height: 2em;
+	color: $link-color;
+}
+
 // navigation (useful in header, but in other places as well)
 
 .navigation {

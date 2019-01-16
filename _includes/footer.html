@@ -16,9 +16,9 @@
   <!-- colophon -->
   <p>
 	designed & built with
-	<a href="https://jekyllrb.com"><i class="fas fa-vial"></i></a>,
-	<a id="cafe-url" onclick="randomCafe();"><i class="fas fa-coffee" style="cursor: pointer;"></i></a> and
-	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><i class="fas fa-heart"></i></a>
+	<a href="https://jekyllrb.com">{% fa_svg fas.fa-vial %}</a>,
+	<a id="cafe-url" style="cursor: pointer;" onclick="randomCafe();">{% fa_svg fas.fa-coffee %}</a> and
+	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M">{% fa_svg fas.fa-heart %}</a>
 	by Ben Swift
   </p>
 
@@ -36,7 +36,10 @@
   <!-- open source humblebrag -->
   <p>
 	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/{{ site.data['git-HEAD'] }}">{{ site.data['git-HEAD'] }}</a></code>,
-	source available on <a href="https://github.com/benswift/benswift.github.io"><i class="fab fa-github"></i></a>
+	source available on <a href="https://github.com/benswift/benswift.github.io">{% fa_svg fab.fa-github %}</a>
   </p>
+
+  <!-- required so that the FontAwesome SVGs get generated -->
+  {% fa_svg_generate %}
 
 </footer>
