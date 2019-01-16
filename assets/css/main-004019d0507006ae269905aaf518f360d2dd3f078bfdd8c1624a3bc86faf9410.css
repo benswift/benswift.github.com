@@ -96,7 +96,7 @@ footer {
   font-style: italic;
   color: #777; }
 
-.post + .post {
+.post {
   border-top: 1px solid #be2edd; }
 
 blockquote {
