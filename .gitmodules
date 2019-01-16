@@ -1,0 +1,3 @@
+[submodule "hljs"]
+	path = _highlight.js
+	url = git@github.com:highlightjs/highlight.js.git
