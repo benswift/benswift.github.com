@@ -3,18 +3,22 @@
 This is a bit fiddly to set up at present, because
 [reasons](https://github.com/highlightjs/highlightjs-xtlang#usage).
 
-The way it's currently done for <https://benswift.me> is that
+This branch contains all the infrastructure required to make a custom build of
+highlight.js with whatever languages you need (including xtlang). These
+instructions assumes you've done this sort of thing before.
 
-1. a custom build of highlight.js is produced with
+You'll need to:
 
-```plaintext
-node tools/build.js --target browser --no-compress armasm bash clojure cmake cpp cs css diff dockerfile glsl go haskell http java javascript json julia llvm makefile markdown objectivec pgsql processing python r ruby rust scala scheme scss shell sql tex typescript yaml xtlang
-```
+1. initialise the submodules (both hightlight.js and highlight.js-xtlang)
 
-2. copy the `highlightjs.pack.js` file into the `assets/js` folder
+2. run the hljs build tool `tools/build.js` (there's an example invocation in
+   `build-hljs-and-copy-pack-into-place.sh` in the top-level of this repo)
 
-3. copy the `*.css` file corresponding to your theme of choice into `assets/css`
+3. copy the output `highlightjs.pack.js` file into the `assets/js` folder
+   (again, this is done in `build-hljs-and-copy-pack-into-place.sh`)
 
-4. put it all together using the stuff in `_includes/hljs.html`
+4. copy the `*.css` file corresponding to your theme of choice into `assets/css`
 
-5. profit?
+5. put it all together using the stuff in `_includes/hljs.html`
+
+6. profit?
