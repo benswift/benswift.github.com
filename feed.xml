@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-16T18:37:17+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+11:00</published><updated>2019-01-02T17:46:00+11:00</updated><id>https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-17T17:13:40+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/2019/01/17/highlight-js-with-xtlang-support.html" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/2019/01/17/highlight-js-with-xtlang-support.html">&lt;blockquote&gt;
+  &lt;p&gt;It is a truth, universally acknowledged, that all programming language authors
+must also be expert web developers.    &lt;strong&gt;Jane Austen&lt;/strong&gt; &lt;em&gt;(probably)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’ve just spend a solid day wrestling with source code syntax highlighting on my
+blog, and I’ve finally got it figured out. To wit:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-armasm&quot;&gt;labelious:
+  sub r0, 1
+  bne doneski
+  b labelious
+
+doneski:
+  nop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I know you’ve got questions, so the rest of this post will be structured as an
+&lt;strong&gt;FAQ&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;faq&quot;&gt;FAQ&lt;/h2&gt;
+
+&lt;h3 id=&quot;why-did-you-even-do-that-it-seemed-to-be-working-fine-before&quot;&gt;Why did you even do that? It seemed to be working fine before.&lt;/h3&gt;
+
+&lt;p&gt;Yes, well, it was mostly working fine. But I was just using an
+off-the-shelf&lt;sup id=&quot;fnref:cdn&quot;&gt;&lt;a href=&quot;#fn:cdn&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; disribution of &lt;a href=&quot;https://highlightjs.org/&quot;&gt;highlight.js&lt;/a&gt;,
+which supported a bunch of languages, but not all the ones I need. Especially
+Extempore, which is super-important for showing off my livecoding stuff on this
+blog.&lt;/p&gt;
+
+&lt;h3 id=&quot;does-extemporextlang-have-highlightjs-support-now&quot;&gt;Does Extempore/xtlang have highlight.js support now?&lt;/h3&gt;
+
+&lt;p&gt;Yep, &lt;a href=&quot;https://github.com/cyblue9&quot;&gt;&lt;code&gt;@blue9&lt;/code&gt;&lt;/a&gt; ported the &lt;a href=&quot;https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/lisp.py?at=default&amp;amp;fileviewer=file-view-default#lisp.py-2420&quot;&gt;Scheme/xtlang
+lexer&lt;/a&gt;
+that I wrote for Pygments, which is a &lt;em&gt;big&lt;/em&gt; help to the Extempore community
+(thanks &lt;code&gt;blue9&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;isnt-it-just-a-matter-of-adding-xtlang-to-the-highlightjs-build-step&quot;&gt;Isn’t it just a matter of adding &lt;code&gt;xtlang&lt;/code&gt; to the highlight.js build step?&lt;/h3&gt;
+
+&lt;p&gt;No, because &lt;a href=&quot;https://github.com/highlightjs/highlightjs-xtlang#usage&quot;&gt;reasons&lt;/a&gt;.
+It’s a real mess, and we’re waiting on &lt;a href=&quot;https://github.com/highlightjs/highlight.js/pull/1888&quot;&gt;this
+PR&lt;/a&gt; to land before it
+gets easier.&lt;/p&gt;
+
+&lt;h3 id=&quot;howd-you-get-it-working-then&quot;&gt;How’d you get it working, then?&lt;/h3&gt;
+
+&lt;p&gt;Hacks upon hacks. If you really wanna know, it’s in &lt;a href=&quot;https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang&quot;&gt;this
+branch&lt;/a&gt;
+(although the final product, &lt;code&gt;highlight.pack.js&lt;/code&gt; is in the main &lt;code&gt;source&lt;/code&gt;
+branch).&lt;/p&gt;
+
+&lt;p&gt;Basically, I backported the Extempore language support from the new “plugin” way
+of doing things (which is better, but doesn’t really work yet) to the old
+“built-in” way of doing things, and then generated a new, custom build of
+highlight.js which included both xtlang and all the other languages that I need
+for my blog.&lt;/p&gt;
+
+&lt;h3 id=&quot;so-can-i-see-some-xtlang-code-then&quot;&gt;So can I see some xtlang code, then?&lt;/h3&gt;
+
+&lt;p&gt;Sure, here’s an example function from
+&lt;a href=&quot;https://github.com/digego/extempore/blob/master/examples/core/extempore_lang.xtm&quot;&gt;&lt;code&gt;examples/core/extempore_lang.xtm&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func my-test-7
+  (lambda ()
+	(let ((a:&amp;lt;i64,double&amp;gt;* (alloc)) ; returns pointer to type &amp;lt;i64,double&amp;gt;
+		  (b 37)
+		  (c 6.4))
+	  (tuple-set! a 0 b) ;; set i64 to 64
+	  (tset! a 1 c) ;; set double to 6.4 - tset! is an alias for tuple-set!
+	  (printf &quot;tuple:1 %lld::%f\n&quot; (tuple-ref a 0) (tref a 1))
+	  ;; we can fill a tuple in a single call by using tfill!
+	  (tfill! a 77 77.7)
+	  (printf &quot;tuple:2 %lld::%f\n&quot; (tuple-ref a 0) (tuple-ref a 1))
+	  (tuple-ref a 0)))) ;; return first element which is i64
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;when-will-we-get-this-syntax-colouring-goodness-when-viewing-extempore-code-on-github&quot;&gt;When will we get this syntax colouring goodness when viewing Extempore code on GitHub?&lt;/h3&gt;
+
+&lt;p&gt;GitHub doesn’t use highlight.js, it uses
+&lt;a href=&quot;https://github.com/github/linguist&quot;&gt;linguist&lt;/a&gt; for this sort of thing. So
+getting it working on GH would involve porting the language definitions to that
+project as well.&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-with-the-jane-austen-quote-above-then&quot;&gt;What’s with the Jane Austen quote above, then?&lt;/h3&gt;
+
+&lt;p&gt;Figuring this all out required a lot of digging around in existing packages,
+learning a new &lt;a href=&quot;https://www.npmjs.com/package/gear&quot;&gt;node-based build system&lt;/a&gt; and
+a bunch of other things. I’m pretty capable with this sort of thing, so I got
+there in the end. But it does make me a bit sad that the job of building a
+community around a programming language involves so much stuff that doesn’t use
+the language itself, and these days invariably involves poking around various
+npm packages and staring at the Chrome developer tools.&lt;/p&gt;
+
+&lt;h3 id=&quot;can-i-use-your-build-of-highlightjs-to-font-lock-xtlang-code-on-my-own-site&quot;&gt;Can I use your build of highlight.js to font-lock xtlang code on my own site?&lt;/h3&gt;
+
+&lt;p&gt;Sure, I’d be pumped if you did. If you want, you can check out the
+&lt;a href=&quot;https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang&quot;&gt;&lt;code&gt;hljs-with-xtlang&lt;/code&gt;
+branch&lt;/a&gt; of
+this repo and follow the instructions therein to make your own custom build. Or,
+if you don’t want to do that, you could just use the one you’ve already
+downloaded (since you’re visiting this website). Here’s a &lt;a href=&quot;/assets/js/highlight.pack.js&quot;&gt;direct
+link&lt;/a&gt; if you want to do
+things that way.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:cdn&quot;&gt;
+      &lt;p&gt;well, off-the-CDN, anyway &lt;a href=&quot;#fnref:cdn&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">It is a truth, universally acknowledged, that all programming language authors must also be expert web developers.    Jane Austen (probably)</summary></entry><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+11:00</published><updated>2019-01-02T17:46:00+11:00</updated><id>https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
 grue&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I’ve re-written my blog &lt;a href=&quot;/2017/07/06/benswift-me-update-july-2017-edition.html&quot;&gt;again&lt;/a&gt;, because I figure
@@ -15,9 +124,9 @@ design priorities:&lt;/p&gt;
   &lt;li&gt;&lt;em&gt;modern&lt;/em&gt; markup: CSS grid &amp;amp; flexbox &lt;strong&gt;all the way&lt;/strong&gt; (sorry if you’re on an old
 version of IE)&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;minimal&lt;/em&gt; markup: there’s really not many elements in each page (I wanted to
-see how far I could push back against the &lt;code class=&quot;highlighter-rouge&quot;&gt;div&lt;/code&gt; soup that’s so common these
+see how far I could push back against the &lt;code&gt;div&lt;/code&gt; soup that’s so common these
 days)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;semantic&lt;/em&gt; markup: we have &lt;code class=&quot;highlighter-rouge&quot;&gt;nav&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;aside&lt;/code&gt;, so
+  &lt;li&gt;&lt;em&gt;semantic&lt;/em&gt; markup: we have &lt;code&gt;nav&lt;/code&gt; and &lt;code&gt;article&lt;/code&gt; and &lt;code&gt;main&lt;/code&gt; and &lt;code&gt;aside&lt;/code&gt;, so
 let’s use them&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -41,7 +150,7 @@ more complex layouts.&lt;/p&gt;
 don’t think I’ve broken any (many) links, but again let me know if you find
 something I’ve missed.&lt;/p&gt;
 
-&lt;p&gt;The other thing I really like about this iteration of the annual &lt;code class=&quot;highlighter-rouge&quot;&gt;benswift.me&lt;/code&gt;
+&lt;p&gt;The other thing I really like about this iteration of the annual &lt;code&gt;benswift.me&lt;/code&gt;
 redesign is that I finally understand the whole thing. No more magic themes
 which I hesitantly poke around in “eye-of-newt” style whenever I want to make
 changes, and that’s a nice feeling&lt;sup id=&quot;fnref:control-freak&quot;&gt;&lt;a href=&quot;#fn:control-freak&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
@@ -61,17 +170,17 @@ icons at the top for various options).&lt;/p&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue.</summary></entry><entry><title type="html">Another reveal.js plugin for Jekyll</title><link href="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html" rel="alternate" type="text/html" title="Another reveal.js plugin for Jekyll" /><published>2018-09-28T13:42:26+10:00</published><updated>2018-09-28T13:42:26+10:00</updated><id>https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/2018/09/28/another-reveal.js-plugin-for-jekyll.html">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
 &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;reveal.js&lt;/a&gt; to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great
-content, and the formatting/presentation stuff stays out of the way until I &lt;code class=&quot;highlighter-rouge&quot;&gt;git
+content, and the formatting/presentation stuff stays out of the way until I &lt;code&gt;git
 push&lt;/code&gt; the updates to the server.&lt;/p&gt;
 
 &lt;p&gt;There are a few ways of making these two tools (Jekyll and reveal.js) play
 nicely together: see &lt;a href=&quot;https://github.com/dploeger/jekyll-revealjs&quot;&gt;here&lt;/a&gt; and
 &lt;a href=&quot;https://medium.com/aerobatic-blog/building-a-reveal-js-presentation-with-jekyll-collections-52bcdba4114a&quot;&gt;here&lt;/a&gt;
-for example. However, most of these require you to put each slide in a new &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt;
+for example. However, most of these require you to put each slide in a new &lt;code&gt;.md&lt;/code&gt;
 file, which is a pain.&lt;/p&gt;
 
-&lt;p&gt;What I want to do is to write one &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; file per presentation, and have the
-sections (separated by &lt;code class=&quot;highlighter-rouge&quot;&gt;##&lt;/code&gt; headings) to determine the slide splits (this is how
+&lt;p&gt;What I want to do is to write one &lt;code&gt;.md&lt;/code&gt; file per presentation, and have the
+sections (separated by &lt;code&gt;##&lt;/code&gt; headings) to determine the slide splits (this is how
 &lt;a href=&quot;https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc&quot;&gt;pandoc does it&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;I wrote a simple &lt;a href=&quot;https://jekyllrb.com/docs/plugins/&quot;&gt;Jekyll&lt;/a&gt; to make this
@@ -84,152 +193,152 @@ code to prose. Think of this blog post as a “companion piece”.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-revealify-filter&quot;&gt;1. the revealify &lt;a href=&quot;https://jekyllrb.com/docs/plugins/filters/&quot;&gt;filter&lt;/a&gt;&lt;/h2&gt;
 
-&lt;p&gt;First, put this code into a &lt;code class=&quot;highlighter-rouge&quot;&gt;revealify.rb&lt;/code&gt; file in your Jekyll &lt;code class=&quot;highlighter-rouge&quot;&gt;_plugins&lt;/code&gt;
+&lt;p&gt;First, put this code into a &lt;code&gt;revealify.rb&lt;/code&gt; file in your Jekyll &lt;code&gt;_plugins&lt;/code&gt;
 directory:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# (c) Ben Swift 2018, MIT Licence&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# ben.swift@anu.edu.au&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;# (c) Ben Swift 2018, MIT Licence
+# ben.swift@anu.edu.au
 
-&lt;span class=&quot;c1&quot;&gt;# a liquid filter for turning regular md output into the &amp;lt;section&amp;gt;-enclosed&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# chunks required by reveal.js&lt;/span&gt;
+# a liquid filter for turning regular md output into the &amp;lt;section&amp;gt;-enclosed
+# chunks required by reveal.js
 
-&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'jekyll'&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'nokogiri'&lt;/span&gt;
+require 'jekyll'
+require 'nokogiri'
 
-&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Jekyll&lt;/span&gt;
+module Jekyll
 
-  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Revealify&lt;/span&gt;
+  module Revealify
 
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;revealify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    def revealify(html)
 
-      &lt;span class=&quot;c1&quot;&gt;# parse content&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Nokogiri&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;HTML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      # parse content
+      content = Nokogiri::HTML.fragment(html)
 
-      &lt;span class=&quot;c1&quot;&gt;# create an empty node&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;reveal_div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Nokogiri&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;HTML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&amp;lt;div class=&quot;reveal&quot;&amp;gt;&amp;lt;div class=&quot;slides&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'UTF-8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;slides_div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reveal_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.slides'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;
+      # create an empty node
+      reveal_div = Nokogiri::HTML.fragment('&amp;lt;div class=&quot;reveal&quot;&amp;gt;&amp;lt;div class=&quot;slides&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;', 'UTF-8')
+      slides_div = reveal_div.search('.slides').first
 
-      &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+      content.xpath(&quot;*&quot;).each do |element|
 
-        &lt;span class=&quot;c1&quot;&gt;# &amp;lt;section&amp;gt; elements should be passed through as-is&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;matches?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;section&quot;&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;slides_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        # &amp;lt;section&amp;gt; elements should be passed through as-is
+        if element.matches? &quot;section&quot;
+          slides_div.add_child(element.dup)
 
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# on &quot;split&quot; elements (&amp;lt;h1&amp;gt;, &amp;lt;h2&amp;gt;, &amp;lt;hr&amp;gt;)&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;matches?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;h1,h2,hr&quot;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;current_section&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slides_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;section&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;# hoist all the header's attributes up to the wrapper element&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;# not sure if this will always work, but here goes...&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-              &lt;span class=&quot;c1&quot;&gt;# relies on the fact that the &quot;current&quot; wrapper node is the last child in ret&lt;/span&gt;
-              &lt;span class=&quot;n&quot;&gt;current_section&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-              &lt;span class=&quot;c1&quot;&gt;# element.delete attribute&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+        else
+          # on &quot;split&quot; elements (&amp;lt;h1&amp;gt;, &amp;lt;h2&amp;gt;, &amp;lt;hr&amp;gt;)
+          if element.matches? &quot;h1,h2,hr&quot;
+            current_section = slides_div.add_child(&quot;&amp;lt;section&amp;gt;&quot;).first
+            # hoist all the header's attributes up to the wrapper element
+            # not sure if this will always work, but here goes...
+            element.keys.each do |attribute|
+              # relies on the fact that the &quot;current&quot; wrapper node is the last child in ret
+              current_section[attribute] = element[attribute]
+              # element.delete attribute
+            end
+          end
 
-          &lt;span class=&quot;c1&quot;&gt;# add the element to the current &amp;lt;section&amp;gt; (i.e. the current slide)&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# unless it's just an &amp;lt;hr&amp;gt; (which are used for splitting only)&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;current_section&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slides_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;last_element_child&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;current_section&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;matches?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hr&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+          # add the element to the current &amp;lt;section&amp;gt; (i.e. the current slide)
+          # unless it's just an &amp;lt;hr&amp;gt; (which are used for splitting only)
+          current_section = slides_div.last_element_child
+          current_section.add_child(element.dup) unless element.matches? &quot;hr&quot;
+        end
 
-      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      end
 
-      &lt;span class=&quot;n&quot;&gt;reveal_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_html&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      reveal_div.to_html
+    end
 
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  end
 
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+end
 
-&lt;span class=&quot;no&quot;&gt;Liquid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;register_filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Revealify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+Liquid::Template.register_filter(Jekyll::Revealify)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;2-add-a-reveal-layout&quot;&gt;2. add a reveal &lt;a href=&quot;https://jekyllrb.com/docs/layouts/&quot;&gt;layout&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;You’ll need a new &lt;a href=&quot;https://jekyllrb.com/docs/layouts/&quot;&gt;layout&lt;/a&gt; as well: create a
-&lt;code class=&quot;highlighter-rouge&quot;&gt;reveal.html&lt;/code&gt; file in your Jekyll &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; directory and make sure that the
+&lt;code&gt;reveal.html&lt;/code&gt; file in your Jekyll &lt;code&gt;_layouts&lt;/code&gt; directory and make sure that the
 body tag has this in it (you’ll need to make sure it’s got the right paths &amp;amp;
-other stuff for your setup). The key part is that first &lt;code class=&quot;highlighter-rouge&quot;&gt;{{ content |
+other stuff for your setup). The key part is that first &lt;code&gt;{{ content |
 revealify }}&lt;/code&gt; line—that takes the content of your page (the jekyll
-&lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; file with &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: reveal&lt;/code&gt; in the frontmatter) and passes it through the
+&lt;code&gt;.md&lt;/code&gt; file with &lt;code&gt;layout: reveal&lt;/code&gt; in the frontmatter) and passes it through the
 filter defined in the &lt;a href=&quot;#the-revealify-filter&quot;&gt;revealify filter&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The configuration stuff here is just the example config from
 &lt;a href=&quot;https://github.com/hakimel/reveal.js#configuration&quot;&gt;reveal.js&lt;/a&gt;, so feel free to
 tweak to suit your own presentation.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- this is where the reveailfy filter gets applied --&amp;gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!-- this is where the reveailfy filter gets applied --&amp;gt;
 {{ content | revealify }}
 
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- load the reveal.js source --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/reveal.js-3.6.0/js/reveal.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&amp;lt;!-- load the reveal.js source --&amp;gt;
+&amp;lt;script src=&quot;/reveal.js-3.6.0/js/reveal.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
 
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- configure the presentation --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nx&quot;&gt;Reveal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+&amp;lt;!-- configure the presentation --&amp;gt;
+&amp;lt;script&amp;gt;
+ Reveal.initialize({
 
-   &lt;span class=&quot;c1&quot;&gt;// Display presentation control arrows&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Display presentation control arrows
+   controls: true,
 
-   &lt;span class=&quot;c1&quot;&gt;// Help the user learn the controls by providing hints, for example by&lt;/span&gt;
-   &lt;span class=&quot;c1&quot;&gt;// bouncing the down arrow when they first encounter a vertical slide&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;controlsTutorial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Help the user learn the controls by providing hints, for example by
+   // bouncing the down arrow when they first encounter a vertical slide
+   controlsTutorial: true,
 
-   &lt;span class=&quot;c1&quot;&gt;// Determines where controls appear, &quot;edges&quot; or &quot;bottom-right&quot;&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;controlsLayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bottom-right'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Determines where controls appear, &quot;edges&quot; or &quot;bottom-right&quot;
+   controlsLayout: 'bottom-right',
 
-   &lt;span class=&quot;c1&quot;&gt;// Visibility rule for backwards navigation arrows; &quot;faded&quot;, &quot;hidden&quot;&lt;/span&gt;
-   &lt;span class=&quot;c1&quot;&gt;// or &quot;visible&quot;&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;controlsBackArrows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'faded'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Visibility rule for backwards navigation arrows; &quot;faded&quot;, &quot;hidden&quot;
+   // or &quot;visible&quot;
+   controlsBackArrows: 'faded',
 
-   &lt;span class=&quot;c1&quot;&gt;// Display a presentation progress bar&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;progress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Display a presentation progress bar
+   progress: true,
 
-   &lt;span class=&quot;c1&quot;&gt;// Display the page number of the current slide&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;slideNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Display the page number of the current slide
+   slideNumber: false,
 
-   &lt;span class=&quot;c1&quot;&gt;// Push each slide change to the browser history&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Push each slide change to the browser history
+   history: false,
 
-   &lt;span class=&quot;c1&quot;&gt;// Enable keyboard shortcuts for navigation&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;keyboard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Enable keyboard shortcuts for navigation
+   keyboard: true,
 
-   &lt;span class=&quot;c1&quot;&gt;// Enable the slide overview mode&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;overview&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   // Enable the slide overview mode
+   overview: true,
 
- &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+ });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; I’m ommitting some details here about how to set up everything (e.g.
 putting the reveal.js source folder in the right place).&lt;/p&gt;
 
 &lt;h2 id=&quot;3-write-your-slides-as-markdown-content&quot;&gt;3. write your slides as markdown content&lt;/h2&gt;
 
-&lt;p&gt;Finally, write your content as a regular jekyll post which uses the &lt;code class=&quot;highlighter-rouge&quot;&gt;reveal&lt;/code&gt;
+&lt;p&gt;Finally, write your content as a regular jekyll post which uses the &lt;code&gt;reveal&lt;/code&gt;
 layout, e.g.&lt;/p&gt;
 
-&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;1:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;intro&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;reveal&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;---
+title: &quot;Week 1: intro&quot;
+layout: reveal
+---
 
-&lt;span class=&quot;gu&quot;&gt;## Intro&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;
--&lt;/span&gt; welcome to the course
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; we're gonna learn all the things
+## Intro
 
-&lt;span class=&quot;gu&quot;&gt;## Timeline&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;
--&lt;/span&gt; first, we'll sit in boring lectures...
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; ... then, there will be a huge exam!
+- welcome to the course
+- we're gonna learn all the things
+
+## Timeline
+
+- first, we'll sit in boring lectures...
+- ... then, there will be a huge exam!
 
 fun times.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Then, you get all the niceties of the &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll watch&lt;/code&gt; cycle; livereload,
+&lt;p&gt;Then, you get all the niceties of the &lt;code&gt;jekyll watch&lt;/code&gt; cycle; livereload,
 auto-compilation of scss assets, etc.&lt;/p&gt;
 
 &lt;p&gt;And if you need to do something interesting with the formatting or layout of
@@ -251,7 +360,7 @@ pages doesn’t let you do. What it (GH pages) &lt;em&gt;does&lt;/em&gt; let you
 a bunch of files (html, js, css) in a repo and just serve them as-is. These
 files represent the “built” version of your site, not the source, so you’ll
 probably want a separate repo for your content (e.g. your markdown files) and
-the built site. Handling this stuff can be a hassle, so here’s the &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt; I
+the built site. Handling this stuff can be a hassle, so here’s the &lt;code&gt;Makefile&lt;/code&gt; I
 use to make it easy.&lt;/p&gt;
 
 &lt;p&gt;The basic process is:&lt;/p&gt;
@@ -263,41 +372,41 @@ to have your blog content under version control)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;create a separate project on GitLab called
-&lt;code class=&quot;highlighter-rouge&quot;&gt;$(GH_USERNAME)/$(GH_USERNAME).github.io.git&lt;/code&gt;, but don’t create anything in
+&lt;code&gt;$(GH_USERNAME)/$(GH_USERNAME).github.io.git&lt;/code&gt;, but don’t create anything in
 there yet&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;make init&lt;/code&gt; will turn the local jekyll build directory into a git repo&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;make init&lt;/code&gt; will turn the local jekyll build directory into a git repo&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;make push&lt;/code&gt; target will build your site (locally) and push it up to GitHub,
+    &lt;p&gt;&lt;code&gt;make push&lt;/code&gt; target will build your site (locally) and push it up to GitHub,
 where it’ll be served by GitHub pages&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;After that, you can work on, commit &amp;amp; push your blog wherever you like (I
 actually keep the content in the &lt;a href=&quot;https://github.com/benswift/benswift.github.io&quot;&gt;same GH
-repo&lt;/a&gt;, but in a &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; branch)
+repo&lt;/a&gt;, but in a &lt;code&gt;source&lt;/code&gt; branch)
 but you can push the built site to the master branch so GH pages will serve it
 up for you.&lt;/p&gt;
 
-&lt;div class=&quot;language-make highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;BASE_HTML_DIR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;_site
-&lt;span class=&quot;nv&quot;&gt;GH_USERNAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;benswift &lt;span class=&quot;c&quot;&gt;# change this to your GH username&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-make&quot;&gt;BASE_HTML_DIR=_site
+GH_USERNAME=benswift # change this to your GH username
 
-&lt;span class=&quot;nl&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;push&lt;/span&gt;
+all: push
 
-&lt;span class=&quot;nl&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$(BASE_HTML_DIR)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$(BASE_HTML_DIR)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git init &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git remote add origin git@github.com:&lt;span class=&quot;nv&quot;&gt;$(GH_USERNAME)&lt;/span&gt;/&lt;span class=&quot;nv&quot;&gt;$(GH_USERNAME)&lt;/span&gt;.github.io.git
+init:
+	mkdir -p $(BASE_HTML_DIR) &amp;amp;&amp;amp; cd $(BASE_HTML_DIR) &amp;amp;&amp;amp; git init . &amp;amp;&amp;amp; git remote add origin git@github.com:$(GH_USERNAME)/$(GH_USERNAME).github.io.git
 
-&lt;span class=&quot;nl&quot;&gt;generate-blog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll build
+generate-blog:
+	bundle exec jekyll build
 
-&lt;span class=&quot;nl&quot;&gt;commit-all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generate-blog&lt;/span&gt;
-	&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$(BASE_HTML_DIR)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;update blog&quot;&lt;/span&gt;
+commit-all: generate-blog
+	cd $(BASE_HTML_DIR) &amp;amp;&amp;amp; git add . &amp;amp;&amp;amp; git commit -m &quot;update blog&quot;
 
-&lt;span class=&quot;nl&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;commit-all&lt;/span&gt;
-	&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$(BASE_HTML_DIR)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+push: commit-all
+	cd $(BASE_HTML_DIR) &amp;amp;&amp;amp; git push origin master
+&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:hassle&quot;&gt;
@@ -446,45 +555,4 @@ the presentation&lt;/a&gt;.&lt;/p&gt;
 tonight&lt;/a&gt;. Sorry about the late notice to anyone
 who uses this blog to come to my gigs—I really should set up a newsletter or
 something. I think there are still a few tickets left ($5, available from the
-website linked above).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><summary type="html">I’m playing a livecoding set at the ACT Science Week launch party tonight. Sorry about the late notice to anyone who uses this blog to come to my gigs—I really should set up a newsletter or something. I think there are still a few tickets left ($5, available from the website linked above).</summary></entry><entry><title type="html">COMP1720 teaser</title><link href="https://benswift.me/2017/07/10/comp1720-teaser.html" rel="alternate" type="text/html" title="COMP1720 teaser" /><published>2017-07-10T00:00:00+10:00</published><updated>2017-07-10T00:00:00+10:00</updated><id>https://benswift.me/2017/07/10/comp1720-teaser</id><content type="html" xml:base="https://benswift.me/2017/07/10/comp1720-teaser.html">&lt;p&gt;If you’re an ANU student and you want to learn how to make art with code, then
-sign up for &lt;a href=&quot;http://programsandcourses.anu.edu.au/course/COMP1720&quot;&gt;COMP1720/6720 in semester 2,
-2017&lt;/a&gt;. Taught by me and a
-bunch of internationally recognised artists (there’s a weekly computational
-artist guest lecture) it’s the best way to scratch the art+code itch at the ANU.&lt;/p&gt;
-
-&lt;p&gt;No previous programming or artistic experience is required: we’ll teach you both
-things from the ground up, then we’ll teach you to put them together.&lt;/p&gt;
-
-&lt;p&gt;Here are 5 reasons you should take COMP1720 this year (number 4 will &lt;strong&gt;shock&lt;/strong&gt;
-you!):&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;the course has been tweaked from last year’s version: this year we’ll make
-art in the browser (with javascript and the &lt;a href=&quot;https://p5js.org/&quot;&gt;p5 library&lt;/a&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the major project theme this year will be ANU Grand Challenges—here’s your
-chance to say something about the big problems facing the world&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;if you’re doing a CS degree but find some of the programming stuff a bit
-difficult, here’s a secret: &lt;em&gt;making art with code is how &lt;strong&gt;I&lt;/strong&gt; learned to
-program&lt;/em&gt;. This course is the perfect chance to make sure those fundamentals
-are solid, and will teach you skills you can use in all of your CS courses
-(even the non-arty ones)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;this year we’ll be doing more sound/music stuff than ever before (because, as
-you’ll know if you’ve seen me perform or clicked around this site a bit, I
-love me some code + music)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;if you’re not a computer science student, but you’ve heard that computers are
-going to eat all of the jobs in the future and you want to get on board, then
-this is a perfect “intro to programming” course, and you’ll learn about how
-to communicate through interactive digital media&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;So head on down to student services and sign up.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">If you’re an ANU student and you want to learn how to make art with code, then sign up for COMP1720/6720 in semester 2, 2017. Taught by me and a bunch of internationally recognised artists (there’s a weekly computational artist guest lecture) it’s the best way to scratch the art+code itch at the ANU.</summary></entry></feed>
+website linked above).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><summary type="html">I’m playing a livecoding set at the ACT Science Week launch party tonight. Sorry about the late notice to anyone who uses this blog to come to my gigs—I really should set up a newsletter or something. I think there are still a few tickets left ($5, available from the website linked above).</summary></entry></feed>

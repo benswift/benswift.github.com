@@ -9,10 +9,12 @@
 
 <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 
-<link rel="stylesheet"
-		   href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark-470b7658ef8aee2f2bb86babcc8a359491361d94113130f47878659a07f47eac.css">
+
+<script>
+ hljs.initHighlightingOnLoad();
+</script>
 
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
@@ -81,7 +83,7 @@ pages doesn’t let you do. What it (GH pages) <em>does</em> let you do, though,
 a bunch of files (html, js, css) in a repo and just serve them as-is. These
 files represent the “built” version of your site, not the source, so you’ll
 probably want a separate repo for your content (e.g. your markdown files) and
-the built site. Handling this stuff can be a hassle, so here’s the <code class="highlighter-rouge">Makefile</code> I
+the built site. Handling this stuff can be a hassle, so here’s the <code>Makefile</code> I
 use to make it easy.</p>
 
 <p>The basic process is:</p>
@@ -93,41 +95,41 @@ to have your blog content under version control)</p>
   </li>
   <li>
     <p>create a separate project on GitLab called
-<code class="highlighter-rouge">$(GH_USERNAME)/$(GH_USERNAME).github.io.git</code>, but don’t create anything in
+<code>$(GH_USERNAME)/$(GH_USERNAME).github.io.git</code>, but don’t create anything in
 there yet</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">make init</code> will turn the local jekyll build directory into a git repo</p>
+    <p><code>make init</code> will turn the local jekyll build directory into a git repo</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">make push</code> target will build your site (locally) and push it up to GitHub,
+    <p><code>make push</code> target will build your site (locally) and push it up to GitHub,
 where it’ll be served by GitHub pages</p>
   </li>
 </ol>
 
 <p>After that, you can work on, commit &amp; push your blog wherever you like (I
 actually keep the content in the <a href="https://github.com/benswift/benswift.github.io">same GH
-repo</a>, but in a <code class="highlighter-rouge">source</code> branch)
+repo</a>, but in a <code>source</code> branch)
 but you can push the built site to the master branch so GH pages will serve it
 up for you.</p>
 
-<div class="language-make highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">BASE_HTML_DIR</span><span class="o">=</span>_site
-<span class="nv">GH_USERNAME</span><span class="o">=</span>benswift <span class="c"># change this to your GH username</span>
+<pre><code class="language-make">BASE_HTML_DIR=_site
+GH_USERNAME=benswift # change this to your GH username
 
-<span class="nl">all</span><span class="o">:</span> <span class="nf">push</span>
+all: push
 
-<span class="nl">init</span><span class="o">:</span>
-	<span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$(BASE_HTML_DIR)</span> <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$(BASE_HTML_DIR)</span> <span class="o">&amp;&amp;</span> git init <span class="nb">.</span> <span class="o">&amp;&amp;</span> git remote add origin git@github.com:<span class="nv">$(GH_USERNAME)</span>/<span class="nv">$(GH_USERNAME)</span>.github.io.git
+init:
+	mkdir -p $(BASE_HTML_DIR) &amp;&amp; cd $(BASE_HTML_DIR) &amp;&amp; git init . &amp;&amp; git remote add origin git@github.com:$(GH_USERNAME)/$(GH_USERNAME).github.io.git
 
-<span class="nl">generate-blog</span><span class="o">:</span>
-	bundle <span class="nb">exec </span>jekyll build
+generate-blog:
+	bundle exec jekyll build
 
-<span class="nl">commit-all</span><span class="o">:</span> <span class="nf">generate-blog</span>
-	<span class="nb">cd</span> <span class="nv">$(BASE_HTML_DIR)</span> <span class="o">&amp;&amp;</span> git add <span class="nb">.</span> <span class="o">&amp;&amp;</span> git commit <span class="nt">-m</span> <span class="s2">"update blog"</span>
+commit-all: generate-blog
+	cd $(BASE_HTML_DIR) &amp;&amp; git add . &amp;&amp; git commit -m "update blog"
 
-<span class="nl">push</span><span class="o">:</span> <span class="nf">commit-all</span>
-	<span class="nb">cd</span> <span class="nv">$(BASE_HTML_DIR)</span> <span class="o">&amp;&amp;</span> git push origin master
-</code></pre></div></div>
+push: commit-all
+	cd $(BASE_HTML_DIR) &amp;&amp; git push origin master
+</code></pre>
 <div class="footnotes">
   <ol>
     <li id="fn:hassle">
@@ -186,7 +188,7 @@ beats ε hassle ∀ε&gt;0, especially when there’s other work to be done. <a
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/ec21f62">ec21f62</a></code>,
+	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/728e45c">728e45c</a></code>,
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 

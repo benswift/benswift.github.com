@@ -9,10 +9,12 @@
 
 <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 
-<link rel="stylesheet"
-		   href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark-470b7658ef8aee2f2bb86babcc8a359491361d94113130f47878659a07f47eac.css">
+
+<script>
+ hljs.initHighlightingOnLoad();
+</script>
 
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
@@ -84,13 +86,13 @@
 <p>not all randomness is created equal</p>
 <p>but this <strong>isn’t</strong> a maths lecture</p></section><section id="three-useful-types-for-artists"><h2 id="three-useful-types-for-artists">three useful types for artists</h2>
 <ol>
-  <li>uniform: <a href="https://p5js.org/reference/#/p5/random"><code class="highlighter-rouge">random([min], [max])</code></a>
+  <li>uniform: <a href="https://p5js.org/reference/#/p5/random"><code>random([min], [max])</code></a>
 </li>
-  <li>gaussian: <a href="https://p5js.org/reference/#/p5/randomGaussian"><code class="highlighter-rouge">randomGaussian()</code></a>
+  <li>gaussian: <a href="https://p5js.org/reference/#/p5/randomGaussian"><code>randomGaussian()</code></a>
 </li>
-  <li>discrete: <a href="https://p5js.org/reference/#/p5/random"><code class="highlighter-rouge">random(choices)</code></a> (Array version)</li>
+  <li>discrete: <a href="https://p5js.org/reference/#/p5/random"><code>random(choices)</code></a> (Array version)</li>
 </ol></section><section id="uniform-random-numbers"><h2 id="uniform-random-numbers">uniform random numbers</h2>
-<p>start with two numbers (<code class="highlighter-rouge">min</code> and <code class="highlighter-rouge">max</code>)</p>
+<p>start with two numbers (<code>min</code> and <code>max</code>)</p>
 <p>picks any number between those two numbers</p>
 <p>all numbers in the range are <strong>equally likely</strong></p>
 <p>this last point is the key attribute of random numbers</p></section><section data-background-image="/assets/images/talks/creative-potential-of-random/Gauss_1840_by_Jensen-e880860a0a985ae19018ada953d8cd8bb79c9998eccd0cebfdf51b99397148ce.jpg" data-background-size="contain">
@@ -106,8 +108,8 @@
 more likely than others</p>
 <p>e.g. coin toss, roll of the dice, football match</p>
 <p>let’s have a look at the reference for
-<a href="https://p5js.org/reference/#/p5/random"><code class="highlighter-rouge">random()</code></a> again…</p>
-<p>if <code class="highlighter-rouge">random()</code> is passed one parameter which is an array, then the return value
+<a href="https://p5js.org/reference/#/p5/random"><code>random()</code></a> again…</p>
+<p>if <code>random()</code> is passed one parameter which is an array, then the return value
 will be one of the elements of the array, selected at random (all equally
 likely)</p></section><section id="discrete-random-variables-with-different-likelihoods"><h2 id="discrete-random-variables-with-different-likelihoods">discrete random variables with <em>different likelihoods</em>
 </h2>
@@ -122,7 +124,7 @@ var roll = random(loadedDice);
 <p>another approach: if you want one thing to happen e.g. 10% of the time, and
 something else to happen the other 90%</p>
 <ol>
-  <li>use <code class="highlighter-rouge">random(100)</code> to get a random number between 0 and 100</li>
+  <li>use <code>random(100)</code> to get a random number between 0 and 100</li>
   <li>if the result is <em>less than</em> 10, do the first thing, otherwise do the other
 thing</li>
 </ol></section><section id="mapping-using-randomness-effectively"><h2 id="mapping-using-randomness-effectively">mapping: using randomness effectively</h2>
@@ -136,15 +138,15 @@ to control: <strong>position</strong>, <strong>size/shape</strong>, <strong>colo
 <p>what’s the right balance between <strong>predictability</strong> and <strong>surprise</strong>?</p>
 <p>choosing where to use randomness, where not to use it, and what type of
 randomness to use: <em>this is where the art happens</em></p></section><section id="re-creating-the-random-pixels-image"><h2 id="re-creating-the-random-pixels-image">re-creating the random pixels image</h2>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">loadPixels</span><span class="p">();</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">pixels</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="p">)</span>
-        <span class="nx">pixels</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">else</span>
-        <span class="nx">pixels</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nx">updatePixels</span><span class="p">();</span>
-</code></pre></div></div></section><section data-background-image="/assets/images/talks/creative-potential-of-random/blue-poles-2502d5c7bc76a3f245ec1608dd22bb557ba99b4761a81a6f836fcc2839520600.jpg" data-background-size="cover">
+<pre><code class="language-javascript">loadPixels();
+for (var i = 0; i &lt; pixels.length; i++) {
+    if (random() &lt; 0.5)
+        pixels[i] = 0;
+    else
+        pixels[i] = 255;
+}
+updatePixels();
+</code></pre></section><section data-background-image="/assets/images/talks/creative-potential-of-random/blue-poles-2502d5c7bc76a3f245ec1608dd22bb557ba99b4761a81a6f836fcc2839520600.jpg" data-background-size="cover">
   
   <h2>re-creating Blue Poles?</h2>
   
