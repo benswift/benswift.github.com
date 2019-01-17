@@ -8,7 +8,7 @@ The way it's currently done for <https://benswift.me> is that
 1. a custom build of highlight.js is produced with
 
 ```plaintext
-node tools/build.js armasm bash clojure cmake cpp cs css diff dockerfile glsl go haskell http java javascript json julia llvm makefile markdown objectivec pgsql processing python r ruby rust scala scheme scss shell sql tex typescript yaml xtlang
+node tools/build.js --target browser --no-compress armasm bash clojure cmake cpp cs css diff dockerfile glsl go haskell http java javascript json julia llvm makefile markdown objectivec pgsql processing python r ruby rust scala scheme scss shell sql tex typescript yaml xtlang
 ```
 
 2. copy the `highlightjs.pack.js` file into the `assets/js` folder
