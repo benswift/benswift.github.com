@@ -5200,7 +5200,7 @@ hljs.registerLanguage('xtlang', function(hljs) {
       SHEBANG, NUMBER, XTLANG_TYPE, STRING, QUOTED_IDENT, SPECIAL_OPERATORS, QUOTED_LIST, IDENT ,LIST
     ].concat(COMMENT)
   };
-};);
+});
 
 hljs.registerLanguage('yaml', function(hljs) {
   var LITERALS = 'true false yes no null';
