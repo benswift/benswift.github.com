@@ -188,7 +188,9 @@ tweak to suit your own presentation.</p>
 <pre><code class="language-html">&lt;!-- this is where the reveailfy filter gets applied --&gt;
 {{ content | revealify }}
 
-&lt;!-- load the reveal.js source (assuming you've put it in assets/)--&gt;
+&lt;!-- load the reveal.js css &amp; js (assuming you've put it in assets/)--&gt;
+&lt;link rel="stylesheet" href="{{site.baseurl}}/assets/reveal.js-3.7.0/css/reveal.css"&gt;
+&lt;link rel="stylesheet" href="{{site.baseurl}}/assets/reveal.js-3.7.0/css/theme/white.css"&gt;
 &lt;script src="{{site.baseurl}}/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"&gt;&lt;/script&gt;
 
 &lt;!-- configure the presentation, (you can tweak options to suit) --&gt;
@@ -317,7 +319,7 @@ turning your content into nice looking slides then you’ve got a head start :)<
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/9409be7">9409be7</a></code>,
+	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/b903245">b903245</a></code>,
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 

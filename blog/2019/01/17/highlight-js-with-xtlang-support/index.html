@@ -138,16 +138,16 @@ for my blog.</p>
 
 <pre><code class="language-xtlang">(bind-func my-test-7
   (lambda ()
-	(let ((a:&lt;i64,double&gt;* (alloc)) ; returns pointer to type &lt;i64,double&gt;
-		  (b 37)
-		  (c 6.4))
-	  (tuple-set! a 0 b) ;; set i64 to 64
-	  (tset! a 1 c) ;; set double to 6.4 - tset! is an alias for tuple-set!
-	  (printf "tuple:1 %lld::%f\n" (tuple-ref a 0) (tref a 1))
-	  ;; we can fill a tuple in a single call by using tfill!
-	  (tfill! a 77 77.7)
-	  (printf "tuple:2 %lld::%f\n" (tuple-ref a 0) (tuple-ref a 1))
-	  (tuple-ref a 0)))) ;; return first element which is i64
+    (let ((a:&lt;i64,double&gt;* (alloc)) ; returns pointer to type &lt;i64,double&gt;
+          (b 37)
+          (c 6.4))
+      (tuple-set! a 0 b) ;; set i64 to 64
+      (tset! a 1 c) ;; set double to 6.4 - tset! is an alias for tuple-set!
+      (printf "tuple:1 %lld::%f\n" (tuple-ref a 0) (tref a 1))
+      ;; we can fill a tuple in a single call by using tfill!
+      (tfill! a 77 77.7)
+      (printf "tuple:2 %lld::%f\n" (tuple-ref a 0) (tuple-ref a 1))
+      (tuple-ref a 0)))) ;; return first element which is i64
 </code></pre>
 
 <h3 id="when-will-we-get-this-syntax-colouring-goodness-when-viewing-extempore-code-on-github">When will we get this syntax colouring goodness when viewing Extempore code on GitHub?</h3>
@@ -239,7 +239,7 @@ things that way.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/9409be7">9409be7</a></code>,
+	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/b903245">b903245</a></code>,
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
