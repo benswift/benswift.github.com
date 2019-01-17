@@ -87,16 +87,24 @@ for example. However, most of these require you to put each slide in a new <code
 file, which is a pain.</p>
 
 <p>What I want to do is to write one <code>.md</code> file per presentation, and have the
-sections (separated by <code>##</code> headings) to determine the slide splits (this is how
-<a href="https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc">pandoc does it</a>).</p>
+level 1 and level 2 headings (i.e. <code>#</code> and <code>##</code>) determine the slide splits
+(this is pretty much how <a href="https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc">pandoc does
+it</a>).</p>
 
-<p>I wrote a simple <a href="https://jekyllrb.com/docs/plugins/">Jekyll</a> to make this
-happen—which has just a couple of moving parts</p>
+<p>I wrote a simple <a href="https://jekyllrb.com/docs/plugins/">Jekyll plugin</a> to make
+this happen—which has just a couple of moving parts</p>
 
 <p class="hl-para">Because the source for this <a href="https://github.com/benswift/benswift.github.io/">whole blog is on
 GH</a>, then you can just head
 there and see it for yourself if you’re the sort of person who prefers reading
 code to prose. Think of this blog post as a “companion piece”.</p>
+
+<h2 id="0-download-the-revealjs-source">0. download the reveal.js source</h2>
+
+<p>It’s step 0 because it’s super easy—just head to
+<a href="https://github.com/hakimel/reveal.js/releases">GitHub</a>, download &amp; unzip the
+latest release. You can put it wherever you like in your main site folder; I
+usually put it in <code>assets/</code>.</p>
 
 <h2 id="the-revealify-filter">1. the revealify <a href="https://jekyllrb.com/docs/plugins/filters/">filter</a></h2>
 
@@ -309,7 +317,7 @@ turning your content into nice looking slides then you’ve got a head start :)<
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/2470a3b">2470a3b</a></code>,
+	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/b859086">b859086</a></code>,
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 

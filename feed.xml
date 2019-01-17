@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-18T08:26:07+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-18T08:30:52+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
   &lt;p&gt;It is a truth, universally acknowledged, that all programming language authors
 must also be expert web developers.    &lt;strong&gt;Jane Austen&lt;/strong&gt; &lt;em&gt;(probably)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -187,16 +187,24 @@ for example. However, most of these require you to put each slide in a new &lt;c
 file, which is a pain.&lt;/p&gt;
 
 &lt;p&gt;What I want to do is to write one &lt;code&gt;.md&lt;/code&gt; file per presentation, and have the
-sections (separated by &lt;code&gt;##&lt;/code&gt; headings) to determine the slide splits (this is how
-&lt;a href=&quot;https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc&quot;&gt;pandoc does it&lt;/a&gt;).&lt;/p&gt;
+level 1 and level 2 headings (i.e. &lt;code&gt;#&lt;/code&gt; and &lt;code&gt;##&lt;/code&gt;) determine the slide splits
+(this is pretty much how &lt;a href=&quot;https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc&quot;&gt;pandoc does
+it&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;I wrote a simple &lt;a href=&quot;https://jekyllrb.com/docs/plugins/&quot;&gt;Jekyll&lt;/a&gt; to make this
-happen—which has just a couple of moving parts&lt;/p&gt;
+&lt;p&gt;I wrote a simple &lt;a href=&quot;https://jekyllrb.com/docs/plugins/&quot;&gt;Jekyll plugin&lt;/a&gt; to make
+this happen—which has just a couple of moving parts&lt;/p&gt;
 
 &lt;p class=&quot;hl-para&quot;&gt;Because the source for this &lt;a href=&quot;https://github.com/benswift/benswift.github.io/&quot;&gt;whole blog is on
 GH&lt;/a&gt;, then you can just head
 there and see it for yourself if you’re the sort of person who prefers reading
 code to prose. Think of this blog post as a “companion piece”.&lt;/p&gt;
+
+&lt;h2 id=&quot;0-download-the-revealjs-source&quot;&gt;0. download the reveal.js source&lt;/h2&gt;
+
+&lt;p&gt;It’s step 0 because it’s super easy—just head to
+&lt;a href=&quot;https://github.com/hakimel/reveal.js/releases&quot;&gt;GitHub&lt;/a&gt;, download &amp;amp; unzip the
+latest release. You can put it wherever you like in your main site folder; I
+usually put it in &lt;code&gt;assets/&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-revealify-filter&quot;&gt;1. the revealify &lt;a href=&quot;https://jekyllrb.com/docs/plugins/filters/&quot;&gt;filter&lt;/a&gt;&lt;/h2&gt;
 
