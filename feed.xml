@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-17T18:07:02+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-17T18:45:11+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
   &lt;p&gt;It is a truth, universally acknowledged, that all programming language authors
 must also be expert web developers.    &lt;strong&gt;Jane Austen&lt;/strong&gt; &lt;em&gt;(probably)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -80,6 +80,13 @@ for my blog.&lt;/p&gt;
 &lt;a href=&quot;https://github.com/github/linguist&quot;&gt;linguist&lt;/a&gt; for this sort of thing. So
 getting it working on GH would involve porting the language definitions to that
 project as well.&lt;/p&gt;
+
+&lt;h3 id=&quot;will-it-always-be-this-complicated-to-set-up&quot;&gt;Will it always be this complicated to set up?&lt;/h3&gt;
+
+&lt;p&gt;No, once the &lt;a href=&quot;https://github.com/highlightjs/highlight.js/pull/1888&quot;&gt;aformentioned issue&lt;/a&gt;
+is sorted out, it should be much easier to get a “base” package of highlight.js
+from the main download website/CDN, and then to add any extras (e.g.
+Extempore/xtlang) as needed. But until that happens, shenanigans are required.&lt;/p&gt;
 
 &lt;h3 id=&quot;whats-with-the-jane-austen-quote-above-then&quot;&gt;What’s with the Jane Austen quote above, then?&lt;/h3&gt;
 

@@ -9,7 +9,11 @@
   font-size: 20px;
   line-height: 1.4;
   color: #333;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 @supports (font-variation-settings: normal) {
   :root {
@@ -112,7 +116,7 @@ blockquote:before {
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 0.25em;
+  margin-right: 0.1em;
   vertical-align: -0.4em; }
 
 blockquote p {
