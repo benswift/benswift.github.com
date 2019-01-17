@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-17T21:47:23+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-18T08:26:07+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
   &lt;p&gt;It is a truth, universally acknowledged, that all programming language authors
 must also be expert web developers.    &lt;strong&gt;Jane Austen&lt;/strong&gt; &lt;em&gt;(probably)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -280,10 +280,10 @@ tweak to suit your own presentation.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!-- this is where the reveailfy filter gets applied --&amp;gt;
 {{ content | revealify }}
 
-&amp;lt;!-- load the reveal.js source --&amp;gt;
-&amp;lt;script src=&quot;/reveal.js-3.6.0/js/reveal.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;!-- load the reveal.js source (assuming you've put it in assets/)--&amp;gt;
+&amp;lt;script src=&quot;/assets/reveal.js-3.7.0/js/reveal.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
 
-&amp;lt;!-- configure the presentation --&amp;gt;
+&amp;lt;!-- configure the presentation, (you can tweak options to suit) --&amp;gt;
 &amp;lt;script&amp;gt;
  Reveal.initialize({
 
@@ -320,8 +320,12 @@ tweak to suit your own presentation.&lt;/p&gt;
 &amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; I’m ommitting some details here about how to set up everything (e.g.
-putting the reveal.js source folder in the right place).&lt;/p&gt;
+&lt;p class=&quot;hl-para&quot;&gt;The full &lt;a href=&quot;https://jekyllrb.com/docs/layouts/&quot;&gt;layout&lt;/a&gt; file will depend on how
+the rest of your site works (where you’ve put the &lt;code&gt;reveal.js-x.x.x&lt;/code&gt; folder,
+etc.) so I haven’t included the full file here (you can &lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html&quot;&gt;see it on
+GitHub&lt;/a&gt;,
+though). Also remember that you can see the full list of reveal configuration
+options &lt;a href=&quot;https://github.com/hakimel/reveal.js#configuration&quot;&gt;in the README&lt;/a&gt;:&lt;/p&gt;
 
 &lt;h2 id=&quot;3-write-your-slides-as-markdown-content&quot;&gt;3. write your slides as markdown content&lt;/h2&gt;
 

@@ -180,10 +180,10 @@ tweak to suit your own presentation.</p>
 <pre><code class="language-html">&lt;!-- this is where the reveailfy filter gets applied --&gt;
 {{ content | revealify }}
 
-&lt;!-- load the reveal.js source --&gt;
-&lt;script src="/reveal.js-3.6.0/js/reveal.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;!-- load the reveal.js source (assuming you've put it in assets/)--&gt;
+&lt;script src="/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"&gt;&lt;/script&gt;
 
-&lt;!-- configure the presentation --&gt;
+&lt;!-- configure the presentation, (you can tweak options to suit) --&gt;
 &lt;script&gt;
  Reveal.initialize({
 
@@ -220,8 +220,12 @@ tweak to suit your own presentation.</p>
 &lt;/script&gt;
 </code></pre>
 
-<p><em>Note:</em> I’m ommitting some details here about how to set up everything (e.g.
-putting the reveal.js source folder in the right place).</p>
+<p class="hl-para">The full <a href="https://jekyllrb.com/docs/layouts/">layout</a> file will depend on how
+the rest of your site works (where you’ve put the <code>reveal.js-x.x.x</code> folder,
+etc.) so I haven’t included the full file here (you can <a href="https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html">see it on
+GitHub</a>,
+though). Also remember that you can see the full list of reveal configuration
+options <a href="https://github.com/hakimel/reveal.js#configuration">in the README</a>:</p>
 
 <h2 id="3-write-your-slides-as-markdown-content">3. write your slides as markdown content</h2>
 
@@ -305,7 +309,7 @@ turning your content into nice looking slides then you’ve got a head start :)<
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/14eaa61">14eaa61</a></code>,
+	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/2470a3b">2470a3b</a></code>,
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
