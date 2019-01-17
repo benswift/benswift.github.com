@@ -21,13 +21,22 @@ date: 2019-01-17 10:54 +1100
 	  (tuple-ref a 0)))) ;; return first element which is i64
 ```
 
-And just to make sure that it still works with the other languages that I like
-(or in some cases, hatecode):
+And just to make sure that it still works with the other languages that I like.
 
 ```scheme
 (define ben-doubler 
   (lambda (x)
     (* x 2)))
+```
+
+```armasm
+labelious:
+  sub r0, 1
+  bne doneski
+  b labelious
+
+doneski:
+  nop
 ```
 
 Wow. That's so great.
