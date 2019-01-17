@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-18T08:41:29+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-18T08:57:44+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
   &lt;p&gt;It is a truth, universally acknowledged, that all programming language authors
 must also be expert web developers.    &lt;strong&gt;Jane Austen&lt;/strong&gt; &lt;em&gt;(probably)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -279,7 +279,7 @@ body tag has this in it (you’ll need to make sure it’s got the right paths &
 other stuff for your setup). The key part is that first &lt;code&gt;{{ content |
 revealify }}&lt;/code&gt; line—that takes the content of your page (the jekyll
 &lt;code&gt;.md&lt;/code&gt; file with &lt;code&gt;layout: reveal&lt;/code&gt; in the frontmatter) and passes it through the
-filter defined in the &lt;a href=&quot;#the-revealify-filter&quot;&gt;revealify filter&lt;/a&gt;.&lt;/p&gt;
+“revealify” filter plugin we &lt;a href=&quot;#the-revealify-filter&quot;&gt;made earlier&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The configuration stuff here is just the example config from
 &lt;a href=&quot;https://github.com/hakimel/reveal.js#configuration&quot;&gt;reveal.js&lt;/a&gt;, so feel free to
@@ -289,7 +289,7 @@ tweak to suit your own presentation.&lt;/p&gt;
 {{ content | revealify }}
 
 &amp;lt;!-- load the reveal.js source (assuming you've put it in assets/)--&amp;gt;
-&amp;lt;script src=&quot;/assets/reveal.js-3.7.0/js/reveal.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&quot;{{site.baseurl}}/assets/reveal.js-3.7.0/js/reveal.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
 
 &amp;lt;!-- configure the presentation, (you can tweak options to suit) --&amp;gt;
 &amp;lt;script&amp;gt;

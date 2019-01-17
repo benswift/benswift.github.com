@@ -179,7 +179,7 @@ body tag has this in it (you’ll need to make sure it’s got the right paths &
 other stuff for your setup). The key part is that first <code>{{ content |
 revealify }}</code> line—that takes the content of your page (the jekyll
 <code>.md</code> file with <code>layout: reveal</code> in the frontmatter) and passes it through the
-filter defined in the <a href="#the-revealify-filter">revealify filter</a>.</p>
+“revealify” filter plugin we <a href="#the-revealify-filter">made earlier</a>.</p>
 
 <p>The configuration stuff here is just the example config from
 <a href="https://github.com/hakimel/reveal.js#configuration">reveal.js</a>, so feel free to
@@ -189,7 +189,7 @@ tweak to suit your own presentation.</p>
 {{ content | revealify }}
 
 &lt;!-- load the reveal.js source (assuming you've put it in assets/)--&gt;
-&lt;script src="/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="{{site.baseurl}}/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"&gt;&lt;/script&gt;
 
 &lt;!-- configure the presentation, (you can tweak options to suit) --&gt;
 &lt;script&gt;
@@ -317,7 +317,7 @@ turning your content into nice looking slides then you’ve got a head start :)<
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/3740173">3740173</a></code>,
+	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/9409be7">9409be7</a></code>,
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
