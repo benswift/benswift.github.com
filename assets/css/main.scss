@@ -91,9 +91,13 @@ pre > code {
 
 // for FontAwesome SVGs
 
-svg.icon {
+.icon svg {
 	width: 2em;
 	height: 2em;
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    vertical-align: -.125em;
 	color: $link-color;
 }
 
