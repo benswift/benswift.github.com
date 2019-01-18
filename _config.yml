@@ -24,6 +24,7 @@ future: true
 
 # Build settings
 markdown: kramdown
+highlighter: none
 
 exclude:
   - Makefile
@@ -33,6 +34,7 @@ defaults:
       type: posts
     values:
       layout: post
+      permalink: /blog/:year/:month/:day/:title/
   -
     scope:
       type: talks
@@ -46,8 +48,6 @@ pagination:
   sort_reverse: true
 
 collections:
-  projects:
-    output: true
   talks:
     output: true
 

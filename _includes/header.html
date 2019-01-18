@@ -6,19 +6,22 @@
 
   <nav class="navigation">
 	<!-- in-site navigation -->
-	<a href="{% link blog.md %}">blog</a>
-	<a href="{% link research.md %}">research</a>
-	<a href="{% link teaching.md %}">teaching</a>
-	<a href="{% link talks.md %}">talks</a>
-	<a href="{% link bio.md %}">bio</a>
+	{% assign url_components = page.url | downcase | split: '/' %}
+	{% assign current = url_components[1] %}
+
+	<a {% if current == "blog" %}class="current"{% endif %}href="{% link blog.md %}">blog</a>
+	<a {% if current == "research" %}class="current"{% endif %}href="{% link research.md %}">research</a>
+	<a {% if current == "teaching" %}class="current"{% endif %}href="{% link teaching.md %}">teaching</a>
+	<a {% if current == "talks" %}class="current"{% endif %}href="{% link talks.md %}">talks</a>
+	<a {% if current == "bio" %}class="current"{% endif %}href="{% link bio.md %}">bio</a>
 
 	<!-- social icons -->
-	<a href="https://github.com/benswift">{% fa_svg fab.fa-github %}</a>
-	<a href="https://twitter.com/benswift">{% fa_svg fab.fa-twitter %}</a>
-	<a href="https://vimeo.com/benswift">{% fa_svg fab.fa-vimeo %}</a>
-	<a href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ">{% fa_svg fas.fa-graduation-cap %}</a>
-	<a href="{{ site.baseurl }}/feed.xml">{% fa_svg fas.fa-rss %}</a>
-	<a href="mailto:{{ site.email }}">{% fa_svg fas.fa-envelope %}</a>
+	<a title="Visit benswift on GitHub" href="https://github.com/benswift">{% fa_svg fab.fa-github %}</a>
+	<a title="Visit benswift on twitter" href="https://twitter.com/benswift">{% fa_svg fab.fa-twitter %}</a>
+	<a title="Visit benswift on Vimeo" href="https://vimeo.com/benswift">{% fa_svg fab.fa-vimeo %}</a>
+	<a title="Visit Ben's Google Scholar profile" href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ">{% fa_svg fas.fa-graduation-cap %}</a>
+	<a title="View RSS feed for this blog" href="{{ site.baseurl }}/feed.xml">{% fa_svg fas.fa-rss %}</a>
+	<a title="Send Ben an email" href="mailto:{{ site.email }}">{% fa_svg fas.fa-envelope %}</a>
   </nav>
 
 </header>

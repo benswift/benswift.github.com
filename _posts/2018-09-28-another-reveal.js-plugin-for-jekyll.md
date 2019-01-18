@@ -17,11 +17,12 @@ for example. However, most of these require you to put each slide in a new `.md`
 file, which is a pain.
 
 What I want to do is to write one `.md` file per presentation, and have the
-sections (separated by `##` headings) to determine the slide splits (this is how
-[pandoc does it](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)).
+level 1 and level 2 headings (i.e. `#` and `##`) determine the slide splits
+(this is pretty much how [pandoc does
+it](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)).
 
-I wrote a simple [Jekyll](https://jekyllrb.com/docs/plugins/) to make this
-happen---which has just a couple of moving parts
+I wrote a simple [Jekyll plugin](https://jekyllrb.com/docs/plugins/) to make
+this happen---which has just a couple of moving parts
 
 {:.hl-para}
 
@@ -30,69 +31,20 @@ GH](https://github.com/benswift/benswift.github.io/), then you can just head
 there and see it for yourself if you're the sort of person who prefers reading
 code to prose. Think of this blog post as a "companion piece".
 
+## 0. download the reveal.js source
+
+It's step 0 because it's super easy---just head to
+[GitHub](https://github.com/hakimel/reveal.js/releases), download & unzip the
+latest release. You can put it wherever you like in your main site folder; I
+usually put it in `assets/`.
+
 ## 1. the revealify [filter](https://jekyllrb.com/docs/plugins/filters/) {#the-revealify-filter}
 
 First, put this code into a `revealify.rb` file in your Jekyll `_plugins`
 directory:
 
 ```ruby
-# (c) Ben Swift 2018, MIT Licence
-# ben.swift@anu.edu.au
-
-# a liquid filter for turning regular md output into the <section>-enclosed
-# chunks required by reveal.js
-
-require 'jekyll'
-require 'nokogiri'
-
-module Jekyll
-
-  module Revealify
-
-    def revealify(html)
-
-      # parse content
-      content = Nokogiri::HTML.fragment(html)
-
-      # create an empty node
-      reveal_div = Nokogiri::HTML.fragment('<div class="reveal"><div class="slides"></div></div>', 'UTF-8')
-      slides_div = reveal_div.search('.slides').first
-
-      content.xpath("*").each do |element|
-
-        # <section> elements should be passed through as-is
-        if element.matches? "section"
-          slides_div.add_child(element.dup)
-
-        else
-          # on "split" elements (<h1>, <h2>, <hr>)
-          if element.matches? "h1,h2,hr"
-            current_section = slides_div.add_child("<section>").first
-            # hoist all the header's attributes up to the wrapper element
-            # not sure if this will always work, but here goes...
-            element.keys.each do |attribute|
-              # relies on the fact that the "current" wrapper node is the last child in ret
-              current_section[attribute] = element[attribute]
-              # element.delete attribute
-            end
-          end
-
-          # add the element to the current <section> (i.e. the current slide)
-          # unless it's just an <hr> (which are used for splitting only)
-          current_section = slides_div.last_element_child
-          current_section.add_child(element.dup) unless element.matches? "hr"
-        end
-
-      end
-
-      reveal_div.to_html
-    end
-
-  end
-
-end
-
-Liquid::Template.register_filter(Jekyll::Revealify)
+{% include symlinks/revealify.rb %}
 ```
 
 ## 2. add a reveal [layout](https://jekyllrb.com/docs/layouts/)
@@ -103,7 +55,7 @@ body tag has this in it (you'll need to make sure it's got the right paths &
 other stuff for your setup). The key part is that first `{% raw %}{{ content |
 revealify }}{% endraw %}` line---that takes the content of your page (the jekyll
 `.md` file with `layout: reveal` in the frontmatter) and passes it through the
-filter defined in the [revealify filter](#the-revealify-filter).
+"revealify" filter plugin we [made earlier](#the-revealify-filter).
 
 The configuration stuff here is just the example config from
 [reveal.js](https://github.com/hakimel/reveal.js#configuration), so feel free to
@@ -113,10 +65,12 @@ tweak to suit your own presentation.
 <!-- this is where the reveailfy filter gets applied -->
 {% raw %}{{ content | revealify }}{% endraw %}
 
-<!-- load the reveal.js source -->
-<script src="{{site.baseurl}}/reveal.js-3.6.0/js/reveal.js" type="text/javascript"></script>
+<!-- load the reveal.js css & js (assuming you've put it in assets/)-->
+<link rel="stylesheet" href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/reveal.css">
+<link rel="stylesheet" href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/theme/white.css">
+<script src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"></script>
 
-<!-- configure the presentation -->
+<!-- configure the presentation, (you can tweak options to suit) -->
 <script>
  Reveal.initialize({
 
@@ -153,8 +107,14 @@ tweak to suit your own presentation.
 </script>
 ```
 
-*Note:* I'm ommitting some details here about how to set up everything (e.g.
-putting the reveal.js source folder in the right place).
+{:.hl-para}
+
+The full [layout](https://jekyllrb.com/docs/layouts/) file will depend on how
+the rest of your site works (where you've put the `reveal.js-x.x.x` folder,
+etc.) so I haven't included the full file here (you can [see it on
+GitHub](https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html),
+though). Also remember that you can see the full list of reveal configuration
+options [in the README](https://github.com/hakimel/reveal.js#configuration):
 
 ## 3. write your slides as markdown content
 

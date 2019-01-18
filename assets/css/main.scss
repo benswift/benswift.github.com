@@ -22,6 +22,12 @@
 	line-height: 1.4;
 	color: $text-color;
 	background-color: $background-color;
+	box-sizing: border-box;
+}
+
+// advice based on https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
 @supports (font-variation-settings: normal) {
@@ -56,7 +62,6 @@ strong {
 	font-weight: 900;
 }
 
-// this is largely pinched from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 code {
 	font-family: "Courier Prime", "Courier", monospace;
 	color: darken($highlight-color, 10%);
@@ -105,6 +110,10 @@ svg.icon {
 		padding: 0.2rem;
 	}
 
+	.current {
+		border-bottom: 5px solid $highlight-color;
+	}
+
 	.disabled {
 		color: $text-grey;
 		cursor: not-allowed;
@@ -120,7 +129,6 @@ header {
 	nav.logo {
 		a {
 			font-size: 1.3rem;
-			font-weight: 700;
 			background-color: $highlight-color;
 			color: white;
 			padding: 0.4rem 0.8rem;
@@ -159,7 +167,7 @@ footer {
 	color: $text-grey;
 }
 
-.post + .post {
+.post {
 	border-top: 1px solid $highlight-color;
 }
 
@@ -177,7 +185,7 @@ blockquote:before {
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
-    margin-right: 0.25em;
+    margin-right: 0.1em;
     vertical-align: -0.4em;
 }
 blockquote p {
