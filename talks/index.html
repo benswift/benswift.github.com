@@ -14,9 +14,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
 
 <script>
- anchors.options.visible = "touch";
+ anchors.options = {
+   visible: "touch",
+   icon: "#"
+ };
  document.addEventListener("DOMContentLoaded", function(event) {
-   anchors.add("article h2, article h3");
+   anchors.add("article > h2, article > h3");
  });
 </script>
 
@@ -49,7 +52,7 @@
 <!-- End Jekyll SEO tag -->
 
 
-	<link rel="stylesheet" type="text/css" href="/assets/css/main-9c70d449602c176d2ea3d569ac1732905a15cd19b4ad64ed8d588d05849e9f93.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/main-271baad50513c3e5786767af03b43da842db68c75c05c0c3e6832cee1a3f4554.css">
   </head>
   <body>
 	<div class="container">
@@ -96,7 +99,7 @@ making it happen.</p>
 
 <!-- show the posts on this page -->
 
-<section class="post">
+<section class="post-excerpt">
   <p class="post-date">11 Jan '19</p>
   <h2><a href="/talks/pop-production/">Pop-production as problem-solving</a></h2>
   
@@ -106,7 +109,7 @@ making it happen.</p>
 
 </section>
 
-<section class="post">
+<section class="post-excerpt">
   <p class="post-date">19 Nov '18</p>
   <h2><a href="/talks/code-2k18/">The ANU Laptop Ensemble</a></h2>
   
@@ -116,7 +119,7 @@ making it happen.</p>
 
 </section>
 
-<section class="post">
+<section class="post-excerpt">
   <p class="post-date">07 Nov '18</p>
   <h2><a href="/talks/world-since-google/">The World Since Google</a></h2>
   
@@ -126,7 +129,7 @@ making it happen.</p>
 
 </section>
 
-<section class="post">
+<section class="post-excerpt">
   <p class="post-date">07 May '18</p>
   <h2><a href="/talks/role-of-myth-in-AI/">ARTH2165: the role of myth in AI</a></h2>
   
@@ -136,7 +139,7 @@ making it happen.</p>
 
 </section>
 
-<section class="post">
+<section class="post-excerpt">
   <p class="post-date">06 Sep '17</p>
   <h2><a href="/talks/p5-hour-of-code/">Drawing like a 5-year-old</a></h2>
   
@@ -146,7 +149,7 @@ making it happen.</p>
 
 </section>
 
-<section class="post">
+<section class="post-excerpt">
   <p class="post-date">17 Aug '17</p>
   <h2><a href="/talks/creative-potential-of-random/">The creative potential of random</a></h2>
   
@@ -205,7 +208,7 @@ making it happen.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/7d7aaf6">7d7aaf6</a></code>,
+	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/ab60be2">ab60be2</a></code>,
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
