@@ -47,7 +47,7 @@ code {
   border-radius: 0.2rem; }
 
 pre > code {
-  background: #282c34;
+  background-color: #282c34;
   border-radius: 0; }
 
 .container {
@@ -77,12 +77,11 @@ header {
     margin-bottom: 15px; }
     header nav.logo a {
       font-size: 1.3rem;
-      background-color: #be2edd;
-      color: white;
+      background: linear-gradient(to left, #be2edd, #8c1ba4);
+      color: #fafafa;
       padding: 0.4rem 0.8rem; }
       header nav.logo a:hover {
-        color: #be2edd;
-        background-color: #fafafa; }
+        color: #333; }
   header a {
     font-weight: 900; }
 
