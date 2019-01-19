@@ -30,6 +30,11 @@ a {
   a:hover {
     color: #fafafa;
     background-color: #333; }
+  a.anchorjs-link {
+    color: #be2edd;
+    background-color: inherit; }
+    a.anchorjs-link:hover {
+      color: #793188; }
 
 h1, h2, h3 {
   font-weight: 900; }
