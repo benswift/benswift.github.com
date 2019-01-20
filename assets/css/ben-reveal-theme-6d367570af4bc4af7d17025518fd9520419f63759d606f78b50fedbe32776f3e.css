@@ -63,7 +63,7 @@
   font-weight: 300;
   line-height: 1.3;
   text-align: left; }
-  .reveal .slides section * {
+  .reveal .slides section > * {
     margin-bottom: 1rem; }
   .reveal .slides section em {
     font-style: italic; }
@@ -73,7 +73,7 @@
     color: #793188;
     text-decoration: none;
     font-weight: 900;
-    transition-property: color background-color;
+    transition-property: color, background-color;
     transition-duration: 0.5s; }
     .reveal .slides section a:hover {
       color: #fafafa;
@@ -88,6 +88,9 @@
     background-color: rgba(255, 255, 255, 0.75);
     display: table;
     padding: 0.2em 0.4em; }
+  .reveal .slides section li {
+    list-style: inside;
+    margin-bottom: 0.2rem; }
   .reveal .slides section .talk-title {
     border-bottom-color: #be2edd;
     border-bottom-style: solid;
@@ -96,10 +99,14 @@
     font-style: italic;
     font-size: 0.8em;
     color: #777; }
-  .reveal .slides section .talk-title-navigation > a {
-    margin-right: 1em; }
+  .reveal .slides section .talk-title-navigation {
+    font-size: 1.3em;
+    width: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
   .reveal .slides section.impact {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     color: #fafafa;
     font-weight: 900; }
@@ -107,9 +114,6 @@
       color: #f39c12; }
     .reveal .slides section.impact a {
       color: #cc5ae4; }
-  .reveal .slides section li {
-    list-style: inside;
-    margin-bottom: 0.2rem; }
   .reveal .slides section code {
     font-family: "Courier Prime", "Courier", monospace;
     font-weight: 400;

@@ -44,17 +44,18 @@
 	margin-top: 1rem;
 
 	// give everything room to breathe
-	* { margin-bottom: 1rem; }
+	&>* { margin-bottom: 1rem; }
 
 	// text
 	font-weight: 300;
 	line-height: 1.3;
+	text-align: left;
 
 	// inline emphasis
 	em { font-style: italic; }
 	strong { font-weight: 900; }
 
-	// undecorate links
+	// links
 	a {
 		color: $link-color;
 		text-decoration: none;
@@ -65,10 +66,9 @@
 			background-color: $text-color;
 
 		}
-		transition-property: color background-color;
+		transition-property: color, background-color;
 		transition-duration: 0.5s;
 	}
-	text-align: left;
 
     // headers
 	h1 {
@@ -88,8 +88,13 @@
         }
     }
 
-	// title slides
+	// lists
+	li {
+		list-style: inside;
+		margin-bottom: 0.2rem;
+	}
 
+	// title slide
 	.talk-title {
         border-bottom-color: $highlight-color;
         border-bottom-style: solid;
@@ -100,26 +105,24 @@
 		font-size: 0.8em;
 		color: $text-grey;
 	}
-	.talk-title-navigation > a {
-		margin-right: 1em;
+	.talk-title-navigation {
+		font-size: 1.3em;
+		width: 8em;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
     // impact slides
 	// slide background needs to be provided through data-background-color
     &.impact {
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
         color: $background-color;
         font-weight: 900;
         strong { color: #f39c12; }
 		a { color: lighten($highlight-color, 10%); }
     }
-
-	// lists
-	li {
-		list-style: inside;
-		margin-bottom: 0.2rem;
-	}
 
 	// source code display
 	code {
@@ -194,8 +197,8 @@
 	}
 }
 
+// slide-number boxes in bottom-right-hand-corner
 .reveal {
-
 	.slide-number {
 
 		a {

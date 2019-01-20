@@ -25,7 +25,7 @@ a {
   color: #793188;
   text-decoration: none;
   font-weight: 900;
-  transition-property: color background-color;
+  transition-property: color, background-color;
   transition-duration: 0.5s; }
   a:hover {
     color: #fafafa;
