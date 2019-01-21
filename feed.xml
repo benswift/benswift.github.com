@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-21T09:53:17+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-21T22:44:56+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Photos from ACMC 2009</title><link href="https://benswift.me/blog/2019/01/21/photos-from-acmc-2009/" rel="alternate" type="text/html" title="Photos from ACMC 2009" /><published>2019-01-21T22:29:00+11:00</published><updated>2019-01-21T22:29:00+11:00</updated><id>https://benswift.me/blog/2019/01/21/photos-from-acmc-2009</id><content type="html" xml:base="https://benswift.me/blog/2019/01/21/photos-from-acmc-2009/">&lt;p&gt;Wow, this was a blast from the past. Here are a few photos of me from the 2009
+Australasian Computer Music Conference in Queensland, Australia. Here’s me
+giving my research talk, entitled &lt;em&gt;Distributed Performance in Livecoding&lt;/em&gt;.&lt;/p&gt;
+
+&lt;picture&gt;&lt;img alt=&quot;Ben giving a research talk&quot; src=&quot;/assets/images/posts/photos-from-acmc-2009/ben-giving-a-research-talk-d4d5fb3cc733e2da5e65747c5d0e34d4a34443d4798dffcd839a23c7cac8b015.jpg&quot; /&gt;&lt;/picture&gt;
+
+&lt;p&gt;And here’s my livecoding set later in the night (the main event—the research
+talk was just a talk about the infrastructure I was using in this set).&lt;/p&gt;
+
+&lt;picture&gt;&lt;img alt=&quot;Ben performing at ACMC 09&quot; src=&quot;/assets/images/posts/photos-from-acmc-2009/ben-performing-closeup-7f9ee6c47176ddc867b716a58400eba7d1dad9f6e59197926c1415fa08e9f759.jpg&quot; /&gt;&lt;/picture&gt;
+
+&lt;p&gt;The cool thing about this gig was that I’d written a companion iPhone app, so
+that I could choose certain parameters &amp;amp; program structures in my code, and push
+them out to audience members (on the fly) so that they could take over
+controlling those parameters. Here’s a shot of folks hopefully enjoing the set:&lt;/p&gt;
+
+&lt;picture&gt;&lt;img alt=&quot;crowd shot from ACMC distributed livecoding gig&quot; src=&quot;/assets/images/posts/photos-from-acmc-2009/ben-performing-crowd-shot-f32942eeb25c92c27a0b119165e7baf072845085a04c7850a958b8e941ae31a5.jpg&quot; /&gt;&lt;/picture&gt;
+
+&lt;p&gt;Sadly, no video recordings survived from this gig. Just as well, actually,
+because I had a resource leak in my networking code which ended up making the
+whole system unresponsive after about 10mins of performing. I remember furiously
+trying to debug it on-the-fly (the music was still playing, but I couldn’t
+change anything) but I don’t think I managed to salvage it very gracefully. Ah,
+livecoding—a good learning experience for sure.&lt;/p&gt;
+
+&lt;p&gt;Many thanks to &lt;a href=&quot;https://twitter.com/algomusic&quot;&gt;Andrew Brown&lt;/a&gt; for (1) taking
+these photos and (2) keeping the album online after all these years.&lt;sup id=&quot;fnref:ab&quot;&gt;&lt;a href=&quot;#fn:ab&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:ab&quot;&gt;
+
+      &lt;p&gt;AB, if you’re reading this, I know that you put the photos online under an
+“all rights reserved” rather than CC-BY or something like that, but
+hopefully you don’t mind me keeping them here for posterity. &lt;a href=&quot;#fnref:ab&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Wow, this was a blast from the past. Here are a few photos of me from the 2009 Australasian Computer Music Conference in Queensland, Australia. Here’s me giving my research talk, entitled Distributed Performance in Livecoding.</summary></entry><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
   &lt;p&gt;It is a truth, universally acknowledged, that all programming language authors
 must also be expert web developers.    &lt;strong&gt;Jane Austen&lt;/strong&gt; &lt;em&gt;(probably)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -573,8 +610,4 @@ details about tomorrow’s ritual, and read the
 today: the &lt;a href=&quot;https://alpha.editor.p5js.org/&quot;&gt;p5 web editor&lt;/a&gt; and the &lt;a href=&quot;/talks/p5-hour-of-code/&quot;&gt;slides for
 the presentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Have fun!&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, Telopea Hour of Code students. Here are a couple of links you’ll need today: the p5 web editor and the slides for the presentation.</summary></entry><entry><title type="html">Science Week gig</title><link href="https://benswift.me/blog/2017/08/11/science-week-gig/" rel="alternate" type="text/html" title="Science Week gig" /><published>2017-08-11T00:00:00+10:00</published><updated>2017-08-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2017/08/11/science-week-gig</id><content type="html" xml:base="https://benswift.me/blog/2017/08/11/science-week-gig/">&lt;p&gt;I’m playing a livecoding set at the &lt;a href=&quot;https://www.scienceweek.net.au/&quot;&gt;ACT Science Week launch party
-tonight&lt;/a&gt;. Sorry about the late notice to anyone
-who uses this blog to come to my gigs—I really should set up a newsletter or
-something. I think there are still a few tickets left ($5, available from the
-website linked above).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><summary type="html">I’m playing a livecoding set at the ACT Science Week launch party tonight. Sorry about the late notice to anyone who uses this blog to come to my gigs—I really should set up a newsletter or something. I think there are still a few tickets left ($5, available from the website linked above).</summary></entry></feed>
+&lt;p&gt;Have fun!&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, Telopea Hour of Code students. Here are a couple of links you’ll need today: the p5 web editor and the slides for the presentation.</summary></entry></feed>
