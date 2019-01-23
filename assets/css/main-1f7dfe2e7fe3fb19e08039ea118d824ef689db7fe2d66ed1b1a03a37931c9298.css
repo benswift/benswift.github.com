@@ -136,8 +136,15 @@ blockquote p {
 img {
   width: 100%; }
 
-.bibliography li + li {
+.bibliography li + li, .lcset-bibliography li + li {
   margin-top: 1em; }
+.bibliography .lcset-date, .lcset-bibliography .lcset-date {
+  font-style: italic;
+  color: #777; }
+.bibliography .lcset-event, .lcset-bibliography .lcset-event {
+  font-weight: 900; }
+.bibliography li > p, .lcset-bibliography li > p {
+  margin: 0; }
 
 @media screen and (min-width: 1000px) {
   .container {
