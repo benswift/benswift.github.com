@@ -143,8 +143,10 @@ img {
   color: #777; }
 .bibliography .lcset-event, .lcset-bibliography .lcset-event {
   font-weight: 900; }
+.bibliography .lcset-place, .lcset-bibliography .lcset-place {
+  font-style: italic; }
 .bibliography li > p, .lcset-bibliography li > p {
-  margin: 0; }
+  margin: 0.2em 0; }
 
 @media screen and (min-width: 1000px) {
   .container {
