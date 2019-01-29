@@ -86,7 +86,7 @@ header {
       color: #fafafa;
       padding: 0.4rem 0.8rem; }
       header nav.logo a:hover {
-        color: #333; }
+        text-decoration: underline; }
   header a {
     font-weight: 900; }
 
