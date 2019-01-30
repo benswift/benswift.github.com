@@ -136,17 +136,19 @@ blockquote p {
 img {
   width: 100%; }
 
-.bibliography li + li, .lcset-bibliography li + li {
-  margin-top: 1em; }
-.bibliography .lcset-date, .lcset-bibliography .lcset-date {
+.bibliography p, .livecoding-bibliography p {
+  margin: 0.4em 0; }
+.bibliography li + li, .livecoding-bibliography li + li {
+  margin-top: 2em; }
+.bibliography .date, .livecoding-bibliography .date {
   font-style: italic;
+  font-weight: 400;
   color: #777; }
-.bibliography .lcset-event, .lcset-bibliography .lcset-event {
+.bibliography .event, .livecoding-bibliography .event {
   font-weight: 900; }
-.bibliography .lcset-place, .lcset-bibliography .lcset-place {
-  font-style: italic; }
-.bibliography li > p, .lcset-bibliography li > p {
-  margin: 0.2em 0; }
+.bibliography .venue, .livecoding-bibliography .venue {
+  font-style: italic;
+  font-weight: 400; }
 
 @media screen and (min-width: 1000px) {
   .container {
