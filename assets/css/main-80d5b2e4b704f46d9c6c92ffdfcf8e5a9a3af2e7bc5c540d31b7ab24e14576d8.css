@@ -147,8 +147,7 @@ img {
 .bibliography .event, .livecoding-bibliography .event {
   font-weight: 900; }
 .bibliography .venue, .livecoding-bibliography .venue {
-  font-style: italic;
-  font-weight: 400; }
+  font-weight: 600; }
 
 @media screen and (min-width: 1000px) {
   .container {
