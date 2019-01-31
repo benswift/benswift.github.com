@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-31T11:47:24+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T09:53:00+11:00</published><updated>2019-01-31T09:53:00+11:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-01-31T11:49:33+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T09:53:00+11:00</published><updated>2019-01-31T09:53:00+11:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
 annotations and visualisations for live
 code&lt;/a&gt;. If you
 haven’t read it, go do that now—and make sure you have some
@@ -32,7 +32,7 @@ bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it’s something Andrew Sorensen and I have written
 about before in our paper &lt;a href=&quot;https://doi.org/10.1109/LIVE.2013.6617345&quot;&gt;Visual Code Annotations for Cyberphysical
 Programming&lt;/a&gt; (2013) in the &lt;em&gt;1st
-International Workshop on Live Programming (LIVE)&lt;/em&gt; (it’s reference
+International Workshop on Live Programming (LIVE)&lt;/em&gt;&lt;sup id=&quot;fnref:preprint&quot;&gt;&lt;a href=&quot;#fn:preprint&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; (it’s reference
 #4 in the essay). I’ll refer to this a bit in this post, so let’s call it “the
 LIVE paper”.&lt;/p&gt;
 
@@ -56,7 +56,7 @@ explicitly represented in the first place).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;But&lt;/strong&gt;, (you can probably tell that there was going to be a “but” somewhere)
 many of the cool annotations displayed don’t work while the code is being
-edited&lt;sup id=&quot;fnref:broken&quot;&gt;&lt;a href=&quot;#fn:broken&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. In some cases they actually break the code (try editing one of
+edited&lt;sup id=&quot;fnref:broken&quot;&gt;&lt;a href=&quot;#fn:broken&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. In some cases they actually break the code (try editing one of
 the &lt;code&gt;'x*ox*xo--x*x*o'&lt;/code&gt; patterns while the code’s running—you’ll end up with
 new stuff in your pattern that you didn’t put there).&lt;/p&gt;
 
@@ -113,7 +113,7 @@ with your code is super helpful.&lt;/p&gt;
 
 &lt;p&gt;In principle visual code annotations can be even more useful to the livecoder
 because they allow her to “audition” algorithmic changes to the code
-without&lt;sup id=&quot;fnref:feedback&quot;&gt;&lt;a href=&quot;#fn:feedback&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; actually eval-ing the code and changing the music. Here’s an
+without&lt;sup id=&quot;fnref:feedback&quot;&gt;&lt;a href=&quot;#fn:feedback&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; actually eval-ing the code and changing the music. Here’s an
 example from the essay:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;Euclid(9,16)/* 1010110101011010 */ 
@@ -159,12 +159,17 @@ further information in them not covered in this essay. Thank you!&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Oh well. Mad props to Charlie for putting this out there for comment and
-discussion, and hopefully there are a new generation of publications&lt;sup id=&quot;fnref:distill&quot;&gt;&lt;a href=&quot;#fn:distill&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;
+discussion, and hopefully there are a new generation of publications&lt;sup id=&quot;fnref:distill&quot;&gt;&lt;a href=&quot;#fn:distill&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;
 where this stuff can be front-and-centre, not just a weird “supplemental web
 materials” section to a traditional pdf.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
+    &lt;li id=&quot;fn:preprint&quot;&gt;
+
+      &lt;p&gt;if you don’t have institutional access to the IEEE then just &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;email
+me&lt;/a&gt; and I can send you a pre-print. &lt;a href=&quot;#fnref:preprint&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
     &lt;li id=&quot;fn:broken&quot;&gt;
       &lt;p&gt;Charlie, if I’m doing it wrong, please let me know :) &lt;a href=&quot;#fnref:broken&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
