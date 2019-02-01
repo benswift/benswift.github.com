@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-01T10:54:17+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T09:53:00+11:00</published><updated>2019-01-31T09:53:00+11:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-01T12:58:32+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T09:53:00+11:00</published><updated>2019-01-31T09:53:00+11:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
 annotations and visualisations for live
 code&lt;/a&gt;. If you
 haven’t read it, go do that now—and make sure you have some
@@ -231,38 +231,38 @@ me to share it? I’ll give you authoreal credit and hugs.&lt;/p&gt;
 
 &lt;h3 id=&quot;australian-council-of-deans-of-ict-2017&quot;&gt;Australian Council of Deans of ICT 2017&lt;/h3&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;Ben livecoding at the Council of Deans' of ICT meeting&quot; src=&quot;/assets/images/posts/livecoding-photo-roundup/ben-at-alta-ea6ead66b09aada4f0c763588849100bb77725472581d0c7a5c3509b48403eb0.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;Ben livecoding at the Council of Deans' of ICT meeting&quot; src=&quot;/assets/images/livecoding/ben-alta-1bdb44759d6da9243abda26c0180c3d0360b28477964d48898557417d32d727c.jpg&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;from &lt;a href=&quot;https://twitter.com/FalknerKatrina/status/854861227809361920&quot;&gt;@FalknerKatrina&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;australian-institute-of-physics-congress-2014&quot;&gt;Australian Institute of Physics Congress 2014&lt;/h3&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;Ben livecoding a physics simulation at AIP congress&quot; src=&quot;/assets/images/posts/livecoding-photo-roundup/ben-at-AIP-congress-c4f31abd5b8e441562fe95f7f3d27760447e26415c4ec07d27bd8c6fa6f8fadb.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;Ben livecoding a physics simulation at AIP congress&quot; src=&quot;/assets/images/livecoding/ben-AIP-congress-4883e9cc8697e49d86297c73a1c5ba560fd5b7d86cdefc272a660c9208bb520c.jpg&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;from &lt;a href=&quot;https://twitter.com/starstoofondly/status/542177320321024000&quot;&gt;@starstoofondly&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;australasian-computer-music-conference-acmc-2007&quot;&gt;Australasian Computer Music Conference (ACMC) 2007&lt;/h3&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;ACMC attendees hanging out at Kremlin bar&quot; src=&quot;/assets/images/posts/livecoding-photo-roundup/ben-acmc-07-kremlin-d2cc1816c40a4940809715a329ea5c2c6bcc136dd6d9f15d7a6e8c48f900222f.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;ACMC attendees hanging out at Kremlin bar&quot; src=&quot;/assets/images/livecoding/ben-acmc-07-kremlin-b07aff65f2c691da0e926a4e3257a9f15d5f385fc7e479e310ef5e1939cd6128.jpg&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;This isn’t me &lt;em&gt;performing&lt;/em&gt;, unless you count my animated conversation with
 Gordon Monro as a performance.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">Inspired by yesterday’s post, I’m trying to find all the photos of me doing livecoding gigs over the past 10 years. If you’ve got an old photo of me doing my thing, then can you either email or tweet at me to share it? I’ll give you authoreal credit and hugs.</summary></entry><entry><title type="html">Photos from ACMC 2009</title><link href="https://benswift.me/blog/2019/01/21/photos-from-acmc-2009/" rel="alternate" type="text/html" title="Photos from ACMC 2009" /><published>2019-01-21T22:29:00+11:00</published><updated>2019-01-21T22:29:00+11:00</updated><id>https://benswift.me/blog/2019/01/21/photos-from-acmc-2009</id><content type="html" xml:base="https://benswift.me/blog/2019/01/21/photos-from-acmc-2009/">&lt;p&gt;Wow, this was a blast from the past. Here are a few photos of me from the 2009
 Australasian Computer Music Conference in Queensland, Australia. Here’s me
 giving my research talk, entitled &lt;em&gt;Distributed Performance in Livecoding&lt;/em&gt;.&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;Ben giving a research talk&quot; src=&quot;/assets/images/posts/photos-from-acmc-2009/ben-giving-a-research-talk-d4d5fb3cc733e2da5e65747c5d0e34d4a34443d4798dffcd839a23c7cac8b015.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;Ben giving a research talk&quot; src=&quot;/assets/images/livecoding/ben-acmc-09-research-talk-685c74f44c22ec68cbb231efedc0cfbf9ba7aa092e594223b17025ed66f962ec.jpg&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;And here’s my livecoding set later in the night (the main event—the research
 talk was just a talk about the infrastructure I was using in this set).&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;Ben performing at ACMC 09&quot; src=&quot;/assets/images/posts/photos-from-acmc-2009/ben-performing-closeup-7f9ee6c47176ddc867b716a58400eba7d1dad9f6e59197926c1415fa08e9f759.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;Ben performing at ACMC 09&quot; src=&quot;/assets/images/livecoding/ben-acmc-09-closeup-8720b495d0d1282afeede01f1377f32aebbd3ee0ffafd04e20f6993af38ff36a.jpg&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;The cool thing about this gig was that I’d written a companion iPhone app, so
 that I could choose certain parameters &amp;amp; program structures in my code, and push
 them out to audience members (on the fly) so that they could take over
 controlling those parameters. Here’s a shot of folks hopefully enjoing the set:&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;crowd shot from ACMC distributed livecoding gig&quot; src=&quot;/assets/images/posts/photos-from-acmc-2009/ben-performing-crowd-shot-f32942eeb25c92c27a0b119165e7baf072845085a04c7850a958b8e941ae31a5.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;crowd shot from ACMC distributed livecoding gig&quot; src=&quot;/assets/images/livecoding/ben-acmc-09-crowd-shot-7140e97d0d79fda8961d1060b44d60a56e28e7364130f3a0ab6e993cfe3ae906.jpg&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;Sadly, no video recordings survived from this gig. Just as well, actually,
 because I had a resource leak in my networking code which ended up making the
