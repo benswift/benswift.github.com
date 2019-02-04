@@ -144,7 +144,7 @@ img {
   font-style: italic;
   font-weight: 400;
   color: #777; }
-.bibliography .event, .livecoding-bibliography .event {
+.bibliography .title, .livecoding-bibliography .title {
   font-weight: 900; }
 .bibliography .venue, .livecoding-bibliography .venue {
   font-weight: 600; }

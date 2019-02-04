@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-01T12:58:32+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T09:53:00+11:00</published><updated>2019-01-31T09:53:00+11:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-04T16:48:14+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T06:53:00+08:00</published><updated>2019-01-31T06:53:00+08:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
 annotations and visualisations for live
 code&lt;/a&gt;. If you
 haven’t read it, go do that now—and make sure you have some
@@ -193,7 +193,7 @@ privilege livecoding environments which work in the brower, so that’s not
 ideal either. Hmm.) &lt;a href=&quot;#fnref:distill&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.</summary></entry><entry><title type="html">Oils from 威海</title><link href="https://benswift.me/blog/2019/01/29/oils-from-weihai/" rel="alternate" type="text/html" title="Oils from 威海" /><published>2019-01-29T12:24:00+11:00</published><updated>2019-01-29T12:24:00+11:00</updated><id>https://benswift.me/blog/2019/01/29/oils-from-weihai</id><content type="html" xml:base="https://benswift.me/blog/2019/01/29/oils-from-weihai/">&lt;p&gt;One of my academic responsibilities is teaching our ANU Computer Science
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.</summary></entry><entry><title type="html">Oils from 威海</title><link href="https://benswift.me/blog/2019/01/29/oils-from-weihai/" rel="alternate" type="text/html" title="Oils from 威海" /><published>2019-01-29T09:24:00+08:00</published><updated>2019-01-29T09:24:00+08:00</updated><id>https://benswift.me/blog/2019/01/29/oils-from-weihai</id><content type="html" xml:base="https://benswift.me/blog/2019/01/29/oils-from-weihai/">&lt;p&gt;One of my academic responsibilities is teaching our ANU Computer Science
 programs into our various partner institutions overseas. One of these partner
 institutions is &lt;a href=&quot;https://en.wh.sdu.edu.cn/enDefault.html&quot;&gt;Shandong University
 WeiHai&lt;/a&gt; (SDUW).&lt;/p&gt;
@@ -221,13 +221,16 @@ were painting the background) but by the time they were putting on the
 facial details 3hrs in I was &lt;em&gt;way&lt;/em&gt; too tired to keep my smile up 😊 &lt;a href=&quot;#fnref:tired&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">One of my academic responsibilities is teaching our ANU Computer Science programs into our various partner institutions overseas. One of these partner institutions is Shandong University WeiHai (SDUW).</summary></entry><entry><title type="html">Old livecoding photo roundup</title><link href="https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup/" rel="alternate" type="text/html" title="Old livecoding photo roundup" /><published>2019-01-22T13:12:00+11:00</published><updated>2019-01-22T13:12:00+11:00</updated><id>https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup</id><content type="html" xml:base="https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup/">&lt;p&gt;Inspired by &lt;a href=&quot;/blog/2019/01/21/photos-from-acmc-2009/&quot;&gt;yesterday’s post&lt;/a&gt;, I’m trying to find all the
-photos of me doing livecoding gigs over the past 10 years. If you’ve got an old
-photo of me doing my thing, then can you either
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">One of my academic responsibilities is teaching our ANU Computer Science programs into our various partner institutions overseas. One of these partner institutions is Shandong University WeiHai (SDUW).</summary></entry><entry><title type="html">Old livecoding photo roundup</title><link href="https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup/" rel="alternate" type="text/html" title="Old livecoding photo roundup" /><published>2019-01-22T10:12:00+08:00</published><updated>2019-01-22T10:12:00+08:00</updated><id>https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup</id><content type="html" xml:base="https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup/">&lt;p&gt;I’m trying to find all the photos of me doing livecoding gigs over the past 10
+years. If you’ve got an old photo of me doing my thing, then can you either
 &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;email&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;tweet&lt;/a&gt; at
 me to share it? I’ll give you authoreal credit and hugs.&lt;/p&gt;
 
-&lt;p&gt;Ok, here are the ones I’ve got so far:&lt;/p&gt;
+&lt;p&gt;For any photos of actual gigs, they’ll go into the
+&lt;a href=&quot;/livecoding/index.html&quot;&gt;livecoding&lt;/a&gt; section of this website.
+However, I also do lots of other presentations, talks and demos which don’t
+really count as “gigs”. For those, I’ll just add the photos here as they turn
+up.&lt;/p&gt;
 
 &lt;h3 id=&quot;australian-council-of-deans-of-ict-2017&quot;&gt;Australian Council of Deans of ICT 2017&lt;/h3&gt;
 
@@ -246,44 +249,7 @@ me to share it? I’ll give you authoreal credit and hugs.&lt;/p&gt;
 &lt;picture&gt;&lt;img alt=&quot;ACMC attendees hanging out at Kremlin bar&quot; src=&quot;/assets/images/livecoding/ben-acmc-07-kremlin-b07aff65f2c691da0e926a4e3257a9f15d5f385fc7e479e310ef5e1939cd6128.jpg&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;This isn’t me &lt;em&gt;performing&lt;/em&gt;, unless you count my animated conversation with
-Gordon Monro as a performance.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">Inspired by yesterday’s post, I’m trying to find all the photos of me doing livecoding gigs over the past 10 years. If you’ve got an old photo of me doing my thing, then can you either email or tweet at me to share it? I’ll give you authoreal credit and hugs.</summary></entry><entry><title type="html">Photos from ACMC 2009</title><link href="https://benswift.me/blog/2019/01/21/photos-from-acmc-2009/" rel="alternate" type="text/html" title="Photos from ACMC 2009" /><published>2019-01-21T22:29:00+11:00</published><updated>2019-01-21T22:29:00+11:00</updated><id>https://benswift.me/blog/2019/01/21/photos-from-acmc-2009</id><content type="html" xml:base="https://benswift.me/blog/2019/01/21/photos-from-acmc-2009/">&lt;p&gt;Wow, this was a blast from the past. Here are a few photos of me from the 2009
-Australasian Computer Music Conference in Queensland, Australia. Here’s me
-giving my research talk, entitled &lt;em&gt;Distributed Performance in Livecoding&lt;/em&gt;.&lt;/p&gt;
-
-&lt;picture&gt;&lt;img alt=&quot;Ben giving a research talk&quot; src=&quot;/assets/images/livecoding/ben-acmc-09-research-talk-685c74f44c22ec68cbb231efedc0cfbf9ba7aa092e594223b17025ed66f962ec.jpg&quot; /&gt;&lt;/picture&gt;
-
-&lt;p&gt;And here’s my livecoding set later in the night (the main event—the research
-talk was just a talk about the infrastructure I was using in this set).&lt;/p&gt;
-
-&lt;picture&gt;&lt;img alt=&quot;Ben performing at ACMC 09&quot; src=&quot;/assets/images/livecoding/ben-acmc-09-closeup-8720b495d0d1282afeede01f1377f32aebbd3ee0ffafd04e20f6993af38ff36a.jpg&quot; /&gt;&lt;/picture&gt;
-
-&lt;p&gt;The cool thing about this gig was that I’d written a companion iPhone app, so
-that I could choose certain parameters &amp;amp; program structures in my code, and push
-them out to audience members (on the fly) so that they could take over
-controlling those parameters. Here’s a shot of folks hopefully enjoing the set:&lt;/p&gt;
-
-&lt;picture&gt;&lt;img alt=&quot;crowd shot from ACMC distributed livecoding gig&quot; src=&quot;/assets/images/livecoding/ben-acmc-09-crowd-shot-7140e97d0d79fda8961d1060b44d60a56e28e7364130f3a0ab6e993cfe3ae906.jpg&quot; /&gt;&lt;/picture&gt;
-
-&lt;p&gt;Sadly, no video recordings survived from this gig. Just as well, actually,
-because I had a resource leak in my networking code which ended up making the
-whole system unresponsive after about 10mins of performing. I remember furiously
-trying to debug it on-the-fly (the music was still playing, but I couldn’t
-change anything) but I don’t think I managed to salvage it very gracefully. Ah,
-livecoding—a good learning experience for sure.&lt;/p&gt;
-
-&lt;p&gt;Many thanks to &lt;a href=&quot;https://twitter.com/algomusic&quot;&gt;Andrew Brown&lt;/a&gt; for (1) taking
-these photos and (2) keeping the album online after all these years.&lt;sup id=&quot;fnref:ab&quot;&gt;&lt;a href=&quot;#fn:ab&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:ab&quot;&gt;
-
-      &lt;p&gt;AB, if you’re reading this, I know that you put the photos online under an
-“all rights reserved” rather than CC-BY or something like that, but
-hopefully you don’t mind me keeping them here for posterity. &lt;a href=&quot;#fnref:ab&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Wow, this was a blast from the past. Here are a few photos of me from the 2009 Australasian Computer Music Conference in Queensland, Australia. Here’s me giving my research talk, entitled Distributed Performance in Livecoding.</summary></entry><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
+Gordon Monro as a performance.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">I’m trying to find all the photos of me doing livecoding gigs over the past 10 years. If you’ve got an old photo of me doing my thing, then can you either email or tweet at me to share it? I’ll give you authoreal credit and hugs.</summary></entry><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T07:54:00+08:00</published><updated>2019-01-17T07:54:00+08:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
   &lt;p&gt;It is a truth, universally acknowledged, that all programming language authors
 must also be expert web developers. (&lt;em&gt;attributed to Jane Austen&lt;/em&gt;)&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -399,7 +365,7 @@ things that way.&lt;/p&gt;
       &lt;p&gt;well, off-the-CDN, anyway &lt;a href=&quot;#fnref:cdn&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">It is a truth, universally acknowledged, that all programming language authors must also be expert web developers. (attributed to Jane Austen)</summary></entry><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition/" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+11:00</published><updated>2019-01-02T17:46:00+11:00</updated><id>https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition/">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">It is a truth, universally acknowledged, that all programming language authors must also be expert web developers. (attributed to Jane Austen)</summary></entry><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition/" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+08:00</published><updated>2019-01-02T17:46:00+08:00</updated><id>https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition/">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
 grue&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I’ve re-written my blog &lt;a href=&quot;/blog/2017/07/06/benswift-me-update-july-2017-edition/&quot;&gt;again&lt;/a&gt;, because I figure
@@ -459,7 +425,7 @@ icons at the top for various options).&lt;/p&gt;
       &lt;p&gt;especially if you’re a control freak &lt;a href=&quot;#fnref:control-freak&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue.</summary></entry><entry><title type="html">Another reveal.js plugin for Jekyll</title><link href="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/" rel="alternate" type="text/html" title="Another reveal.js plugin for Jekyll" /><published>2018-09-28T13:42:26+10:00</published><updated>2018-09-28T13:42:26+10:00</updated><id>https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue.</summary></entry><entry><title type="html">Another reveal.js plugin for Jekyll</title><link href="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/" rel="alternate" type="text/html" title="Another reveal.js plugin for Jekyll" /><published>2018-09-28T11:42:26+08:00</published><updated>2018-09-28T11:42:26+08:00</updated><id>https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
 &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;reveal.js&lt;/a&gt; to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great
 content, and the formatting/presentation stuff stays out of the way until I &lt;code&gt;git
@@ -655,7 +621,7 @@ always do in a markdown file).&lt;/p&gt;
 &lt;h2 id=&quot;4-write-amazing-content&quot;&gt;4. write amazing content&lt;/h2&gt;
 
 &lt;p&gt;This is the hard part. But at least if you’ve got a nice workflow for actually
-turning your content into nice looking slides then you’ve got a head start :)&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="software" /><summary type="html">I use Jekyll to create my course websites and reveal.js to create my lecture slides. Both of them are awesome, and allow me to focus on writing (hopefully) great content, and the formatting/presentation stuff stays out of the way until I git push the updates to the server.</summary></entry><entry><title type="html">Hosting a self-built jekyll site on GH pages</title><link href="https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages/" rel="alternate" type="text/html" title="Hosting a self-built jekyll site on GH pages" /><published>2018-06-22T10:40:00+10:00</published><updated>2018-06-22T10:40:00+10:00</updated><id>https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages</id><content type="html" xml:base="https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages/">&lt;p&gt;This blog is built from &lt;a href=&quot;http://commonmark.org/help/&quot;&gt;markdown&lt;/a&gt; files using
+turning your content into nice looking slides then you’ve got a head start :)&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="software" /><summary type="html">I use Jekyll to create my course websites and reveal.js to create my lecture slides. Both of them are awesome, and allow me to focus on writing (hopefully) great content, and the formatting/presentation stuff stays out of the way until I git push the updates to the server.</summary></entry><entry><title type="html">Hosting a self-built jekyll site on GH pages</title><link href="https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages/" rel="alternate" type="text/html" title="Hosting a self-built jekyll site on GH pages" /><published>2018-06-22T10:40:00+08:00</published><updated>2018-06-22T10:40:00+08:00</updated><id>https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages</id><content type="html" xml:base="https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages/">&lt;p&gt;This blog is built from &lt;a href=&quot;http://commonmark.org/help/&quot;&gt;markdown&lt;/a&gt; files using
 &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub
 pages&lt;/a&gt;, which saves a lot of hassle involved with DIY
 hosting&lt;sup id=&quot;fnref:hassle&quot;&gt;&lt;a href=&quot;#fn:hassle&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. There are a bunch of &lt;a href=&quot;http://blog.teamtreehouse.com/using-github-pages-to-host-your-website&quot;&gt;useful
@@ -723,13 +689,13 @@ already got a webserver set up for other reasons, but zero hassle still
 beats ε hassle ∀ε&amp;gt;0, especially when there’s other work to be done. &lt;a href=&quot;#fnref:hassle&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">This blog is built from markdown files using Jekyll hosted on GitHub pages, which saves a lot of hassle involved with DIY hosting[^hassle]. There are a bunch of useful tutorials on how to set all this up.</summary></entry><entry><title type="html">CHI hangs</title><link href="https://benswift.me/blog/2018/06/22/chi-hangs/" rel="alternate" type="text/html" title="CHI hangs" /><published>2018-06-22T10:29:00+10:00</published><updated>2018-06-22T10:29:00+10:00</updated><id>https://benswift.me/blog/2018/06/22/chi-hangs</id><content type="html" xml:base="https://benswift.me/blog/2018/06/22/chi-hangs/">&lt;p&gt;Here’s a photo of Kieran and I hanging out at CHI. I’ll write a more detailed
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">This blog is built from markdown files using Jekyll hosted on GitHub pages, which saves a lot of hassle involved with DIY hosting[^hassle]. There are a bunch of useful tutorials on how to set all this up.</summary></entry><entry><title type="html">CHI hangs</title><link href="https://benswift.me/blog/2018/06/22/chi-hangs/" rel="alternate" type="text/html" title="CHI hangs" /><published>2018-06-22T10:29:00+08:00</published><updated>2018-06-22T10:29:00+08:00</updated><id>https://benswift.me/blog/2018/06/22/chi-hangs</id><content type="html" xml:base="https://benswift.me/blog/2018/06/22/chi-hangs/">&lt;p&gt;Here’s a photo of Kieran and I hanging out at CHI. I’ll write a more detailed
 trip report some other time, but from the general chats I had with people (and
 random &lt;a href=&quot;https://eagereyes.org/blog/2018/seven-visualization-talks-that-terrified-me-at-chi&quot;&gt;unsolicited blog
 posts&lt;/a&gt;)
 it seems like &lt;a href=&quot;/blog/2018/04/24/the-other-side-algorithm-as-ritual-in-artificial-intelligence/&quot;&gt;the ritual&lt;/a&gt; started some conversations.&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;Ben and Kieran at CHI&quot; style=&quot;width:100%;&quot; src=&quot;/assets/images/posts/ben-kieran-at-chi-d61f2c6b56d962f9bff2ce7a9c3081555c981cea9b8e68e83da4deafa382b81a.jpg&quot; /&gt;&lt;/picture&gt;</content><author><name>Ben Swift</name></author><summary type="html">Here’s a photo of Kieran and I hanging out at CHI. I’ll write a more detailed trip report some other time, but from the general chats I had with people (and random unsolicited blog posts) it seems like the ritual started some conversations.</summary></entry><entry><title type="html">ANU Laptop Orchestra</title><link href="https://benswift.me/blog/2018/06/06/anu-laptop-orchestra/" rel="alternate" type="text/html" title="ANU Laptop Orchestra" /><published>2018-06-06T09:20:00+10:00</published><updated>2018-06-06T09:20:00+10:00</updated><id>https://benswift.me/blog/2018/06/06/anu-laptop-orchestra</id><content type="html" xml:base="https://benswift.me/blog/2018/06/06/anu-laptop-orchestra/">&lt;p&gt;One of the coolest parts of my job is doing livecoding gigs—here’s a recent
+&lt;picture&gt;&lt;img alt=&quot;Ben and Kieran at CHI&quot; style=&quot;width:100%;&quot; src=&quot;/assets/images/posts/ben-kieran-at-chi-d61f2c6b56d962f9bff2ce7a9c3081555c981cea9b8e68e83da4deafa382b81a.jpg&quot; /&gt;&lt;/picture&gt;</content><author><name>Ben Swift</name></author><summary type="html">Here’s a photo of Kieran and I hanging out at CHI. I’ll write a more detailed trip report some other time, but from the general chats I had with people (and random unsolicited blog posts) it seems like the ritual started some conversations.</summary></entry><entry><title type="html">ANU Laptop Orchestra</title><link href="https://benswift.me/blog/2018/06/06/anu-laptop-orchestra/" rel="alternate" type="text/html" title="ANU Laptop Orchestra" /><published>2018-06-06T09:20:00+08:00</published><updated>2018-06-06T09:20:00+08:00</updated><id>https://benswift.me/blog/2018/06/06/anu-laptop-orchestra</id><content type="html" xml:base="https://benswift.me/blog/2018/06/06/anu-laptop-orchestra/">&lt;p&gt;One of the coolest parts of my job is doing livecoding gigs—here’s a recent
 set I did at Smiths as part of &lt;a href=&quot;https://www.smithsalternative.com/events/soundscapes-21-44719&quot;&gt;Soundscapes
 #21&lt;/a&gt;. A big
 shout-out to Ushini Attanayake (not in the video, sadly) who did a &lt;strong&gt;fantastic&lt;/strong&gt;
@@ -789,4 +755,54 @@ start of semester 2; the groups might be full up by then and you’ll miss out!&
 fit it into your degree program) if you’ve always liked technology, creativity
 and live performance but never found the right outlet for those passions, then
 &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;/a&gt;, there might be ways to make it
-happen.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">One of the coolest parts of my job is doing livecoding gigs—here’s a recent set I did at Smiths as part of Soundscapes #21. A big shout-out to Ushini Attanayake (not in the video, sadly) who did a fantastic job of her first livecoding set.</summary></entry></feed>
+happen.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">One of the coolest parts of my job is doing livecoding gigs—here’s a recent set I did at Smiths as part of Soundscapes #21. A big shout-out to Ushini Attanayake (not in the video, sadly) who did a fantastic job of her first livecoding set.</summary></entry><entry><title type="html">Centre for the Public Awareness of Code</title><link href="https://benswift.me/blog/2018/06/05/centre-for-the-public-awareness-of-code/" rel="alternate" type="text/html" title="Centre for the Public Awareness of Code" /><published>2018-06-05T09:13:00+08:00</published><updated>2018-06-05T09:13:00+08:00</updated><id>https://benswift.me/blog/2018/06/05/centre-for-the-public-awareness-of-code</id><content type="html" xml:base="https://benswift.me/blog/2018/06/05/centre-for-the-public-awareness-of-code/">&lt;p&gt;&lt;em&gt;What’s your favourite movie?&lt;/em&gt; Most folks already have an answer to this
+question (because they’ve been asked before). Mine’s &lt;a href=&quot;https://www.imdb.com/title/tt0118826/&quot;&gt;The
+Castle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;picture&gt;&lt;img alt=&quot;Cast of 'The Castle'&quot; style=&quot;width:100%;&quot; src=&quot;/assets/images/posts/the-castle-687b260701eee27445e4308887b662a7fd9c94a3f79842c2ed309ff478e69bc7.jpg&quot; /&gt;&lt;/picture&gt;
+
+&lt;p&gt;&lt;em&gt;What’s your favourite band/album?&lt;/em&gt; Again, a pretty standard “dinner party” line
+of questioning. As a muso (at least in the loose sense of the word) I find this
+a much tougher one to answer, partially because I have so many favourites, and
+partially because I’m trying t&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What’s your favourite scientist or scientific theory/fact?&lt;/em&gt; This one is harder,
+but thanks to great work by many
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Carl_Sagan&quot;&gt;gifted&lt;/a&gt; &lt;a href=&quot;http://drkarl.com/&quot;&gt;science&lt;/a&gt;
+&lt;a href=&quot;https://twitter.com/ANU_CPAS&quot;&gt;communicators&lt;/a&gt; people increasingly have an answer
+to those questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;What’s your favourite bit of (software) code? What’s your favourite
+algorithm?&lt;/em&gt;&lt;/strong&gt; I reckon that most people will struggle to have an answer for this
+one. In fact, most folks probably won’t understand the question. Yet code (and
+the algorithms they manifest) &lt;em&gt;does&lt;/em&gt; impact the world today. Mark Zuckerberg is
+still
+&lt;a href=&quot;https://www.washingtonpost.com/news/the-switch/wp/2018/04/11/zuckerberg-facebook-hearing-congress-house-testimony/&quot;&gt;travelling&lt;/a&gt;
+&lt;a href=&quot;http://www.latimes.com/business/technology/la-fi-tn-facebook-zuckerberg-europe-20180522-story.html&quot;&gt;around&lt;/a&gt;
+with a suit and a haircut apologising for the way his code changed the course of
+history. It also true that a naive “code doesn’t kill people; people kill
+people” techno-dualism doesn’t really stack up in practice. The modern world is
+a complex, socio-technical assemblage (a glorious hot mess!) and everything
+affects everything else.&lt;/p&gt;
+
+&lt;p&gt;This isn’t about setting up a dichotomy between those who “get” code and those
+who don’t, and it certainly isn’t about adding a moral dimension to code
+literacy (so that if you don’t code, you’re a bad person). There are some
+amazing code communicators out there—check out Dan Shiffman on the &lt;a href=&quot;http://thecodingtrain.com/&quot;&gt;Coding
+Train&lt;/a&gt;. And there’s stuff like &lt;a href=&quot;http://www.electronicbookreview.com/thread/electropoetics/codology&quot;&gt;Critical Code
+Studies
+(CCS)&lt;/a&gt;,
+although that’s more about understanding code-as-text &lt;em&gt;deeply&lt;/em&gt; rather than
+raising awareness of what code is currently doing in the world.&lt;/p&gt;
+
+&lt;p&gt;What we need is a &lt;strong&gt;Centre for the Public Awareness of Code&lt;/strong&gt;, with a bunch of
+folks doing for code/software/algorithms what Carl Sagan did for space science
+with &lt;a href=&quot;https://en.wikipedia.org/wiki/Cosmos:_A_Personal_Voyage&quot;&gt;Cosmos&lt;/a&gt;. I’ve got
+some ideas about how we could do it (&lt;a href=&quot;https://vimeo.com/269115310&quot;&gt;musical
+livecoding&lt;/a&gt; is one of them) but I’m sure there are
+other ways as well.&lt;/p&gt;
+
+&lt;p&gt;I know that there are a lot of people (and organisations) who are working hard
+at this problem right now, all over the world. Which angles are they attacking
+the problem from? Who’s doing it best? What can we all learn from each other?
+Let’s discuss on &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;twitter&lt;/a&gt; :)&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">What’s your favourite movie? Most folks already have an answer to this question (because they’ve been asked before). Mine’s The Castle.</summary></entry></feed>
