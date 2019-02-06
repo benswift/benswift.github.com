@@ -105,6 +105,16 @@ footer {
   font-style: italic;
   color: #777; }
 
+.post-tags {
+  font-style: italic; }
+  .post-tags > span {
+    font-style: normal;
+    background-color: #be2edd;
+    color: #fafafa;
+    padding: 0.2em;
+    margin: 0 0.4em;
+    display: inline-block; }
+
 .post-excerpt {
   border-top: 1px solid #be2edd; }
 
