@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-06T09:02:00+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T06:53:00+08:00</published><updated>2019-01-31T06:53:00+08:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-06T09:04:50+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T06:53:00+08:00</published><updated>2019-01-31T06:53:00+08:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
 annotations and visualisations for live
 code&lt;/a&gt;. If you
 haven’t read it, go do that now—and make sure you have some
@@ -397,7 +397,7 @@ message out on&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;I’m a control-freak, and the idea of &lt;em&gt;not&lt;/em&gt; being in control bums me out (this
-is the pernicious flip side of #4)&lt;/p&gt;
+is the pernicious flip side of #5)&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
