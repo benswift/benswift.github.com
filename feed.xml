@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-05T17:46:58+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T06:53:00+08:00</published><updated>2019-01-31T06:53:00+08:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-06T09:02:00+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T06:53:00+08:00</published><updated>2019-01-31T06:53:00+08:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
 annotations and visualisations for live
 code&lt;/a&gt;. If you
 haven’t read it, go do that now—and make sure you have some
@@ -366,12 +366,45 @@ things that way.&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">It is a truth, universally acknowledged, that all programming language authors must also be expert web developers. (attributed to Jane Austen)</summary></entry><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition/" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+08:00</published><updated>2019-01-02T17:46:00+08:00</updated><id>https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition/">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
-grue&lt;/a&gt;.&lt;/p&gt;
+grue&lt;/a&gt;. If you haven’t visited for a while, you
+might have noticed that I’ve re-written my website. &lt;a href=&quot;/blog/2017/07/06/benswift-me-update-july-2017-edition/&quot;&gt;Again&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I’ve re-written my blog &lt;a href=&quot;/blog/2017/07/06/benswift-me-update-july-2017-edition/&quot;&gt;again&lt;/a&gt;, because I figure
-it’s a good way for me to keep up to date with my web skills. I teach (among
-other things) &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;in-browser code art&lt;/a&gt; for
-a living, and students can sniff out a fraud if you’re behind the times.&lt;/p&gt;
+&lt;p&gt;There are a few reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;it forces me to keep up to date with web stuff, which I &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;teach for a
+living&lt;/a&gt; (students can sniff out a
+fraud)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;my academic activities don’t fit the traditional “list of journal
+publications” shape that my university-provided web presence is geared
+towards&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if I move to a different institution, I don’t have the difficult job of
+exfiltrating my content from my old institution’s platform&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;building things is fun (I’m good at this stuff, and it feels good to use the
+skills you’ve spent years developing)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;part of being an academic is brand-management, and that’s much easier to do
+if you completely control (at least one of) the platforms you’re putting your
+message out on&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I’m a control-freak, and the idea of &lt;em&gt;not&lt;/em&gt; being in control bums me out (this
+is the pernicious flip side of #4)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Some of these are good reasons, some not-so-good. For a fun party game, &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;argue
+with me on twitter&lt;/a&gt; about which is which 😉&lt;/p&gt;
+
+&lt;h2 id=&quot;the-nitty-gritty-technical-stuff&quot;&gt;The nitty-gritty technical stuff&lt;/h2&gt;
 
 &lt;p&gt;I’ve (once again) gone with a &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;-powered static
 site. This time, though, I’ve opted for my own lovingly hand-crafted HTML &amp;amp; CSS
@@ -425,7 +458,7 @@ icons at the top for various options).&lt;/p&gt;
       &lt;p&gt;especially if you’re a control freak &lt;a href=&quot;#fnref:control-freak&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue.</summary></entry><entry><title type="html">Another reveal.js plugin for Jekyll</title><link href="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/" rel="alternate" type="text/html" title="Another reveal.js plugin for Jekyll" /><published>2018-09-28T11:42:26+08:00</published><updated>2018-09-28T11:42:26+08:00</updated><id>https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue. If you haven’t visited for a while, you might have noticed that I’ve re-written my website. Again.</summary></entry><entry><title type="html">Another reveal.js plugin for Jekyll</title><link href="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/" rel="alternate" type="text/html" title="Another reveal.js plugin for Jekyll" /><published>2018-09-28T11:42:26+08:00</published><updated>2018-09-28T11:42:26+08:00</updated><id>https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
 &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;reveal.js&lt;/a&gt; to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great
 content, and the formatting/presentation stuff stays out of the way until I &lt;code&gt;git
