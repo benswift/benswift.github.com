@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-08T14:50:07+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagining Engineering &amp;amp; CS at the ANU</title><link href="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/" rel="alternate" type="text/html" title="Reimagining Engineering &amp; CS at the ANU" /><published>2019-02-07T08:55:00+08:00</published><updated>2019-02-07T08:55:00+08:00</updated><id>https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu</id><content type="html" xml:base="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/">&lt;p&gt;The &lt;a href=&quot;https://cecs.anu.edu.au&quot;&gt;ANU College of Engineering and Computer Science&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-08T14:54:13+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagining Engineering &amp;amp; CS at the ANU</title><link href="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/" rel="alternate" type="text/html" title="Reimagining Engineering &amp; CS at the ANU" /><published>2019-02-07T08:55:00+08:00</published><updated>2019-02-07T08:55:00+08:00</updated><id>https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu</id><content type="html" xml:base="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/">&lt;p&gt;The &lt;a href=&quot;https://cecs.anu.edu.au&quot;&gt;ANU College of Engineering and Computer Science&lt;/a&gt;
 (CECS) is being &lt;em&gt;Reimagined&lt;/em&gt;. Don’t take my word for it; listen to our fearless
 leader &lt;a href=&quot;https://cecs.anu.edu.au&quot;&gt;Elanor&lt;/a&gt;:&lt;/p&gt;
 
@@ -68,6 +68,59 @@ way too big a project for that to be of any use. It’s about weaving that thing
 into the whole College&lt;sup id=&quot;fnref:dna&quot;&gt;&lt;a href=&quot;#fn:dna&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, so that by 2050 it affects the way &lt;em&gt;everyone&lt;/em&gt;
 thinks.&lt;/p&gt;
 
+&lt;h3 id=&quot;what-might-this-look-like-concretely&quot;&gt;What might this look like, concretely?&lt;/h3&gt;
+
+&lt;p&gt;The Reimagine Project is &lt;a href=&quot;https://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal&quot;&gt;big, hairy, and
+audacious&lt;/a&gt;, so it’s
+difficult to sketch out a detailed description or org chart. However, here are a
+few ideas about what it might look like:&lt;/p&gt;
+
+&lt;h4 id=&quot;in-the-short-term&quot;&gt;In the short term…&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;a CECS-supported “Reimagine residency” (starting asap!) to support artists to
+get involved and help us figure out what a Reimagined CECS looks like&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a new code/creativity/culture major (at both undergraduate and masters level)
+where students take courses from within CECS, the &lt;a href=&quot;http://soad.cass.anu.edu.au&quot;&gt;ANU School of Art &amp;amp;
+Design&lt;/a&gt;, and the ANU School of Music&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;new courses within CECS on e.g. algorithmic music composition, creative
+making, AI/Deep Learning Art, subversive computing/&lt;a href=&quot;https://www.washington.edu/news/2018/05/21/designed-for-evil/&quot;&gt;designing for
+evil&lt;/a&gt;&lt;sup id=&quot;fnref:genevieve&quot;&gt;&lt;a href=&quot;#fn:genevieve&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;more PhD students doing practice-led research on interdisciplinary
+art/CS/engineering projects&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;in-the-mediumlong-term&quot;&gt;In the medium/long term…&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;a centre of excellence for digital arts/music/multimedia research, teaching
+and creative practice (co-hosted by CECS and the &lt;a href=&quot;http://cass.anu.edu.au&quot;&gt;College of Arts &amp;amp; Social
+Sciences&lt;/a&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a thoroughly non-traditional project-based “creative tech” masters program,
+with no classes, no heirarchies, just a bunch of brilliant students set loose
+with duct tape, GPUs, a giant bag of sensors &amp;amp; actuators, soldering irons, oh
+my. (Geoff Hinchcliffe and I have discussed this—we’re both thrilled and
+terrified at the prospect. And I love what the
+&lt;a href=&quot;https://3ainstitute.cecs.anu.edu.au/#apply&quot;&gt;3AI&lt;/a&gt; master’s program is shaping
+up to be, and am keen to be a part of it.)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also look forward to having the time to think through what a deeply artistic
+CECS looks like. I’m sure that in collaboration with the other Reimagine Fellows
+and the rest of the design team we can come up even more ideas.&lt;/p&gt;
+
 &lt;h3 id=&quot;how-does-this-further-the-broader-goals-of-the-reimagine-project&quot;&gt;How does this further the broader goals of the Reimagine Project…&lt;/h3&gt;
 
 &lt;h4 id=&quot;in-research&quot;&gt;…in research?&lt;/h4&gt;
@@ -98,7 +151,7 @@ actually asking the right questions. I see this sometimes in
 enjoyable things about teaching that course.&lt;/p&gt;
 
 &lt;p&gt;More broadly, I want to see is more dreamers, doodlers and
-“creatives”&lt;sup id=&quot;fnref:creatives&quot;&gt;&lt;a href=&quot;#fn:creatives&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; study engineering or CS at uni. Too often they feel like
+“creatives”&lt;sup id=&quot;fnref:creatives&quot;&gt;&lt;a href=&quot;#fn:creatives&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; study engineering or CS at uni. Too often they feel like
 they have to choose between “pursuing the dream” or selling out and studying
 something boring &amp;amp; pragmatic. I fear that we (CECS) miss out on some &lt;em&gt;brilliant&lt;/em&gt;
 students because of this. I want them to know that they can absolutely do both,
@@ -151,59 +204,6 @@ part of majors/minors/electives, etc.) as well as the other way around&lt;/li&gt
   &lt;li&gt;increasing our to participation in the ANU’s interdisciplinary HDR programs
 like &lt;a href=&quot;http://rsha.cass.anu.edu.au/students/future/iccr&quot;&gt;ICCR&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&quot;this-is-all-kindof-abstractwhat-might-this-look-like-concretely&quot;&gt;This is all kindof abstract—what might this look like concretely?&lt;/h3&gt;
-
-&lt;p&gt;The Reimagine Project is &lt;a href=&quot;https://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal&quot;&gt;big, hairy, and
-audacious&lt;/a&gt;, so it’s
-difficult to sketch out a detailed description or org chart. However, here are a
-few ideas about what it might look like:&lt;/p&gt;
-
-&lt;h4 id=&quot;in-the-short-term&quot;&gt;In the short term…&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;a CECS-supported “Reimagine residency” (starting asap!) to support artists to
-get involved and help us figure out what a Reimagined CECS looks like&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a new code/creativity/culture major (at both undergraduate and masters level)
-where students take courses from within CECS, the &lt;a href=&quot;http://soad.cass.anu.edu.au&quot;&gt;ANU School of Art &amp;amp;
-Design&lt;/a&gt;, and the ANU School of Music&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;new courses within CECS on e.g. algorithmic music composition, creative
-making, AI/Deep Learning Art, subversive computing/&lt;a href=&quot;https://www.washington.edu/news/2018/05/21/designed-for-evil/&quot;&gt;designing for
-evil&lt;/a&gt;&lt;sup id=&quot;fnref:genevieve&quot;&gt;&lt;a href=&quot;#fn:genevieve&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;more PhD students doing practice-led research on interdisciplinary
-art/CS/engineering projects&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;in-the-mediumlong-term&quot;&gt;In the medium/long term&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;a centre of excellence for digital arts/music/multimedia research, teaching
-and creative practice (co-hosted by CECS and the &lt;a href=&quot;http://cass.anu.edu.au&quot;&gt;College of Arts &amp;amp; Social
-Sciences&lt;/a&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a thoroughly non-traditional project-based “creative tech” masters program,
-with no classes, no heirarchies, just a bunch of brilliant students set loose
-with duct tape, GPUs, a giant bag of sensors &amp;amp; actuators, soldering irons, oh
-my. (Geoff Hinchcliffe and I have discussed this—we’re both thrilled and
-terrified at the prospect. And I love what the
-&lt;a href=&quot;https://3ainstitute.cecs.anu.edu.au/#apply&quot;&gt;3AI&lt;/a&gt; master’s program is shaping
-up to be, and am keen to be a part of it.)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I also look forward to having the time to think through what a deeply artistic
-CECS looks like. I’m sure that in collaboration with the other Reimagine Fellows
-and the rest of the design team we can come up even more ideas.&lt;/p&gt;
 
 &lt;h3 id=&quot;where-in-the-world-is-this-already-happening&quot;&gt;Where in the world is this already happening?&lt;/h3&gt;
 
@@ -336,7 +336,7 @@ everything here is up for grabs.&lt;/p&gt;
 
 &lt;h3 id=&quot;how-many-words-is-this-post&quot;&gt;How many words is this post?&lt;/h3&gt;
 
-&lt;p&gt;It’s 2771 words (which I realise is &lt;em&gt;way&lt;/em&gt; over
+&lt;p&gt;It’s 2767 words (which I realise is &lt;em&gt;way&lt;/em&gt; over
 the limit, but it includes all the quotes from the other institutions, so
 hopefully it’s ok).&lt;/p&gt;
 
@@ -394,15 +394,15 @@ pictures, writing stories—but with an element of technology in the mix. &lt;a
       &lt;p&gt;You could even say “weaving it into the College’s DNA”. But that’d be dumb.
 Institutions don’t have DNA—ask any biologist. &lt;a href=&quot;#fnref:dna&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
+    &lt;li id=&quot;fn:genevieve&quot;&gt;
+      &lt;p&gt;I’d love to get &lt;a href=&quot;https://twitter.com/feraldata&quot;&gt;Genevieve&lt;/a&gt; to write &amp;amp; teach that one. &lt;a href=&quot;#fnref:genevieve&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
     &lt;li id=&quot;fn:creatives&quot;&gt;
 
       &lt;p&gt;Although I reject the Romantic notion that “creatives” are some sort of
 rarified “other”, conduits to some deep wellspring of hidden creative mojo
 from the other side. We’re all just humans, constructing and engaging in
 cultural practices with this stuff, building on what went before. &lt;a href=&quot;#fnref:creatives&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:genevieve&quot;&gt;
-      &lt;p&gt;I’d love to get &lt;a href=&quot;https://twitter.com/feraldata&quot;&gt;Genevieve&lt;/a&gt; to write &amp;amp; teach that one. &lt;a href=&quot;#fnref:genevieve&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">The ANU College of Engineering and Computer Science (CECS) is being Reimagined. Don’t take my word for it; listen to our fearless leader Elanor:</summary></entry><entry><title type="html">Class discussions on Discourse</title><link href="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/" rel="alternate" type="text/html" title="Class discussions on Discourse" /><published>2019-02-06T16:42:03+08:00</published><updated>2019-02-06T16:42:03+08:00</updated><id>https://benswift.me/blog/2019/02/06/class-discussions-on-discourse</id><content type="html" xml:base="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/">&lt;p&gt;In 2018 I (with the support of the Teaching &amp;amp; Learning IT team in &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;my
