@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-21T11:29:00+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Dynamic Reimagine logo</title><link href="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/" rel="alternate" type="text/html" title="Dynamic Reimagine logo" /><published>2019-02-21T10:36:00+11:00</published><updated>2019-02-21T10:36:00+11:00</updated><id>https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo</id><content type="html" xml:base="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/">&lt;p&gt;I keep harping on about the &lt;strong&gt;Reimagine project&lt;/strong&gt; here, because I’m super pumped
-about what it means for the way we do Engineering &amp;amp; Computer Science here at the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-21T11:30:52+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Dynamic Reimagine logo</title><link href="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/" rel="alternate" type="text/html" title="Dynamic Reimagine logo" /><published>2019-02-21T10:36:00+11:00</published><updated>2019-02-21T10:36:00+11:00</updated><id>https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo</id><content type="html" xml:base="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/">&lt;p&gt;I keep harping on about the &lt;strong&gt;Reimagine project&lt;/strong&gt; because I’m super pumped
+about what it means for the way we do Engineering Computer Science here at the
 ANU (see &lt;a href=&quot;/assets/pdf/reimagine-fellow-PD.pdf&quot;&gt;here&lt;/a&gt;
 and &lt;a href=&quot;https://cecs.anu.edu.au/reimagine&quot;&gt;here&lt;/a&gt; for more info).&lt;/p&gt;
 
 &lt;p&gt;Reimagine branding is starting to go up around campus, so I decided to put
-together an interactive version (because giant vinyl prints are cool, but they
-don’t spin on mouse-over).&lt;/p&gt;
+together an interactive version of the logo (because giant vinyl prints are
+cool, but they don’t spin on mouse-over).&lt;/p&gt;
 
 &lt;p&gt;It’s made in &lt;a href=&quot;https://clojurescript.org&quot;&gt;clojurescript&lt;/a&gt;, and as always on my
 blog you can look at the
 &lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_cljs/reimagine_logo/src/reimagine_logo/core.cljs&quot;&gt;source&lt;/a&gt;
-to see how it works.&lt;/p&gt;
-
-&lt;p&gt;If you want to really immerse yourself in the thing, there’s a fullsreen version
-&lt;a href=&quot;/widgets/reimagine-logo/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+to see how it works. If you want to really immerse yourself in the thing,
+there’s a fullsreen version &lt;a href=&quot;/widgets/reimagine-logo/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div style=&quot;position:relative;padding-top:100%;margin:20%;&quot;&gt;
   &lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">I keep harping on about the Reimagine project here, because I’m super pumped about what it means for the way we do Engineering &amp;amp; Computer Science here at the ANU (see here and here for more info).</summary></entry><entry><title type="html">Algorithmic uni marketing billboards</title><link href="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/" rel="alternate" type="text/html" title="Algorithmic uni marketing billboards" /><published>2019-02-16T14:46:00+11:00</published><updated>2019-02-16T14:46:00+11:00</updated><id>https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards</id><content type="html" xml:base="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/">&lt;p&gt;In the spirit of Murdoch University’s &lt;a href=&quot;http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html&quot;&gt;&lt;em&gt;free your
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info).</summary></entry><entry><title type="html">Algorithmic uni marketing billboards</title><link href="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/" rel="alternate" type="text/html" title="Algorithmic uni marketing billboards" /><published>2019-02-16T14:46:00+11:00</published><updated>2019-02-16T14:46:00+11:00</updated><id>https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards</id><content type="html" xml:base="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/">&lt;p&gt;In the spirit of Murdoch University’s &lt;a href=&quot;http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html&quot;&gt;&lt;em&gt;free your
 think&lt;/em&gt;&lt;/a&gt;
 marketing campaign, I’ve put together a dynamic full-page ad billboard as my
 pitch for the ANU’s next marketing campaign.&lt;/p&gt;
