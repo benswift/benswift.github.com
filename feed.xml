@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-19T09:01:24+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Algorithmic uni marketing billboards</title><link href="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/" rel="alternate" type="text/html" title="Algorithmic uni marketing billboards" /><published>2019-02-16T14:46:00+11:00</published><updated>2019-02-16T14:46:00+11:00</updated><id>https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards</id><content type="html" xml:base="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/">&lt;p&gt;In the spirit of Murdoch University’s &lt;a href=&quot;http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html&quot;&gt;&lt;em&gt;free your
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-21T11:24:22+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Dynamic Reimagine logo</title><link href="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/" rel="alternate" type="text/html" title="Dynamic Reimagine logo" /><published>2019-02-21T10:36:00+11:00</published><updated>2019-02-21T10:36:00+11:00</updated><id>https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo</id><content type="html" xml:base="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/">&lt;p&gt;I keep harping on about the &lt;strong&gt;Reimagine project&lt;/strong&gt; here, because I’m super pumped
+about what it means for the way we do Engineering &amp;amp; Computer Science here at the
+ANU (see &lt;a href=&quot;/assets/pdf/reimagine-fellow-PD.pdf&quot;&gt;here&lt;/a&gt;
+and &lt;a href=&quot;https://cecs.anu.edu.au/reimagine&quot;&gt;here&lt;/a&gt; for more info).&lt;/p&gt;
+
+&lt;p&gt;Reimagine branding is starting to go up around campus, so I decided to put
+together an interactive version (because giant vinyl prints are cool, but they
+don’t spin on mouse-over).&lt;/p&gt;
+
+&lt;p&gt;It’s made in &lt;a href=&quot;https://clojurescript.org&quot;&gt;clojurescript&lt;/a&gt;, and as always on my
+blog you can look at the
+&lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_cljs/reimagine_logo/src/reimagine_logo/core.cljs&quot;&gt;source&lt;/a&gt;
+to see how it works.&lt;/p&gt;
+
+&lt;p&gt;If you want to really immerse yourself in the thing, there’s a fullsreen version
+&lt;a href=&quot;/widgets/reimagine-logo/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&quot;position:relative;padding-top:100%;margin:0 20%;&quot;&gt;
+  &lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">I keep harping on about the Reimagine project here, because I’m super pumped about what it means for the way we do Engineering &amp;amp; Computer Science here at the ANU (see here and here for more info).</summary></entry><entry><title type="html">Algorithmic uni marketing billboards</title><link href="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/" rel="alternate" type="text/html" title="Algorithmic uni marketing billboards" /><published>2019-02-16T14:46:00+11:00</published><updated>2019-02-16T14:46:00+11:00</updated><id>https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards</id><content type="html" xml:base="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/">&lt;p&gt;In the spirit of Murdoch University’s &lt;a href=&quot;http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html&quot;&gt;&lt;em&gt;free your
 think&lt;/em&gt;&lt;/a&gt;
 marketing campaign, I’ve put together a dynamic full-page ad billboard as my
 pitch for the ANU’s next marketing campaign.&lt;/p&gt;
@@ -1180,72 +1199,4 @@ always do in a markdown file).&lt;/p&gt;
 &lt;h2 id=&quot;4-write-amazing-content&quot;&gt;4. write amazing content&lt;/h2&gt;
 
 &lt;p&gt;This is the hard part. But at least if you’ve got a nice workflow for actually
-turning your content into nice looking slides then you’ve got a head start :)&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I use Jekyll to create my course websites and reveal.js to create my lecture slides. Both of them are awesome, and allow me to focus on writing (hopefully) great content, and the formatting/presentation stuff stays out of the way until I git push the updates to the server.</summary></entry><entry><title type="html">Hosting a self-built jekyll site on GH pages</title><link href="https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages/" rel="alternate" type="text/html" title="Hosting a self-built jekyll site on GH pages" /><published>2018-06-22T10:40:00+10:00</published><updated>2018-06-22T10:40:00+10:00</updated><id>https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages</id><content type="html" xml:base="https://benswift.me/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages/">&lt;p&gt;This blog is built from &lt;a href=&quot;http://commonmark.org/help/&quot;&gt;markdown&lt;/a&gt; files using
-&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub
-pages&lt;/a&gt;, which saves a lot of hassle involved with DIY
-hosting&lt;sup id=&quot;fnref:hassle&quot;&gt;&lt;a href=&quot;#fn:hassle&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. There are a bunch of &lt;a href=&quot;http://blog.teamtreehouse.com/using-github-pages-to-host-your-website&quot;&gt;useful
-tutorials&lt;/a&gt;
-on how to set all this up.&lt;/p&gt;
-
-&lt;p&gt;However, I like to have control over which plugins are used, etc. which GitHub
-pages doesn’t let you do. What it (GH pages) &lt;em&gt;does&lt;/em&gt; let you do, though, is dump
-a bunch of files (html, js, css) in a repo and just serve them as-is. These
-files represent the “built” version of your site, not the source, so you’ll
-probably want a separate repo for your content (e.g. your markdown files) and
-the built site. Handling this stuff can be a hassle, so here’s the &lt;code&gt;Makefile&lt;/code&gt; I
-use to make it easy.&lt;/p&gt;
-
-&lt;p&gt;The basic process is:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;create a git repo where you keep your jekyll site (or not, but it’s so nice
-to have your blog content under version control)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;create a separate project on GitLab called
-&lt;code&gt;$(GH_USERNAME)/$(GH_USERNAME).github.io.git&lt;/code&gt;, but don’t create anything in
-there yet&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;make init&lt;/code&gt; will turn the local jekyll build directory into a git repo&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;make push&lt;/code&gt; target will build your site (locally) and push it up to GitHub,
-where it’ll be served by GitHub pages&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;After that, you can work on, commit &amp;amp; push your blog wherever you like (I
-actually keep the content in the &lt;a href=&quot;https://github.com/benswift/benswift.github.io&quot;&gt;same GH
-repo&lt;/a&gt;, but in a &lt;code&gt;source&lt;/code&gt; branch)
-but you can push the built site to the master branch so GH pages will serve it
-up for you.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-make&quot;&gt;BASE_HTML_DIR=_site
-GH_USERNAME=benswift # change this to your GH username
-
-all: push
-
-init:
-	mkdir -p $(BASE_HTML_DIR) &amp;amp;&amp;amp; cd $(BASE_HTML_DIR) &amp;amp;&amp;amp; git init . &amp;amp;&amp;amp; git remote add origin git@github.com:$(GH_USERNAME)/$(GH_USERNAME).github.io.git
-
-generate-blog:
-	bundle exec jekyll build
-
-commit-all: generate-blog
-	cd $(BASE_HTML_DIR) &amp;amp;&amp;amp; git add . &amp;amp;&amp;amp; git commit -m &quot;update blog&quot;
-
-push: commit-all
-	cd $(BASE_HTML_DIR) &amp;amp;&amp;amp; git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:hassle&quot;&gt;
-
-      &lt;p&gt;I know that it’s not actually &lt;em&gt;that&lt;/em&gt; much hassle, especially if you’ve
-already got a webserver set up for other reasons, but zero hassle still
-beats ε hassle ∀ε&amp;gt;0, especially when there’s other work to be done. &lt;a href=&quot;#fnref:hassle&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="meta" /><category term="web" /><summary type="html">This blog is built from markdown files using Jekyll hosted on GitHub pages, which saves a lot of hassle involved with DIY hosting[^hassle]. There are a bunch of useful tutorials on how to set all this up.</summary></entry></feed>
+turning your content into nice looking slides then you’ve got a head start :)&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I use Jekyll to create my course websites and reveal.js to create my lecture slides. Both of them are awesome, and allow me to focus on writing (hopefully) great content, and the formatting/presentation stuff stays out of the way until I git push the updates to the server.</summary></entry></feed>
