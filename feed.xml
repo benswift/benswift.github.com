@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-26T16:39:25+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A dynamic Reimagine logo</title><link href="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/" rel="alternate" type="text/html" title="A dynamic Reimagine logo" /><published>2019-02-21T10:36:00+11:00</published><updated>2019-02-21T10:36:00+11:00</updated><id>https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo</id><content type="html" xml:base="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/">&lt;p&gt;I keep harping on about the &lt;strong&gt;Reimagine project&lt;/strong&gt; because I’m super pumped
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-02-26T18:19:54+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On parental leave and auto-reply messages</title><link href="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/" rel="alternate" type="text/html" title="On parental leave and auto-reply messages" /><published>2019-02-26T18:08:00+11:00</published><updated>2019-02-26T18:08:00+11:00</updated><id>https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages</id><content type="html" xml:base="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/">&lt;p&gt;I’m now (as of the date of this blog post) on parental leave (&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave&quot;&gt;thanks,
+Brian&lt;/a&gt;
+😊). I’m about to set up an email auto-reply which will guard my work email
+address until 15 July.&lt;/p&gt;
+
+&lt;p&gt;But what should the auto-reply message say? I don’t want to be super-long,
+because no-one reads auto-reply messages. They just scan for the crucial
+information (when is said person back) and then move on. So what I’m going to do
+is leave a short auto-reply message, and then refer those interested to this
+blog post for more info (in fact, that may well be how you got here).&lt;/p&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Here’s the deal&lt;/strong&gt;: I’m away for a long time, and when I get back in July I’m going
+to delete all the unread emails in my inbox. Sorry if that seems harsh, but it’s
+the only way to deal with this situation and have some chance of enjoying one’s
+return to work.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you’ve got important information which needs to be actioned &lt;em&gt;before&lt;/em&gt; July
+15, then you need to make alternative arrangements. I wish you all the best
+with them, but I can’t help you out with making it happen.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you’ve got important information which has an expiry date &lt;em&gt;after&lt;/em&gt; July 15,
+then put a note in your calendar to re-email me after that date (because your
+email still won’t survive the purge, sorry).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you need to get in touch urgently, then you probably have my personal email
+or phone number—feel free to give those a go.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anyway, I’m gonna go be a Dad for a while, and &lt;em&gt;try&lt;/em&gt; to switch off about
+research &amp;amp; work stuff. I’ll still read the odd book, and maybe even make some
+more music, but most of the projects are now on hold.&lt;/p&gt;
+
+&lt;p&gt;Have a great Autumn/Winter, and I’ll see you on the other side.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Addendum&lt;/em&gt;: I really like the title of this post; inhabiting the liminal space
+between the the plainspoken declaration “I’m on parental leave” and the more
+philosophical/pretentious “On &lt;em&gt;blah…&lt;/em&gt;” literary device.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">I’m now (as of the date of this blog post) on parental leave (thanks, Brian 😊). I’m about to set up an email auto-reply which will guard my work email address until 15 July.</summary></entry><entry><title type="html">A dynamic Reimagine logo</title><link href="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/" rel="alternate" type="text/html" title="A dynamic Reimagine logo" /><published>2019-02-21T10:36:00+11:00</published><updated>2019-02-21T10:36:00+11:00</updated><id>https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo</id><content type="html" xml:base="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/">&lt;p&gt;I keep harping on about the &lt;strong&gt;Reimagine project&lt;/strong&gt; because I’m super pumped
 about what it means for the way we do Engineering Computer Science here at the
 ANU (see &lt;a href=&quot;/assets/pdf/reimagine-fellow-PD.pdf&quot;&gt;here&lt;/a&gt;
 and &lt;a href=&quot;https://cecs.anu.edu.au/reimagine&quot;&gt;here&lt;/a&gt; for more info).&lt;/p&gt;
@@ -1002,200 +1043,4 @@ icons at the top for various options).&lt;/p&gt;
       &lt;p&gt;especially if you’re a control freak &lt;a href=&quot;#fnref:control-freak&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="meta" /><category term="web" /><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue. If you haven’t visited for a while, you might have noticed that I’ve re-written my website. Again.</summary></entry><entry><title type="html">Another reveal.js plugin for Jekyll</title><link href="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/" rel="alternate" type="text/html" title="Another reveal.js plugin for Jekyll" /><published>2018-09-28T13:42:26+10:00</published><updated>2018-09-28T13:42:26+10:00</updated><id>https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll</id><content type="html" xml:base="https://benswift.me/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">&lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create my course websites and
-&lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;reveal.js&lt;/a&gt; to create my lecture slides.
-Both of them are awesome, and allow me to focus on writing (hopefully) great
-content, and the formatting/presentation stuff stays out of the way until I &lt;code&gt;git
-push&lt;/code&gt; the updates to the server.&lt;/p&gt;
-
-&lt;p&gt;There are a few ways of making these two tools (Jekyll and reveal.js) play
-nicely together: see &lt;a href=&quot;https://github.com/dploeger/jekyll-revealjs&quot;&gt;here&lt;/a&gt; and
-&lt;a href=&quot;https://medium.com/aerobatic-blog/building-a-reveal-js-presentation-with-jekyll-collections-52bcdba4114a&quot;&gt;here&lt;/a&gt;
-for example. However, most of these require you to put each slide in a new &lt;code&gt;.md&lt;/code&gt;
-file, which is a pain.&lt;/p&gt;
-
-&lt;p&gt;What I want to do is to write one &lt;code&gt;.md&lt;/code&gt; file per presentation, and have the
-level 1 and level 2 headings (i.e. &lt;code&gt;#&lt;/code&gt; and &lt;code&gt;##&lt;/code&gt;) determine the slide splits
-(this is pretty much how &lt;a href=&quot;https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc&quot;&gt;pandoc does
-it&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;I wrote a simple &lt;a href=&quot;https://jekyllrb.com/docs/plugins/&quot;&gt;Jekyll plugin&lt;/a&gt; to make
-this happen—which has just a couple of moving parts&lt;/p&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;Because the source for this &lt;a href=&quot;https://github.com/benswift/benswift.github.io/&quot;&gt;whole blog is on
-GH&lt;/a&gt;, then you can just head
-there and see it for yourself if you’re the sort of person who prefers reading
-code to prose. Think of this blog post as a “companion piece”.&lt;/p&gt;
-
-&lt;h2 id=&quot;0-download-the-revealjs-source&quot;&gt;0. download the reveal.js source&lt;/h2&gt;
-
-&lt;p&gt;It’s step 0 because it’s super easy—just head to
-&lt;a href=&quot;https://github.com/hakimel/reveal.js/releases&quot;&gt;GitHub&lt;/a&gt;, download &amp;amp; unzip the
-latest release. You can put it wherever you like in your main site folder; I
-usually put it in &lt;code&gt;assets/&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-revealify-filter&quot;&gt;1. the revealify &lt;a href=&quot;https://jekyllrb.com/docs/plugins/filters/&quot;&gt;filter&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;First, put this code into a &lt;code&gt;revealify.rb&lt;/code&gt; file in your Jekyll &lt;code&gt;_plugins&lt;/code&gt;
-directory:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;# (c) Ben Swift 2017-2019, MIT Licence
-# ben.swift@anu.edu.au
-
-# a liquid filter for turning regular md output into the &amp;lt;section&amp;gt;-enclosed
-# chunks required by reveal.js
-
-require 'jekyll'
-require 'nokogiri'
-
-module Jekyll
-
-  module Revealify
-
-    def revealify(html)
-
-      # parse content
-      content = Nokogiri::HTML.fragment(html)
-
-      # create an empty node
-      reveal_div = Nokogiri::HTML.fragment('&amp;lt;div class=&quot;reveal&quot;&amp;gt;&amp;lt;div class=&quot;slides&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;', 'UTF-8')
-      slides_div = reveal_div.search('.slides').first
-
-      content.xpath(&quot;*&quot;).each do |element|
-
-        # &amp;lt;section&amp;gt; elements should be passed through as-is
-        if element.matches? &quot;section&quot;
-          slides_div.add_child(element.dup)
-
-        else
-          # on &quot;split&quot; elements (&amp;lt;h1&amp;gt;, &amp;lt;h2&amp;gt;, &amp;lt;hr&amp;gt;)
-          if element.matches? &quot;h1,h2,hr&quot;
-            current_section = slides_div.add_child(&quot;&amp;lt;section&amp;gt;&quot;).first
-            # hoist all the header's attributes up to the wrapper element
-            # not sure if this will always work, but here goes...
-            element.keys.each do |attribute|
-              # relies on the fact that the &quot;current&quot; wrapper node is the last child in ret
-              current_section[attribute] = element[attribute]
-              # element.delete attribute
-            end
-          end
-
-          # add the element to the current &amp;lt;section&amp;gt; (i.e. the current slide)
-          # unless it's just an &amp;lt;hr&amp;gt; (which are used for splitting only)
-          current_section = slides_div.last_element_child
-          current_section.add_child(element.dup) unless element.matches? &quot;hr&quot;
-        end
-
-      end
-
-      reveal_div.to_html
-    end
-
-  end
-
-end
-
-Liquid::Template.register_filter(Jekyll::Revealify)
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;2-add-a-reveal-layout&quot;&gt;2. add a reveal &lt;a href=&quot;https://jekyllrb.com/docs/layouts/&quot;&gt;layout&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;You’ll need a new &lt;a href=&quot;https://jekyllrb.com/docs/layouts/&quot;&gt;layout&lt;/a&gt; as well: create a
-&lt;code&gt;reveal.html&lt;/code&gt; file in your Jekyll &lt;code&gt;_layouts&lt;/code&gt; directory and make sure that the
-body tag has this in it (you’ll need to make sure it’s got the right paths &amp;amp;
-other stuff for your setup). The key part is that first &lt;code&gt;{{ content |
-revealify }}&lt;/code&gt; line—that takes the content of your page (the jekyll
-&lt;code&gt;.md&lt;/code&gt; file with &lt;code&gt;layout: reveal&lt;/code&gt; in the frontmatter) and passes it through the
-“revealify” filter plugin we &lt;a href=&quot;#the-revealify-filter&quot;&gt;made earlier&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The configuration stuff here is just the example config from
-&lt;a href=&quot;https://github.com/hakimel/reveal.js#configuration&quot;&gt;reveal.js&lt;/a&gt;, so feel free to
-tweak to suit your own presentation.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!-- this is where the reveailfy filter gets applied --&amp;gt;
-{{ content | revealify }}
-
-&amp;lt;!-- load the reveal.js css &amp;amp; js (assuming you've put it in assets/)--&amp;gt;
-&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;{{site.baseurl}}/assets/reveal.js-3.7.0/css/reveal.css&quot;&amp;gt;
-&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;{{site.baseurl}}/assets/reveal.js-3.7.0/css/theme/white.css&quot;&amp;gt;
-&amp;lt;script src=&quot;{{site.baseurl}}/assets/reveal.js-3.7.0/js/reveal.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
-
-&amp;lt;!-- configure the presentation, (you can tweak options to suit) --&amp;gt;
-&amp;lt;script&amp;gt;
- Reveal.initialize({
-
-   // Display presentation control arrows
-   controls: true,
-
-   // Help the user learn the controls by providing hints, for example by
-   // bouncing the down arrow when they first encounter a vertical slide
-   controlsTutorial: true,
-
-   // Determines where controls appear, &quot;edges&quot; or &quot;bottom-right&quot;
-   controlsLayout: 'bottom-right',
-
-   // Visibility rule for backwards navigation arrows; &quot;faded&quot;, &quot;hidden&quot;
-   // or &quot;visible&quot;
-   controlsBackArrows: 'faded',
-
-   // Display a presentation progress bar
-   progress: true,
-
-   // Display the page number of the current slide
-   slideNumber: false,
-
-   // Push each slide change to the browser history
-   history: false,
-
-   // Enable keyboard shortcuts for navigation
-   keyboard: true,
-
-   // Enable the slide overview mode
-   overview: true,
-
- });
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;The full &lt;a href=&quot;https://jekyllrb.com/docs/layouts/&quot;&gt;layout&lt;/a&gt; file will depend on how
-the rest of your site works (where you’ve put the &lt;code&gt;reveal.js-x.x.x&lt;/code&gt; folder,
-etc.) so I haven’t included the full file here (you can &lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html&quot;&gt;see it on
-GitHub&lt;/a&gt;,
-though). Also remember that you can see the full list of reveal configuration
-options &lt;a href=&quot;https://github.com/hakimel/reveal.js#configuration&quot;&gt;in the README&lt;/a&gt;:&lt;/p&gt;
-
-&lt;h2 id=&quot;3-write-your-slides-as-markdown-content&quot;&gt;3. write your slides as markdown content&lt;/h2&gt;
-
-&lt;p&gt;Finally, write your content as a regular jekyll post which uses the &lt;code&gt;reveal&lt;/code&gt;
-layout, e.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;---
-title: &quot;Week 1: intro&quot;
-layout: reveal
----
-
-## Intro
-
-- welcome to the course
-- we're gonna learn all the things
-
-## Timeline
-
-- first, we'll sit in boring lectures...
-- ... then, there will be a huge exam!
-
-fun times.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, you get all the niceties of the &lt;code&gt;jekyll watch&lt;/code&gt; cycle; livereload,
-auto-compilation of scss assets, etc.&lt;/p&gt;
-
-&lt;p&gt;And if you need to do something interesting with the formatting or layout of
-your content, then you can just drop straight into writing HTML (as you can
-always do in a markdown file).&lt;/p&gt;
-
-&lt;h2 id=&quot;4-write-amazing-content&quot;&gt;4. write amazing content&lt;/h2&gt;
-
-&lt;p&gt;This is the hard part. But at least if you’ve got a nice workflow for actually
-turning your content into nice looking slides then you’ve got a head start :)&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I use Jekyll to create my course websites and reveal.js to create my lecture slides. Both of them are awesome, and allow me to focus on writing (hopefully) great content, and the formatting/presentation stuff stays out of the way until I git push the updates to the server.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="meta" /><category term="web" /><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue. If you haven’t visited for a while, you might have noticed that I’ve re-written my website. Again.</summary></entry></feed>
