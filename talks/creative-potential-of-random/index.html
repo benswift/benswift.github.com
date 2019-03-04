@@ -157,10 +157,8 @@ to control: <strong>position</strong>, <strong>size/shape</strong>, <strong>colo
 randomness to use: <em>this is where the art happens</em></p></section><section id="re-creating-the-random-pixels-image"><h2 id="re-creating-the-random-pixels-image">re-creating the random pixels image</h2>
 <pre><code class="language-javascript">loadPixels();
 for (var i = 0; i &lt; pixels.length; i++) {
-    if (random() &lt; 0.5)
-        pixels[i] = 0;
-    else
-        pixels[i] = 255;
+  if (random() &lt; 0.5) pixels[i] = 0;
+  else pixels[i] = 255;
 }
 updatePixels();
 </code></pre></section><section data-background-image="/assets/images/talks/creative-potential-of-random/blue-poles-165c4f46d587d210f193e6a13be9abb0f084570f610b9646f7ca777aba72fbd0.jpg" data-background-size="cover">

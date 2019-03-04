@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-01T10:56:51+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On parental leave and auto-reply messages</title><link href="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/" rel="alternate" type="text/html" title="On parental leave and auto-reply messages" /><published>2019-02-26T18:08:00+11:00</published><updated>2019-02-26T18:08:00+11:00</updated><id>https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages</id><content type="html" xml:base="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/">&lt;p&gt;I’m now (as of the date of this blog post) on parental leave (&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave&quot;&gt;thanks,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-04T17:15:43+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On parental leave and auto-reply messages</title><link href="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/" rel="alternate" type="text/html" title="On parental leave and auto-reply messages" /><published>2019-02-26T18:08:00+11:00</published><updated>2019-02-26T18:08:00+11:00</updated><id>https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages</id><content type="html" xml:base="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/">&lt;p&gt;I’m now (as of the date of this blog post) on parental leave (&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave&quot;&gt;thanks,
 Brian&lt;/a&gt;
 😊). I’m about to set up an email auto-reply which will guard my work email
 address until 15 July.&lt;/p&gt;
@@ -103,13 +103,14 @@ randomising the location and text style&lt;/li&gt;
 &lt;p&gt;As with all things on this blog, you can check out the source&lt;sup id=&quot;fnref:all-in-one&quot;&gt;&lt;a href=&quot;#fn:all-in-one&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to see
 all the details.&lt;/p&gt;
 
+&lt;p&gt;It’s actually all in inline &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tags—which I know
+  isn’t nice modular software engineering, but it means that it’s all in the
+  one place. So, kids, do as I say in class, not as I do on my blog.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:all-in-one&quot;&gt;
 
-      &lt;p&gt;It’s actually all in inline &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tags—which I know
-isn’t nice modular software engineering, but it means that it’s all in the
-one place. So, kids, do as I say in class, not as I do on my blog. &lt;a href=&quot;#fnref:all-in-one&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:all-in-one&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">In the spirit of Murdoch University’s free your think marketing campaign, I’ve put together a dynamic full-page ad billboard as my pitch for the ANU’s next marketing campaign.</summary></entry><entry><title type="html">Reimagining Engineering &amp;amp; CS at the ANU</title><link href="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/" rel="alternate" type="text/html" title="Reimagining Engineering &amp; CS at the ANU" /><published>2019-02-07T11:55:00+11:00</published><updated>2019-02-07T11:55:00+11:00</updated><id>https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu</id><content type="html" xml:base="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/">&lt;p&gt;The &lt;a href=&quot;https://cecs.anu.edu.au&quot;&gt;ANU College of Engineering and Computer Science&lt;/a&gt;
@@ -148,6 +149,11 @@ FAQ&lt;sup id=&quot;fnref:faq&quot;&gt;&lt;a href=&quot;#fn:faq&quot; class=&quo
 education and research ties to the Schools of Art &amp;amp; Design, Music, and Digital
 Humanities.&lt;/p&gt;
 
+&lt;p&gt;Defining “art” is beyond the scope of this blog post, obviously. But I don’t
+  just mean it in the narrow “high/fine art” sense, although I don’t mean it
+  in the “all the humanities” sense either. Think making music, drawing
+  pictures, writing stories—but with an element of technology in the mix.&lt;/p&gt;
+
 &lt;h3 id=&quot;what-does-that-have-to-do-with-the-reimagine-project&quot;&gt;What does that have to do with the Reimagine Project?&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -179,6 +185,10 @@ them more deeply—this is my chance.&lt;/p&gt;
 yourself—it’s way too big a project for that. It’s about weaving something
 into the whole College&lt;sup id=&quot;fnref:dna&quot;&gt;&lt;a href=&quot;#fn:dna&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, so that by 2050 it affects the way &lt;em&gt;everyone&lt;/em&gt;
 thinks.&lt;/p&gt;
+
+&lt;p&gt;You could even say “weaving it into the College’s DNA”. But that’d be dumb.
+  Institutions don’t have DNA… except maybe
+  &lt;a href=&quot;https://biology.anu.edu.au&quot;&gt;RSB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;what-might-this-look-like-concretely&quot;&gt;What might this look like, concretely?&lt;/h3&gt;
 
@@ -240,6 +250,10 @@ really Ben?)&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;I kindof want to wriggle out and say &lt;em&gt;most courses&lt;/em&gt;, but I also really want
+  to see what an artistic submission in lieu of a final exam looks like for
+  &lt;a href=&quot;https://cs.anu.edu.au/courses/comp3600/&quot;&gt;COMP3600&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;I also look forward to having the time to think through what a deeply artistic
 CECS looks like. I’m sure that in collaboration with the other Reimagine Fellows
 and the rest of the design team we can come up even more ideas.&lt;/p&gt;
@@ -281,6 +295,11 @@ because of this. I want these students to know that they can pursue their
 creative dreams, and in doing so they’ll be doing top-class
 engineering/CS/design work.&lt;/p&gt;
 
+&lt;p&gt;Although I reject the Romantic notion that “creatives” are some sort of
+  rarefied “other”, conduits to some deep wellspring of hidden creative mojo
+  from the other side. We’re all just humans, constructing and engaging in
+  cultural practices with this stuff, building on what went before.&lt;/p&gt;
+
 &lt;h4 id=&quot;in-outreach&quot;&gt;…in outreach?&lt;/h4&gt;
 
 &lt;p&gt;Because of my &lt;a href=&quot;/livecoding/index.html&quot;&gt;livecoding&lt;/a&gt; I get
@@ -316,6 +335,7 @@ Project. I think the best way forward is to partner with the other parts of
 campus to bring their expertise and smoosh it together with ours.&lt;/p&gt;
 
 &lt;p&gt;Concretely, that means:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;sending CECS coursework students to take courses in other parts of campus (as
 part of majors/minors/electives, etc.) as well as the other way around&lt;/li&gt;
@@ -426,32 +446,22 @@ campus. That’s what I want us to be famous for.&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:art&quot;&gt;
 
-      &lt;p&gt;Defining “art” is beyond the scope of this blog post, obviously. But I don’t
-just mean it in the narrow “high/fine art” sense, although I don’t mean it
-in the “all the humanities” sense either. Think making music, drawing
-pictures, writing stories—but with an element of technology in the mix. &lt;a href=&quot;#fnref:art&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:art&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:dna&quot;&gt;
 
-      &lt;p&gt;You could even say “weaving it into the College’s DNA”. But that’d be dumb.
-Institutions don’t have DNA… except maybe
-&lt;a href=&quot;https://biology.anu.edu.au&quot;&gt;RSB&lt;/a&gt;. &lt;a href=&quot;#fnref:dna&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:dna&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:genevieve&quot;&gt;
       &lt;p&gt;I’d love to get &lt;a href=&quot;https://twitter.com/feraldata&quot;&gt;Genevieve&lt;/a&gt; to write &amp;amp; teach that one. &lt;a href=&quot;#fnref:genevieve&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:every-course&quot;&gt;
 
-      &lt;p&gt;I kindof want to wriggle out and say &lt;em&gt;most courses&lt;/em&gt;, but I also really want
-to see what an artistic submission in lieu of a final exam looks like for
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp3600/&quot;&gt;COMP3600&lt;/a&gt;. &lt;a href=&quot;#fnref:every-course&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:every-course&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:creatives&quot;&gt;
 
-      &lt;p&gt;Although I reject the Romantic notion that “creatives” are some sort of
-rarefied “other”, conduits to some deep wellspring of hidden creative mojo
-from the other side. We’re all just humans, constructing and engaging in
-cultural practices with this stuff, building on what went before. &lt;a href=&quot;#fnref:creatives&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:creatives&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="ccc" /><summary type="html">The ANU College of Engineering and Computer Science (CECS) is being Reimagined. Don’t take my word for it; listen to our fearless leader Elanor:</summary></entry><entry><title type="html">Class discussions on Discourse</title><link href="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/" rel="alternate" type="text/html" title="Class discussions on Discourse" /><published>2019-02-06T19:42:03+11:00</published><updated>2019-02-06T19:42:03+11:00</updated><id>https://benswift.me/blog/2019/02/06/class-discussions-on-discourse</id><content type="html" xml:base="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/">&lt;p&gt;In 2018 I (with the support of the Teaching &amp;amp; Learning IT team in &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;my
@@ -462,6 +472,11 @@ Media&lt;/a&gt;, a large-ish (~200 students)
 introductory code/art programming and interaction design course. This course is
 open to both CS and non-CS students, and can be counted towards a major in both
 the CS and the ANU School of Art and Design.&lt;sup id=&quot;fnref:artgit&quot;&gt;&lt;a href=&quot;#fn:artgit&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;I also teach all the artists &amp;amp; designers to use git—and it works really
+  well… with the appropriate scaffolding. Knowing how to use version control
+  really does feel like having superpowers when editing digital, and seeing
+  artists and designers realise this is pretty cool.&lt;/p&gt;
 
 &lt;p&gt;This wasn’t because Piazza sucks—it’s actually pretty great in lots of ways.
 But there were a few things we hoped to that Discourse would do better:&lt;/p&gt;
@@ -546,6 +561,9 @@ read/write access to the &lt;strong&gt;category&lt;/strong&gt; with the same nam
   &lt;li&gt;tutors (TAs) were given&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;the course category (list of topics) and group (list of members) could in
+  principle have different names&lt;/p&gt;
+
 &lt;p&gt;Here’s an example: for COMP1720 we set up&lt;/p&gt;
 
 &lt;ul&gt;
@@ -582,15 +600,11 @@ comments, then get in touch (&lt;a href=&quot;https://twitter.com/benswift&quot;
   &lt;ol&gt;
     &lt;li id=&quot;fn:artgit&quot;&gt;
 
-      &lt;p&gt;I also teach all the artists &amp;amp; designers to use git—and it works really
-well… with the appropriate scaffolding. Knowing how to use version control
-really does feel like having superpowers when editing digital, and seeing
-artists and designers realise this is pretty cool. &lt;a href=&quot;#fnref:artgit&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:artgit&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:samename&quot;&gt;
 
-      &lt;p&gt;the course category (list of topics) and group (list of members) could in
-principle have different names &lt;a href=&quot;#fnref:samename&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:samename&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="web" /><summary type="html">In 2018 I (with the support of the Teaching &amp;amp; Learning IT team in my School) switched from Piazza to a self-hosted Discourse instance for class discussions. Specifically, I used it for COMP1720: Art &amp;amp; Interaction in New Media, a large-ish (~200 students) introductory code/art programming and interaction design course. This course is open to both CS and non-CS students, and can be counted towards a major in both the CS and the ANU School of Art and Design.[^artgit]</summary></entry><entry><title type="html">On livecoding annotations and visualisations</title><link href="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/" rel="alternate" type="text/html" title="On livecoding annotations and visualisations" /><published>2019-01-31T09:53:00+11:00</published><updated>2019-01-31T09:53:00+11:00</updated><id>https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations</id><content type="html" xml:base="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/">&lt;p&gt;I’ve just finished reading Charlie Roberts’ &lt;a href=&quot;https://charlieroberts.github.io/annotationsAndVisualizations/&quot;&gt;interactive web essay on
@@ -630,6 +644,9 @@ Programming&lt;/a&gt; (2013) in the &lt;em&gt;1st
 International Workshop on Live Programming (LIVE)&lt;/em&gt;&lt;sup id=&quot;fnref:preprint&quot;&gt;&lt;a href=&quot;#fn:preprint&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; (it’s reference
 #4 in the essay). I’ll refer to this a bit in this post, so let’s call it “the
 LIVE paper”.&lt;/p&gt;
+
+&lt;p&gt;if you don’t have institutional access to the IEEE then just &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;email
+  me&lt;/a&gt; and I can send you a pre-print.&lt;/p&gt;
 
 &lt;p&gt;I also think that the three points listed above are pretty solid, especially in
 a multimedia livecoding context (maybe even in a broader context). One thing I
@@ -711,7 +728,7 @@ because they allow her to “audition” algorithmic changes to the code
 without&lt;sup id=&quot;fnref:feedback&quot;&gt;&lt;a href=&quot;#fn:feedback&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; actually eval-ing the code and changing the music. Here’s an
 example from the essay:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;Euclid(9,16)/* 1010110101011010 */ 
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;Euclid(9, 16); /* 1010110101011010 */
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I might not always know what the &lt;code&gt;9,6&lt;/code&gt; euclidean rhythm is, but I’m by now
@@ -722,6 +739,11 @@ then only evaluating the code when I’m satisfied. That’s super powerful—th
 equivalent of the DJ cueing the next track with one can on their ear, and one
 ear in the club—something which I don’t have currently in my livecoding setup
 (although others might).&lt;/p&gt;
+
+&lt;p&gt;Yes, I know that the real-time feedback of hearing the sound is crucial, and
+  I’m not for a second saying that we do away with it, but there are some
+  situations where I want to check what the result of an algorithmic/parameter
+  change might be without inflicting it on the audience.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
@@ -763,29 +785,26 @@ discussion, and hopefully there are a new generation of publications&lt;sup id=&
 where this stuff can be front-and-centre, not just a weird “supplemental web
 materials” section to a traditional pdf.&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://distill.pub/&quot;&gt;Distill&lt;/a&gt; is great, but it’s pretty DL/AI-focussed.
+  The livecoding community needs something similar (although it does
+  privilege livecoding environments which work in the brower, so that’s not
+  ideal either. Hmm.)&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:preprint&quot;&gt;
 
-      &lt;p&gt;if you don’t have institutional access to the IEEE then just &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;email
-me&lt;/a&gt; and I can send you a pre-print. &lt;a href=&quot;#fnref:preprint&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:preprint&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:broken&quot;&gt;
       &lt;p&gt;Charlie, if I’m doing it wrong, please let me know :) &lt;a href=&quot;#fnref:broken&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:feedback&quot;&gt;
 
-      &lt;p&gt;Yes, I know that the real-time feedback of hearing the sound is crucial, and
-I’m not for a second saying that we do away with it, but there are some
-situations where I want to check what the result of an algorithmic/parameter
-change might be without inflicting it on the audience. &lt;a href=&quot;#fnref:feedback&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:feedback&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:distill&quot;&gt;
 
-      &lt;p&gt;&lt;a href=&quot;https://distill.pub/&quot;&gt;Distill&lt;/a&gt; is great, but it’s pretty DL/AI-focussed.
-The livecoding community needs something similar (although it does
-privilege livecoding environments which work in the brower, so that’s not
-ideal either. Hmm.) &lt;a href=&quot;#fnref:distill&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:distill&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><summary type="html">I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.</summary></entry><entry><title type="html">Oils from 威海</title><link href="https://benswift.me/blog/2019/01/29/oils-from-weihai/" rel="alternate" type="text/html" title="Oils from 威海" /><published>2019-01-29T12:24:00+11:00</published><updated>2019-01-29T12:24:00+11:00</updated><id>https://benswift.me/blog/2019/01/29/oils-from-weihai</id><content type="html" xml:base="https://benswift.me/blog/2019/01/29/oils-from-weihai/">&lt;p&gt;One of my academic responsibilities is teaching our ANU Computer Science
@@ -807,13 +826,14 @@ which one I chose?&lt;/p&gt;
 &lt;p&gt;It’s now hanging on my wall at home, creepily looking down at my family and our
 guests. &lt;strong&gt;I love it&lt;/strong&gt;.&lt;/p&gt;
 
+&lt;p&gt;that’s why I look so sullen—I smiled no-stop for the first hour (when they
+  were painting the background) but by the time they were putting on the
+  facial details 3hrs in I was &lt;em&gt;way&lt;/em&gt; too tired to keep my smile up 😊&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:tired&quot;&gt;
 
-      &lt;p&gt;that’s why I look so sullen—I smiled no-stop for the first hour (when they
-were painting the background) but by the time they were putting on the
-facial details 3hrs in I was &lt;em&gt;way&lt;/em&gt; too tired to keep my smile up 😊 &lt;a href=&quot;#fnref:tired&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;#fnref:tired&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">One of my academic responsibilities is teaching our ANU Computer Science programs into our various partner institutions overseas. One of these partner institutions is Shandong University WeiHai (SDUW).</summary></entry><entry><title type="html">Old livecoding photo roundup</title><link href="https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup/" rel="alternate" type="text/html" title="Old livecoding photo roundup" /><published>2019-01-22T13:12:00+11:00</published><updated>2019-01-22T13:12:00+11:00</updated><id>https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup</id><content type="html" xml:base="https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup/">&lt;p&gt;I’m trying to find all the photos of me doing livecoding gigs over the past 10
