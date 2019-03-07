@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-06T10:49:20+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On parental leave and auto-reply messages</title><link href="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/" rel="alternate" type="text/html" title="On parental leave and auto-reply messages" /><published>2019-02-26T18:08:00+11:00</published><updated>2019-02-26T18:08:00+11:00</updated><id>https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages</id><content type="html" xml:base="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/">&lt;p&gt;I’m now (as of the date of this blog post) on parental leave (&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave&quot;&gt;thanks,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-07T15:12:30+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On parental leave and auto-reply messages</title><link href="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/" rel="alternate" type="text/html" title="On parental leave and auto-reply messages" /><published>2019-02-26T18:08:00+11:00</published><updated>2019-02-26T18:08:00+11:00</updated><id>https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages</id><content type="html" xml:base="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/">&lt;p&gt;I’m now (as of the date of this blog post) on parental leave (&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave&quot;&gt;thanks,
 Brian&lt;/a&gt;
 😊). I’m about to set up an email auto-reply which will guard my work email
 address until 15 July.&lt;/p&gt;
@@ -65,9 +65,23 @@ look at the
 to see how it works. If you want to really immerse yourself in the thing,
 there’s a fullsreen version &lt;a href=&quot;/widgets/reimagine-logo/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div style=&quot;position:relative;padding-top:100%;margin:20%;&quot;&gt;
-  &lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info).</summary></entry><entry><title type="html">Algorithmic uni marketing billboards</title><link href="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/" rel="alternate" type="text/html" title="Algorithmic uni marketing billboards" /><published>2019-02-16T14:46:00+11:00</published><updated>2019-02-16T14:46:00+11:00</updated><id>https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards</id><content type="html" xml:base="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/">&lt;p&gt;In the spirit of Murdoch University’s &lt;a href=&quot;http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html&quot;&gt;&lt;em&gt;free your
+&lt;div style=&quot;position:relative;padding-top:100%;margin:0;&quot;&gt;
+  &lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you’re looking to use this logo yourself in some other page, you could use an
+&lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;div style=&quot;position:relative;padding-top:100%;margin:0;&quot;&amp;gt;
+  &amp;lt;iframe
+    src=&quot;https://benswift.me/widgets/reimagine-logo/&quot;
+    frameborder=&quot;0&quot;
+    style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot;
+  &amp;gt;
+  &amp;lt;/iframe&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>Ben Swift</name></author><summary type="html">I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info).</summary></entry><entry><title type="html">Algorithmic uni marketing billboards</title><link href="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/" rel="alternate" type="text/html" title="Algorithmic uni marketing billboards" /><published>2019-02-16T14:46:00+11:00</published><updated>2019-02-16T14:46:00+11:00</updated><id>https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards</id><content type="html" xml:base="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/">&lt;p&gt;In the spirit of Murdoch University’s &lt;a href=&quot;http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html&quot;&gt;&lt;em&gt;free your
 think&lt;/em&gt;&lt;/a&gt;
 marketing campaign, I’ve put together a dynamic full-page ad billboard as my
 pitch for the ANU’s next marketing campaign.&lt;/p&gt;
