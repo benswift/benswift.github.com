@@ -107,8 +107,9 @@ footer {
 
 .post-tags {
   font-style: italic; }
-  .post-tags > span {
+  .post-tags > a {
     font-style: normal;
+    font-weight: 400;
     background-color: #f5ddfa;
     color: #be2edd;
     padding: 0.2em;
