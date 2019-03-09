@@ -106,11 +106,7 @@
 simple tabular data I’d <em>much</em> rather keep it in an
 <a href="https://orgmode.org">org-mode</a> table than have to fire up Excel.</p>
 
-<p>Here’s an example<sup id="fnref:auto-format"><a href="#fn:auto-format" class="footnote">1</a></sup>:</p>
-
-<p>If the prospect of having to keep all those <code>|</code> characters manually aligned
-  is freaking you out, don’t worry—<code>orgtbl-mode</code> does it all for you
-  automatically.</p>
+<p>Here’s an example:</p>
 
 <pre><code>#+NAME: pap-table
 | first name  | last name | yearly-income |
@@ -120,12 +116,16 @@ simple tabular data I’d <em>much</em> rather keep it in an
 | Charles     | Bingley   |          5000 |
 </code></pre>
 
+<p>If the prospect of having to keep all those <code>|</code> characters manually aligned
+is freaking you out, don’t worry—<code>orgtbl-mode</code> does it all for you
+automatically.</p>
+
 <p>Now, I often want to get my functional programming on and apply a function to
 all the rows of the table. Org-mode does have some special syntax with bunch of
 cool features for doing arithmetic on the cells (just like Excel formulas) but
 I’m usually happier just writing regular elisp to get the job done.</p>
 
-<p>The nicest<sup id="fnref:nicer"><a href="#fn:nicer" class="footnote">2</a></sup> way I’ve found to do this is to give the table a <strong>name</strong>
+<p>The nicest<sup id="fnref:nicer"><a href="#fn:nicer" class="footnote">1</a></sup> way I’ve found to do this is to give the table a <strong>name</strong>
 (you can see it in the example above—the table name is <code>pap-table</code>). Then, you
 can tell an elisp <a href="https://orgmode.org/manual/Structure-of-code-blocks.html">code
 block</a> about the data
@@ -195,10 +195,6 @@ strings, but then it would be interpreted as an <em>1×n</em> table, rather than
 </ul>
 <div class="footnotes">
   <ol>
-    <li id="fn:auto-format">
-
-      <p><a href="#fnref:auto-format" class="reversefootnote">&#8617;</a></p>
-    </li>
     <li id="fn:nicer">
       <p>if there’s a nicer way, please <a href="https://twitter.com/benswift">let me know</a>! <a href="#fnref:nicer" class="reversefootnote">&#8617;</a></p>
     </li>
@@ -252,8 +248,8 @@ strings, but then it would be interpreted as an <em>1×n</em> table, rather than
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>f8f5c56</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/f8f5c56/_posts/2019-03-09-mapping-over-table-rows-in-org-mode.md">source
+	site revision <code>b70334e</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/b70334e/_posts/2019-03-09-mapping-over-table-rows-in-org-mode.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 

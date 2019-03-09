@@ -1,12 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-09T20:25:02+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-09T20:26:35+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
 simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
 &lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; table than have to fire up Excel.&lt;/p&gt;
 
-&lt;p&gt;Here’s an example&lt;sup id=&quot;fnref:auto-format&quot;&gt;&lt;a href=&quot;#fn:auto-format&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
-
-&lt;p&gt;If the prospect of having to keep all those &lt;code&gt;|&lt;/code&gt; characters manually aligned
-  is freaking you out, don’t worry—&lt;code&gt;orgtbl-mode&lt;/code&gt; does it all for you
-  automatically.&lt;/p&gt;
+&lt;p&gt;Here’s an example:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#+NAME: pap-table
 | first name  | last name | yearly-income |
@@ -16,12 +12,16 @@ simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
 | Charles     | Bingley   |          5000 |
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;If the prospect of having to keep all those &lt;code&gt;|&lt;/code&gt; characters manually aligned
+is freaking you out, don’t worry—&lt;code&gt;orgtbl-mode&lt;/code&gt; does it all for you
+automatically.&lt;/p&gt;
+
 &lt;p&gt;Now, I often want to get my functional programming on and apply a function to
 all the rows of the table. Org-mode does have some special syntax with bunch of
 cool features for doing arithmetic on the cells (just like Excel formulas) but
 I’m usually happier just writing regular elisp to get the job done.&lt;/p&gt;
 
-&lt;p&gt;The nicest&lt;sup id=&quot;fnref:nicer&quot;&gt;&lt;a href=&quot;#fn:nicer&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; way I’ve found to do this is to give the table a &lt;strong&gt;name&lt;/strong&gt;
+&lt;p&gt;The nicest&lt;sup id=&quot;fnref:nicer&quot;&gt;&lt;a href=&quot;#fn:nicer&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; way I’ve found to do this is to give the table a &lt;strong&gt;name&lt;/strong&gt;
 (you can see it in the example above—the table name is &lt;code&gt;pap-table&lt;/code&gt;). Then, you
 can tell an elisp &lt;a href=&quot;https://orgmode.org/manual/Structure-of-code-blocks.html&quot;&gt;code
 block&lt;/a&gt; about the data
@@ -91,10 +91,6 @@ strings, but then it would be interpreted as an &lt;em&gt;1×n&lt;/em&gt; table,
 &lt;/ul&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:auto-format&quot;&gt;
-
-      &lt;p&gt;&lt;a href=&quot;#fnref:auto-format&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
     &lt;li id=&quot;fn:nicer&quot;&gt;
       &lt;p&gt;if there’s a nicer way, please &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;let me know&lt;/a&gt;! &lt;a href=&quot;#fnref:nicer&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
