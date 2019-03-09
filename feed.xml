@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-09T16:05:13+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">On parental leave and auto-reply messages</title><link href="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/" rel="alternate" type="text/html" title="On parental leave and auto-reply messages" /><published>2019-02-26T18:08:00+11:00</published><updated>2019-02-26T18:08:00+11:00</updated><id>https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages</id><content type="html" xml:base="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/">&lt;p&gt;I’m now (as of the date of this blog post) on parental leave (&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave&quot;&gt;thanks,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-09T20:25:02+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
+simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
+&lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; table than have to fire up Excel.&lt;/p&gt;
+
+&lt;p&gt;Here’s an example&lt;sup id=&quot;fnref:auto-format&quot;&gt;&lt;a href=&quot;#fn:auto-format&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;p&gt;If the prospect of having to keep all those &lt;code&gt;|&lt;/code&gt; characters manually aligned
+  is freaking you out, don’t worry—&lt;code&gt;orgtbl-mode&lt;/code&gt; does it all for you
+  automatically.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#+NAME: pap-table
+| first name  | last name | yearly-income |
+|-------------|-----------|---------------|
+| Mr          | Bennett   |          2000 |
+| Fitzwilliam | Darcy     |         10000 |
+| Charles     | Bingley   |          5000 |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, I often want to get my functional programming on and apply a function to
+all the rows of the table. Org-mode does have some special syntax with bunch of
+cool features for doing arithmetic on the cells (just like Excel formulas) but
+I’m usually happier just writing regular elisp to get the job done.&lt;/p&gt;
+
+&lt;p&gt;The nicest&lt;sup id=&quot;fnref:nicer&quot;&gt;&lt;a href=&quot;#fn:nicer&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; way I’ve found to do this is to give the table a &lt;strong&gt;name&lt;/strong&gt;
+(you can see it in the example above—the table name is &lt;code&gt;pap-table&lt;/code&gt;). Then, you
+can tell an elisp &lt;a href=&quot;https://orgmode.org/manual/Structure-of-code-blocks.html&quot;&gt;code
+block&lt;/a&gt; about the data
+in that table like so (note the &lt;code&gt;:var table=pap-table&lt;/code&gt; at the start):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#+BEGIN_SRC emacs-lisp :var table=pap-table
+  (-map
+   (lambda (row)
+     (cl-destructuring-bind (first last income) row
+       (list
+        (format &quot;Mr. %s is a man of %s fortune; %s a year.&quot;
+                last
+                (if (&amp;lt; income 2500) &quot;small&quot; &quot;large&quot;)
+                income))))
+   table)
+#+END_SRC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, when you evaluate the code block with &lt;code&gt;C-c C-c&lt;/code&gt; (or just &lt;code&gt;, ,&lt;/code&gt; in
+Spacemacs) it’ll return the “result”:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#+RESULTS:
+| Mr. Bennett is a man of small fortune; 2000 a year. |
+| Mr. Darcy is a man of large fortune; 10000 a year.  |
+| Mr. Bingley is a man of large fortune; 5000 a year. |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which is really handy, as you can imagine. I use it for all sorts of things,
+including sending “mail merge” emails with template values (since I also use
+&lt;a href=&quot;https://www.djcbsoftware.nl/code/mu/mu4e.html&quot;&gt;Emacs as my mail
+client&lt;/a&gt;—sending an email is
+just an elisp function call away).&lt;/p&gt;
+
+&lt;h2 id=&quot;caveats&quot;&gt;Caveats&lt;/h2&gt;
+
+&lt;p&gt;There are a few “tricks” in the above process, which took me a while to figure
+out. Hopefully by listing them here I can save you a bunch of heartache, dear
+reader.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The elisp doesn’t actually know about the column names from the table—I had
+to re-bind them in the code block using &lt;code&gt;cl-destructuring-bind&lt;/code&gt; (make sure you
+change the bindings if you change the names/order of the columns in the table).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Org-mode tables don’t really much about types, so while it’ll try it’s best
+with the basics (e.g. detecting strings vs numbers) sometimes it gets
+confused. It’s probably worth putting an explicit e.g. &lt;code&gt;string-to-number&lt;/code&gt; in
+if you want to be sure.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the example above my elisp block returns a value (a list, since I’m using
+&lt;code&gt;-map&lt;/code&gt; from the excellent &lt;a href=&quot;https://github.com/magnars/dash.el&quot;&gt;&lt;code&gt;dash.el&lt;/code&gt;
+library&lt;/a&gt;) and that’s why the results get
+nicely formatted in the &lt;code&gt;#+RESULTS:&lt;/code&gt; block. If your code is side-effectful
+(e.g. &lt;code&gt;message&lt;/code&gt;) but doesn’t return a value then you see the results in that
+place, you’ll have to look elsewhere (e.g. the &lt;code&gt;*Messages*&lt;/code&gt; buffer)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Further to the previous caveat, you’ll notice that I’m actually wrapping the
+result of the inner &lt;code&gt;lambda&lt;/code&gt; in another &lt;code&gt;list&lt;/code&gt; call, so the output of the code
+block is actually a list of lists. I could have just returned a list of the
+strings, but then it would be interpreted as an &lt;em&gt;1×n&lt;/em&gt; table, rather than the
+(nicer looking on the page) &lt;em&gt;n×1&lt;/em&gt; table shown above.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:auto-format&quot;&gt;
+
+      &lt;p&gt;&lt;a href=&quot;#fnref:auto-format&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:nicer&quot;&gt;
+      &lt;p&gt;if there’s a nicer way, please &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;let me know&lt;/a&gt;! &lt;a href=&quot;#fnref:nicer&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="emacs" /><summary type="html">I’m an Emacs guy, and so if I’ve got some simple tabular data I’d much rather keep it in an org-mode table than have to fire up Excel.</summary></entry><entry><title type="html">On parental leave and auto-reply messages</title><link href="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/" rel="alternate" type="text/html" title="On parental leave and auto-reply messages" /><published>2019-02-26T18:08:00+11:00</published><updated>2019-02-26T18:08:00+11:00</updated><id>https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages</id><content type="html" xml:base="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/">&lt;p&gt;I’m now (as of the date of this blog post) on parental leave (&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave&quot;&gt;thanks,
 Brian&lt;/a&gt;
 😊). I’m about to set up an email auto-reply which will guard my work email
 address until 15 July.&lt;/p&gt;
@@ -994,97 +1095,4 @@ things that way.&lt;/p&gt;
       &lt;p&gt;well, off-the-CDN, anyway &lt;a href=&quot;#fnref:cdn&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">It is a truth, universally acknowledged, that all programming language authors must also be expert web developers. (attributed to Jane Austen)</summary></entry><entry><title type="html">The annual benswift.me re-write: 2019 edition</title><link href="https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition/" rel="alternate" type="text/html" title="The annual benswift.me re-write: 2019 edition" /><published>2019-01-02T17:46:00+11:00</published><updated>2019-01-02T17:46:00+11:00</updated><id>https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition</id><content type="html" xml:base="https://benswift.me/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition/">&lt;p&gt;Welcome, traveller. You’ve managed to find my blog without being &lt;a href=&quot;http://zork.wikia.com/wiki/Grue&quot;&gt;eaten by a
-grue&lt;/a&gt;. If you haven’t visited for a while, you
-might have noticed that I’ve re-written my website. &lt;a href=&quot;/blog/2017/07/06/benswift-me-update-july-2017-edition/&quot;&gt;Again&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There are a few reasons:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;it forces me to keep up to date with web stuff, which I &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;teach for a
-living&lt;/a&gt; (students can sniff out a
-fraud)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;my academic activities don’t fit the traditional “list of journal
-publications” shape that my university-provided web presence is geared
-towards&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;if I move to a different institution, I don’t have the difficult job of
-exfiltrating my content from my old institution’s platform&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;building things is fun (I’m good at this stuff, and it feels good to use the
-skills you’ve spent years developing)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;part of being an academic is brand-management, and that’s much easier to do
-if you completely control (at least one of) the platforms you’re putting your
-message out on&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I’m a control-freak, and the idea of &lt;em&gt;not&lt;/em&gt; being in control bums me out (this
-is the pernicious flip side of #5)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Some of these are good reasons, some not-so-good. For a fun party game, &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;argue
-with me on twitter&lt;/a&gt; about which is which 😉&lt;/p&gt;
-
-&lt;h2 id=&quot;the-nitty-gritty-technical-stuff&quot;&gt;The nitty-gritty technical stuff&lt;/h2&gt;
-
-&lt;p&gt;I’ve (once again) gone with a &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;-powered static
-site. This time, though, I’ve opted for my own lovingly hand-crafted HTML &amp;amp; CSS
-rather than one of the out-of-the-box themes. In doing this, I decided on a few
-design priorities:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;em&gt;modern&lt;/em&gt; markup: CSS grid &amp;amp; flexbox &lt;strong&gt;all the way&lt;/strong&gt; (sorry if you’re on an old
-version of IE)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;minimal&lt;/em&gt; markup: there’s really not many elements in each page (I wanted to
-see how far I could push back against the &lt;code&gt;div&lt;/code&gt; soup that’s so common these
-days)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;semantic&lt;/em&gt; markup: we have &lt;code&gt;nav&lt;/code&gt; and &lt;code&gt;article&lt;/code&gt; and &lt;code&gt;main&lt;/code&gt; and &lt;code&gt;aside&lt;/code&gt;, so
-let’s use them&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Typography-wise, I used &lt;a href=&quot;https://twitter.com/rsms&quot;&gt;@rsms&lt;/a&gt;’s new &lt;a href=&quot;https://rsms.me/inter/&quot;&gt;Inter
-UI&lt;/a&gt; font family, and I really like it. I’m not a
-designer (as you can probably tell) so I kept it simple—one typeface, one
-highlight colour, and then I poke around with
-&lt;a href=&quot;https://www.sass-lang.com&quot;&gt;Sass’s&lt;/a&gt; colour manipulation functions to get a &lt;em&gt;bit&lt;/em&gt;
-more variation.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The verdict&lt;/strong&gt;: I was really pleasantly surprised—it came together in about a
-day of hard work. Next time around (i.e. now that I know what I’m doing a bit
-more) it’d be even easier. I particularly liked using &lt;a href=&quot;https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-areas&quot;&gt;grid template
-areas&lt;/a&gt;
-to draw a little ascii-art diagram of my desired layout. Obviously the layout
-for this blog is really boring, but I can imagine this being really handy for
-more complex layouts.&lt;/p&gt;
-
-&lt;p&gt;If it’s broken for you and you’re on a modern browser&lt;sup id=&quot;fnref:ie-shade&quot;&gt;&lt;a href=&quot;#fn:ie-shade&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, then please
-&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;let me know&lt;/a&gt; and I’ll try to fix it if I can. I
-don’t think I’ve broken any (many) links, but again let me know if you find
-something I’ve missed.&lt;/p&gt;
-
-&lt;p&gt;The other thing I really like about this iteration of the annual &lt;code&gt;benswift.me&lt;/code&gt;
-redesign is that I finally understand the whole thing. No more magic themes
-which I hesitantly poke around in “eye-of-newt” style whenever I want to make
-changes, and that’s a nice feeling&lt;sup id=&quot;fnref:control-freak&quot;&gt;&lt;a href=&quot;#fn:control-freak&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let me know what you think of my new redesign in the comments. Just
-kidding—there are no comments. But do get in touch in some other way (see the
-icons at the top for various options).&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:ie-shade&quot;&gt;
-      &lt;p&gt;that’s my subtle way of throwing shade at IE &lt;a href=&quot;#fnref:ie-shade&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:control-freak&quot;&gt;
-      &lt;p&gt;especially if you’re a control freak &lt;a href=&quot;#fnref:control-freak&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="meta" /><category term="web" /><summary type="html">Welcome, traveller. You’ve managed to find my blog without being eaten by a grue. If you haven’t visited for a while, you might have noticed that I’ve re-written my website. Again.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">It is a truth, universally acknowledged, that all programming language authors must also be expert web developers. (attributed to Jane Austen)</summary></entry></feed>
