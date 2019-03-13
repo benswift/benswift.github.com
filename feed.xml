@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-13T11:19:23+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-13T12:29:00+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
 simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
 &lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; table than have to fire up Excel.&lt;/p&gt;
 
@@ -136,11 +136,11 @@ times, and I’d be keen to catch up.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;But doesn’t that mean you’ll (1) miss a bunch of fantastic opportunities and
 (2) let a bunch of folks down?&lt;/em&gt; Well, maybe. On the first point, I already feel
-overwhelmed (at times) by the amount of stuff on my to-do list, so any natural
-pruning of that which occurs is actually kindof appealing. And on the second
-point I’ve tried really hard this last month to hand various things over to
-capable folks, so I’m hoping that if we are/were working on something then we’ve
-made a contingency plan (and that this hasn’t caught you by surprise).&lt;/p&gt;
+overwhelmed (at times) by the amount of stuff on my to-do list, so any attrition
+which occurs is actually kindof appealing. And on the second point I’ve tried
+really hard this last month to hand various things over to capable folks, so I’m
+hoping that if we are/were working on something then we’ve made a contingency
+plan (and that this hasn’t caught you by surprise).&lt;/p&gt;
 
 &lt;p&gt;Anyway, I’m gonna go be a Dad for a while. I’ll still read the odd book, and
 maybe even make some more music, but this isn’t a research fellowship—it’s
