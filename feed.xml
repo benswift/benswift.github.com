@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-14T07:17:19+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-26T20:49:40+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">TODO name :Reimagine Fellow Project Pitch</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="TODO name :Reimagine Fellow Project Pitch" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine fellow&lt;/a&gt; requires having a
+project, so here’s my plan.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-background-and-description&quot;&gt;Project Background and Description&lt;/h2&gt;
+
+&lt;h3 id=&quot;elevator-pitch&quot;&gt;Elevator pitch&lt;/h3&gt;
+&lt;p&gt;short description of who is it for, what it is, why it is needed and how it will get done&lt;/p&gt;
+
+&lt;h3 id=&quot;problems-to-be-addressed&quot;&gt;Problems to be addressed&lt;/h3&gt;
+
+&lt;h3 id=&quot;existing-alternatives&quot;&gt;Existing alternatives&lt;/h3&gt;
+&lt;p&gt;how these problems are currently solved&lt;/p&gt;
+
+&lt;h2 id=&quot;project-scope&quot;&gt;Project Scope&lt;/h2&gt;
+
+&lt;h3 id=&quot;solution-proposed&quot;&gt;Solution proposed&lt;/h3&gt;
+
+&lt;h3 id=&quot;value-to-organisationreimagine-strategic-alignment&quot;&gt;Value to organisation/Reimagine strategic alignment&lt;/h3&gt;
+
+&lt;h3 id=&quot;target-users&quot;&gt;Target users&lt;/h3&gt;
+
+&lt;h3 id=&quot;early-adopters&quot;&gt;Early adopters&lt;/h3&gt;
+
+&lt;p&gt;pilot (if applicable)&lt;/p&gt;
+
+&lt;h2 id=&quot;deliverables&quot;&gt;Deliverables&lt;/h2&gt;
+
+&lt;p&gt;Key outputs - high level&lt;/p&gt;
+
+&lt;h2 id=&quot;consultation--project-sponsor-and-stakeholders&quot;&gt;Consultation – Project Sponsor and Stakeholders&lt;/h2&gt;
+
+&lt;p&gt;Sponsor: 
+Owner:
+Consultations: Targets for consultation&lt;/p&gt;
+
+&lt;h2 id=&quot;success-metrics&quot;&gt;Success Metrics&lt;/h2&gt;
+
+&lt;p&gt;how will success be measured?&lt;/p&gt;
+
+&lt;h2 id=&quot;business-readiness&quot;&gt;Business Readiness&lt;/h2&gt;
+
+&lt;p&gt;what needs to be in place to support the success of the project?&lt;/p&gt;
+
+&lt;h2 id=&quot;key-activities&quot;&gt;Key Activities&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;What?&lt;/th&gt;
+      &lt;th&gt;Who?&lt;/th&gt;
+      &lt;th&gt;By when?&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;costtime-commitments&quot;&gt;Cost/Time Commitments&lt;/h2&gt;
+
+&lt;p&gt;Describe the time commitment
+Estimated project costs&lt;/p&gt;
+
+&lt;h2 id=&quot;risk-challenges-and-dependencies&quot;&gt;Risk, Challenges and Dependencies&lt;/h2&gt;
+
+&lt;p&gt;Use the following table to describe the risks, challenges and dependencies that will impact on delivering the project in the appropriate timeframe. List who will be responsible for managing these risks and what mitigation will be used to manage them&lt;/p&gt;
+
+&lt;p&gt;| Risk | Who is  accountable? | Mitigation steps | When? |
+|——|———————-|——————|——-|&lt;/p&gt;
+
+&lt;h2 id=&quot;rapid-analysis&quot;&gt;Rapid Analysis&lt;/h2&gt;
+
+&lt;p&gt;Role            Who – who is undertaking this role?   What – what are they being asked to do?   When will their role be completed? i.e record dates of decision/activity
+&lt;strong&gt;R&lt;/strong&gt;ecommend
+&lt;strong&gt;A&lt;/strong&gt;gree
+&lt;strong&gt;P&lt;/strong&gt;erform
+&lt;strong&gt;I&lt;/strong&gt;nput
+&lt;strong&gt;D&lt;/strong&gt;ecide&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">Being a Reimagine fellow requires having a project, so here’s my plan.</summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
 simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
 &lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; table than have to fire up Excel.&lt;/p&gt;
 
@@ -953,120 +1034,4 @@ up.&lt;/p&gt;
 &lt;picture&gt;&lt;img alt=&quot;ACMC attendees hanging out at Kremlin bar&quot; src=&quot;/assets/images/livecoding/ben-acmc-07-kremlin-014fc7330592130a587ae8910ca57d941b4ca3cd74f1e7c6758660156783c556.jpg&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;This isn’t me &lt;em&gt;performing&lt;/em&gt;, unless you count my animated conversation with
-Gordon Monro as a performance.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html">I’m trying to find all the photos of me doing livecoding gigs over the past 10 years. If you’ve got an old photo of me doing my thing, then can you either email or tweet at me to share it? I’ll give you authoreal credit and hugs.</summary></entry><entry><title type="html">highlight.js with xtlang support</title><link href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" rel="alternate" type="text/html" title="highlight.js with xtlang support" /><published>2019-01-17T10:54:00+11:00</published><updated>2019-01-17T10:54:00+11:00</updated><id>https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support</id><content type="html" xml:base="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/">&lt;blockquote&gt;
-  &lt;p&gt;It is a truth, universally acknowledged, that all programming language authors
-must also be expert web developers. (&lt;em&gt;attributed to Jane Austen&lt;/em&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’ve just spent a solid day wrestling with source code syntax highlighting on my
-blog, and I’ve finally got it figured out. Tada:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-armasm&quot;&gt;labelious:
-  sub r0, 1
-  bne doneski
-  b labelious
-
-doneski:
-  nop
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I know you’ve got questions, so the rest of this post will be structured as an
-&lt;strong&gt;FAQ&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;faq&quot;&gt;FAQ&lt;/h2&gt;
-
-&lt;h3 id=&quot;why-did-you-even-do-that-it-seemed-to-be-working-fine-before&quot;&gt;Why did you even do that? It seemed to be working fine before.&lt;/h3&gt;
-
-&lt;p&gt;Yes, well, it was mostly working fine. But I was just using an
-off-the-shelf&lt;sup id=&quot;fnref:cdn&quot;&gt;&lt;a href=&quot;#fn:cdn&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; disribution of &lt;a href=&quot;https://highlightjs.org/&quot;&gt;highlight.js&lt;/a&gt;,
-which supported a bunch of languages but not all the ones I need. Especially
-Extempore, which is super-important for showing off my livecoding stuff on this
-blog.&lt;/p&gt;
-
-&lt;h3 id=&quot;does-extemporextlang-have-highlightjs-support-now&quot;&gt;Does Extempore/xtlang have highlight.js support now?&lt;/h3&gt;
-
-&lt;p&gt;Yep, &lt;a href=&quot;https://github.com/cyblue9&quot;&gt;&lt;code&gt;@blue9&lt;/code&gt;&lt;/a&gt; ported the &lt;a href=&quot;https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/lisp.py?at=default&amp;amp;fileviewer=file-view-default#lisp.py-2420&quot;&gt;Scheme/xtlang
-lexer&lt;/a&gt;
-that I wrote for Pygments, which is a &lt;em&gt;big&lt;/em&gt; help to the Extempore community
-(thanks &lt;code&gt;blue9&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h3 id=&quot;isnt-it-just-a-matter-of-adding-xtlang-to-the-highlightjs-build-step&quot;&gt;Isn’t it just a matter of adding &lt;code&gt;xtlang&lt;/code&gt; to the highlight.js build step?&lt;/h3&gt;
-
-&lt;p&gt;No, because &lt;a href=&quot;https://github.com/highlightjs/highlightjs-xtlang#usage&quot;&gt;reasons&lt;/a&gt;.
-It’s a real mess, and we’re waiting on &lt;a href=&quot;https://github.com/highlightjs/highlight.js/pull/1888&quot;&gt;this
-PR&lt;/a&gt; to land before it
-gets easier.&lt;/p&gt;
-
-&lt;h3 id=&quot;howd-you-get-it-working-then&quot;&gt;How’d you get it working, then?&lt;/h3&gt;
-
-&lt;p&gt;Hacks upon hacks. If you really wanna know, it’s in &lt;a href=&quot;https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang&quot;&gt;this
-branch&lt;/a&gt;
-(although the final product, &lt;code&gt;highlight.pack.js&lt;/code&gt; is in the main &lt;code&gt;source&lt;/code&gt;
-branch).&lt;/p&gt;
-
-&lt;p&gt;Basically, I backported the Extempore language support from the new “plugin” way
-of doing things (which is better, but doesn’t really work yet) to the old
-“built-in” way of doing things, and then generated a new, custom build of
-highlight.js which included both xtlang and all the other languages that I need
-for my blog.&lt;/p&gt;
-
-&lt;h3 id=&quot;so-can-i-see-some-xtlang-code-then&quot;&gt;So can I see some xtlang code, then?&lt;/h3&gt;
-
-&lt;p&gt;Sure, here’s an example function from
-&lt;a href=&quot;https://github.com/digego/extempore/blob/master/examples/core/extempore_lang.xtm&quot;&gt;&lt;code&gt;examples/core/extempore_lang.xtm&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func my-test-7
-  (lambda ()
-    (let ((a:&amp;lt;i64,double&amp;gt;* (alloc)) ; returns pointer to type &amp;lt;i64,double&amp;gt;
-          (b 37)
-          (c 6.4))
-      (tuple-set! a 0 b) ;; set i64 to 64
-      (tset! a 1 c) ;; set double to 6.4 - tset! is an alias for tuple-set!
-      (printf &quot;tuple:1 %lld::%f\n&quot; (tuple-ref a 0) (tref a 1))
-      ;; we can fill a tuple in a single call by using tfill!
-      (tfill! a 77 77.7)
-      (printf &quot;tuple:2 %lld::%f\n&quot; (tuple-ref a 0) (tuple-ref a 1))
-      (tuple-ref a 0)))) ;; return first element which is i64
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;when-will-we-get-this-syntax-colouring-goodness-when-viewing-extempore-code-on-github&quot;&gt;When will we get this syntax colouring goodness when viewing Extempore code on GitHub?&lt;/h3&gt;
-
-&lt;p&gt;GitHub doesn’t use highlight.js, it uses
-&lt;a href=&quot;https://github.com/github/linguist&quot;&gt;linguist&lt;/a&gt; for this sort of thing. So
-getting it working on GH would involve porting the language definitions to that
-project as well.&lt;/p&gt;
-
-&lt;h3 id=&quot;will-it-always-be-this-complicated-to-set-up&quot;&gt;Will it always be this complicated to set up?&lt;/h3&gt;
-
-&lt;p&gt;No, once the &lt;a href=&quot;https://github.com/highlightjs/highlight.js/pull/1888&quot;&gt;aformentioned issue&lt;/a&gt;
-is sorted out, it should be much easier to get a “base” package of highlight.js
-from the main download website/CDN, and then to add any extras (e.g.
-Extempore/xtlang) as needed. But until that happens, shenanigans are required.&lt;/p&gt;
-
-&lt;h3 id=&quot;whats-with-the-jane-austen-quote-above-then&quot;&gt;What’s with the Jane Austen quote above, then?&lt;/h3&gt;
-
-&lt;p&gt;Figuring this all out required a lot of digging around in existing packages,
-learning a new &lt;a href=&quot;https://www.npmjs.com/package/gear&quot;&gt;node-based build system&lt;/a&gt; and
-a bunch of other things. I’m pretty capable with this sort of thing, so I got
-there in the end. But it does make me a bit sad that the job of building a
-community around a programming language involves so much stuff that doesn’t use
-the language itself, and these days invariably involves poking around various
-npm packages and staring at the Chrome developer tools.&lt;/p&gt;
-
-&lt;h3 id=&quot;can-i-use-your-build-of-highlightjs-to-font-lock-xtlang-code-on-my-own-site&quot;&gt;Can I use your build of highlight.js to font-lock xtlang code on my own site?&lt;/h3&gt;
-
-&lt;p&gt;Sure, I’d be pumped if you did. If you want, you can check out the
-&lt;a href=&quot;https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang&quot;&gt;&lt;code&gt;hljs-with-xtlang&lt;/code&gt;
-branch&lt;/a&gt; of
-this repo and follow the instructions therein to make your own custom build. Or,
-if you don’t want to do that, you could just use the one you’ve already
-downloaded (since you’re visiting this website). Here’s a &lt;a href=&quot;/assets/js/highlight.pack.js&quot;&gt;direct
-link&lt;/a&gt; if you want to do
-things that way.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:cdn&quot;&gt;
-      &lt;p&gt;well, off-the-CDN, anyway &lt;a href=&quot;#fnref:cdn&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">It is a truth, universally acknowledged, that all programming language authors must also be expert web developers. (attributed to Jane Austen)</summary></entry></feed>
+Gordon Monro as a performance.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html">I’m trying to find all the photos of me doing livecoding gigs over the past 10 years. If you’ve got an old photo of me doing my thing, then can you either email or tweet at me to share it? I’ll give you authoreal credit and hugs.</summary></entry></feed>
