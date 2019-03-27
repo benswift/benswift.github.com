@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-26T20:49:40+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">TODO name :Reimagine Fellow Project Pitch</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="TODO name :Reimagine Fellow Project Pitch" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine fellow&lt;/a&gt; requires having a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-27T15:16:33+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagine Fellow Project Pitch (name TBC)</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="Reimagine Fellow Project Pitch (name TBC)" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine fellow&lt;/a&gt; requires having a
 project, so here’s my plan.&lt;/p&gt;
+
+&lt;div id=&quot;toc&quot;&gt;
+
+  &lt;h2&gt;table of contents&lt;/h2&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#project-background-and-description&quot; id=&quot;markdown-toc-project-background-and-description&quot;&gt;Project Background and Description&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#project-scope&quot; id=&quot;markdown-toc-project-scope&quot;&gt;Project Scope&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#deliverables&quot; id=&quot;markdown-toc-deliverables&quot;&gt;Deliverables&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#consultation--project-sponsor-and-stakeholders&quot; id=&quot;markdown-toc-consultation--project-sponsor-and-stakeholders&quot;&gt;Consultation – Project Sponsor and Stakeholders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#success-metrics&quot; id=&quot;markdown-toc-success-metrics&quot;&gt;Success Metrics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#business-readiness&quot; id=&quot;markdown-toc-business-readiness&quot;&gt;Business Readiness&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#key-activities&quot; id=&quot;markdown-toc-key-activities&quot;&gt;Key Activities&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#costtime-commitments&quot; id=&quot;markdown-toc-costtime-commitments&quot;&gt;Cost/Time Commitments&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#risk-challenges-and-dependencies&quot; id=&quot;markdown-toc-risk-challenges-and-dependencies&quot;&gt;Risk, Challenges and Dependencies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#rapid-analysis&quot; id=&quot;markdown-toc-rapid-analysis&quot;&gt;Rapid Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
 
 &lt;h2 id=&quot;project-background-and-description&quot;&gt;Project Background and Description&lt;/h2&gt;
 
@@ -53,9 +72,9 @@ Consultations: Targets for consultation&lt;/p&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;work&lt;/td&gt;
+      &lt;td&gt;Ben&lt;/td&gt;
+      &lt;td&gt;soon&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -69,13 +88,30 @@ Estimated project costs&lt;/p&gt;
 
 &lt;p&gt;Use the following table to describe the risks, challenges and dependencies that will impact on delivering the project in the appropriate timeframe. List who will be responsible for managing these risks and what mitigation will be used to manage them&lt;/p&gt;
 
-&lt;p&gt;| Risk | Who is  accountable? | Mitigation steps | When? |
-|——|———————-|——————|——-|&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Risk&lt;/th&gt;
+      &lt;th&gt;Who is accountable?&lt;/th&gt;
+      &lt;th&gt;Mitigation steps&lt;/th&gt;
+      &lt;th&gt;When?&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;things&lt;/td&gt;
+      &lt;td&gt;no-one&lt;/td&gt;
+      &lt;td&gt;none&lt;/td&gt;
+      &lt;td&gt;dunno&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h2 id=&quot;rapid-analysis&quot;&gt;Rapid Analysis&lt;/h2&gt;
 
-&lt;p&gt;Role            Who – who is undertaking this role?   What – what are they being asked to do?   When will their role be completed? i.e record dates of decision/activity
-&lt;strong&gt;R&lt;/strong&gt;ecommend
+&lt;p&gt;Role            Who – who is undertaking this role?   What – what are they being asked to do?   When will their role be completed? i.e record dates of decision/activity&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt;ecommend
 &lt;strong&gt;A&lt;/strong&gt;gree
 &lt;strong&gt;P&lt;/strong&gt;erform
 &lt;strong&gt;I&lt;/strong&gt;nput
