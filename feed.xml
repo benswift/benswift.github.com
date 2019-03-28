@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-28T17:19:56+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagine Fellow Project Pitch: the c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="Reimagine Fellow Project Pitch: the c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p class=&quot;hl-para&quot;&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellow&lt;/a&gt; requires having a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-28T17:54:26+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagine Fellow Project Pitch: the c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="Reimagine Fellow Project Pitch: the c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p class=&quot;hl-para&quot;&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellow&lt;/a&gt; requires having a
 project, so here’s my plan for the &lt;strong&gt;c/c/c studio&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div id=&quot;toc&quot;&gt;
@@ -110,16 +110,16 @@ Reimagine Fellowship.&lt;/p&gt;
 
 &lt;h3 id=&quot;solution-proposed&quot;&gt;Solution proposed&lt;/h3&gt;
 
-&lt;p&gt;In broad terms, the weekly c/c/c studio sessions are the key part of the
-program. These sessions won’t be lectures, or even tutorials—they will adopt
-the artist model, with each student working on their own code-based music or
-visual artwork as a semester-long creative “project”.&lt;/p&gt;
+&lt;p&gt;The weekly c/c/c studio sessions are the key part of the program. These sessions
+won’t be lectures, or even tutorials—they will adopt the artist model, with
+each student working on their own code-based music or visual artwork as a
+semester-long creative “project”.&lt;/p&gt;
 
 &lt;p&gt;The first part of this project is to actually figure out the details of how
 these workshops will run, but here are some initial plans:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;each session will be small—up to 20 students&lt;/li&gt;
+  &lt;li&gt;each session will be small—up to 20 students with 1 instructor (Ben) and one tutor&lt;/li&gt;
   &lt;li&gt;students will commit to attending for a semester, with an
 exhibition/performance at the end&lt;/li&gt;
   &lt;li&gt;students will apply to participate based on interest and aptitude, so we can
@@ -157,10 +157,12 @@ using the c/c/c studio curriculum, which will be made freely available).&lt;/p&g
 &lt;h3 id=&quot;early-adopters&quot;&gt;Early adopters&lt;/h3&gt;
 
 &lt;p&gt;I will build on my (and others) existing relationships with teachers from
-Dickson College, Radford College, Lyneham High, Canberra (Boys) Grammar and
-Canberra Girls Grammar. These Schools, with their existing populations of
-students interested in creative code, can give early feedback and serve as
-target populations for the first semester of c/c/c studio sessions in S1 2020.&lt;/p&gt;
+Dickson College, &lt;a href=&quot;https://www.radford.act.edu.au&quot;&gt;Radford College&lt;/a&gt;, &lt;a href=&quot;http://lynehamhs.act.edu.au&quot;&gt;Lyneham
+High&lt;/a&gt;, &lt;a href=&quot;https://cgs.act.edu.au&quot;&gt;Canberra (Boys)
+Grammar&lt;/a&gt; and &lt;a href=&quot;https://www.cggs.act.edu.au&quot;&gt;Canberra Girls
+Grammar&lt;/a&gt;. These schools, with their existing groups
+of students interested in creative code, can give early feedback and serve as
+“seed” populations for the first semester of c/c/c studio sessions in S1 2020.&lt;/p&gt;
 
 &lt;h2 id=&quot;deliverables&quot;&gt;Deliverables&lt;/h2&gt;
 
@@ -173,15 +175,16 @@ sessions, which will be freely released to the public under a creative commons
 licence (&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA&lt;/a&gt;)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;a biannual &lt;strong&gt;gallery exhibition&lt;/strong&gt; and &lt;strong&gt;multimedia music performance&lt;/strong&gt; held on
-campus (perhaps in the new cultural centre) as the capstone for each student’s
-work in the c/c/c studio&lt;/p&gt;
+    &lt;p&gt;a biannual &lt;strong&gt;c/c/c studio grad show&lt;/strong&gt; gallery exhibition and music performance
+held on campus (perhaps in the new cultural centre) as the capstone for each
+semester’s student work in the c/c/c studio&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;There’ll be lots of other stuff, too: building a community, deepening ANU
-CS/CECS’s relationships with ACT High Schools, etc. But that’s intangible stuff,
-so I’m not sure if it counts as a deliverable.&lt;/p&gt;
+&lt;p&gt;There’ll be lots of other stuff, too: building a community of practice,
+deepening ANU CS/CECS’s relationships with ACT High Schools, giving our
+undergraduate students a chance to mentor these high school students, etc. But
+that’s intangible stuff, so I’m not sure if they count as a deliverables.&lt;/p&gt;
 
 &lt;h2 id=&quot;project-sponsor-and-stakeholders&quot;&gt;Project Sponsor and Stakeholders&lt;/h2&gt;
 
@@ -305,13 +308,15 @@ studio sessions.&lt;/p&gt;
 employ one (or more) of our undergraduate students to help support the students
 in the c/c/c studio.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: music gear (~2k)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: music gear (~2k) so that students can connect their laptops to
+play &lt;em&gt;together&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Grad show budget&lt;/strong&gt;: (~1k per semester from 2020) for venue/equipment hire
+(e.g. PA, fancy projectors, etc.)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Estimated project costs&lt;/strong&gt;: TBD&lt;/p&gt;
 
 &lt;h2 id=&quot;risks&quot;&gt;Risk, Challenges and Dependencies&lt;/h2&gt;
-
-&lt;p&gt;Use the following table to describe the risks, challenges and dependencies that will impact on delivering the project in the appropriate timeframe. List who will be responsible for managing these risks and what mitigation will be used to manage them&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -347,16 +352,23 @@ in the c/c/c studio.&lt;/p&gt;
       &lt;td&gt;introduce some sort of portfolio-based admissions procedure, get ANU UG students to share the teaching load&lt;/td&gt;
       &lt;td&gt;2020+&lt;/td&gt;
     &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;students have wide range of different abilities/familiarity with the material&lt;/td&gt;
+      &lt;td&gt;Ben, tutors&lt;/td&gt;
+      &lt;td&gt;keep class sizes small so we can tailor material to each student, encourage peer-assisted learning at the different stages&lt;/td&gt;
+      &lt;td&gt;2020&lt;/td&gt;
+    &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h2 id=&quot;rapid-analysis&quot;&gt;Rapid Analysis&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;Who&lt;/em&gt;—who is undertaking this role?
-&lt;em&gt;What&lt;/em&gt;—what are they being asked to do?
-&lt;em&gt;When&lt;/em&gt;—when will their role be completed?&lt;/p&gt;
-
 &lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Who&lt;/em&gt;—who is undertaking this role?&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;What&lt;/em&gt;—what are they being asked to do?&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;When&lt;/em&gt;—when will their role be completed?&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;R&lt;/strong&gt;ecommend&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;gree&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;P&lt;/strong&gt;erform&lt;/li&gt;
@@ -412,7 +424,7 @@ as I make things more concrete and sort out the details.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:hs-college&quot;&gt;
-      &lt;p&gt;since we’re in the ACT, I mean Hign School &lt;em&gt;and&lt;/em&gt; College; years 7–12 &lt;a href=&quot;#fnref:hs-college&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;since we’re in the ACT, I mean Hign School &lt;em&gt;and&lt;/em&gt; College (i.e. years 7–12) &lt;a href=&quot;#fnref:hs-college&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:ccc-group&quot;&gt;
 
