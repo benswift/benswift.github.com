@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-28T14:56:46+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagine Fellow Project Pitch: the c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="Reimagine Fellow Project Pitch: the c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p class=&quot;hl-para&quot;&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellow&lt;/a&gt; requires having a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-28T17:19:56+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagine Fellow Project Pitch: the c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="Reimagine Fellow Project Pitch: the c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p class=&quot;hl-para&quot;&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellow&lt;/a&gt; requires having a
 project, so here’s my plan for the &lt;strong&gt;c/c/c studio&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div id=&quot;toc&quot;&gt;
@@ -14,7 +14,7 @@ project, so here’s my plan for the &lt;strong&gt;c/c/c studio&lt;/strong&gt;.&
   &lt;li&gt;&lt;a href=&quot;#business-readiness&quot; id=&quot;markdown-toc-business-readiness&quot;&gt;Business Readiness&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#key-activities&quot; id=&quot;markdown-toc-key-activities&quot;&gt;Key Activities&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#costtime-commitments&quot; id=&quot;markdown-toc-costtime-commitments&quot;&gt;Cost/Time Commitments&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#risk-challenges-and-dependencies&quot; id=&quot;markdown-toc-risk-challenges-and-dependencies&quot;&gt;Risk, Challenges and Dependencies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#risks&quot; id=&quot;markdown-toc-risks&quot;&gt;Risk, Challenges and Dependencies&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#rapid-analysis&quot; id=&quot;markdown-toc-rapid-analysis&quot;&gt;Rapid Analysis&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#notes-for-draft-readers&quot; id=&quot;markdown-toc-notes-for-draft-readers&quot;&gt;Notes for draft readers&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -193,7 +193,7 @@ so I’m not sure if it counts as a deliverable.&lt;/p&gt;
       &lt;li&gt;&lt;a href=&quot;https://researchers.anu.edu.au/researchers/hunter-at&quot;&gt;Alec Hunter&lt;/a&gt; (ANU
 SoM, previously the convenor of the Open School of Music program)&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://researchers.anu.edu.au/researchers/hinchcliffe-gb&quot;&gt;Geoff
-Hinchcliff&lt;/a&gt; (ANU
+Hinchcliffe&lt;/a&gt; (ANU
 School of Art &amp;amp; Design)&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/qing-wang&quot;&gt;Qing Wang&lt;/a&gt; (RSCS Associate
 Director of Education Partnerships)&lt;/li&gt;
@@ -236,9 +236,6 @@ already).&lt;/p&gt;
 
 &lt;h3 id=&quot;enrolmentadmin-requirements&quot;&gt;Enrolment/admin requirements&lt;/h3&gt;
 
-&lt;p&gt;We will require public liability insurance for any students who come onto campus for the c/c/c
-studio sessions.&lt;/p&gt;
-
 &lt;p&gt;In the short term, it would be great to be able to give students who complete
 the c/c/c studio program (which will be held in semester-long increments) an
 official ANU certificate of completion.&lt;/p&gt;
@@ -250,6 +247,9 @@ study in CECS. This is the same as the equivalent &lt;a href=&quot;http://extens
 extension program&lt;/a&gt;,
 which (I &lt;em&gt;think&lt;/em&gt;) gives students credit for a first-year ENGN course if they
 study Engineering at the ANU.&lt;/p&gt;
+
+&lt;p&gt;We will require public liability insurance for any students who come onto campus for the c/c/c
+studio sessions.&lt;/p&gt;
 
 &lt;h2 id=&quot;key-activities&quot;&gt;Key Activities&lt;/h2&gt;
 
@@ -263,12 +263,12 @@ study Engineering at the ANU.&lt;/p&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;relationships with High Schools&lt;/td&gt;
+      &lt;td&gt;develop relationships with High Schools&lt;/td&gt;
       &lt;td&gt;Ben&lt;/td&gt;
       &lt;td&gt;end 2019&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;curriculum development&lt;/td&gt;
+      &lt;td&gt;create curriculum&lt;/td&gt;
       &lt;td&gt;Ben&lt;/td&gt;
       &lt;td&gt;end 2019&lt;/td&gt;
     &lt;/tr&gt;
@@ -309,7 +309,7 @@ in the c/c/c studio.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Estimated project costs&lt;/strong&gt;: TBD&lt;/p&gt;
 
-&lt;h2 id=&quot;risk-challenges-and-dependencies&quot;&gt;Risk, Challenges and Dependencies&lt;/h2&gt;
+&lt;h2 id=&quot;risks&quot;&gt;Risk, Challenges and Dependencies&lt;/h2&gt;
 
 &lt;p&gt;Use the following table to describe the risks, challenges and dependencies that will impact on delivering the project in the appropriate timeframe. List who will be responsible for managing these risks and what mitigation will be used to manage them&lt;/p&gt;
 
@@ -343,7 +343,7 @@ in the c/c/c studio.&lt;/p&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;too many students&lt;/td&gt;
-      &lt;td&gt;everyone&lt;/td&gt;
+      &lt;td&gt;Ben&lt;/td&gt;
       &lt;td&gt;introduce some sort of portfolio-based admissions procedure, get ANU UG students to share the teaching load&lt;/td&gt;
       &lt;td&gt;2020+&lt;/td&gt;
     &lt;/tr&gt;
@@ -375,11 +375,14 @@ schools at present, although this could change in the future. But I’ve decided
 to start with what I know.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;It’s really hard to have all these stakeholder conversations while I’m on
-parental leave. So while I’ve discussed this sort of thing to varying degrees
-with everyone concerned (i.e. I’m sure no-one would be &lt;em&gt;shocked&lt;/em&gt; to hear this
-project pitch) there’s a chance that some of the details will change as I make
-things more concrete and sort out the details.&lt;/p&gt;
+    &lt;p&gt;Looking at the &lt;a href=&quot;#risks&quot;&gt;Risks&lt;/a&gt; section, a lot of it’s on my shoulders—need
+to fix that.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The project proposal part isn’t super detailed, and that’s mostly because I
+need to do some research (discussions with HS teachers, read literature &amp;amp;
+examine similar programs elsewhere) in the first 6months (mid-late 2019) to
+figure out those details.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;This isn’t exactly what I’d put in my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;original pitch&lt;/a&gt;, but from
@@ -397,6 +400,13 @@ on.&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;I’m not sure about the &lt;a href=&quot;#rapid-analysis&quot;&gt;RAPID&lt;/a&gt; part, I’m open to suggestions
 on what that section might mean in the context of this project.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It’s really hard to have all the necessary stakeholder conversations while I’m
+on parental leave. So while I’ve discussed this sort of thing to varying
+degrees with everyone concerned (i.e. I’m sure no-one would be &lt;em&gt;shocked&lt;/em&gt; to
+hear this project pitch) there’s a chance that some of the details will change
+as I make things more concrete and sort out the details.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
