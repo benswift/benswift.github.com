@@ -147,6 +147,18 @@ blockquote p {
 img {
   width: 100%; }
 
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse; }
+  table th, table td {
+    padding: 0.5em 1em 0.5em 0; }
+  table th {
+    border-bottom: 1px solid #be2edd;
+    vertical-align: bottom; }
+  table td {
+    vertical-align: top; }
+
 #toc {
   background: #f2f2f2; }
   #toc h2 {
