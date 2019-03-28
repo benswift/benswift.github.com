@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-28T14:50:08+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagine Fellow Project Pitch: the c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="Reimagine Fellow Project Pitch: the c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p class=&quot;hl-para&quot;&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellow&lt;/a&gt; requires having a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-28T14:56:46+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagine Fellow Project Pitch: the c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="Reimagine Fellow Project Pitch: the c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p class=&quot;hl-para&quot;&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellow&lt;/a&gt; requires having a
 project, so here’s my plan for the &lt;strong&gt;c/c/c studio&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div id=&quot;toc&quot;&gt;
@@ -31,11 +31,11 @@ School&lt;sup id=&quot;fnref:hs-college&quot;&gt;&lt;a href=&quot;#fn:hs-college
 We will run workshops in High Schools to identify interested students, and host
 the &lt;strong&gt;c/c/c studio&lt;/strong&gt;&lt;sup id=&quot;fnref:ccc-group&quot;&gt;&lt;a href=&quot;#fn:ccc-group&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; a weekly on-campus interactive learning
 community to give them opportunities to learn, create, and share their skills.
-At the end of each semester, the c/c/c studio will host a gallery exhibitions &amp;amp;
-performance of new works of code-based art &amp;amp; music, attract fantastic students
-who might otherwise not study Eng/CS, and engage the wider community in helping
-them &lt;em&gt;reimagine&lt;/em&gt; what it is to be a Computer Scientist or Engineer in the 21st
-century.&lt;/p&gt;
+At the end of each semester, the c/c/c studio will host a gallery exhibition &amp;amp;
+performance of new works of code-based art &amp;amp; music. This program will attract
+fantastic students who might otherwise not study Eng/CS (either at ANU or
+anywhere) and engage the wider community in helping them &lt;em&gt;reimagine&lt;/em&gt; what it is
+to be a Computer Scientist or Engineer in the 21st century.&lt;/p&gt;
 
 &lt;h3 id=&quot;problems-to-be-addressed&quot;&gt;Problems to be addressed&lt;/h3&gt;
 
@@ -112,8 +112,8 @@ Reimagine Fellowship.&lt;/p&gt;
 
 &lt;p&gt;In broad terms, the weekly c/c/c studio sessions are the key part of the
 program. These sessions won’t be lectures, or even tutorials—they will adopt
-the artist studio model, with each student working on their own code-based music
-or visual/interactive artwork as a semester-long creative “project”.&lt;/p&gt;
+the artist model, with each student working on their own code-based music or
+visual artwork as a semester-long creative “project”.&lt;/p&gt;
 
 &lt;p&gt;The first part of this project is to actually figure out the details of how
 these workshops will run, but here are some initial plans:&lt;/p&gt;
@@ -198,7 +198,9 @@ School of Art &amp;amp; Design)&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/qing-wang&quot;&gt;Qing Wang&lt;/a&gt; (RSCS Associate
 Director of Education Partnerships)&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/tony-hosking&quot;&gt;Tony Hosking&lt;/a&gt; (RSCS Director)&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Liz Williams&lt;/a&gt;/&lt;a href=&quot;&quot;&gt;Amy McLennan&lt;/a&gt; (3Ai Institute)&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-spaces-–-dr-liz-williams&quot;&gt;Liz
+Williams&lt;/a&gt;
+(3Ai Institute) (or perhaps someone else from 3Ai)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
