@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-28T17:54:26+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Reimagine Fellow Project Pitch: the c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="Reimagine Fellow Project Pitch: the c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p class=&quot;hl-para&quot;&gt;Being a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellow&lt;/a&gt; requires having a
-project, so here’s my plan for the &lt;strong&gt;c/c/c studio&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-29T16:32:59+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is my project plan for a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellowship&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div id=&quot;toc&quot;&gt;
 
@@ -25,17 +24,17 @@ project, so here’s my plan for the &lt;strong&gt;c/c/c studio&lt;/strong&gt;.&
 
 &lt;h3 id=&quot;elevator-pitch&quot;&gt;Elevator pitch&lt;/h3&gt;
 
-&lt;p&gt;I want to start an &lt;a href=&quot;http://extension.anu.edu.au&quot;&gt;extension&lt;/a&gt;/outreach program in
-creative code (using code to make art + music &amp;amp; other cool things) for ACT High
-School&lt;sup id=&quot;fnref:hs-college&quot;&gt;&lt;a href=&quot;#fn:hs-college&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; students interested in the intersection of art &amp;amp; technology.
-We will run workshops in High Schools to identify interested students, and host
-the &lt;strong&gt;c/c/c studio&lt;/strong&gt;&lt;sup id=&quot;fnref:ccc-group&quot;&gt;&lt;a href=&quot;#fn:ccc-group&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; a weekly on-campus interactive learning
-community to give them opportunities to learn, create, and share their skills.
-At the end of each semester, the c/c/c studio will host a gallery exhibition &amp;amp;
-performance of new works of code-based art &amp;amp; music. This program will attract
-fantastic students who might otherwise not study Eng/CS (either at ANU or
-anywhere) and engage the wider community in helping them &lt;em&gt;reimagine&lt;/em&gt; what it is
-to be a Computer Scientist or Engineer in the 21st century.&lt;/p&gt;
+&lt;p class=&quot;hl-para&quot;&gt;I want to start the &lt;strong&gt;c/c/c studio&lt;/strong&gt;&lt;sup id=&quot;fnref:ccc-group&quot;&gt;&lt;a href=&quot;#fn:ccc-group&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, an extension/outreach program
+in creative code (using code to make art + music &amp;amp; other cool things) for ACT
+High School&lt;sup id=&quot;fnref:hs-college&quot;&gt;&lt;a href=&quot;#fn:hs-college&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; students interested in the intersection of art &amp;amp;
+technology. Students will be part of a weekly on-campus interactive learning
+community where they will be guided by instructors in creating their own new
+works of code-based art &amp;amp; music. At the end of each semester we will host a
+“grad show” gallery exhibition/performance of the works from the c/c/c studio.
+This program will attract fantastic students who might otherwise not study
+Engineering or Computer Science (either at ANU or elsewhere) and engage the
+wider community in helping them &lt;em&gt;reimagine&lt;/em&gt; what it is to be a Computer
+Scientist or Engineer in the 21st century.&lt;/p&gt;
 
 &lt;h3 id=&quot;problems-to-be-addressed&quot;&gt;Problems to be addressed&lt;/h3&gt;
 
@@ -48,10 +47,10 @@ dealing with the huge growth in students at a tertiary level. The c/c/c studio
 program will address that.&lt;/p&gt;
 
 &lt;p&gt;In addition, CS still suffers from a stereotype of being for “nerdy white/asian
-males”, and those groups are certainly better represented in our undergraduate
-CS cohort than other demographic groups. The Reimagine project “big tent” CS
-education philosophy needs ways of attracting students who don’t fit this
-stereotype. In attracting &amp;amp; nurturing students who are interested in using
+males”, and those groups are certainly over-represented in our undergraduate CS
+cohort compared to other groups. The Reimagine “big tent” CS education
+philosophy needs ways of attracting students who don’t fit the usual CS
+stereotypes. In attracting &amp;amp; nurturing students who are interested in using
 computers in the arts &amp;amp; music the c/c/c studio can be &lt;em&gt;one part&lt;/em&gt; of that bigger
 mission.&lt;/p&gt;
 
@@ -76,7 +75,7 @@ creative practice? The c/c/c studio program will give them deep links &amp;amp;
 relationships into the ANU (across both CS and the Schools of Art &amp;amp; Design and
 School of Music) and an avenue for continuing their work in this area.&lt;/p&gt;
 
-&lt;p&gt;There are a few outreach programs for schools &lt;a href=&quot;https://cecs.anu.edu.au/study/more-information/outreach-programs-schools&quot;&gt;advertised on the CECS
+&lt;p&gt;There are a few outreach programs &lt;a href=&quot;https://cecs.anu.edu.au/study/more-information/outreach-programs-schools&quot;&gt;advertised on the CECS
 website&lt;/a&gt;,
 however the listed programs are dominated by Engineering rather than CS (9 vs 4
 programs) and of the 4 CS programs I’m involved with 2 of them already. There’s
@@ -110,10 +109,9 @@ Reimagine Fellowship.&lt;/p&gt;
 
 &lt;h3 id=&quot;solution-proposed&quot;&gt;Solution proposed&lt;/h3&gt;
 
-&lt;p&gt;The weekly c/c/c studio sessions are the key part of the program. These sessions
-won’t be lectures, or even tutorials—they will adopt the artist model, with
-each student working on their own code-based music or visual artwork as a
-semester-long creative “project”.&lt;/p&gt;
+&lt;p&gt;The weekly c/c/c studio sessions won’t be lectures, or even tutorials—they
+will adopt the artist’s studio model, with each student working on their own
+code-based music or visual artwork as a semester-long creative “work”.&lt;/p&gt;
 
 &lt;p&gt;The first part of this project is to actually figure out the details of how
 these workshops will run, but here are some initial plans:&lt;/p&gt;
@@ -135,12 +133,35 @@ Music, ANU Centre for Digital Humanities Research, etc.&lt;/li&gt;
 undergraduate students as a tutor for these sessions&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;In addition to the weekly c/c/c studio sessions, we will also run (less
+frequent) workshops in the High Schools themselves. These workshops will be used
+to recruit/excite students with the interest and aptitude to attend the c/c/c
+studio program, to share knowledge and open minds to the sorts of things which
+are possible with computers and programming, and to strengthen the pathways
+between the IT programs in ACT High Schools into our CECS undergraduate programs.&lt;/p&gt;
+
 &lt;h3 id=&quot;value-to-organisationreimagine-strategic-alignment&quot;&gt;Value to organisation/Reimagine strategic alignment&lt;/h3&gt;
 
-&lt;p&gt;TODO more stuff to put here, but not sure how best to pitch it.&lt;/p&gt;
+&lt;p&gt;From the &lt;a href=&quot;https://cecs.anu.edu.au/reimagine&quot;&gt;Reimagine Project page&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p&gt;In addition, the c/c/c studio presents an opportunity as an “object lesson” for
-the breadth of places that an Engineering/Computer Science skillset can be
+&lt;blockquote&gt;
+  &lt;p&gt;We will inspire a new generation of high-potential, creative people to come to
+engineering and computing with a diverse range of interests, motivations,
+perspectives and career aspirations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The c/c/c studio is designed to attract that new generation and to provide them
+a supportive community in which to learn, create, and share. More than that, it
+aims to unlock the latent potential in students who never knew their diverse
+interests (especially in the arts &amp;amp; music) &lt;em&gt;could&lt;/em&gt; be used in engineering and
+computing.&lt;/p&gt;
+
+&lt;p&gt;The c/c/c studio is also an “outwardly-focused education program” (taken from
+the &lt;em&gt;Reimagine Fellow&lt;/em&gt; position description) which builds two-way relationships
+with ACT High Schools.&lt;/p&gt;
+
+&lt;p&gt;Finally, the c/c/c studio presents an opportunity as an “object lesson” for the
+breadth of places that an Engineering/Computer Science skillset can be
 applied—a crucial part of Reimagining CECS from a problem-solving to
 problem-_finding_ institution.&lt;/p&gt;
 
@@ -358,6 +379,12 @@ play &lt;em&gt;together&lt;/em&gt;&lt;/p&gt;
       &lt;td&gt;keep class sizes small so we can tailor material to each student, encourage peer-assisted learning at the different stages&lt;/td&gt;
       &lt;td&gt;2020&lt;/td&gt;
     &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;project relies too much on Ben’s particular mix of skills and interests&lt;/td&gt;
+      &lt;td&gt;Ben, others&lt;/td&gt;
+      &lt;td&gt;get other like-minded folks from inside CECS and across campus involved, train up other CECS people (e.g. tutors) to share the workload&lt;/td&gt;
+      &lt;td&gt;2019&lt;/td&gt;
+    &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -423,18 +450,18 @@ as I make things more concrete and sort out the details.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:hs-college&quot;&gt;
-      &lt;p&gt;since we’re in the ACT, I mean Hign School &lt;em&gt;and&lt;/em&gt; College (i.e. years 7–12) &lt;a href=&quot;#fnref:hs-college&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
     &lt;li id=&quot;fn:ccc-group&quot;&gt;
 
       &lt;p&gt;named after the
 &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;code/creativity/culture&lt;/a&gt;
-(c/c/c) research group that I lead, which already has some sort of a name
-around the place and might be useful for “branding” this activity &lt;a href=&quot;#fnref:ccc-group&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+(c/c/c) research group that I lead, which already has some name recognition
+around the place and will be useful for “branding” this activity &lt;a href=&quot;#fnref:ccc-group&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:hs-college&quot;&gt;
+      &lt;p&gt;since we’re in the ACT, I mean Hign School &lt;em&gt;and&lt;/em&gt; College (i.e. years 7–12) &lt;a href=&quot;#fnref:hs-college&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html">Being a Reimagine Fellow requires having a project, so here’s my plan for the c/c/c studio.</summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html">Note to readers: this is my project plan for a Reimagine Fellowship.</summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
 simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
 &lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; table than have to fire up Excel.&lt;/p&gt;
 
