@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-02T14:26:12+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellowship&lt;/a&gt; project plan.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-02T16:05:29+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellowship&lt;/a&gt; project plan.&lt;/p&gt;
 
 &lt;div id=&quot;toc&quot;&gt;
 
@@ -24,50 +24,40 @@
 
 &lt;h3 id=&quot;elevator-pitch&quot;&gt;Elevator pitch&lt;/h3&gt;
 
-&lt;p class=&quot;hl-para&quot;&gt;I want to start the &lt;strong&gt;c/c/c studio&lt;/strong&gt;&lt;sup id=&quot;fnref:ccc-group&quot;&gt;&lt;a href=&quot;#fn:ccc-group&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, an extension/outreach program
-in creative code (using code to make art + music &amp;amp; other cool things) for ACT
-High School&lt;sup id=&quot;fnref:hs-college&quot;&gt;&lt;a href=&quot;#fn:hs-college&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; students interested in the intersection of art &amp;amp;
-technology. Students will be part of a weekly on-campus interactive learning
-community where they will be guided by instructors in creating their own new
-works of code-based art &amp;amp; music. At the end of each semester we will host a
-“grad show” gallery exhibition/performance of the works from the c/c/c studio.
-This program will attract fantastic students who might otherwise not study
-Engineering or Computer Science (either at ANU or elsewhere) and engage the
-wider community in helping them &lt;em&gt;reimagine&lt;/em&gt; what it is to be a Computer
-Scientist or Engineer in the 21st century.&lt;/p&gt;
+&lt;p class=&quot;hl-para&quot;&gt;I want to start the &lt;strong&gt;c/c/c studio&lt;/strong&gt;&lt;sup id=&quot;fnref:ccc-group&quot;&gt;&lt;a href=&quot;#fn:ccc-group&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, an after-school
+extension/outreach program in creative code (using code to make art, music &amp;amp;
+other cool things) for ACT High School&lt;sup id=&quot;fnref:hs-college&quot;&gt;&lt;a href=&quot;#fn:hs-college&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; students interested in the
+intersection of art &amp;amp; technology. Students will participate in a weekly
+on-campus interactive learning community where they will be guided by
+instructors in creating their own new works of code-based art &amp;amp; music. At the
+end of each semester the c/c/c studio will host a “grad show” gallery
+exhibition/performance of the students’ work. This program will attract
+fantastic students who might otherwise not study Engineering or Computer Science
+(either at ANU or elsewhere) and engage the wider community in helping them
+&lt;em&gt;reimagine&lt;/em&gt; what it is to be a computer scientist or engineer in the 21st
+century.&lt;/p&gt;
 
 &lt;h3 id=&quot;problems-to-be-addressed&quot;&gt;Problems to be addressed&lt;/h3&gt;
 
 &lt;p&gt;Interest in Computer Science (CS) education is exploding at all educational
 levels, but there’s a lack of support for students in schools which don’t have
 specialist teachers or an appropriate learning environment—especially for the
-“fun” stuff which goes beyond textbook exercises. At the ANU we haven’t done
-very much to engage at a pre-tertiary level, mostly because we’re flat-out
-dealing with the huge growth in students at a tertiary level. The c/c/c studio
-program will address that.&lt;/p&gt;
+“fun” stuff which goes beyond textbook exercises. In the &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;Research School of
+Computer Science&lt;/a&gt; at the ANU
+we’re not currently doing very much to engage at a pre-tertiary level, mostly
+because we’re flat-out dealing with the huge growth in students at a tertiary
+level. The c/c/c studio program will address that.&lt;/p&gt;
 
-&lt;p&gt;In addition, CS still suffers from a stereotype of being for “nerdy white/asian
-males”, and those groups are certainly over-represented in our undergraduate CS
-cohort compared to other groups. The Reimagine “big tent” CS education
-philosophy needs ways of attracting students who don’t fit the usual CS
-stereotypes. In attracting &amp;amp; nurturing students who are interested in using
-computers in the arts &amp;amp; music the c/c/c studio can be &lt;em&gt;one part&lt;/em&gt; of that bigger
-mission.&lt;/p&gt;
-
-&lt;p&gt;Undergraduate students at the ANU can take my &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720: Art &amp;amp; Interaction in
-New Media&lt;/a&gt; course as part of a major in
-either a CS degree or a Bachelor of Visual Arts (or indeed as a cross-campus
-elective in any program). COMP1720 has run successfully as a cross-disciplinary
-“learn to code” course for several years. As the &lt;strong&gt;A&lt;/strong&gt; in STEAM, the arts
-provide an important avenue for engaging students with coding and computer
-science, especially those who might not normally engage with CS-type activities.
-The c/c/c studio will extend this opportunity to High School students in the
-ACT.&lt;/p&gt;
+&lt;p&gt;CS still suffers from a stereotype of being “for nerdy white/asian males”, and
+those groups are certainly over-represented in our undergraduate CS cohort
+compared to other groups. As the &lt;strong&gt;A&lt;/strong&gt; in STE&lt;strong&gt;A&lt;/strong&gt;M, the &lt;strong&gt;a&lt;/strong&gt;rts provide an
+important avenue for engaging students with coding and computer science,
+especially those who might not normally engage with CS-type activities.&lt;/p&gt;
 
 &lt;h3 id=&quot;existing-alternatives&quot;&gt;Existing alternatives&lt;/h3&gt;
 
-&lt;p&gt;Some ACT High Schools already have great non-traditional/creative CS/IT programs
-(I plan to partner with teachers at these schools as &lt;a href=&quot;#early-adopters&quot;&gt;early
+&lt;p&gt;Some ACT High Schools &amp;amp; Colleges already have great non-traditional/creative
+CS/IT programs (I plan to partner with teachers at these schools as &lt;a href=&quot;#early-adopters&quot;&gt;early
 adopters&lt;/a&gt;). However, even in these cases there’s a missing link
 once students finish High School—where can they go to further develop their
 creative practice? The c/c/c studio program will give them deep links &amp;amp;
@@ -101,6 +91,26 @@ to the c/c/c studio, but for undergraduate students. I will be drawing on all of
 these connections &amp;amp; influences in developing the c/c/c studio program during my
 Reimagine Fellowship.&lt;/p&gt;
 
+&lt;p&gt;In terms of a pipeline for c/c/c students to return to the ANU to study as
+undergraduate students, they can take my &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720: Art &amp;amp; Interaction in New
+Media&lt;/a&gt; course as part of a major in
+either a CS degree or a Bachelor of Visual Arts (or indeed as a cross-campus
+elective in any program). COMP1720 has run successfully as a cross-disciplinary
+“learn to code” course for several years.
+The c/c/c studio will extend this opportunity to High School students in the
+ACT.&lt;/p&gt;
+
+&lt;p&gt;Finally, I’m &lt;em&gt;already&lt;/em&gt; engaged in this interdisciplinary creative code outreach
+stuff—here’s a short excerpt of my performance (with Kieran Browne) at the
+2019 CECS Welcome Party:&lt;/p&gt;
+
+&lt;div style=&quot;padding:56.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/319664298?color=be2edd&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;I see the c/c/c studio as an opportunity to inspire the next generation of
+students to come and explore the things that got me excited about computer
+science in the first place.&lt;/p&gt;
+
 &lt;h2 id=&quot;project-scope&quot;&gt;Project Scope&lt;/h2&gt;
 
 &lt;h3 id=&quot;solution-proposed&quot;&gt;Solution proposed&lt;/h3&gt;
@@ -118,15 +128,15 @@ teaching model, which we will make use of in developing the c/c/c curriculum.&lt
 details of the c/c/c studio sessions, but here are some initial plans:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;students will apply to participate based on interest and aptitude, so we can
-assume that students are engaged and willing to be self-directed in their
-learning&lt;/li&gt;
-  &lt;li&gt;the weekly c/c/c studio session will be 2hrs long, held at an (or more,
-depending on numbers) after-school-friendly timeslot&lt;/li&gt;
+  &lt;li&gt;ACT High School &amp;amp; College students will apply to participate based on interest
+and aptitude&lt;/li&gt;
+  &lt;li&gt;the weekly c/c/c studio session will be 2hrs long, held on campus at an
+after-school-friendly timeslot&lt;/li&gt;
   &lt;li&gt;students will commit to attending for a semester, culminating in a public grad
 show exhibition/performance at the end of the semester&lt;/li&gt;
   &lt;li&gt;each session will be small—max 20 students with 1 instructor (Ben) and one
-tutor&lt;/li&gt;
+tutor (we will recruit tutors with the appropriate skills as required based on
+c/c/c studio student numbers)&lt;/li&gt;
   &lt;li&gt;students will be able to select either a music or visual art emphasis in their
 projects, with sub-communities for each&lt;/li&gt;
   &lt;li&gt;students will participate in collaborative “studio crit” sessions to work
@@ -137,17 +147,26 @@ appropriate&lt;/li&gt;
   &lt;li&gt;students will be exposed to regular guest “provocations” from students and
 creative researchers from CECS, the ANU School of Art &amp;amp; Design, ANU School of
 Music, ANU Centre for Digital Humanities Research, etc.&lt;/li&gt;
-  &lt;li&gt;as well as me (Ben) guiding the students, we will employ one of our
-undergraduate students as a tutor for these sessions&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In addition to the weekly c/c/c studio sessions, we will also run (less
-frequent) workshops in the High Schools themselves. These workshops will be used
-to recruit/excite students with the interest and aptitude to attend the c/c/c
-studio program, to share knowledge and open minds to the sorts of things which
-are possible with computers and programming, and to strengthen the pathways
-between the IT programs in ACT High Schools into our CECS undergraduate
-programs.&lt;/p&gt;
+&lt;p&gt;In addition to the weekly c/c/c studio sessions, there will also be (less
+frequent) workshops in High Schools. These workshops will be used to
+recruit/excite students with the interest and aptitude to attend the c/c/c
+studio program, to encourage and inspire CS/IT teachers in these schools, to
+open students’ minds to the sorts of things which are possible with computers
+and programming in CECS.&lt;/p&gt;
+
+&lt;p&gt;{#anu-extension-accreditation}&lt;/p&gt;
+
+&lt;p&gt;Longer-term, it would be really great to give participants in the c/c/c studio
+program credit into our first-year CS program (e.g.
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) if they decide to come and
+study in CECS.&lt;sup id=&quot;fnref:discovering-engineering&quot;&gt;&lt;a href=&quot;#fn:discovering-engineering&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; To investigate this, we will put the
+c/c/c studio program forward as a candidate for the &lt;a href=&quot;http://extension.anu.edu.au&quot;&gt;ANU Extension
+program&lt;/a&gt;. This may or may not be desirable
+(depending on the requirements of the Extension program) but we should
+investigate whether it’s a good fit for increasing the profile, standing and
+utility of the c/c/c studio program.&lt;/p&gt;
 
 &lt;h3 id=&quot;value-to-organisationreimagine-strategic-alignment&quot;&gt;Value to organisation/Reimagine strategic alignment&lt;/h3&gt;
 
@@ -167,9 +186,18 @@ generation can learn, create, and share. More than that, it will unlock the
 latent potential in students who never knew their diverse interests (especially
 in the arts &amp;amp; music) &lt;em&gt;could&lt;/em&gt; be used in engineering and computing.&lt;/p&gt;
 
-&lt;p&gt;The c/c/c studio is also an “outwardly-focused education program” (taken from
-the &lt;em&gt;Reimagine Fellow&lt;/em&gt; position description) which builds two-way relationships
-with ACT High Schools. The end-of-semester grad shows provide an opportunity to
+&lt;p&gt;The c/c/c studio provides a test-bed for new ways of teaching computing &amp;amp;
+engineering skills at a university level, especially the studio teaching model.
+The Reimagine project’s “&lt;a href=&quot;https://www.acm.org/about-acm/about-the-acm-organization#h-acm’s-‘big-tent’-philosophy-embraces-diversity&quot;&gt;big
+tent&lt;/a&gt;”
+CS education philosophy requires us to attract &lt;em&gt;and nurture&lt;/em&gt; a broader range of
+students in our undergraduate and postgraduate programs. In building a community
+of students who are interested in using computers in the arts &amp;amp; music the c/c/c
+studio can be &lt;em&gt;one part&lt;/em&gt; of that bigger mission.&lt;/p&gt;
+
+&lt;p&gt;The c/c/c studio is an “outwardly-focused education program” (taken from the
+&lt;em&gt;Reimagine Fellow&lt;/em&gt; position description) which builds two-way relationships with
+ACT High Schools. The end-of-semester grad shows provide an opportunity to
 showcase the innovative education &amp;amp; creative-practice going on in the c/c/c
 studio (and CECS more broadly) and in doing so to make an impact in the ANU and
 wider Canberra community.&lt;/p&gt;
@@ -181,8 +209,8 @@ problem-_finding_ institution.&lt;/p&gt;
 
 &lt;h3 id=&quot;target-users&quot;&gt;Target users&lt;/h3&gt;
 
-&lt;p&gt;ACT High School &amp;amp; College students, as well as students from the wider Canberra
-region (since we could do a travelling version of the workshop).&lt;/p&gt;
+&lt;p&gt;ACT High School students, as well as students from the wider Canberra region
+(since we could do a travelling version of the workshop).&lt;/p&gt;
 
 &lt;p&gt;Also, teachers from these schools will be encouraged to partner with us in both
 supporting their students to participate in the c/c/c studio, and also to
@@ -217,7 +245,7 @@ semester’s student work in the c/c/c studio&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;(TBC) &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;RSCS’s&lt;/a&gt; first ANU
-Extension program&lt;/p&gt;
+Extension program (see &lt;a href=&quot;#anu-extension-accreditation&quot;&gt;above&lt;/a&gt;)&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -229,7 +257,7 @@ that’s intangible stuff, so I’m not sure if they count as a deliverables.&lt
 &lt;h2 id=&quot;project-sponsor-and-stakeholders&quot;&gt;Project Sponsor and Stakeholders&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Sponsor&lt;/strong&gt;: Nick?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sponsor&lt;/strong&gt;: Nick? Qing? Tony?&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Owner&lt;/strong&gt;: Ben Swift&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Consultations&lt;/strong&gt;:
     &lt;ul&gt;
@@ -240,6 +268,8 @@ Hinchcliffe&lt;/a&gt; (ANU
 School of Art &amp;amp; Design)&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/qing-wang&quot;&gt;Qing Wang&lt;/a&gt; (RSCS Associate
 Director of Education Partnerships)&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://charlesmartin.com.au&quot;&gt;Charles Martin&lt;/a&gt; (RSCS Lecturer and creative
+code practitioner)&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/tony-hosking&quot;&gt;Tony Hosking&lt;/a&gt; (RSCS Director)&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-spaces-–-dr-liz-williams&quot;&gt;Liz
 Williams&lt;/a&gt;
@@ -277,19 +307,23 @@ Building #145 should do the job initially.&lt;/p&gt;
 making music, e.g. headphones &amp;amp; a small mixing desk (I have some of this gear
 already).&lt;/p&gt;
 
+&lt;h3 id=&quot;personnel-requirements&quot;&gt;Personnel requirements&lt;/h3&gt;
+
+&lt;p&gt;The c/c/c studio’s open-ended studio teaching model &lt;em&gt;does&lt;/em&gt; require expert
+instructors with a mix of creative and technical skills. In addition to my own
+expertise in this area, Dr. Charles Martin (another creative code researcher)
+has recently been employed as a Lecturer by the RSCS, and will be an asset to
+the c/c/c studio program. There are also several academic creative practitioners
+across campus at the ANU Schools of Art &amp;amp; Design and Schools of Music, and there
+&lt;em&gt;may&lt;/em&gt; be opportunities/needs to buy out small amounts of their time to
+contribute to the teaching program in the c/c/c studio.&lt;/p&gt;
+
 &lt;h3 id=&quot;enrolmentadmin-requirements&quot;&gt;Enrolment/admin requirements&lt;/h3&gt;
 
-&lt;p&gt;In the short term, it would be great to be able to give students who complete
-the c/c/c studio program (which will be held in semester-long increments) an
-official ANU certificate of completion.&lt;/p&gt;
-
-&lt;p&gt;Longer-term, it’d be really great to have the ability to give participants in
-the c/c/c studio program credit into our first-year CS program (e.g.
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) if they decide to come and
-study in CECS. This is the same as the equivalent &lt;a href=&quot;http://extension.anu.edu.au/study/discovering-engineering&quot;&gt;Discovering Engineering
-extension program&lt;/a&gt;,
-which (I &lt;em&gt;think&lt;/em&gt;) gives students credit for a first-year ENGN course if they
-study Engineering at the ANU.&lt;/p&gt;
+&lt;p&gt;In the short term, we will give students who complete the c/c/c studio program
+(which will be held in semester-long increments) an official ANU certificate of
+completion. Longer-term, we will need some admin support to investigate the ANU
+Extension program option, as &lt;a href=&quot;#anu-extension-accreditation&quot;&gt;discussed above&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We will require public liability insurance for any students who come onto campus
 for the c/c/c studio sessions .&lt;/p&gt;
@@ -428,6 +462,12 @@ play &lt;em&gt;together&lt;/em&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
+    &lt;p&gt;This isn’t exactly what I’d put in my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;original pitch&lt;/a&gt;, but from
+discussions in our workshop the other day I think this outreach project hits
+one of the main goals of the Reimagine project, and is really complementary to
+the other Fellows’ projects.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;p&gt;It’s currently a CS pitch—there’s not much involvement from the Engineering
 schools at present, although this could change in the future. But I’ve decided
 to start with what I know.&lt;/p&gt;
@@ -443,10 +483,16 @@ examine similar programs elsewhere) in the first 6months (mid-late 2019) to
 figure out those details.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;This isn’t exactly what I’d put in my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;original pitch&lt;/a&gt;, but from
-discussions in our workshop the other day I think this outreach project hits
-one of the main goals of the Reimagine project, and is really complementary to
-the other Fellows’ projects.&lt;/p&gt;
+    &lt;p&gt;I don’t know what the c/c/c studio sessions will look like yet, but I could
+make up an “example runsheet” for one of the sessions if there’s an appetite
+for it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the &lt;a href=&quot;#success-metrics&quot;&gt;success metrics&lt;/a&gt; section I &lt;em&gt;could&lt;/em&gt; put some concrete
+numbers in there, e.g. have 5 students complete the program in the first
+semester, 20 in the final semester, plus have at least 3 of them enrol at the
+ANU, etc. But I’m reluctant to put concrete numbers in without further
+discussions with e.g. my HoS.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Some of the nomenclature is still TBC, e.g. the whole “c/c/c studio” thing,
@@ -467,6 +513,7 @@ hear this project pitch) there’s a chance that some of the details will change
 as I make things more concrete and sort out the details.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:ccc-group&quot;&gt;
@@ -478,6 +525,13 @@ around the place and will be useful for “branding” this activity &lt;a href
     &lt;/li&gt;
     &lt;li id=&quot;fn:hs-college&quot;&gt;
       &lt;p&gt;since we’re in the ACT, I mean Hign School &lt;em&gt;and&lt;/em&gt; College (i.e. years 7–12) &lt;a href=&quot;#fnref:hs-college&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:discovering-engineering&quot;&gt;
+
+      &lt;p&gt;This is the same as the equivalent &lt;a href=&quot;http://extension.anu.edu.au/study/discovering-engineering&quot;&gt;Discovering Engineering extension
+program&lt;/a&gt;, which
+gives students credit for a first-year ENGN course if they study Engineering
+at the ANU. &lt;a href=&quot;#fnref:discovering-engineering&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html">Note to readers: this is my Reimagine Fellowship project plan.</summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
