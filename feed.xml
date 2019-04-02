@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-03-29T16:45:38+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is my project plan for a &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellowship&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-02T12:21:12+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellowship&lt;/a&gt; project plan.&lt;/p&gt;
 
 &lt;div id=&quot;toc&quot;&gt;
 
@@ -66,10 +66,9 @@ ACT.&lt;/p&gt;
 
 &lt;h3 id=&quot;existing-alternatives&quot;&gt;Existing alternatives&lt;/h3&gt;
 
-&lt;p&gt;Some ACT High Schools already have great non-traditional/creative CS/IT
-programs, for example Dickson College, Radford College, Canberra (Boys) Grammar.
-I plan to partner with teachers at these schools as &lt;a href=&quot;#early-adopters&quot;&gt;early
-adopters&lt;/a&gt;. However, even in these cases there’s a missing link
+&lt;p&gt;Some ACT High Schools already have great non-traditional/creative CS/IT programs
+(I plan to partner with teachers at these schools as &lt;a href=&quot;#early-adopters&quot;&gt;early
+adopters&lt;/a&gt;). However, even in these cases there’s a missing link
 once students finish High School—where can they go to further develop their
 creative practice? The c/c/c studio program will give them deep links &amp;amp;
 relationships into the ANU (across both CS and the Schools of Art &amp;amp; Design and
@@ -107,20 +106,32 @@ Reimagine Fellowship.&lt;/p&gt;
 &lt;h3 id=&quot;solution-proposed&quot;&gt;Solution proposed&lt;/h3&gt;
 
 &lt;p&gt;The weekly c/c/c studio sessions won’t be lectures, or even tutorials—they
-will adopt the artist’s studio model, with each student working on their own
-code-based music or visual artwork as a semester-long creative “work”.&lt;/p&gt;
+will adopt a &lt;a href=&quot;https://teaching.unsw.edu.au/assessing-studio-based-learning&quot;&gt;studio-based
+learning&lt;/a&gt; model,
+with each student working on their own code-based music or visual artwork as a
+semester-long creative “work”. The &lt;a href=&quot;http://www.studioteaching.org&quot;&gt;Studio Teaching
+Project&lt;/a&gt; (a research collaboration between UNSW,
+UQ, RMIT and UTas) has released some helpful material for employing this
+teaching model, which we will make use of in developing the c/c/c curriculum.&lt;/p&gt;
 
-&lt;p&gt;The first part of this project is to actually figure out the details of how
-these workshops will run, but here are some initial plans:&lt;/p&gt;
+&lt;p&gt;The first part of this project (mid-2019 to end 2019) is to figure out the
+details of the c/c/c studio sessions, but here are some initial plans:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;each session will be small—up to 20 students with 1 instructor (Ben) and one tutor&lt;/li&gt;
-  &lt;li&gt;students will commit to attending for a semester, with an
-exhibition/performance at the end&lt;/li&gt;
   &lt;li&gt;students will apply to participate based on interest and aptitude, so we can
 assume that students are engaged and willing to be self-directed in their
 learning&lt;/li&gt;
-  &lt;li&gt;some “training” material may be adapted from the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/labs/&quot;&gt;COMP1720 lab
+  &lt;li&gt;the weekly c/c/c studio session will be 2hrs long, held at an (or more,
+depending on numbers) after-school-friendly timeslot&lt;/li&gt;
+  &lt;li&gt;students will commit to attending for a semester, culminating in a public grad
+show exhibition/performance at the end of the semester&lt;/li&gt;
+  &lt;li&gt;each session will be small—max 20 students with 1 instructor (Ben) and one
+tutor&lt;/li&gt;
+  &lt;li&gt;students will be able to select either a music or visual art emphasis in their
+projects, with sub-communities for each&lt;/li&gt;
+  &lt;li&gt;students will participate in collaborative “studio crit” sessions to work
+share ideas and stretch one another in their work&lt;/li&gt;
+  &lt;li&gt;initial “training” material be adapted from the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/labs/&quot;&gt;COMP1720 lab
 material&lt;/a&gt; and tweaked as
 appropriate&lt;/li&gt;
   &lt;li&gt;students will be exposed to regular guest “provocations” from students and
@@ -135,7 +146,8 @@ frequent) workshops in the High Schools themselves. These workshops will be used
 to recruit/excite students with the interest and aptitude to attend the c/c/c
 studio program, to share knowledge and open minds to the sorts of things which
 are possible with computers and programming, and to strengthen the pathways
-between the IT programs in ACT High Schools into our CECS undergraduate programs.&lt;/p&gt;
+between the IT programs in ACT High Schools into our CECS undergraduate
+programs.&lt;/p&gt;
 
 &lt;h3 id=&quot;value-to-organisationreimagine-strategic-alignment&quot;&gt;Value to organisation/Reimagine strategic alignment&lt;/h3&gt;
 
@@ -147,15 +159,20 @@ engineering and computing with a diverse range of interests, motivations,
 perspectives and career aspirations.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;The c/c/c studio is designed to attract that new generation and to provide them
-a supportive community in which to learn, create, and share. More than that, it
-aims to unlock the latent potential in students who never knew their diverse
-interests (especially in the arts &amp;amp; music) &lt;em&gt;could&lt;/em&gt; be used in engineering and
-computing.&lt;/p&gt;
+&lt;p&gt;This “new generation” will not be won over by glossy brochures and fancy new
+buildings—they will come because they can see concrete ways in which their
+diverse range of interests can be harnessed and &lt;em&gt;put to work&lt;/em&gt; to do amazing
+things. The c/c/c studio will provide a supportive community in which this new
+generation can learn, create, and share. More than that, it will unlock the
+latent potential in students who never knew their diverse interests (especially
+in the arts &amp;amp; music) &lt;em&gt;could&lt;/em&gt; be used in engineering and computing.&lt;/p&gt;
 
 &lt;p&gt;The c/c/c studio is also an “outwardly-focused education program” (taken from
 the &lt;em&gt;Reimagine Fellow&lt;/em&gt; position description) which builds two-way relationships
-with ACT High Schools.&lt;/p&gt;
+with ACT High Schools. The end-of-semester grad shows provide an opportunity to
+showcase the innovative education &amp;amp; creative-practice going on in the c/c/c
+studio (and CECS more broadly) and in doing so to make an impact in the ANU and
+wider Canberra community.&lt;/p&gt;
 
 &lt;p&gt;Finally, the c/c/c studio presents an opportunity as an “object lesson” for the
 breadth of places that an Engineering/Computer Science skillset can be
@@ -175,7 +192,8 @@ using the c/c/c studio curriculum, which will be made freely available).&lt;/p&g
 &lt;h3 id=&quot;early-adopters&quot;&gt;Early adopters&lt;/h3&gt;
 
 &lt;p&gt;I will build on my (and others) existing relationships with teachers from
-Dickson College, &lt;a href=&quot;https://www.radford.act.edu.au&quot;&gt;Radford College&lt;/a&gt;, &lt;a href=&quot;http://lynehamhs.act.edu.au&quot;&gt;Lyneham
+&lt;a href=&quot;http://www.dicksonc.act.edu.au&quot;&gt;Dickson College&lt;/a&gt;, &lt;a href=&quot;https://www.radford.act.edu.au&quot;&gt;Radford
+College&lt;/a&gt;, &lt;a href=&quot;http://lynehamhs.act.edu.au&quot;&gt;Lyneham
 High&lt;/a&gt;, &lt;a href=&quot;https://cgs.act.edu.au&quot;&gt;Canberra (Boys)
 Grammar&lt;/a&gt; and &lt;a href=&quot;https://www.cggs.act.edu.au&quot;&gt;Canberra Girls
 Grammar&lt;/a&gt;. These schools, with their existing groups
@@ -196,6 +214,10 @@ licence (&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quo
     &lt;p&gt;a biannual &lt;strong&gt;c/c/c studio grad show&lt;/strong&gt; gallery exhibition and music performance
 held on campus (perhaps in the new cultural centre) as the capstone for each
 semester’s student work in the c/c/c studio&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(TBC) &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;RSCS’s&lt;/a&gt; first ANU
+Extension program&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -269,8 +291,8 @@ extension program&lt;/a&gt;,
 which (I &lt;em&gt;think&lt;/em&gt;) gives students credit for a first-year ENGN course if they
 study Engineering at the ANU.&lt;/p&gt;
 
-&lt;p&gt;We will require public liability insurance for any students who come onto campus for the c/c/c
-studio sessions.&lt;/p&gt;
+&lt;p&gt;We will require public liability insurance for any students who come onto campus
+for the c/c/c studio sessions .&lt;/p&gt;
 
 &lt;h2 id=&quot;key-activities&quot;&gt;Key Activities&lt;/h2&gt;
 
@@ -294,12 +316,12 @@ studio sessions.&lt;/p&gt;
       &lt;td&gt;end 2019&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;weekly c/c/c studio sessions&lt;/td&gt;
+      &lt;td&gt;run weekly c/c/c studio sessions&lt;/td&gt;
       &lt;td&gt;Ben + tutor(s)&lt;/td&gt;
       &lt;td&gt;ongoing (beginning 2020)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;in-HS workshops&lt;/td&gt;
+      &lt;td&gt;run in-HS workshops&lt;/td&gt;
       &lt;td&gt;Ben + tutor(s)&lt;/td&gt;
       &lt;td&gt;ongoing (beginning 2020)&lt;/td&gt;
     &lt;/tr&gt;
@@ -318,13 +340,13 @@ studio sessions.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;developing the curriculum&lt;/li&gt;
   &lt;li&gt;building relationships with High Schools and recruiting students&lt;/li&gt;
-  &lt;li&gt;delivering the weekly c/c/c studio session&lt;/li&gt;
-  &lt;li&gt;running workshops in High Schools (perhaps once a month)&lt;/li&gt;
+  &lt;li&gt;delivering the weekly c/c/c studio session(s)&lt;/li&gt;
+  &lt;li&gt;running workshops in High Schools (~monthly)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Tutors&lt;/strong&gt;: depending on how many students attend, it’d be great to be able to
-employ one (or more) of our undergraduate students to help support the students
-in the c/c/c studio.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tutors&lt;/strong&gt;: depending on how many students attend, we will need to employ one
+(or more) of our undergraduate students to help support the students in the
+c/c/c studio.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: music gear (~2k) so that students can connect their laptops to
 play &lt;em&gt;together&lt;/em&gt;&lt;/p&gt;
@@ -458,7 +480,7 @@ around the place and will be useful for “branding” this activity &lt;a href
       &lt;p&gt;since we’re in the ACT, I mean Hign School &lt;em&gt;and&lt;/em&gt; College (i.e. years 7–12) &lt;a href=&quot;#fnref:hs-college&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html">Note to readers: this is my project plan for a Reimagine Fellowship.</summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html">Note to readers: this is my Reimagine Fellowship project plan.</summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
 simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
 &lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; table than have to fire up Excel.&lt;/p&gt;
 
