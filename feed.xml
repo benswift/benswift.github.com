@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-03T21:29:30+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellowship&lt;/a&gt; project plan. If
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-03T21:30:46+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellowship&lt;/a&gt; project plan. If
 you’re just here for the short version, see the &lt;a href=&quot;#elevator-pitch&quot;&gt;elevator
 pitch&lt;/a&gt;.&lt;/p&gt;
 
@@ -157,8 +157,6 @@ material&lt;/a&gt; and tweaked as
 appropriate&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;{#anu-extension-accreditation}&lt;/p&gt;
-
 &lt;p&gt;It may be possible give participants in the c/c/c studio program credit into our
 first-year CS program (e.g. &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;)
 if they decide to come and study in CECS.&lt;sup id=&quot;fnref:discovering-engineering&quot;&gt;&lt;a href=&quot;#fn:discovering-engineering&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; To
@@ -166,7 +164,7 @@ investigate this, in stage two we will put the c/c/c studio program forward as a
 candidate for the &lt;a href=&quot;http://extension.anu.edu.au&quot;&gt;ANU Extension program&lt;/a&gt;. This may
 or may not be desirable (depending on the requirements of the Extension program)
 but we should investigate whether it’s a good fit for increasing the profile,
-standing and utility of the c/c/c studio.&lt;/p&gt;
+standing and utility of the c/c/c studio. {: #anu-extension-accreditation}&lt;/p&gt;
 
 &lt;h3 id=&quot;value-to-organisationreimagine-strategic-alignment&quot;&gt;Value to organisation/Reimagine strategic alignment&lt;/h3&gt;
 
