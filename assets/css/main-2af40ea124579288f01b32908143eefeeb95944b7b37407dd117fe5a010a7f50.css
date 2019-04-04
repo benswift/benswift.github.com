@@ -148,7 +148,8 @@ img {
   width: 100%; }
 
 table {
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   text-align: left;
   border-collapse: collapse; }
   table th, table td {
@@ -160,7 +161,8 @@ table {
     vertical-align: top; }
 
 #toc {
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  clear: both; }
   #toc h2 {
     background: #333;
     color: #fafafa;
@@ -197,6 +199,10 @@ table {
 
   h1, h2, h3, h4, h5, h6, p {
     padding: 0; }
+
+  table {
+    width: 100%;
+    margin: 0; }
 
   .navigation {
     padding: 0; }

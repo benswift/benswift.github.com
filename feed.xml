@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-03T21:34:47+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is my &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;Reimagine Fellowship&lt;/a&gt; project plan. If
-you’re just here for the short version, see the &lt;a href=&quot;#elevator-pitch&quot;&gt;elevator
-pitch&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-04T15:33:46+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is what I intend to do if awarded a &lt;strong&gt;Reimagine
+Fellowship&lt;/strong&gt;. If you’re just here for the short version, see the &lt;a href=&quot;#elevator-pitch&quot;&gt;elevator
+pitch&lt;/a&gt;. You could also read some of the &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;background to this
+proposal&lt;/a&gt; or check out the
+main &lt;a href=&quot;https://cecs.anu.edu.au/reimagine&quot;&gt;CECS Reimagine&lt;/a&gt; page for more general
+information about the Reimagine project.&lt;/p&gt;
 
 &lt;div id=&quot;toc&quot;&gt;
 
@@ -27,15 +33,15 @@ pitch&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;elevator-pitch&quot;&gt;Elevator pitch&lt;/h3&gt;
 
 &lt;p class=&quot;hl-para&quot;&gt;I want to create the &lt;strong&gt;c/c/c studio&lt;/strong&gt;&lt;sup id=&quot;fnref:ccc-group&quot;&gt;&lt;a href=&quot;#fn:ccc-group&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, an extension/outreach program
-in creative code (using code to make art, music &amp;amp; other cool things). Through
-school- &amp;amp; community-based one-off workshops and a weekly on-campus studio
-masterclass, students will be part of an interactive learning community where
-they will be guided by instructors in creating their own new works of code-based
-art &amp;amp; music. At the end of each semester the c/c/c studio will host a “grad
-show” gallery exhibition/performance of the students’ work. This program will
-attract fantastic students who might otherwise not study engineering or computer
-science (either at ANU or elsewhere) and engage the wider community in helping
-them &lt;em&gt;reimagine&lt;/em&gt; what it is to be a computer scientist or engineer in the 21st
+in creative code: using code to make art, music &amp;amp; other cool things. Through
+school- &amp;amp; community-based workshops and a weekly on-campus studio masterclass,
+students will be part of an interactive learning community where they will be
+guided by instructors in creating their own new works of code-based art &amp;amp; music.
+At the end of each semester the c/c/c studio will host a “grad show” gallery
+exhibition/performance of the students’ work. This program will attract
+fantastic students who might otherwise not study engineering or computer science
+(either at ANU or elsewhere) and engage the wider community in helping them
+&lt;em&gt;reimagine&lt;/em&gt; what it is to be a computer scientist or engineer in the 21st
 century.&lt;/p&gt;
 
 &lt;h3 id=&quot;problems-to-be-addressed&quot;&gt;Problems to be addressed&lt;/h3&gt;
@@ -168,6 +174,9 @@ standing and utility of the c/c/c studio.&lt;/p&gt;
 
 &lt;h3 id=&quot;value-to-organisationreimagine-strategic-alignment&quot;&gt;Value to organisation/Reimagine strategic alignment&lt;/h3&gt;
 
+&lt;p&gt;The c/c/c studio aligns strongly with the goals of the Reimagine project,
+specifically in people, students, education and engagement.&lt;/p&gt;
+
 &lt;p&gt;From the &lt;a href=&quot;https://cecs.anu.edu.au/reimagine&quot;&gt;Reimagine Project page&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -180,26 +189,25 @@ perspectives and career aspirations.&lt;/p&gt;
 buildings—they will come because they can see concrete ways in which their
 diverse range of interests can be harnessed and &lt;em&gt;put to work&lt;/em&gt; to do amazing
 things. The c/c/c studio will provide a supportive community in which this new
-generation can learn, create, and share. More than that, it will unlock the
-latent potential in students who never knew their diverse interests (especially
-in the arts &amp;amp; music) &lt;em&gt;could&lt;/em&gt; be used in engineering and computing.&lt;/p&gt;
+generation of &lt;strong&gt;people&lt;/strong&gt; can learn, create, and share. More than that, it will
+unlock the latent potential in &lt;strong&gt;students&lt;/strong&gt; who never knew their diverse interests
+(especially in the arts &amp;amp; music) &lt;em&gt;could&lt;/em&gt; be used in engineering and computing.&lt;/p&gt;
 
-&lt;p&gt;The c/c/c studio provides a test-bed for new ways of teaching computing &amp;amp;
-engineering skills at a university level, especially the studio teaching model.
-The Reimagine project’s “&lt;a href=&quot;https://www.acm.org/about-acm/about-the-acm-organization#h-acm’s-‘big-tent’-philosophy-embraces-diversity&quot;&gt;big
+&lt;p&gt;The c/c/c studio provides a test-bed for new modes of computing &lt;strong&gt;education&lt;/strong&gt;,
+especially the studio teaching model. The Reimagine project’s “&lt;a href=&quot;https://www.acm.org/about-acm/about-the-acm-organization#h-acm’s-‘big-tent’-philosophy-embraces-diversity&quot;&gt;big
 tent&lt;/a&gt;”
 CS education philosophy requires us to attract &lt;em&gt;and nurture&lt;/em&gt; a broader range of
 students in our undergraduate and postgraduate programs. In building a community
 of students who are interested in using computers in the arts &amp;amp; music the c/c/c
 studio can be &lt;em&gt;one part&lt;/em&gt; of that bigger mission.&lt;/p&gt;
 
-&lt;p&gt;The c/c/c studio is an &lt;strong&gt;outwardly-focused&lt;/strong&gt; program. Through the workshops
-(stage two) and c/c/c studio (stage three) we will need to engage local artists
-(whose work includes code/digital techniques) to teach into our studio
-masterclasses. The end-of-semester grad shows (stage three) provide an
-opportunity to showcase the innovative education &amp;amp; creative-practice going on in
-the c/c/c studio (and CECS more broadly) and in doing so to make an impact in
-the ANU and wider Canberra community.&lt;/p&gt;
+&lt;p&gt;The c/c/c studio is an outwardly-focused program. Through the workshops (stage
+two) and c/c/c studio (stage three) we will &lt;strong&gt;engage&lt;/strong&gt; local artists (whose work
+includes code/digital techniques) to teach into our studio masterclasses. The
+end-of-semester grad shows (stage three) provide an opportunity to showcase the
+innovative education &amp;amp; creative-practice going on in the c/c/c studio (and CECS
+more broadly) and in doing so to make an impact in the ANU and wider Canberra
+community.&lt;/p&gt;
 
 &lt;p&gt;Finally, all the activities of the c/c/c studio function as an “object lesson”
 for the breadth of places that an Engineering/Computer Science skillset can be
@@ -250,6 +258,10 @@ held on campus (perhaps in the new cultural centre) as the capstone for each
 semester’s student work in the c/c/c studio&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
+    &lt;p&gt;stories for CECS/Reimagine marketing, and c/c/c studio “graduates” will be
+ideal student ambassadors for the new horizons that creative code opens up&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;p&gt;(TBC) &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;RSCS’s&lt;/a&gt; first ANU
 Extension program (see &lt;a href=&quot;#anu-extension-accreditation&quot;&gt;above&lt;/a&gt;)&lt;/p&gt;
   &lt;/li&gt;
@@ -263,7 +275,8 @@ that’s intangible stuff, so I’m not sure if they count as a deliverables.&lt
 &lt;h2 id=&quot;project-sponsor-and-stakeholders&quot;&gt;Project Sponsor and Stakeholders&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Sponsor&lt;/strong&gt;: Nick? Qing? Tony?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sponsor&lt;/strong&gt;: &lt;a href=&quot;https://cecs.anu.edu.au/people/elanor-huntington&quot;&gt;Elanor
+Huntington&lt;/a&gt;, Dean of CECS&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Owner&lt;/strong&gt;: Ben Swift&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Consultations&lt;/strong&gt;:
     &lt;ul&gt;
@@ -296,14 +309,43 @@ President of Robogals Canberra&lt;/li&gt;
 absolute terms and also trends over time.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Participation&lt;/strong&gt;: how many students participate?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Retention&lt;/strong&gt;: for the weekly c/c/c studio sessions, do students keep coming
-over time?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Participation&lt;/strong&gt;: how many students participate in the workshops (stage two)
+and c/c/c studio (stage three)?&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Creative outputs&lt;/strong&gt;: we’ll have an end-of-semester concert and gallery
 show—are the things the students are making any good?&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Curriculum uptake&lt;/strong&gt;: is the curriculum developed for the c/c/c studio
 sessions used by HS teachers to run similar groups in their schools?&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Attaching numbers to this sort of thing is fraught, but here are some indicative
+targets:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;stage&lt;/th&gt;
+      &lt;th&gt;activity&lt;/th&gt;
+      &lt;th&gt;target&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;two&lt;/td&gt;
+      &lt;td&gt;workshops&lt;/td&gt;
+      &lt;td&gt;run one half-day workshop per month (or equivalent), with at least 10 students each time&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;three&lt;/td&gt;
+      &lt;td&gt;c/c/c studio&lt;/td&gt;
+      &lt;td&gt;10 successful c/c/c studio “graduates” in S1 2020, 15 successful graduates in S2 2020&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;three+&lt;/td&gt;
+      &lt;td&gt;CECS enrolments&lt;/td&gt;
+      &lt;td&gt;5 graduates of the c/c/c studio (in year 12 in 2020) enrolling in CS at the ANU&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h2 id=&quot;business-readiness&quot;&gt;Business Readiness&lt;/h2&gt;
 
@@ -314,10 +356,6 @@ every week in an after-school friendly timeslot (perhaps 4pm-6pm). This room
 needs to have one computer per student (either a lab machine or personal laptop)
 which can run a modern web browser (Chrome, Firefox, Safari). One of our
 computer labs in Building #145 should do the job initially.&lt;/p&gt;
-
-&lt;p&gt;In addition, some sound gear may be required for the students interested in
-making music, e.g. headphones &amp;amp; a small mixing desk (I have some of this gear
-already).&lt;/p&gt;
 
 &lt;h3 id=&quot;personnel&quot;&gt;Personnel&lt;/h3&gt;
 
@@ -431,7 +469,7 @@ venue/catering/equipment (e.g. fancy projectors, etc.)&lt;/p&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;high-school students don't attend the on-campus c/c/c studio sessions&lt;/td&gt;
-      &lt;td&gt;Ben&lt;/td&gt;
+      &lt;td&gt;Ben, CECS Marketing, school/community partners&lt;/td&gt;
       &lt;td&gt;get buy-in from &lt;a href=&quot;#early-adopters&quot;&gt;early adopter schools&lt;/a&gt;, get them to support/encourage their students to attend&lt;/td&gt;
       &lt;td&gt;end 2020&lt;/td&gt;
     &lt;/tr&gt;
@@ -470,20 +508,51 @@ venue/catering/equipment (e.g. fancy projectors, etc.)&lt;/p&gt;
 
 &lt;h2 id=&quot;rapid-analysis&quot;&gt;Rapid Analysis&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Who&lt;/em&gt;—who is undertaking this role?&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;What&lt;/em&gt;—what are they being asked to do?&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;When&lt;/em&gt;—when will their role be completed?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;R&lt;/strong&gt;ecommend&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;gree&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;P&lt;/strong&gt;erform&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;I&lt;/strong&gt;nput&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;D&lt;/strong&gt;ecide&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note: I stole most of this from the excellent &lt;a href=&quot;#anu-extension-accreditation&quot;&gt;Jeremy
+Smith&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;This section TODO; see note below.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Role&lt;/th&gt;
+      &lt;th&gt;Who is undertaking this role?&lt;/th&gt;
+      &lt;th&gt;What are they being asked to do?&lt;/th&gt;
+      &lt;th&gt;When will their role be completed?&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;R&lt;/strong&gt;ecommend&lt;/td&gt;
+      &lt;td&gt;PMO Manager, CECS GM, RSCS Director, CECS Associate Deans for Education, Research and Diversity and Inclusion, Reimagine CoDesign Lead&lt;/td&gt;
+      &lt;td&gt;recommend support for the Reimagine Fellow Project outlined here&lt;/td&gt;
+      &lt;td&gt;May/June 2019&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;A&lt;/strong&gt;gree&lt;/td&gt;
+      &lt;td&gt;CECS Executive&lt;/td&gt;
+      &lt;td&gt;agree that a decision be made on the Reimagine Fellow Project and the c/c/c studio&lt;/td&gt;
+      &lt;td&gt;July 2019&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;P&lt;/strong&gt;erform&lt;/td&gt;
+      &lt;td&gt;RSCS Director and Associate Director (Education Partnerships), CECS PMO Team&lt;/td&gt;
+      &lt;td&gt;make the necessary resource, time, and cost changes and commitments&lt;/td&gt;
+      &lt;td&gt;June/July 2019&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;I&lt;/strong&gt;nput&lt;/td&gt;
+      &lt;td&gt;CECS Marketing and Student Services Teams, ANU stakeholders (other Colleges), [partner organisations](#project-sponsor-and-stakeholders), current students and staff.&lt;/td&gt;
+      &lt;td&gt;provide input into the Reimagine Fellow Project outlined here on potential collaboration, benefits or support&lt;/td&gt;
+      &lt;td&gt;April, May 2019&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;D&lt;/strong&gt;ecide&lt;/td&gt;
+      &lt;td&gt;CECS Dean &amp;amp; Deputy Dean&lt;/td&gt;
+      &lt;td&gt;provide the highest level demonstration of commitment to the Reimage Fellow Project&lt;/td&gt;
+      &lt;td&gt;June 2019&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h2 id=&quot;notes-for-draft-readers&quot;&gt;Notes for draft readers&lt;/h2&gt;
 
@@ -563,7 +632,7 @@ at the ANU. &lt;a href=&quot;#fnref:discovering-engineering&quot; class=&quot;r
       &lt;p&gt;actually, is &lt;em&gt;honoraria&lt;/em&gt; the plural of honorarium? &lt;a href=&quot;#fnref:plural&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html">Note to readers: this is my Reimagine Fellowship project plan. If you’re just here for the short version, see the elevator pitch.</summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html"></summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
 simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
 &lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; table than have to fire up Excel.&lt;/p&gt;
 
@@ -785,11 +854,14 @@ details.&lt;/p&gt;
 &lt;a href=&quot;https://clojurescript.org&quot;&gt;clojurescript&lt;/a&gt; because it makes me happy (source
 &lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_cljs/algorithmic_billboard/src/algorithmic_billboard/core.cljs&quot;&gt;here&lt;/a&gt;,
 and you can still see the original js source
-&lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/9f4dbeceb99a43f1430593f89bdde68e1fc5c3e9/widgets/algorithmic-ad-billboards.html&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="widgets" /><category term="web" /><summary type="html">In the spirit of Murdoch University’s free your think marketing campaign, I’ve put together a dynamic full-page ad billboard as my pitch for the ANU’s next marketing campaign.</summary></entry><entry><title type="html">Reimagining Engineering &amp;amp; CS at the ANU</title><link href="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/" rel="alternate" type="text/html" title="Reimagining Engineering &amp; CS at the ANU" /><published>2019-02-07T11:55:00+11:00</published><updated>2019-02-07T11:55:00+11:00</updated><id>https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu</id><content type="html" xml:base="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/">&lt;p&gt;The &lt;a href=&quot;https://cecs.anu.edu.au&quot;&gt;ANU College of Engineering and Computer Science&lt;/a&gt;
+&lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/9f4dbeceb99a43f1430593f89bdde68e1fc5c3e9/widgets/algorithmic-ad-billboards.html&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="widgets" /><category term="web" /><summary type="html">In the spirit of Murdoch University’s free your think marketing campaign, I’ve put together a dynamic full-page ad billboard as my pitch for the ANU’s next marketing campaign.</summary></entry><entry><title type="html">Reimagining Engineering &amp;amp; CS at the ANU</title><link href="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/" rel="alternate" type="text/html" title="Reimagining Engineering &amp; CS at the ANU" /><published>2019-02-07T11:55:00+11:00</published><updated>2019-02-07T11:55:00+11:00</updated><id>https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu</id><content type="html" xml:base="https://benswift.me/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://cecs.anu.edu.au&quot;&gt;ANU College of Engineering and Computer Science&lt;/a&gt;
 (CECS) is being &lt;em&gt;Reimagined&lt;/em&gt;. Don’t take my word for it; listen to our fearless
 leader &lt;a href=&quot;https://cecs.anu.edu.au&quot;&gt;Elanor&lt;/a&gt;:&lt;/p&gt;
 
-&lt;div style=&quot;width:100%; margin: 0px auto;&quot;&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;
   &lt;div style=&quot;position: relative; padding-bottom: 56.25%; height: 0px;&quot;&gt;
 	&lt;iframe style=&quot;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;&quot; src=&quot;https://www.youtube.com/embed/FjlgEZzaL6k&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
 	&lt;/iframe&gt;
@@ -1128,7 +1200,7 @@ from the other side. We’re all just humans, constructing and engaging in
 cultural practices with this stuff, building on what went before. &lt;a href=&quot;#fnref:creatives&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="reimagine" /><summary type="html">The ANU College of Engineering and Computer Science (CECS) is being Reimagined. Don’t take my word for it; listen to our fearless leader Elanor:</summary></entry><entry><title type="html">Class discussions on Discourse</title><link href="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/" rel="alternate" type="text/html" title="Class discussions on Discourse" /><published>2019-02-06T19:42:03+11:00</published><updated>2019-02-06T19:42:03+11:00</updated><id>https://benswift.me/blog/2019/02/06/class-discussions-on-discourse</id><content type="html" xml:base="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/">&lt;p&gt;In 2018 I (with the support of the Teaching &amp;amp; Learning IT team in &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;my
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="reimagine" /><summary type="html"></summary></entry><entry><title type="html">Class discussions on Discourse</title><link href="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/" rel="alternate" type="text/html" title="Class discussions on Discourse" /><published>2019-02-06T19:42:03+11:00</published><updated>2019-02-06T19:42:03+11:00</updated><id>https://benswift.me/blog/2019/02/06/class-discussions-on-discourse</id><content type="html" xml:base="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/">&lt;p&gt;In 2018 I (with the support of the Teaching &amp;amp; Learning IT team in &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;my
 School&lt;/a&gt;) switched from &lt;a href=&quot;https://piazza.com&quot;&gt;Piazza&lt;/a&gt; to a
 self-hosted &lt;a href=&quot;https://www.discourse.org&quot;&gt;Discourse&lt;/a&gt; instance for class
 discussions. Specifically, I used it for &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720: Art &amp;amp; Interaction in New
