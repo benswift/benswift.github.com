@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-04T15:58:47+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-04T16:01:28+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
 &lt;/iframe&gt;
 
 &lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is what I intend to do if awarded a &lt;strong&gt;Reimagine
@@ -56,9 +56,6 @@ Science&lt;/a&gt; we’re not currently
 doing very much&lt;sup id=&quot;fnref:not-doing-much&quot;&gt;&lt;a href=&quot;#fn:not-doing-much&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; to engage with students at a pre-tertiary
 level, mostly because we’re flat-out dealing with the huge growth in students at
 a tertiary level. The c/c/c studio will address that.&lt;/p&gt;
-
-&lt;p&gt;I don’t mean to throw shade on our existing efforts here—there are some
-   great things happening in this area, but there’s more to be done for sure.&lt;/p&gt;
 
 &lt;p&gt;CS still suffers from a stereotype of being “for nerdy white/Asian males”, and
 those groups are certainly over-represented in our undergraduate CS cohort
@@ -648,7 +645,8 @@ well. &lt;a href=&quot;#fnref:schools&quot; class=&quot;reversefootnote&quot;&g
     &lt;/li&gt;
     &lt;li id=&quot;fn:not-doing-much&quot;&gt;
 
-      &lt;p&gt;&lt;a href=&quot;#fnref:not-doing-much&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I don’t mean to throw shade on our existing efforts here—there are some
+great things happening in this area, but there’s more to be done for sure. &lt;a href=&quot;#fnref:not-doing-much&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:discovering-engineering&quot;&gt;
 
