@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-04T16:01:28+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-04T22:42:47+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
 &lt;/iframe&gt;
 
 &lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is what I intend to do if awarded a &lt;strong&gt;Reimagine
@@ -62,8 +62,8 @@ those groups are certainly over-represented in our undergraduate CS cohort
 compared to other groups. It’s important to point out that increasing the
 representation of under-represented groups in CS is a wicked problem which needs
 to be tackled from many different angles. Still, as the &lt;strong&gt;A&lt;/strong&gt; in
-&lt;a href=&quot;http://stemtosteam.org&quot;&gt;STE&lt;strong&gt;A&lt;/strong&gt;M&lt;/a&gt;, the &lt;strong&gt;a&lt;/strong&gt;rts provide one angle for engaging
-students who might not normally coding and computer science.&lt;/p&gt;
+&lt;a href=&quot;http://stemtosteam.org&quot;&gt;STE&lt;strong&gt;A&lt;/strong&gt;M&lt;/a&gt;, the arts provide one angle for engaging
+students who might not normally consider coding and computer science.&lt;/p&gt;
 
 &lt;h3 id=&quot;existing-alternatives&quot;&gt;Existing alternatives&lt;/h3&gt;
 
@@ -88,7 +88,7 @@ there’s no music technology stream.&lt;/p&gt;
 &lt;p&gt;There are several great organisations working to increase diversity in CS,
 including the &lt;a href=&quot;https://canberragpn.github.io&quot;&gt;Canberra Girls’ Programming
 Network&lt;/a&gt;, &lt;a href=&quot;https://codelikeagirl.org/states/act/&quot;&gt;Code Like a
-Girl&lt;/a&gt;,
+Girl&lt;/a&gt; and
 &lt;a href=&quot;https://robogals.org/locations/asia-pacific-apac/canberra/&quot;&gt;Robogals&lt;/a&gt;. However,
 these organisations are primarily based around computer science/engineering, not
 interdisciplinary art &amp;amp; code.&lt;/p&gt;
@@ -96,16 +96,18 @@ interdisciplinary art &amp;amp; code.&lt;/p&gt;
 &lt;p&gt;In 2018 I ran the &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/&quot;&gt;ANU Laptop
 Ensemble&lt;/a&gt;,
 which attempted to provide a similar open-ended space for creative exploration
-to the c/c/c studio, specifically for live performance (code-based DJ-ing and
-VJ-ing). ANU students can take my &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720: Art &amp;amp; Interaction in New
+to the c/c/c studio, except specifically for live performance
+(&lt;a href=&quot;https://toplap.org&quot;&gt;livecoding&lt;/a&gt;; code-based DJ-ing and VJ-ing). ANU students
+can also take my &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720: Art &amp;amp; Interaction in New
 Media&lt;/a&gt; course as part of a major in
 either a CS degree or a Bachelor of Visual Arts (or indeed as a cross-campus
 elective in any program). COMP1720 has run successfully as a cross-disciplinary
 “learn to code” course for several years. The c/c/c studio will extend this
 opportunity to school students and other members of the ACT community.&lt;/p&gt;
 
-&lt;p&gt;I see the c/c/c studio as an opportunity to formalise and build momentum around
-all of these existing initiatives, partnering with them wherever possible.&lt;/p&gt;
+&lt;p&gt;The c/c/c studio is an opportunity to act as a force multiplier, harnessing
+these existing initiatives, partnering with them wherever possible, and building
+bridges between them to open up new possibilities.&lt;/p&gt;
 
 &lt;h2 id=&quot;project-scope&quot;&gt;Project Scope&lt;/h2&gt;
 
@@ -115,9 +117,9 @@ all of these existing initiatives, partnering with them wherever possible.&lt;/p
 
 &lt;ol&gt;
   &lt;li&gt;In &lt;strong&gt;stage one&lt;/strong&gt; (mid 2019–end 2019) I will engage with the project’s
-&lt;a href=&quot;#project-sponsor-and-stakeholders&quot;&gt;stakeholders&lt;/a&gt; to form a &lt;strong&gt;c/c/c studio
-advisory group&lt;/strong&gt; responsible for guiding high-level strategy and pedagogy in
-the c/c/c studio program&lt;/li&gt;
+&lt;a href=&quot;#project-sponsor-and-stakeholders&quot;&gt;stakeholders&lt;/a&gt; to form a &lt;em&gt;c/c/c studio
+advisory group&lt;/em&gt; responsible for guiding high-level strategy, pedagogy and
+creative direction in the c/c/c studio program&lt;/li&gt;
   &lt;li&gt;In &lt;strong&gt;stage two&lt;/strong&gt; (beginning 2020–end 2020) we will design and run a series
 of creative code workshops (approx. one per month) with our &lt;a href=&quot;#early-adopters&quot;&gt;early
 adopter&lt;/a&gt; schools and community groups. These free workshops
@@ -138,7 +140,7 @@ this teaching model, which we will make use of in developing the c/c/c
 curriculum.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The purpose of stages one and two is design and road-test the details of the
+&lt;p&gt;The purpose of stages one and two is to design and road-test the details of the
 c/c/c studio sessions &amp;amp; masterclasses, but here are some initial plans:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -163,7 +165,7 @@ appropriate&lt;/li&gt;
 
 &lt;p id=&quot;anu-extension-accreditation&quot;&gt;It may be possible give participants in the c/c/c studio program credit into our
 first-year CS program (e.g. &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;)
-if they decide to come and study in CECS.&lt;sup id=&quot;fnref:discovering-engineering&quot;&gt;&lt;a href=&quot;#fn:discovering-engineering&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; To
+if they decide to come and study at CECS.&lt;sup id=&quot;fnref:discovering-engineering&quot;&gt;&lt;a href=&quot;#fn:discovering-engineering&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; To
 investigate this, in stage two we will put the c/c/c studio program forward as a
 candidate for the &lt;a href=&quot;http://extension.anu.edu.au&quot;&gt;ANU Extension program&lt;/a&gt;. This may
 or may not be desirable (depending on the requirements of the Extension program)
@@ -173,7 +175,7 @@ standing and utility of the c/c/c studio.&lt;/p&gt;
 &lt;h3 id=&quot;value-to-organisationreimagine-strategic-alignment&quot;&gt;Value to organisation/Reimagine strategic alignment&lt;/h3&gt;
 
 &lt;p&gt;The c/c/c studio aligns strongly with the goals of the Reimagine project,
-specifically in people, students, education and engagement.&lt;/p&gt;
+specifically in &lt;strong&gt;people&lt;/strong&gt;, &lt;strong&gt;students&lt;/strong&gt;, &lt;strong&gt;education&lt;/strong&gt; and &lt;strong&gt;engagement&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;From the &lt;a href=&quot;https://cecs.anu.edu.au/reimagine&quot;&gt;Reimagine Project page&lt;/a&gt;:&lt;/p&gt;
 
@@ -188,8 +190,9 @@ buildings—they will come because they can see concrete ways in which their
 diverse range of interests can be harnessed and &lt;em&gt;put to work&lt;/em&gt; to do amazing
 things. The c/c/c studio will provide a supportive community in which this new
 generation of &lt;strong&gt;people&lt;/strong&gt; can learn, create, and share. More than that, it will
-unlock the latent potential in &lt;strong&gt;students&lt;/strong&gt; who never knew their diverse interests
-(especially in the arts &amp;amp; music) &lt;em&gt;could&lt;/em&gt; be used in engineering and computing.&lt;/p&gt;
+unlock the latent potential in &lt;strong&gt;students&lt;/strong&gt; who never knew their diverse
+interests (especially in the arts &amp;amp; music) &lt;em&gt;could&lt;/em&gt; be used in engineering and
+computing.&lt;/p&gt;
 
 &lt;p&gt;The c/c/c studio provides a test-bed for new modes of computing &lt;strong&gt;education&lt;/strong&gt;,
 especially the studio teaching model. The Reimagine project’s “&lt;a href=&quot;https://www.acm.org/about-acm/about-the-acm-organization#h-acm’s-‘big-tent’-philosophy-embraces-diversity&quot;&gt;big
@@ -267,9 +270,10 @@ Extension program (see &lt;a href=&quot;#anu-extension-accreditation&quot;&gt;ab
 &lt;/ul&gt;
 
 &lt;p&gt;There’ll be lots of other stuff, too: building a community of practice,
-deepening ANU CS/CECS’s relationships with ACT High Schools, giving our
-undergraduate students a chance to mentor these high school students, etc. But
-that’s intangible stuff, so I’m not sure if they count as a deliverables.&lt;/p&gt;
+deepening ANU CS/CECS’s relationships with ACT High Schools, strengthening
+cross-campus partnerships in research and teaching, giving our undergraduate
+students a chance to mentor these high school students, etc. But that’s
+intangible stuff, so I’m not sure if they count as a deliverables.&lt;/p&gt;
 
 &lt;h2 id=&quot;project-sponsor-and-stakeholders&quot;&gt;Project Sponsor and Stakeholders&lt;/h2&gt;
 
@@ -286,11 +290,13 @@ Hinchcliffe&lt;/a&gt;, ANU
 School of Art &amp;amp; Design&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/qing-wang&quot;&gt;Qing Wang&lt;/a&gt;, RSCS Associate
 Director of Education Partnerships&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/genevieve-bell&quot;&gt;Genevieve Bell&lt;/a&gt;,
+&lt;a href=&quot;https://3ainstitute.cecs.anu.edu.au&quot;&gt;3Ai&lt;/a&gt; Director&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://charlesmartin.com.au&quot;&gt;Charles Martin&lt;/a&gt;, RSCS Lecturer and creative
+code practitioner&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;http://www.dicksonc.act.edu.au/our_school/principals_welcome&quot;&gt;Craig
 Edwards&lt;/a&gt;,
 Dickson College Principal&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://charlesmartin.com.au&quot;&gt;Charles Martin&lt;/a&gt;, RSCS Lecturer and creative
-code practitioner&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/in/madeleine-parker-928644102/&quot;&gt;Madeleine Parker&lt;/a&gt;,
 SCI ART CBR Community Co-ordinator&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://robogals.org/locations/asia-pacific-apac/canberra/&quot;&gt;Morgan
@@ -464,8 +470,16 @@ venue/catering/equipment (e.g. fancy projectors, etc.)&lt;/p&gt;
       &lt;td&gt;5h/workshop in stage two, 3h/session in stage three&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
+      &lt;td&gt;equipment&lt;/td&gt;
+      &lt;td&gt;5k&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
       &lt;td&gt;artist honoraria&lt;/td&gt;
       &lt;td&gt;as above, but potentially at a different rate&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;grad shows&lt;/td&gt;
+      &lt;td&gt;1k per semester in 2021, 2k total&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
