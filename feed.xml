@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-05T14:01:30+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-04-05T14:07:26+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
 &lt;/iframe&gt;
 
 &lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is what I intend to do if awarded a &lt;strong&gt;Reimagine
@@ -440,18 +440,20 @@ subject to negotiations with the relevant authorities within RSCS 😉&lt;/p&gt;
 (or more) of our undergraduate students to help deliver the workshops (stage
 two) and support the students in the c/c/c studio (stage three).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: computational art &amp;amp; music supplies (~5k), including:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;portable music PA for running music workshops in schools&lt;/li&gt;
-  &lt;li&gt;high-resolution monitors for display of digital artworks&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;p&gt;&lt;strong&gt;Artist honoraria&lt;/strong&gt;&lt;sup id=&quot;fnref:plural&quot;&gt;&lt;a href=&quot;#fn:plural&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;: some of the guest artists who give masterclasses
 in the studio won’t have institutional affiliation, and paying them for their
 time is a way of respecting their contribution &amp;amp; expertise.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Grad show budget&lt;/strong&gt;: (~1k per semester from stage three) for
-venue/catering/equipment (e.g. fancy projectors, etc.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: computational art &amp;amp; music supplies, including:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;portable music PA for running music workshops in schools&lt;/li&gt;
+  &lt;li&gt;high-resolution monitors for display of digital artworks&lt;/li&gt;
+  &lt;li&gt;software licences&lt;/li&gt;
+  &lt;li&gt;studio supplies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Grad show budget&lt;/strong&gt;: (stage three) for venue/catering/equipment (e.g. fancy
+projectors, etc.)&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -467,19 +469,19 @@ venue/catering/equipment (e.g. fancy projectors, etc.)&lt;/p&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;tutors&lt;/td&gt;
-      &lt;td&gt;5h/workshop in stage two, 3h/session in stage three&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;equipment&lt;/td&gt;
-      &lt;td&gt;5k&lt;/td&gt;
+      &lt;td&gt;10h/month in stage two, 5h/week in stage three&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;artist honoraria&lt;/td&gt;
-      &lt;td&gt;as above, but potentially at a different rate&lt;/td&gt;
+      &lt;td&gt;10h/month in stage two, 5h/week in stage three&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;studio equipment&lt;/td&gt;
+      &lt;td&gt;$10k total&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;grad shows&lt;/td&gt;
-      &lt;td&gt;1k per semester in 2021, 2k total&lt;/td&gt;
+      &lt;td&gt;$1k per semester in stage three, $2k total&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
