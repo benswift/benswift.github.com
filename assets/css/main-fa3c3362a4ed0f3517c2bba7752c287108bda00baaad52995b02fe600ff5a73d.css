@@ -154,9 +154,11 @@ table {
   border-collapse: collapse; }
   table th, table td {
     padding: 0.5em 1em 0.5em 0; }
-  table th {
+  table thead th {
     border-bottom: 1px solid #be2edd;
     vertical-align: bottom; }
+  table tbody th {
+    vertical-align: top; }
   table td {
     vertical-align: top; }
 
