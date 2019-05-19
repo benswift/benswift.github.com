@@ -55,7 +55,7 @@
 <!-- End Jekyll SEO tag -->
 
 
-	<link rel="stylesheet" type="text/css" href="/assets/reveal.js-3.7.0/css/reveal-eccb4c79d7f3ccbf85c31c62642063088fc3d5ea366a13ba37dacc69078ee28e.css">
+	<link rel="stylesheet" type="text/css" href="/assets/reveal.js-3.8.0/css/reveal-a96faf3406041080d95cef9a191906e7d810ab1c00423bdc1d447fe60b52abf0.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/ben-reveal-theme-6d367570af4bc4af7d17025518fd9520419f63759d606f78b50fedbe32776f3e.css">
   </head>
   <body>
@@ -136,24 +136,40 @@
 <p>how does this even work?</p></section><section class="impact center" data-background-color="#262626"><p style="font-size:2em;">🤔</p></section>
 </div></div>
 
-	<script src="/assets/reveal.js-3.7.0/lib/js/head.min.js"></script>
-	<script src="/assets/reveal.js-3.7.0/js/reveal.js"></script>
-    <script>
+	<script src="/assets/reveal.js-3.8.0/lib/js/head.min.js"></script>
+	<script src="/assets/reveal.js-3.8.0/js/reveal.js"></script>
+	<script>
 	 // this is the reveal config
-     Reveal.initialize({
-       center: false,
-       controls: false,
-       transition: 'fade',
-       width: '100%',
-       height: '100%',
-       margin: 0,
-       history: true,
-       slideNumber: true,
+	 Reveal.initialize({
+	   center: false,
+	   controls: false,
+	   transition: 'fade',
+	   width: '100%',
+	   height: '100%',
+	   margin: 0,
+	   history: true,
+	   slideNumber: true,
+
 	   math: {
 		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
 		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	   },
+
+       dependencies: [
+         { src: '/assets/reveal.js-3.8.0/plugin/chalkboard/chalkboard.js' },
+       ],
+
+       keyboard: {
+         67: function() { RevealChalkboard.toggleNotesCanvas() }, // toggle notes canvas when 'c' is pressed
+         66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+         8: function() { RevealChalkboard.clear() } // clear chalkboard when 'DEL' is pressed
+	   },
+
+	   chalkboard: {
+		 toggleChalkboardButton: false,
+		 toggleNotesButton: false
 	   }
-     });
-    </script>
+	 });
+	</script>
   </body>
 </html>
