@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-06-05T11:51:50+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-06-13T11:35:39+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
 &lt;/iframe&gt;
 
 &lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is what I intend to do if awarded a &lt;strong&gt;Reimagine
@@ -1122,6 +1122,13 @@ marketing copy on their own website). Many (but not all) of these labs/groups
 are in CS/Engineering Schools, or at least in design schools.&lt;/p&gt;
 
 &lt;blockquote&gt;
+  &lt;p&gt;The Stanford &lt;a href=&quot;(https://ccrma.stanford.edu)&quot;&gt;Center for Computer Research in Music and
+Acoustics&lt;/a&gt; (CCRMA) is a multi-disciplinary
+facility where composers and researchers work together using computer-based
+technology both as an artistic medium and as a research tool.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;The &lt;a href=&quot;https://www.media.mit.edu&quot;&gt;MIT Media Lab&lt;/a&gt; is an interdisciplinary
 research lab that encourages the unconventional mixing and matching of
 seemingly disparate research areas.&lt;/p&gt;
@@ -1163,13 +1170,6 @@ in the field of Music &amp;amp; Audio Technology.&lt;/p&gt;
   &lt;p&gt;The &lt;a href=&quot;http://eavi.goldsmithsdigital.com&quot;&gt;Embodied AudioVisual Interaction
 (EAVI)&lt;/a&gt; group at Goldsmiths is a research
 group focused on embodied interaction with sound and image.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The Stanford &lt;a href=&quot;(https://ccrma.stanford.edu)&quot;&gt;Center for Computer Research in Music and
-Acoustics&lt;/a&gt; (CCRMA) is a multi-disciplinary
-facility where composers and researchers work together using computer-based
-technology both as an artistic medium and as a research tool.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
