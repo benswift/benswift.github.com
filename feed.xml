@@ -1,4 +1,214 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-07-16T11:51:49+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-07-17T09:35:09+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">In-place XML tree mutation for Jekyll productivity</title><link href="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/" rel="alternate" type="text/html" title="In-place XML tree mutation for Jekyll productivity" /><published>2019-07-17T09:13:00+10:00</published><updated>2019-07-17T09:13:00+10:00</updated><id>https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity</id><content type="html" xml:base="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/">&lt;p&gt;I wrote a &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;reveal.js&lt;/a&gt; plugin for Jekyll
+so that I can make nice slides (especially for my
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/lectures/&quot;&gt;ANU&lt;/a&gt;
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/lectures/&quot;&gt;courses&lt;/a&gt;). Recently, though,
+I’ve been touching up the COMP1720 slides for 2019 and it’s getting &lt;em&gt;really
+slow&lt;/em&gt; to build the website.&lt;/p&gt;
+
+&lt;p&gt;I turned to Jekyll’s built-in profiling command to see where the problem is.
+Here’s the output of &lt;code&gt;jekyll build --profile&lt;/code&gt; on this website, which (currently)
+builds in &lt;strong&gt;7.2 seconds&lt;/strong&gt; on my machine.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Filename&lt;/th&gt;
+      &lt;th&gt;Count&lt;/th&gt;
+      &lt;th&gt;Bytes&lt;/th&gt;
+      &lt;th&gt;Time&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_layouts/reveal.html&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;104.60K&lt;/td&gt;
+      &lt;td&gt;4.102&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_layouts/default.html&lt;/td&gt;
+      &lt;td&gt;81&lt;/td&gt;
+      &lt;td&gt;729.15K&lt;/td&gt;
+      &lt;td&gt;0.809&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes/head.html&lt;/td&gt;
+      &lt;td&gt;90&lt;/td&gt;
+      &lt;td&gt;266.90K&lt;/td&gt;
+      &lt;td&gt;0.702&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;research.md&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;16.40K&lt;/td&gt;
+      &lt;td&gt;0.196&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes/hljs.html&lt;/td&gt;
+      &lt;td&gt;90&lt;/td&gt;
+      &lt;td&gt;29.44K&lt;/td&gt;
+      &lt;td&gt;0.192&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes/slides/background-image.html&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;31.94K&lt;/td&gt;
+      &lt;td&gt;0.154&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_layouts/paginated.html&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;70.29K&lt;/td&gt;
+      &lt;td&gt;0.078&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_talks/u3a-world-since-google.md&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;14.49K&lt;/td&gt;
+      &lt;td&gt;0.058&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes/header.html&lt;/td&gt;
+      &lt;td&gt;81&lt;/td&gt;
+      &lt;td&gt;85.88K&lt;/td&gt;
+      &lt;td&gt;0.042&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_talks/ltc-stem-camp.md&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;13.38K&lt;/td&gt;
+      &lt;td&gt;0.040&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;feed.xml&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;105.55K&lt;/td&gt;
+      &lt;td&gt;0.038&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…more inconsequential stuff follows…&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Clearly, the &lt;code&gt;reveal.html&lt;/code&gt; layout is the problem, taking 4.1s (more than half
+the total build time). I suspect that this is because my &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;reveal
+plugin&lt;/a&gt; does a bunch of
+copying of (Nokogiri) XML nodes, because I wasn’t worrying about performance
+when I wrote it.&lt;/p&gt;
+
+&lt;h3 id=&quot;re-parent-all-the-nodes&quot;&gt;Re-parent all the nodes!&lt;/h3&gt;
+
+&lt;p&gt;Looking at the &lt;a href=&quot;https://nokogiri.org/rdoc/Nokogiri/XML/Node&quot;&gt;Nokogiri API&lt;/a&gt; and
+the &lt;code&gt;revealify.rb&lt;/code&gt; plugin code, there are a bunch of places where instead of
+duplicating &amp;amp; copying nodes, I can just re-parent them into the right places.
+I’m a big immutability fan usually, which is why I built the plugin based on
+copying originally, but with a bit of careful re-parenting the &lt;code&gt;revealify.rb&lt;/code&gt;
+plugin now looks like
+&lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb&quot;&gt;this&lt;/a&gt;
+(see the &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;linked post above&lt;/a&gt; to see what it
+looked like before).&lt;/p&gt;
+
+&lt;p&gt;And the result? Total build time is down to &lt;strong&gt;2.8 seconds&lt;/strong&gt;. Admittedly that was
+because it was &lt;em&gt;really inefficient&lt;/em&gt; before, but I’ll take a 2.5x speedup anyday
+😊. Here’s the relevant profiler output with the updated plugin:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Filename&lt;/th&gt;
+      &lt;th&gt;Count&lt;/th&gt;
+      &lt;th&gt;Bytes&lt;/th&gt;
+      &lt;th&gt;Time&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_layouts/default.html&lt;/td&gt;
+      &lt;td&gt;82&lt;/td&gt;
+      &lt;td&gt;741.77K&lt;/td&gt;
+      &lt;td&gt;0.873&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes/head.html&lt;/td&gt;
+      &lt;td&gt;91&lt;/td&gt;
+      &lt;td&gt;269.82K&lt;/td&gt;
+      &lt;td&gt;0.780&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;research.md&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;16.40K&lt;/td&gt;
+      &lt;td&gt;0.198&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_layouts/reveal.html&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;105.65K&lt;/td&gt;
+      &lt;td&gt;0.182&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes/hljs.html&lt;/td&gt;
+      &lt;td&gt;91&lt;/td&gt;
+      &lt;td&gt;29.77K&lt;/td&gt;
+      &lt;td&gt;0.172&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes/slides/background-image.html&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;31.94K&lt;/td&gt;
+      &lt;td&gt;0.151&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_layouts/paginated.html&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;70.55K&lt;/td&gt;
+      &lt;td&gt;0.101&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_talks/u3a-world-since-google.md&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;14.50K&lt;/td&gt;
+      &lt;td&gt;0.058&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes/header.html&lt;/td&gt;
+      &lt;td&gt;82&lt;/td&gt;
+      &lt;td&gt;86.94K&lt;/td&gt;
+      &lt;td&gt;0.045&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_talks/ltc-stem-camp.md&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;13.39K&lt;/td&gt;
+      &lt;td&gt;0.041&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;feed.xml&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;112.62K&lt;/td&gt;
+      &lt;td&gt;0.029&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…more inconsequential stuff follows…&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Wow, the &lt;code&gt;reveal.html&lt;/code&gt; layout has gone from 4.1s to 0.2s, a &lt;strong&gt;20x speedup&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;So I guess the moral of the story is that profiling is important, and that
+avoiding copies and writing filthy mutable code is helpful as long as you’re
+careful.&lt;/p&gt;
+
+&lt;p&gt;Now that I’ve done procrastinating with this stuff, I can get back to writing my
+slides for the upcoming semester.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">I wrote a reveal.js plugin for Jekyll so that I can make nice slides (especially for my ANU courses). Recently, though, I’ve been touching up the COMP1720 slides for 2019 and it’s getting really slow to build the website.</summary></entry><entry><title type="html">The c/c/c studio</title><link href="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/" rel="alternate" type="text/html" title="The c/c/c studio" /><published>2019-03-20T11:09:00+11:00</published><updated>2019-03-20T11:09:00+11:00</updated><id>https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch</id><content type="html" xml:base="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/">&lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;&quot;&gt;
 &lt;/iframe&gt;
 
 &lt;p&gt;&lt;em&gt;Note to readers:&lt;/em&gt; this is what I intend to do if awarded a &lt;strong&gt;Reimagine
@@ -1614,32 +1824,4 @@ were painting the background) but by the time they were putting on the
 facial details 3hrs in I was &lt;em&gt;way&lt;/em&gt; too tired to keep my smile up 😊 &lt;a href=&quot;#fnref:tired&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">One of my academic responsibilities is teaching our ANU Computer Science programs into our various partner institutions overseas. One of these partner institutions is Shandong University WeiHai (SDUW).</summary></entry><entry><title type="html">Old livecoding photo roundup</title><link href="https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup/" rel="alternate" type="text/html" title="Old livecoding photo roundup" /><published>2019-01-22T13:12:00+11:00</published><updated>2019-01-22T13:12:00+11:00</updated><id>https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup</id><content type="html" xml:base="https://benswift.me/blog/2019/01/22/old-livecoding-photo-roundup/">&lt;p&gt;I’m trying to find all the photos of me doing livecoding gigs over the past 10
-years. If you’ve got an old photo of me doing my thing, then can you either
-&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;email&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;tweet&lt;/a&gt; at
-me to share it? I’ll give you authoreal credit and hugs.&lt;/p&gt;
-
-&lt;p&gt;For any photos of actual gigs, they’ll go into the
-&lt;a href=&quot;/livecoding/index.html&quot;&gt;livecoding&lt;/a&gt; section of this website.
-However, I also do lots of other presentations, talks and demos which don’t
-really count as “gigs”. For those, I’ll just add the photos here as they turn
-up.&lt;/p&gt;
-
-&lt;h3 id=&quot;australian-council-of-deans-of-ict-2017&quot;&gt;Australian Council of Deans of ICT 2017&lt;/h3&gt;
-
-&lt;picture&gt;&lt;img alt=&quot;Ben livecoding at the Council of Deans' of ICT meeting&quot; src=&quot;/assets/images/livecoding/ben-alta-f65b59efe5c97c2c50367987698a0962cfa684f4252cc34cfbbf6673ade06115.jpg&quot; /&gt;&lt;/picture&gt;
-
-&lt;p&gt;from &lt;a href=&quot;https://twitter.com/FalknerKatrina/status/854861227809361920&quot;&gt;@FalknerKatrina&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;australian-institute-of-physics-congress-2014&quot;&gt;Australian Institute of Physics Congress 2014&lt;/h3&gt;
-
-&lt;picture&gt;&lt;img alt=&quot;Ben livecoding a physics simulation at AIP congress&quot; src=&quot;/assets/images/livecoding/ben-AIP-congress-53c24a4daa26112790b1c8feef98c5ff50f2800f1444dbae9e3cf0511304db0a.jpg&quot; /&gt;&lt;/picture&gt;
-
-&lt;p&gt;from &lt;a href=&quot;https://twitter.com/starstoofondly/status/542177320321024000&quot;&gt;@starstoofondly&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;australasian-computer-music-conference-acmc-2007&quot;&gt;Australasian Computer Music Conference (ACMC) 2007&lt;/h3&gt;
-
-&lt;picture&gt;&lt;img alt=&quot;ACMC attendees hanging out at Kremlin bar&quot; src=&quot;/assets/images/livecoding/ben-acmc-07-kremlin-014fc7330592130a587ae8910ca57d941b4ca3cd74f1e7c6758660156783c556.jpg&quot; /&gt;&lt;/picture&gt;
-
-&lt;p&gt;This isn’t me &lt;em&gt;performing&lt;/em&gt;, unless you count my animated conversation with
-Gordon Monro as a performance.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html">I’m trying to find all the photos of me doing livecoding gigs over the past 10 years. If you’ve got an old photo of me doing my thing, then can you either email or tweet at me to share it? I’ll give you authoreal credit and hugs.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">One of my academic responsibilities is teaching our ANU Computer Science programs into our various partner institutions overseas. One of these partner institutions is Shandong University WeiHai (SDUW).</summary></entry></feed>
