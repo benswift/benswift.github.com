@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-07-17T10:40:35+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">In-place XML tree mutation for Jekyll productivity</title><link href="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/" rel="alternate" type="text/html" title="In-place XML tree mutation for Jekyll productivity" /><published>2019-07-17T00:00:00+10:00</published><updated>2019-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity</id><content type="html" xml:base="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/">&lt;p&gt;I wrote a &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;reveal.js&lt;/a&gt; plugin for Jekyll
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-07-24T14:07:31+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Livecoding article on the ABC</title><link href="https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc/" rel="alternate" type="text/html" title="Livecoding article on the ABC" /><published>2019-07-24T00:00:00+10:00</published><updated>2019-07-24T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc</id><content type="html" xml:base="https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc/">&lt;p&gt;In case you missed it, I was interviewed for &lt;a href=&quot;https://www.abc.net.au/news/2019-07-21/live-coding-australia-music-computer-code/11301114&quot;&gt;an article on the ABC News
+website&lt;/a&gt;
+which came out last weekend entitled &lt;em&gt;The Australians making music with computer
+code&lt;/em&gt;. A nice look at some of the players in the Australian livecoding scene.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="media" /><summary type="html">In case you missed it, I was interviewed for an article on the ABC News website which came out last weekend entitled The Australians making music with computer code. A nice look at some of the players in the Australian livecoding scene.</summary></entry><entry><title type="html">In-place XML tree mutation for Jekyll productivity</title><link href="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/" rel="alternate" type="text/html" title="In-place XML tree mutation for Jekyll productivity" /><published>2019-07-17T00:00:00+10:00</published><updated>2019-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity</id><content type="html" xml:base="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/">&lt;p&gt;I wrote a &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;reveal.js&lt;/a&gt; plugin for Jekyll
 so that I can make nice slides (especially for my
 &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/lectures/&quot;&gt;ANU&lt;/a&gt;
 &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/lectures/&quot;&gt;courses&lt;/a&gt;). Recently, though,
@@ -1796,32 +1799,4 @@ privilege livecoding environments which work in the brower, so that’s not
 ideal either. Hmm.) &lt;a href=&quot;#fnref:distill&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><summary type="html">I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.</summary></entry><entry><title type="html">Oils from 威海</title><link href="https://benswift.me/blog/2019/01/29/oils-from-weihai/" rel="alternate" type="text/html" title="Oils from 威海" /><published>2019-01-29T12:24:00+11:00</published><updated>2019-01-29T12:24:00+11:00</updated><id>https://benswift.me/blog/2019/01/29/oils-from-weihai</id><content type="html" xml:base="https://benswift.me/blog/2019/01/29/oils-from-weihai/">&lt;p&gt;One of my academic responsibilities is teaching our ANU Computer Science
-programs into our various partner institutions overseas. One of these partner
-institutions is &lt;a href=&quot;https://en.wh.sdu.edu.cn/enDefault.html&quot;&gt;Shandong University
-WeiHai&lt;/a&gt; (SDUW).&lt;/p&gt;
-
-&lt;p&gt;On my trip to SDUW in May 2016, I was walking across the campus one bright
-spring morning when I was stopped by a professor from the SDUW School of Art.
-Through his limited English and my much more limited Mandarin, he told me that
-he wanted me to sit for a portrait session for his first-year painting class.&lt;/p&gt;
-
-&lt;p&gt;After a marathon 4hr sitting&lt;sup id=&quot;fnref:tired&quot;&gt;&lt;a href=&quot;#fn:tired&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, here’s what the students came up with. As
-a bonus, I got to choose my favourite one and bring it home—can you guess
-which one I chose?&lt;/p&gt;
-
-&lt;picture&gt;&lt;img alt=&quot;loop of the finished oil paintings&quot; src=&quot;/assets/images/posts/ben-oils-2779bf43241a5e7aa0720d0e7c1f317c057eeeb707014cfdc09c88362aa31e67.gif&quot; /&gt;&lt;/picture&gt;
-
-&lt;p&gt;It’s now hanging on my wall at home, creepily looking down at my family and our
-guests. &lt;strong&gt;I love it&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:tired&quot;&gt;
-
-      &lt;p&gt;that’s why I look so sullen—I smiled no-stop for the first hour (when they
-were painting the background) but by the time they were putting on the
-facial details 3hrs in I was &lt;em&gt;way&lt;/em&gt; too tired to keep my smile up 😊 &lt;a href=&quot;#fnref:tired&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">One of my academic responsibilities is teaching our ANU Computer Science programs into our various partner institutions overseas. One of these partner institutions is Shandong University WeiHai (SDUW).</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><summary type="html">I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.</summary></entry></feed>
