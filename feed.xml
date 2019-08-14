@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-07-29T21:47:16+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Livecoding gig this Friday 5:30pm @ ANU Drill Hall Gallery</title><link href="https://benswift.me/blog/2019/07/29/livecoding-gig-this-friday-5-30pm-anu-drill-hall-gallery/" rel="alternate" type="text/html" title="Livecoding gig this Friday 5:30pm @ ANU Drill Hall Gallery" /><published>2019-07-29T00:00:00+10:00</published><updated>2019-07-29T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/07/29/livecoding-gig-this-friday-5-30pm-anu-drill-hall-gallery</id><content type="html" xml:base="https://benswift.me/blog/2019/07/29/livecoding-gig-this-friday-5-30pm-anu-drill-hall-gallery/">&lt;p&gt;For those who visit my blog to hear my livecoding gigs, there’s one this Friday.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-08-14T16:04:04+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Making the most of meetings with research students</title><link href="https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students/" rel="alternate" type="text/html" title="Making the most of meetings with research students" /><published>2019-08-06T00:00:00+10:00</published><updated>2019-08-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students</id><content type="html" xml:base="https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students/">&lt;p&gt;Supervising research students is hard work (or at least I find it hard work to
+do a good job) but it’s really very rewarding. From PhD &amp;amp; MPhil students through
+to undergraduate research project students&lt;sup id=&quot;fnref:project-students&quot;&gt;&lt;a href=&quot;#fn:project-students&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, there are lots of
+meetings to be had. And everyone knows that meetings suck, or at least that
+&lt;em&gt;bad&lt;/em&gt; meetings suck.&lt;/p&gt;
+
+&lt;p&gt;So, here are some thoughts in my brain for conducting one-on-one meetings with
+research students. As research student numbers grow, I wanna have a good
+“template” for each meeting, and then vary as necessary.&lt;/p&gt;
+
+&lt;h2 id=&quot;default-meeting-agenda&quot;&gt;(Default) meeting agenda&lt;/h2&gt;
+
+&lt;h3 id=&quot;whats-your-research-question-in-one-sentence&quot;&gt;What’s your research question in one sentence?&lt;/h3&gt;
+
+&lt;p&gt;Look, I still find this hard sometimes—but it’s an important skill to be able
+to clearly articulate what your research question is in any particular project.
+Since it’s only once sentence, it doesn’t take long, and having this weekly
+practice at articulating it (with feedback) means that when it comes time to
+write things up, much of the hard thinking in articulating things is already
+done.&lt;/p&gt;
+
+&lt;h3 id=&quot;show-me-a-thing-that-youre-currently-working-on&quot;&gt;Show me a &lt;em&gt;thing&lt;/em&gt; that you’re currently working on&lt;/h3&gt;
+
+&lt;p&gt;In every meeting, I want my student to show me a thing they’re working on. It
+might be a piece of software, it might be a piece of writing (e.g. a paper draft
+or thesis chapter), it might be a piece of hardware/music/art. &lt;em&gt;I wanna see
+something that you’re working on&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m a livecoder, so I love live demos, and being able to give a short demo of
+one’s work-in-progress is a good skill to develop (you never know when you’ll
+get an impromptu chance to show off what you’re working on).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pgbovine.net/advice-for-first-year-PhD-students.htm&quot;&gt;Philip Guo also emphasises how helpful it is to have a thing to talk about in a
+research supervisory
+meeting&lt;/a&gt; (see the
+“Intermission” video in the linked blog post).&lt;/p&gt;
+
+&lt;h3 id=&quot;are-there-any-upcoming-dates-i-should-be-aware-of&quot;&gt;Are there any upcoming dates I should be aware of?&lt;/h3&gt;
+
+&lt;p&gt;It’s hard to remember all the admin dates for different courses/programs/paper
+deadlines, and I can’t remember all that stuff for &lt;em&gt;every&lt;/em&gt; student. Instead,
+tell me if there are any dates coming up which I/we should be aware of.&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-your-next-step-whats-getting-in-the-way&quot;&gt;What’s your next step? What’s getting in the way?&lt;/h3&gt;
+
+&lt;p&gt;Students don’t get &lt;em&gt;that&lt;/em&gt; much face-to-face time with their supervisor—even
+with an attentive one. So it’s important to make sure that after each meeting
+there’s a clear next step, and in particular that if there are any “blockers”
+we can discuss them there and then, and brainstorm strategies to deal with them.&lt;/p&gt;
+
+&lt;h2 id=&quot;this-is-a-work-in-progress&quot;&gt;This is a work-in-progress&lt;/h2&gt;
+
+&lt;p&gt;Obviously sometimes there are specific things to discuss relevant to a
+particular student/project, and in those situations I’ll tweak the agenda as
+necessary. This “template” is hopefully simple and helpful, though, and I’ll let
+you know how it goes 😊&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:project-students&quot;&gt;
+
+      &lt;p&gt;You’ve probably heard that CS enrolments are through the roof—it’s a great
+(if a bit hectic) time to be a CS academic (even a multidisciplinary one
+😉). The enrolment thing isn’t just a first-year problem, either—the
+pipeline is full all the way through to the “capstone” research projects
+that many students take at the end of their degree. &lt;a href=&quot;#fnref:project-students&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Supervising research students is hard work (or at least I find it hard work to do a good job) but it’s really very rewarding. From PhD &amp;amp; MPhil students through to undergraduate research project students[^project-students], there are lots of meetings to be had. And everyone knows that meetings suck, or at least that bad meetings suck.</summary></entry><entry><title type="html">Livecoding gig this Friday 5:30pm @ ANU Drill Hall Gallery</title><link href="https://benswift.me/blog/2019/07/29/livecoding-gig-this-friday-5-30pm-anu-drill-hall-gallery/" rel="alternate" type="text/html" title="Livecoding gig this Friday 5:30pm @ ANU Drill Hall Gallery" /><published>2019-07-29T00:00:00+10:00</published><updated>2019-07-29T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/07/29/livecoding-gig-this-friday-5-30pm-anu-drill-hall-gallery</id><content type="html" xml:base="https://benswift.me/blog/2019/07/29/livecoding-gig-this-friday-5-30pm-anu-drill-hall-gallery/">&lt;p&gt;For those who visit my blog to hear my livecoding gigs, there’s one this Friday.
 If you wanna see me perform with &lt;a href=&quot;http://charlesmartin.com.au/&quot;&gt;Charles Martin&lt;/a&gt;
 (on percussion &amp;amp; electronics) and &lt;a href=&quot;https://kieranbrowne.com&quot;&gt;Kieran Browne&lt;/a&gt; on
 livecoded visuals (live GLSL shader hacking). We’re playing 5:30pm–7:30pm @
@@ -1481,143 +1548,4 @@ from the other side. We’re all just humans, constructing and engaging in
 cultural practices with this stuff, building on what went before. &lt;a href=&quot;#fnref:creatives&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="reimagine" /><summary type="html"></summary></entry><entry><title type="html">Class discussions on Discourse</title><link href="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/" rel="alternate" type="text/html" title="Class discussions on Discourse" /><published>2019-02-06T19:42:03+11:00</published><updated>2019-02-06T19:42:03+11:00</updated><id>https://benswift.me/blog/2019/02/06/class-discussions-on-discourse</id><content type="html" xml:base="https://benswift.me/blog/2019/02/06/class-discussions-on-discourse/">&lt;p&gt;In 2018 I (with the support of the Teaching &amp;amp; Learning IT team in &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;my
-School&lt;/a&gt;) switched from &lt;a href=&quot;https://piazza.com&quot;&gt;Piazza&lt;/a&gt; to a
-self-hosted &lt;a href=&quot;https://www.discourse.org&quot;&gt;Discourse&lt;/a&gt; instance for class
-discussions. Specifically, I used it for &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720: Art &amp;amp; Interaction in New
-Media&lt;/a&gt;, a large-ish (~200 students)
-introductory code/art programming and interaction design course. This course is
-open to both CS and non-CS students, and can be counted towards a major in both
-the CS and the ANU School of Art and Design.&lt;sup id=&quot;fnref:artgit&quot;&gt;&lt;a href=&quot;#fn:artgit&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;This wasn’t because Piazza sucks—it’s actually pretty great in lots of ways.
-But there were a few things we hoped to that Discourse would do better:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;integration with the rest of our class management infrastructure (so that the
-professor doesn’t have to keep adding/students manually as enrolment grows
-and then settles down at the start of semester)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a &lt;a href=&quot;https://docs.discourse.org&quot;&gt;proper API&lt;/a&gt;, rather than using one of the &lt;a href=&quot;https://github.com/hfaran/piazza-api&quot;&gt;unofficial
-Piazza API clients&lt;/a&gt; and hoping that
-Piazza didn’t break things just before an assigment/exam&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;proper markdown support (with the ability to add whichever programming
-languages we like through &lt;a href=&quot;https://highlightjs.org&quot;&gt;highlight.js&lt;/a&gt;
-integration) rather than whatever they call the nonsense pseudo-markdown and
-flaky rich text editor that Piazza offers&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;self-hosting and controlling where the data is stored, because I don’t think
-I ever figured out whether it was technically ok to store student data on a
-foreign server and compel students to create an account on same&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a &lt;a href=&quot;https://www.discourse.org/plugins&quot;&gt;plugin ecosystem&lt;/a&gt; so that we could
-tweak it to suit our specific needs (and potentially develop our own plugins)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Still, there are a couple of things that Discourse is missing out-of-the-box
-compared to Piazza:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;the ability for instructors (professors &amp;amp; tutors) to mark a question/answer
-as a &lt;em&gt;good question/answer&lt;/em&gt; (really handy in teaching)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the ability for students to “post anonymously to other students” while still
-being visible (identifiable) to the instructors&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ability for students to “accept” an answer,
-&lt;a href=&quot;https://stackoverflow.com&quot;&gt;SO&lt;/a&gt;-style (there’s a &lt;a href=&quot;https://github.com/discourse/discourse-solved&quot;&gt;plugin for
-this&lt;/a&gt;, but we didn’t use it
-first time around)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;so-howd-it-go&quot;&gt;So how’d it go?&lt;/h2&gt;
-
-&lt;p&gt;Pretty well—student engagement was higher than the previous year (with Piazza)
-and anecdotal feedback was that the students liked it. The limitations described
-above didn’t bite &lt;em&gt;too&lt;/em&gt; hard, although I do think that the “post anonymously to
-students” thing in particular does encourage students to speak up when they’re
-struggling in a way that they don’t when their name is attached to everything.&lt;/p&gt;
-
-&lt;p&gt;Along the way, we also made some decisions about how to organise/administer a
-Discourse server for use as a course forum. Since Discourse isn’t specifically
-designed for this task, we had to make a few choices, and it’s worth laying them
-out here in case anyone else is going down the same path. Note, you’ll need to
-get your head around the Discourse nomenclature if you’re going to use it, but
-the crash course is&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;threads are called &lt;strong&gt;topics&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;topics are grouped into &lt;strong&gt;categories&lt;/strong&gt; and &lt;strong&gt;subcategories&lt;/strong&gt; (but only 2
-levels max—no &lt;strong&gt;subsubcategories&lt;/strong&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;groups&lt;/strong&gt; are groups of users&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So, the way we organised it was:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;each course is a &lt;strong&gt;category&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;subcategories&lt;/strong&gt; were devoted to e.g. lectures, labs, assignments, etc.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;access control&lt;/em&gt;: all students were enrolled into a &lt;strong&gt;group&lt;/strong&gt;, which was given
-read/write access to the &lt;strong&gt;category&lt;/strong&gt; with the same name&lt;sup id=&quot;fnref:samename&quot;&gt;&lt;a href=&quot;#fn:samename&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;tutors (TAs) were given&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here’s an example: for COMP1720 we set up&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;a top-level &lt;em&gt;comp1720&lt;/em&gt; category&lt;/li&gt;
-  &lt;li&gt;a &lt;em&gt;comp1720&lt;/em&gt; group (in which all students in the course were automatically
-enrolled using the Discourse API)&lt;/li&gt;
-  &lt;li&gt;all tutors are members of a &lt;em&gt;comp1720-tutors&lt;/em&gt; group, which has a higher
-privilege level&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This way, if a student is enrolled in multiple courses, they’ll appear in
-multiple groups. They’ll have access to all the topics in the categories for
-their courses, but not any topics from other course (of course).&lt;/p&gt;
-
-&lt;p&gt;One final bonus is that the default “homepage” for a logged in user shows the
-latest posts across all the user’s categories (although users can customise this
-behaviour).&lt;/p&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;I’ve got a student who’s working hard to develop a new plugin to restore the
-“anon to students, visible to instructors” behaviour, since that’s a
-deal-breaker for a lot of folks (it nearly was for me as well). We’ll release
-that plugin when it’s done and the kinks are worked out.&lt;/p&gt;
-
-&lt;p&gt;There are still things to figure out as well, but things are looking good. I
-wouldn’t go back; I think it’s easier to add the things I miss from Piazza to
-Discourse than the other way around.&lt;/p&gt;
-
-&lt;p&gt;If you’ve got experience with this sort of thing and have suggestions or
-comments, then get in touch (&lt;a href=&quot;https://twitter.com/benswift&quot;&gt;@benswift&lt;/a&gt; or
-&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;ben.swift@anu.edu.au&lt;/a&gt;)&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:artgit&quot;&gt;
-
-      &lt;p&gt;I also teach all the artists &amp;amp; designers to use git—and it works really
-well… with the appropriate scaffolding. Knowing how to use version control
-really does feel like having superpowers when editing digital, and seeing
-artists and designers realise this is pretty cool. &lt;a href=&quot;#fnref:artgit&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:samename&quot;&gt;
-
-      &lt;p&gt;the course category (list of topics) and group (list of members) could in
-principle have different names &lt;a href=&quot;#fnref:samename&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="web" /><summary type="html">In 2018 I (with the support of the Teaching &amp;amp; Learning IT team in my School) switched from Piazza to a self-hosted Discourse instance for class discussions. Specifically, I used it for COMP1720: Art &amp;amp; Interaction in New Media, a large-ish (~200 students) introductory code/art programming and interaction design course. This course is open to both CS and non-CS students, and can be counted towards a major in both the CS and the ANU School of Art and Design.[^artgit]</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="reimagine" /><summary type="html"></summary></entry></feed>
