@@ -25,7 +25,7 @@
 
 
 <!-- highlight.js -->
-<script type="text/javascript" src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js"></script>
+<script src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark-470b7658ef8aee2f2bb86babcc8a359491361d94113130f47878659a07f47eac.css">
 
 <script>
@@ -51,7 +51,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"dateModified":"2017-09-06T00:00:00+10:00","datePublished":"2017-09-06T00:00:00+10:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/p5-hour-of-code/"},"url":"https://benswift.me/talks/p5-hour-of-code/","author":{"@type":"Person","name":"Ben Swift"},"description":"Drawing like a 5-year-oldDr. Ben Swift 06 Sep &#39;17","headline":"Drawing like a 5-year-old","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"Drawing like a 5-year-old","dateModified":"2017-09-06T00:00:00+10:00","datePublished":"2017-09-06T00:00:00+10:00","url":"https://benswift.me/talks/p5-hour-of-code/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/p5-hour-of-code/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"Drawing like a 5-year-oldDr. Ben Swift 06 Sep &#39;17","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -180,14 +180,14 @@
   
   <h2>who drew pictures as a 5yo?</h2>
   
-</section><section id="your-hour-of-code"><h2 id="your-hour-of-code">your “hour of code”</h2>
+</section><section id="your-hour-of-code"><h2>your “hour of code”</h2>
 <p><a href="https://hourofcode.com/">https://hourofcode.com/</a></p>
 <p>teach the computer to draw a picture</p>
 <p>learn how to deal with its tantrums</p>
-<p>share your stuff with the world</p></section><section id="p5js"><h2 id="p5js">p5.js</h2>
+<p>share your stuff with the world</p></section><section id="p5js"><h2>p5.js</h2>
 <p>open up a web browser (e.g. Firefox) and head to <a href="https://editor.p5js.org/">https://editor.p5js.org/</a></p>
 <p><strong>(optional)</strong> if you want to share your work later, create an account (it’s
-super-easy, and free)</p></section><section id="edit-the-code"><h2 id="edit-the-code">edit the code</h2>
+super-easy, and free)</p></section><section id="edit-the-code"><h2>edit the code</h2>
 <pre><code class="language-javascript">function setup() {
   createCanvas(800, 800);
 }
@@ -202,26 +202,26 @@ function draw() {
   
   <h2>collaboration</h2>
   
-</section><section id="can-you-draw-the-square-differently"><h2 id="can-you-draw-the-square-differently">can you draw the square <strong>differently</strong>?</h2>
+</section><section id="can-you-draw-the-square-differently"><h2>can you draw the square <strong>differently</strong>?</h2>
 <ul>
   <li>bottom right</li>
   <li>tall and skinny</li>
   <li>short and fat</li>
   <li>filling the <strong>whole</strong> top right quarter</li>
-</ul></section><section id="new-shapes"><h2 id="new-shapes">new shapes</h2>
+</ul></section><section id="new-shapes"><h2>new shapes</h2>
 <p>what happens if you replace <code>rect</code> with <code>ellipse</code>?</p>
 <p>you can have multiple lines of code in the <code>draw</code> function—can you draw a
 square and a circle on top of one another?</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/paint-47a91693c2472f7d365b48c10558834211b98eced6d31e5890b07b07d32f6e4d.jpg" data-background-size="cover">
   
   <h2>colours</h2>
   
-</section><section id="colours-2"><h2 id="colours-2">colours</h2>
+</section><section id="colours-2"><h2>colours</h2>
 <p>put one of these <strong>before</strong> your <code>rect</code> line:</p>
 <pre><code class="language-javascript">fill(255, 0, 0);
 // or
 stroke(15, 180, 0);
 </code></pre>
-<p class="fragment">try changing the numbers around…</p></section><section id="moar-colours"><h2 id="moar-colours">moar colours</h2>
+<p class="fragment">try changing the numbers around…</p></section><section id="moar-colours"><h2>moar colours</h2>
 <pre><code class="language-javascript">fill(255, 0, 0); // each value from 0-255
 </code></pre>
 <div style="font-size: 33vh; font-weight:600; line-height:1em; text-align:center;">
@@ -263,17 +263,17 @@ function draw() {
   ellipse(500, 350, 70, 70);
   ellipse(400, 500, 120, 70);
 }
-</code></pre></section><section id="interaction"><h2 id="interaction">interaction</h2>
+</code></pre></section><section id="interaction"><h2>interaction</h2>
 <p>replace one of the numbers (e.g. a <code>100</code>) with <code>mouseX</code></p>
 <p>replace one of the numbers with <code>frameCount</code></p>
-<p>do some maths (e.g. <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, …)</p></section><section id="what-have-we-done-today"><h2 id="what-have-we-done-today">what have we done today?</h2>
+<p>do some maths (e.g. <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, …)</p></section><section id="what-have-we-done-today"><h2>what have we done today?</h2>
 <p>programming (like any sufficiently complex activity) uses lots of jargon &amp;
 technical terms</p>
 <p>but in the end, it’s just about telling your computer what to do <strong>in language
 it understands</strong></p>
 <p>there’s lots more!</p>
 <p>if you created an account earlier, then you’ll have a <strong>share</strong> tab along the
-top of the screen</p></section><section id="going-further"><h2 id="going-further">going further</h2>
+top of the screen</p></section><section id="going-further"><h2>going further</h2>
 <p><a href="https://p5js.org/reference/">https://p5js.org/reference/</a></p>
 <p><a href="https://p5js.org/examples/">https://p5js.org/examples/</a></p>
 <p><a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a></p></section>
