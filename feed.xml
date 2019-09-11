@@ -1,4 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-09T15:22:28+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">I’m a Reimagine Fellow</title><link href="https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow/" rel="alternate" type="text/html" title="I'm a Reimagine Fellow" /><published>2019-08-30T00:00:00+10:00</published><updated>2019-08-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow</id><content type="html" xml:base="https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow/">&lt;p&gt;If you’ve been following the CECS newsletter, you’ll know that the inaugural
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-11T15:22:40+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">c/c/c studio: what’s already happening</title><link href="https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop/" rel="alternate" type="text/html" title="c/c/c studio: what's already happening" /><published>2019-09-09T00:00:00+10:00</published><updated>2019-09-09T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop/">&lt;p&gt;I’m now a &lt;a href=&quot;/blog/2019/08/30/Im-a-reimagine-fellow/&quot;&gt;Reimagine Fellow&lt;/a&gt; and stuff to do with that program
+(and getting the &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;c/c/c studio&lt;/a&gt; up and running) is
+starting to happen. As I’ve &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;done&lt;/a&gt; &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;so
+far&lt;/a&gt; I’m planning to continue to work on this project “in the open”, i.e. on this
+blog. This means that if you’ve got ideas or want to help out, you can see where
+I’m up to (and &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;/a&gt;), and it also
+minimises the likelihood that I’ll be forced to email around anything called
+&lt;code&gt;project-plan-final-ACTUALLY-FINAL-v3.docx&lt;/code&gt; 😉.&lt;/p&gt;
+
+&lt;p&gt;In preparation for a Reimagine Fellows workshop this week (Thursday September
+12) I’m sketching out all the existing stuff that’s happening on- (and off-)
+campus relating to the c/c/c studio. This is all really rough, but it’s a place
+to collect the thoughts &amp;amp; names in my head.&lt;/p&gt;
+
+&lt;h2 id=&quot;people--internal-and-external-to-cecs&quot;&gt;People-–-internal and external to CECS&lt;/h2&gt;
+
+&lt;p&gt;There are lots of folks, in a few different places:&lt;/p&gt;
+
+&lt;h3 id=&quot;internal&quot;&gt;Internal&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://charlesmartin.com.au&quot;&gt;Charles Martin&lt;/a&gt;, RSCS Lecturer and creative
+code practitioner&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/genevieve-bell&quot;&gt;Genevieve Bell&lt;/a&gt;,
+&lt;a href=&quot;https://3ainstitute.cecs.anu.edu.au&quot;&gt;3Ai&lt;/a&gt; Director&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://hingstonbrook.com/60hbrook/hb6000.php&quot;&gt;Tim Brook&lt;/a&gt;, artist &amp;amp;
+mathematician, RSCS Adjunct&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;external&quot;&gt;External&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://researchers.anu.edu.au/researchers/hunter-at&quot;&gt;Alec Hunter&lt;/a&gt;, ANU
+SoM, previously the convenor of the Open School of Music program&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://researchers.anu.edu.au/researchers/hinchcliffe-gb&quot;&gt;Geoff
+Hinchcliffe&lt;/a&gt;, ANU
+SoAD, CASS Associate Dean (Education)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kit Devine, SoAD artist &amp;amp; lecturer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://tonycurran.net/&quot;&gt;Tony Curran&lt;/a&gt;, artist, SoAD &amp;amp; RSCS lecturer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.ericaseccombe.com&quot;&gt;Erica Seccombe&lt;/a&gt;, ANU SoAD artist &amp;amp; researcher,
+board member of ANAT (the Australian Network for Art &amp;amp; Technology)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.deirdrefeeney.com&quot;&gt;Dierdre Feeney&lt;/a&gt;, artist exploring compositions
+of the constructed + projected (moving) image&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/madeleine-parker-928644102/&quot;&gt;Madeleine Parker&lt;/a&gt;,
+SCI ART CBR Community Co-ordinator&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.dicksonc.act.edu.au/our_school/principals_welcome&quot;&gt;Craig Edwards&lt;/a&gt;,
+Dickson College Principal&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://robogals.org/locations/asia-pacific-apac/canberra/&quot;&gt;Morgan Marshall&lt;/a&gt;,
+President of Robogals Canberra&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;systems-and-structures&quot;&gt;Systems and structures&lt;/h2&gt;
+
+&lt;h3 id=&quot;cecs&quot;&gt;CECS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;code/creativity/culture
+group&lt;/a&gt; (my research group)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;ANU Laptop Ensemble&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cass&quot;&gt;CASS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ANU Open School of Music (outreach/extension stuff with pre-teritary kids)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;School of Art &amp;amp; Design&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;outside-anu&quot;&gt;Outside ANU&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Australian Network for Art &amp;amp; Technology&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;processes&quot;&gt;Processes&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;I’m not quite sure what the difference is between a structure &amp;amp; a process in
+this contenxt&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;data-and-information&quot;&gt;Data and information&lt;/h2&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">I’m now a Reimagine Fellow and stuff to do with that program (and getting the c/c/c studio up and running) is starting to happen. As I’ve done so far I’m planning to continue to work on this project “in the open”, i.e. on this blog. This means that if you’ve got ideas or want to help out, you can see where I’m up to (and get in touch), and it also minimises the likelihood that I’ll be forced to email around anything called project-plan-final-ACTUALLY-FINAL-v3.docx 😉.</summary></entry><entry><title type="html">I’m a Reimagine Fellow</title><link href="https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow/" rel="alternate" type="text/html" title="I'm a Reimagine Fellow" /><published>2019-08-30T00:00:00+10:00</published><updated>2019-08-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow</id><content type="html" xml:base="https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow/">&lt;p&gt;If you’ve been following the CECS newsletter, you’ll know that the inaugural
 &lt;a href=&quot;https://cecs.anu.edu.au/reimagine/reimagine-fellows&quot;&gt;Reimagine Fellows&lt;/a&gt; have been
 announced, and I’m one of them 🙌🎉🥳. It’s very exciting, and it means the
 &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;c/c/c studio&lt;/a&gt; is going to be a real
@@ -16,7 +129,7 @@ video the clever folks at CECS made:&lt;/p&gt;
 	&lt;iframe style=&quot;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;&quot; src=&quot;https://www.youtube.com/embed/Sv4Y-UPqML8&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
 	&lt;/iframe&gt;
   &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">If you’ve been following the CECS newsletter, you’ll know that the inaugural Reimagine Fellows have been announced, and I’m one of them 🙌🎉🥳. It’s very exciting, and it means the c/c/c studio is going to be a real thing in 2020 (and beyond). It’s also a relief to be able to tell people, since I’ve had to keep the good news under my hat for the last couple of months.</summary></entry><entry><title type="html">Making the most of meetings with research students</title><link href="https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students/" rel="alternate" type="text/html" title="Making the most of meetings with research students" /><published>2019-08-06T00:00:00+10:00</published><updated>2019-08-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students</id><content type="html" xml:base="https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students/">&lt;div class=&quot;hl-para&quot;&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">If you’ve been following the CECS newsletter, you’ll know that the inaugural Reimagine Fellows have been announced, and I’m one of them 🙌🎉🥳. It’s very exciting, and it means the c/c/c studio is going to be a real thing in 2020 (and beyond). It’s also a relief to be able to tell people, since I’ve had to keep the good news under my hat for the last couple of months.</summary></entry><entry><title type="html">Making the most of meetings with research students</title><link href="https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students/" rel="alternate" type="text/html" title="Making the most of meetings with research students" /><published>2019-08-06T00:00:00+10:00</published><updated>2019-08-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students</id><content type="html" xml:base="https://benswift.me/blog/2019/08/06/making-the-most-of-meetings-with-research-students/">&lt;div class=&quot;hl-para&quot;&gt;
 
   &lt;p&gt;&lt;strong&gt;tl;dr&lt;/strong&gt; here are my standard questions for one-to-one meetings with research
 students&lt;/p&gt;
@@ -1201,44 +1314,4 @@ there’s a fullsreen version &lt;a href=&quot;/widgets/reimagine-logo/&quot;&gt
   &amp;gt;
   &amp;lt;/iframe&amp;gt;
 &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>Ben Swift</name></author><category term="widgets" /><category term="reimagine" /><category term="web" /><summary type="html">I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info).</summary></entry><entry><title type="html">Algorithmic uni marketing billboards</title><link href="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/" rel="alternate" type="text/html" title="Algorithmic uni marketing billboards" /><published>2019-02-16T14:46:00+11:00</published><updated>2019-02-16T14:46:00+11:00</updated><id>https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards</id><content type="html" xml:base="https://benswift.me/blog/2019/02/16/algorithmic-uni-marketing-billboards/">&lt;p&gt;In the spirit of Murdoch University’s &lt;a href=&quot;http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html&quot;&gt;&lt;em&gt;free your
-think&lt;/em&gt;&lt;/a&gt;
-marketing campaign, I’ve put together a dynamic full-page ad billboard as my
-pitch for the ANU’s next marketing campaign.&lt;/p&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;Disclaimer: this is in no way an official ANU campaign. Seriously, though, it’s
-a great uni—and you should come &lt;a href=&quot;http://www.anu.edu.au/study&quot;&gt;study with us&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The campaign is called: &lt;strong&gt;verb&lt;/strong&gt; &lt;em&gt;your&lt;/em&gt; &lt;strong&gt;verb&lt;/strong&gt;—hit refresh to see the
-different options.&lt;/p&gt;
-
-&lt;div style=&quot;position:relative;padding-top:56.25%;&quot;&gt;
-  &lt;iframe src=&quot;/widgets/algorithmic-ad-billboards/&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you want to see it in fullscreen, you can &lt;a href=&quot;/widgets/algorithmic-ad-billboards/&quot;&gt;do that as
-well&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
-
-&lt;p&gt;It uses the same &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;reveal.js&lt;/a&gt; template
-that I use for all my &lt;a href=&quot;/talks/index.html&quot;&gt;talks/slides&lt;/a&gt;—it’s basically a one-slide presentation.&lt;/p&gt;
-
-&lt;p&gt;Each time the page loads, it:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;pulls a random background image from &lt;a href=&quot;https://unsplash.com&quot;&gt;unsplash&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;chooses two verbs at random from &lt;a href=&quot;https://www.talkenglish.com/vocabulary/top-1000-verbs.aspx&quot;&gt;a list of the 1000 most frequently used
-verbs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;places them on the billboard in the form &lt;strong&gt;verb&lt;/strong&gt; &lt;em&gt;your&lt;/em&gt; &lt;strong&gt;verb&lt;/strong&gt;,
-randomising the location and text style&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As with all things on this blog, you can check out the source to see all the
-details.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;UPDATE 12 March&lt;/strong&gt;: I rewrote the billboard code from vanilla js to
-&lt;a href=&quot;https://clojurescript.org&quot;&gt;clojurescript&lt;/a&gt; because it makes me happy (source
-&lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_cljs/algorithmic_billboard/src/algorithmic_billboard/core.cljs&quot;&gt;here&lt;/a&gt;,
-and you can still see the original js source
-&lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/9f4dbeceb99a43f1430593f89bdde68e1fc5c3e9/widgets/algorithmic-ad-billboards.html&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="widgets" /><category term="web" /><summary type="html">In the spirit of Murdoch University’s free your think marketing campaign, I’ve put together a dynamic full-page ad billboard as my pitch for the ANU’s next marketing campaign.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>Ben Swift</name></author><category term="widgets" /><category term="reimagine" /><category term="web" /><summary type="html">I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info).</summary></entry></feed>
