@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#be2edd">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
+
+<!-- fontawesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+<!-- anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<script>
+ anchors.options = {
+   visible: "touch",
+   icon: "#"
+ };
+ document.addEventListener("DOMContentLoaded", function(event) {
+   anchors.add("article > h2, article > h3");
+ });
+</script>
+
+
+<!-- highlight.js -->
+<script src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark-470b7658ef8aee2f2bb86babcc8a359491361d94113130f47878659a07f47eac.css">
+
+<script>
+ hljs.initHighlightingOnLoad();
+</script>
+
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Xinyu’s Extempore tutorials | benswift.me</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Xinyu’s Extempore tutorials" />
+<meta name="author" content="Ben Swift" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore." />
+<meta property="og:description" content="These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore." />
+<link rel="canonical" href="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" />
+<meta property="og:url" content="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" />
+<meta property="og:site_name" content="benswift.me" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-18T00:00:00+10:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Xinyu’s Extempore tutorials" />
+<meta name="twitter:site" content="@benswift" />
+<meta name="twitter:creator" content="@Ben Swift" />
+<script type="application/ld+json">
+{"headline":"Xinyu’s Extempore tutorials","dateModified":"2019-09-18T00:00:00+10:00","datePublished":"2019-09-18T00:00:00+10:00","url":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/main-fa3c3362a4ed0f3517c2bba7752c287108bda00baaad52995b02fe600ff5a73d.css">
+  </head>
+  <body>
+	<div class="container">
+	  <header>
+
+  <nav class="logo" aria-label="site home">
+	<a href="/">benswift.me</a>
+  </nav>
+
+  <nav class="navigation" aria-label="main navigation">
+	<!-- in-site navigation -->
+	
+	
+
+	<a class="current"href="/blog/index.html">blog</a>
+	<a href="/research/">research</a>
+	<a href="/teaching/">teaching</a>
+	<a href="/livecoding/index.html">livecoding</a>
+	<a href="/talks/index.html">talks</a>
+	<a href="/bio/">bio</a>
+
+	<!-- social icons -->
+	<a href="https://github.com/benswift"><i title="benswift on GitHub" class="fab fa-github"></i></a>
+	<a href="https://twitter.com/benswift"><i title="benswift on twitter" class="fab fa-twitter"></i></a>
+	<a href="https://vimeo.com/benswift"><i title="benswift on Vimeo" class="fab fa-vimeo"></i></a>
+	<a href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ"><i title="Ben's Google Scholar profile" class="fas fa-graduation-cap"></i></a>
+	<a href="/feed.xml"><i title="RSS feed for this blog" class="fas fa-rss"></i></a>
+	<a href="mailto:ben@benswift.me"><i title="send Ben an email" class="fas fa-envelope"></i></a>
+  </nav>
+
+</header>
+
+	  <main aria-label="Content">
+		<article>
+  <p class="post-date">18 Sep '19</p>
+  <h1>Xinyu's Extempore tutorials</h1>
+  
+<p class="post-tag-container">
+  
+  <a class="post-tag" href="/blog/tag/livecoding/">
+	livecoding
+  </a>
+  
+  <a class="post-tag" href="/blog/tag/extempore/">
+	extempore
+  </a>
+  
+</p>
+
+
+  <p>These tutorials are part of Xinyu Hou’s research project to create a set of
+<a href="https://blogs.kcl.ac.uk/cser/2017/09/01/primm-a-structured-approach-to-teaching-programming/">PRIMM</a>-style
+tutorials for learning to make sound/music in Extempore.</p>
+
+<p>They’re currently a work-in-progress—when they’re done they’ll be hosted on
+the main Extempore docs site, but for now they’re here on my blog.</p>
+
+<div id="toc">
+
+  <h2>table of contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#preliminaries" id="markdown-toc-preliminaries">Preliminaries</a></li>
+  <li><a href="#tutorial-one" id="markdown-toc-tutorial-one">Tutorial One</a></li>
+  <li><a href="#tutorial-two" id="markdown-toc-tutorial-two">Tutorial Two</a></li>
+  <li><a href="#going-further" id="markdown-toc-going-further">Going further</a></li>
+</ul>
+
+</div>
+
+<h2 id="preliminaries">Preliminaries</h2>
+
+<h3 id="setting-up-environment">Setting Up Environment</h3>
+
+<h4 id="installing-extempore">Installing Extempore</h4>
+
+<p>Install Extempore by following the steps <a href="https://extemporelang.github.io/docs/overview/install/">here</a>.</p>
+
+<h4 id="installing-vscode">Installing VSCode</h4>
+
+<p>Install VSCode (a text editor) by following the steps <a href="https://extemporelang.github.io/docs/overview/editor-support/">here</a>.</p>
+
+<p class="hl-para">Note: if you want to use a different text editor, <a href="https://extemporelang.github.io/docs/overview/editor-support/">there are other options as
+well</a>.</p>
+
+<h3 id="evaluating-extempore-code">Evaluating Extempore Code</h3>
+
+<p>Evaluate the extempore code on VSCode by following the steps below:</p>
+
+<ol>
+  <li>
+    <p>Start VSCode</p>
+  </li>
+  <li>
+    <p>Go to <strong>File</strong> -&gt; <strong>Open</strong>, then open your Extempore directory.</p>
+  </li>
+  <li>
+    <p>In the VSCode built-in terminal window (<strong>ctrl+`</strong>) move into the extempore
+directory, and start extempore (type <code>./extempore</code> and hit return).</p>
+  </li>
+  <li>
+    <p>Open or create an Extempore file (<strong>.xtm</strong> file)</p>
+  </li>
+  <li>
+    <p>Connect to the Extempore process: you can do this in VSCode through the
+“<strong>command palette</strong>”, which can be brought up with <strong>ctrl+Shift+P</strong> on
+Windows/Linux or <strong>cmd+Shift+P</strong> on macOS. <picture><img alt="the command palette" src="/assets/images/xinyu-tutorials/TO3-e8ae28d3af9a3d268b4e3f8768078b914460e9996b5e1d683073ba76b55e8688.png" /></picture></p>
+  </li>
+  <li>
+    <p>Type <strong>Extempore Connect</strong> in the opening command palette, the default host
+and port arguments will be <code>localhost</code> and <code>7099</code> respectively.</p>
+  </li>
+</ol>
+
+<p class="hl-para"><strong>To evaluate Extempore code</strong>: move the cursor into the code you want to
+evaluate and hit <strong>cmd+enter</strong> on macOS or <strong>ctrl+enter</strong> on Windows/Linux.</p>
+
+<p>What you might see in the terminal window when you evaluate extempore code:</p>
+
+<picture><img alt="Extempore log view" src="/assets/images/xinyu-tutorials/TO4-5d8005c9a16bdd53697362f037afee125bed89d3c0723d14f949ae25d0e5b694.png" /></picture>
+
+<blockquote>
+  <p>Note: you can use <strong>ctrl+c</strong> in the terminal where extempore is running to kill the extempore process whenever you want.</p>
+</blockquote>
+
+<h2 id="tutorial-one">Tutorial One</h2>
+
+<h3 id="predict-and-run">Predict and Run</h3>
+
+<p>Work in pairs or small groups, look at the code below and predict what does this code do:</p>
+
+<pre><code class="language-xtlang">(bind-val my-pi float 3.1415)
+</code></pre>
+
+<blockquote>
+  <p>Note: in Extempore, we generally use <strong>kebab-case</strong> case style <code>my-pi</code> instead of using <strong>camelCase</strong> <code>myPi</code> or <strong>PascalCase</strong> <code>MyPi</code>or <strong>snake_case</strong> <code>my_pi</code>.</p>
+</blockquote>
+
+<p>Run the code above. Does the compiler print anything in the log? What does the printed message mean?</p>
+
+<picture><img alt="my-pi log view" src="/assets/images/xinyu-tutorials/my-pi-98c1932383133538c35fc7d0f84a4d6a5cf3f1a679b425f985d0c909653bb4cb.png" /></picture>
+
+<p>Now, it’s time to produce a sound in Extempore!</p>
+
+<p>Work in pairs or small groups again, look at the code below and predict/guess what might happen when it runs:</p>
+
+<pre><code class="language-xtlang">(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (let ((amplitude 0.1)
+          (frequency 440.0)
+          (two-pi (* 2.0 my-pi)))
+      (* amplitude
+         (sin (/ (* frequency
+                    two-pi
+                    (convert time)) SRf))))))
+
+(dsp:set! dsp)
+</code></pre>
+
+<p>Does it work as predicted?</p>
+
+<blockquote>
+  <p>Hint:
+we set up the xtlang callback:</p>
+  <pre><code class="language-xtlang">(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    0.0))
+</code></pre>
+  <ul>
+    <li><strong>in:SAMPLE</strong>
+sample from input device</li>
+    <li><strong>time:i64</strong>
+sample number</li>
+    <li><strong>chan:i64</strong>
+audio channel</li>
+    <li><strong>dat:SAMPLE</strong>*
+user data</li>
+    <li><strong><code>&lt;return&gt;</code>:SAMPLE</strong>
+sample at given channel and time</li>
+    <li>*sample value range from -1.0 to 1.0</li>
+  </ul>
+
+  <p>Note: In Extempore, we represent the mathematical operation <em>2 * PI</em> as <code>(* 2 PI)</code></p>
+
+  <p>Note: <code>SRf</code> refers to the current sampling frequency</p>
+
+  <p>Note: The form of a <code>let</code> statement is as follows:
+<code>(let ((var_name_1 var_value_1) ... (var_n val_n)) (&lt;body&gt;))</code></p>
+
+  <p>Note: <code>convert</code> allows us to make a <code>SAMPLE</code> typed value from <code>time</code>.</p>
+
+  <p>Note: We only can set <code>dsp</code> function once, but then redefine it as many times as we want.</p>
+</blockquote>
+
+<p>What about white noise in Extempore?</p>
+
+<pre><code class="language-xtlang">(bind-func dsp:DSP
+  (lambda (in time chan data)
+    (* 0.2 (random))))
+</code></pre>
+
+<p>Can you explain what happened here?</p>
+
+<h3 id="investigate">Investigate</h3>
+
+<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+<ol>
+  <li>In what order did you compile (execute) the code in this program?</li>
+  <li>What happened after you evaluated each “chunk” of Extempore code?</li>
+  <li>Can you guess what would happen if you compile the code in a different order?</li>
+</ol>
+
+<blockquote>
+  <p>Note: you can add comments (starting with <strong>;;</strong>) to the program to make some notes for you to understand the code. The comments are generally ignored by compilers and interpreters.</p>
+</blockquote>
+
+<h3 id="modify">Modify</h3>
+
+<ol>
+  <li>Can you play a sound with a frequency of 460.0?</li>
+  <li>Can you make the sound louder by just changing the code? (don’t use your volume buttons!)</li>
+</ol>
+
+<h3 id="make">Make</h3>
+
+<p>Now, let’s move <code>amplitude</code>, <code>frequency</code> and <code>two-pi</code> outside of lambda to make our <code>dsp</code> function controllable outside as below:</p>
+
+<pre><code class="language-xtlang">(bind-func dsp:DSP
+  (let ((amplitude 0.1)
+        (frequency 440.0)
+        (two-pi (* 2.0 my-pi)))
+    (lambda (in time chan dat)
+      (* amplitude
+         (sin (/ (* frequency
+                    two-pi
+                    (convert time)) SRf))))))
+</code></pre>
+
+<p>Can you play a random frequency sound every time when you redefine the <code>dsp</code> function?</p>
+<blockquote>
+  <p>Note:</p>
+  <ul>
+    <li>You could use <code>(random 440.0 700.0)</code> to randomly generate a value between 440.0 and 700.0</li>
+  </ul>
+</blockquote>
+
+<p>Compare to the <code>(random)</code> in the white noise part above, does the <code>(random)</code> work differently here? Can you explain how <code>(random)</code> can be either for “control” (e.g. see the above sine wave part) or for “signal” (e.g. see the white noise part)?</p>
+
+<h2 id="tutorial-two">Tutorial Two</h2>
+
+<h3 id="predict">Predict</h3>
+
+<p>Work in pairs or small groups, look at the code below and predict what might happen when it runs.</p>
+
+<pre><code class="language-xtlang">;; load the instruments file
+(sys:load "libs/core/instruments.xtm")
+
+;; define an fmsynth using the built-in components
+(make-instrument fmsynth fmsynth)
+
+;; add the instrument to the DSP output sink closure
+(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (fmsynth in time chan dat)))
+
+(dsp:set! dsp)
+
+;; play a note on our fmsynth
+(play-note (now) fmsynth (random 60 80) 80 *second*)
+
+;; make a loop
+(define my-loop
+  (lambda (time)
+    (play-note time fmsynth (random 60 80) 80 *second*)
+    (callback (+ time *second*) 'my-loop (+ time *second*))))
+
+(my-loop (now))
+</code></pre>
+
+<blockquote>
+  <p>Note: The dsp function takes as input:</p>
+  <ul>
+    <li>in: the input audio sample, e.g. from the microphone.</li>
+    <li>time: an i64 representing the time.</li>
+    <li>chan: another i64 which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels..</li>
+    <li>data: this is a pointer to a SAMPLE type (which is float by default), and can be used to pass arbitrary data into the dsp function.</li>
+  </ul>
+</blockquote>
+
+<h3 id="run">Run</h3>
+
+<p>Run the code. Dose it work as predicted?</p>
+
+<h3 id="investigate-1">Investigate</h3>
+
+<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+
+<ol>
+  <li>What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click <a href="https://digego.github.io/extempore/scheme-xtlang-interop.html">here</a></li>
+  <li>What is the difference between using <strong>now</strong> versus using <strong>time</strong>?  More information click <a href="https://digego.github.io/extempore/time.html">here</a></li>
+</ol>
+
+<blockquote>
+  <p>Note: you can add comments (starting with <code>;;</code>) to the program to make some notes for you to understand the code.</p>
+</blockquote>
+
+<h3 id="modify-1">Modify</h3>
+
+<p>Work in pairs or in small groups, can you modify the above code and make a loop with random notes lengths and random notes frequencies.</p>
+
+<pre><code class="language-xtlang">;; hint
+;; make a loop with random note length and random note
+(define diff-length
+  (lambda (time)
+    (let ((note-length (random '(0.5 1.0 1.5 2.0))))
+      (let ((pitch (random '(60 63 65 68 70 73 75 78 80))))
+        (play-note time fmsynth pitch 80 (* *second* note-length))
+        (callback (+ time (* note-length *second*)) 'diff-length (+ time (* note-length *second*)))))))
+
+(diff-length (now))
+</code></pre>
+
+<h3 id="make-1">Make</h3>
+
+<p>Can you make a chord (or play different notes at the same time) function by using similar ideas to the previous program?</p>
+
+<h2 id="going-further">Going further</h2>
+
+<p>As well as the <a href="https://extemporelang.github.io">Extempore documentation
+website</a>, the best place to start messing
+around is with more examples: e.g. the <code>examples/core/fmsynth.xtm</code> file in your
+Extempore folder.</p>
+
+</article>
+
+
+	  </main>
+	  <footer>
+  <script>
+   const cafeUrls = [
+	 "https://biginelli.com/",
+	 "http://tilleys.com.au",
+	 "https://www.facebook.com/goodbrothercafe/",
+	 "https://frontgallerycafe.com",
+	 "https://www.facebook.com/thecoffeegrounds",
+	 "https://redbrickcoffee.com.au/redbrick/"
+   ];
+   const randomCafe = () => {
+	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
+   };
+  </script>
+
+  <!-- colophon -->
+  <p>
+	designed & built with
+	<a href="https://jekyllrb.com"><i title="Jekyll homepage" class="fas fa-vial"></i></a>,
+	<a id="cafe-url" onclick="randomCafe();"><i title="the website of one of Ben's favourite coffee shops" class="fas fa-coffee" style="cursor: pointer;"></i></a> and
+	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><i title="what is love?" class="fas fa-heart"></i></a>
+	by Ben Swift
+  </p>
+
+  <!-- licence -->
+  <p style="font-size: 1.3em;">
+	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <i class="fab fa-creative-commons"></i>
+  <i class="fab fa-creative-commons-by"></i>
+  <i class="fab fa-creative-commons-nc"></i>
+  <i class="fab fa-creative-commons-sa"></i>
+</a>
+
+  </p>
+
+  <!-- throw shade on IE -->
+  <p>
+	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
+	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+  </p>
+
+  <!-- open source humblebrag -->
+  <p>
+	site revision <code>445b381</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/445b381/_posts/2019-09-18-xinyus-extempore-tutorials.md">source
+	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
+  </p>
+
+</footer>
+
+	</div>
+  </body>
+</html>

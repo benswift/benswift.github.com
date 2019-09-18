@@ -1,4 +1,285 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-11T15:22:40+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">c/c/c studio: what’s already happening</title><link href="https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop/" rel="alternate" type="text/html" title="c/c/c studio: what's already happening" /><published>2019-09-09T00:00:00+10:00</published><updated>2019-09-09T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop/">&lt;p&gt;I’m now a &lt;a href=&quot;/blog/2019/08/30/Im-a-reimagine-fellow/&quot;&gt;Reimagine Fellow&lt;/a&gt; and stuff to do with that program
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-18T10:11:41+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Xinyu’s Extempore tutorials</title><link href="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" rel="alternate" type="text/html" title="Xinyu's Extempore tutorials" /><published>2019-09-18T00:00:00+10:00</published><updated>2019-09-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials</id><content type="html" xml:base="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/">&lt;p&gt;These tutorials are part of Xinyu Hou’s research project to create a set of
+&lt;a href=&quot;https://blogs.kcl.ac.uk/cser/2017/09/01/primm-a-structured-approach-to-teaching-programming/&quot;&gt;PRIMM&lt;/a&gt;-style
+tutorials for learning to make sound/music in Extempore.&lt;/p&gt;
+
+&lt;p&gt;They’re currently a work-in-progress—when they’re done they’ll be hosted on
+the main Extempore docs site, but for now they’re here on my blog.&lt;/p&gt;
+
+&lt;div id=&quot;toc&quot;&gt;
+
+  &lt;h2&gt;table of contents&lt;/h2&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#preliminaries&quot; id=&quot;markdown-toc-preliminaries&quot;&gt;Preliminaries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tutorial-one&quot; id=&quot;markdown-toc-tutorial-one&quot;&gt;Tutorial One&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tutorial-two&quot; id=&quot;markdown-toc-tutorial-two&quot;&gt;Tutorial Two&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#going-further&quot; id=&quot;markdown-toc-going-further&quot;&gt;Going further&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;preliminaries&quot;&gt;Preliminaries&lt;/h2&gt;
+
+&lt;h3 id=&quot;setting-up-environment&quot;&gt;Setting Up Environment&lt;/h3&gt;
+
+&lt;h4 id=&quot;installing-extempore&quot;&gt;Installing Extempore&lt;/h4&gt;
+
+&lt;p&gt;Install Extempore by following the steps &lt;a href=&quot;https://extemporelang.github.io/docs/overview/install/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;installing-vscode&quot;&gt;Installing VSCode&lt;/h4&gt;
+
+&lt;p&gt;Install VSCode (a text editor) by following the steps &lt;a href=&quot;https://extemporelang.github.io/docs/overview/editor-support/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;Note: if you want to use a different text editor, &lt;a href=&quot;https://extemporelang.github.io/docs/overview/editor-support/&quot;&gt;there are other options as
+well&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;evaluating-extempore-code&quot;&gt;Evaluating Extempore Code&lt;/h3&gt;
+
+&lt;p&gt;Evaluate the extempore code on VSCode by following the steps below:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Start VSCode&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to &lt;strong&gt;File&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Open&lt;/strong&gt;, then open your Extempore directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the VSCode built-in terminal window (&lt;strong&gt;ctrl+`&lt;/strong&gt;) move into the extempore
+directory, and start extempore (type &lt;code&gt;./extempore&lt;/code&gt; and hit return).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open or create an Extempore file (&lt;strong&gt;.xtm&lt;/strong&gt; file)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Connect to the Extempore process: you can do this in VSCode through the
+“&lt;strong&gt;command palette&lt;/strong&gt;”, which can be brought up with &lt;strong&gt;ctrl+Shift+P&lt;/strong&gt; on
+Windows/Linux or &lt;strong&gt;cmd+Shift+P&lt;/strong&gt; on macOS. &lt;picture&gt;&lt;img alt=&quot;the command palette&quot; src=&quot;/assets/images/xinyu-tutorials/TO3-e8ae28d3af9a3d268b4e3f8768078b914460e9996b5e1d683073ba76b55e8688.png&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Type &lt;strong&gt;Extempore Connect&lt;/strong&gt; in the opening command palette, the default host
+and port arguments will be &lt;code&gt;localhost&lt;/code&gt; and &lt;code&gt;7099&lt;/code&gt; respectively.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;To evaluate Extempore code&lt;/strong&gt;: move the cursor into the code you want to
+evaluate and hit &lt;strong&gt;cmd+enter&lt;/strong&gt; on macOS or &lt;strong&gt;ctrl+enter&lt;/strong&gt; on Windows/Linux.&lt;/p&gt;
+
+&lt;p&gt;What you might see in the terminal window when you evaluate extempore code:&lt;/p&gt;
+
+&lt;picture&gt;&lt;img alt=&quot;Extempore log view&quot; src=&quot;/assets/images/xinyu-tutorials/TO4-5d8005c9a16bdd53697362f037afee125bed89d3c0723d14f949ae25d0e5b694.png&quot; /&gt;&lt;/picture&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: you can use &lt;strong&gt;ctrl+c&lt;/strong&gt; in the terminal where extempore is running to kill the extempore process whenever you want.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;tutorial-one&quot;&gt;Tutorial One&lt;/h2&gt;
+
+&lt;h3 id=&quot;predict-and-run&quot;&gt;Predict and Run&lt;/h3&gt;
+
+&lt;p&gt;Work in pairs or small groups, look at the code below and predict what does this code do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-val my-pi float 3.1415)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: in Extempore, we generally use &lt;strong&gt;kebab-case&lt;/strong&gt; case style &lt;code&gt;my-pi&lt;/code&gt; instead of using &lt;strong&gt;camelCase&lt;/strong&gt; &lt;code&gt;myPi&lt;/code&gt; or &lt;strong&gt;PascalCase&lt;/strong&gt; &lt;code&gt;MyPi&lt;/code&gt;or &lt;strong&gt;snake_case&lt;/strong&gt; &lt;code&gt;my_pi&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Run the code above. Does the compiler print anything in the log? What does the printed message mean?&lt;/p&gt;
+
+&lt;picture&gt;&lt;img alt=&quot;my-pi log view&quot; src=&quot;/assets/images/xinyu-tutorials/my-pi-98c1932383133538c35fc7d0f84a4d6a5cf3f1a679b425f985d0c909653bb4cb.png&quot; /&gt;&lt;/picture&gt;
+
+&lt;p&gt;Now, it’s time to produce a sound in Extempore!&lt;/p&gt;
+
+&lt;p&gt;Work in pairs or small groups again, look at the code below and predict/guess what might happen when it runs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (let ((amplitude 0.1)
+          (frequency 440.0)
+          (two-pi (* 2.0 my-pi)))
+      (* amplitude
+         (sin (/ (* frequency
+                    two-pi
+                    (convert time)) SRf))))))
+
+(dsp:set! dsp)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Does it work as predicted?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hint:
+we set up the xtlang callback:&lt;/p&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    0.0))
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;in:SAMPLE&lt;/strong&gt;
+sample from input device&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;time:i64&lt;/strong&gt;
+sample number&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;chan:i64&lt;/strong&gt;
+audio channel&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;dat:SAMPLE&lt;/strong&gt;*
+user data&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;return&amp;gt;&lt;/code&gt;:SAMPLE&lt;/strong&gt;
+sample at given channel and time&lt;/li&gt;
+    &lt;li&gt;*sample value range from -1.0 to 1.0&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Note: In Extempore, we represent the mathematical operation &lt;em&gt;2 * PI&lt;/em&gt; as &lt;code&gt;(* 2 PI)&lt;/code&gt;&lt;/p&gt;
+
+  &lt;p&gt;Note: &lt;code&gt;SRf&lt;/code&gt; refers to the current sampling frequency&lt;/p&gt;
+
+  &lt;p&gt;Note: The form of a &lt;code&gt;let&lt;/code&gt; statement is as follows:
+&lt;code&gt;(let ((var_name_1 var_value_1) ... (var_n val_n)) (&amp;lt;body&amp;gt;))&lt;/code&gt;&lt;/p&gt;
+
+  &lt;p&gt;Note: &lt;code&gt;convert&lt;/code&gt; allows us to make a &lt;code&gt;SAMPLE&lt;/code&gt; typed value from &lt;code&gt;time&lt;/code&gt;.&lt;/p&gt;
+
+  &lt;p&gt;Note: We only can set &lt;code&gt;dsp&lt;/code&gt; function once, but then redefine it as many times as we want.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What about white noise in Extempore?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP
+  (lambda (in time chan data)
+    (* 0.2 (random))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can you explain what happened here?&lt;/p&gt;
+
+&lt;h3 id=&quot;investigate&quot;&gt;Investigate&lt;/h3&gt;
+
+&lt;p&gt;Work in pairs or in small groups, work out the answers to the following questions:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;In what order did you compile (execute) the code in this program?&lt;/li&gt;
+  &lt;li&gt;What happened after you evaluated each “chunk” of Extempore code?&lt;/li&gt;
+  &lt;li&gt;Can you guess what would happen if you compile the code in a different order?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: you can add comments (starting with &lt;strong&gt;;;&lt;/strong&gt;) to the program to make some notes for you to understand the code. The comments are generally ignored by compilers and interpreters.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;modify&quot;&gt;Modify&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Can you play a sound with a frequency of 460.0?&lt;/li&gt;
+  &lt;li&gt;Can you make the sound louder by just changing the code? (don’t use your volume buttons!)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;make&quot;&gt;Make&lt;/h3&gt;
+
+&lt;p&gt;Now, let’s move &lt;code&gt;amplitude&lt;/code&gt;, &lt;code&gt;frequency&lt;/code&gt; and &lt;code&gt;two-pi&lt;/code&gt; outside of lambda to make our &lt;code&gt;dsp&lt;/code&gt; function controllable outside as below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP
+  (let ((amplitude 0.1)
+        (frequency 440.0)
+        (two-pi (* 2.0 my-pi)))
+    (lambda (in time chan dat)
+      (* amplitude
+         (sin (/ (* frequency
+                    two-pi
+                    (convert time)) SRf))))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can you play a random frequency sound every time when you redefine the &lt;code&gt;dsp&lt;/code&gt; function?&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Note:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;You could use &lt;code&gt;(random 440.0 700.0)&lt;/code&gt; to randomly generate a value between 440.0 and 700.0&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Compare to the &lt;code&gt;(random)&lt;/code&gt; in the white noise part above, does the &lt;code&gt;(random)&lt;/code&gt; work differently here? Can you explain how &lt;code&gt;(random)&lt;/code&gt; can be either for “control” (e.g. see the above sine wave part) or for “signal” (e.g. see the white noise part)?&lt;/p&gt;
+
+&lt;h2 id=&quot;tutorial-two&quot;&gt;Tutorial Two&lt;/h2&gt;
+
+&lt;h3 id=&quot;predict&quot;&gt;Predict&lt;/h3&gt;
+
+&lt;p&gt;Work in pairs or small groups, look at the code below and predict what might happen when it runs.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;;; load the instruments file
+(sys:load &quot;libs/core/instruments.xtm&quot;)
+
+;; define an fmsynth using the built-in components
+(make-instrument fmsynth fmsynth)
+
+;; add the instrument to the DSP output sink closure
+(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (fmsynth in time chan dat)))
+
+(dsp:set! dsp)
+
+;; play a note on our fmsynth
+(play-note (now) fmsynth (random 60 80) 80 *second*)
+
+;; make a loop
+(define my-loop
+  (lambda (time)
+    (play-note time fmsynth (random 60 80) 80 *second*)
+    (callback (+ time *second*) 'my-loop (+ time *second*))))
+
+(my-loop (now))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: The dsp function takes as input:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;in: the input audio sample, e.g. from the microphone.&lt;/li&gt;
+    &lt;li&gt;time: an i64 representing the time.&lt;/li&gt;
+    &lt;li&gt;chan: another i64 which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels..&lt;/li&gt;
+    &lt;li&gt;data: this is a pointer to a SAMPLE type (which is float by default), and can be used to pass arbitrary data into the dsp function.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;run&quot;&gt;Run&lt;/h3&gt;
+
+&lt;p&gt;Run the code. Dose it work as predicted?&lt;/p&gt;
+
+&lt;h3 id=&quot;investigate-1&quot;&gt;Investigate&lt;/h3&gt;
+
+&lt;p&gt;Work in pairs or in small groups, work out the answers to the following questions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click &lt;a href=&quot;https://digego.github.io/extempore/scheme-xtlang-interop.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;What is the difference between using &lt;strong&gt;now&lt;/strong&gt; versus using &lt;strong&gt;time&lt;/strong&gt;?  More information click &lt;a href=&quot;https://digego.github.io/extempore/time.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: you can add comments (starting with &lt;code&gt;;;&lt;/code&gt;) to the program to make some notes for you to understand the code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;modify-1&quot;&gt;Modify&lt;/h3&gt;
+
+&lt;p&gt;Work in pairs or in small groups, can you modify the above code and make a loop with random notes lengths and random notes frequencies.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;;; hint
+;; make a loop with random note length and random note
+(define diff-length
+  (lambda (time)
+    (let ((note-length (random '(0.5 1.0 1.5 2.0))))
+      (let ((pitch (random '(60 63 65 68 70 73 75 78 80))))
+        (play-note time fmsynth pitch 80 (* *second* note-length))
+        (callback (+ time (* note-length *second*)) 'diff-length (+ time (* note-length *second*)))))))
+
+(diff-length (now))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;make-1&quot;&gt;Make&lt;/h3&gt;
+
+&lt;p&gt;Can you make a chord (or play different notes at the same time) function by using similar ideas to the previous program?&lt;/p&gt;
+
+&lt;h2 id=&quot;going-further&quot;&gt;Going further&lt;/h2&gt;
+
+&lt;p&gt;As well as the &lt;a href=&quot;https://extemporelang.github.io&quot;&gt;Extempore documentation
+website&lt;/a&gt;, the best place to start messing
+around is with more examples: e.g. the &lt;code&gt;examples/core/fmsynth.xtm&lt;/code&gt; file in your
+Extempore folder.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><summary type="html">These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore.</summary></entry><entry><title type="html">c/c/c studio: what’s already happening</title><link href="https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop/" rel="alternate" type="text/html" title="c/c/c studio: what's already happening" /><published>2019-09-09T00:00:00+10:00</published><updated>2019-09-09T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop/">&lt;p&gt;I’m now a &lt;a href=&quot;/blog/2019/08/30/Im-a-reimagine-fellow/&quot;&gt;Reimagine Fellow&lt;/a&gt; and stuff to do with that program
 (and getting the &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;c/c/c studio&lt;/a&gt; up and running) is
 starting to happen. As I’ve &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;done&lt;/a&gt; &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;so
 far&lt;/a&gt; I’m planning to continue to work on this project “in the open”, i.e. on this
@@ -1282,36 +1563,4 @@ parental leave. Have a great Autumn/Winter, and I’ll see you on the other side
 
 &lt;p&gt;&lt;em&gt;p.s.&lt;/em&gt; I really like the title of this post; inhabiting the liminal space
 between the the plainspoken declaration “I’m on parental leave” and the more
-philosophical (and pretentious) “On &lt;em&gt;blah…&lt;/em&gt;” literary device.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="life" /><summary type="html">I’m now (as of the date of this blog post) on parental leave (thanks, Brian 😊). I’m about to set up an email auto-reply which will guard my work email address until 15 July.</summary></entry><entry><title type="html">A dynamic Reimagine logo</title><link href="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/" rel="alternate" type="text/html" title="A dynamic Reimagine logo" /><published>2019-02-21T10:36:00+11:00</published><updated>2019-02-21T10:36:00+11:00</updated><id>https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo</id><content type="html" xml:base="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/">&lt;p&gt;I keep harping on about the &lt;strong&gt;Reimagine project&lt;/strong&gt; because I’m super pumped
-about what it means for the way we do Engineering Computer Science here at the
-ANU (see &lt;a href=&quot;/assets/pdf/reimagine-fellow-PD.pdf&quot;&gt;here&lt;/a&gt;
-and &lt;a href=&quot;https://cecs.anu.edu.au/reimagine&quot;&gt;here&lt;/a&gt; for more info).&lt;/p&gt;
-
-&lt;p&gt;Reimagine branding is starting to go up around campus, so I decided to put
-together an interactive version of the logo (because giant vinyl prints are
-cool, but they don’t spin on mouse-over).&lt;/p&gt;
-
-&lt;p&gt;It’s made with &lt;a href=&quot;https://clojurescript.org&quot;&gt;clojurescript&lt;/a&gt; using
-&lt;a href=&quot;https://reagent-project.github.io&quot;&gt;Reagent&lt;/a&gt;, and as always on my blog you can
-look at the
-&lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_cljs/reimagine_logo/src/reimagine_logo/core.cljs&quot;&gt;source&lt;/a&gt;
-to see how it works. If you want to really immerse yourself in the thing,
-there’s a fullsreen version &lt;a href=&quot;/widgets/reimagine-logo/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&quot;position:relative;padding-top:100%;margin:0;&quot;&gt;
-  &lt;iframe src=&quot;/widgets/reimagine-logo/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot;&gt;
-  &lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you’re looking to use this logo yourself in some other page, you could use an
-&lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;div style=&quot;position:relative;padding-top:100%;margin:0;&quot;&amp;gt;
-  &amp;lt;iframe
-    src=&quot;https://benswift.me/widgets/reimagine-logo/&quot;
-    frameborder=&quot;0&quot;
-    style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot;
-  &amp;gt;
-  &amp;lt;/iframe&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>Ben Swift</name></author><category term="widgets" /><category term="reimagine" /><category term="web" /><summary type="html">I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info).</summary></entry></feed>
+philosophical (and pretentious) “On &lt;em&gt;blah…&lt;/em&gt;” literary device.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="life" /><summary type="html">I’m now (as of the date of this blog post) on parental leave (thanks, Brian 😊). I’m about to set up an email auto-reply which will guard my work email address until 15 July.</summary></entry></feed>
