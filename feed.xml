@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-18T10:11:41+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Xinyu’s Extempore tutorials</title><link href="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" rel="alternate" type="text/html" title="Xinyu's Extempore tutorials" /><published>2019-09-18T00:00:00+10:00</published><updated>2019-09-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials</id><content type="html" xml:base="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/">&lt;p&gt;These tutorials are part of Xinyu Hou’s research project to create a set of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-18T21:18:21+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Xinyu’s Extempore tutorials</title><link href="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" rel="alternate" type="text/html" title="Xinyu's Extempore tutorials" /><published>2019-09-18T00:00:00+10:00</published><updated>2019-09-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials</id><content type="html" xml:base="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/">&lt;p&gt;These tutorials are part of Xinyu Hou’s research project to create a set of
 &lt;a href=&quot;https://blogs.kcl.ac.uk/cser/2017/09/01/primm-a-structured-approach-to-teaching-programming/&quot;&gt;PRIMM&lt;/a&gt;-style
 tutorials for learning to make sound/music in Extempore.&lt;/p&gt;
 
@@ -123,11 +123,11 @@ sample from input device&lt;/li&gt;
 sample number&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;chan:i64&lt;/strong&gt;
 audio channel&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;dat:SAMPLE&lt;/strong&gt;*
+    &lt;li&gt;&lt;strong&gt;dat:SAMPLE&lt;/strong&gt;
 user data&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;return&amp;gt;&lt;/code&gt;:SAMPLE&lt;/strong&gt;
 sample at given channel and time&lt;/li&gt;
-    &lt;li&gt;*sample value range from -1.0 to 1.0&lt;/li&gt;
+    &lt;li&gt;sample value range from -1.0 to 1.0&lt;/li&gt;
   &lt;/ul&gt;
 
   &lt;p&gt;Note: In Extempore, we represent the mathematical operation &lt;em&gt;2 * PI&lt;/em&gt; as &lt;code&gt;(* 2 PI)&lt;/code&gt;&lt;/p&gt;
