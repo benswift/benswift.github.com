@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-18T21:18:21+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Xinyu’s Extempore tutorials</title><link href="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" rel="alternate" type="text/html" title="Xinyu's Extempore tutorials" /><published>2019-09-18T00:00:00+10:00</published><updated>2019-09-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials</id><content type="html" xml:base="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/">&lt;p&gt;These tutorials are part of Xinyu Hou’s research project to create a set of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-19T11:38:30+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Xinyu’s Extempore tutorials</title><link href="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" rel="alternate" type="text/html" title="Xinyu's Extempore tutorials" /><published>2019-09-18T00:00:00+10:00</published><updated>2019-09-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials</id><content type="html" xml:base="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/">&lt;p&gt;These tutorials are part of Xinyu Hou’s research project to create a set of
 &lt;a href=&quot;https://blogs.kcl.ac.uk/cser/2017/09/01/primm-a-structured-approach-to-teaching-programming/&quot;&gt;PRIMM&lt;/a&gt;-style
 tutorials for learning to make sound/music in Extempore.&lt;/p&gt;
 
@@ -262,8 +262,8 @@ sample at given channel and time&lt;/li&gt;
 ;; make a loop with random note length and random note
 (define diff-length
   (lambda (time)
-    (let ((note-length (random '(0.5 1.0 1.5 2.0))))
-      (let ((pitch (random '(60 63 65 68 70 73 75 78 80))))
+    (let ((note-length (random '(0.5 1.0 1.5 2.0)))
+          (pitch (random '(60 63 65 68 70 73 75 78 80))))
         (play-note time fmsynth pitch 80 (* *second* note-length))
         (callback (+ time (* note-length *second*)) 'diff-length (+ time (* note-length *second*)))))))
 

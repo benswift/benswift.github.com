@@ -370,8 +370,8 @@ sample at given channel and time</li>
 ;; make a loop with random note length and random note
 (define diff-length
   (lambda (time)
-    (let ((note-length (random '(0.5 1.0 1.5 2.0))))
-      (let ((pitch (random '(60 63 65 68 70 73 75 78 80))))
+    (let ((note-length (random '(0.5 1.0 1.5 2.0)))
+          (pitch (random '(60 63 65 68 70 73 75 78 80))))
         (play-note time fmsynth pitch 80 (* *second* note-length))
         (callback (+ time (* note-length *second*)) 'diff-length (+ time (* note-length *second*)))))))
 
@@ -436,8 +436,8 @@ Extempore folder.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>4de7326</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/4de7326/_posts/2019-09-18-xinyus-extempore-tutorials.md">source
+	site revision <code>8157279</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/8157279/_posts/2019-09-18-xinyus-extempore-tutorials.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
