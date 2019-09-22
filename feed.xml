@@ -1,4 +1,288 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-19T11:38:30+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Xinyu’s Extempore tutorials</title><link href="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" rel="alternate" type="text/html" title="Xinyu's Extempore tutorials" /><published>2019-09-18T00:00:00+10:00</published><updated>2019-09-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials</id><content type="html" xml:base="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/">&lt;p&gt;These tutorials are part of Xinyu Hou’s research project to create a set of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-22T14:58:00+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping the livecoding landscape</title><link href="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/" rel="alternate" type="text/html" title="Mapping the livecoding landscape" /><published>2019-09-21T00:00:00+10:00</published><updated>2019-09-21T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape</id><content type="html" xml:base="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/">&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://twitter.com/digego&quot;&gt;Andrew Sorensen&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://yaxu.org&quot;&gt;Alex McLean&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://wertlos.org/~rohrhuber/&quot;&gt;Juilan Rohrhuber&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Institute for Music and Media, RSH Düsseldorf&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://andrewrbrown.net.au/&quot;&gt;Andrew Brown&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Queensland College of Art, Griffith University&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.dur.ac.uk/music/staff/profile/?id=11477&quot;&gt;Nick Collins&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Department of Music, Durham University&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://thormagnusson.github.io/&quot;&gt;Thor Magnusson&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Music Department, University of Sussex&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.gewang.com&quot;&gt;Ge Wang&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;CCRMA, Stanford University&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://sam.aaron.name/&quot;&gt;Sam Aaron&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.cl.cam.ac.uk/~afb21/&quot;&gt;Alan Blackwell&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Cambridge Computer Laboratory&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://fo.am/people/dave/&quot;&gt;Dave Griffiths&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;FoAM Kernow&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://shellyknotts.wordpress.com&quot;&gt;Shelley Knotts&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Department of Music, Durham University&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://twitter.com/joannnne&quot;&gt;Joanne Armitage&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;School of Media and Communication, University of Leeds&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://renickbell.net/&quot;&gt;Renick Bell&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://www.dktr0.net&quot;&gt;David Ogborn&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Department of Communication Studies and Multimedia, McMaster University&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://charlie-roberts.com/&quot;&gt;Charlie Roberts&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Computer Science, Worcester Polytechnic Institute&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://blog.sicchio.com/&quot;&gt;Kate Sicchio&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Integrated Digital Media, New York University&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.cyberpunk.net.ar&quot;&gt;Mauro&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.jackarmitage.com/&quot;&gt;Jack Armitage&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Centre for Digital Music, Queen Mary University of London&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://luisnavarrodelangel.net/&quot;&gt;Luis Navarro Del Angel&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;Department of Communication Studies and Multimedia, McMaster University&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://kindohm.com/&quot;&gt;Mike Hodnick&lt;/a&gt;,
+  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;iclc-committees&quot;&gt;ICLC committees&lt;/h2&gt;
+
+&lt;h3 id=&quot;2020-limerick-ireland&quot;&gt;2020 Limerick, Ireland&lt;/h3&gt;
+
+&lt;p&gt;Programme Chair: Giuseppe Torre&lt;/p&gt;
+
+&lt;p&gt;Performances Chair: Neil O’Connor&lt;/p&gt;
+
+&lt;p&gt;Workshops Chair: Nicholas Ward&lt;/p&gt;
+
+&lt;p&gt;Installations Chair: Nora O Murchú&lt;/p&gt;
+
+&lt;h3 id=&quot;2019-madrid-spain&quot;&gt;2019 Madrid, Spain&lt;/h3&gt;
+
+&lt;p&gt;Chair - Jesús Jara López
+Co-Chair - Lina Bautista
+Co-Chair - Iván Paz
+Performance Chair - Juan A. Romero
+Scientific Chair - Enrike Hurtado
+Installations/Workshops Coordinator - Joaquín Díaz Durán
+Production Adviser - Maite Camacho
+Identity &amp;amp; Web - Adrián Cano/Jana Domínguez
+Assistance - Live Code Mad&lt;/p&gt;
+
+&lt;h3 id=&quot;2017-morelia-méxico&quot;&gt;2017 Morelia, México&lt;/h3&gt;
+
+&lt;h4 id=&quot;core-organising-committee&quot;&gt;Core organising committee&lt;/h4&gt;
+
+&lt;p&gt;Chair - Alexandra Cárdenas
+Co-Chair Ernesto Romero
+Co-Chair Luis Navarro del Angel
+Performance Chair - Jorge Ramírez
+Scientific Chair - Juan Sebastián Lach
+Production Adviser - Minerva Hernández Trejo
+Identity &amp;amp; Web - Karen del Valle, Rodrigo Velasco, Felipe Ignacio
+Networks - Malitzin Cortés&lt;/p&gt;
+
+&lt;h4 id=&quot;steering-committee&quot;&gt;Steering Committee&lt;/h4&gt;
+
+&lt;p&gt;David Ogborn, Chair (McMaster University)
+Alex McLean (Deutsches Museum)
+Shelly Knotts (Durham University)
+Thor Magnusson (University of Sussex)
+Kate Sicchio (New York University)
+Graham Wakefield (York University)&lt;/p&gt;
+
+&lt;h3 id=&quot;2016-mcmaster-university-canada&quot;&gt;2016 McMaster University, Canada&lt;/h3&gt;
+
+&lt;h4 id=&quot;local-organising-committee&quot;&gt;Local organising committee&lt;/h4&gt;
+
+&lt;p&gt;David Ogborn, General chair (McMaster University)
+Graham Wakefield, Co-chair (York University)
+Christina Baade, Scientific programme committee chair (McMaster University)
+Kate Sicchio, Artistic programme committee chair (New York University)
+Tanya Goncalves, Workshops chair (McMaster University)
+Harold Sikkema, Design and videography coordinator (McMaster University)&lt;/p&gt;
+
+&lt;h4 id=&quot;steering-committee-1&quot;&gt;Steering committee&lt;/h4&gt;
+
+&lt;p&gt;Alex McLean, Chair (FoAM Kernow)
+Shelly Knotts (Durham University)
+Thor Magnusson (University of Sussex)
+David Ogborn (McMaster University)
+Kate Sicchio (Parsons the New School for Design)
+Graham Wakefield (York University)&lt;/p&gt;
+
+&lt;h4 id=&quot;programme-committee&quot;&gt;Programme committee&lt;/h4&gt;
+
+&lt;p&gt;Samuel Aaron (University of Cambridge)
+Amy Alexander (University of California, San Diego)
+Juan Alzate Romero (IMWI - HfM Karlsruhe)
+Joanne Armitage (University of Leeds)
+Christina Baade (McMaster University)
+Holger Ballweg (Northumbria University)
+Sara Bannerman (McMaster University)
+Renick Bell
+Yael Benn (Manchester Metropolitan University)
+Daven Bigelow (McMaster University)
+Alan Blackwell (University of Cambridge)
+Patrick Borgeat (University of Music, Karlsruhe)
+Victoria Bradbury (Alfred University / NYSCC / SoAD)
+Karen Burland (University of Leeds)
+Pam Burnard (University of Cambridge)
+Alexandra Cárdenas (University of the Arts, Berlin)
+Jacques Carette (McMaster University)
+Luke Church (University of Cambridge)
+Geoff Cox (Aarhus University)
+Georg Essl (University of Michigan)
+Andrew Fischer (Shutterfly, Inc)
+Paula Gardner (McMaster University)
+Tanya Goncalves (McMaster University)
+Tom Hall (Anglia Ruskin University)
+Mike Hodnick
+Aaron Hutchinson (Hamilton Audio-Visual Node)
+Ian Jarvis (York University)
+Ali Khajehei (McMaster University)
+Chris Kiefer (University of Sussex)
+Shelly Knotts (Durham University)
+Shawn Lawson (Rensselaer Polytechnic Institute)
+Sang Won Lee (University of Michigan)
+Thor Magnusson (University of Sussex)
+Alex McLean (FoAM Kernow)
+James Noble (Victoria University of Wellington)
+Matthew Paine (McMaster University)
+Roly Perera (University of Glasgow, University of Edinburgh)
+Charlie Roberts (Rochester Institute of Technology)
+Julian Rohrhuber (Institute For Music And Media, Robert Schumann Hochschule)
+Adriana Sa (Goldsmiths College, University of London)
+Kate Sicchio (Parsons the New School for Design)
+Harold Sikkema (McMaster University)
+Dagobert Sondervan
+Andrew Sorensen
+Dana Swarbrick (McMaster University)
+Ben Swift (Australian National University)
+Steven Tanimoto (University of Washington)
+Eldad Tsabary (Concordia University)
+Anne Veinberg (Orpheus Institute/Leiden University/Conservatorium Amsterdam)
+Graham Wakefield (York University)
+Joseph Wilk (Poetic Computation)
+Scott Wilson (University of Birmingham)
+Matthew Yee-King (Goldsmiths College, University of London)
+Andrea Zeffiro (McMaster University)&lt;/p&gt;
+
+&lt;h3 id=&quot;2015-university-of-leeds-uk&quot;&gt;2015 University of Leeds, UK&lt;/h3&gt;
+
+&lt;h4 id=&quot;core-organising-committee-1&quot;&gt;Core organising committee&lt;/h4&gt;
+
+&lt;p&gt;Alex McLean, General chair (University of Leeds)
+Thor Magnusson, Co-chair (University of Sussex)
+Kia Ng, Scientific programme committee chair (University of Leeds)
+Shelly Knotts, Artistic programme committee chair (University of Durham)
+Joanne Armitage, Workshop and special events chair (University of Leeds)&lt;/p&gt;
+
+&lt;h4 id=&quot;evening-event-producer&quot;&gt;Evening event producer&lt;/h4&gt;
+
+&lt;p&gt;Ash Sagar&lt;/p&gt;
+
+&lt;h4 id=&quot;external-advisors&quot;&gt;External advisors&lt;/h4&gt;
+
+&lt;p&gt;Juan A. Romero
+Patrick Borgeat&lt;/p&gt;
+
+&lt;h4 id=&quot;programme-committee-1&quot;&gt;Programme committee&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;same as 2016&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;toplap-nodes&quot;&gt;TOPLAP nodes&lt;/h2&gt;
+
+&lt;p&gt;This list is pinched &lt;em&gt;directly&lt;/em&gt; from the &lt;a href=&quot;https://toplap.org/nodes/&quot;&gt;TOPLAP
+website&lt;/a&gt; (as at 21 Sep 2019):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://livecode.nyc/&quot;&gt;Livecode NYC&lt;/a&gt; (USA)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/1683408058575303/&quot;&gt;TOPLAP Node Yorkshire&lt;/a&gt; (UK)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/897471030365142/&quot;&gt;TOPLAP Node North-East&lt;/a&gt; (UK)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/toplap.mx/&quot;&gt;TOPLAP Node México&lt;/a&gt; (MX)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/toplapnodeberlin/1725919034313087/&quot;&gt;Cybernetic Orchestra&lt;/a&gt; (CA)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/toplapnodeberlin/1725919034313087/&quot;&gt;TOPLAP Berlin&lt;/a&gt; (DE)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://noiskate.hotglue.me/?ToplapMedellin&quot;&gt;TOPLAP Medellín&lt;/a&gt; (CO)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/626111581071250/&quot;&gt;TOPLAP Bogotá&lt;/a&gt; (CO)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/583681711997021/&quot;&gt;TOPLAP Quito&lt;/a&gt; (EC)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/362002184270964/&quot;&gt;TOPLAP Lima&lt;/a&gt; (PE)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://livecodear.github.io/&quot;&gt;TOPLAP Buenos Aires&lt;/a&gt; (AR)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://montreal.toplap.org&quot;&gt;Live coding à Montréal&lt;/a&gt; (CA)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://toplapbarcelona.hangar.org/&quot;&gt;TOPLAP Barcelona&lt;/a&gt; (ES)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/toplapjp&quot;&gt;TOPLAP Japan&lt;/a&gt; (JP)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://netherlands-coding-live.github.io&quot;&gt;NL_CL (Netherlands Coding Live) node&lt;/a&gt; (NL)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://w3.impa.br/~vitorgr/livecode/&quot;&gt;Live coding @ IMPA (Rio de Janeiro)&lt;/a&gt; (BR)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/353595622030440/&quot;&gt;TOPLAP Greater Bay Area&lt;/a&gt; (CN)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tidalclub.github.io/sheffield.html&quot;&gt;Tidalclub Sheffield&lt;/a&gt; (UK)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://colectivo-de-livecoders.gitlab.io/&quot;&gt;CLiC (Colectivo de Live Coders)&lt;/a&gt; (AR)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://livecodenewengland.org/&quot;&gt;Livecode New England&lt;/a&gt; (USA)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/1051671308353969/&quot;&gt;TOPLAP Italia&lt;/a&gt; (IT)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/toplapfr/&quot;&gt;TOPLAP France&lt;/a&gt; (FR)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://algorave.fr/&quot;&gt;Algorave France &amp;amp; Belgique&lt;/a&gt; (FR/BE)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meetup.com/Live-Coding-Frankfurt/&quot;&gt;Live Coding Frankfurt&lt;/a&gt; (DE)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://toplapvaldivia.wixsite.com/website&quot;&gt;TOPLAP Valdiva&lt;/a&gt; (CL)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/587715001671363/&quot;&gt;LiveCoding Düsseldorf&lt;/a&gt; (DE)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="research" /><summary type="html">People</summary></entry><entry><title type="html">Xinyu’s Extempore tutorials</title><link href="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/" rel="alternate" type="text/html" title="Xinyu's Extempore tutorials" /><published>2019-09-18T00:00:00+10:00</published><updated>2019-09-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials</id><content type="html" xml:base="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/">&lt;p&gt;These tutorials are part of Xinyu Hou’s research project to create a set of
 &lt;a href=&quot;https://blogs.kcl.ac.uk/cser/2017/09/01/primm-a-structured-approach-to-teaching-programming/&quot;&gt;PRIMM&lt;/a&gt;-style
 tutorials for learning to make sound/music in Extempore.&lt;/p&gt;
 
@@ -1512,55 +1796,4 @@ strings, but then it would be interpreted as an &lt;em&gt;1×n&lt;/em&gt; table,
       &lt;p&gt;if there’s a nicer way, please &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;let me know&lt;/a&gt;! &lt;a href=&quot;#fnref:nicer&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="emacs" /><summary type="html">I’m an Emacs guy, and so if I’ve got some simple tabular data I’d much rather keep it in an org-mode table than have to fire up Excel.</summary></entry><entry><title type="html">On parental leave and auto-reply messages</title><link href="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/" rel="alternate" type="text/html" title="On parental leave and auto-reply messages" /><published>2019-02-26T18:08:00+11:00</published><updated>2019-02-26T18:08:00+11:00</updated><id>https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages</id><content type="html" xml:base="https://benswift.me/blog/2019/02/26/on-parental-leave-and-auto-reply-messages/">&lt;p&gt;I’m now (as of the date of this blog post) on parental leave (&lt;a href=&quot;http://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave&quot;&gt;thanks,
-Brian&lt;/a&gt;
-😊). I’m about to set up an email auto-reply which will guard my work email
-address until 15 July.&lt;/p&gt;
-
-&lt;picture&gt;&lt;img alt=&quot;baby dogs - puppies, in fact&quot; src=&quot;/assets/images/posts/nathalie-spehner-1338356-unsplash-101dcbae4256574fb70b4f5f00843cfc5a47e6b83c6a51ffb475136ed422d33e.jpg&quot; /&gt;&lt;/picture&gt;
-
-&lt;p&gt;&lt;em&gt;Note: the baby I am taking care of is a human baby, but the above photo
-contains baby dogs.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Here’s the deal&lt;/strong&gt;: I’m away for a long time, and when I get back in July I’m
-going to delete all the unread emails in my inbox. Sorry if that seems harsh,
-but it’s the only way to deal with this situation and have any chance of
-enjoying one’s return to work.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you’ve got important information which needs to be actioned &lt;em&gt;before&lt;/em&gt; July
-15, then you need to make alternative arrangements. I wish you all the best,
-but I can’t help you out with making it happen.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you’ve got important information which has an expiry date &lt;em&gt;after&lt;/em&gt; July 15,
-then put a note in your calendar to re-email me after that date (because your
-email still won’t survive the purge, sorry).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you need to get in touch urgently, then you probably have my personal email
-or phone number.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you want to organise some sort of hangs/see baby pictures, then try me on
-my personal email or phone number. I will be pushing a pram around campus at
-times, and I’d be keen to catch up.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;But doesn’t that mean you’ll (1) miss a bunch of fantastic opportunities and
-(2) let a bunch of folks down?&lt;/em&gt; Well, maybe. On the first point, I already feel
-overwhelmed (at times) by the amount of stuff on my to-do list, so any attrition
-which occurs is actually kindof appealing. And on the second point I’ve tried
-really hard this last month to hand various things over to capable folks, so I’m
-hoping that if we are/were working on something then we’ve made a contingency
-plan (and that this hasn’t caught you by surprise).&lt;/p&gt;
-
-&lt;p&gt;Anyway, I’m gonna go be a Dad for a while. I’ll still read the odd book, and
-maybe even make some more music, but this isn’t a research fellowship—it’s
-parental leave. Have a great Autumn/Winter, and I’ll see you on the other side.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;p.s.&lt;/em&gt; I really like the title of this post; inhabiting the liminal space
-between the the plainspoken declaration “I’m on parental leave” and the more
-philosophical (and pretentious) “On &lt;em&gt;blah…&lt;/em&gt;” literary device.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="life" /><summary type="html">I’m now (as of the date of this blog post) on parental leave (thanks, Brian 😊). I’m about to set up an email auto-reply which will guard my work email address until 15 July.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="emacs" /><summary type="html">I’m an Emacs guy, and so if I’ve got some simple tabular data I’d much rather keep it in an org-mode table than have to fire up Excel.</summary></entry></feed>
