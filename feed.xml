@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-30T20:00:55+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping the livecoding landscape</title><link href="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/" rel="alternate" type="text/html" title="Mapping the livecoding landscape" /><published>2019-09-21T00:00:00+10:00</published><updated>2019-09-21T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape</id><content type="html" xml:base="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/">&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-09-30T20:56:32+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping the livecoding landscape</title><link href="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/" rel="alternate" type="text/html" title="Mapping the livecoding landscape" /><published>2019-09-21T00:00:00+10:00</published><updated>2019-09-21T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape</id><content type="html" xml:base="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/">&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
 
 &lt;ul&gt;
 
@@ -338,7 +338,7 @@ directory, and start extempore (type &lt;code&gt;./extempore&lt;/code&gt; and hi
   &lt;li&gt;
     &lt;p&gt;Connect to the Extempore process: you can do this in VSCode through the
 “&lt;strong&gt;command palette&lt;/strong&gt;”, which can be brought up with &lt;strong&gt;ctrl+Shift+P&lt;/strong&gt; on
-Windows/Linux or &lt;strong&gt;cmd+Shift+P&lt;/strong&gt; on macOS. &lt;picture&gt;&lt;img alt=&quot;the command palette&quot; src=&quot;/assets/images/xinyu-tutorials/TO3-e8ae28d3af9a3d268b4e3f8768078b914460e9996b5e1d683073ba76b55e8688.png&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
+Windows/Linux or &lt;strong&gt;cmd+Shift+P&lt;/strong&gt; on macOS. &lt;picture&gt;&lt;img alt=&quot;the command palette&quot; src=&quot;/assets/images/xinyu-tutorials/TO3-c691ed117a9766bbbdfb7771d6c624b87ab5e38ea69dc265cb58c02d6b47c9db.png&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Type &lt;strong&gt;Extempore Connect&lt;/strong&gt; in the opening command palette, the default host
@@ -351,7 +351,7 @@ evaluate and hit &lt;strong&gt;cmd+enter&lt;/strong&gt; on macOS or &lt;strong&g
 
 &lt;p&gt;What you might see in the terminal window when you evaluate extempore code:&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;Extempore log view&quot; src=&quot;/assets/images/xinyu-tutorials/TO4-5d8005c9a16bdd53697362f037afee125bed89d3c0723d14f949ae25d0e5b694.png&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;Extempore log view&quot; src=&quot;/assets/images/xinyu-tutorials/TO4-c5a2cafc66c5db460147a99b52c9cbfe7a84c0914060501029068f10d0e93a62.png&quot; /&gt;&lt;/picture&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Note: you can use &lt;strong&gt;ctrl+c&lt;/strong&gt; in the terminal where extempore is running to kill the extempore process whenever you want.&lt;/p&gt;
@@ -372,7 +372,7 @@ evaluate and hit &lt;strong&gt;cmd+enter&lt;/strong&gt; on macOS or &lt;strong&g
 
 &lt;p&gt;Run the code above. Does the compiler print anything in the log? What does the printed message mean?&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;my-pi log view&quot; src=&quot;/assets/images/xinyu-tutorials/my-pi-98c1932383133538c35fc7d0f84a4d6a5cf3f1a679b425f985d0c909653bb4cb.png&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;my-pi log view&quot; src=&quot;/assets/images/xinyu-tutorials/my-pi-1cd1e300d8234508cacbbc4b00a256bb0454885084361754135f05ad4dca4e67.png&quot; /&gt;&lt;/picture&gt;
 
 &lt;p&gt;Now, it’s time to produce a sound in Extempore!&lt;/p&gt;
 
