@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#be2edd">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
+
+<!-- fontawesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+<!-- anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<script>
+ anchors.options = {
+   visible: "touch",
+   icon: "#"
+ };
+ document.addEventListener("DOMContentLoaded", function(event) {
+   anchors.add("article > h2, article > h3");
+ });
+</script>
+
+
+<!-- highlight.js -->
+<script src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark-470b7658ef8aee2f2bb86babcc8a359491361d94113130f47878659a07f47eac.css">
+
+<script>
+ hljs.initHighlightingOnLoad();
+</script>
+
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>What can livecoding teach us about cyber-physical systems? | benswift.me</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="What can livecoding teach us about cyber-physical systems?" />
+<meta name="author" content="Ben Swift" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What can livecoding teach us about cyber-physical systems?Dr. Ben Swift 01 Oct &#39;19" />
+<meta property="og:description" content="What can livecoding teach us about cyber-physical systems?Dr. Ben Swift 01 Oct &#39;19" />
+<link rel="canonical" href="https://benswift.me/talks/3ai-lecture-workshop/" />
+<meta property="og:url" content="https://benswift.me/talks/3ai-lecture-workshop/" />
+<meta property="og:site_name" content="benswift.me" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-01T00:00:00+10:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="What can livecoding teach us about cyber-physical systems?" />
+<meta name="twitter:site" content="@benswift" />
+<meta name="twitter:creator" content="@Ben Swift" />
+<script type="application/ld+json">
+{"headline":"What can livecoding teach us about cyber-physical systems?","dateModified":"2019-10-01T00:00:00+10:00","datePublished":"2019-10-01T00:00:00+10:00","url":"https://benswift.me/talks/3ai-lecture-workshop/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/3ai-lecture-workshop/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"What can livecoding teach us about cyber-physical systems?Dr. Ben Swift 01 Oct &#39;19","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+	<link rel="stylesheet" type="text/css" href="/assets/reveal.js-3.8.0/css/reveal-a96faf3406041080d95cef9a191906e7d810ab1c00423bdc1d447fe60b52abf0.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ben-reveal-theme-69884d901673cd2f6a95b5ed6262e0666d078f9f37b063d0d76c7bf3f3d48b5d.css">
+  </head>
+  <body>
+	<div class="reveal"><div class="slides">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- potato -->
+
+
+<!-- car (w/o driver) -->
+
+
+<!-- car (w driver) -->
+
+
+<!-- aibo -->
+
+
+<!-- robot soccer -->
+
+
+<!-- <div class="image-credit" style="">
+
+  
+    
+
+  <p class="image-credit-artist">📸 AFP/Getty Images</p>
+
+	
+  
+    
+
+  <p class="image-credit-link"><a href="https://slate.com/technology/2017/08/robot-soccer-tournament-displays-robots-mediocre-soccer-skills.html">🔗</a></p>
+
+	
+  
+
+</div>
+ -->
+
+<!-- MCG -->
+
+
+<!-- user with smartphone -->
+
+
+<!-- factory worker -->
+
+
+<!-- x-ray viewing -->
+
+
+<!-- genevieve -->
+
+
+<!-- city -->
+
+
+<!-- school classroom -->
+
+
+<!-- parlie house -->
+
+
+<!-- nasa -->
+
+
+<!-- Ben & Kieran at CECS welcome party -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TODO maybe an A-A-A triangle? -->
+
+
+
+
+
+
+
+
+
+<section id="title" class="center">
+  <h1 class="talk-title">What can livecoding teach us about cyber-physical systems?</h1>
+<p class="talk-name"><a href="https://benswift.me">Dr. Ben Swift</a></p>
+  <p class="talk-date">01 Oct '19</p>
+  <p><a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <i class="fab fa-creative-commons"></i>
+  <i class="fab fa-creative-commons-by"></i>
+  <i class="fab fa-creative-commons-nc"></i>
+  <i class="fab fa-creative-commons-sa"></i>
+</a>
+</p>
+
+  <nav class="talk-title-navigation">
+	<a href="https://twitter.com/benswift"><i title="benswift on twitter" class="fab fa-twitter"></i></a>
+	<a href="https://github.com/benswift"><i title="benswift on GitHub" class="fab fa-github"></i></a>
+	<a href="https://vimeo.com/benswift"><i title="benswift on Vimeo" class="fab fa-vimeo"></i></a>
+	<a href="mailto:ben@benswift.me"><i title="send Ben an email" class="fas fa-envelope"></i></a>
+  </nav>
+</section><section id="outline"><h2>outline</h2>
+<p><a href="#part-1">part un</a>: Ben live @ 3Ai</p>
+<p><a href="#part-2">part deux</a>: what makes a CPS?</p>
+<p><a href="#part-3">part trois</a>: what can livecoding teach us about CPS?</p></section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash-ea112cd63e2567f09043d70e94dbaa7386b5e2af2ec71f6d6469c34330c40702.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section id="part-1" data-background-image="/assets/images/livecoding/ben-qic-1-e896868acb54e43d9f5d8cd35d1cf48e94dad3616bb23158ee9dfd4b6db7e254.jpg" data-background-size="cover" data-background-position="center">
+  
+  <h2>part un: Ben live @ 3Ai</h2>
+  
+</section><section id="part-2" data-background-image="/assets/images/talks/3ai-lecture-workshop/Hot-Shots-Part-Deux-7b2dbf1e79f8f9a9e1cd57466400259f7892c81e044e9e1b7fa6a9309a8f2dee.jpg" data-background-size="cover" data-background-position="center">
+  
+  <h2>part deux: what makes a CPS?</h2>
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/genevieve-bell-de18872435e1b9b048210add48621042cb30439a1b173248f1636beebd05eb79.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section><blockquote>
+  <p>Advanced robotics, smart grids, autonomous cars, machine learning.
+<strong>Cyber-physical systems</strong> are literally all around us—systems that, as they
+converge, will have an unprecedented economic, social and cultural impact on
+humanity. - <em>from the <a href="https://3ainstitute.cecs.anu.edu.au">3Ai
+homepage</a></em></p>
+</blockquote></section><section data-background-color="#222" data-background-image="/assets/images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait-23902fc09d5e27ca3d813f9ff419c898e27adf060f694fea7a411258f818af9d.jpg" data-background-size="contain" data-background-position="center">
+  
+  <h2>definition</h2>
+  
+<p>what is a cyber-physical system?</p></section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash-ea112cd63e2567f09043d70e94dbaa7386b5e2af2ec71f6d6469c34330c40702.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/lars-blankers-B0s3Xndk6tw-unsplash-fd8838f493edaec2083d501158e3e7f1d7f3832362ee453ead07f1a192b03117.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/ant-miner-NvFEisZmVsQ-unsplash-8ed6f929694b5cf5e3438ec2e9153b6eb564dbf3d1b9d902f7b20b97c87f0051.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/patricia-prudente-oPZf7BegqSU-unsplash-1e757cb4f3516c816fa02525ba75ea9ab64ee73e49ceae8ca39ad21ac90632cb.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/brett-jordan-U32jeOdkgfA-unsplash-624dc3296887f2975181c698c1922ffee51bdc51cc77429349ef8ca88eaca6a3.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/robot-soccer-8ff99c524256859918b9586892bbc4bc47c1a856ea93b84d80c947a0aa789696.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/daniel-anthony-UxektwAqMVw-unsplash-f2dcd6be467ba0fbcc465a754648ca84c08654f412b07d377af46f3bb2900f35.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/oleg-magni-LGNV-4-l8LA-unsplash-1371d8414449c119c9c15e3c207660a89f4ca560d76064e23e12a0ce4e8aa775.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/kat-maryschuk-5BFvAPQTi1U-unsplash-7f216ee458e0c9b625860f49b488b7f06b77cbdcea660b05932dd818de3aed11.jpg" data-background-size="cover" data-background-position="bottom">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/linkedin-sales-navigator-_h5CPTwuVHM-unsplash-d4991c0fa28144c3cd13c56f2dffc674f00670917f5b344b355204d2059a3483.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/genevieve-bell-de18872435e1b9b048210add48621042cb30439a1b173248f1636beebd05eb79.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/pawel-nolbert-4u2U8EO9OzY-unsplash-0a517f918d4bc0cedc91748783a0859d325489334bef8eef49ab643e0095ddd3.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/shubham-sharan-Z-fq3wBVfMU-unsplash-874aa5ebcff89f44f805f63fa00b1528c71608aecb5e51d7c9a35cf66413d166.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/social-estate-P-t9yap_20M-unsplash-15ffe44ba9ea72cacc26598eb0d289c55b9df1be2e0b4299004a2a0f59906266.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/nasa-Q1p7bh3SHj8-unsplash-db3d740707b5fdf86cb0b2f27f4697b567ab54ddc7d164118d184b6a464b8a3a.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section data-background-image="/assets/images/livecoding/ben-kieran-cecs-welcome-party-2019-18d43d0df2e8c2bc140a77ed0221a995f33c6d6a37ce112a4022d397a27c83c7.jpg" data-background-size="cover" data-background-position="center">
+  
+</section><section class="impact center" data-background-color="#262626"><p>what <strong>questions</strong> do you ask?</p></section><section class="impact center" data-background-color="#262626"><p>what’s your favourite <strong>boundary</strong> case?</p></section><section id="part-3" data-background-image="/assets/images/talks/3ai-lecture-workshop/andy-sorensen-flatcap-eaebf7483a74e0fb20cf21a084618a0fbdf60212d378cb8fd870e7383c5ff551.jpg" data-background-size="cover" data-background-position="center">
+  
+  <h2>part trois: what can livecoding teach us about CPS?</h2>
+  
+<p><em>Extempore: The design, implementation and application of a cyber-physical
+programming language</em> (<a href="https://openresearch-repository.anu.edu.au/handle/1885/144603">Andrew Sorensen’s PhD
+thesis</a>)</p></section><section><blockquote>
+  <p>Advanced robotics, smart grids, autonomous cars, machine learning.
+Cyber-physical systems are literally all around us—systems that, as they
+converge, will have an unprecedented economic, social and <strong>cultural</strong> impact
+on humanity. - <em>from the <a href="https://3ainstitute.cecs.anu.edu.au">3Ai
+homepage</a></em></p>
+</blockquote></section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/3ai-team-birthday-4282e77ccc41c02f74d00aa460bebff229a979f44389cfc70f49480062469305.jpg" data-background-size="cover" data-background-position="top" style="font-size:1.5em;">
+  
+<p class="fragment">autonomy</p>
+<p class="fragment">agency</p>
+<p class="fragment">potatoes</p></section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/3ai-team-birthday-4282e77ccc41c02f74d00aa460bebff229a979f44389cfc70f49480062469305.jpg" data-background-size="cover" data-background-position="top" style="font-size:1.5em;">
+  
+<p>autonomy</p>
+<p>agency</p>
+<p><del>potatoes</del></p>
+<p>assurance</p></section><section id="autonomy"><h2>autonomy</h2>
+<blockquote>
+  <p>How do we design for an autonomous world?</p>
+
+  <p>This is both a technical set of questions and a philosophical and public
+policy set of questions. Just because we can automate something, should we?
+When we translate human processes into machine processes, what do we need to
+consider?</p>
+</blockquote></section><section id="agency"><h2>agency</h2>
+<blockquote>
+  <p>How much agency do we give technology?</p>
+
+  <p>As the ability for machines to act independently of human oversight increases
+with each new tech breakthrough, conversations need to be had about how much
+agency we give to intelligent cyber-physical systems. Are we comfortable with
+machines responding to their environment, and interacting with other machines,
+without a human to check and validate decisions?</p>
+</blockquote></section><section id="assurance"><h2>assurance</h2>
+<blockquote>
+  <p>How do we preserve our safety and values?</p>
+
+  <p>Current technological progress calls for new regulatory tools and processes,
+as algorithms designed in different places are introduced into societies
+around the world. The virtual nature of these new goods and services has an
+impact on our ability to regulate their design and use in a way that aligns
+with core cultural values.</p>
+</blockquote></section><section class="impact center" data-background-color="#262626"><p>there are some “I”s as well as the “A”s</p></section><section id="indicators"><h2>indicators</h2>
+<blockquote>
+  <p>How do we measure performance and success?</p>
+
+  <p>Technical systems have typically been measured on their efficiency. However,
+when systems start to learn and change their behaviour over time, the objective
+of efficiency may begin to clash with ideals that have previously been
+implicitly or tacitly inserted into the process by the humans in the loop. How
+do we start to conceptualise building for sustainability, for beauty, for
+values?</p>
+</blockquote></section><section id="interfaces"><h2>interfaces</h2>
+<blockquote>
+  <p>How will technologies, systems and humans work together?</p>
+
+  <p>In previous decades, we interfaced with computational systems through a screen
+and a keyboard. This paradigm is already being disrupted as ‘smart’ objects
+enter our lives. What will it mean when AI-enabled systems are all around us,
+sensing and responding to us? How to do protect our privacy? What happens to
+all that data?</p>
+</blockquote></section><section id="intent"><h2>intent</h2>
+<blockquote>
+  <p>Why has the system been constructed? by whom? and for what purposes?</p>
+
+  <p>It is sometimes tempting to think of a single, monolithic AI. However, AIs
+will be built for different purposes and with very different intentionality,
+and inside different larger systems. Making sense of, and mapping, that
+broader intentionality is central to the emergent new applied science.</p>
+</blockquote></section><section id="open-questions"><h2>open questions</h2>
+<ul>
+  <li>
+    <p>if/when is a (textual) code interface the best option for balancing
+agency/autonomy/assurance… in livecoding? and beyond?</p>
+  </li>
+  <li>
+    <p>what feedback can we provide to help the livecoder stay “on top” of the
+autonomous processes? is that even desirable?</p>
+  </li>
+  <li>
+    <p>how does the audience fit in? do they matter? what’s <em>their</em> agency?</p>
+  </li>
+  <li>
+    <p>when do static analyses help, and when do they get in the way? what about “AI”
+helpers?</p>
+  </li>
+</ul></section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/Defense.gov_News_Photo_020221-D-9880W-080-92785084a0d2734ca305f225bb829dbaeb18b97af0e5fcb63ae4b404ba0ae433.jpg" data-background-size="cover" data-background-position="center">
+  
+<div class="image-credit" style="">
+
+  
+    
+
+  <p class="image-credit-artist">📸 R. D. Ward, US D.O.D.</p>
+
+	
+  
+    
+
+  <p class="image-credit-licence">public domain</p>
+
+	
+  
+
+</div></section><section id="whats-next"><h2>what’s next?</h2>
+<p>these questions keep me up at night</p>
+<p>if you’d like to help (or just to hang out with the c/c/c group more generally)
+then let me know 😊</p></section><section class="center" data-background-image="/assets/images/talks/all/camylla-battani-AoqgGAqrLpU-unsplash-45677c456fec3a12a162f5067eebeb1fee1f2c85c5727dfa1d5bebec9faa4e5f.jpg">
+
+  <style>
+   #contact-details {
+	 font-size: 2.5vw;
+	 font-family: monospace;
+	 list-style: none;
+	 display: table;
+	 margin: 50vh auto 0 0;
+   }
+
+   #contact-details li {
+	 background: rgba(255, 255, 255, 0.75);
+	 padding: 0.2em 0.4em;
+   }
+  </style>
+
+  <ul id="contact-details">
+
+	<li style="background: rgba(255, 255, 255, 0.75); margin-bottom: 0.5em;"><a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a></li>
+	<li><a href="https://benswift.me">https://benswift.me</a></li>
+
+  </ul>
+
+</section>
+</div></div>
+
+	<script src="/assets/reveal.js-3.8.0/lib/js/head.min.js"></script>
+	<script src="/assets/reveal.js-3.8.0/js/reveal.js"></script>
+	<script>
+	 // this is the reveal config
+	 Reveal.initialize({
+	   center: false,
+	   controls: false,
+	   transition: 'fade',
+	   width: '100%',
+	   height: '100%',
+	   margin: 0,
+	   history: true,
+	   slideNumber: true,
+
+	   math: {
+		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
+		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	   },
+
+       dependencies: [
+         { src: '/assets/reveal.js-3.8.0/plugin/chalkboard/chalkboard.js' }
+       ],
+
+       keyboard: {
+         67: function() { RevealChalkboard.toggleNotesCanvas() }, // toggle notes canvas when 'c' is pressed
+         66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+         8: function() { RevealChalkboard.reset(true) } // clear chalkboard when 'DEL' is pressed
+	   },
+
+	   chalkboard: {
+		 toggleChalkboardButton: false,
+		 toggleNotesButton: false,
+		 color: [ '#be2edd', 'rgba(255,255,255,0.5)' ]
+	   }
+	 });
+	</script>
+  </body>
+</html>
