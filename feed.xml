@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-01T11:37:58+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Mapping the livecoding landscape</title><link href="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/" rel="alternate" type="text/html" title="Mapping the livecoding landscape" /><published>2019-09-21T00:00:00+10:00</published><updated>2019-09-21T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape</id><content type="html" xml:base="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/">&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-01T20:01:05+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Laptop Ensemble in the Canberra Times</title><link href="https://benswift.me/blog/2019/10/01/laptop-ensemble-in-the-canberra-times/" rel="alternate" type="text/html" title="Laptop Ensemble in the Canberra Times" /><published>2019-10-01T00:00:00+10:00</published><updated>2019-10-01T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/10/01/laptop-ensemble-in-the-canberra-times</id><content type="html" xml:base="https://benswift.me/blog/2019/10/01/laptop-ensemble-in-the-canberra-times/">&lt;p&gt;The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: &lt;a href=&quot;https://www.canberratimes.com.au/story/6412297/anu-school-of-musics-new-orchestra-is-far-from-conventional/&quot;&gt;ANU
+School of Music’s new orchestra is far from
+conventional&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There’s some really encouraging stuff in there from ANU School of Music head
+&lt;a href=&quot;https://music.cass.anu.edu.au/people/associate-professor-kim-cunio&quot;&gt;Kim Cunio&lt;/a&gt;
+about the role of code in music-making:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“We want to re-imagine what an orchestra is,” he says. “My vision is to train
+musicians that are part composers, part mathematicians, and part computer
+hackers.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m so pumped—this is exactly what I’ve been trying to do for several years,
+and having Kim on board as an ally is very encouraging. Along with the CECS
+Reimagine agenda (including their support of my &lt;a href=&quot;/blog/2019/08/30/Im-a-reimagine-fellow/&quot;&gt;fellowship&lt;/a&gt; to put together the &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;c/c/c
+studio&lt;/a&gt;) and the great things
+happening &lt;a href=&quot;https://soad.cass.anu.edu.au&quot;&gt;elsewhere&lt;/a&gt; in
+&lt;a href=&quot;https://cdhr.cass.anu.edu.au&quot;&gt;CASS&lt;/a&gt;, there’s good vibes in the air around
+cross-disiplinary code, creativity and culture at the ANU.&lt;/p&gt;
+
+&lt;p&gt;The article ends by saying:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cunio hopes experiments with science, maths and technology will also open
+“back doors” into music for a new breed of student.&lt;/p&gt;
+
+  &lt;p&gt;“Sometimes the best musicians are lost to music.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I suspect that sometimes the best computer scientists are lost to CS as well.
+Hopefully programs like the LENS can change that.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="reimagine" /><category term="lens" /><summary type="html">The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: ANU School of Music’s new orchestra is far from conventional.</summary></entry><entry><title type="html">Mapping the livecoding landscape</title><link href="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/" rel="alternate" type="text/html" title="Mapping the livecoding landscape" /><published>2019-09-21T00:00:00+10:00</published><updated>2019-09-21T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape</id><content type="html" xml:base="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/">&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
 
 &lt;ul&gt;
 
@@ -1696,103 +1728,4 @@ at the ANU. &lt;a href=&quot;#fnref:discovering-engineering&quot; class=&quot;r
       &lt;p&gt;is &lt;em&gt;honoraria&lt;/em&gt; the plural of honorarium? &lt;a href=&quot;#fnref:plural&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html">Note to readers: this is what I intend to do if awarded a Reimagine Fellowship. If you’re just here for the short version, see the elevator pitch. You could also read some of the background to this proposal or check out the main CECS Reimagine page for more general information about the Reimagine project.</summary></entry><entry><title type="html">Mapping over table rows in org-mode</title><link href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" rel="alternate" type="text/html" title="Mapping over table rows in org-mode" /><published>2019-03-09T19:53:00+11:00</published><updated>2019-03-09T19:53:00+11:00</updated><id>https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode</id><content type="html" xml:base="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/">&lt;p&gt;I’m an &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; guy, and so if I’ve got some
-simple tabular data I’d &lt;em&gt;much&lt;/em&gt; rather keep it in an
-&lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; table than have to fire up Excel.&lt;/p&gt;
-
-&lt;p&gt;Here’s an example:&lt;/p&gt;
-
-&lt;!-- note: the language specifiers for the code blocks in this post are wrong, but they're the &quot;best fit&quot; --&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;#+NAME: pap-table
-| first name  | last name | yearly-income |
-|-------------|-----------|---------------|
-| Mr          | Bennett   |          2000 |
-| Fitzwilliam | Darcy     |         10000 |
-| Charles     | Bingley   |          5000 |
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If the prospect of having to keep all those &lt;code&gt;|&lt;/code&gt; characters manually aligned is
-freaking you out, don’t worry—&lt;code&gt;orgtbl-mode&lt;/code&gt; does it all for you automatically.&lt;/p&gt;
-
-&lt;p&gt;Now, I often want to get my functional programming on and apply a function to
-all the rows of the table. Org-mode does have some special syntax with bunch of
-cool features for doing arithmetic on the cells (just like Excel formulas) but
-I’m usually happier just writing regular elisp to get the job done.&lt;/p&gt;
-
-&lt;p&gt;The nicest&lt;sup id=&quot;fnref:nicer&quot;&gt;&lt;a href=&quot;#fn:nicer&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; way I’ve found to do this is to give the table a &lt;strong&gt;name&lt;/strong&gt; (in
-the example above the table name is &lt;code&gt;pap-table&lt;/code&gt;—can you guess why?). Then, you
-can tell an elisp &lt;a href=&quot;https://orgmode.org/manual/Structure-of-code-blocks.html&quot;&gt;code
-block&lt;/a&gt; about the data
-in that table like so (note the &lt;code&gt;:var table=pap-table&lt;/code&gt; at the start):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-scheme&quot;&gt;#+BEGIN_SRC emacs-lisp :var table=pap-table
-  (-map
-   (lambda (row)
-     (cl-destructuring-bind (first last income) row
-       (list
-        (format &quot;Mr. %s is a man of %s fortune; %s a year.&quot;
-                last
-                (if (&amp;lt; income 2500) &quot;small&quot; &quot;large&quot;)
-                income))))
-   table)
-#+END_SRC
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, when you evaluate the code block with &lt;code&gt;C-c C-c&lt;/code&gt; (or just &lt;code&gt;, ,&lt;/code&gt; in
-Spacemacs) it’ll return the “result”:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;#+RESULTS:
-| Mr. Bennett is a man of small fortune; 2000 a year. |
-| Mr. Darcy is a man of large fortune; 10000 a year.  |
-| Mr. Bingley is a man of large fortune; 5000 a year. |
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is really handy, as you can imagine. I use it for all sorts of things,
-including sending “mail merge” emails with template values (since I also use
-&lt;a href=&quot;https://www.djcbsoftware.nl/code/mu/mu4e.html&quot;&gt;Emacs as my mail
-client&lt;/a&gt;—sending an email is
-just an elisp function call away).&lt;/p&gt;
-
-&lt;h2 id=&quot;caveats&quot;&gt;Caveats&lt;/h2&gt;
-
-&lt;p&gt;There are a few “tricks” in the above process which took me a while to figure
-out, so hopefully by listing them here I can save others a bunch of time &amp;amp;
-hassle.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;The elisp doesn’t actually know about the column names from the table—I had
-to re-bind them in the code block using &lt;code&gt;cl-destructuring-bind&lt;/code&gt;. Make sure you
-change the bindings if you change the names/order of the columns in the table!&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Org-mode tables don’t have a way of specifying the column “type”, so while
-it’ll try it’s best with the basics (e.g. detecting strings vs numbers)
-sometimes it gets confused. It’s probably worth putting an explicit e.g.
-&lt;code&gt;string-to-number&lt;/code&gt; in if you want to be sure.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the example above my elisp block returns a value (a list, since I’m using
-&lt;code&gt;-map&lt;/code&gt; from the excellent &lt;a href=&quot;https://github.com/magnars/dash.el&quot;&gt;&lt;code&gt;dash.el&lt;/code&gt;
-library&lt;/a&gt;) and that’s why the results get
-nicely formatted in the results block. If your code is side-effectful but
-doesn’t return a value then you see the results in that place, you’ll have to
-look elsewhere (e.g. if you call &lt;code&gt;message&lt;/code&gt; you’ll need to look in the
-&lt;code&gt;*Messages*&lt;/code&gt; buffer as usual).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Further to the previous caveat, you’ll notice that I’m actually wrapping the
-result of the inner &lt;code&gt;lambda&lt;/code&gt; in another &lt;code&gt;list&lt;/code&gt;, so the output of the code
-block is actually a list of lists. I could have just returned a list of the
-strings, but then it would be interpreted as an &lt;em&gt;1×n&lt;/em&gt; table, rather than the
-(nicer looking on the page) &lt;em&gt;n×1&lt;/em&gt; table shown above.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:nicer&quot;&gt;
-      &lt;p&gt;if there’s a nicer way, please &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;let me know&lt;/a&gt;! &lt;a href=&quot;#fnref:nicer&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="emacs" /><summary type="html">I’m an Emacs guy, and so if I’ve got some simple tabular data I’d much rather keep it in an org-mode table than have to fire up Excel.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="teaching" /><category term="research" /><summary type="html">Note to readers: this is what I intend to do if awarded a Reimagine Fellowship. If you’re just here for the short version, see the elevator pitch. You could also read some of the background to this proposal or check out the main CECS Reimagine page for more general information about the Reimagine project.</summary></entry></feed>
