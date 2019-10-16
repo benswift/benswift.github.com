@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-16T12:07:54+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Sound file I/O in Extempore with libsndfile</title><link href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" rel="alternate" type="text/html" title="Sound file I/O in Extempore with libsndfile" /><published>2019-10-15T00:00:00+11:00</published><updated>2019-10-15T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile</id><content type="html" xml:base="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/">&lt;p&gt;&lt;a href=&quot;https://github.com/erikd/libsndfile/&quot;&gt;libsndfile&lt;/a&gt; is “a C library for reading
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-16T12:14:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Sound file I/O in Extempore with libsndfile</title><link href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" rel="alternate" type="text/html" title="Sound file I/O in Extempore with libsndfile" /><published>2019-10-15T00:00:00+11:00</published><updated>2019-10-15T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile</id><content type="html" xml:base="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/">&lt;p&gt;&lt;a href=&quot;https://github.com/erikd/libsndfile/&quot;&gt;libsndfile&lt;/a&gt; is “a C library for reading
 and writing files containing sampled audio data”, and it’s pretty great. Here’s
 a quick crash-course on using &lt;a href=&quot;https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm&quot;&gt;Extempore’s libsndfile
 bindings&lt;/a&gt;
@@ -77,7 +77,7 @@ number of frames&lt;/p&gt;
       ;; return the number of frames
       (tref info 0))))
 
-;; test it out using a wave file from the Extempore assets directory 
+;; test it out using a wave file from the Extempore assets directory
 ;; (it should return the number 288366)
 (get_number_of_frames &quot;assets/samples/piano/60.wav&quot;)
 &lt;/code&gt;&lt;/pre&gt;
@@ -232,11 +232,11 @@ docs—there are lots of options.&lt;/p&gt;
 comments, then get in touch on the &lt;a href=&quot;mailto:extemporelang@googlegroups.com&quot;&gt;Extempore mailing
 list&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;[c-xtlang-interop]: 
+&lt;p&gt;[c-xtlang-interop]:
     There’s more detail on how this works in the
-	&lt;a href=&quot;https://extemporelang.github.io/docs/reference/c-xtlang-interop/&quot;&gt;Extempore
+    &lt;a href=&quot;https://extemporelang.github.io/docs/reference/c-xtlang-interop/&quot;&gt;Extempore
     docs&lt;/a&gt;
-	if you’re interested.&lt;/p&gt;
+    if you’re interested.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:pm-all&quot;&gt;
@@ -246,7 +246,7 @@ list&lt;/a&gt;.&lt;/p&gt;
       &lt;p&gt;&lt;code&gt;SAMPLE&lt;/code&gt; is an alias for &lt;code&gt;float&lt;/code&gt; by default &lt;a href=&quot;#fnref:sample&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files. [c-xtlang-interop]:</summary></entry><entry><title type="html">IoT China Study Tour not happening in 2019</title><link href="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/" rel="alternate" type="text/html" title="IoT China Study Tour not happening in 2019" /><published>2019-10-14T00:00:00+11:00</published><updated>2019-10-14T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/">&lt;p&gt;In the (Australian) Summer of ‘16/17, ‘17/18 and ‘18/19 I ran an &lt;a href=&quot;https://cs.anu.edu.au/courses/china-study-tour/&quot;&gt;&lt;em&gt;Internet of
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files.</summary></entry><entry><title type="html">IoT China Study Tour not happening in 2019</title><link href="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/" rel="alternate" type="text/html" title="IoT China Study Tour not happening in 2019" /><published>2019-10-14T00:00:00+11:00</published><updated>2019-10-14T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/">&lt;p&gt;In the (Australian) Summer of ‘16/17, ‘17/18 and ‘18/19 I ran an &lt;a href=&quot;https://cs.anu.edu.au/courses/china-study-tour/&quot;&gt;&lt;em&gt;Internet of
 Things&lt;/em&gt; China Study Tour&lt;/a&gt; at
 the Beijing Institute of Technology. They were good times.&lt;/p&gt;
 
