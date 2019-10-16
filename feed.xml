@@ -1,4 +1,173 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-16T12:14:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Sound file I/O in Extempore with libsndfile</title><link href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" rel="alternate" type="text/html" title="Sound file I/O in Extempore with libsndfile" /><published>2019-10-15T00:00:00+11:00</published><updated>2019-10-15T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile</id><content type="html" xml:base="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/">&lt;p&gt;&lt;a href=&quot;https://github.com/erikd/libsndfile/&quot;&gt;libsndfile&lt;/a&gt; is “a C library for reading
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-16T13:27:39+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Package managers: update or upgrade?</title><link href="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/" rel="alternate" type="text/html" title="Package managers: &lt;code&gt;update&lt;/code&gt; or &lt;code&gt;upgrade&lt;/code&gt;?" /><published>2019-10-16T00:00:00+11:00</published><updated>2019-10-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/">&lt;p&gt;Quick quiz: for the following language/system &lt;a href=&quot;https://en.wikipedia.org/wiki/Package_manager&quot;&gt;package
+managers&lt;/a&gt;, what’s the name of the
+subcommand to modify your project/system so that it downloads and uses the
+latest version of one (or more) of your project’s dependencies?&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;package manager&lt;/th&gt;
+      &lt;th&gt;language/system&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;bundle&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Ruby&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;pip&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;poetry&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;pipenv&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;npm&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;javascript&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;yarn&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;javascript&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;brew&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;macOS&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;apt-get&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Debian&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;cargo&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Rust&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;stack&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Haskell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;lein&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Clojure&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;dep&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Go&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;cpan&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Perl&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;button onclick=&quot;document.getElementById(&amp;quot;answer-table&amp;quot;).style.visibility=&amp;quot;visible&amp;quot;;&quot;&gt;click to reveal the answers&lt;/button&gt;&lt;/p&gt;
+
+&lt;table id=&quot;answer-table&quot; style=&quot;visibility: hidden;&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;package manager&lt;/th&gt;
+      &lt;th&gt;language/system&lt;/th&gt;
+      &lt;th&gt;(sub)command name&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;bundle&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Ruby&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;upgrade&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;pip&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+      &lt;td&gt;go away&lt;sup id=&quot;fnref:pip&quot;&gt;&lt;a href=&quot;#fn:pip&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;poetry&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;update&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;pipenv&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;update&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;npm&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;javascript&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;update&lt;/code&gt; or &lt;code&gt;upgrade&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;yarn&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;javascript&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;upgrade&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;brew&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;macOS&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;upgrade&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;apt-get&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Debian&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;upgrade&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;cargo&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Rust&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;update&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;stack&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Haskell&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;update&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;lein&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Clojure&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;ancient upgrade&lt;/code&gt;&lt;sup id=&quot;fnref:lein&quot;&gt;&lt;a href=&quot;#fn:lein&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;dep&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Go&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;ensure -update&lt;/code&gt;&lt;sup id=&quot;fnref:dep&quot;&gt;&lt;a href=&quot;#fn:dep&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;cpan&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Perl&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;upgrade&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;For bonus points, which of them &lt;em&gt;also&lt;/em&gt; recognise the “other” subcommand but it
+does something different? For even more bonus points, when does that “other”
+option do something unwanted/destructive/irreversible (assuming that all you
+want to do is update that dependency to the latest version)?&lt;/p&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;Look, I’m not at all saying that you should just go and blindly
+&lt;code&gt;update&lt;/code&gt;/&lt;code&gt;upgrade&lt;/code&gt; all of the things—that’s clearly a bad idea. But it still
+takes me a non-zero amount of time as I switch between languages/tools to sit
+and think “ok, for this project do I want to &lt;code&gt;update&lt;/code&gt; or &lt;code&gt;upgrade&lt;/code&gt;”? And that
+makes me sad.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:pip&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/pypa/pip/issues/59&quot;&gt;https://github.com/pypa/pip/issues/59&lt;/a&gt; &lt;a href=&quot;#fnref:pip&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:lein&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/xsc/lein-ancient&quot;&gt;https://github.com/xsc/lein-ancient&lt;/a&gt; &lt;a href=&quot;#fnref:lein&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:dep&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://golang.github.io/dep/docs/daily-dep.html&quot;&gt;https://golang.github.io/dep/docs/daily-dep.html&lt;/a&gt; &lt;a href=&quot;#fnref:dep&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="ux" /><summary type="html">Quick quiz: for the following language/system package managers, what’s the name of the subcommand to modify your project/system so that it downloads and uses the latest version of one (or more) of your project’s dependencies?</summary></entry><entry><title type="html">Sound file I/O in Extempore with libsndfile</title><link href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" rel="alternate" type="text/html" title="Sound file I/O in Extempore with libsndfile" /><published>2019-10-15T00:00:00+11:00</published><updated>2019-10-15T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile</id><content type="html" xml:base="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/">&lt;p&gt;&lt;a href=&quot;https://github.com/erikd/libsndfile/&quot;&gt;libsndfile&lt;/a&gt; is “a C library for reading
 and writing files containing sampled audio data”, and it’s pretty great. Here’s
 a quick crash-course on using &lt;a href=&quot;https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm&quot;&gt;Extempore’s libsndfile
 bindings&lt;/a&gt;
@@ -1103,7 +1272,4 @@ Attanayake and Brent Schuetze.&lt;/p&gt;
 any reason not to come along 😉&lt;/p&gt;
 
 &lt;p&gt;More details on the facebook event:
-&lt;a href=&quot;https://www.facebook.com/events/359350878094918/&quot;&gt;https://www.facebook.com/events/359350878094918/&lt;/a&gt;&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="gigs" /><summary type="html">For those who visit my blog to hear my livecoding gigs, there’s one this Friday. If you wanna see me perform with Charles Martin (on percussion &amp;amp; electronics) and Kieran Browne on livecoded visuals (live GLSL shader hacking). We’re playing 5:30pm–7:30pm @ Drill Hall Gallery as part of the Ildiko Kovacs: The DNA of colour exhibition.</summary></entry><entry><title type="html">Livecoding article on the ABC</title><link href="https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc/" rel="alternate" type="text/html" title="Livecoding article on the ABC" /><published>2019-07-24T00:00:00+10:00</published><updated>2019-07-24T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc</id><content type="html" xml:base="https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc/">&lt;p&gt;In case you missed it, I was interviewed for &lt;a href=&quot;https://www.abc.net.au/news/2019-07-21/live-coding-australia-music-computer-code/11301114&quot;&gt;an article on the ABC News
-website&lt;/a&gt;
-which came out last weekend entitled &lt;em&gt;The Australians making music with computer
-code&lt;/em&gt;. A nice look at some of the players in the Australian livecoding scene.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="media" /><summary type="html">In case you missed it, I was interviewed for an article on the ABC News website which came out last weekend entitled The Australians making music with computer code. A nice look at some of the players in the Australian livecoding scene.</summary></entry></feed>
+&lt;a href=&quot;https://www.facebook.com/events/359350878094918/&quot;&gt;https://www.facebook.com/events/359350878094918/&lt;/a&gt;&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="gigs" /><summary type="html">For those who visit my blog to hear my livecoding gigs, there’s one this Friday. If you wanna see me perform with Charles Martin (on percussion &amp;amp; electronics) and Kieran Browne on livecoded visuals (live GLSL shader hacking). We’re playing 5:30pm–7:30pm @ Drill Hall Gallery as part of the Ildiko Kovacs: The DNA of colour exhibition.</summary></entry></feed>
