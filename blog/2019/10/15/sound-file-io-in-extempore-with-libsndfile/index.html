@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#be2edd">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
+
+<!-- fontawesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+<!-- anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<script>
+ anchors.options = {
+   visible: "touch",
+   icon: "#"
+ };
+ document.addEventListener("DOMContentLoaded", function(event) {
+   anchors.add("article > h2, article > h3");
+ });
+</script>
+
+
+<!-- highlight.js -->
+<script src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark-470b7658ef8aee2f2bb86babcc8a359491361d94113130f47878659a07f47eac.css">
+
+<script>
+ hljs.initHighlightingOnLoad();
+</script>
+
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Sound file I/O in Extempore with libsndfile | benswift.me</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Sound file I/O in Extempore with libsndfile" />
+<meta name="author" content="Ben Swift" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files. [c-xtlang-interop]:" />
+<meta property="og:description" content="libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files. [c-xtlang-interop]:" />
+<link rel="canonical" href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" />
+<meta property="og:url" content="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" />
+<meta property="og:site_name" content="benswift.me" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-15T00:00:00+11:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Sound file I/O in Extempore with libsndfile" />
+<meta name="twitter:site" content="@benswift" />
+<meta name="twitter:creator" content="@Ben Swift" />
+<script type="application/ld+json">
+{"headline":"Sound file I/O in Extempore with libsndfile","dateModified":"2019-10-15T00:00:00+11:00","datePublished":"2019-10-15T00:00:00+11:00","url":"https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files. [c-xtlang-interop]:","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/main-fa3c3362a4ed0f3517c2bba7752c287108bda00baaad52995b02fe600ff5a73d.css">
+  </head>
+  <body>
+	<div class="container">
+	  <header>
+
+  <nav class="logo" aria-label="site home">
+	<a href="/">benswift.me</a>
+  </nav>
+
+  <nav class="navigation" aria-label="main navigation">
+	<!-- in-site navigation -->
+	
+	
+
+	<a class="current"href="/blog/index.html">blog</a>
+	<a href="/research/">research</a>
+	<a href="/teaching/">teaching</a>
+	<a href="/livecoding/index.html">livecoding</a>
+	<a href="/talks/index.html">talks</a>
+	<a href="/bio/">bio</a>
+
+	<!-- social icons -->
+	<a href="https://github.com/benswift"><i title="benswift on GitHub" class="fab fa-github"></i></a>
+	<a href="https://twitter.com/benswift"><i title="benswift on twitter" class="fab fa-twitter"></i></a>
+	<a href="https://vimeo.com/benswift"><i title="benswift on Vimeo" class="fab fa-vimeo"></i></a>
+	<a href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ"><i title="Ben's Google Scholar profile" class="fas fa-graduation-cap"></i></a>
+	<a href="/feed.xml"><i title="RSS feed for this blog" class="fas fa-rss"></i></a>
+	<a href="mailto:ben@benswift.me"><i title="send Ben an email" class="fas fa-envelope"></i></a>
+  </nav>
+
+</header>
+
+	  <main aria-label="Content">
+		<article>
+  <p class="post-date">15 Oct '19</p>
+  <h1>Sound file I/O in Extempore with libsndfile</h1>
+  
+<p class="post-tag-container">
+  
+  <a class="post-tag" href="/blog/tag/extempore/">
+	extempore
+  </a>
+  
+</p>
+
+
+  <p><a href="https://github.com/erikd/libsndfile/">libsndfile</a> is “a C library for reading
+and writing files containing sampled audio data”, and it’s pretty great. Here’s
+a quick crash-course on using <a href="https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm">Extempore’s libsndfile
+bindings</a>
+to read, process and write audio data files.</p>
+
+<p class="hl-para">There have been some recent bugfixes in <code>libsndfile</code>, and (even more recently)
+these have made it into Extempore, which builds it’s own <code>libsndfile</code> shared
+library as part of the CMake build process. So if you want to try this stuff
+it’s probably best that you’ve built the latest Extempore from <code>HEAD</code>.</p>
+
+<h2 id="loading-the-xtlang-wrappers-for-the-sndfile-library-functions">Loading the xtlang wrappers for the sndfile library functions</h2>
+
+<p>Once you’ve got Extempore up and running, the first thing to do is to load the
+libsndfile wrapper functions:</p>
+
+<pre><code class="language-xtlang">(sys:load "libs/external/sndfile.xtm")
+</code></pre>
+
+<p><code>libs/external/sndlib.xtm</code> contains <code>bind-lib</code> definitions for all<sup id="fnref:pm-all"><a href="#fn:pm-all" class="footnote">1</a></sup> the
+functions in the libsndfile library (compare that file to the <a href="https://github.com/erikd/libsndfile/blob/master/src/sndfile.h.in">C
+header</a> to see
+for yourself).</p>
+
+<p>In this blog post I’m mostly going to write “thin” xtlang code—calling the C
+functions directly wherever possible, and using the same basic types as the
+underlying C library. You could easily write xtlang helper functions to make all
+this stuff nicer, and <code>libs/external/sndfile.xtm</code> actually has a bunch of these
+as well (down the bottom of that file). However, I hope this bare-bones approach
+is helpful for understanding what’s going on (and how you might use other C
+shared libs if you wanted to).</p>
+
+<h2 id="reading-the-audio-file-data-into-memory">Reading the audio file data into memory</h2>
+
+<p>In a fairly common API design pattern, to get info about a sound file (length, channels,
+sample rate, format, etc.) we need to:</p>
+
+<ol>
+  <li>
+    <p>use <code>sf_open</code> to give us a pointer to the data structure which libsndfile
+uses to represent the audio file (a <code>SNDFILE*</code>)</p>
+  </li>
+  <li>
+    <p>pass a pointer to another data structure (a <code>SF_INFO*</code>) which <code>sf_open</code> will
+populate with info about the file</p>
+  </li>
+</ol>
+
+<p><code>sf_open</code> doesn’t read the audio data into memory (where we can do stuff with
+it) though—because first we need to figure out how big a buffer to allocate
+for the data—and to do that, we need to know how many frames there are in the
+audio file, and how many channels per frame.</p>
+
+<p>Looking at the documentation (i.e. the comment above the function declaration in
+the C header file) for <code>SF_INFO</code> we see that the first (tuple index <code>0</code>) and third
+(tuple index <code>2</code>) fields are going to be useful</p>
+
+<pre><code class="language-c">struct SF_INFO
+{   sf_count_t  frames ;        /* Used to be called samples.  Changed to avoid confusion. */
+    int         samplerate ;
+    int         channels ;
+    int         format ;
+    int         sections ;
+    int         seekable ;
+} ;
+</code></pre>
+
+<p>Using all this info, then, we can make a simple xtlang function to return the
+number of frames</p>
+
+<pre><code class="language-xtlang">(bind-func get_number_of_frames
+  (lambda (filename)
+    (let ((info:SF_INFO* (salloc))
+          ;; call sf_info to populate info with data about the file
+          (sfile (sf_open filename SFM_READ info)))
+      (sf_close sfile)
+      ;; return the number of frames
+      (tref info 0))))
+
+;; test it out using a wave file from the Extempore assets directory 
+;; (it should return the number 288366)
+(get_number_of_frames "assets/samples/piano/60.wav")
+</code></pre>
+
+<p>{.hl-para}</p>
+
+<p>Most of the code in this post doesn’t check for e.g. bad filenames or other
+potential errors, so if that’s a thing which might happen in your situation then
+you’ll need to check that <code>sf_open</code> doesn’t return <code>null</code>.</p>
+
+<p>We can do the exact same thing to get the number of channels per frame (just
+returning a different element of the <code>info</code> struct):</p>
+
+<pre><code class="language-xtlang">(bind-func get_number_of_channels
+  (lambda (filename)
+    (let ((info:SF_INFO* (salloc))
+          (sfile (sf_open filename SFM_READ info)))
+      (sf_close sfile)
+      ;; return the number of channels
+      (tref info 2))))
+
+;; returns 2 (it's a stereo file)
+(get_number_of_channels "assets/samples/piano/60.wav")
+</code></pre>
+
+<p>Finally, we can calculate how many samples (num frames × num channels) we’ll
+need in our “audio data” buffer. We can then use <code>sf_read</code> to read the audio
+data from the file into our buffer, converting it to e.g. <code>float</code> (or whatever
+the type of <code>SAMPLE</code> is) as we go (libsndfile can read audio files in a bunch of
+different formats, but for working with it in Extempore we just want floating
+point values).</p>
+
+<p>First, set up a DSP callback—just playing white noise so that we can check
+that it’s working.</p>
+
+<pre><code class="language-xtlang">(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (random .1)))
+
+(dsp:set! dsp)
+</code></pre>
+
+<p>Now, we add a bunch of sndfile-related stuff to the top-level <code>dsp</code> closure
+environment (the outer <code>let</code>) to</p>
+
+<ol>
+  <li>get the number of frames/channels from the file</li>
+  <li>allocate a <code>SAMPLE</code><sup id="fnref:sample"><a href="#fn:sample" class="footnote">2</a></sup> buffer big enough to fit all the audio data</li>
+  <li>read the audio file data into this buffer</li>
+</ol>
+
+<p>Finally, in the inner <code>lambda</code> we have a super-naive playback loop (look at the
+way we’re incrementing <code>i</code>—this will only work if the number of output
+channels matches the number of channels in the audio file).</p>
+
+<pre><code class="language-xtlang">(bind-func dsp:DSP 10000000 ;; allocate plenty of memory for our DSP closure
+
+  (let ((filename "assets/samples/piano/60.wav")
+        (nframes (get_number_of_frames filename))
+        (nchan (convert (get_number_of_channels filename)))
+        (nsamp (* nframes nchan))
+        (info:SF_INFO* (alloc))
+        (sfile (sf_open filename SFM_READ info)) ;; SFM_READ = open the audio file in "read-only" mode
+        ;; here's the pointer to the audio data
+        (data:SAMPLE* (alloc nsamp))
+        (i 0))
+
+    (println "read" (sf_read sfile data nsamp) "frames")
+    (sf_close sfile)
+
+    (lambda (in time chan dat)
+      ;; a super-naive "playback" loop
+      (set! i (% (+ i 1) nsamp))
+      (* .2 (pref data i)))))
+</code></pre>
+
+<p>If it’s all worked, you should hear a piano playing repeated (legato) notes on
+middle C.</p>
+
+<p>Of course, we could have simplified this by just calling <code>sf_open</code> and
+populating the <code>info</code> with data once at the top of an xtlang function, then
+doing stuff based on that information and finally <code>sf_close</code>ing the file at the
+end. That’s left as an exercise for the reader 😉</p>
+
+<p class="hl-para">One thing worth noting with all this is that calling a C lib from Extempore
+doesn’t obviate the need to understand how the C library works, e.g. we still
+need to match every call to <code>sf_open</code> with a call to <code>sf_close</code> as stated in the
+libsndfile docs.</p>
+
+<h2 id="writing-data-in-memory-to-an-audio-file">Writing data in memory to an audio file</h2>
+
+<p>There’s one more thing we want to do with our libsndfile library: write a bunch
+of audio data (which we’ve gloriously munged in Extempore) and write it back to
+an audio file.</p>
+
+<p>Here’s a simple munging function which will replace the first <code>22050</code> samples
+with white noise, then leave the next <code>22050</code> untouched, then replace the next
+<code>22050</code> with more white noise, and so on. I’m sure you can come up with
+something more (sonically) interesting; this is just an easy one to test (by
+ear) if it’s working.</p>
+
+<pre><code class="language-xtlang">(bind-func munge_audio_data
+  (lambda (data:SAMPLE* nsamp)
+    (doloop (i nsamp)
+      (if (&lt; (modulo i 44100) 22050)
+          (pset! data i (random .1))))))
+</code></pre>
+
+<p>The final thing to do is to create <em>another</em> <code>SNDFILE</code> object (this time opened
+in <code>SFM_WRITE</code> mode) where we’ll write the audio data. We’ll make some small
+additions to our <code>dsp</code> closure:</p>
+
+<pre><code class="language-xtlang">(bind-func dsp:DSP 10000000 ;; allocate plenty of memory for our DSP closure
+
+  (let ((filename "assets/samples/piano/60.wav")
+        (nframes (get_number_of_frames filename))
+        (nchan (convert (get_number_of_channels filename)))
+        (nsamp (* nframes nchan))
+        (info:SF_INFO* (alloc))
+        (srcfile (sf_open filename SFM_READ info))
+        (dstfile (sf_open  "assets/samples/piano/60-munged.wav" SFM_WRITE info))
+        ;; here's the pointer to the audio data
+        (data:SAMPLE* (alloc nsamp))
+        (i 0))
+
+    (println "read" (sf_read srcfile data nsamp) "frames")
+    (sf_close srcfile)
+
+    ;; munge the audio data
+    (munge_audio_data data nsamp)
+
+    (println "wrote" (sf_write dstfile data nsamp) "frames")
+    (sf_close dstfile)
+
+    (lambda (in time chan dat)
+      ;; a super-naive "playback" loop
+      (set! i (% (+ i 1) nsamp))
+      (* .2 (pref data i)))))
+</code></pre>
+
+<p>If you re-evaluate <em>that</em> <code>dsp</code> closure, you should (a) hear the munged audio
+and (b) it should have been written to the “assets/samples/piano/60-munged.wav”
+file. Note that we re-used the <code>info</code> data structure (which was populated with
+the info from <code>srcfile</code>) in the <code>dstfile</code> call—this is deliberate, and makes
+sure that we use the same file format for the output file as for the input file.
+If you want to write it in some <em>other</em> format, then look at the libsndfile
+docs—there are lots of options.</p>
+
+<h2 id="wrapping-up">Wrapping up</h2>
+
+<p>There’s lots more to explore, but I’ll leave it here for now. If you’ve got any
+comments, then get in touch on the <a href="mailto:extemporelang@googlegroups.com">Extempore mailing
+list</a>.</p>
+
+<p>[c-xtlang-interop]: 
+    There’s more detail on how this works in the
+	<a href="https://extemporelang.github.io/docs/reference/c-xtlang-interop/">Extempore
+    docs</a>
+	if you’re interested.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:pm-all">
+      <p>well, <em>pretty much</em> all <a href="#fnref:pm-all" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:sample">
+      <p><code>SAMPLE</code> is an alias for <code>float</code> by default <a href="#fnref:sample" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+
+	  </main>
+	  <footer>
+  <script>
+   const cafeUrls = [
+	 "https://biginelli.com/",
+	 "http://tilleys.com.au",
+	 "https://www.facebook.com/goodbrothercafe/",
+	 "https://frontgallerycafe.com",
+	 "https://www.facebook.com/thecoffeegrounds",
+	 "https://redbrickcoffee.com.au/redbrick/"
+   ];
+   const randomCafe = () => {
+	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
+   };
+  </script>
+
+  <!-- colophon -->
+  <p>
+	designed & built with
+	<a href="https://jekyllrb.com"><i title="Jekyll homepage" class="fas fa-vial"></i></a>,
+	<a id="cafe-url" onclick="randomCafe();"><i title="the website of one of Ben's favourite coffee shops" class="fas fa-coffee" style="cursor: pointer;"></i></a> and
+	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><i title="what is love?" class="fas fa-heart"></i></a>
+	by Ben Swift
+  </p>
+
+  <!-- licence -->
+  <p style="font-size: 1.3em;">
+	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <i class="fab fa-creative-commons"></i>
+  <i class="fab fa-creative-commons-by"></i>
+  <i class="fab fa-creative-commons-nc"></i>
+  <i class="fab fa-creative-commons-sa"></i>
+</a>
+
+  </p>
+
+  <!-- throw shade on IE -->
+  <p>
+	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
+	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+  </p>
+
+  <!-- open source humblebrag -->
+  <p>
+	site revision <code>d3f7b166</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/d3f7b166/_posts/2019-10-15-sound-file-io-in-extempore-with-libsndfile.md">source
+	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
+  </p>
+
+</footer>
+
+	</div>
+  </body>
+</html>

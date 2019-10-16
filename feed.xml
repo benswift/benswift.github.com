@@ -1,4 +1,252 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-14T09:49:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">IoT China Study Tour not happening in 2019</title><link href="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/" rel="alternate" type="text/html" title="IoT China Study Tour not happening in 2019" /><published>2019-10-14T00:00:00+11:00</published><updated>2019-10-14T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/">&lt;p&gt;In the (Australian) Summer of ‘16/17, ‘17/18 and ‘18/19 I ran an &lt;a href=&quot;https://cs.anu.edu.au/courses/china-study-tour/&quot;&gt;&lt;em&gt;Internet of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-16T12:07:54+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Sound file I/O in Extempore with libsndfile</title><link href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" rel="alternate" type="text/html" title="Sound file I/O in Extempore with libsndfile" /><published>2019-10-15T00:00:00+11:00</published><updated>2019-10-15T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile</id><content type="html" xml:base="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/">&lt;p&gt;&lt;a href=&quot;https://github.com/erikd/libsndfile/&quot;&gt;libsndfile&lt;/a&gt; is “a C library for reading
+and writing files containing sampled audio data”, and it’s pretty great. Here’s
+a quick crash-course on using &lt;a href=&quot;https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm&quot;&gt;Extempore’s libsndfile
+bindings&lt;/a&gt;
+to read, process and write audio data files.&lt;/p&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;There have been some recent bugfixes in &lt;code&gt;libsndfile&lt;/code&gt;, and (even more recently)
+these have made it into Extempore, which builds it’s own &lt;code&gt;libsndfile&lt;/code&gt; shared
+library as part of the CMake build process. So if you want to try this stuff
+it’s probably best that you’ve built the latest Extempore from &lt;code&gt;HEAD&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;loading-the-xtlang-wrappers-for-the-sndfile-library-functions&quot;&gt;Loading the xtlang wrappers for the sndfile library functions&lt;/h2&gt;
+
+&lt;p&gt;Once you’ve got Extempore up and running, the first thing to do is to load the
+libsndfile wrapper functions:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(sys:load &quot;libs/external/sndfile.xtm&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;libs/external/sndlib.xtm&lt;/code&gt; contains &lt;code&gt;bind-lib&lt;/code&gt; definitions for all&lt;sup id=&quot;fnref:pm-all&quot;&gt;&lt;a href=&quot;#fn:pm-all&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; the
+functions in the libsndfile library (compare that file to the &lt;a href=&quot;https://github.com/erikd/libsndfile/blob/master/src/sndfile.h.in&quot;&gt;C
+header&lt;/a&gt; to see
+for yourself).&lt;/p&gt;
+
+&lt;p&gt;In this blog post I’m mostly going to write “thin” xtlang code—calling the C
+functions directly wherever possible, and using the same basic types as the
+underlying C library. You could easily write xtlang helper functions to make all
+this stuff nicer, and &lt;code&gt;libs/external/sndfile.xtm&lt;/code&gt; actually has a bunch of these
+as well (down the bottom of that file). However, I hope this bare-bones approach
+is helpful for understanding what’s going on (and how you might use other C
+shared libs if you wanted to).&lt;/p&gt;
+
+&lt;h2 id=&quot;reading-the-audio-file-data-into-memory&quot;&gt;Reading the audio file data into memory&lt;/h2&gt;
+
+&lt;p&gt;In a fairly common API design pattern, to get info about a sound file (length, channels,
+sample rate, format, etc.) we need to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;use &lt;code&gt;sf_open&lt;/code&gt; to give us a pointer to the data structure which libsndfile
+uses to represent the audio file (a &lt;code&gt;SNDFILE*&lt;/code&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;pass a pointer to another data structure (a &lt;code&gt;SF_INFO*&lt;/code&gt;) which &lt;code&gt;sf_open&lt;/code&gt; will
+populate with info about the file&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;sf_open&lt;/code&gt; doesn’t read the audio data into memory (where we can do stuff with
+it) though—because first we need to figure out how big a buffer to allocate
+for the data—and to do that, we need to know how many frames there are in the
+audio file, and how many channels per frame.&lt;/p&gt;
+
+&lt;p&gt;Looking at the documentation (i.e. the comment above the function declaration in
+the C header file) for &lt;code&gt;SF_INFO&lt;/code&gt; we see that the first (tuple index &lt;code&gt;0&lt;/code&gt;) and third
+(tuple index &lt;code&gt;2&lt;/code&gt;) fields are going to be useful&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;struct SF_INFO
+{   sf_count_t  frames ;        /* Used to be called samples.  Changed to avoid confusion. */
+    int         samplerate ;
+    int         channels ;
+    int         format ;
+    int         sections ;
+    int         seekable ;
+} ;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Using all this info, then, we can make a simple xtlang function to return the
+number of frames&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func get_number_of_frames
+  (lambda (filename)
+    (let ((info:SF_INFO* (salloc))
+          ;; call sf_info to populate info with data about the file
+          (sfile (sf_open filename SFM_READ info)))
+      (sf_close sfile)
+      ;; return the number of frames
+      (tref info 0))))
+
+;; test it out using a wave file from the Extempore assets directory 
+;; (it should return the number 288366)
+(get_number_of_frames &quot;assets/samples/piano/60.wav&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{.hl-para}&lt;/p&gt;
+
+&lt;p&gt;Most of the code in this post doesn’t check for e.g. bad filenames or other
+potential errors, so if that’s a thing which might happen in your situation then
+you’ll need to check that &lt;code&gt;sf_open&lt;/code&gt; doesn’t return &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;We can do the exact same thing to get the number of channels per frame (just
+returning a different element of the &lt;code&gt;info&lt;/code&gt; struct):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func get_number_of_channels
+  (lambda (filename)
+    (let ((info:SF_INFO* (salloc))
+          (sfile (sf_open filename SFM_READ info)))
+      (sf_close sfile)
+      ;; return the number of channels
+      (tref info 2))))
+
+;; returns 2 (it's a stereo file)
+(get_number_of_channels &quot;assets/samples/piano/60.wav&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, we can calculate how many samples (num frames × num channels) we’ll
+need in our “audio data” buffer. We can then use &lt;code&gt;sf_read&lt;/code&gt; to read the audio
+data from the file into our buffer, converting it to e.g. &lt;code&gt;float&lt;/code&gt; (or whatever
+the type of &lt;code&gt;SAMPLE&lt;/code&gt; is) as we go (libsndfile can read audio files in a bunch of
+different formats, but for working with it in Extempore we just want floating
+point values).&lt;/p&gt;
+
+&lt;p&gt;First, set up a DSP callback—just playing white noise so that we can check
+that it’s working.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (random .1)))
+
+(dsp:set! dsp)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, we add a bunch of sndfile-related stuff to the top-level &lt;code&gt;dsp&lt;/code&gt; closure
+environment (the outer &lt;code&gt;let&lt;/code&gt;) to&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;get the number of frames/channels from the file&lt;/li&gt;
+  &lt;li&gt;allocate a &lt;code&gt;SAMPLE&lt;/code&gt;&lt;sup id=&quot;fnref:sample&quot;&gt;&lt;a href=&quot;#fn:sample&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; buffer big enough to fit all the audio data&lt;/li&gt;
+  &lt;li&gt;read the audio file data into this buffer&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Finally, in the inner &lt;code&gt;lambda&lt;/code&gt; we have a super-naive playback loop (look at the
+way we’re incrementing &lt;code&gt;i&lt;/code&gt;—this will only work if the number of output
+channels matches the number of channels in the audio file).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP 10000000 ;; allocate plenty of memory for our DSP closure
+
+  (let ((filename &quot;assets/samples/piano/60.wav&quot;)
+        (nframes (get_number_of_frames filename))
+        (nchan (convert (get_number_of_channels filename)))
+        (nsamp (* nframes nchan))
+        (info:SF_INFO* (alloc))
+        (sfile (sf_open filename SFM_READ info)) ;; SFM_READ = open the audio file in &quot;read-only&quot; mode
+        ;; here's the pointer to the audio data
+        (data:SAMPLE* (alloc nsamp))
+        (i 0))
+
+    (println &quot;read&quot; (sf_read sfile data nsamp) &quot;frames&quot;)
+    (sf_close sfile)
+
+    (lambda (in time chan dat)
+      ;; a super-naive &quot;playback&quot; loop
+      (set! i (% (+ i 1) nsamp))
+      (* .2 (pref data i)))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If it’s all worked, you should hear a piano playing repeated (legato) notes on
+middle C.&lt;/p&gt;
+
+&lt;p&gt;Of course, we could have simplified this by just calling &lt;code&gt;sf_open&lt;/code&gt; and
+populating the &lt;code&gt;info&lt;/code&gt; with data once at the top of an xtlang function, then
+doing stuff based on that information and finally &lt;code&gt;sf_close&lt;/code&gt;ing the file at the
+end. That’s left as an exercise for the reader 😉&lt;/p&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;One thing worth noting with all this is that calling a C lib from Extempore
+doesn’t obviate the need to understand how the C library works, e.g. we still
+need to match every call to &lt;code&gt;sf_open&lt;/code&gt; with a call to &lt;code&gt;sf_close&lt;/code&gt; as stated in the
+libsndfile docs.&lt;/p&gt;
+
+&lt;h2 id=&quot;writing-data-in-memory-to-an-audio-file&quot;&gt;Writing data in memory to an audio file&lt;/h2&gt;
+
+&lt;p&gt;There’s one more thing we want to do with our libsndfile library: write a bunch
+of audio data (which we’ve gloriously munged in Extempore) and write it back to
+an audio file.&lt;/p&gt;
+
+&lt;p&gt;Here’s a simple munging function which will replace the first &lt;code&gt;22050&lt;/code&gt; samples
+with white noise, then leave the next &lt;code&gt;22050&lt;/code&gt; untouched, then replace the next
+&lt;code&gt;22050&lt;/code&gt; with more white noise, and so on. I’m sure you can come up with
+something more (sonically) interesting; this is just an easy one to test (by
+ear) if it’s working.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func munge_audio_data
+  (lambda (data:SAMPLE* nsamp)
+    (doloop (i nsamp)
+      (if (&amp;lt; (modulo i 44100) 22050)
+          (pset! data i (random .1))))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The final thing to do is to create &lt;em&gt;another&lt;/em&gt; &lt;code&gt;SNDFILE&lt;/code&gt; object (this time opened
+in &lt;code&gt;SFM_WRITE&lt;/code&gt; mode) where we’ll write the audio data. We’ll make some small
+additions to our &lt;code&gt;dsp&lt;/code&gt; closure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP 10000000 ;; allocate plenty of memory for our DSP closure
+
+  (let ((filename &quot;assets/samples/piano/60.wav&quot;)
+        (nframes (get_number_of_frames filename))
+        (nchan (convert (get_number_of_channels filename)))
+        (nsamp (* nframes nchan))
+        (info:SF_INFO* (alloc))
+        (srcfile (sf_open filename SFM_READ info))
+        (dstfile (sf_open  &quot;assets/samples/piano/60-munged.wav&quot; SFM_WRITE info))
+        ;; here's the pointer to the audio data
+        (data:SAMPLE* (alloc nsamp))
+        (i 0))
+
+    (println &quot;read&quot; (sf_read srcfile data nsamp) &quot;frames&quot;)
+    (sf_close srcfile)
+
+    ;; munge the audio data
+    (munge_audio_data data nsamp)
+
+    (println &quot;wrote&quot; (sf_write dstfile data nsamp) &quot;frames&quot;)
+    (sf_close dstfile)
+
+    (lambda (in time chan dat)
+      ;; a super-naive &quot;playback&quot; loop
+      (set! i (% (+ i 1) nsamp))
+      (* .2 (pref data i)))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you re-evaluate &lt;em&gt;that&lt;/em&gt; &lt;code&gt;dsp&lt;/code&gt; closure, you should (a) hear the munged audio
+and (b) it should have been written to the “assets/samples/piano/60-munged.wav”
+file. Note that we re-used the &lt;code&gt;info&lt;/code&gt; data structure (which was populated with
+the info from &lt;code&gt;srcfile&lt;/code&gt;) in the &lt;code&gt;dstfile&lt;/code&gt; call—this is deliberate, and makes
+sure that we use the same file format for the output file as for the input file.
+If you want to write it in some &lt;em&gt;other&lt;/em&gt; format, then look at the libsndfile
+docs—there are lots of options.&lt;/p&gt;
+
+&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping up&lt;/h2&gt;
+
+&lt;p&gt;There’s lots more to explore, but I’ll leave it here for now. If you’ve got any
+comments, then get in touch on the &lt;a href=&quot;mailto:extemporelang@googlegroups.com&quot;&gt;Extempore mailing
+list&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[c-xtlang-interop]: 
+    There’s more detail on how this works in the
+	&lt;a href=&quot;https://extemporelang.github.io/docs/reference/c-xtlang-interop/&quot;&gt;Extempore
+    docs&lt;/a&gt;
+	if you’re interested.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:pm-all&quot;&gt;
+      &lt;p&gt;well, &lt;em&gt;pretty much&lt;/em&gt; all &lt;a href=&quot;#fnref:pm-all&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:sample&quot;&gt;
+      &lt;p&gt;&lt;code&gt;SAMPLE&lt;/code&gt; is an alias for &lt;code&gt;float&lt;/code&gt; by default &lt;a href=&quot;#fnref:sample&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files. [c-xtlang-interop]:</summary></entry><entry><title type="html">IoT China Study Tour not happening in 2019</title><link href="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/" rel="alternate" type="text/html" title="IoT China Study Tour not happening in 2019" /><published>2019-10-14T00:00:00+11:00</published><updated>2019-10-14T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/">&lt;p&gt;In the (Australian) Summer of ‘16/17, ‘17/18 and ‘18/19 I ran an &lt;a href=&quot;https://cs.anu.edu.au/courses/china-study-tour/&quot;&gt;&lt;em&gt;Internet of
 Things&lt;/em&gt; China Study Tour&lt;/a&gt; at
 the Beijing Institute of Technology. They were good times.&lt;/p&gt;
 
@@ -858,214 +1106,4 @@ any reason not to come along 😉&lt;/p&gt;
 &lt;a href=&quot;https://www.facebook.com/events/359350878094918/&quot;&gt;https://www.facebook.com/events/359350878094918/&lt;/a&gt;&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="gigs" /><summary type="html">For those who visit my blog to hear my livecoding gigs, there’s one this Friday. If you wanna see me perform with Charles Martin (on percussion &amp;amp; electronics) and Kieran Browne on livecoded visuals (live GLSL shader hacking). We’re playing 5:30pm–7:30pm @ Drill Hall Gallery as part of the Ildiko Kovacs: The DNA of colour exhibition.</summary></entry><entry><title type="html">Livecoding article on the ABC</title><link href="https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc/" rel="alternate" type="text/html" title="Livecoding article on the ABC" /><published>2019-07-24T00:00:00+10:00</published><updated>2019-07-24T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc</id><content type="html" xml:base="https://benswift.me/blog/2019/07/24/livecoding-article-on-the-abc/">&lt;p&gt;In case you missed it, I was interviewed for &lt;a href=&quot;https://www.abc.net.au/news/2019-07-21/live-coding-australia-music-computer-code/11301114&quot;&gt;an article on the ABC News
 website&lt;/a&gt;
 which came out last weekend entitled &lt;em&gt;The Australians making music with computer
-code&lt;/em&gt;. A nice look at some of the players in the Australian livecoding scene.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="media" /><summary type="html">In case you missed it, I was interviewed for an article on the ABC News website which came out last weekend entitled The Australians making music with computer code. A nice look at some of the players in the Australian livecoding scene.</summary></entry><entry><title type="html">In-place XML tree mutation for Jekyll productivity</title><link href="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/" rel="alternate" type="text/html" title="In-place XML tree mutation for Jekyll productivity" /><published>2019-07-17T00:00:00+10:00</published><updated>2019-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity</id><content type="html" xml:base="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/">&lt;p&gt;I wrote a &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;reveal.js&lt;/a&gt; plugin for Jekyll
-so that I can make nice slides (especially for my
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/lectures/&quot;&gt;ANU&lt;/a&gt;
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/lectures/&quot;&gt;courses&lt;/a&gt;). Recently, though,
-I’ve been touching up the COMP1720 slides for 2019 and it’s getting &lt;em&gt;really
-slow&lt;/em&gt; to build the website.&lt;/p&gt;
-
-&lt;p&gt;I turned to Jekyll’s built-in profiling command to see where the problem is.
-Here’s the output of &lt;code&gt;jekyll build --profile&lt;/code&gt; on this website, which (currently)
-builds in &lt;strong&gt;7.2 seconds&lt;/strong&gt; on my machine.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Filename&lt;/th&gt;
-      &lt;th&gt;Count&lt;/th&gt;
-      &lt;th&gt;Bytes&lt;/th&gt;
-      &lt;th&gt;Time&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_layouts/reveal.html&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;104.60K&lt;/td&gt;
-      &lt;td&gt;4.102&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_layouts/default.html&lt;/td&gt;
-      &lt;td&gt;81&lt;/td&gt;
-      &lt;td&gt;729.15K&lt;/td&gt;
-      &lt;td&gt;0.809&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_includes/head.html&lt;/td&gt;
-      &lt;td&gt;90&lt;/td&gt;
-      &lt;td&gt;266.90K&lt;/td&gt;
-      &lt;td&gt;0.702&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;research.md&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;16.40K&lt;/td&gt;
-      &lt;td&gt;0.196&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_includes/hljs.html&lt;/td&gt;
-      &lt;td&gt;90&lt;/td&gt;
-      &lt;td&gt;29.44K&lt;/td&gt;
-      &lt;td&gt;0.192&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_includes/slides/background-image.html&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;31.94K&lt;/td&gt;
-      &lt;td&gt;0.154&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_layouts/paginated.html&lt;/td&gt;
-      &lt;td&gt;21&lt;/td&gt;
-      &lt;td&gt;70.29K&lt;/td&gt;
-      &lt;td&gt;0.078&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_talks/u3a-world-since-google.md&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;14.49K&lt;/td&gt;
-      &lt;td&gt;0.058&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_includes/header.html&lt;/td&gt;
-      &lt;td&gt;81&lt;/td&gt;
-      &lt;td&gt;85.88K&lt;/td&gt;
-      &lt;td&gt;0.042&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_talks/ltc-stem-camp.md&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;13.38K&lt;/td&gt;
-      &lt;td&gt;0.040&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;feed.xml&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;105.55K&lt;/td&gt;
-      &lt;td&gt;0.038&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;…more inconsequential stuff follows…&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Clearly, the &lt;code&gt;reveal.html&lt;/code&gt; layout is the problem, taking 4.1s (more than half
-the total build time). I suspect that this is because my &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;reveal
-plugin&lt;/a&gt; does a bunch of
-copying of (Nokogiri) XML nodes, because I wasn’t worrying about performance
-when I wrote it.&lt;/p&gt;
-
-&lt;h3 id=&quot;re-parent-all-the-nodes&quot;&gt;Re-parent all the nodes!&lt;/h3&gt;
-
-&lt;p&gt;Looking at the &lt;a href=&quot;https://nokogiri.org/rdoc/Nokogiri/XML/Node&quot;&gt;Nokogiri API&lt;/a&gt; and
-the &lt;code&gt;revealify.rb&lt;/code&gt; plugin code, there are a bunch of places where instead of
-duplicating &amp;amp; copying nodes, I can just re-parent them into the right places.
-I’m a big immutability fan usually, which is why I built the plugin based on
-copying originally, but with a bit of careful re-parenting the &lt;code&gt;revealify.rb&lt;/code&gt;
-plugin now looks like
-&lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb&quot;&gt;this&lt;/a&gt;
-(see the &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;linked post above&lt;/a&gt; to see what it
-looked like before).&lt;/p&gt;
-
-&lt;p&gt;And the result? Total build time is down to &lt;strong&gt;2.8 seconds&lt;/strong&gt;. Admittedly that was
-because it was &lt;em&gt;really inefficient&lt;/em&gt; before, but I’ll take a 2.5x speedup anyday
-😊. Here’s the relevant profiler output with the updated plugin:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Filename&lt;/th&gt;
-      &lt;th&gt;Count&lt;/th&gt;
-      &lt;th&gt;Bytes&lt;/th&gt;
-      &lt;th&gt;Time&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_layouts/default.html&lt;/td&gt;
-      &lt;td&gt;82&lt;/td&gt;
-      &lt;td&gt;741.77K&lt;/td&gt;
-      &lt;td&gt;0.873&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_includes/head.html&lt;/td&gt;
-      &lt;td&gt;91&lt;/td&gt;
-      &lt;td&gt;269.82K&lt;/td&gt;
-      &lt;td&gt;0.780&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;research.md&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;16.40K&lt;/td&gt;
-      &lt;td&gt;0.198&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_layouts/reveal.html&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;105.65K&lt;/td&gt;
-      &lt;td&gt;0.182&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_includes/hljs.html&lt;/td&gt;
-      &lt;td&gt;91&lt;/td&gt;
-      &lt;td&gt;29.77K&lt;/td&gt;
-      &lt;td&gt;0.172&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_includes/slides/background-image.html&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;31.94K&lt;/td&gt;
-      &lt;td&gt;0.151&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_layouts/paginated.html&lt;/td&gt;
-      &lt;td&gt;21&lt;/td&gt;
-      &lt;td&gt;70.55K&lt;/td&gt;
-      &lt;td&gt;0.101&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_talks/u3a-world-since-google.md&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;14.50K&lt;/td&gt;
-      &lt;td&gt;0.058&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_includes/header.html&lt;/td&gt;
-      &lt;td&gt;82&lt;/td&gt;
-      &lt;td&gt;86.94K&lt;/td&gt;
-      &lt;td&gt;0.045&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_talks/ltc-stem-camp.md&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;13.39K&lt;/td&gt;
-      &lt;td&gt;0.041&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;feed.xml&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;112.62K&lt;/td&gt;
-      &lt;td&gt;0.029&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;…more inconsequential stuff follows…&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Wow, the &lt;code&gt;reveal.html&lt;/code&gt; layout has gone from 4.1s to 0.2s, a &lt;strong&gt;20x speedup&lt;/strong&gt;!&lt;/p&gt;
-
-&lt;p&gt;So I guess the moral of the story is that profiling is important, and that
-avoiding copies and writing filthy mutable code is helpful as long as you’re
-careful.&lt;/p&gt;
-
-&lt;p&gt;Now that I’ve done procrastinating with this stuff, I can get back to writing my
-slides for the upcoming semester.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I wrote a reveal.js plugin for Jekyll so that I can make nice slides (especially for my ANU courses). Recently, though, I’ve been touching up the COMP1720 slides for 2019 and it’s getting really slow to build the website.</summary></entry></feed>
+code&lt;/em&gt;. A nice look at some of the players in the Australian livecoding scene.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="media" /><summary type="html">In case you missed it, I was interviewed for an article on the ABC News website which came out last weekend entitled The Australians making music with computer code. A nice look at some of the players in the Australian livecoding scene.</summary></entry></feed>

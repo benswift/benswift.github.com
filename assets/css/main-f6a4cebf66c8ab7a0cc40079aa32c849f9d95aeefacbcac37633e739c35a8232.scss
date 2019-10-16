@@ -224,15 +224,21 @@ img {
 // tables
 
 table {
-	width:100%;
+	// filthy hacks because tables don't play nice with padding
+	width: calc(100% - 1.6rem);
+	margin: 0 0.8rem;
+
 	text-align: left;
 	border-collapse: collapse;
 	th, td {
 		padding: 0.5em 1em 0.5em 0;
 	}
-	th {
+	thead th {
 		border-bottom: 1px solid $highlight-color;
 		vertical-align: bottom;
+	}
+	tbody th {
+		vertical-align: top;
 	}
 	td {
 		vertical-align: top;
@@ -243,6 +249,7 @@ table {
 #toc {
 
 	background: darken($background-color, 3%);
+	clear: both;
 
 	h2 {
 		background: $text-color;
@@ -295,6 +302,10 @@ table {
 	}
 	h1,h2,h3,h4,h5,h6,p {
 		padding: 0;
+	}
+	table {
+		width: 100%;
+		margin: 0;
 	}
 	.navigation {
 		padding: 0;
