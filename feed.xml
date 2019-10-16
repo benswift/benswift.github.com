@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-16T21:03:27+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Making altair/vega-lite charts readable without squinting</title><link href="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" rel="alternate" type="text/html" title="Making altair/vega-lite charts readable without squinting" /><published>2019-10-16T20:14:00+11:00</published><updated>2019-10-16T20:14:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/">&lt;p&gt;My love for the &lt;a href=&quot;https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448&quot;&gt;Grammar of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-16T21:35:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Making Altair/Vega-Lite charts readable without squinting</title><link href="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" rel="alternate" type="text/html" title="Making Altair/Vega-Lite charts readable without squinting" /><published>2019-10-16T20:14:00+11:00</published><updated>2019-10-16T20:14:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/">&lt;p&gt;My love for the &lt;a href=&quot;https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448&quot;&gt;Grammar of
 Graphics&lt;/a&gt;
-runs deep, and in particular for Hadley Wickham’s venerable &lt;code&gt;ggplot2&lt;/code&gt; which
-showed me the light back when I was a young PhD student. Seriously, once you
-have your head around it it makes playing with different views on data &lt;em&gt;so
-easy&lt;/em&gt;, and the ability to quickly try lots of different datavis approaches feels
-like you have superpowers. These days I often work in Python, and for datavis
-I’m enjoying &lt;a href=&quot;https://altair-viz.github.io/index.html&quot;&gt;Altair&lt;/a&gt; which is based
-around the same philosophy.&lt;/p&gt;
+runs deep, and in particular for Hadley Wickham’s famous &lt;code&gt;ggplot2&lt;/code&gt; which showed
+me the light back when I was a young PhD student. Seriously, once you have your
+head around how it works it gives you datavis superpowers. These days I often
+work in Python, and for datavis I’m enjoying
+&lt;a href=&quot;https://altair-viz.github.io/index.html&quot;&gt;Altair&lt;/a&gt; which is based around the same
+philosophy (and outputs to &lt;a href=&quot;https://vega.github.io/vega-lite/&quot;&gt;Vega-Lite&lt;/a&gt; for
+rendering in the browser).&lt;/p&gt;
 
 &lt;p&gt;Recently I’ve needed to (a) create some snazzy graphs with Altair and (b)
 display them in a slide deck. Part (a) was actually the easy part—the tricky
@@ -38,7 +38,7 @@ labels &amp;amp; even lines are quite small&lt;sup id=&quot;fnref:examples&quot;
 control&lt;/a&gt; over the relative sizes
 of labels vs legend vs title, etc. I just want a simple knob for making all the
 text bigger so that my slides don’t double as an &lt;a href=&quot;https://en.wikipedia.org/wiki/Eye_chart&quot;&gt;eye
-chart&lt;/a&gt;. The vega-lite folks (the
+chart&lt;/a&gt;. The Vega-Lite folks (the
 underlying vis engine which Altair uses) &lt;a href=&quot;https://github.com/vega/vega-parser/issues/18&quot;&gt;know about the issue, but don’t want
 to fix it&lt;/a&gt;.&lt;/p&gt;
 
@@ -62,7 +62,7 @@ same except for the &lt;code&gt;.properties(width=100, height=60)&lt;/code&gt; p
 &lt;p&gt;Obviously I’m exaggerating here to make a point, but the key point is that there
 are just a couple of numbers to tweak (&lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) which control text
 &amp;amp; line size, label sizes, and also titles and legends (if present). And that’s
-not something that’s exposed as simply in any other way by the Altair/Vega Lite
+not something that’s exposed as simply in any other way by the Altair/Vega-Lite
 API.&lt;/p&gt;
 
 &lt;p&gt;One final tip: if you want to have consistent sizes &amp;amp; aspect ratios across lots
@@ -82,7 +82,7 @@ get more complicated &amp;amp; have more data marks then things get smaller &amp
 zoomed out, and the problem gets much worse. &lt;a href=&quot;#fnref:examples&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s venerable ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around it it makes playing with different views on data so easy, and the ability to quickly try lots of different datavis approaches feels like you have superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy.</summary></entry><entry><title type="html">Package managers: update or upgrade?</title><link href="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/" rel="alternate" type="text/html" title="Package managers: &lt;code&gt;update&lt;/code&gt; or &lt;code&gt;upgrade&lt;/code&gt;?" /><published>2019-10-16T00:00:00+11:00</published><updated>2019-10-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/">&lt;p&gt;Quick quiz: for the following language/system &lt;a href=&quot;https://en.wikipedia.org/wiki/Package_manager&quot;&gt;package
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><category term="python" /><summary type="html">My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).</summary></entry><entry><title type="html">Package managers: update or upgrade?</title><link href="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/" rel="alternate" type="text/html" title="Package managers: &lt;code&gt;update&lt;/code&gt; or &lt;code&gt;upgrade&lt;/code&gt;?" /><published>2019-10-16T00:00:00+11:00</published><updated>2019-10-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/">&lt;p&gt;Quick quiz: for the following language/system &lt;a href=&quot;https://en.wikipedia.org/wiki/Package_manager&quot;&gt;package
 managers&lt;/a&gt;, what’s the name of the
 subcommand to modify your project/system so that it downloads and uses the
 latest version of one (or more) of your project’s dependencies?&lt;/p&gt;

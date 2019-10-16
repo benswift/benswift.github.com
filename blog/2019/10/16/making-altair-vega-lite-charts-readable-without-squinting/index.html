@@ -34,24 +34,24 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Making altair/vega-lite charts readable without squinting | benswift.me</title>
+<title>Making Altair/Vega-Lite charts readable without squinting | benswift.me</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Making altair/vega-lite charts readable without squinting" />
+<meta property="og:title" content="Making Altair/Vega-Lite charts readable without squinting" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s venerable ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around it it makes playing with different views on data so easy, and the ability to quickly try lots of different datavis approaches feels like you have superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy." />
-<meta property="og:description" content="My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s venerable ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around it it makes playing with different views on data so easy, and the ability to quickly try lots of different datavis approaches feels like you have superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy." />
+<meta name="description" content="My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser)." />
+<meta property="og:description" content="My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser)." />
 <link rel="canonical" href="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" />
 <meta property="og:url" content="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-16T20:14:00+11:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Making altair/vega-lite charts readable without squinting" />
+<meta property="twitter:title" content="Making Altair/Vega-Lite charts readable without squinting" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Making altair/vega-lite charts readable without squinting","dateModified":"2019-10-16T20:14:00+11:00","datePublished":"2019-10-16T20:14:00+11:00","url":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s venerable ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around it it makes playing with different views on data so easy, and the ability to quickly try lots of different datavis approaches feels like you have superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"Making Altair/Vega-Lite charts readable without squinting","dateModified":"2019-10-16T20:14:00+11:00","datePublished":"2019-10-16T20:14:00+11:00","url":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -91,18 +91,30 @@
 	  <main aria-label="Content">
 		<article>
   <p class="post-date">16 Oct '19</p>
-  <h1>Making altair/vega-lite charts readable without squinting</h1>
+  <h1>Making Altair/Vega-Lite charts readable without squinting</h1>
   
+<p class="post-tag-container">
+  
+  <a class="post-tag" href="/blog/tag/web/">
+	web
+  </a>
+  
+  <a class="post-tag" href="/blog/tag/python/">
+	python
+  </a>
+  
+</p>
+
 
   <p>My love for the <a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448">Grammar of
 Graphics</a>
-runs deep, and in particular for Hadley Wickham’s venerable <code>ggplot2</code> which
-showed me the light back when I was a young PhD student. Seriously, once you
-have your head around it it makes playing with different views on data <em>so
-easy</em>, and the ability to quickly try lots of different datavis approaches feels
-like you have superpowers. These days I often work in Python, and for datavis
-I’m enjoying <a href="https://altair-viz.github.io/index.html">Altair</a> which is based
-around the same philosophy.</p>
+runs deep, and in particular for Hadley Wickham’s famous <code>ggplot2</code> which showed
+me the light back when I was a young PhD student. Seriously, once you have your
+head around how it works it gives you datavis superpowers. These days I often
+work in Python, and for datavis I’m enjoying
+<a href="https://altair-viz.github.io/index.html">Altair</a> which is based around the same
+philosophy (and outputs to <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> for
+rendering in the browser).</p>
 
 <p>Recently I’ve needed to (a) create some snazzy graphs with Altair and (b)
 display them in a slide deck. Part (a) was actually the easy part—the tricky
@@ -134,7 +146,7 @@ labels &amp; even lines are quite small<sup id="fnref:examples"><a href="#fn:exa
 control</a> over the relative sizes
 of labels vs legend vs title, etc. I just want a simple knob for making all the
 text bigger so that my slides don’t double as an <a href="https://en.wikipedia.org/wiki/Eye_chart">eye
-chart</a>. The vega-lite folks (the
+chart</a>. The Vega-Lite folks (the
 underlying vis engine which Altair uses) <a href="https://github.com/vega/vega-parser/issues/18">know about the issue, but don’t want
 to fix it</a>.</p>
 
@@ -158,7 +170,7 @@ same except for the <code>.properties(width=100, height=60)</code> part:</p>
 <p>Obviously I’m exaggerating here to make a point, but the key point is that there
 are just a couple of numbers to tweak (<code>width</code> and <code>height</code>) which control text
 &amp; line size, label sizes, and also titles and legends (if present). And that’s
-not something that’s exposed as simply in any other way by the Altair/Vega Lite
+not something that’s exposed as simply in any other way by the Altair/Vega-Lite
 API.</p>
 
 <p>One final tip: if you want to have consistent sizes &amp; aspect ratios across lots
@@ -227,8 +239,8 @@ zoomed out, and the problem gets much worse. <a href="#fnref:examples" class="r
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>02ff6d31</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/02ff6d31/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md">source
+	site revision <code>65302b4c</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/65302b4c/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
