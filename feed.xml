@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-16T21:35:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Making Altair/Vega-Lite charts readable without squinting</title><link href="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" rel="alternate" type="text/html" title="Making Altair/Vega-Lite charts readable without squinting" /><published>2019-10-16T20:14:00+11:00</published><updated>2019-10-16T20:14:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/">&lt;p&gt;My love for the &lt;a href=&quot;https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448&quot;&gt;Grammar of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-18T15:25:22+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Making Altair/Vega-Lite charts readable without squinting</title><link href="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" rel="alternate" type="text/html" title="Making Altair/Vega-Lite charts readable without squinting" /><published>2019-10-16T20:14:00+11:00</published><updated>2019-10-16T20:14:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/">&lt;p&gt;My love for the &lt;a href=&quot;https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448&quot;&gt;Grammar of
 Graphics&lt;/a&gt;
 runs deep, and in particular for Hadley Wickham’s famous &lt;code&gt;ggplot2&lt;/code&gt; which showed
 me the light back when I was a young PhD student. Seriously, once you have your
@@ -84,8 +84,8 @@ zoomed out, and the problem gets much worse. &lt;a href=&quot;#fnref:examples&q
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><category term="python" /><summary type="html">My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).</summary></entry><entry><title type="html">Package managers: update or upgrade?</title><link href="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/" rel="alternate" type="text/html" title="Package managers: &lt;code&gt;update&lt;/code&gt; or &lt;code&gt;upgrade&lt;/code&gt;?" /><published>2019-10-16T00:00:00+11:00</published><updated>2019-10-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/">&lt;p&gt;Quick quiz: for the following language/system &lt;a href=&quot;https://en.wikipedia.org/wiki/Package_manager&quot;&gt;package
 managers&lt;/a&gt;, what’s the name of the
-subcommand to modify your project/system so that it downloads and uses the
-latest version of one (or more) of your project’s dependencies?&lt;/p&gt;
+subcommand to so that your project/system uses the latest version of one (or
+more) of your project’s dependencies?&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -214,12 +214,12 @@ latest version of one (or more) of your project’s dependencies?&lt;/p&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;code&gt;lein&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;Clojure&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;ancient upgrade&lt;/code&gt;&lt;sup id=&quot;fnref:lein&quot;&gt;&lt;a href=&quot;#fn:lein&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;ancient upgrade&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;code&gt;dep&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;Go&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;ensure -update&lt;/code&gt;&lt;sup id=&quot;fnref:dep&quot;&gt;&lt;a href=&quot;#fn:dep&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;ensure -update&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;code&gt;cpan&lt;/code&gt;&lt;/td&gt;
@@ -239,19 +239,16 @@ want to do is update that dependency to the latest version)?&lt;/p&gt;
 takes me a non-zero amount of time as I switch between languages/tools to sit
 and think “ok, for this project do I want to &lt;code&gt;update&lt;/code&gt; or &lt;code&gt;upgrade&lt;/code&gt;”? And that
 makes me sad.&lt;/p&gt;
+
+&lt;p&gt;Also, if any of the above commands are incorrect, or if there’s a better way,
+then &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:pip&quot;&gt;
       &lt;p&gt;&lt;a href=&quot;https://github.com/pypa/pip/issues/59&quot;&gt;https://github.com/pypa/pip/issues/59&lt;/a&gt; &lt;a href=&quot;#fnref:pip&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:lein&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://github.com/xsc/lein-ancient&quot;&gt;https://github.com/xsc/lein-ancient&lt;/a&gt; &lt;a href=&quot;#fnref:lein&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:dep&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://golang.github.io/dep/docs/daily-dep.html&quot;&gt;https://golang.github.io/dep/docs/daily-dep.html&lt;/a&gt; &lt;a href=&quot;#fnref:dep&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="ux" /><summary type="html">Quick quiz: for the following language/system package managers, what’s the name of the subcommand to modify your project/system so that it downloads and uses the latest version of one (or more) of your project’s dependencies?</summary></entry><entry><title type="html">Sound file I/O in Extempore with libsndfile</title><link href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" rel="alternate" type="text/html" title="Sound file I/O in Extempore with libsndfile" /><published>2019-10-15T00:00:00+11:00</published><updated>2019-10-15T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile</id><content type="html" xml:base="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/">&lt;p&gt;&lt;a href=&quot;https://github.com/erikd/libsndfile/&quot;&gt;libsndfile&lt;/a&gt; is “a C library for reading
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="ux" /><summary type="html">Quick quiz: for the following language/system package managers, what’s the name of the subcommand to so that your project/system uses the latest version of one (or more) of your project’s dependencies?</summary></entry><entry><title type="html">Sound file I/O in Extempore with libsndfile</title><link href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" rel="alternate" type="text/html" title="Sound file I/O in Extempore with libsndfile" /><published>2019-10-15T00:00:00+11:00</published><updated>2019-10-15T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile</id><content type="html" xml:base="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/">&lt;p&gt;&lt;a href=&quot;https://github.com/erikd/libsndfile/&quot;&gt;libsndfile&lt;/a&gt; is “a C library for reading
 and writing files containing sampled audio data”, and it’s pretty great. Here’s
 a quick crash-course on using &lt;a href=&quot;https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm&quot;&gt;Extempore’s libsndfile
 bindings&lt;/a&gt;

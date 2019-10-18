@@ -39,8 +39,8 @@
 <meta property="og:title" content="Package managers: update or upgrade?" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Quick quiz: for the following language/system package managers, what’s the name of the subcommand to modify your project/system so that it downloads and uses the latest version of one (or more) of your project’s dependencies?" />
-<meta property="og:description" content="Quick quiz: for the following language/system package managers, what’s the name of the subcommand to modify your project/system so that it downloads and uses the latest version of one (or more) of your project’s dependencies?" />
+<meta name="description" content="Quick quiz: for the following language/system package managers, what’s the name of the subcommand to so that your project/system uses the latest version of one (or more) of your project’s dependencies?" />
+<meta property="og:description" content="Quick quiz: for the following language/system package managers, what’s the name of the subcommand to so that your project/system uses the latest version of one (or more) of your project’s dependencies?" />
 <link rel="canonical" href="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/" />
 <meta property="og:url" content="https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/" />
 <meta property="og:site_name" content="benswift.me" />
@@ -51,7 +51,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Package managers: update or upgrade?","dateModified":"2019-10-16T00:00:00+11:00","datePublished":"2019-10-16T00:00:00+11:00","url":"https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"Quick quiz: for the following language/system package managers, what’s the name of the subcommand to modify your project/system so that it downloads and uses the latest version of one (or more) of your project’s dependencies?","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"Package managers: update or upgrade?","dateModified":"2019-10-16T00:00:00+11:00","datePublished":"2019-10-16T00:00:00+11:00","url":"https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/package-managers-update-or-upgrade/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"Quick quiz: for the following language/system package managers, what’s the name of the subcommand to so that your project/system uses the latest version of one (or more) of your project’s dependencies?","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -108,8 +108,8 @@
 
   <p>Quick quiz: for the following language/system <a href="https://en.wikipedia.org/wiki/Package_manager">package
 managers</a>, what’s the name of the
-subcommand to modify your project/system so that it downloads and uses the
-latest version of one (or more) of your project’s dependencies?</p>
+subcommand to so that your project/system uses the latest version of one (or
+more) of your project’s dependencies?</p>
 
 <table>
   <thead>
@@ -238,12 +238,12 @@ latest version of one (or more) of your project’s dependencies?</p>
     <tr>
       <td><code>lein</code></td>
       <td>Clojure</td>
-      <td><code>ancient upgrade</code><sup id="fnref:lein"><a href="#fn:lein" class="footnote">2</a></sup></td>
+      <td><code>ancient upgrade</code></td>
     </tr>
     <tr>
       <td><code>dep</code></td>
       <td>Go</td>
-      <td><code>ensure -update</code><sup id="fnref:dep"><a href="#fn:dep" class="footnote">3</a></sup></td>
+      <td><code>ensure -update</code></td>
     </tr>
     <tr>
       <td><code>cpan</code></td>
@@ -263,16 +263,13 @@ want to do is update that dependency to the latest version)?</p>
 takes me a non-zero amount of time as I switch between languages/tools to sit
 and think “ok, for this project do I want to <code>update</code> or <code>upgrade</code>”? And that
 makes me sad.</p>
+
+<p>Also, if any of the above commands are incorrect, or if there’s a better way,
+then <a href="https://twitter.com/benswift">ping me on twitter</a>.</p>
 <div class="footnotes">
   <ol>
     <li id="fn:pip">
       <p><a href="https://github.com/pypa/pip/issues/59">https://github.com/pypa/pip/issues/59</a> <a href="#fnref:pip" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:lein">
-      <p><a href="https://github.com/xsc/lein-ancient">https://github.com/xsc/lein-ancient</a> <a href="#fnref:lein" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:dep">
-      <p><a href="https://golang.github.io/dep/docs/daily-dep.html">https://golang.github.io/dep/docs/daily-dep.html</a> <a href="#fnref:dep" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -324,8 +321,8 @@ makes me sad.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>65302b4c</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/65302b4c/_posts/2019-10-16-package-managers-update-or-upgrade.md">source
+	site revision <code>b983359b</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/b983359b/_posts/2019-10-16-package-managers-update-or-upgrade.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
