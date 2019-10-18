@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-18T15:28:54+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Making Altair/Vega-Lite charts readable without squinting</title><link href="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" rel="alternate" type="text/html" title="Making Altair/Vega-Lite charts readable without squinting" /><published>2019-10-16T20:14:00+11:00</published><updated>2019-10-16T20:14:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/">&lt;p&gt;My love for the &lt;a href=&quot;https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448&quot;&gt;Grammar of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-18T15:31:15+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Making Altair/Vega-Lite charts readable without squinting</title><link href="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" rel="alternate" type="text/html" title="Making Altair/Vega-Lite charts readable without squinting" /><published>2019-10-16T20:14:00+11:00</published><updated>2019-10-16T20:14:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/">&lt;p&gt;My love for the &lt;a href=&quot;https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448&quot;&gt;Grammar of
 Graphics&lt;/a&gt;
 runs deep, and in particular for Hadley Wickham’s famous &lt;code&gt;ggplot2&lt;/code&gt; which showed
 me the light back when I was a young PhD student. Seriously, once you have your
@@ -240,8 +240,12 @@ takes me a non-zero amount of time as I switch between languages/tools to sit
 and think “ok, for this project do I want to &lt;code&gt;update&lt;/code&gt; or &lt;code&gt;upgrade&lt;/code&gt;”? And that
 makes me sad.&lt;/p&gt;
 
-&lt;p&gt;Also, if any of the above commands are incorrect, or if there’s a better way,
-then &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If there’s a deep, principled (or even a shallow, pragmatic) reason to pick one
+or the other then we should observe it, and do it &lt;em&gt;consistently&lt;/em&gt;. Even if
+there’s not, we should toss a coin and be consistent anyway.&lt;/p&gt;
+
+&lt;p&gt;If any of the above commands are incorrect, or if there’s a better way, then
+&lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:or-upgrade&quot;&gt;
