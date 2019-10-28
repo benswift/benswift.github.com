@@ -51,7 +51,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Xinyu’s Extempore tutorials","dateModified":"2019-09-18T00:00:00+10:00","datePublished":"2019-09-18T00:00:00+10:00","url":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/"},"url":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/","author":{"@type":"Person","name":"Ben Swift"},"headline":"Xinyu’s Extempore tutorials","dateModified":"2019-09-18T00:00:00+10:00","datePublished":"2019-09-18T00:00:00+10:00","description":"These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -121,6 +121,8 @@ the main Extempore docs site, but for now they’re here on my blog.</p>
   <li><a href="#preliminaries" id="markdown-toc-preliminaries">Preliminaries</a></li>
   <li><a href="#tutorial-one" id="markdown-toc-tutorial-one">Tutorial One</a></li>
   <li><a href="#tutorial-two" id="markdown-toc-tutorial-two">Tutorial Two</a></li>
+  <li><a href="#tutorial-three" id="markdown-toc-tutorial-three">Tutorial Three</a></li>
+  <li><a href="#tutorial-four" id="markdown-toc-tutorial-four">Tutorial Four</a></li>
   <li><a href="#going-further" id="markdown-toc-going-further">Going further</a></li>
 </ul>
 
@@ -269,7 +271,7 @@ sample at given channel and time</li>
 </ol>
 
 <blockquote>
-  <p>Note: you can add comments (starting with <strong>;;</strong>) to the program to make some notes for you to understand the code. The comments are generally ignored by compilers and interpreters.</p>
+  <p>Note: you can add <a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">comments</a> (starting with <strong>;;</strong>) to the program to make some notes for you to understand the code. The comments are generally ignored by compilers and interpreters.</p>
 </blockquote>
 
 <h3 id="modify">Modify</h3>
@@ -296,17 +298,15 @@ sample at given channel and time</li>
 
 <p>Can you play a random frequency sound every time when you redefine the <code>dsp</code> function?</p>
 <blockquote>
-  <p>Note:</p>
-  <ul>
-    <li>You could use <code>(random 440.0 700.0)</code> to randomly generate a value between 440.0 and 700.0</li>
-  </ul>
+  <p>Note:
+You could use <code>(random 440.0 700.0)</code> to randomly generate a value between 440.0 and 700.0</p>
 </blockquote>
 
 <p>Compare to the <code>(random)</code> in the white noise part above, does the <code>(random)</code> work differently here? Can you explain how <code>(random)</code> can be either for “control” (e.g. see the above sine wave part) or for “signal” (e.g. see the white noise part)?</p>
 
 <h2 id="tutorial-two">Tutorial Two</h2>
 
-<h3 id="predict">Predict</h3>
+<h3 id="predict-and-run-1">Predict and Run</h3>
 
 <p>Work in pairs or small groups, look at the code below and predict what might happen when it runs.</p>
 
@@ -322,11 +322,63 @@ sample at given channel and time</li>
     (fmsynth in time chan dat)))
 
 (dsp:set! dsp)
+</code></pre>
 
-;; play a note on our fmsynth
+<blockquote>
+  <p>Note: The dsp function takes as input:</p>
+  <ul>
+    <li><strong>in</strong>: the input audio sample, e.g. from the microphone.</li>
+    <li><strong>time</strong>: an <code>i64</code> representing the time.</li>
+    <li><strong>chan</strong>: another <code>i64</code> which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels.</li>
+    <li><strong>data</strong>: this is a pointer to a <code>SAMPLE</code> type (which is float by default), and can be used to pass arbitrary data into the dsp function.</li>
+  </ul>
+</blockquote>
+
+<p>Think about what is the <code>i64</code> type in the above Note?</p>
+
+<blockquote>
+  <p>Primitive types in Extempore:</p>
+
+  <p>Integers:</p>
+  <ul>
+    <li><code>i1</code>:  (boolean) uses 1 bit.</li>
+    <li><code>i8</code>:  (char) uses 8 bits (1 byte), which could store 2^8 = 256 unique integer values, -128 ~ 127.</li>
+    <li><code>i32</code>: uses 32 bits, which could store 2^32 uniquew integer values, -2^31 ~ (2^31 - 1).</li>
+    <li><code>i64</code>: (default) uses 64 bits, which could store 2^63 uniquew integer values, -2^63 ~ (2^63 - 1).</li>
+  </ul>
+
+  <p>Floats:</p>
+  <ul>
+    <li><code>float</code>:     a single precision (32 bit) floating-point data type.</li>
+    <li><code>double</code>:    (default), a double precision (64 bit) floating-point data type.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>Moreover, for your interests:</p>
+
+  <p><a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming)">Pointer</a> types:</p>
+  <ul>
+    <li><code>double*</code>: a pointer to a double.</li>
+    <li><code>i64*</code>: a pointer to a 64-bit integer.</li>
+    <li><code>i64**</code>: a pointer to a pointer to a 64-bit integer.</li>
+  </ul>
+</blockquote>
+
+<p>Now, we could play a note by using the fmsynth instrument that we just defined:</p>
+
+<pre><code class="language-xtlang">;; play a note on our fmsynth
 (play-note (now) fmsynth (random 60 80) 80 *second*)
+</code></pre>
+<blockquote>
+  <p>Note: the parameters for <code>play-note</code> are <code>play-note &lt;start-time&gt; &lt;instrument&gt; &lt;note-frequency&gt; &lt;note-duration&gt;</code></p>
+</blockquote>
 
-;; make a loop
+<p>What would happend if you play the note for the second time (or multiple times)? Why is the note different?</p>
+
+<p>It’s the time to make a loop in Extempore:</p>
+
+<pre><code class="language-xtlang">;; make a loop
 (define my-loop
   (lambda (time)
     (play-note time fmsynth (random 60 80) 80 *second*)
@@ -335,31 +387,41 @@ sample at given channel and time</li>
 (my-loop (now))
 </code></pre>
 
+<p>We make a <code>loop</code> function above, but how does the <code>loop</code> work? let’s see a simpler example:</p>
+
+<pre><code class="language-xtlang">;; let's see a simpler loop example
+(define test-loop
+ (lambda ()
+   (println "I'm looping...")
+   (callback (+ (now) 10000 *second*) 'test-loop ()))
+)
+
+(test-loop())
+</code></pre>
+
 <blockquote>
-  <p>Note: The dsp function takes as input:</p>
-  <ul>
-    <li>in: the input audio sample, e.g. from the microphone.</li>
-    <li>time: an i64 representing the time.</li>
-    <li>chan: another i64 which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels..</li>
-    <li>data: this is a pointer to a SAMPLE type (which is float by default), and can be used to pass arbitrary data into the dsp function.</li>
-  </ul>
+  <p>Note: the parameters for <code>callback</code> are <code>callback &lt;time&gt; &lt;func&gt; &lt;args&gt;</code></p>
 </blockquote>
 
-<h3 id="run">Run</h3>
+<p>Can you predict what will happen when you run the <code>test-loop</code> function? Run the code to check your thoughts.</p>
 
-<p>Run the code. Dose it work as predicted?</p>
+<blockquote>
+  <p>Note: do not forget to check your terminal panel.</p>
+</blockquote>
 
 <h3 id="investigate-1">Investigate</h3>
 
 <p>Work in pairs or in small groups, work out the answers to the following questions:</p>
 
 <ol>
-  <li>What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click <a href="https://digego.github.io/extempore/scheme-xtlang-interop.html">here</a></li>
-  <li>What is the difference between using <strong>now</strong> versus using <strong>time</strong>?  More information click <a href="https://digego.github.io/extempore/time.html">here</a></li>
+  <li>What does <code>my-loop</code> do?</li>
+  <li>What does the <code>callback</code> in the loop do?</li>
+  <li>What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click <a href="https://digego.github.io/extempore/scheme-xtlang-interop.html">here</a>.</li>
+  <li>What is the difference between using <strong>now</strong> versus using <strong>time</strong>?  More information click <a href="https://digego.github.io/extempore/time.html">here</a>.</li>
 </ol>
 
 <blockquote>
-  <p>Note: you can add comments (starting with <code>;;</code>) to the program to make some notes for you to understand the code.</p>
+  <p>Note: you can add <a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">comments</a> (starting with <code>;;</code>) to the program to make some notes for you to understand the code.</p>
 </blockquote>
 
 <h3 id="modify-1">Modify</h3>
@@ -381,6 +443,357 @@ sample at given channel and time</li>
 <h3 id="make-1">Make</h3>
 
 <p>Can you make a chord (or play different notes at the same time) function by using similar ideas to the previous program?</p>
+
+<h2 id="tutorial-three">Tutorial Three</h2>
+
+<h3 id="predict-and-run-2">Predict and Run</h3>
+
+<pre><code class="language-xtlang">;; loop major scale
+(let loop-white-keys((scale '(0 2 4 5 7 9 11 12 14 16 17 19 21 23))
+           (time 0))
+  (play-note (+ (now) time) synth (+ 60 (car scale)) 80 4000)
+  (if (not (null? (cdr scale)))
+      (loop-white-keys (cdr scale) (+ time 10000))))
+      
+;; another loop for notes
+(let loop-black-keys ((scale '(1 3 6 8 10 13 15 18 20 22))
+           (time 0))
+  (play-note (+ (now) time) synth (+ 60 (car scale)) 80 4000)
+  (if (not (null? (cdr scale)))
+      (loop-black-keys (cdr scale) (+ time 10000))))
+</code></pre>
+
+<blockquote>
+  <p>Note:</p>
+  <ul>
+    <li><code>car</code> return the first element of a list.</li>
+    <li><code>cdr</code> return the rest of the elements in a list, that is, it returns the part of the list that follows the first item.</li>
+    <li><code>if &lt;test&gt; &lt;consequent&gt; &lt;alternate&gt;</code></li>
+    <li><a href="https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_6.html">more conditionals syntax</a>.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>Note: the syntax for <code>let</code> is: <code>let &lt;variable&gt; &lt;bindings&gt; &lt;body&gt;</code></p>
+</blockquote>
+
+<blockquote>
+  <p>Note: in the above examples, we used the named <code>let</code>. Therefore, the <code>&lt;body&gt;</code> could be repeatly executed by invoking the <code>let</code> procedure named by the <code>&lt;variable&gt;</code>.</p>
+</blockquote>
+
+<p>Can you predict what will happen? Then run the code to check your thoughts.</p>
+
+<p>Before you run the code above, do not forget to load the libraries, define and add an instrument <code>synth</code> to the <code>dsp</code> output sink closure:</p>
+
+<pre><code class="language-xtlang">;; load the instruments file
+(sys:load "libs/core/instruments.xtm")
+(sys:load "libs/core/pc_ivl.xtm")
+
+;; define a synth using the provided components
+(make-instrument synth fmsynth)
+
+;; add the instrument to the DSP output sink closure
+(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (synth in time chan dat)))
+
+(dsp:set! dsp)
+</code></pre>
+<p>Now, Let’s play a chord on a list of frequencies! Can you predict what will happen here:</p>
+
+<pre><code class="language-xtlang">;; play a chord
+(map (lambda (p)
+       (play-note (now) synth p 80 44100))
+     (list 72 76 79))
+</code></pre>
+<blockquote>
+  <p>Note: again, the parameters for <code>lambda</code> is: <code>lambda &lt;formals&gt; &lt;body&gt;</code></p>
+</blockquote>
+
+<blockquote>
+  <p>Note: here we have two methods to express a <code>list</code>: For example, <code>(list 72 76 79)</code> and <code>'(72 76 79)</code>.</p>
+</blockquote>
+
+<p>Can you guess what does <code>map</code> do?</p>
+
+<p>Here is another method to play the same chord that we ran above:</p>
+
+<pre><code class="language-xtlang">;; another method for play the same chord
+(define play-a-chord
+  (lambda (time chord)
+    (for-each (lambda (p)
+                (play-note time synth p 80 44100))
+              chord)
+    ))
+    
+(play-a-chord (now) '(72 76 79))
+</code></pre>
+
+<p>Can you guess what will happen after running <code>play-a-chord</code>?</p>
+
+<p>How about more chords?</p>
+
+<pre><code class="language-xtlang">;; markov chord progression
+(define my-progression
+  (lambda (time chords)
+    (play-a-chord time (car chords))
+    (define loop-chords '())
+    (if (not (null? (cdr chords)))
+        (set! loop-chords (cdr chords))
+        (set! loop-chords '((72 76 79)(69 72 76)(65 69 72)(67 71 74))))
+    (callback (+ time 40000) 'my-progression (+ time 44100) loop-chords))
+  )
+
+(my-progression (now) '((72 76 79)(69 72 76)(65 69 72)(67 71 74)))
+</code></pre>
+<blockquote>
+  <p>Note: the syntax for <code>set!</code> is <code>set! &lt;variable&gt; &lt;expression&gt;</code>, which could assign the <code>&lt;expression&gt;</code> to the <code>&lt;variable&gt;</code></p>
+</blockquote>
+
+<p>Run the code. Dose it work as you predicted?</p>
+
+<h3 id="investigate-2">Investigate</h3>
+
+<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+
+<ol>
+  <li>Currently, you have already seen <code>let</code>, <code>define</code> and <code>set!</code>. What are the differences between <code>let</code>, <code>define</code> and <code>set!</code>? E.g:
+    <ul>
+      <li><code>set!</code> doesn’t define the variable, rather it is used to assign the variable a new value.</li>
+      <li>The scope of variables defined by <code>let</code> are bound to the latter.
+ <code>define</code> doesn’t surround the body with parentheses.</li>
+    </ul>
+  </li>
+  <li>Here is another method to play the same chord that we predicted and ran before:</li>
+</ol>
+
+<pre><code class="language-xtlang">;; another method for play the same chord
+(define play-a-chord
+  (lambda (time chord)
+    (for-each (lambda (p)
+                (play-note time synth p 80 44100))
+              chord)
+    ))
+    
+(play-a-chord (now) '(72 76 79))
+</code></pre>
+<p>Compare to the <code>map</code> one, can you find what is the difference between <code>map</code> and <code>for-each</code>?</p>
+<ul>
+  <li>Evaluation order?</li>
+  <li>Return?</li>
+</ul>
+
+<ol>
+  <li>We could use <code>do</code> to make a loop on playing the chord with the above <code>play-a-chord</code> method:</li>
+</ol>
+
+<pre><code class="language-xtlang">;; use do to loop the chord
+(do ((i 0 (+ i 1)))
+    ((&gt; i 3000) ())
+    (play-a-chord (now) '(72 76 79)))
+</code></pre>
+<p>Compare to other <code>loop</code> or other iteration methods, can you find how does the <code>do</code> work here?</p>
+
+<blockquote>
+  <p>Hint: the syntax of <code>do</code> is:</p>
+  <pre><code class="language-xtlang">(do ((&lt;variable1&gt; &lt;init1&gt; &lt;step1&gt;) ...)
+    (&lt;test&gt; &lt;expression&gt; ...)
+    &lt;command&gt; ...)
+</code></pre>
+  <ul>
+    <li>if the <code>&lt;test&gt;</code> result is <code>false</code>, then the sequence of <code>&lt;command&gt;</code> would be evaluated.</li>
+    <li>if the <code>&lt;test&gt;</code> result is <code>true</code>, the sequence of <code>&lt;expression&gt;</code> would be evaluated from left to right, and the last <code>&lt;expression&gt;</code>’s values would be returned at the end.</li>
+    <li>the <a href="https://en.wikipedia.org/wiki/Boolean_data_type">boolean data type</a> for understanding <code>true</code> and <code>false</code>.</li>
+  </ul>
+</blockquote>
+
+<h3 id="modify-2">Modify</h3>
+
+<p>Now, can you please modify the <code>my-progression</code> function so that it could loop each chord for four times before going to the next chord?</p>
+
+<pre><code class="language-xtlang">;; hint
+;; modified my-progression
+(define my-progression-modify
+  (lambda (time chords n)
+    
+    (let loop ((loop-times 0))
+      (if (= loop-times n)
+          (display "stopped")
+          (begin (play-a-chord (+ time (* loop-times 44100)) (car chords))
+            (loop (+ loop-times 1)))))
+    ; (loop-n-times n (play-a-chord time (car chords)))
+    
+    (define loop-chords-modify '())
+    (if (not (null? (cdr chords)))
+        (set! loop-chords-modify (cdr chords))
+        (set! loop-chords-modify '((72 76 79)(69 72 76)(65 69 72)(67 71 74))))
+    
+    (callback (+ time (* n 40000)) 'my-progression-modify (+ time (* n 44100)) loop-chords-modify n))
+  )
+  
+(my-progression-modify (now) '((72 76 79)(69 72 76)(65 69 72)(67 71 74)) 4)
+</code></pre>
+
+<blockquote>
+  <p>Note: here we used the <code>begin</code> to do the sequencing: <code>begin &lt;expression 1&gt; &lt;expression 2&gt; ...&lt;expression n&gt;</code></p>
+  <ul>
+    <li>the sequence of <code>&lt;expression i&gt;</code> will be evaluated sequentially from left to right.</li>
+    <li><code>begin</code> will return the value of the last <code>&lt;expression n&gt;</code>.</li>
+  </ul>
+</blockquote>
+
+<h3 id="make-2">Make</h3>
+
+<ol>
+  <li>Based on the previous code, can you make some creative melody by yourself?</li>
+  <li>Can you play your melody and the chords at the same time?</li>
+</ol>
+
+<h2 id="tutorial-four">Tutorial Four</h2>
+
+<h3 id="predict-and-run-3">Predict and Run</h3>
+
+<p>In this tutorial, we will learn how to do samplers in Extempore. Extempore provides a built-in sampler in <code>libs/external/instruments_ext.xtm</code>, so let’s load the libraries first:</p>
+
+<pre><code class="language-xtlang">;; load the libs
+(sys:load "libs/external/instruments_ext.xtm")
+(sys:load "libs/core/instruments.xtm")
+</code></pre>
+
+<p>We are going to create a drum sampler, can you guess what is happening here:</p>
+
+<pre><code class="language-xtlang">;; TODO
+;; Set/Change the path of the subdirectory “OH” in your code.
+;; In my computer it’s like:
+(define drum-path "/Users/apple/Downloads/COMP3740/salamanderDrumkit/OH/")
+
+;; Load some wave files into drums sampler:
+(set-sampler-index drums (string-append drum-path "kick_OH_F_9.wav") *gm-kick* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "snareStick_OH_F_9.wav") *gm-side-stick* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "snare_OH_FF_9.wav") *gm-snare* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "hihatClosed_OH_F_20.wav") *gm-closed-hi-hat* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "hihatFoot_OH_MP_12.wav") *gm-pedal-hi-hat* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "hihatOpen_OH_FF_6.wav") *gm-open-hi-hat* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "loTom_OH_FF_8.wav") *gm-low-floor-tom* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "hiTom_OH_FF_9.wav") *gm-hi-floor-tom* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "crash1_OH_FF_6.wav") *gm-crash* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "ride1_OH_FF_4.wav") *gm-ride* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "china1_OH_FF_8.wav") *gm-chinese* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "cowbell_FF_9.wav") *gm-cowbell* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "bellchime_F_3.wav") *gm-open-triangle* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "ride1Bell_OH_F_6.wav") *gm-ride-bell* 0 0 0 1)
+
+</code></pre>
+<p>Let’s look at the first row of <code>set-sampler-index</code>. Can you guess why do we need <code>*gm-kick*</code>? What does <code>string-append drum-path "kick_OH_F_9.wav"</code> do?</p>
+
+<blockquote>
+  <p>Note: How to load samples (you can also find more information from <a href="https://digego.github.io/extempore/sampler.html">github</a>).</p>
+  <ol>
+    <li>Download the instrument samples from <a href="https://archive.org/download/SalamanderDrumkit/salamanderDrumkit.tar.bz2">Salamader Drumkit</a>.</li>
+    <li>Unzip the samples and put them wherever you like on your computer.</li>
+    <li>Set/Change the path of the subdirectory “OH” in your code. In my computer it’s like:   <code>define drum-path "/Users/apple/Downloads/COMP3740/salamanderDrumkit/OH/"</code>.</li>
+  </ol>
+</blockquote>
+
+<p>Before you run the code, do not forget to define and add an instrument <code>drums</code> to the <code>dsp</code> output sink closure, and set the <code>dsp</code> as well:</p>
+
+<pre><code class="language-xtlang">;; define a sampler (called drums) using the default sampler note kernel and effects
+(make-instrument drums sampler)
+;; define a synth using the provided components
+(make-instrument synth fmsynth)
+
+;; add the sampler to the dsp output callback
+(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (+ (synth in time chan dat)
+       (drums in time chan dat))))
+
+(dsp:set! dsp)
+</code></pre>
+
+<p>Sounds could be played by calling the below instructions, the similar things as we did before:</p>
+
+<pre><code class="language-xtlang">;; evaluate
+(play-note (now) drums *gm-open-triangle* 80 44100)
+(play-note (now) drums *gm-snare* 80 44100)
+(play-note (now) drums *gm-closed-hi-hat* 80 44100)
+</code></pre>
+
+<p>Can you predict what will happen after you run above three lines respectively? Then run the code to check your thoughts.</p>
+
+<hr />
+
+<p>Now, a cool thing we will do is to define a <code>metronome</code> to evenly distribute our beats with respect to tempo changes.</p>
+
+<p>Can you predict what is happening here?</p>
+
+<pre><code class="language-xtlang">;; create a metronome starting at 120 bpm
+(define *metro1* (make-metro 120))
+
+;; beat loop along the metronome
+(define drum-loop
+  (lambda (time duration drum)
+    (println time duration)
+    (play-note (*metro1* time) drums drum 80 (*metro1* 'dur duration))
+    (callback (*metro1* (+ time (* .5 duration))) 'drum-loop (+ time duration)
+              duration drum)))
+
+(drum-loop (*metro1* 'get-beat) 1 *gm-hi-floor-tom*)
+</code></pre>
+
+<p>Let’s define another metronome <code>metronome2</code>:</p>
+
+<pre><code class="language-xtlang">;; create another metronome starting at 120 bpm
+(define *metro2* (make-metro 120))
+</code></pre>
+<p>Can you guess what will happen after you evaluate this <code>drum-loop-tempo-shift</code>? What does <code>println</code> will do?</p>
+
+<pre><code class="language-xtlang">;; set tempo shift
+(define drum-loop-tempo-shift
+  (lambda (time duration drum)
+    (*metro2* 'set-tempo (+ 20 (* 6. (cos (modulo time 9)))))
+    (println (+ 20 (* 6. (cos (modulo time 9)))))
+    (play-note (*metro2* time) drums drum 80 (*metro2* 'dur duration))
+    (callback (*metro2* (+ time (* .5 duration))) 'drum-loop-tempo-shift (+ time duration)
+              (random (list 0.5)) drum)))
+
+(drum-loop-tempo-shift (*metro2* 'get-beat) 0.5 *gm-cowbell*)
+</code></pre>
+
+<blockquote>
+  <p>Note: <code>println</code> calls the polymorphic function <code>print</code> for each supplied argument, but <code>println</code> automatically provides both spaces and a carriage return.</p>
+</blockquote>
+
+<p>Run the code. Did it work as you predicted?</p>
+
+<h3 id="investigate-3">Investigate</h3>
+
+<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+
+<ol>
+  <li>What does the function <code>make-metro</code> do?</li>
+  <li>What does <code>*metro* 'get-beat</code> do?</li>
+  <li>What does <code>*metro* 'dur</code> do?</li>
+  <li>What does <code>*metro* set-tempo</code> do?</li>
+</ol>
+
+<h3 id="modify-3">Modify</h3>
+
+<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+
+<ol>
+  <li>Can you load the piano samples as well? (<a href="http://download.linuxaudio.org/lau/SalamanderGrandPianoV2/SalamanderGrandPianoV2_44.1khz16bit.tar.bz2">Salamander piano</a>).</li>
+  <li>Can you pay multiple drums with different tempo at the same time?</li>
+</ol>
+
+<pre><code class="language-xtlang">;;hint
+(drum-loop (*metro1* 'get-beat) 1 *gm-hi-floor-tom*)
+(drum-loop (*metro1* 'get-beat) 0.3 *gm-open-triangle* )
+</code></pre>
+
+<h3 id="make-3">Make</h3>
+
+<p>Combine the knowledge that you learned before. Now you can use drums, synth, piano and metronome to create your own music.</p>
 
 <h2 id="going-further">Going further</h2>
 
@@ -436,8 +849,8 @@ Extempore folder.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>586aa682</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/586aa682/_posts/2019-09-18-xinyus-extempore-tutorials.md">source
+	site revision <code>0a755daf</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/0a755daf/_posts/2019-09-18-xinyus-extempore-tutorials.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
