@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-28T15:27:47+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Ben and COMP2300 next year</title><link href="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/" rel="alternate" type="text/html" title="Ben and COMP2300 next year" /><published>2019-10-21T00:00:00+11:00</published><updated>2019-10-21T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year</id><content type="html" xml:base="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/">&lt;p&gt;Students&lt;sup id=&quot;fnref:organised-ones&quot;&gt;&lt;a href=&quot;#fn:organised-ones&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; are starting to turn their gaze towards 2020, and so
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-31T08:41:00+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
+&lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;LENS&lt;/a&gt; cohort (the ANU
+Laptop Ensemble) gave their final performances as part of the ANU School of
+Music’s composition showcase. Thanks to everyone who attended, and congrats
+again to the students who learned a bunch of computer music stuff &amp;amp;
+build/composed and performed a working piece in one crazy semester. And an
+especially big thanks to my LENS co-directors
+&lt;a href=&quot;http://charlesmartin.com.au/&quot;&gt;Charles&lt;/a&gt; and
+&lt;a href=&quot;http://music.cass.anu.edu.au/people/dr-alexander-hunter&quot;&gt;Alec&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There were more talented photographers than I present (and I’ll put those photos
+&amp;amp; videos up when I track them down) but here are some photos I snapped of the
+performances:&lt;/p&gt;
+
+&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0895-7b85a61c7e420b72a5501a29478e7383f84aaee03306a04ab1adcb706bab1589.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0896-e57a47fb992d099eaf8c9dafb2621a22831ce33cb33041c0c09a376982017379.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0897-8c16c6195295fc51162a8127023d91e7eaeecea2082904e86bebb06e0bda7b03.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0898-71851e581d51ad11e16d11240608c9222c611ffd2dc387ae4d1f750dac31143c.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0899-074554cb7cd03ca42af42f42e3cc6322f0f0f417485bec1572c52c89fec8ce6e.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0900-c93c2205aea67252895126a4410acc3d96d3297a5951595140e766bab76bd081.jpg&quot; /&gt;&lt;/picture&gt;
+
+&lt;p&gt;the LENS members even stayed around afterwards to help us bump out:&lt;/p&gt;
+
+&lt;picture&gt;&lt;img alt=&quot;LENS members packing up at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0901-afa757d193dc380549500eaf66f48bc8a91f516d815147e0c0514ffcfb73f476.jpg&quot; /&gt;&lt;/picture&gt;
+
+&lt;p&gt;LENS will be back again in S1 2019, so if you’re interested then &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;shoot me an
+email&lt;/a&gt; and we can keep you in the loop about how to
+be involved.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="lens" /><category term="gigs" /><summary type="html">Last weekend the S2 2019 LENS cohort (the ANU Laptop Ensemble) gave their final performances as part of the ANU School of Music’s composition showcase. Thanks to everyone who attended, and congrats again to the students who learned a bunch of computer music stuff &amp;amp; build/composed and performed a working piece in one crazy semester. And an especially big thanks to my LENS co-directors Charles and Alec.</summary></entry><entry><title type="html">Ben and COMP2300 next year</title><link href="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/" rel="alternate" type="text/html" title="Ben and COMP2300 next year" /><published>2019-10-21T00:00:00+11:00</published><updated>2019-10-21T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year</id><content type="html" xml:base="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/">&lt;p&gt;Students&lt;sup id=&quot;fnref:organised-ones&quot;&gt;&lt;a href=&quot;#fn:organised-ones&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; are starting to turn their gaze towards 2020, and so
 I’ve been getting a bunch of emails asking me if I’m teaching
 &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;COMP2300/6300&lt;/a&gt; &lt;em&gt;Computer Organisation
 &amp;amp; Program Execution&lt;/em&gt; again in Semester 1 2020.&lt;/p&gt;
@@ -1667,22 +1694,4 @@ this contenxt&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;data-and-information&quot;&gt;Data and information&lt;/h2&gt;
 
-&lt;p&gt;TODO&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">I’m now a Reimagine Fellow and stuff to do with that program (and getting the c/c/c studio up and running) is starting to happen. As I’ve done so far I’m planning to continue to work on this project “in the open”, i.e. on this blog. This means that if you’ve got ideas or want to help out, you can see where I’m up to (and get in touch), and it also minimises the likelihood that I’ll be forced to email around anything called project-plan-final-ACTUALLY-FINAL-v3.docx 😉.</summary></entry><entry><title type="html">I’m a Reimagine Fellow</title><link href="https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow/" rel="alternate" type="text/html" title="I'm a Reimagine Fellow" /><published>2019-08-30T00:00:00+10:00</published><updated>2019-08-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow</id><content type="html" xml:base="https://benswift.me/blog/2019/08/30/Im-a-reimagine-fellow/">&lt;p&gt;If you’ve been following the CECS newsletter, you’ll know that the inaugural
-&lt;a href=&quot;https://cecs.anu.edu.au/reimagine/reimagine-fellows&quot;&gt;Reimagine Fellows&lt;/a&gt; have been
-announced, and I’m one of them 🙌🎉🥳. It’s very exciting, and it means the
-&lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;c/c/c studio&lt;/a&gt; is going to be a real
-thing in 2020 (and beyond). It’s also a relief to be able to tell people, since
-I’ve had to keep the good news under my hat for the last couple of months.&lt;/p&gt;
-
-&lt;p&gt;There are &lt;strong&gt;lots&lt;/strong&gt; of details still to figure out, and I’m going to be
-talking to lots of folks over the next little while about how best to make this
-grand vision happen (if you’d like to chat, &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in
-touch&lt;/a&gt;). But to give you a flavour, here’s a snazzy
-video the clever folks at CECS made:&lt;/p&gt;
-
-&lt;div style=&quot;width:100%; margin: 0px auto;&quot;&gt;
-  &lt;div style=&quot;position: relative; padding-bottom: 62.5%; height: 0px;&quot;&gt;
-	&lt;iframe style=&quot;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;&quot; src=&quot;https://www.youtube.com/embed/Sv4Y-UPqML8&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
-	&lt;/iframe&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">If you’ve been following the CECS newsletter, you’ll know that the inaugural Reimagine Fellows have been announced, and I’m one of them 🙌🎉🥳. It’s very exciting, and it means the c/c/c studio is going to be a real thing in 2020 (and beyond). It’s also a relief to be able to tell people, since I’ve had to keep the good news under my hat for the last couple of months.</summary></entry></feed>
+&lt;p&gt;TODO&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">I’m now a Reimagine Fellow and stuff to do with that program (and getting the c/c/c studio up and running) is starting to happen. As I’ve done so far I’m planning to continue to work on this project “in the open”, i.e. on this blog. This means that if you’ve got ideas or want to help out, you can see where I’m up to (and get in touch), and it also minimises the likelihood that I’ll be forced to email around anything called project-plan-final-ACTUALLY-FINAL-v3.docx 😉.</summary></entry></feed>
