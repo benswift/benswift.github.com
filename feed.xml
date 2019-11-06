@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-07T09:48:28+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">CoDesign Culture Lab workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="CoDesign Culture Lab workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;div id=&quot;toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-07T10:46:41+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">CoDesign Culture Lab workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="CoDesign Culture Lab workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;p&gt;A workshop at the &lt;a href=&quot;https://cecs.anu.edu.au/events/event-series/codesign-culture-lab&quot;&gt;CoDesign Culture
+Lab&lt;/a&gt;—title
+TBC. If you’re coming to the culture lab and you’d like to be part of the
+workshop, &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;/a&gt; 😊&lt;/p&gt;
+
+&lt;div id=&quot;toc&quot;&gt;
 
   &lt;h2&gt;table of contents&lt;/h2&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#brief&quot; id=&quot;markdown-toc-brief&quot;&gt;Brief&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#a-few-more-things&quot; id=&quot;markdown-toc-a-few-more-things&quot;&gt;A few more things…&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#workshop-timeline&quot; id=&quot;markdown-toc-workshop-timeline&quot;&gt;Workshop timeline&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#lets-spin-the-wheels&quot; id=&quot;markdown-toc-lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
-
-&lt;p&gt;Workshop for the &lt;a href=&quot;https://cecs.anu.edu.au/events/event-series/codesign-culture-lab&quot;&gt;CoDesign Culture
-Lab&lt;/a&gt;—title
-TBC.&lt;/p&gt;
 
 &lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js&quot;&gt;&lt;/script&gt;
 
@@ -41,7 +41,7 @@ the submissions for your assignment&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;a-few-more-things&quot;&gt;A few more things…&lt;/h2&gt;
+&lt;h3 id=&quot;things-to-think-about&quot;&gt;Things to think about…&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -50,9 +50,9 @@ high-school one-off workshop, year 11/12 extension program (i.e. the c/c/c
 studio), first-year assignment at uni, graduate-level coursework, etc.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;these problems are &lt;em&gt;not solvable in the context of a single assessment task&lt;/em&gt;,
-so don’t make that the criteria—instead, you want students to explore &amp;amp;
-understand the problem, process &amp;amp; tool more deeply&lt;/p&gt;
+    &lt;p&gt;these problems are &lt;em&gt;not solvable in a single assessment task&lt;/em&gt;, so don’t make
+that the criteria—instead, you want students to explore &amp;amp; understand the
+problem, process &amp;amp; tool more deeply&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;think: how might the &lt;em&gt;tool&lt;/em&gt; and the &lt;em&gt;process&lt;/em&gt; shape the responses to the
@@ -68,12 +68,27 @@ students from a wide range of backgrounds/abilities?&lt;/p&gt;
 &lt;h2 id=&quot;workshop-timeline&quot;&gt;Workshop timeline&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;9:00&lt;/strong&gt;: intro&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:00&lt;/strong&gt;: intro—what is the c/c/c studio&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;9:20&lt;/strong&gt;: team formation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;9:30&lt;/strong&gt;: spin the wheel(s)!&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;9:45&lt;/strong&gt;: group work—assignment spec&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;10:30&lt;/strong&gt;: present your assignment spec to workshop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;10:45&lt;/strong&gt;: break (morning tea)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;11:00&lt;/strong&gt;: group work: learning outcomes/assessment criteria&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;11:30&lt;/strong&gt;: present your LOs/AC to the workshop&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;11:45&lt;/strong&gt;: wrap-up&lt;/li&gt;
@@ -92,12 +107,12 @@ down in &lt;em&gt;your&lt;/em&gt; assessment task spec.&lt;/p&gt;
 &lt;p&gt;Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in &lt;em&gt;doing&lt;/em&gt; the assessment task.&lt;/p&gt;
 
-&lt;canvas id=&quot;canvas&quot; width=&quot;800&quot; height=&quot;600&quot; onclick=&quot;startSpin(codeWheel);&quot;&gt;
+&lt;canvas id=&quot;canvas&quot; width=&quot;800&quot; height=&quot;800&quot; onclick=&quot;startSpin(codeWheel);&quot;&gt;
 &lt;/canvas&gt;
 
 &lt;p&gt;result: &lt;span id=&quot;spin-result&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;script src=&quot;/assets/js/ccc-workshop-wheels-cfbb77b50d0369b6cd94ab58c71e5064ca0f81cae32c0e9ec2dc657923f4e353.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/js/ccc-workshop-wheels-409875a6b83ab0a9035c4b9f6f822fc3a549cd6ab862b2c26ad7dcbe96d2b6ea.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 
 &lt;h3 id=&quot;creativity&quot;&gt;creativity&lt;/h3&gt;
 
@@ -133,7 +148,7 @@ process.&lt;/p&gt;
       &lt;p&gt;wheels powered by &lt;a href=&quot;http://dougtesting.net/home&quot;&gt;Winwheel.js&lt;/a&gt; by Douglas McKechie &lt;a href=&quot;#fnref:winwheel&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">table of contents</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">A workshop at the CoDesign Culture Lab—title TBC. If you’re coming to the culture lab and you’d like to be part of the workshop, get in touch 😊</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
 &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;LENS&lt;/a&gt; cohort (the ANU
 Laptop Ensemble) gave their final performances as part of the ANU School of
 Music’s composition showcase. Thanks to everyone who attended, and congrats
