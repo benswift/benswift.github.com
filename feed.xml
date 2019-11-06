@@ -1,4 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-10-31T08:41:00+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-07T09:48:28+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">CoDesign Culture Lab workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="CoDesign Culture Lab workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;div id=&quot;toc&quot;&gt;
+
+  &lt;h2&gt;table of contents&lt;/h2&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#brief&quot; id=&quot;markdown-toc-brief&quot;&gt;Brief&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a-few-more-things&quot; id=&quot;markdown-toc-a-few-more-things&quot;&gt;A few more things…&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#workshop-timeline&quot; id=&quot;markdown-toc-workshop-timeline&quot;&gt;Workshop timeline&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lets-spin-the-wheels&quot; id=&quot;markdown-toc-lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Workshop for the &lt;a href=&quot;https://cecs.anu.edu.au/events/event-series/codesign-culture-lab&quot;&gt;CoDesign Culture
+Lab&lt;/a&gt;—title
+TBC.&lt;/p&gt;
+
+&lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/assets/js/Winwheel-fcd665c2e10db910ab8cef7ba543b12656f438c2089feb4dd8e0b9556016a7f2.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;brief&quot;&gt;Brief&lt;/h2&gt;
+
+&lt;p&gt;You’re a curriculum designer for the c/c/c studio! Welcome aboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Today’s task&lt;/strong&gt;: in groups, come up with an assessment task which explores a
+&lt;em&gt;problem&lt;/em&gt; through a creative &lt;em&gt;process&lt;/em&gt; using a particular &lt;em&gt;tool&lt;/em&gt;. You don’t get
+to pick the &lt;em&gt;problem&lt;/em&gt;, &lt;em&gt;process&lt;/em&gt; &amp;amp; &lt;em&gt;tool&lt;/em&gt; though—we’ll let the wheel decide.&lt;/p&gt;
+
+&lt;p&gt;At the end of this workshop, your group will produce (and present to the rest of
+us) two things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;an assignment spec: brief description &amp;amp; motivation, any specific restraints or
+requirements, and&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a set of learning outcomes / assessment criteria which will be used to assess
+the submissions for your assignment&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;a-few-more-things&quot;&gt;A few more things…&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;as for the age/background of the students, it’s up to you—e.g. early
+high-school one-off workshop, year 11/12 extension program (i.e. the c/c/c
+studio), first-year assignment at uni, graduate-level coursework, etc.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;these problems are &lt;em&gt;not solvable in the context of a single assessment task&lt;/em&gt;,
+so don’t make that the criteria—instead, you want students to explore &amp;amp;
+understand the problem, process &amp;amp; tool more deeply&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;think: how might the &lt;em&gt;tool&lt;/em&gt; and the &lt;em&gt;process&lt;/em&gt; shape the responses to the
+problem? can you use this to your advantage in encouraging students to attain
+the learning outcomes?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;how are you going to constrain the scope of your task so that it supports
+students from a wide range of backgrounds/abilities?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;workshop-timeline&quot;&gt;Workshop timeline&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;9:00&lt;/strong&gt;: intro&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:20&lt;/strong&gt;: team formation&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:30&lt;/strong&gt;: spin the wheel(s)!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:45&lt;/strong&gt;: group work—assignment spec&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;10:30&lt;/strong&gt;: present your assignment spec to workshop&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;10:45&lt;/strong&gt;: break (morning tea)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;11:00&lt;/strong&gt;: group work: learning outcomes/assessment criteria&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;11:30&lt;/strong&gt;: present your LOs/AC to the workshop&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;11:45&lt;/strong&gt;: wrap-up&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;sup id=&quot;fnref:winwheel&quot;&gt;&lt;a href=&quot;#fn:winwheel&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;Note: all these lists are a work-in-progress.&lt;/p&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;code&lt;/h3&gt;
+
+&lt;p&gt;The &lt;em&gt;tool&lt;/em&gt; (or class of tools) which the students need to leverage in their
+creative response. This is deliberately broad—you can (and should) narrow it
+down in &lt;em&gt;your&lt;/em&gt; assessment task spec.&lt;/p&gt;
+
+&lt;p&gt;Note: one other way to frame this is this is the skill/concept that you want the
+students to learn (perhaps surreptitiously) in &lt;em&gt;doing&lt;/em&gt; the assessment task.&lt;/p&gt;
+
+&lt;canvas id=&quot;canvas&quot; width=&quot;800&quot; height=&quot;600&quot; onclick=&quot;startSpin(codeWheel);&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;p&gt;result: &lt;span id=&quot;spin-result&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;script src=&quot;/assets/js/ccc-workshop-wheels-cfbb77b50d0369b6cd94ab58c71e5064ca0f81cae32c0e9ec2dc657923f4e353.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;creativity&quot;&gt;creativity&lt;/h3&gt;
+
+&lt;p&gt;The creative &lt;em&gt;process&lt;/em&gt; (the medium) through which the student will explore the
+problem.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;music&lt;/li&gt;
+  &lt;li&gt;dance&lt;/li&gt;
+  &lt;li&gt;photography&lt;/li&gt;
+  &lt;li&gt;sculpture&lt;/li&gt;
+  &lt;li&gt;creative writing&lt;/li&gt;
+  &lt;li&gt;meme&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;culture&quot;&gt;culture&lt;/h3&gt;
+
+&lt;p&gt;The &lt;em&gt;problem&lt;/em&gt; facing our culture/society to explore through the chosen tool &amp;amp;
+process.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;privacy&lt;/li&gt;
+  &lt;li&gt;ethics&lt;/li&gt;
+  &lt;li&gt;wealth inequality&lt;/li&gt;
+  &lt;li&gt;climate change&lt;/li&gt;
+  &lt;li&gt;regulation of tech companies&lt;/li&gt;
+  &lt;li&gt;immigration&lt;/li&gt;
+  &lt;li&gt;civility in the public square&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:winwheel&quot;&gt;
+      &lt;p&gt;wheels powered by &lt;a href=&quot;http://dougtesting.net/home&quot;&gt;Winwheel.js&lt;/a&gt; by Douglas McKechie &lt;a href=&quot;#fnref:winwheel&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">table of contents</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
 &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;LENS&lt;/a&gt; cohort (the ANU
 Laptop Ensemble) gave their final performances as part of the ANU School of
 Music’s composition showcase. Thanks to everyone who attended, and congrats
@@ -1581,117 +1716,4 @@ You could use &lt;code&gt;(random 440.0 700.0)&lt;/code&gt; to randomly generate
 &lt;p&gt;As well as the &lt;a href=&quot;https://extemporelang.github.io&quot;&gt;Extempore documentation
 website&lt;/a&gt;, the best place to start messing
 around is with more examples: e.g. the &lt;code&gt;examples/core/fmsynth.xtm&lt;/code&gt; file in your
-Extempore folder.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><summary type="html">These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore.</summary></entry><entry><title type="html">c/c/c studio: what’s already happening</title><link href="https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop/" rel="alternate" type="text/html" title="c/c/c studio: what's already happening" /><published>2019-09-09T00:00:00+10:00</published><updated>2019-09-09T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/09/09/reimagine-fellowship-planning-workshop/">&lt;p&gt;I’m now a &lt;a href=&quot;/blog/2019/08/30/Im-a-reimagine-fellow/&quot;&gt;Reimagine Fellow&lt;/a&gt; and stuff to do with that program
-(and getting the &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;c/c/c studio&lt;/a&gt; up and running) is
-starting to happen. As I’ve &lt;a href=&quot;/blog/2019/02/07/reimagining-engineering-cs-at-the-anu/&quot;&gt;done&lt;/a&gt; &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;so
-far&lt;/a&gt; I’m planning to continue to work on this project “in the open”, i.e. on this
-blog. This means that if you’ve got ideas or want to help out, you can see where
-I’m up to (and &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;/a&gt;), and it also
-minimises the likelihood that I’ll be forced to email around anything called
-&lt;code&gt;project-plan-final-ACTUALLY-FINAL-v3.docx&lt;/code&gt; 😉.&lt;/p&gt;
-
-&lt;p&gt;In preparation for a Reimagine Fellows workshop this week (Thursday September
-12) I’m sketching out all the existing stuff that’s happening on- (and off-)
-campus relating to the c/c/c studio. This is all really rough, but it’s a place
-to collect the thoughts &amp;amp; names in my head.&lt;/p&gt;
-
-&lt;h2 id=&quot;people--internal-and-external-to-cecs&quot;&gt;People-–-internal and external to CECS&lt;/h2&gt;
-
-&lt;p&gt;There are lots of folks, in a few different places:&lt;/p&gt;
-
-&lt;h3 id=&quot;internal&quot;&gt;Internal&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://charlesmartin.com.au&quot;&gt;Charles Martin&lt;/a&gt;, RSCS Lecturer and creative
-code practitioner&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://cecs.anu.edu.au/people/genevieve-bell&quot;&gt;Genevieve Bell&lt;/a&gt;,
-&lt;a href=&quot;https://3ainstitute.cecs.anu.edu.au&quot;&gt;3Ai&lt;/a&gt; Director&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://hingstonbrook.com/60hbrook/hb6000.php&quot;&gt;Tim Brook&lt;/a&gt;, artist &amp;amp;
-mathematician, RSCS Adjunct&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;external&quot;&gt;External&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://researchers.anu.edu.au/researchers/hunter-at&quot;&gt;Alec Hunter&lt;/a&gt;, ANU
-SoM, previously the convenor of the Open School of Music program&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://researchers.anu.edu.au/researchers/hinchcliffe-gb&quot;&gt;Geoff
-Hinchcliffe&lt;/a&gt;, ANU
-SoAD, CASS Associate Dean (Education)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Kit Devine, SoAD artist &amp;amp; lecturer&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://tonycurran.net/&quot;&gt;Tony Curran&lt;/a&gt;, artist, SoAD &amp;amp; RSCS lecturer&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.ericaseccombe.com&quot;&gt;Erica Seccombe&lt;/a&gt;, ANU SoAD artist &amp;amp; researcher,
-board member of ANAT (the Australian Network for Art &amp;amp; Technology)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.deirdrefeeney.com&quot;&gt;Dierdre Feeney&lt;/a&gt;, artist exploring compositions
-of the constructed + projected (moving) image&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/madeleine-parker-928644102/&quot;&gt;Madeleine Parker&lt;/a&gt;,
-SCI ART CBR Community Co-ordinator&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.dicksonc.act.edu.au/our_school/principals_welcome&quot;&gt;Craig Edwards&lt;/a&gt;,
-Dickson College Principal&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://robogals.org/locations/asia-pacific-apac/canberra/&quot;&gt;Morgan Marshall&lt;/a&gt;,
-President of Robogals Canberra&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;systems-and-structures&quot;&gt;Systems and structures&lt;/h2&gt;
-
-&lt;h3 id=&quot;cecs&quot;&gt;CECS&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;the &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;code/creativity/culture
-group&lt;/a&gt; (my research group)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;ANU Laptop Ensemble&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;cass&quot;&gt;CASS&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;ANU Open School of Music (outreach/extension stuff with pre-teritary kids)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;School of Art &amp;amp; Design&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;outside-anu&quot;&gt;Outside ANU&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Australian Network for Art &amp;amp; Technology&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;processes&quot;&gt;Processes&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;I’m not quite sure what the difference is between a structure &amp;amp; a process in
-this contenxt&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;data-and-information&quot;&gt;Data and information&lt;/h2&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">I’m now a Reimagine Fellow and stuff to do with that program (and getting the c/c/c studio up and running) is starting to happen. As I’ve done so far I’m planning to continue to work on this project “in the open”, i.e. on this blog. This means that if you’ve got ideas or want to help out, you can see where I’m up to (and get in touch), and it also minimises the likelihood that I’ll be forced to email around anything called project-plan-final-ACTUALLY-FINAL-v3.docx 😉.</summary></entry></feed>
+Extempore folder.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><summary type="html">These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore.</summary></entry></feed>
