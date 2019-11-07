@@ -42,3 +42,4 @@ function displaySpinResult(wheel, indicatedSegment)
 	e.textContent = indicatedSegment.text;
   }
 }
+;

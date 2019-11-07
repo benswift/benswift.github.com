@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-07T10:46:41+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">CoDesign Culture Lab workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="CoDesign Culture Lab workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;p&gt;A workshop at the &lt;a href=&quot;https://cecs.anu.edu.au/events/event-series/codesign-culture-lab&quot;&gt;CoDesign Culture
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-07T14:50:05+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">CoDesign Culture Lab workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="CoDesign Culture Lab workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;p&gt;A workshop at the &lt;a href=&quot;https://cecs.anu.edu.au/events/event-series/codesign-culture-lab&quot;&gt;CoDesign Culture
 Lab&lt;/a&gt;—title
 TBC. If you’re coming to the culture lab and you’d like to be part of the
 workshop, &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;/a&gt; 😊&lt;/p&gt;
@@ -11,13 +11,10 @@ workshop, &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;
   &lt;li&gt;&lt;a href=&quot;#brief&quot; id=&quot;markdown-toc-brief&quot;&gt;Brief&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#workshop-timeline&quot; id=&quot;markdown-toc-workshop-timeline&quot;&gt;Workshop timeline&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#lets-spin-the-wheels&quot; id=&quot;markdown-toc-lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#notes&quot; id=&quot;markdown-toc-notes&quot;&gt;notes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
-
-&lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;/assets/js/Winwheel-fcd665c2e10db910ab8cef7ba543b12656f438c2089feb4dd8e0b9556016a7f2.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;brief&quot;&gt;Brief&lt;/h2&gt;
 
@@ -83,20 +80,40 @@ students from a wide range of backgrounds/abilities?&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;10:45&lt;/strong&gt;: break (morning tea)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;11:00&lt;/strong&gt;:  break (morning tea)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;11:00&lt;/strong&gt;: group work: learning outcomes/assessment criteria&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;11:30&lt;/strong&gt;: present your LOs/AC to the workshop&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;11:45&lt;/strong&gt;: wrap-up&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;11:30&lt;/strong&gt;: group work: learning outcomes/assessment criteria&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;12:00&lt;/strong&gt;: present your LOs/AC to the workshop&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;12:15&lt;/strong&gt;: wrap-up&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;sup id=&quot;fnref:winwheel&quot;&gt;&lt;a href=&quot;#fn:winwheel&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
 
 &lt;p class=&quot;hl-para&quot;&gt;Note: all these lists are a work-in-progress.&lt;/p&gt;
+
+&lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/assets/js/Winwheel-b66809a0e59bfb42fc1f3a968197308db7eac0bea2d388ec34c5508d889a9aca.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/assets/js/ccc-workshop-wheels-32dc5c5f8dbea522d232fd7a6f0e11c740282817adea83f90bd8802a515b1751.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;style&gt;
+.wheelIndicator {
+  width:100%;
+  font-size:6em;
+  text-align:center;
+  margin-bottom:-0.3em;
+}
+
+.wheelResult {
+  font-size:2em;
+  margin-bottom:1em;
+}
+&lt;/style&gt;
 
 &lt;h3 id=&quot;code&quot;&gt;code&lt;/h3&gt;
 
@@ -107,40 +124,162 @@ down in &lt;em&gt;your&lt;/em&gt; assessment task spec.&lt;/p&gt;
 &lt;p&gt;Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in &lt;em&gt;doing&lt;/em&gt; the assessment task.&lt;/p&gt;
 
-&lt;canvas id=&quot;canvas&quot; width=&quot;800&quot; height=&quot;800&quot; onclick=&quot;startSpin(codeWheel);&quot;&gt;
+&lt;div class=&quot;wheelIndicator&quot;&gt;⧨&lt;/div&gt;
+&lt;canvas id=&quot;codeWheel-canvas&quot; width=&quot;800&quot; height=&quot;600&quot; onclick=&quot;startSpin(codeWheel);&quot;&gt;
 &lt;/canvas&gt;
 
-&lt;p&gt;result: &lt;span id=&quot;spin-result&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;wheelResult&quot;&gt;result: &lt;strong&gt;&lt;span class=&quot;codeWheel-canvas-result&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;script src=&quot;/assets/js/ccc-workshop-wheels-409875a6b83ab0a9035c4b9f6f822fc3a549cd6ab862b2c26ad7dcbe96d2b6ea.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+let acmBoK2016 = [
+  &quot;Circuits &amp; Electronics&quot;,
+  &quot;Computing Algorithms&quot;,
+  &quot;Computer Architecture&quot;,
+  &quot;Digital Design&quot;,
+  &quot;Embedded Systems&quot;,
+  &quot;Computer Networks&quot;,
+  &quot;Information Security&quot;,
+  &quot;Signal Processing&quot;,
+  &quot;Systems &amp; Project Eng.&quot;,
+  &quot;Software Design&quot;
+];
+
+let benCodeConcepts = [
+  &quot;algorithms&quot;,
+  &quot;robotics&quot;,
+  &quot;Software Eng&quot;,
+  &quot;databases&quot;,
+  &quot;networks&quot;,
+  &quot;UI/UX design&quot;,
+  &quot;data analytics&quot;,
+  &quot;compilers&quot;,
+  &quot;operating systems&quot;
+]
+
+let codeWheel = makeWheel(benCodeConcepts, &quot;codeWheel-canvas&quot;);
+&lt;/script&gt;
 
 &lt;h3 id=&quot;creativity&quot;&gt;creativity&lt;/h3&gt;
 
 &lt;p&gt;The creative &lt;em&gt;process&lt;/em&gt; (the medium) through which the student will explore the
 problem.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;music&lt;/li&gt;
-  &lt;li&gt;dance&lt;/li&gt;
-  &lt;li&gt;photography&lt;/li&gt;
-  &lt;li&gt;sculpture&lt;/li&gt;
-  &lt;li&gt;creative writing&lt;/li&gt;
-  &lt;li&gt;meme&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;wheelIndicator&quot;&gt;⧨&lt;/div&gt;
+&lt;canvas id=&quot;creativityWheel-canvas&quot; width=&quot;800&quot; height=&quot;600&quot; onclick=&quot;startSpin(creativityWheel);&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;p class=&quot;wheelResult&quot;&gt;result: &lt;strong&gt;&lt;span class=&quot;creativityWheel-canvas-result&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script&gt;
+let creativityWheel = makeWheel(
+  [
+	&quot;music&quot;,
+   &quot;dance&quot;,
+   &quot;photography&quot;,
+	&quot;sculpture&quot;,
+	&quot;creative writing&quot;,
+	&quot;meme&quot;
+  ],
+  &quot;creativityWheel-canvas&quot;);
+&lt;/script&gt;
 
 &lt;h3 id=&quot;culture&quot;&gt;culture&lt;/h3&gt;
 
 &lt;p&gt;The &lt;em&gt;problem&lt;/em&gt; facing our culture/society to explore through the chosen tool &amp;amp;
 process.&lt;/p&gt;
 
+&lt;div class=&quot;wheelIndicator&quot;&gt;⧨&lt;/div&gt;
+&lt;canvas id=&quot;cultureWheel-canvas&quot; width=&quot;800&quot; height=&quot;600&quot; onclick=&quot;startSpin(cultureWheel);&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;p class=&quot;wheelResult&quot;&gt;result: &lt;strong&gt;&lt;span class=&quot;cultureWheel-canvas-result&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script&gt;
+let cultureWheel = makeWheel(
+  [
+   &quot;privacy&quot;,
+   &quot;ethics&quot;,
+   &quot;wealth distribution&quot;,
+   &quot;climate change&quot;,
+   &quot;work-life balance&quot;,
+   &quot;social media use&quot;,
+   &quot;immigration&quot;,
+   &quot;tolerance&quot;,
+   &quot;conflict&quot;
+  ],
+  &quot;cultureWheel-canvas&quot;);
+&lt;/script&gt;
+
+&lt;p class=&quot;wheelResult&quot;&gt;&lt;em&gt;assessment task theme:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p class=&quot;hl-para wheelResult&quot;&gt;
+
+exploring &lt;strong&gt;&lt;span class=&quot;cultureWheel-canvas-result&quot;&gt;____&lt;/span&gt;&lt;/strong&gt;
+through &lt;strong&gt;&lt;span class=&quot;creativityWheel-canvas-result&quot;&gt;____&lt;/span&gt;&lt;/strong&gt;
+using &lt;strong&gt;&lt;span class=&quot;codeWheel-canvas-result&quot;&gt;____&lt;/span&gt;&lt;/strong&gt;
+
+&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;notes&lt;/h2&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;privacy&lt;/li&gt;
-  &lt;li&gt;ethics&lt;/li&gt;
-  &lt;li&gt;wealth inequality&lt;/li&gt;
-  &lt;li&gt;climate change&lt;/li&gt;
-  &lt;li&gt;regulation of tech companies&lt;/li&gt;
-  &lt;li&gt;immigration&lt;/li&gt;
-  &lt;li&gt;civility in the public square&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;give 30mins for presenting back&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;what to do if someone in a group thinks the other “c”s are bullshit?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;what about arguments in the group at all?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;STS staff in SoS (Rob Ackland, Jenny Davis, Adrian McKenzie, Mindy Bruce, Matt
+Wade)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;do I want to invite some naysayers?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;in the task, provide very clear guidelines&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;use the kind of template I’d use for curriculum design&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;having Kim Blackmore (iLEAP fellows - ask Jez)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;invite Tony&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;potential icebreaker: what’s the best assessment task you’ve ever done (or
+set)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;invite specific people outside of the culture lab (cc reimagine@anu.edu.au)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;todo-by-the-end-of-the-day&quot;&gt;TODO by the end of the day&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;photo&lt;/li&gt;
+  &lt;li&gt;blurb (1 para) - that’s what will bring people in the door, pitch it to
+specific people&lt;/li&gt;
+  &lt;li&gt;bio&lt;/li&gt;
+  &lt;li&gt;list of people I want to invite specifically (both attendees and
+non-attendees)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;todo-by-early-next-week&quot;&gt;TODO by early next week&lt;/h3&gt;
+
+&lt;p&gt;do I need:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;scribes? (inc. graphic scribes?)&lt;/li&gt;
+  &lt;li&gt;co-facilitators?&lt;/li&gt;
+  &lt;li&gt;materials?&lt;/li&gt;
+  &lt;li&gt;tech?&lt;/li&gt;
+  &lt;li&gt;tables/room configuration?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

@@ -119,13 +119,10 @@ workshop, <a href="mailto:ben.swift@anu.edu.au">get in touch</a> 😊</p>
   <li><a href="#brief" id="markdown-toc-brief">Brief</a></li>
   <li><a href="#workshop-timeline" id="markdown-toc-workshop-timeline">Workshop timeline</a></li>
   <li><a href="#lets-spin-the-wheels" id="markdown-toc-lets-spin-the-wheels">Let’s spin the wheels!</a></li>
+  <li><a href="#notes" id="markdown-toc-notes">notes</a></li>
 </ul>
 
 </div>
-
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-
-<script src="/assets/js/Winwheel-fcd665c2e10db910ab8cef7ba543b12656f438c2089feb4dd8e0b9556016a7f2.js" type="text/javascript"></script>
 
 <h2 id="brief">Brief</h2>
 
@@ -191,20 +188,40 @@ students from a wide range of backgrounds/abilities?</p>
 <hr />
 
 <ul>
-  <li><strong>10:45</strong>: break (morning tea)</li>
+  <li><strong>11:00</strong>:  break (morning tea)</li>
 </ul>
 
 <hr />
 
 <ul>
-  <li><strong>11:00</strong>: group work: learning outcomes/assessment criteria</li>
-  <li><strong>11:30</strong>: present your LOs/AC to the workshop</li>
-  <li><strong>11:45</strong>: wrap-up</li>
+  <li><strong>11:30</strong>: group work: learning outcomes/assessment criteria</li>
+  <li><strong>12:00</strong>: present your LOs/AC to the workshop</li>
+  <li><strong>12:15</strong>: wrap-up</li>
 </ul>
 
 <h2 id="lets-spin-the-wheels">Let’s spin the wheels!<sup id="fnref:winwheel"><a href="#fn:winwheel" class="footnote">1</a></sup></h2>
 
 <p class="hl-para">Note: all these lists are a work-in-progress.</p>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+<script src="/assets/js/Winwheel-b66809a0e59bfb42fc1f3a968197308db7eac0bea2d388ec34c5508d889a9aca.js" type="text/javascript"></script>
+
+<script src="/assets/js/ccc-workshop-wheels-32dc5c5f8dbea522d232fd7a6f0e11c740282817adea83f90bd8802a515b1751.js" type="text/javascript"></script>
+
+<style>
+.wheelIndicator {
+  width:100%;
+  font-size:6em;
+  text-align:center;
+  margin-bottom:-0.3em;
+}
+
+.wheelResult {
+  font-size:2em;
+  margin-bottom:1em;
+}
+</style>
 
 <h3 id="code">code</h3>
 
@@ -215,40 +232,162 @@ down in <em>your</em> assessment task spec.</p>
 <p>Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in <em>doing</em> the assessment task.</p>
 
-<canvas id="canvas" width="800" height="800" onclick="startSpin(codeWheel);">
+<div class="wheelIndicator">⧨</div>
+<canvas id="codeWheel-canvas" width="800" height="600" onclick="startSpin(codeWheel);">
 </canvas>
 
-<p>result: <span id="spin-result"></span></p>
+<p class="wheelResult">result: <strong><span class="codeWheel-canvas-result"></span></strong></p>
 
-<script src="/assets/js/ccc-workshop-wheels-409875a6b83ab0a9035c4b9f6f822fc3a549cd6ab862b2c26ad7dcbe96d2b6ea.js" type="text/javascript"></script>
+<script>
+let acmBoK2016 = [
+  "Circuits & Electronics",
+  "Computing Algorithms",
+  "Computer Architecture",
+  "Digital Design",
+  "Embedded Systems",
+  "Computer Networks",
+  "Information Security",
+  "Signal Processing",
+  "Systems & Project Eng.",
+  "Software Design"
+];
+
+let benCodeConcepts = [
+  "algorithms",
+  "robotics",
+  "Software Eng",
+  "databases",
+  "networks",
+  "UI/UX design",
+  "data analytics",
+  "compilers",
+  "operating systems"
+]
+
+let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
+</script>
 
 <h3 id="creativity">creativity</h3>
 
 <p>The creative <em>process</em> (the medium) through which the student will explore the
 problem.</p>
 
-<ul>
-  <li>music</li>
-  <li>dance</li>
-  <li>photography</li>
-  <li>sculpture</li>
-  <li>creative writing</li>
-  <li>meme</li>
-</ul>
+<div class="wheelIndicator">⧨</div>
+<canvas id="creativityWheel-canvas" width="800" height="600" onclick="startSpin(creativityWheel);">
+</canvas>
+
+<p class="wheelResult">result: <strong><span class="creativityWheel-canvas-result"></span></strong></p>
+
+<script>
+let creativityWheel = makeWheel(
+  [
+	"music",
+   "dance",
+   "photography",
+	"sculpture",
+	"creative writing",
+	"meme"
+  ],
+  "creativityWheel-canvas");
+</script>
 
 <h3 id="culture">culture</h3>
 
 <p>The <em>problem</em> facing our culture/society to explore through the chosen tool &amp;
 process.</p>
 
+<div class="wheelIndicator">⧨</div>
+<canvas id="cultureWheel-canvas" width="800" height="600" onclick="startSpin(cultureWheel);">
+</canvas>
+
+<p class="wheelResult">result: <strong><span class="cultureWheel-canvas-result"></span></strong></p>
+
+<script>
+let cultureWheel = makeWheel(
+  [
+   "privacy",
+   "ethics",
+   "wealth distribution",
+   "climate change",
+   "work-life balance",
+   "social media use",
+   "immigration",
+   "tolerance",
+   "conflict"
+  ],
+  "cultureWheel-canvas");
+</script>
+
+<p class="wheelResult"><em>assessment task theme:</em></p>
+
+<p class="hl-para wheelResult">
+
+exploring <strong><span class="cultureWheel-canvas-result">____</span></strong>
+through <strong><span class="creativityWheel-canvas-result">____</span></strong>
+using <strong><span class="codeWheel-canvas-result">____</span></strong>
+
+</p>
+
+<h2 id="notes">notes</h2>
+
 <ul>
-  <li>privacy</li>
-  <li>ethics</li>
-  <li>wealth inequality</li>
-  <li>climate change</li>
-  <li>regulation of tech companies</li>
-  <li>immigration</li>
-  <li>civility in the public square</li>
+  <li>
+    <p>give 30mins for presenting back</p>
+  </li>
+  <li>
+    <p>what to do if someone in a group thinks the other “c”s are bullshit?</p>
+  </li>
+  <li>
+    <p>what about arguments in the group at all?</p>
+  </li>
+  <li>
+    <p>STS staff in SoS (Rob Ackland, Jenny Davis, Adrian McKenzie, Mindy Bruce, Matt
+Wade)</p>
+  </li>
+  <li>
+    <p>do I want to invite some naysayers?</p>
+  </li>
+  <li>
+    <p>in the task, provide very clear guidelines</p>
+  </li>
+  <li>
+    <p>use the kind of template I’d use for curriculum design</p>
+  </li>
+  <li>
+    <p>having Kim Blackmore (iLEAP fellows - ask Jez)</p>
+  </li>
+  <li>
+    <p>invite Tony</p>
+  </li>
+  <li>
+    <p>potential icebreaker: what’s the best assessment task you’ve ever done (or
+set)</p>
+  </li>
+  <li>
+    <p>invite specific people outside of the culture lab (cc reimagine@anu.edu.au)</p>
+  </li>
+</ul>
+
+<h3 id="todo-by-the-end-of-the-day">TODO by the end of the day</h3>
+
+<ul>
+  <li>photo</li>
+  <li>blurb (1 para) - that’s what will bring people in the door, pitch it to
+specific people</li>
+  <li>bio</li>
+  <li>list of people I want to invite specifically (both attendees and
+non-attendees)</li>
+</ul>
+
+<h3 id="todo-by-early-next-week">TODO by early next week</h3>
+
+<p>do I need:</p>
+<ul>
+  <li>scribes? (inc. graphic scribes?)</li>
+  <li>co-facilitators?</li>
+  <li>materials?</li>
+  <li>tech?</li>
+  <li>tables/room configuration?</li>
 </ul>
 <div class="footnotes">
   <ol>
@@ -305,8 +444,8 @@ process.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>c4e4e790</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/c4e4e790/_posts/2019-11-07-codesign-culture-lab-workshop.md">source
+	site revision <code>6739c3cd</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/6739c3cd/_posts/2019-11-07-codesign-culture-lab-workshop.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
