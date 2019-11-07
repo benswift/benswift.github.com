@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-07T14:50:05+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">CoDesign Culture Lab workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="CoDesign Culture Lab workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;p&gt;A workshop at the &lt;a href=&quot;https://cecs.anu.edu.au/events/event-series/codesign-culture-lab&quot;&gt;CoDesign Culture
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-07T16:52:03+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">code/creativity/culture curriculum design workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="code/creativity/culture curriculum design workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;p&gt;Is it possible to learn about algorithms by writing poetry about wealth
+inequality? How about commenting on social media use via sculptures built using
+cybersecurity tools and concepts? Furthermore, is it possible to design an
+assessment task which encourages deep technical work and honest cultural
+reflection in producing a genuinely interesting creative outcome?&lt;/p&gt;
+
+&lt;p&gt;This workshop will bring together folks from all points of the
+code/creativity/culture compass to design a &lt;em&gt;real&lt;/em&gt; assessment task for the c/c/c
+studio creative code outreach program. In fact, it &lt;em&gt;needs&lt;/em&gt; a diverse range of
+voices to work properly. So if you’ve got thoughts and ideas about
+CS/Engineering curriculum design, the arts, and life within the socio-technical
+assemblage of our present age, then come along and have your say!&lt;/p&gt;
+
+&lt;p&gt;This workshop is part of the &lt;a href=&quot;https://cecs.anu.edu.au/events/event-series/codesign-culture-lab&quot;&gt;CoDesign Culture
 Lab&lt;/a&gt;—title
 TBC. If you’re coming to the culture lab and you’d like to be part of the
 workshop, &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;/a&gt; 😊&lt;/p&gt;
@@ -8,73 +21,28 @@ workshop, &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;
   &lt;h2&gt;table of contents&lt;/h2&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#brief&quot; id=&quot;markdown-toc-brief&quot;&gt;Brief&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#workshop-timeline&quot; id=&quot;markdown-toc-workshop-timeline&quot;&gt;Workshop timeline&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#brief&quot; id=&quot;markdown-toc-brief&quot;&gt;Brief&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#lets-spin-the-wheels&quot; id=&quot;markdown-toc-lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#notes&quot; id=&quot;markdown-toc-notes&quot;&gt;notes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#group-work-session-1&quot; id=&quot;markdown-toc-group-work-session-1&quot;&gt;Group work session 1: preparing an assessment spec&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#group-work-session-2&quot; id=&quot;markdown-toc-group-work-session-2&quot;&gt;Group work session 2: articulating the assessment criteria&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
-
-&lt;h2 id=&quot;brief&quot;&gt;Brief&lt;/h2&gt;
-
-&lt;p&gt;You’re a curriculum designer for the c/c/c studio! Welcome aboard.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Today’s task&lt;/strong&gt;: in groups, come up with an assessment task which explores a
-&lt;em&gt;problem&lt;/em&gt; through a creative &lt;em&gt;process&lt;/em&gt; using a particular &lt;em&gt;tool&lt;/em&gt;. You don’t get
-to pick the &lt;em&gt;problem&lt;/em&gt;, &lt;em&gt;process&lt;/em&gt; &amp;amp; &lt;em&gt;tool&lt;/em&gt; though—we’ll let the wheel decide.&lt;/p&gt;
-
-&lt;p&gt;At the end of this workshop, your group will produce (and present to the rest of
-us) two things:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;an assignment spec: brief description &amp;amp; motivation, any specific restraints or
-requirements, and&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a set of learning outcomes / assessment criteria which will be used to assess
-the submissions for your assignment&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;things-to-think-about&quot;&gt;Things to think about…&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;as for the age/background of the students, it’s up to you—e.g. early
-high-school one-off workshop, year 11/12 extension program (i.e. the c/c/c
-studio), first-year assignment at uni, graduate-level coursework, etc.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;these problems are &lt;em&gt;not solvable in a single assessment task&lt;/em&gt;, so don’t make
-that the criteria—instead, you want students to explore &amp;amp; understand the
-problem, process &amp;amp; tool more deeply&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;think: how might the &lt;em&gt;tool&lt;/em&gt; and the &lt;em&gt;process&lt;/em&gt; shape the responses to the
-problem? can you use this to your advantage in encouraging students to attain
-the learning outcomes?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;how are you going to constrain the scope of your task so that it supports
-students from a wide range of backgrounds/abilities?&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;h2 id=&quot;workshop-timeline&quot;&gt;Workshop timeline&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;9:00&lt;/strong&gt;: intro—what is the c/c/c studio&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;9:20&lt;/strong&gt;: team formation&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:20&lt;/strong&gt;: group formation &amp;amp; ice-breakers&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;9:30&lt;/strong&gt;: spin the wheel(s)!&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;9:45&lt;/strong&gt;: group work—assignment spec&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;10:30&lt;/strong&gt;: present your assignment spec to workshop&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:45&lt;/strong&gt;: &lt;a href=&quot;#group-work-session-1&quot;&gt;group work session 1&lt;/a&gt; (assessment item spec)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;10:30&lt;/strong&gt;: present your assessment item spec to workshop&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -86,14 +54,40 @@ students from a wide range of backgrounds/abilities?&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;11:30&lt;/strong&gt;: group work: learning outcomes/assessment criteria&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;12:00&lt;/strong&gt;: present your LOs/AC to the workshop&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;11:30&lt;/strong&gt;: &lt;a href=&quot;#group-work-session-2&quot;&gt;group work session 2&lt;/a&gt; (assessment criteria)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;12:00&lt;/strong&gt;: present your assessment criteria to the workshop&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;12:15&lt;/strong&gt;: wrap-up&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;sup id=&quot;fnref:winwheel&quot;&gt;&lt;a href=&quot;#fn:winwheel&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;brief&quot;&gt;Brief&lt;/h2&gt;
 
-&lt;p class=&quot;hl-para&quot;&gt;Note: all these lists are a work-in-progress.&lt;/p&gt;
+&lt;p&gt;You’re a curriculum designer for the c/c/c studio! Welcome aboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Today’s task&lt;/strong&gt;: in groups, come up with a assessment&lt;sup id=&quot;fnref:assessment&quot;&gt;&lt;a href=&quot;#fn:assessment&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; task which
+explores a &lt;em&gt;problem&lt;/em&gt; through a creative &lt;em&gt;process&lt;/em&gt; using a particular &lt;em&gt;tool&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the end of this workshop, your group will produce (and present to the rest of
+us) two things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;an assessment spec document: brief description &amp;amp; motivation, learning
+outcomes, any specific constraints or requirements on either the deliverable
+or the process&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a set of assessment criteria which will be used to assess the submissions for
+your assessment&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However, you don’t get to pick the &lt;em&gt;problem&lt;/em&gt;/&lt;em&gt;process&lt;/em&gt;/&lt;em&gt;tool&lt;/em&gt; triad which forms
+the basis for your assessment task. Instead, we’ll spin the
+code/creativity/culture wheels and let fate[^fate].&lt;/p&gt;
+
+&lt;p&gt;[^fate] well, the PRNG in your web browser, anyway&lt;/p&gt;
+
+&lt;h2 id=&quot;lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;sup id=&quot;fnref:winwheel&quot;&gt;&lt;a href=&quot;#fn:winwheel&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
 
 &lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js&quot;&gt;&lt;/script&gt;
 
@@ -146,14 +140,15 @@ let acmBoK2016 = [
 
 let benCodeConcepts = [
   &quot;algorithms&quot;,
-  &quot;robotics&quot;,
-  &quot;Software Eng&quot;,
+  &quot;embedded systems&quot;,
+  &quot;signal processing&quot;,
+  &quot;software design&quot;,
   &quot;databases&quot;,
   &quot;networks&quot;,
   &quot;UI/UX design&quot;,
   &quot;data analytics&quot;,
-  &quot;compilers&quot;,
-  &quot;operating systems&quot;
+  &quot;machine learning&quot;,
+  &quot;cybersecurity&quot;
 ]
 
 let codeWheel = makeWheel(benCodeConcepts, &quot;codeWheel-canvas&quot;);
@@ -174,11 +169,16 @@ problem.&lt;/p&gt;
 let creativityWheel = makeWheel(
   [
 	&quot;music&quot;,
-   &quot;dance&quot;,
-   &quot;photography&quot;,
+	&quot;sound&quot;,
+    &quot;dance&quot;,
+    &quot;photography&quot;,
+	&quot;painting&quot;,
+	&quot;drawing&quot;,
+	&quot;textiles&quot;,
+	&quot;film&quot;,
 	&quot;sculpture&quot;,
 	&quot;creative writing&quot;,
-	&quot;meme&quot;
+	&quot;memes&quot;,
   ],
   &quot;creativityWheel-canvas&quot;);
 &lt;/script&gt;
@@ -205,7 +205,8 @@ let cultureWheel = makeWheel(
    &quot;social media use&quot;,
    &quot;immigration&quot;,
    &quot;tolerance&quot;,
-   &quot;conflict&quot;
+   &quot;food security&quot;,
+   &quot;world peace&quot;
   ],
   &quot;cultureWheel-canvas&quot;);
 &lt;/script&gt;
@@ -220,74 +221,89 @@ using &lt;strong&gt;&lt;span class=&quot;codeWheel-canvas-result&quot;&gt;____&l
 
 &lt;/p&gt;
 
-&lt;h2 id=&quot;notes&quot;&gt;notes&lt;/h2&gt;
+&lt;h2 id=&quot;group-work-session-1&quot;&gt;Group work session 1: preparing an assessment spec&lt;/h2&gt;
+
+&lt;p&gt;Now that you’ve spun the wheel, you’ve got a context in which to come up with a
+specific assesssment task. You might be thinking that the c/c/c wheels left you
+with a pretty broad scope—and you’d be right—your group’s job is to narrow
+this down into a specific task which is tractable for your intended audience of
+students.&lt;/p&gt;
+
+&lt;h3 id=&quot;things-to-think-about&quot;&gt;Things to think about&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;give 30mins for presenting back&lt;/p&gt;
+    &lt;p&gt;the target age/background/etc of the students is up to you—you could choose
+early high-school one-off workshop, year 11/12 extension program (i.e. the
+c/c/c studio), first-year assignment at uni, graduate-level coursework, etc.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;what to do if someone in a group thinks the other “c”s are bullshit?&lt;/p&gt;
+    &lt;p&gt;in plain language, what do you want a student to learn through the process of
+completing your assessment task? (that will help with coming up with some
+learning outcomes)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;what about arguments in the group at all?&lt;/p&gt;
+    &lt;p&gt;how might the &lt;em&gt;tool&lt;/em&gt; and the &lt;em&gt;process&lt;/em&gt; shape the responses to the problem? can
+you use this to your advantage in encouraging students to attain the learning
+outcomes?&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;STS staff in SoS (Rob Ackland, Jenny Davis, Adrian McKenzie, Mindy Bruce, Matt
-Wade)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;do I want to invite some naysayers?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;in the task, provide very clear guidelines&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;use the kind of template I’d use for curriculum design&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;having Kim Blackmore (iLEAP fellows - ask Jez)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;invite Tony&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;potential icebreaker: what’s the best assessment task you’ve ever done (or
-set)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;invite specific people outside of the culture lab (cc reimagine@anu.edu.au)&lt;/p&gt;
+    &lt;p&gt;how are you going to constrain the scope of your task so that it supports
+students from a wide range of backgrounds/abilities?&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;todo-by-the-end-of-the-day&quot;&gt;TODO by the end of the day&lt;/h3&gt;
+&lt;h2 id=&quot;group-work-session-2&quot;&gt;Group work session 2: articulating the assessment criteria&lt;/h2&gt;
+
+&lt;h3 id=&quot;things-to-think-about-1&quot;&gt;Things to think about&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;photo&lt;/li&gt;
-  &lt;li&gt;blurb (1 para) - that’s what will bring people in the door, pitch it to
-specific people&lt;/li&gt;
-  &lt;li&gt;bio&lt;/li&gt;
-  &lt;li&gt;list of people I want to invite specifically (both attendees and
-non-attendees)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;what would an &lt;em&gt;excellent&lt;/em&gt; submission look like? what would a
+borderline-acceptable (e.g. a bare pass) submission look like?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the problems (from the culture wheel) are &lt;em&gt;not solvable through a single
+assessment task&lt;/em&gt;, so don’t make that the criteria—instead, you want students
+to explore &amp;amp; understand the problem, process &amp;amp; tool more deeply&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;todo-by-early-next-week&quot;&gt;TODO by early next week&lt;/h3&gt;
+&lt;h3 id=&quot;presenter-bio&quot;&gt;Presenter bio&lt;/h3&gt;
 
-&lt;p&gt;do I need:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;scribes? (inc. graphic scribes?)&lt;/li&gt;
-  &lt;li&gt;co-facilitators?&lt;/li&gt;
-  &lt;li&gt;materials?&lt;/li&gt;
-  &lt;li&gt;tech?&lt;/li&gt;
-  &lt;li&gt;tables/room configuration?&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Dr Ben Swift is a Senior Lecturer in the ANU Research School of Computer Science
+(RSCS). As the leader of the code/creativity/culture (c/c/c) research group,
+Ben’s goal is to create spaces for talking about the way that code (software),
+creativity (especially the arts) and culture (life) intersect in the modern
+world. Ben’s research contributions range from traditional Computer Science
+(digital multimedia, web technologies and human-computer interaction) through to
+invited livecoding (live code-based music performance) performances and
+multimedia artwork installations.&lt;/p&gt;
+
+&lt;p&gt;In 2019 Ben was awarded one of the inaugural &lt;em&gt;Reimagine Fellowships&lt;/em&gt; to develop
+the &lt;strong&gt;c/c/c studio&lt;/strong&gt;, an ANU Extension outreach program which will teach
+computer science to pre-tertiary students through making art, music and other
+cool things with computers. The c/c/c studio will also provide a supportive
+community in which a new generation of people can learn, create, and
+share—unlocking the latent potential in students who never knew their diverse
+interests (especially in the arts &amp;amp; music) could be used in engineering and
+computing.&lt;/p&gt;
+
+&lt;p&gt;https://cs.anu.edu.au/code-creativity-culture/
+http://benswift.me&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
+    &lt;li id=&quot;fn:assessment&quot;&gt;
+
+      &lt;p&gt;you can think of it as an assignment, but that word has some baggage, so
+just think of it as a description of a thing which a student must submit
+which will be evaluated on whether it’s a good thing &lt;a href=&quot;#fnref:assessment&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
     &lt;li id=&quot;fn:winwheel&quot;&gt;
       &lt;p&gt;wheels powered by &lt;a href=&quot;http://dougtesting.net/home&quot;&gt;Winwheel.js&lt;/a&gt; by Douglas McKechie &lt;a href=&quot;#fnref:winwheel&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">A workshop at the CoDesign Culture Lab—title TBC. If you’re coming to the culture lab and you’d like to be part of the workshop, get in touch 😊</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">Is it possible to learn about algorithms by writing poetry about wealth inequality? How about commenting on social media use via sculptures built using cybersecurity tools and concepts? Furthermore, is it possible to design an assessment task which encourages deep technical work and honest cultural reflection in producing a genuinely interesting creative outcome?</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
 &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;LENS&lt;/a&gt; cohort (the ANU
 Laptop Ensemble) gave their final performances as part of the ANU School of
 Music’s composition showcase. Thanks to everyone who attended, and congrats
