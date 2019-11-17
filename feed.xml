@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-17T15:34:14+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-17T15:51:39+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -57,18 +57,23 @@ code/creativity/culture work going on here at the ANU.&lt;/p&gt;
 
 &lt;picture&gt;&lt;img alt=&quot;folks having fun at the COMP1720 exhibition&quot; src=&quot;/assets/images/posts/comp1720-mp-exhibition-2018-2-ca1d8558480207841dcb41c22d7722c929b5accef628f2eb1444b0d4254135fd.jpg&quot; /&gt;&lt;/picture&gt;
 
-&lt;p&gt;See you tomorrow 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ccc" /><category term="gigs" /><summary type="html">If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to experience the COMP1720 Art &amp;amp; Interaction in New Media major project exhibition. This year’s theme is listening in/listening out.</summary></entry><entry><title type="html">code/creativity/culture curriculum design workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="code/creativity/culture curriculum design workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;p class=&quot;hl-para&quot;&gt;
+&lt;p&gt;See you tomorrow 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ccc" /><category term="gigs" /><summary type="html">If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to experience the COMP1720 Art &amp;amp; Interaction in New Media major project exhibition. This year’s theme is listening in/listening out.</summary></entry><entry><title type="html">code/creativity/culture curriculum design workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="code/creativity/culture curriculum design workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;div class=&quot;hl-para&quot;&gt;
 
 &lt;strong&gt;tl;dr&lt;/strong&gt; in this workshop you’ll:
 
-- break into groups
-- be assigned a trio of &lt;strong&gt;code&lt;/strong&gt;/&lt;strong&gt;creativity&lt;/strong&gt;/&lt;strong&gt;culture&lt;/strong&gt; topics
-- design a real c/c/c studio assessment item based around those three topics
-  (and present it to the group)
-- write some marking criteria for your assessment item (and present them to the
-  group)
+&lt;ol&gt;
 
-&lt;/p&gt;
+&lt;li&gt;break into groups&lt;/li&gt;
+
+&lt;li&gt;be assigned a trio of &lt;strong&gt;code&lt;/strong&gt;/&lt;strong&gt;creativity&lt;/strong&gt;/&lt;strong&gt;culture&lt;/strong&gt; topics&lt;/li&gt;
+
+&lt;li&gt;design a real c/c/c studio assessment item based around those three topics (and present it to the group)&lt;/li&gt;
+
+&lt;li&gt;write some marking criteria for your assessment item (and present them to the group)&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Is it possible to learn about algorithms through writing poetry about wealth
 inequality? How about exploring the issue of social media use via sculptures
@@ -544,7 +549,7 @@ using this word so the c/c/c schtick makes sense. &lt;a href=&quot;#fnref:cultu
       &lt;p&gt;well, the PRNG in your web browser, anyway &lt;a href=&quot;#fnref:fate&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">[^wilde]: obviously, this is fake, although [Oscar Wilde said something [^winwheel]: wheels powered by Winwheel.js by Douglas McKechie [^fate]: well, the PRNG in your web browser, anyway</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">[^wilde]: obviously, this is fake, although [Oscar Wilde said something [^winwheel]: wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas McKechie [^fate]: well, the PRNG in your web browser, anyway</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
 &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;LENS&lt;/a&gt; cohort (the ANU
 Laptop Ensemble) gave their final performances as part of the ANU School of
 Music’s composition showcase. Thanks to everyone who attended, and congrats
