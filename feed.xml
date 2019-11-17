@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-12T08:54:50+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">COMP1720 2019 major project exhibtion</title><link href="https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion/" rel="alternate" type="text/html" title="COMP1720 2019 major project exhibtion" /><published>2019-11-08T00:00:00+11:00</published><updated>2019-11-08T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion</id><content type="html" xml:base="https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion/">&lt;p&gt;If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-17T12:27:53+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
+tension in trying to just teach the fundamentals and keeping the coursework
+up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
+each year with the js framework-du-jour, but it’s useful to at least know what
+the best practices are and how to point students in a good direction if they
+want to go deeper.&lt;/p&gt;
+
+&lt;p&gt;I try and use this website as a bit of a test-bed for &lt;a href=&quot;https://benswift.me/blog/tag/meta/&quot;&gt;trying new
+things&lt;/a&gt; and staying up to date. So, here’s
+my list of things to try in 2020:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;update to Jekyll 4 (currently, it’s the &lt;code&gt;jekyll-assets&lt;/code&gt; plugin that’s
+&lt;a href=&quot;https://github.com/envygeeks/jekyll-assets/issues/613&quot;&gt;blocking this update&lt;/a&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;or&lt;/strong&gt; move this blog from Jekyll to &lt;a href=&quot;https://www.11ty.io&quot;&gt;Eleventy&lt;/a&gt; (because
+all the cool kids are on the &lt;a href=&quot;https://jamstack.org&quot;&gt;JAMstack&lt;/a&gt; these days)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;re-write the CSS (from the current hand-rolled Sass) to something using a
+utility class framework like &lt;a href=&quot;https://tailwindcss.com&quot;&gt;Tailwind&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;package up my &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;reveal slides&lt;/a&gt; plugin on npm (if
+I switch to Eleventy) or RubyGems (if I stay with Jekyll) so that others can
+use them&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There’s no timeline on any of this, and I’m going to be busy with other things
+(e.g. my &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;Reimagine Fellowship&lt;/a&gt;, updating the
+&lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; docs and generally &lt;a href=&quot;/research/&quot;&gt;doing good
+research&lt;/a&gt;).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="meta" /><category term="web" /><summary type="html">As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction design in COMP1720) there’s always a tension in trying to just teach the fundamentals and keeping the coursework up-to-date. For the latter, that doesn’t necessarily mean re-writing the course each year with the js framework-du-jour, but it’s useful to at least know what the best practices are and how to point students in a good direction if they want to go deeper.</summary></entry><entry><title type="html">COMP1720 2019 major project exhibtion</title><link href="https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion/" rel="alternate" type="text/html" title="COMP1720 2019 major project exhibtion" /><published>2019-11-08T00:00:00+11:00</published><updated>2019-11-08T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion</id><content type="html" xml:base="https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion/">&lt;p&gt;If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to
 experience the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt; &lt;em&gt;Art &amp;amp;
 Interaction in New Media&lt;/em&gt; major project exhibition. This year’s theme is
 &lt;em&gt;listening &lt;strong&gt;in&lt;/strong&gt;/listening &lt;strong&gt;out&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
@@ -22,11 +57,21 @@ code/creativity/culture work going on here at the ANU.&lt;/p&gt;
 
 &lt;picture&gt;&lt;img alt=&quot;folks having fun at the COMP1720 exhibition&quot; src=&quot;/assets/images/posts/comp1720-mp-exhibition-2018-2-ca1d8558480207841dcb41c22d7722c929b5accef628f2eb1444b0d4254135fd.jpg&quot; /&gt;&lt;/picture&gt;
 
-&lt;p&gt;See you tomorrow 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ccc" /><category term="gigs" /><summary type="html">If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to experience the COMP1720 Art &amp;amp; Interaction in New Media major project exhibition. This year’s theme is listening in/listening out.</summary></entry><entry><title type="html">code/creativity/culture curriculum design workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="code/creativity/culture curriculum design workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;p&gt;Is it possible to learn about algorithms by writing poetry about wealth
-inequality? How about commenting on social media use via sculptures built using
-cybersecurity tools and concepts? Furthermore, is it possible to design an
-assessment task which encourages deep technical work and honest cultural
-reflection, while still producing a genuinely interesting creative outcome?&lt;/p&gt;
+&lt;p&gt;See you tomorrow 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ccc" /><category term="gigs" /><summary type="html">If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to experience the COMP1720 Art &amp;amp; Interaction in New Media major project exhibition. This year’s theme is listening in/listening out.</summary></entry><entry><title type="html">code/creativity/culture curriculum design workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="code/creativity/culture curriculum design workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;p class=&quot;hl-para&quot;&gt;
+
+&lt;strong&gt;tl;dr&lt;/strong&gt; in this workshop you’ll:
+
+- break into groups
+- be assigned a CS concept TODO
+
+&lt;/p&gt;
+
+&lt;p&gt;Is it possible to learn about algorithms through writing poetry about wealth
+inequality? How about exploring the issue of social media use via sculptures
+built using cybersecurity tools and concepts? Furthermore, is it possible to
+design an assessment task which encourages deep technical work and honest
+cultural reflection, while still producing a genuinely interesting creative
+outcome?&lt;/p&gt;
 
 &lt;p&gt;This workshop will bring together folks from all points of the
 code/creativity/culture compass to design a &lt;em&gt;real&lt;/em&gt; assessment task for the
@@ -499,7 +544,7 @@ using this word so the c/c/c schtick makes sense. &lt;a href=&quot;#fnref:cultu
       &lt;p&gt;well, the PRNG in your web browser, anyway &lt;a href=&quot;#fnref:fate&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">Is it possible to learn about algorithms by writing poetry about wealth inequality? How about commenting on social media use via sculptures built using cybersecurity tools and concepts? Furthermore, is it possible to design an assessment task which encourages deep technical work and honest cultural reflection, while still producing a genuinely interesting creative outcome?</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html">[^wilde]: obviously, this is fake, although [Oscar Wilde said something [^winwheel]: wheels powered by Winwheel.js by Douglas McKechie [^fate]: well, the PRNG in your web browser, anyway</summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
 &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;LENS&lt;/a&gt; cohort (the ANU
 Laptop Ensemble) gave their final performances as part of the ANU School of
 Music’s composition showcase. Thanks to everyone who attended, and congrats
@@ -1104,288 +1149,4 @@ cross-disiplinary code, creativity and culture at the ANU.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;I suspect that sometimes the best computer scientists are lost to CS as well.
-Hopefully programs like the LENS can change that.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="reimagine" /><category term="lens" /><summary type="html">The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: ANU School of Music’s new orchestra is far from conventional.</summary></entry><entry><title type="html">Mapping the livecoding landscape</title><link href="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/" rel="alternate" type="text/html" title="Mapping the livecoding landscape" /><published>2019-09-21T00:00:00+10:00</published><updated>2019-09-21T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape</id><content type="html" xml:base="https://benswift.me/blog/2019/09/21/mapping-the-livecoding-landscape/">&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
-
-&lt;ul&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://twitter.com/digego&quot;&gt;Andrew Sorensen&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://yaxu.org&quot;&gt;Alex McLean&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://wertlos.org/~rohrhuber/&quot;&gt;Juilan Rohrhuber&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Institute for Music and Media, RSH Düsseldorf&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://andrewrbrown.net.au/&quot;&gt;Andrew Brown&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Queensland College of Art, Griffith University&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.dur.ac.uk/music/staff/profile/?id=11477&quot;&gt;Nick Collins&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Department of Music, Durham University&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://thormagnusson.github.io/&quot;&gt;Thor Magnusson&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Music Department, University of Sussex&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.gewang.com&quot;&gt;Ge Wang&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;CCRMA, Stanford University&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://sam.aaron.name/&quot;&gt;Sam Aaron&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.cl.cam.ac.uk/~afb21/&quot;&gt;Alan Blackwell&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Cambridge Computer Laboratory&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://fo.am/people/dave/&quot;&gt;Dave Griffiths&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;FoAM Kernow&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://shellyknotts.wordpress.com&quot;&gt;Shelley Knotts&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Department of Music, Durham University&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://twitter.com/joannnne&quot;&gt;Joanne Armitage&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;School of Media and Communication, University of Leeds&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://renickbell.net/&quot;&gt;Renick Bell&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://www.dktr0.net&quot;&gt;David Ogborn&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Department of Communication Studies and Multimedia, McMaster University&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://charlie-roberts.com/&quot;&gt;Charlie Roberts&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Computer Science, Worcester Polytechnic Institute&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://blog.sicchio.com/&quot;&gt;Kate Sicchio&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Integrated Digital Media, New York University&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.cyberpunk.net.ar&quot;&gt;Mauro&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;https://www.jackarmitage.com/&quot;&gt;Jack Armitage&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Centre for Digital Music, Queen Mary University of London&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://luisnavarrodelangel.net/&quot;&gt;Luis Navarro Del Angel&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;Department of Communication Studies and Multimedia, McMaster University&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-  &lt;a style=&quot;font-weight: 900;&quot; href=&quot;http://kindohm.com/&quot;&gt;Mike Hodnick&lt;/a&gt;,
-  &lt;span style=&quot;font-style: italic;&quot;&gt;indie&lt;/span&gt;
-&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;iclc-committees&quot;&gt;ICLC committees&lt;/h2&gt;
-
-&lt;h3 id=&quot;2020-limerick-ireland&quot;&gt;2020 Limerick, Ireland&lt;/h3&gt;
-
-&lt;p&gt;Programme Chair: Giuseppe Torre&lt;/p&gt;
-
-&lt;p&gt;Performances Chair: Neil O’Connor&lt;/p&gt;
-
-&lt;p&gt;Workshops Chair: Nicholas Ward&lt;/p&gt;
-
-&lt;p&gt;Installations Chair: Nora O Murchú&lt;/p&gt;
-
-&lt;h3 id=&quot;2019-madrid-spain&quot;&gt;2019 Madrid, Spain&lt;/h3&gt;
-
-&lt;p&gt;Chair - Jesús Jara López
-Co-Chair - Lina Bautista
-Co-Chair - Iván Paz
-Performance Chair - Juan A. Romero
-Scientific Chair - Enrike Hurtado
-Installations/Workshops Coordinator - Joaquín Díaz Durán
-Production Adviser - Maite Camacho
-Identity &amp;amp; Web - Adrián Cano/Jana Domínguez
-Assistance - Live Code Mad&lt;/p&gt;
-
-&lt;h3 id=&quot;2017-morelia-méxico&quot;&gt;2017 Morelia, México&lt;/h3&gt;
-
-&lt;h4 id=&quot;core-organising-committee&quot;&gt;Core organising committee&lt;/h4&gt;
-
-&lt;p&gt;Chair - Alexandra Cárdenas
-Co-Chair Ernesto Romero
-Co-Chair Luis Navarro del Angel
-Performance Chair - Jorge Ramírez
-Scientific Chair - Juan Sebastián Lach
-Production Adviser - Minerva Hernández Trejo
-Identity &amp;amp; Web - Karen del Valle, Rodrigo Velasco, Felipe Ignacio
-Networks - Malitzin Cortés&lt;/p&gt;
-
-&lt;h4 id=&quot;steering-committee&quot;&gt;Steering Committee&lt;/h4&gt;
-
-&lt;p&gt;David Ogborn, Chair (McMaster University)
-Alex McLean (Deutsches Museum)
-Shelly Knotts (Durham University)
-Thor Magnusson (University of Sussex)
-Kate Sicchio (New York University)
-Graham Wakefield (York University)&lt;/p&gt;
-
-&lt;h3 id=&quot;2016-mcmaster-university-canada&quot;&gt;2016 McMaster University, Canada&lt;/h3&gt;
-
-&lt;h4 id=&quot;local-organising-committee&quot;&gt;Local organising committee&lt;/h4&gt;
-
-&lt;p&gt;David Ogborn, General chair (McMaster University)
-Graham Wakefield, Co-chair (York University)
-Christina Baade, Scientific programme committee chair (McMaster University)
-Kate Sicchio, Artistic programme committee chair (New York University)
-Tanya Goncalves, Workshops chair (McMaster University)
-Harold Sikkema, Design and videography coordinator (McMaster University)&lt;/p&gt;
-
-&lt;h4 id=&quot;steering-committee-1&quot;&gt;Steering committee&lt;/h4&gt;
-
-&lt;p&gt;Alex McLean, Chair (FoAM Kernow)
-Shelly Knotts (Durham University)
-Thor Magnusson (University of Sussex)
-David Ogborn (McMaster University)
-Kate Sicchio (Parsons the New School for Design)
-Graham Wakefield (York University)&lt;/p&gt;
-
-&lt;h4 id=&quot;programme-committee&quot;&gt;Programme committee&lt;/h4&gt;
-
-&lt;p&gt;Samuel Aaron (University of Cambridge)
-Amy Alexander (University of California, San Diego)
-Juan Alzate Romero (IMWI - HfM Karlsruhe)
-Joanne Armitage (University of Leeds)
-Christina Baade (McMaster University)
-Holger Ballweg (Northumbria University)
-Sara Bannerman (McMaster University)
-Renick Bell
-Yael Benn (Manchester Metropolitan University)
-Daven Bigelow (McMaster University)
-Alan Blackwell (University of Cambridge)
-Patrick Borgeat (University of Music, Karlsruhe)
-Victoria Bradbury (Alfred University / NYSCC / SoAD)
-Karen Burland (University of Leeds)
-Pam Burnard (University of Cambridge)
-Alexandra Cárdenas (University of the Arts, Berlin)
-Jacques Carette (McMaster University)
-Luke Church (University of Cambridge)
-Geoff Cox (Aarhus University)
-Georg Essl (University of Michigan)
-Andrew Fischer (Shutterfly, Inc)
-Paula Gardner (McMaster University)
-Tanya Goncalves (McMaster University)
-Tom Hall (Anglia Ruskin University)
-Mike Hodnick
-Aaron Hutchinson (Hamilton Audio-Visual Node)
-Ian Jarvis (York University)
-Ali Khajehei (McMaster University)
-Chris Kiefer (University of Sussex)
-Shelly Knotts (Durham University)
-Shawn Lawson (Rensselaer Polytechnic Institute)
-Sang Won Lee (University of Michigan)
-Thor Magnusson (University of Sussex)
-Alex McLean (FoAM Kernow)
-James Noble (Victoria University of Wellington)
-Matthew Paine (McMaster University)
-Roly Perera (University of Glasgow, University of Edinburgh)
-Charlie Roberts (Rochester Institute of Technology)
-Julian Rohrhuber (Institute For Music And Media, Robert Schumann Hochschule)
-Adriana Sa (Goldsmiths College, University of London)
-Kate Sicchio (Parsons the New School for Design)
-Harold Sikkema (McMaster University)
-Dagobert Sondervan
-Andrew Sorensen
-Dana Swarbrick (McMaster University)
-Ben Swift (Australian National University)
-Steven Tanimoto (University of Washington)
-Eldad Tsabary (Concordia University)
-Anne Veinberg (Orpheus Institute/Leiden University/Conservatorium Amsterdam)
-Graham Wakefield (York University)
-Joseph Wilk (Poetic Computation)
-Scott Wilson (University of Birmingham)
-Matthew Yee-King (Goldsmiths College, University of London)
-Andrea Zeffiro (McMaster University)&lt;/p&gt;
-
-&lt;h3 id=&quot;2015-university-of-leeds-uk&quot;&gt;2015 University of Leeds, UK&lt;/h3&gt;
-
-&lt;h4 id=&quot;core-organising-committee-1&quot;&gt;Core organising committee&lt;/h4&gt;
-
-&lt;p&gt;Alex McLean, General chair (University of Leeds)
-Thor Magnusson, Co-chair (University of Sussex)
-Kia Ng, Scientific programme committee chair (University of Leeds)
-Shelly Knotts, Artistic programme committee chair (University of Durham)
-Joanne Armitage, Workshop and special events chair (University of Leeds)&lt;/p&gt;
-
-&lt;h4 id=&quot;evening-event-producer&quot;&gt;Evening event producer&lt;/h4&gt;
-
-&lt;p&gt;Ash Sagar&lt;/p&gt;
-
-&lt;h4 id=&quot;external-advisors&quot;&gt;External advisors&lt;/h4&gt;
-
-&lt;p&gt;Juan A. Romero
-Patrick Borgeat&lt;/p&gt;
-
-&lt;h4 id=&quot;programme-committee-1&quot;&gt;Programme committee&lt;/h4&gt;
-
-&lt;p&gt;&lt;em&gt;same as 2016&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;toplap-nodes&quot;&gt;TOPLAP nodes&lt;/h2&gt;
-
-&lt;p&gt;This list is pinched &lt;em&gt;directly&lt;/em&gt; from the &lt;a href=&quot;https://toplap.org/nodes/&quot;&gt;TOPLAP
-website&lt;/a&gt; (as at 21 Sep 2019):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://livecode.nyc/&quot;&gt;Livecode NYC&lt;/a&gt; (USA)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/1683408058575303/&quot;&gt;TOPLAP Node Yorkshire&lt;/a&gt; (UK)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/897471030365142/&quot;&gt;TOPLAP Node North-East&lt;/a&gt; (UK)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/toplap.mx/&quot;&gt;TOPLAP Node México&lt;/a&gt; (MX)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/toplapnodeberlin/1725919034313087/&quot;&gt;Cybernetic Orchestra&lt;/a&gt; (CA)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/toplapnodeberlin/1725919034313087/&quot;&gt;TOPLAP Berlin&lt;/a&gt; (DE)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://noiskate.hotglue.me/?ToplapMedellin&quot;&gt;TOPLAP Medellín&lt;/a&gt; (CO)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/626111581071250/&quot;&gt;TOPLAP Bogotá&lt;/a&gt; (CO)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/583681711997021/&quot;&gt;TOPLAP Quito&lt;/a&gt; (EC)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/362002184270964/&quot;&gt;TOPLAP Lima&lt;/a&gt; (PE)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://livecodear.github.io/&quot;&gt;TOPLAP Buenos Aires&lt;/a&gt; (AR)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://montreal.toplap.org&quot;&gt;Live coding à Montréal&lt;/a&gt; (CA)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://toplapbarcelona.hangar.org/&quot;&gt;TOPLAP Barcelona&lt;/a&gt; (ES)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/toplapjp&quot;&gt;TOPLAP Japan&lt;/a&gt; (JP)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://netherlands-coding-live.github.io&quot;&gt;NL_CL (Netherlands Coding Live) node&lt;/a&gt; (NL)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://w3.impa.br/~vitorgr/livecode/&quot;&gt;Live coding @ IMPA (Rio de Janeiro)&lt;/a&gt; (BR)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/353595622030440/&quot;&gt;TOPLAP Greater Bay Area&lt;/a&gt; (CN)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://tidalclub.github.io/sheffield.html&quot;&gt;Tidalclub Sheffield&lt;/a&gt; (UK)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://colectivo-de-livecoders.gitlab.io/&quot;&gt;CLiC (Colectivo de Live Coders)&lt;/a&gt; (AR)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://livecodenewengland.org/&quot;&gt;Livecode New England&lt;/a&gt; (USA)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/1051671308353969/&quot;&gt;TOPLAP Italia&lt;/a&gt; (IT)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/toplapfr/&quot;&gt;TOPLAP France&lt;/a&gt; (FR)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://algorave.fr/&quot;&gt;Algorave France &amp;amp; Belgique&lt;/a&gt; (FR/BE)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.meetup.com/Live-Coding-Frankfurt/&quot;&gt;Live Coding Frankfurt&lt;/a&gt; (DE)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://toplapvaldivia.wixsite.com/website&quot;&gt;TOPLAP Valdiva&lt;/a&gt; (CL)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/587715001671363/&quot;&gt;LiveCoding Düsseldorf&lt;/a&gt; (DE)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="research" /><summary type="html">People</summary></entry></feed>
+Hopefully programs like the LENS can change that.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="reimagine" /><category term="lens" /><summary type="html">The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: ANU School of Music’s new orchestra is far from conventional.</summary></entry></feed>
