@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-17T18:20:01+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-19T08:16:10+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -267,11 +267,11 @@ task.&lt;/p&gt;
 which forms the basis for your assessment task. Instead, we’ll spin the
 code/creativity/culture wheels&lt;sup id=&quot;fnref:winwheel&quot;&gt;&lt;a href=&quot;#fn:winwheel&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; and let fate&lt;sup id=&quot;fnref:fate&quot;&gt;&lt;a href=&quot;#fn:fate&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; decide.&lt;/p&gt;
 
-&lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/js/TweenMax.min-72c7211e9c1a5f7559ad6092cddf75d405e3c09a8a15abcd7f9c594cdcaf1057.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 
 &lt;script src=&quot;/assets/js/Winwheel-b66809a0e59bfb42fc1f3a968197308db7eac0bea2d388ec34c5508d889a9aca.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 
-&lt;script src=&quot;/assets/js/ccc-workshop-wheels-32dc5c5f8dbea522d232fd7a6f0e11c740282817adea83f90bd8802a515b1751.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/js/ccc-workshop-wheels-288cfd176295ba541d5f6356486a7fc963c77139dfc225ed698cc3a1285f32e8.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 
 &lt;style&gt;
 .wheelIndicator {
