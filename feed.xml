@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-19T08:43:24+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-19T08:52:46+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -119,7 +119,7 @@ in touch&lt;/a&gt; 😊&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;9:30&lt;/strong&gt;: spin the wheel(s)!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:30&lt;/strong&gt;: &lt;a href=&quot;#spin-the-wheels&quot;&gt;spin the wheel(s)!&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;9:45&lt;/strong&gt;: &lt;a href=&quot;#group-work-session-1&quot;&gt;group work session 1&lt;/a&gt; (assessment item spec)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;10:30&lt;/strong&gt;: present your assessment item spec to workshop&lt;/li&gt;
 &lt;/ul&gt;
@@ -145,7 +145,7 @@ in touch&lt;/a&gt; 😊&lt;/p&gt;
 &lt;p&gt;For this workshop it’s important that each group has representatives from each
 facet of the c/c/c triad. Look under your chair to find three stickers:&lt;/p&gt;
 
-&lt;p&gt;TODO photo&lt;/p&gt;
+&lt;!-- TODO photo --&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -206,11 +206,10 @@ particular &lt;em&gt;creative&lt;/em&gt; process/medium.&lt;/p&gt;
 selective program for year 11 &amp;amp; 12 students. If you’re more familiar with a uni
 context, they’re probably not too dissimilar from first-year undergraduates.&lt;/p&gt;
 
-&lt;p&gt;In this group session (which runs until 10:30am) your group needs to write a
-(draft) document. I don’t want to be &lt;em&gt;too&lt;/em&gt; dogmatic about the form and
-content—the whole point of this workshop is to throw out the rulebook—but
-here’s a example of the sorts of things that are usually important in an
-assessment item:&lt;/p&gt;
+&lt;p&gt;In this group session your group needs to produce a (draft) document. I don’t
+want to be &lt;em&gt;too&lt;/em&gt; dogmatic about the form and content—the whole point of this
+workshop is to throw out the rulebook—but here’s a example of the sorts of
+things that are usually important in an assessment item:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -240,8 +239,7 @@ assessment task&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You don’t have to follow these exact headings, but you do have to produce a
-document (by the end of this session!) which you’ll then present to the wider
+&lt;p&gt;At the end of this session you get to present your assessment task to the wider
 workshop. So, your group will need to organise:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -261,7 +259,7 @@ submissions for your assessment task. So you don’t have to worry about writing
 them down formally just yet, but keep that in mind as you design your assessment
 task.&lt;/p&gt;
 
-&lt;h3 id=&quot;lets-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;/h3&gt;
+&lt;h3 id=&quot;spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;/h3&gt;
 
 &lt;p&gt;You don’t get to pick the code concept/cultural problem/creative process triad
 which forms the basis for your assessment task. Instead, we’ll spin the
@@ -430,10 +428,10 @@ learning about &lt;strong&gt;&lt;span class=&quot;codeWheel-canvas-result&quot;&
 
 &lt;h3 id=&quot;things-to-consider-as-you-design-your-assessment-task&quot;&gt;Things to consider as you design your assessment task&lt;/h3&gt;
 
-&lt;p&gt;Now that you’ve spun the wheels, you might be thinking that they’ve left you
-with a pretty broad scope—and you’d be right. Your group’s job is to narrow
-this down into a specific task which is tractable for your intended audience of
-students. It’s fine (good, even!) if you narrow it down a lot.&lt;/p&gt;
+&lt;p&gt;Now that you’ve spun the wheels, you might be thinking that they’ve still left
+you with a pretty broad scope—and you’d be right. Your group’s job is to
+narrow this down into a specific task which is tractable for your intended
+audience of students. It’s fine (good, even!) if you narrow it down a lot.&lt;/p&gt;
 
 &lt;p&gt;Some of your group members might have lots of experience designing assessment
 tasks, others may have never done it before (although I’m sure that everyone’s
@@ -479,6 +477,11 @@ Academy&lt;/a&gt;
 or this &lt;a href=&quot;https://www.uts.edu.au/research-and-teaching/learning-and-teaching/assessment-futures/designing-and-redesigning&quot;&gt;more general assessment design framework from
 UTS&lt;/a&gt;)
 but I’m sure you can find others as well&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;what’s the worst-case scenario you’d expect if you set your assessment task
+for a bunch of eager c/c/c studio students? how can you write the spec to
+minimise the chance of things going down this way?&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;it’s ok to use images, diagrams, YouTube clips, interactive widgets—the
