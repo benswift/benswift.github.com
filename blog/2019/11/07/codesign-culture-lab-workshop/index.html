@@ -348,8 +348,16 @@ more broadly.</p>
 students to learn (perhaps surreptitiously) in <em>doing</em> the assessment task.</p>
 
 <div class="wheelIndicator">⧨</div>
-<canvas id="codeWheel-canvas" width="800" height="600" onclick="startSpin(codeWheel);">
+<canvas id="codeWheel-canvas" onclick="startSpin(codeWheel);">
 </canvas>
+
+<script>
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById("codeWheel-canvas");
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+</script>
 
 <p class="wheelResult"><em>code</em> wheel: <strong><span class="codeWheel-canvas-result"></span></strong></p>
 
@@ -394,6 +402,14 @@ will explore the problem.</p>
 <canvas id="creativityWheel-canvas" width="800" height="600" onclick="startSpin(creativityWheel);">
 </canvas>
 
+<script>
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById("creativityWheel-canvas");
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+</script>
+
 <p class="wheelResult"><em>creativity</em> wheel: <strong><span class="creativityWheel-canvas-result"></span></strong></p>
 
 <script>
@@ -425,6 +441,14 @@ just picking a theme which implies that there’s only one “right approach”.
 <div class="wheelIndicator">⧨</div>
 <canvas id="cultureWheel-canvas" width="800" height="600" onclick="startSpin(cultureWheel);">
 </canvas>
+
+<script>
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById("cultureWheel-canvas");
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+</script>
 
 <p class="wheelResult"><em>culture</em> wheel: <strong><span class="cultureWheel-canvas-result"></span></strong></p>
 
@@ -576,7 +600,7 @@ computing.</p>
     <li id="fn:wilde">
       <p>obviously, this is fake, although <a href="https://www.azquotes.com/quote/776726">Oscar Wilde said something
 similar</a>, and I’m <em>pretty sure</em> he
-was Olivia Wilde’s uncle <a href="#fnref:wilde" class="reversefootnote">&#8617;</a></p>
+was <a href="https://www.imdb.com/name/nm1312575/">Olivia Wilde’s</a> uncle <a href="#fnref:wilde" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:assessment">
 
@@ -647,8 +671,8 @@ using this word so the c/c/c schtick makes sense. <a href="#fnref:culture" clas
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>c345fb86</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/c345fb86/_posts/2019-11-07-codesign-culture-lab-workshop.md">source
+	site revision <code>729bb038</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/729bb038/_posts/2019-11-07-codesign-culture-lab-workshop.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 

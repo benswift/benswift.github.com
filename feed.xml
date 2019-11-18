@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-19T08:16:10+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-19T08:43:24+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -299,8 +299,16 @@ more broadly.&lt;/p&gt;
 students to learn (perhaps surreptitiously) in &lt;em&gt;doing&lt;/em&gt; the assessment task.&lt;/p&gt;
 
 &lt;div class=&quot;wheelIndicator&quot;&gt;⧨&lt;/div&gt;
-&lt;canvas id=&quot;codeWheel-canvas&quot; width=&quot;800&quot; height=&quot;600&quot; onclick=&quot;startSpin(codeWheel);&quot;&gt;
+&lt;canvas id=&quot;codeWheel-canvas&quot; onclick=&quot;startSpin(codeWheel);&quot;&gt;
 &lt;/canvas&gt;
+
+&lt;script&gt;
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById(&quot;codeWheel-canvas&quot;);
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+&lt;/script&gt;
 
 &lt;p class=&quot;wheelResult&quot;&gt;&lt;em&gt;code&lt;/em&gt; wheel: &lt;strong&gt;&lt;span class=&quot;codeWheel-canvas-result&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -345,6 +353,14 @@ will explore the problem.&lt;/p&gt;
 &lt;canvas id=&quot;creativityWheel-canvas&quot; width=&quot;800&quot; height=&quot;600&quot; onclick=&quot;startSpin(creativityWheel);&quot;&gt;
 &lt;/canvas&gt;
 
+&lt;script&gt;
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById(&quot;creativityWheel-canvas&quot;);
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+&lt;/script&gt;
+
 &lt;p class=&quot;wheelResult&quot;&gt;&lt;em&gt;creativity&lt;/em&gt; wheel: &lt;strong&gt;&lt;span class=&quot;creativityWheel-canvas-result&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;script&gt;
@@ -376,6 +392,14 @@ just picking a theme which implies that there’s only one “right approach”.
 &lt;div class=&quot;wheelIndicator&quot;&gt;⧨&lt;/div&gt;
 &lt;canvas id=&quot;cultureWheel-canvas&quot; width=&quot;800&quot; height=&quot;600&quot; onclick=&quot;startSpin(cultureWheel);&quot;&gt;
 &lt;/canvas&gt;
+
+&lt;script&gt;
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById(&quot;cultureWheel-canvas&quot;);
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+&lt;/script&gt;
 
 &lt;p class=&quot;wheelResult&quot;&gt;&lt;em&gt;culture&lt;/em&gt; wheel: &lt;strong&gt;&lt;span class=&quot;cultureWheel-canvas-result&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -527,7 +551,7 @@ computing.&lt;/p&gt;
     &lt;li id=&quot;fn:wilde&quot;&gt;
       &lt;p&gt;obviously, this is fake, although &lt;a href=&quot;https://www.azquotes.com/quote/776726&quot;&gt;Oscar Wilde said something
 similar&lt;/a&gt;, and I’m &lt;em&gt;pretty sure&lt;/em&gt; he
-was Olivia Wilde’s uncle &lt;a href=&quot;#fnref:wilde&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+was &lt;a href=&quot;https://www.imdb.com/name/nm1312575/&quot;&gt;Olivia Wilde’s&lt;/a&gt; uncle &lt;a href=&quot;#fnref:wilde&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:assessment&quot;&gt;
 
