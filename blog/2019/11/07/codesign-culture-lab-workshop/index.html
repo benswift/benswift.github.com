@@ -318,7 +318,7 @@ code/creativity/culture wheels<sup id="fnref:winwheel"><a href="#fn:winwheel" cl
 
 <script src="/assets/js/Winwheel-b66809a0e59bfb42fc1f3a968197308db7eac0bea2d388ec34c5508d889a9aca.js" type="text/javascript"></script>
 
-<script src="/assets/js/ccc-workshop-wheels-288cfd176295ba541d5f6356486a7fc963c77139dfc225ed698cc3a1285f32e8.js" type="text/javascript"></script>
+<script src="/assets/js/ccc-workshop-wheels-ef1561fe2443c3f60cdea276df4a00ee5d96556948d6b2426f85fe6b0ca02868.js" type="text/javascript"></script>
 
 <style>
 .wheelIndicator {
@@ -346,16 +346,7 @@ more broadly.</p>
 students to learn (perhaps surreptitiously) in <em>doing</em> the assessment task.</p>
 
 <div class="wheelIndicator">⧨</div>
-<canvas id="codeWheel-canvas" onclick="startSpin(codeWheel);">
-</canvas>
-
-<script>
-// filthy hacks, but I've got other work to do...
-let cv = document.getElementById("codeWheel-canvas");
-let parentWidth = cv.parentElement.offsetWidth;
-cv.width = parentWidth;
-cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
-</script>
+<div id="codeWheel-canvas"></div>
 
 <p class="wheelResult"><em>code</em> wheel: <strong><span class="codeWheel-canvas-result"></span></strong></p>
 
@@ -397,16 +388,7 @@ let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
 will explore the problem.</p>
 
 <div class="wheelIndicator">⧨</div>
-<canvas id="creativityWheel-canvas" width="800" height="600" onclick="startSpin(creativityWheel);">
-</canvas>
-
-<script>
-// filthy hacks, but I've got other work to do...
-let cv = document.getElementById("creativityWheel-canvas");
-let parentWidth = cv.parentElement.offsetWidth;
-cv.width = parentWidth;
-cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
-</script>
+<div id="creativityWheel-canvas"></div>
 
 <p class="wheelResult"><em>creativity</em> wheel: <strong><span class="creativityWheel-canvas-result"></span></strong></p>
 
@@ -437,16 +419,7 @@ how to leave students to wrestle with what <em>they</em> think about the problem
 just picking a theme which implies that there’s only one “right approach”.</p>
 
 <div class="wheelIndicator">⧨</div>
-<canvas id="cultureWheel-canvas" width="800" height="600" onclick="startSpin(cultureWheel);">
-</canvas>
-
-<script>
-// filthy hacks, but I've got other work to do...
-let cv = document.getElementById("cultureWheel-canvas");
-let parentWidth = cv.parentElement.offsetWidth;
-cv.width = parentWidth;
-cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
-</script>
+<div id="cultureWheel-canvas"></div>
 
 <p class="wheelResult"><em>culture</em> wheel: <strong><span class="cultureWheel-canvas-result"></span></strong></p>
 
@@ -674,8 +647,8 @@ using this word so the c/c/c schtick makes sense. <a href="#fnref:culture" clas
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>0788be2a</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/0788be2a/_posts/2019-11-07-codesign-culture-lab-workshop.md">source
+	site revision <code>8818726d</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/8818726d/_posts/2019-11-07-codesign-culture-lab-workshop.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
