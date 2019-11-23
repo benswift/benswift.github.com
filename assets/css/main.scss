@@ -1,37 +1,12 @@
 @import "./variables.scss";
 
-// fonts and typography
+// fonts and typography (self-hosted because HTTP/2)
 
 // Inter UI - https://rsms.me/inter/
+@import url('inter.css');
 
-/* -------------------------------------------------------
-Variable font.
-Usage:
+// Courier Prime
 
-  html { font-family: 'Inter', sans-serif; }
-  @supports (font-variation-settings: normal) {
-    html { font-family: 'Inter var', sans-serif; }
-  }
-*/
-@font-face {
-  font-family: 'Inter var';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: font-files("{% asset \"fonts/inter/Inter-roman.var.woff2\" @path %}");
-}
-
-@font-face {
-  font-family: 'Inter var';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: font-files("{% asset \"fonts/inter/Inter-italic.var.woff2\" @path %}");
-}
-
-// use self-hosted Courier Prime (it's not on Google fonts or anything)
 @font-face {
 	font-family: "Courier Prime";
 	src: font-files(
