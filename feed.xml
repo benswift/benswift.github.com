@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-23T14:05:13+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-25T10:16:25+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -80,15 +80,35 @@ code/creativity/culture work going on here at the ANU.&lt;/p&gt;
   &lt;h2&gt;table of contents&lt;/h2&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#workshop-timeline&quot; id=&quot;markdown-toc-workshop-timeline&quot;&gt;Workshop timeline&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#group-formation&quot; id=&quot;markdown-toc-group-formation&quot;&gt;Group formation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#group-work-session-1&quot; id=&quot;markdown-toc-group-work-session-1&quot;&gt;Session 1: writing an assessment spec&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#group-work-session-2&quot; id=&quot;markdown-toc-group-work-session-2&quot;&gt;Session 2: articulating the assessment criteria&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#presenter-bio&quot; id=&quot;markdown-toc-presenter-bio&quot;&gt;Presenter bio&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#footnotes&quot; id=&quot;markdown-toc-footnotes&quot;&gt;Footnotes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#workshop-overview&quot; id=&quot;markdown-toc-workshop-overview&quot;&gt;Workshop overview&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#timeline&quot; id=&quot;markdown-toc-timeline&quot;&gt;Timeline&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#group-formation&quot; id=&quot;markdown-toc-group-formation&quot;&gt;Group formation&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#group-work-session-1&quot; id=&quot;markdown-toc-group-work-session-1&quot;&gt;Session 1: writing an assessment spec&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#design-brief&quot; id=&quot;markdown-toc-design-brief&quot;&gt;Design brief&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#spin-the-wheels&quot; id=&quot;markdown-toc-spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#things-to-consider-as-you-design-your-assessment-task&quot; id=&quot;markdown-toc-things-to-consider-as-you-design-your-assessment-task&quot;&gt;Things to consider as you design your assessment task&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#group-work-session-2&quot; id=&quot;markdown-toc-group-work-session-2&quot;&gt;Session 2: articulating the assessment criteria&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#things-to-consider-as-you-design-your-assessment-criteria&quot; id=&quot;markdown-toc-things-to-consider-as-you-design-your-assessment-criteria&quot;&gt;Things to consider as you design your assessment criteria&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#takeaway-questions&quot; id=&quot;markdown-toc-takeaway-questions&quot;&gt;Takeaway questions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#appendices&quot; id=&quot;markdown-toc-appendices&quot;&gt;Appendices&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#presenter-bio&quot; id=&quot;markdown-toc-presenter-bio&quot;&gt;Presenter bio&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#footnotes&quot; id=&quot;markdown-toc-footnotes&quot;&gt;Footnotes&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
+
+&lt;h2 id=&quot;workshop-overview&quot;&gt;Workshop overview&lt;/h2&gt;
+
+&lt;h3 id=&quot;intro&quot;&gt;Intro&lt;/h3&gt;
 
 &lt;p&gt;Is it possible to learn about algorithms through writing poetry about wealth
 inequality? How about exploring the issue of social media use via sculptures
@@ -109,7 +129,7 @@ Lab&lt;/a&gt;. If
 you’re coming to the culture lab and you’d like to be part of the workshop, &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get
 in touch&lt;/a&gt; 😊&lt;/p&gt;
 
-&lt;h2 id=&quot;workshop-timeline&quot;&gt;Workshop timeline&lt;/h2&gt;
+&lt;h3 id=&quot;timeline&quot;&gt;Timeline&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;9:00&lt;/strong&gt;: intro—what is the c/c/c studio&lt;/li&gt;
@@ -138,9 +158,9 @@ in touch&lt;/a&gt; 😊&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;12:15&lt;/strong&gt;: wrap-up&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;group-formation&quot;&gt;Group formation&lt;/h2&gt;
+&lt;h3 id=&quot;group-formation&quot;&gt;Group formation&lt;/h3&gt;
 
-&lt;h3 id=&quot;find-your-stickers&quot;&gt;Find your stickers&lt;/h3&gt;
+&lt;h4 id=&quot;find-your-stickers&quot;&gt;Find your stickers&lt;/h4&gt;
 
 &lt;p&gt;For this workshop it’s important that each group has representatives from each
 facet of the c/c/c triad. Look under your chair to find three stickers:&lt;/p&gt;
@@ -167,7 +187,7 @@ that this whole “reducing one’s identity in such a multifaceted problem spac
 down to just a few stickers” thing is total bollocks, then just go with it for
 now—you can be your group’s enfant terrible 😉&lt;/p&gt;
 
-&lt;h3 id=&quot;find-your-team-mates&quot;&gt;Find your team-mates&lt;/h3&gt;
+&lt;h4 id=&quot;find-your-team-mates&quot;&gt;Find your team-mates&lt;/h4&gt;
 
 &lt;p&gt;Once you’ve attached your stickers prominently to your forehead (or wherever you
 decided to wear them) then you need to find three team-mates (so that there are
@@ -335,8 +355,8 @@ let codeWheel = makeWheel(benCodeConcepts, &quot;codeWheel-canvas&quot;);
 
 &lt;h4 id=&quot;the-creativity-wheel&quot;&gt;the creativity wheel&lt;/h4&gt;
 
-&lt;p&gt;This wheel selects the creative &lt;em&gt;process&lt;/em&gt; (the medium) through which the student
-will explore the problem.&lt;/p&gt;
+&lt;p&gt;This wheel selects the creative medium through which the student will explore
+the problem.&lt;/p&gt;
 
 &lt;div class=&quot;wheelIndicator&quot;&gt;⧨&lt;/div&gt;
 &lt;div id=&quot;creativityWheel-canvas&quot;&gt;&lt;/div&gt;
@@ -434,9 +454,15 @@ completing your assessment task? (that will help with coming up with some
 learning outcomes)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;how might the &lt;em&gt;concept/tool&lt;/em&gt; and the &lt;em&gt;creative process&lt;/em&gt; shape the responses to
+    &lt;p&gt;how might the &lt;em&gt;concept/tool&lt;/em&gt; and the &lt;em&gt;creative medium&lt;/em&gt; shape the responses to
 the problem? can you use this to your advantage in encouraging students to
 attain the learning outcomes?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;will the outcome (what the students produce) be something completely new, or
+will it be a reimagination/repurposing of an existing technology, or
+speculating on the impact of an existing technology as it develops into the
+future?&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;how are you going to constrain the scope of your task so that it supports
@@ -492,12 +518,41 @@ description in each grid square&lt;/p&gt;
 &lt;h3 id=&quot;things-to-consider-as-you-design-your-assessment-criteria&quot;&gt;Things to consider as you design your assessment criteria&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;the problems (from the culture wheel) are &lt;em&gt;not solvable through a single
+  &lt;li&gt;
+    &lt;p&gt;the problems (from the culture wheel) are &lt;em&gt;not solvable through a single
 assessment task&lt;/em&gt;, so don’t make that the criteria—instead, you want students
-to explore &amp;amp; understand the problem, process &amp;amp; tool more deeply&lt;/li&gt;
+to explore &amp;amp; understand the problem, process &amp;amp; tool more deeply&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;how do your criteria support students who haven’t necessarily thought deeply
+about the “big questions” to do so? how do they encourage students who have
+thought about this stuff to go deeper?&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;presenter-bio&quot;&gt;Presenter bio&lt;/h2&gt;
+&lt;h2 id=&quot;takeaway-questions&quot;&gt;Takeaway questions&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Did the &lt;a href=&quot;#spin-the-wheels&quot;&gt;wheels&lt;/a&gt; (and the segments therein) provide enough
+structure for your assessment design exercise? Too much structure? If you were
+using them as a tool for assessment design in the future, how would you modify
+them?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;After participating, are you more or less convinced of the utility of the
+creative arts in teaching the code concepts? Why?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What type of student would benefit the most from doing your assessment task?
+How are they similar/different from the students we see in our CS programs
+here in CECS?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;appendices&quot;&gt;Appendices&lt;/h2&gt;
+
+&lt;h3 id=&quot;presenter-bio&quot;&gt;Presenter bio&lt;/h3&gt;
 
 &lt;p&gt;Dr Ben Swift is a Senior Lecturer in the ANU Research School of Computer Science
 (RSCS). As the leader of the code/creativity/culture (c/c/c) research group,
@@ -521,7 +576,7 @@ computing.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://benswift.me&quot;&gt;http://benswift.me&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+&lt;h3 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h3&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:wilde&quot;&gt;
