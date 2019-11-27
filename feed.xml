@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-28T08:09:23+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-28T08:32:29+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -133,7 +133,7 @@ in touch&lt;/a&gt; 😊&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;9:00&lt;/strong&gt;: &lt;a href=&quot;/talks/ccc-studio-workshop/&quot;&gt;intro&lt;/a&gt;—what is the c/c/c studio&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;9:20&lt;/strong&gt;: &lt;a href=&quot;#group-formation&quot;&gt;group formation&lt;/a&gt; (with stickers! 🔴🔵)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:20&lt;/strong&gt;: &lt;a href=&quot;#group-formation&quot;&gt;group formation&lt;/a&gt; (with stickers! &lt;span style=&quot;color:#eb4d4b;&quot;&gt;⬤&lt;/span&gt;&lt;span style=&quot;color:#3498db;&quot;&gt;⬤&lt;/span&gt;&lt;span style=&quot;color:#27ae60;&quot;&gt;⬤&lt;/span&gt;&lt;span style=&quot;color:#85522f;&quot;&gt;⬤&lt;/span&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -164,8 +164,6 @@ in touch&lt;/a&gt; 😊&lt;/p&gt;
 
 &lt;p&gt;For this workshop it’s important that each group has representatives from each
 facet of the c/c/c triad. Look under your chair to find three stickers:&lt;/p&gt;
-
-&lt;!-- TODO photo --&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -209,7 +207,7 @@ instructions.&lt;/p&gt;
 
 &lt;h2 id=&quot;group-work-session-1&quot;&gt;Session 1: writing an assessment spec&lt;/h2&gt;
 
-&lt;p&gt;In his intro, Ben introduced the c/c/c studio idea and set the scene for the
+&lt;p&gt;In his intro, we introduced the c/c/c studio idea and set the scene for the
 whole “code/creativity/culture” thing (spoiler: they’re all &lt;em&gt;highly&lt;/em&gt; entangled).
 You’re now a curriculum designer for the c/c/c studio! Welcome aboard.&lt;/p&gt;
 
