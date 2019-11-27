@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-27T19:03:06+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-11-27T20:04:12+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -112,17 +112,17 @@ code/creativity/culture work going on here at the ANU.&lt;/p&gt;
 
 &lt;p&gt;Is it possible to learn about algorithms through writing poetry about wealth
 inequality? How about exploring the issue of social media use via sculptures
-built using cybersecurity tools and concepts? Furthermore, is it possible to
-design an assessment task which encourages deep technical work and honest
-cultural reflection, while still producing a genuinely interesting creative
-outcome?&lt;/p&gt;
+built using cybersecurity tools and concepts? Is it possible to design an
+assessment task which encourages deep technical work and honest cultural
+reflection, while still producing a genuinely interesting creative outcome?&lt;/p&gt;
 
-&lt;p&gt;This workshop will bring together folks from all points of the
+&lt;p&gt;This workshop brings together folks from all points of the
 code/creativity/culture compass to design a &lt;em&gt;real&lt;/em&gt; assessment task for the
-&lt;strong&gt;c/c/c studio&lt;/strong&gt; creative code outreach program. In fact, it &lt;em&gt;needs&lt;/em&gt; a diverse
-range of voices to work properly. So if you’ve got thoughts and ideas about
-CS/Engineering curriculum design, the arts, and life within the socio-technical
-assemblage of our present age, then come along and have your say!&lt;/p&gt;
+&lt;strong&gt;c/c/c studio&lt;/strong&gt; creative computing outreach program. In fact, it &lt;em&gt;needs&lt;/em&gt; a
+diverse range of voices to work properly. So if you’ve got thoughts and ideas
+about CS/Engineering curriculum design, the arts, and life within the
+socio-technical assemblage of our present age, then come along and have your
+say!&lt;/p&gt;
 
 &lt;p&gt;This workshop is part of the &lt;a href=&quot;https://cecs.anu.edu.au/events/event-series/codesign-culture-lab&quot;&gt;CoDesign Culture
 Lab&lt;/a&gt;. If
@@ -132,7 +132,7 @@ in touch&lt;/a&gt; 😊&lt;/p&gt;
 &lt;h3 id=&quot;timeline&quot;&gt;Timeline&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;9:00&lt;/strong&gt;: intro—what is the c/c/c studio&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9:00&lt;/strong&gt;: &lt;a href=&quot;/talks/ccc-studio-workshop/&quot;&gt;intro&lt;/a&gt;—what is the c/c/c studio&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;9:20&lt;/strong&gt;: &lt;a href=&quot;#group-formation&quot;&gt;group formation&lt;/a&gt; (with stickers! 🔴🔵)&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -169,21 +169,22 @@ facet of the c/c/c triad. Look under your chair to find three stickers:&lt;/p&gt
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;the &lt;strong&gt;red&lt;/strong&gt; sticker is the &lt;em&gt;code&lt;/em&gt; sticker—if you consider yourself a &lt;em&gt;code&lt;/em&gt;
-person&lt;/p&gt;
+    &lt;p&gt;the &lt;strong&gt;red&lt;/strong&gt; &lt;span style=&quot;color:#eb4d4b;&quot;&gt;⬤&lt;/span&gt; sticker is the &lt;em&gt;code&lt;/em&gt;
+sticker—if you consider yourself a &lt;em&gt;code&lt;/em&gt; person&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;the &lt;strong&gt;blue&lt;/strong&gt; sticker is the &lt;em&gt;creativity&lt;/em&gt; sticker—if you consider yourself a
-&lt;em&gt;creativity&lt;/em&gt; person&lt;/p&gt;
+    &lt;p&gt;the &lt;strong&gt;blue&lt;/strong&gt; &lt;span style=&quot;color:#3498db;&quot;&gt;⬤&lt;/span&gt; sticker is the &lt;em&gt;creativity&lt;/em&gt;
+sticker—if you consider yourself a &lt;em&gt;creativity&lt;/em&gt; person&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;the &lt;strong&gt;green&lt;/strong&gt; sticker is the &lt;em&gt;culture&lt;/em&gt; sticker—if you consider yourself a
-&lt;em&gt;culture&lt;/em&gt; person&lt;/p&gt;
+    &lt;p&gt;the &lt;strong&gt;green&lt;/strong&gt; &lt;span style=&quot;color:#27ae60;&quot;&gt;⬤&lt;/span&gt; sticker is the &lt;em&gt;culture&lt;/em&gt;
+sticker—if you consider yourself a &lt;em&gt;culture&lt;/em&gt; person&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;the &lt;strong&gt;brown&lt;/strong&gt; sticker is for if you think that this whole “reducing one’s
-identity in such a multifaceted problem space down to just a few stickers”
-thing is total bollocks—your job is to be your group’s &lt;em&gt;enfant terrible&lt;/em&gt; 😉&lt;/p&gt;
+    &lt;p&gt;the &lt;strong&gt;brown&lt;/strong&gt; &lt;span style=&quot;color:#85522f;&quot;&gt;⬤&lt;/span&gt; sticker is for if you
+think that this whole “reducing one’s identity in such a multifaceted problem
+space down to just a few stickers” thing is total bollocks—your job is to be
+your group’s &lt;em&gt;enfant terrible&lt;/em&gt; 😉&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -192,11 +193,11 @@ thing is total bollocks—your job is to be your group’s &lt;em&gt;enfant terr
 &lt;h4 id=&quot;find-your-team-mates&quot;&gt;Find your team-mates&lt;/h4&gt;
 
 &lt;p&gt;Once you’ve attached your stickers prominently to your forehead (or wherever you
-decided to wear them) then you need to find three team-mates (so that there are
-groups of size four total) for this workshop.&lt;/p&gt;
+decided to wear them) then you need to find three team-mates so that each group
+has four members.&lt;/p&gt;
 
-&lt;p&gt;The one requirement each group must have &lt;em&gt;all&lt;/em&gt; of the stickers between them. So,
-as you mill about finding team-mates, ask one another&lt;/p&gt;
+&lt;p&gt;The one requirement is that each group must have &lt;em&gt;all&lt;/em&gt; of the stickers between
+them. So, as you mill about finding team-mates, ask one another&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;why you chose to identify with the particular stickers you chose&lt;/li&gt;
@@ -275,11 +276,11 @@ know if you’d like one). If you’ve got a digital scribe, then there are
 electronic templates (&lt;a href=&quot;/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md&quot;&gt;markdown&lt;/a&gt; and
 &lt;a href=&quot;/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx&quot;&gt;MS Word&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;One more thing to keep in mind: in the &lt;em&gt;next&lt;/em&gt; group work session you’ll be
-writing a set of assessment criteria which will be used to assess the
-submissions for your assessment task. So you don’t have to worry about writing
-them down formally just yet, but keep that in mind as you design your assessment
-task.&lt;/p&gt;
+&lt;p class=&quot;hl-para&quot;&gt;One more thing to keep in mind: in the &lt;a href=&quot;#group-work-session-2&quot;&gt;next group work
+session&lt;/a&gt; you’ll be writing a set of assessment criteria
+which will be used to assess the submissions for your assessment task. So you
+don’t have to worry about writing them down formally just yet, but keep that in
+mind as you design your assessment task.&lt;/p&gt;
 
 &lt;h3 id=&quot;spin-the-wheels&quot;&gt;Let’s spin the wheels!&lt;/h3&gt;
 
@@ -550,7 +551,17 @@ creative arts in teaching the code concepts? Why?&lt;/p&gt;
 How are they similar/different from the students we see in our CS programs
 here in CECS?&lt;/p&gt;
   &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If &lt;strong&gt;you&lt;/strong&gt; were in charge of this workshop and had to deliver it again, what
+would you change?&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;Thanks so much for participating 😊 If your group wrote the assessment item on
+paper, can you hand it to Ben (or one of the other facilitators) before you
+leave ? If you did it electronically (e.g. using the &lt;a href=&quot;/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md&quot;&gt;markdown
+template&lt;/a&gt;) then
+can you &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;email it to Ben&lt;/a&gt;?&lt;/p&gt;
 
 &lt;h2 id=&quot;appendices&quot;&gt;Appendices&lt;/h2&gt;
 
