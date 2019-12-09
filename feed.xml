@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-12-09T14:15:19+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+08:00</published><updated>2019-11-17T00:00:00+08:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-12-09T14:41:47+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+08:00</published><updated>2019-11-17T00:00:00+08:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -55,7 +55,9 @@ code/creativity/culture work going on here at the ANU.&lt;/p&gt;
 
 &lt;p&gt;Here’s a photo from last year’s exhibition just to whet your appetite.&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;folks having fun at the COMP1720 exhibition&quot; src=&quot;/assets/images/posts/comp1720-mp-exhibition-2018-2-ca1d8558480207841dcb41c22d7722c929b5accef628f2eb1444b0d4254135fd.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;
+  &lt;img alt=&quot;folks having fun at the COMP1720 exhibition&quot; src=&quot;/assets/images/posts/comp1720-mp-exhibition-2018-2.jpg&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;See you tomorrow 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ccc" /><category term="gigs" /><summary type="html">If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to experience the COMP1720 Art &amp;amp; Interaction in New Media major project exhibition. This year’s theme is listening in/listening out.</summary></entry><entry><title type="html">code/creativity/culture curriculum design workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="code/creativity/culture curriculum design workshop" /><published>2019-11-07T00:00:00+08:00</published><updated>2019-11-07T00:00:00+08:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;div class=&quot;hl-para&quot;&gt;
 
@@ -629,16 +631,35 @@ especially big thanks to my LENS co-directors
 &amp;amp; videos up when I track them down) but here are some photos I snapped of the
 performances:&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0895-7b85a61c7e420b72a5501a29478e7383f84aaee03306a04ab1adcb706bab1589.jpg&quot; /&gt;&lt;/picture&gt;
-&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0896-e57a47fb992d099eaf8c9dafb2621a22831ce33cb33041c0c09a376982017379.jpg&quot; /&gt;&lt;/picture&gt;
-&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0897-8c16c6195295fc51162a8127023d91e7eaeecea2082904e86bebb06e0bda7b03.jpg&quot; /&gt;&lt;/picture&gt;
-&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0898-71851e581d51ad11e16d11240608c9222c611ffd2dc387ae4d1f750dac31143c.jpg&quot; /&gt;&lt;/picture&gt;
-&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0899-074554cb7cd03ca42af42f42e3cc6322f0f0f417485bec1572c52c89fec8ce6e.jpg&quot; /&gt;&lt;/picture&gt;
-&lt;picture&gt;&lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0900-c93c2205aea67252895126a4410acc3d96d3297a5951595140e766bab76bd081.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;
+  &lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0895.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0896.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0897.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0898.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0899.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;LENS members performing at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0900.jpg&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;the LENS members even stayed around afterwards to help us bump out:&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;LENS members packing up at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0901-afa757d193dc380549500eaf66f48bc8a91f516d815147e0c0514ffcfb73f476.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;
+  &lt;img alt=&quot;LENS members packing up at the showcase&quot; src=&quot;/assets/images/posts/lens-showcase-2019-s2/IMG_0901.jpg&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;LENS will be back again in S1 2019, so if you’re interested then &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;shoot me an
 email&lt;/a&gt; and we can keep you in the loop about how to
@@ -1174,8 +1195,10 @@ list&lt;/a&gt;.&lt;/p&gt;
 Things&lt;/em&gt; China Study Tour&lt;/a&gt; at
 the Beijing Institute of Technology. They were good times.&lt;/p&gt;
 
-&lt;picture&gt;&lt;img alt=&quot;a bunch of students
-and I at the Great Wall of China in Dec. 2018&quot; src=&quot;/assets/images/posts/great-wall-of-china-2018-5f9aa3802a2f2d7c27db5da9116ce8f8968814fa823763a09b7a97b35d11b5b3.jpg&quot; /&gt;&lt;/picture&gt;
+&lt;picture&gt;
+  &lt;img alt=&quot;a bunch of students
+and I at the Great Wall of China in Dec. 2018&quot; src=&quot;/assets/images/posts/great-wall-of-china-2018.jpg&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;However, the &lt;a href=&quot;https://dfat.gov.au/people-to-people/new-colombo-plan/about/Pages/about.aspx&quot;&gt;New Colombo
 Plan&lt;/a&gt;
