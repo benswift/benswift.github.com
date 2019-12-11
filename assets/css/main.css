@@ -10,10 +10,12 @@
   line-height: 1.4;
   color: #333;
   background-color: #fafafa;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 @supports (font-variation-settings: normal) {
   :root {
@@ -25,8 +27,10 @@ a {
   color: #793188;
   text-decoration: none;
   font-weight: 900;
+  -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-  transition-duration: 0.5s; }
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
   a:hover {
     color: #fafafa;
     background-color: #333; }
@@ -45,6 +49,7 @@ strong {
 code {
   font-family: "Courier Prime", "Courier", monospace;
   color: #9e1eba;
+  background: -webkit-gradient(linear, left top, right top, from(#f7e6fb), to(#eec8f6));
   background: linear-gradient(to right, #f7e6fb, #eec8f6);
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -62,9 +67,14 @@ pre > code {
   grid-template-areas: "header" "main" "footer"; }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #333;
   padding: 0 0.6rem; }
   .navigation > * {
@@ -82,6 +92,7 @@ header {
     margin-bottom: 15px; }
     header nav.logo a {
       font-size: 1.3rem;
+      background: -webkit-gradient(linear, right top, left top, from(#be2edd), to(#8c1ba4));
       background: linear-gradient(to left, #be2edd, #8c1ba4);
       color: #fafafa;
       padding: 0.4rem 0.8rem; }
@@ -106,8 +117,11 @@ footer {
   color: #777; }
 
 .post-tag-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .post-tag {
   font-weight: 400;

@@ -94,7 +94,8 @@
 }
 
 #qunit-testrunner-toolbar input[type=text] {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	height: 1.6em;
 }
 
@@ -117,7 +118,8 @@
 }
 
 #qunit-modulefilter-search {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 400px;
 }
 
@@ -130,7 +132,8 @@
 
 #qunit-modulefilter-dropdown {
 	/* align with #qunit-modulefilter-search */
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 400px;
 	position: absolute;
 	right: 0;
@@ -170,7 +173,8 @@
 }
 
 #qunit-modulefilter-dropdown #qunit-modulefilter-actions > * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	max-height: 2.8em;
 	display: block;
 	padding: 0.4em;

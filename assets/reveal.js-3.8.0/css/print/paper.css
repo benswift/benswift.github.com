@@ -130,12 +130,10 @@
 
 		text-align: left !important;
 		-webkit-perspective: none;
-		   -moz-perspective: none;
 		    -ms-perspective: none;
 		        perspective: none;
 
 		-webkit-perspective-origin: 50% 50%;
-		   -moz-perspective-origin: 50% 50%;
 		    -ms-perspective-origin: 50% 50%;
 		        perspective-origin: 50% 50%;
 	}
@@ -159,18 +157,12 @@
 		page-break-after: always !important;
 
 		-webkit-transform-style: flat !important;
-		   -moz-transform-style: flat !important;
-		    -ms-transform-style: flat !important;
 		        transform-style: flat !important;
 
 		-webkit-transform: none !important;
-		   -moz-transform: none !important;
-		    -ms-transform: none !important;
 		        transform: none !important;
 
 		-webkit-transition: none !important;
-		   -moz-transition: none !important;
-		    -ms-transition: none !important;
 		        transition: none !important;
 	}
 	.reveal .slides section.stack {
@@ -184,8 +176,6 @@
 		visibility: visible !important;
 
 		-webkit-transform: none !important;
-		   -moz-transform: none !important;
-		    -ms-transform: none !important;
 		        transform: none !important;
 	}
 	.reveal section img {
@@ -193,7 +183,8 @@
 		margin: 15px 0px;
 		background: rgba(255,255,255,1);
 		border: 1px solid #666;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 	}
 
 	.reveal section small {

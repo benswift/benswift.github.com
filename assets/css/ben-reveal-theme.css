@@ -73,8 +73,10 @@
     color: #793188;
     text-decoration: none;
     font-weight: 900;
+    -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
-    transition-duration: 0.5s; }
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
     .reveal .slides section a:hover {
       color: #fafafa;
       background-color: #333; }
@@ -102,9 +104,14 @@
   .reveal .slides section .talk-title-navigation {
     font-size: 1.3em;
     width: 8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .reveal .slides section.impact {
     font-size: 2rem;
     text-align: center;
@@ -120,6 +127,7 @@
     padding: 0.2rem;
     border-radius: 0.2rem;
     color: #9e1eba;
+    background: -webkit-gradient(linear, left top, right top, from(#f7e6fb), to(#eec8f6));
     background: linear-gradient(to right, #f7e6fb, #eec8f6); }
   .reveal .slides section pre > code {
     color: #fafafa;
@@ -165,6 +173,7 @@
     position: fixed;
     top: 50vh;
     /* .image-credit-title { font-style: italic; } */
+    -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
     .reveal .slides section .image-credit p {
       background-color: unset;
@@ -182,8 +191,10 @@
       color: #333; }
 
 .reveal .slide-number {
+  -webkit-transition-property: background-color;
   transition-property: background-color;
-  transition-duration: 0.5s; }
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
   .reveal .slide-number a {
     text-decoration: none;
     font-size: 0.8rem; }

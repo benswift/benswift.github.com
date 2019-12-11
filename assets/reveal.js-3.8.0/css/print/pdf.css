@@ -72,8 +72,11 @@ ul, ol, div, p {
 	overflow: visible;
 	display: block;
 
-	perspective: none;
-	perspective-origin: 50% 50%;
+	-webkit-perspective: none;
+
+	        perspective: none;
+	-webkit-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
 }
 
 .reveal .slides .pdf-page {
@@ -91,13 +94,17 @@ ul, ol, div, p {
 
 	margin: 0 !important;
 	padding: 0 !important;
-	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	        box-sizing: border-box !important;
 	min-height: 1px;
 
 	opacity: 1 !important;
 
-	transform-style: flat !important;
-	transform: none !important;
+	-webkit-transform-style: flat !important;
+
+	        transform-style: flat !important;
+	-webkit-transform: none !important;
+	        transform: none !important;
 }
 
 .reveal section.stack {
@@ -110,7 +117,8 @@ ul, ol, div, p {
 }
 
 .reveal img {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 .reveal .roll {
