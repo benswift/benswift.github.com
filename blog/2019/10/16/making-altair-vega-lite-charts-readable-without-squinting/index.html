@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#be2edd">
-<link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
 
 <!-- fontawesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
@@ -25,8 +25,8 @@
 
 
 <!-- highlight.js -->
-<script src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark-470b7658ef8aee2f2bb86babcc8a359491361d94113130f47878659a07f47eac.css">
+<script src="/assets/js/highlight.pack.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark.css">
 
 <script>
  hljs.initHighlightingOnLoad();
@@ -51,11 +51,11 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"url":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/","headline":"Making Altair/Vega-Lite charts readable without squinting","dateModified":"2019-10-16T17:14:00+08:00","datePublished":"2019-10-16T17:14:00+08:00","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/"},"description":"My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/"},"url":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/","author":{"@type":"Person","name":"Ben Swift"},"description":"My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).","headline":"Making Altair/Vega-Lite charts readable without squinting","dateModified":"2019-10-16T17:14:00+08:00","datePublished":"2019-10-16T17:14:00+08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-	<link rel="stylesheet" type="text/css" href="/assets/css/main-fa3c3362a4ed0f3517c2bba7752c287108bda00baaad52995b02fe600ff5a73d.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   </head>
   <body>
 	<div class="container">
@@ -137,7 +137,7 @@ alt.Chart(source).mark_line().encode(x="x", y="f(x)").save(f"{CHART_DIR}/sin-x.s
 
 <p>which (with default settings) produces a chart that looks like this:</p>
 
-<p><img alt="f(x) = sin(x)/5" src="/assets/images/posts/altair-charts/sin-x-0147a350a59fcab490142d8a41999e9d5563ee11670d0e64e3d37124408c5715.svg" /></p>
+<p><img alt="f(x) = sin(x)/5" src="/assets/images/posts/altair-charts/sin-x.svg" /></p>
 
 <h2 id="easy-tweaking-of-size-through-chart-themes">Easy tweaking of “size” through chart themes</h2>
 
@@ -165,7 +165,7 @@ same except for the <code>.properties(width=100, height=60)</code> part:</p>
 ).save(f"{CHART_DIR}/sin-x-big-text.svg")
 </code></pre>
 
-<p><img alt="f(x) = sin(x)/5 with bigger labels" src="/assets/images/posts/altair-charts/sin-x-big-text-151a8e06a98f6b8a8efef8c8bc8cac21d062e26c3f42854af3bf53ea2ffc698d.svg" /></p>
+<p><img alt="f(x) = sin(x)/5 with bigger labels" src="/assets/images/posts/altair-charts/sin-x-big-text.svg" /></p>
 
 <p>Obviously I’m exaggerating here to make a point, but the key point is that there
 are just a couple of numbers to tweak (<code>width</code> and <code>height</code>) which control text
@@ -239,8 +239,8 @@ zoomed out, and the problem gets much worse. <a href="#fnref:examples" class="r
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>2f71a149</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/2f71a149/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md">source
+	site revision <code>f065a345</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/f065a345/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 

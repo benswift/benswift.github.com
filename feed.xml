@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-12-09T14:41:47+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+08:00</published><updated>2019-11-17T00:00:00+08:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2019-12-11T20:48:30+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+08:00</published><updated>2019-11-17T00:00:00+08:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -288,11 +288,11 @@ mind as you design your assessment task.&lt;/p&gt;
 which forms the basis for your assessment task. Instead, we’ll spin the
 code/creativity/culture wheels&lt;sup id=&quot;fnref:winwheel&quot;&gt;&lt;a href=&quot;#fn:winwheel&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; and let fate&lt;sup id=&quot;fnref:fate&quot;&gt;&lt;a href=&quot;#fn:fate&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; decide.&lt;/p&gt;
 
-&lt;script src=&quot;/assets/js/TweenMax.min-72c7211e9c1a5f7559ad6092cddf75d405e3c09a8a15abcd7f9c594cdcaf1057.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/js/TweenMax.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 
-&lt;script src=&quot;/assets/js/Winwheel-b66809a0e59bfb42fc1f3a968197308db7eac0bea2d388ec34c5508d889a9aca.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/js/Winwheel.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 
-&lt;script src=&quot;/assets/js/ccc-workshop-wheels-3865be8629f6f1317e5e8afb5b1fc59a7b0b0c09f8cd1999664a37c366869a01.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/js/ccc-workshop-wheels.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 
 &lt;style&gt;
 .wheelIndicator {
@@ -717,7 +717,7 @@ alt.Chart(source).mark_line().encode(x=&quot;x&quot;, y=&quot;f(x)&quot;).save(f
 
 &lt;p&gt;which (with default settings) produces a chart that looks like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;f(x) = sin(x)/5&quot; src=&quot;/assets/images/posts/altair-charts/sin-x-0147a350a59fcab490142d8a41999e9d5563ee11670d0e64e3d37124408c5715.svg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;f(x) = sin(x)/5&quot; src=&quot;/assets/images/posts/altair-charts/sin-x.svg&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;easy-tweaking-of-size-through-chart-themes&quot;&gt;Easy tweaking of “size” through chart themes&lt;/h2&gt;
 
@@ -745,7 +745,7 @@ same except for the &lt;code&gt;.properties(width=100, height=60)&lt;/code&gt; p
 ).save(f&quot;{CHART_DIR}/sin-x-big-text.svg&quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img alt=&quot;f(x) = sin(x)/5 with bigger labels&quot; src=&quot;/assets/images/posts/altair-charts/sin-x-big-text-151a8e06a98f6b8a8efef8c8bc8cac21d062e26c3f42854af3bf53ea2ffc698d.svg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;f(x) = sin(x)/5 with bigger labels&quot; src=&quot;/assets/images/posts/altair-charts/sin-x-big-text.svg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Obviously I’m exaggerating here to make a point, but the key point is that there
 are just a couple of numbers to tweak (&lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) which control text

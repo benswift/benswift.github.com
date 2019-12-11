@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#be2edd">
-<link rel="stylesheet" type="text/css" href="/assets/css/normalize-9930e054e512c7aeb21cfc22c0816d7f701b97910a1bd67954c03be76c9f3e90.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
 
 <!-- fontawesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
@@ -25,8 +25,8 @@
 
 
 <!-- highlight.js -->
-<script src="/assets/js/highlight.pack-cf914cddba9ab5aaea7819f239c3df41f840b83b1c8c54e37675236e6b2ed74c.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark-470b7658ef8aee2f2bb86babcc8a359491361d94113130f47878659a07f47eac.css">
+<script src="/assets/js/highlight.pack.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/atom-one-dark.css">
 
 <script>
  hljs.initHighlightingOnLoad();
@@ -51,12 +51,12 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"url":"https://benswift.me/talks/p5-hour-of-code/","headline":"Drawing like a 5-year-old","dateModified":"2017-09-06T00:00:00+08:00","datePublished":"2017-09-06T00:00:00+08:00","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/p5-hour-of-code/"},"description":"Drawing like a 5-year-old Dr. Ben Swift 06 Sep &#39;17","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/p5-hour-of-code/"},"url":"https://benswift.me/talks/p5-hour-of-code/","author":{"@type":"Person","name":"Ben Swift"},"description":"Drawing like a 5-year-old Dr. Ben Swift 06 Sep &#39;17","headline":"Drawing like a 5-year-old","dateModified":"2017-09-06T00:00:00+08:00","datePublished":"2017-09-06T00:00:00+08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-	<link rel="stylesheet" type="text/css" href="/assets/reveal.js-3.8.0/css/reveal-a96faf3406041080d95cef9a191906e7d810ab1c00423bdc1d447fe60b52abf0.css">
-	<link rel="stylesheet" type="text/css" href="/assets/css/ben-reveal-theme-2d330982e2c611e794a5c54e7191fd6850a98b2e74c796cfbcf35b80beb3c046.css">
+	<link rel="stylesheet" type="text/css" href="/assets/reveal.js-3.8.0/css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ben-reveal-theme.css">
   </head>
   <body>
 	<div class="reveal"><div class="slides">
@@ -177,7 +177,7 @@
 	<a href="https://vimeo.com/benswift"><i title="benswift on Vimeo" class="fab fa-vimeo"></i></a>
 	<a href="mailto:ben@benswift.me"><i title="send Ben an email" class="fas fa-envelope"></i></a>
   </nav>
-</section><section data-background-image="/assets/images/talks/p5-hour-of-code/chalk-9e828f3005c3e2b17a1e900345f15df91a2a31580a1ade11442d9682b21dcba9.jpg" data-background-size="cover" data-background-position="center">
+</section><section data-background-image="/assets/images/talks/p5-hour-of-code/chalk.jpg" data-background-size="cover" data-background-position="center">
   
   <h2>who drew pictures as a 5yo?</h2>
   
@@ -199,7 +199,7 @@ function draw() {
   rect(0, 0, 100, 100);
 }
 </code></pre>
-<p>don’t forget to hit the play button!</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/collaboration-0b07b4021a71f62dfdd6ceab32ff2c78174bc30576979894dd3fbb7ad18d1b5e.jpg" data-background-size="cover" data-background-position="center">
+<p>don’t forget to hit the play button!</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/collaboration.jpg" data-background-size="cover" data-background-position="center">
   
   <h2>collaboration</h2>
   
@@ -212,7 +212,7 @@ function draw() {
 </ul></section><section id="new-shapes"><h2>new shapes</h2>
 <p>what happens if you replace <code>rect</code> with <code>ellipse</code>?</p>
 <p>you can have multiple lines of code in the <code>draw</code> function—can you draw a
-square and a circle on top of one another?</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/paint-15bb71a9ffa929e8b81331ba0d56f45c1ecbabe7426ae3007d1478b480d82d97.jpg" data-background-size="cover" data-background-position="center">
+square and a circle on top of one another?</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/paint.jpg" data-background-size="cover" data-background-position="center">
   
   <h2>colours</h2>
   
@@ -229,12 +229,12 @@ stroke(15, 180, 0);
 <span style="color:#A00;">R</span>
 <span style="color:#0A0;">G</span>
 <span style="color:#00A;">B</span>
-</div></section><section class="impact center" data-background-color="#262626"><p>how do you know what instructions the computer <strong>understands</strong>?</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/yoda-0f3cbc5cf2879350b3f2da67d3c0af8cc84ebb050b4b66e3c0394e4a5840f439.jpg" data-background-size="cover" data-background-position="center">
+</div></section><section class="impact center" data-background-color="#262626"><p>how do you know what instructions the computer <strong>understands</strong>?</p></section><section data-background-image="/assets/images/talks/p5-hour-of-code/yoda.jpg" data-background-size="cover" data-background-position="center">
   
   <h2>use the <a href="https://p5js.org/reference/">reference</a>
 </h2>
   
-</section><section data-background-image="/assets/images/talks/p5-hour-of-code/volcano-a06026ae00f15a0894c80bccfee6033d5f462cc49361677db97eff9527690181.jpg" data-background-size="cover" data-background-position="center">
+</section><section data-background-image="/assets/images/talks/p5-hour-of-code/volcano.jpg" data-background-size="cover" data-background-position="center">
   
   <h2>dealing with errors</h2>
   
@@ -243,7 +243,7 @@ stroke(15, 180, 0);
 <p>learn to <em>understand</em> the tantrums:</p>
 <pre><code>ReferenceError: sdfsd is not defined (sketch: line 8)
 SyntaxError: missing ) after argument list (sketch: line 12)
-</code></pre></section><section data-background-image="/assets/images/talks/p5-hour-of-code/smiley-2a9f71ab26e824943e81f0420ff28ee92d9e2f6aa0c06342a98f0e3b568e6b16.png" data-background-size="cover" data-background-position="center">
+</code></pre></section><section data-background-image="/assets/images/talks/p5-hour-of-code/smiley.png" data-background-size="cover" data-background-position="center">
   
   <h2>smiley face</h2>
   
