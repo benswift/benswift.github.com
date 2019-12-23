@@ -135,73 +135,9 @@ usually put it in <code>assets/</code>.</p>
 
 <h2 id="the-revealify-filter">1. the revealify <a href="https://jekyllrb.com/docs/plugins/filters/">filter</a></h2>
 
-<p>First, put this code into a <code>revealify.rb</code> file in your Jekyll <code>_plugins</code>
-directory:</p>
-
-<pre><code class="language-ruby"># (c) Ben Swift 2017-2019, MIT Licence
-# ben.swift@anu.edu.au
-
-# a liquid filter for turning regular md output into the &lt;section&gt;-enclosed
-# chunks required by reveal.js
-
-require 'jekyll'
-require 'nokogiri'
-
-module Jekyll
-
-  module Revealify
-
-    def revealify(html)
-
-      # parse content (wrapped in the reveal &gt; slides divs)
-      reveal_div = Nokogiri::HTML.fragment("&lt;div class=\"reveal\"&gt;&lt;div class=\"slides\"&gt;#{html}&lt;/div&gt;&lt;/div&gt;", 'UTF-8')
-      slides_div = reveal_div.search('.slides').first
-
-      unless slides_div.first_element_child.matches? "section,h1,h2,hr"
-        raise "reveal files must start with &lt;section&gt;, &lt;h1&gt;, &lt;h2&gt; or &lt;hr&gt;, not #{all_elements.first.name} (in \"#{@context.registers[:page]["path"]}\")"
-      end
-
-      slides_div.element_children.each do | element |
-
-        # &lt;section&gt; elements should be passed through as-is
-        if element.matches? "section"
-          slides_div.add_child(element)
-
-        else
-          # on "split" elements (&lt;h1&gt;, &lt;h2&gt;, &lt;hr&gt;)
-          if element.matches? "h1,h2,hr"
-            current_section = slides_div.add_child("&lt;section&gt;").first
-            # hoist all the header's attributes up to the wrapper element
-            # not sure if this will always work, but here goes...
-            element.keys.each do |attribute_name|
-              # relies on the fact that the "current" wrapper node is the last child in ret
-              current_section[attribute_name] = element[attribute_name]
-              # so that we don't get duplicate attributes e.g. IDs
-              element.remove_attribute(attribute_name)
-            end
-          end
-
-          # add the element to the current &lt;section&gt; (i.e. the current slide)
-          # unless it's just an &lt;hr&gt; (which are used for splitting only)
-          if element.matches? "hr"
-            element.unlink
-          else
-            slides_div.last_element_child.add_child(element)
-          end
-        end
-
-      end
-
-      reveal_div.to_html
-    end
-
-  end
-
-end
-
-Liquid::Template.register_filter(Jekyll::Revealify)
-
-</code></pre>
+<p>First, put <a href="https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb">this
+code</a>
+into a <code>revealify.rb</code> file in your Jekyll <code>_plugins</code> directory.</p>
 
 <h2 id="2-add-a-reveal-layout">2. add a reveal <a href="https://jekyllrb.com/docs/layouts/">layout</a></h2>
 
@@ -357,8 +293,8 @@ turning your content into nice looking slides then you’ve got a head start :)<
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>e2bb8557</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/e2bb8557/_posts/2018-09-28-another-reveal.js-plugin-for-jekyll.md">source
+	site revision <code>7ff5f860</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/7ff5f860/_posts/2018-09-28-another-reveal.js-plugin-for-jekyll.md">source
 	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
   </p>
 
