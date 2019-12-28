@@ -94,3 +94,5 @@
 .reveal .slide-number:hover { background-color: #be2edd; }
 
 .reveal .progress { color: #be2edd; height: 0.4rem; }
+
+svg.icon { width: 1em; height: 1em; vertical-align: -.125em; }
