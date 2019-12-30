@@ -103,4 +103,4 @@ table td { vertical-align: top; }
   .navigation { padding: 0; }
   .navigation > * { padding: 0.4rem 0; } }
 
-svg.icon { width: 1em; height: 1em; vertical-align: -.125em; fill: currentColor; }
+svg.icon { width: 1em; height: 1em; vertical-align: -0.125em; fill: currentColor; }
