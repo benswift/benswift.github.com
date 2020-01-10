@@ -275,6 +275,8 @@ table td { vertical-align: top; }
 
 .bibliography .author { font-weight: 600; }
 
+.bibliography .venue { font-style: italic; }
+
 @media screen and (min-width: 1000px) { .container { grid-template-columns: 1fr 800px 1fr; grid-template-areas: ". header ." ". main ." ". footer ."; }
   h1, h2, h3, h4, h5, h6, p { padding: 0; }
   table { width: 100%; margin: 0; }
