@@ -179,7 +179,7 @@ template { display: none; }
 
 :root { font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-:root { font-weight: 300; font-size: 18px; line-height: 1.4; color: #333; background-color: #fafafa; -webkit-box-sizing: border-box; box-sizing: border-box; }
+:root { font-weight: 400; font-size: 18px; line-height: 1.4; color: #333; background-color: #fafafa; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 *, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
 
@@ -263,13 +263,13 @@ table td { vertical-align: top; }
 
 #toc ul li + li { margin-top: 0.2em; }
 
-#toc ul a { font-weight: 300; }
+#toc ul a { font-weight: 400; }
 
 .bibliography p { margin: 0.4em 0; }
 
 .bibliography > div + div { margin-top: 2em; }
 
-.bibliography .date { font-style: italic; font-weight: 300; color: #777; }
+.bibliography .date { font-weight: 300; color: #777; }
 
 .bibliography .title { font-weight: 900; }
 
