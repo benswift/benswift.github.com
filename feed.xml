@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-01-25T16:24:02+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-01-28T08:27:44+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
+  &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;If you’re in Canberra this Thursday Jan 30 then you should come to a (free) gig
+that the c/c/c studio is putting on. Get away from the (heartbreaking)
+&lt;a href=&quot;https://www.canberratimes.com.au/story/6600587/namadgi-fire-now-at-2575ha-total-fire-ban-declared/&quot;&gt;fires&lt;/a&gt;
+and come see us jam with special guest &lt;a href=&quot;https://www.fisounds.com&quot;&gt;Fi Sullivan&lt;/a&gt;
+(US). Details from the &lt;a href=&quot;https://www.facebook.com/events/541225126490467/&quot;&gt;FB event
+page&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Experimental sounds of processed voice, live coding, and neural networks for
+your early evening with musicians from the ANU Code/Creativity/Culture studio
+and special guest Fiona Sullivan (USA).&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;location&lt;/strong&gt; Big Band Room, Peter Karmel Building, ANU School of Music&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;cost&lt;/strong&gt;: free&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Kieran with be livecoding visuals in GLSL, Charles will be (very musically!)
+fighting with his AI, I’ll be dropping beats in Extempore and Fi will be
+&lt;em&gt;amazing&lt;/em&gt;. See you there.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html"></summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;picture&gt;
+  &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;If you’re coming to the upcoming &lt;a href=&quot;http://iclc.livecodenetwork.org/2020/index.html&quot;&gt;International Conference on Live
+Coding&lt;/a&gt; (ICLC ‘20) in Limerick,
+Ireland, then it’s not too late to sign up for my workshop &lt;strong&gt;Introduction to
+music-making in Extempore&lt;/strong&gt;. Even if you’re not coming to the rest of the
+conference, you can still sign up for the workshop.&lt;/p&gt;
+
+&lt;p&gt;This workshop will provide a hands-on introduction to making music in the live
+coding programming environment &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;.
+The workshop will cover:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the fundamentals of making sound (starting from “hello sine”)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;an overview of Extempore’s audio signal chain (especially the built-in and
+highly configurable modular synth)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;introduction to note-level live coding with the Extempore pattern language&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No Extempore or previous live coding experience necessary (although experienced
+practitioners are welcome as well). Just bring a laptop with macOS, Windows or
+Ubuntu installed and we’ll start from scratch. All the required software is
+freely-available, and a binary release of Extempore will be provided (for
+Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p&gt;
+
+&lt;p&gt;Registration is through
+&lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;Eventbrite&lt;/a&gt;,
+and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
+or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html"></summary></entry><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -1197,56 +1259,4 @@ list&lt;/a&gt;.&lt;/p&gt;
       &lt;p&gt;&lt;code&gt;SAMPLE&lt;/code&gt; is an alias for &lt;code&gt;float&lt;/code&gt; by default &lt;a href=&quot;#fnref:sample&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files.</summary></entry><entry><title type="html">IoT China Study Tour not happening in 2019</title><link href="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/" rel="alternate" type="text/html" title="IoT China Study Tour not happening in 2019" /><published>2019-10-14T00:00:00+11:00</published><updated>2019-10-14T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019/">&lt;p&gt;In the (Australian) Summer of ‘16/17, ‘17/18 and ‘18/19 I ran an &lt;a href=&quot;https://cs.anu.edu.au/courses/china-study-tour/&quot;&gt;&lt;em&gt;Internet of
-Things&lt;/em&gt; China Study Tour&lt;/a&gt; at
-the Beijing Institute of Technology. They were good times.&lt;/p&gt;
-
-&lt;picture&gt;
-  &lt;img alt=&quot;a bunch of students
-and I at the Great Wall of China in Dec. 2018&quot; src=&quot;/assets/images/posts/great-wall-of-china-2018.jpg&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;However, the &lt;a href=&quot;https://dfat.gov.au/people-to-people/new-colombo-plan/about/Pages/about.aspx&quot;&gt;New Colombo
-Plan&lt;/a&gt;
-grant (which provided the money for us to provide the travel &amp;amp; accommodation
-scholarships for the study tour) expired last year—it was only a 3-year thing.
-As a result, the BIT trip is not running this year (Summer ‘19/20). It &lt;em&gt;might&lt;/em&gt;
-happen in future years (if we get more grant funding) but I’m afraid I can’t be
-certain about that.&lt;/p&gt;
-
-&lt;p&gt;If you’re interested in “study abroad” opportunities more generally then the
-nice folks at &lt;a href=&quot;https://www.anu.edu.au/students/careers-opportunities/global-programs&quot;&gt;ANU Global
-Programs&lt;/a&gt;
-are the best people to talk to.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">In the (Australian) Summer of ‘16/17, ‘17/18 and ‘18/19 I ran an Internet of Things China Study Tour at the Beijing Institute of Technology. They were good times.</summary></entry><entry><title type="html">Laptop Ensemble in the Canberra Times</title><link href="https://benswift.me/blog/2019/10/01/laptop-ensemble-in-the-canberra-times/" rel="alternate" type="text/html" title="Laptop Ensemble in the Canberra Times" /><published>2019-10-01T00:00:00+10:00</published><updated>2019-10-01T00:00:00+10:00</updated><id>https://benswift.me/blog/2019/10/01/laptop-ensemble-in-the-canberra-times</id><content type="html" xml:base="https://benswift.me/blog/2019/10/01/laptop-ensemble-in-the-canberra-times/">&lt;p&gt;The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: &lt;a href=&quot;https://www.canberratimes.com.au/story/6412297/anu-school-of-musics-new-orchestra-is-far-from-conventional/&quot;&gt;ANU
-School of Music’s new orchestra is far from
-conventional&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There’s some really encouraging stuff in there from ANU School of Music head
-&lt;a href=&quot;https://music.cass.anu.edu.au/people/associate-professor-kim-cunio&quot;&gt;Kim Cunio&lt;/a&gt;
-about the role of code in music-making:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“We want to re-imagine what an orchestra is,” he says. “My vision is to train
-musicians that are part composers, part mathematicians, and part computer
-hackers.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’m so pumped—this is exactly what I’ve been trying to do for several years,
-and having Kim on board as an ally is very encouraging. Along with the CECS
-Reimagine agenda (including their support of my &lt;a href=&quot;/blog/2019/08/30/Im-a-reimagine-fellow/&quot;&gt;fellowship&lt;/a&gt; to put together the &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;c/c/c
-studio&lt;/a&gt;) and the great things
-happening &lt;a href=&quot;https://soad.cass.anu.edu.au&quot;&gt;elsewhere&lt;/a&gt; in
-&lt;a href=&quot;https://cdhr.cass.anu.edu.au&quot;&gt;CASS&lt;/a&gt;, there’s good vibes in the air around
-cross-disiplinary code, creativity and culture at the ANU.&lt;/p&gt;
-
-&lt;p&gt;The article ends by saying:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Cunio hopes experiments with science, maths and technology will also open
-“back doors” into music for a new breed of student.&lt;/p&gt;
-
-  &lt;p&gt;“Sometimes the best musicians are lost to music.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I suspect that sometimes the best computer scientists are lost to CS as well.
-Hopefully programs like the LENS can change that.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="reimagine" /><category term="lens" /><summary type="html">The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: ANU School of Music’s new orchestra is far from conventional.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files.</summary></entry></feed>
