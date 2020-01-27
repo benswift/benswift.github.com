@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-01-28T08:54:04+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-01-28T09:21:35+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
   &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
 &lt;/picture&gt;
 
@@ -77,7 +77,49 @@ Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p
 and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
 or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+11:00</published><updated>2020-01-27T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for
+generating &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_rhythm&quot;&gt;euclidean rhythms&lt;/a&gt;.
+I wrote it (in a recursive style) in Scheme using the algorithm described in
+&lt;a href=&quot;http://cgm.cs.mcgill.ca/~godfried/publications/banff-extended.pdf&quot;&gt;Godfried
+Toussaint’s&lt;/a&gt;
+paper (although it’s credited to &lt;em&gt;Bjorklund&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;As well as the obvious musical possibilities, one of the things I noticed when I
+was playing around that if one loops through euclidean rhythms of increasing
+“density” the &lt;em&gt;visual representation&lt;/em&gt; exhibits some cool patterns as well.
+Here’s an example of the 17 different rhythms of length 16 (from 0 to 16
+inclusive). We can print out the patterns using this loop (using &lt;code&gt;'X&lt;/code&gt; for the
+“hit” marker so that it looks more prominent in a log view).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(dotimes (i 17)
+  (println (euclid i 16 'X)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What gets printed to the log is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;(_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _)
+(X _ _ _ _ _ _ _ _ _ _ _ _ _ _ _)
+(X _ _ _ _ _ _ _ X _ _ _ _ _ _ _)
+(X _ _ _ _ _ X _ _ _ _ X _ _ _ _)
+(X _ _ _ X _ _ _ X _ _ _ X _ _ _)
+(X _ _ _ X _ _ X _ _ X _ _ X _ _)
+(X _ _ X _ X _ _ X _ _ X _ X _ _)
+(X _ _ X _ X _ X _ X _ _ X _ X _)
+(X _ X _ X _ X _ X _ X _ X _ X _)
+(X _ X X _ X _ X _ X _ X X _ X _)
+(X _ X X _ X _ X X _ X X _ X _ X)
+(X _ X X X _ X X _ X X _ X X _ X)
+(X _ X X X _ X X X _ X X X _ X X)
+(X _ X X X X X _ X X X X _ X X X)
+(X _ X X X X X X X _ X X X X X X)
+(X _ X X X X X X X X X X X X X X)
+(X X X X X X X X X X X X X X X X)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Look, there’s probably some super-cool mathematical explanation for why this
+looks like that. Stephen Wolfram, if you’re reading, drop me a line and tell me
+what it is. But I just thought it looked cool—I’m sure there are generative
+art possibilities here as well (they may have already been explored).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">As part of the new Extempore pattern language stuff I added a helper for generating euclidean rhythms. I wrote it (in a recursive style) in Scheme using the algorithm described in Godfried Toussaint’s paper (although it’s credited to Bjorklund).</summary></entry><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -1028,252 +1070,4 @@ there’s not, we should toss a coin and be consistent anyway.&lt;/p&gt;
       &lt;p&gt;&lt;a href=&quot;https://github.com/pypa/pip/issues/59&quot;&gt;https://github.com/pypa/pip/issues/59&lt;/a&gt; &lt;a href=&quot;#fnref:pip&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="ux" /><summary type="html">Quick quiz: for the following language/system package managers, what’s the name of the subcommand to update1 your project/system to the latest version of one (or more) of your project’s dependencies? or, y’know, upgrade &amp;#8617;</summary></entry><entry><title type="html">Sound file I/O in Extempore with libsndfile</title><link href="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/" rel="alternate" type="text/html" title="Sound file I/O in Extempore with libsndfile" /><published>2019-10-15T00:00:00+11:00</published><updated>2019-10-15T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile</id><content type="html" xml:base="https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/">&lt;p&gt;&lt;a href=&quot;https://github.com/erikd/libsndfile/&quot;&gt;libsndfile&lt;/a&gt; is “a C library for reading
-and writing files containing sampled audio data”, and it’s pretty great. Here’s
-a quick crash-course on using &lt;a href=&quot;https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm&quot;&gt;Extempore’s libsndfile
-bindings&lt;/a&gt;
-to read, process and write audio data files.&lt;/p&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;There have been some recent bugfixes in &lt;code&gt;libsndfile&lt;/code&gt;, and (even more recently)
-these have made it into Extempore, which builds it’s own &lt;code&gt;libsndfile&lt;/code&gt; shared
-library as part of the CMake build process. So if you want to try this stuff
-it’s probably best that you’ve built the latest Extempore from &lt;code&gt;HEAD&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;loading-the-xtlang-wrappers-for-the-sndfile-library-functions&quot;&gt;Loading the xtlang wrappers for the sndfile library functions&lt;/h2&gt;
-
-&lt;p&gt;Once you’ve got Extempore up and running, the first thing to do is to load the
-libsndfile wrapper functions:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(sys:load &quot;libs/external/sndfile.xtm&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;libs/external/sndlib.xtm&lt;/code&gt; contains &lt;code&gt;bind-lib&lt;/code&gt; definitions for all&lt;sup id=&quot;fnref:pm-all&quot;&gt;&lt;a href=&quot;#fn:pm-all&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; the
-functions in the libsndfile library (compare that file to the &lt;a href=&quot;https://github.com/erikd/libsndfile/blob/master/src/sndfile.h.in&quot;&gt;C
-header&lt;/a&gt; to see
-for yourself).&lt;/p&gt;
-
-&lt;p&gt;In this blog post I’m mostly going to write “thin” xtlang code—calling the C
-functions directly wherever possible, and using the same basic types as the
-underlying C library. You could easily write xtlang helper functions to make all
-this stuff nicer, and &lt;code&gt;libs/external/sndfile.xtm&lt;/code&gt; actually has a bunch of these
-as well (down the bottom of that file). However, I hope this bare-bones approach
-is helpful for understanding what’s going on (and how you might use other C
-shared libs if you wanted to).&lt;/p&gt;
-
-&lt;h2 id=&quot;reading-the-audio-file-data-into-memory&quot;&gt;Reading the audio file data into memory&lt;/h2&gt;
-
-&lt;p&gt;In a fairly common API design pattern, to get info about a sound file (length, channels,
-sample rate, format, etc.) we need to:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;use &lt;code&gt;sf_open&lt;/code&gt; to give us a pointer to the data structure which libsndfile
-uses to represent the audio file (a &lt;code&gt;SNDFILE*&lt;/code&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;pass a pointer to another data structure (a &lt;code&gt;SF_INFO*&lt;/code&gt;) which &lt;code&gt;sf_open&lt;/code&gt; will
-populate with info about the file&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;code&gt;sf_open&lt;/code&gt; doesn’t read the audio data into memory (where we can do stuff with
-it) though—because first we need to figure out how big a buffer to allocate
-for the data—and to do that, we need to know how many frames there are in the
-audio file, and how many channels per frame.&lt;/p&gt;
-
-&lt;p&gt;Looking at the documentation (i.e. the comment above the function declaration in
-the C header file) for &lt;code&gt;SF_INFO&lt;/code&gt; we see that the first (tuple index &lt;code&gt;0&lt;/code&gt;) and third
-(tuple index &lt;code&gt;2&lt;/code&gt;) fields are going to be useful&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;struct SF_INFO
-{   sf_count_t  frames ;        /* Used to be called samples.  Changed to avoid confusion. */
-    int         samplerate ;
-    int         channels ;
-    int         format ;
-    int         sections ;
-    int         seekable ;
-} ;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Using all this info, then, we can make a simple xtlang function to return the
-number of frames&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func get_number_of_frames
-  (lambda (filename)
-    (let ((info:SF_INFO* (salloc))
-          ;; call sf_info to populate info with data about the file
-          (sfile (sf_open filename SFM_READ info)))
-      (sf_close sfile)
-      ;; return the number of frames
-      (tref info 0))))
-
-;; test it out using a wave file from the Extempore assets directory
-;; (it should return the number 288366)
-(get_number_of_frames &quot;assets/samples/piano/60.wav&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;{.hl-para}&lt;/p&gt;
-
-&lt;p&gt;Most of the code in this post doesn’t check for e.g. bad filenames or other
-potential errors, so if that’s a thing which might happen in your situation then
-you’ll need to check that &lt;code&gt;sf_open&lt;/code&gt; doesn’t return &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;We can do the exact same thing to get the number of channels per frame (just
-returning a different element of the &lt;code&gt;info&lt;/code&gt; struct):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func get_number_of_channels
-  (lambda (filename)
-    (let ((info:SF_INFO* (salloc))
-          (sfile (sf_open filename SFM_READ info)))
-      (sf_close sfile)
-      ;; return the number of channels
-      (tref info 2))))
-
-;; returns 2 (it's a stereo file)
-(get_number_of_channels &quot;assets/samples/piano/60.wav&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, we can calculate how many samples (num frames × num channels) we’ll
-need in our “audio data” buffer. We can then use &lt;code&gt;sf_read&lt;/code&gt; to read the audio
-data from the file into our buffer, converting it to e.g. &lt;code&gt;float&lt;/code&gt; (or whatever
-the type of &lt;code&gt;SAMPLE&lt;/code&gt; is) as we go (libsndfile can read audio files in a bunch of
-different formats, but for working with it in Extempore we just want floating
-point values).&lt;/p&gt;
-
-&lt;p&gt;First, set up a DSP callback—just playing white noise so that we can check
-that it’s working.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP
-  (lambda (in time chan dat)
-    (random .1)))
-
-(dsp:set! dsp)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, we add a bunch of sndfile-related stuff to the top-level &lt;code&gt;dsp&lt;/code&gt; closure
-environment (the outer &lt;code&gt;let&lt;/code&gt;) to&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;get the number of frames/channels from the file&lt;/li&gt;
-  &lt;li&gt;allocate a &lt;code&gt;SAMPLE&lt;/code&gt;&lt;sup id=&quot;fnref:sample&quot;&gt;&lt;a href=&quot;#fn:sample&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; buffer big enough to fit all the audio data&lt;/li&gt;
-  &lt;li&gt;read the audio file data into this buffer&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Finally, in the inner &lt;code&gt;lambda&lt;/code&gt; we have a super-naive playback loop (look at the
-way we’re incrementing &lt;code&gt;i&lt;/code&gt;—this will only work if the number of output
-channels matches the number of channels in the audio file).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP 10000000 ;; allocate plenty of memory for our DSP closure
-
-  (let ((filename &quot;assets/samples/piano/60.wav&quot;)
-        (nframes (get_number_of_frames filename))
-        (nchan (convert (get_number_of_channels filename)))
-        (nsamp (* nframes nchan))
-        (info:SF_INFO* (alloc))
-        (sfile (sf_open filename SFM_READ info)) ;; SFM_READ = open the audio file in &quot;read-only&quot; mode
-        ;; here's the pointer to the audio data
-        (data:SAMPLE* (alloc nsamp))
-        (i 0))
-
-    (println &quot;read&quot; (sf_read sfile data nsamp) &quot;frames&quot;)
-    (sf_close sfile)
-
-    (lambda (in time chan dat)
-      ;; a super-naive &quot;playback&quot; loop
-      (set! i (% (+ i 1) nsamp))
-      (* .2 (pref data i)))))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If it’s all worked, you should hear a piano playing repeated (legato) notes on
-middle C.&lt;/p&gt;
-
-&lt;p&gt;Of course, we could have simplified this by just calling &lt;code&gt;sf_open&lt;/code&gt; and
-populating the &lt;code&gt;info&lt;/code&gt; with data once at the top of an xtlang function, then
-doing stuff based on that information and finally &lt;code&gt;sf_close&lt;/code&gt;ing the file at the
-end. That’s left as an exercise for the reader 😉&lt;/p&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;One thing worth noting with all this is that calling a C lib from Extempore
-doesn’t obviate the need to understand how the C library works, e.g. we still
-need to match every call to &lt;code&gt;sf_open&lt;/code&gt; with a call to &lt;code&gt;sf_close&lt;/code&gt; as stated in the
-libsndfile docs.&lt;/p&gt;
-
-&lt;h2 id=&quot;writing-data-in-memory-to-an-audio-file&quot;&gt;Writing data in memory to an audio file&lt;/h2&gt;
-
-&lt;p&gt;There’s one more thing we want to do with our libsndfile library: write a bunch
-of audio data (which we’ve gloriously munged in Extempore) and write it back to
-an audio file.&lt;/p&gt;
-
-&lt;p&gt;Here’s a simple munging function which will replace the first &lt;code&gt;22050&lt;/code&gt; samples
-with white noise, then leave the next &lt;code&gt;22050&lt;/code&gt; untouched, then replace the next
-&lt;code&gt;22050&lt;/code&gt; with more white noise, and so on. I’m sure you can come up with
-something more (sonically) interesting; this is just an easy one to test (by
-ear) if it’s working.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func munge_audio_data
-  (lambda (data:SAMPLE* nsamp)
-    (doloop (i nsamp)
-      (if (&amp;lt; (modulo i 44100) 22050)
-          (pset! data i (random .1))))))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The final thing to do is to create &lt;em&gt;another&lt;/em&gt; &lt;code&gt;SNDFILE&lt;/code&gt; object (this time opened
-in &lt;code&gt;SFM_WRITE&lt;/code&gt; mode) where we’ll write the audio data. We’ll make some small
-additions to our &lt;code&gt;dsp&lt;/code&gt; closure:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(bind-func dsp:DSP 10000000 ;; allocate plenty of memory for our DSP closure
-
-  (let ((filename &quot;assets/samples/piano/60.wav&quot;)
-        (nframes (get_number_of_frames filename))
-        (nchan (convert (get_number_of_channels filename)))
-        (nsamp (* nframes nchan))
-        (info:SF_INFO* (alloc))
-        (srcfile (sf_open filename SFM_READ info))
-        (dstfile (sf_open  &quot;assets/samples/piano/60-munged.wav&quot; SFM_WRITE info))
-        ;; here's the pointer to the audio data
-        (data:SAMPLE* (alloc nsamp))
-        (i 0))
-
-    (println &quot;read&quot; (sf_read srcfile data nsamp) &quot;frames&quot;)
-    (sf_close srcfile)
-
-    ;; munge the audio data
-    (munge_audio_data data nsamp)
-
-    (println &quot;wrote&quot; (sf_write dstfile data nsamp) &quot;frames&quot;)
-    (sf_close dstfile)
-
-    (lambda (in time chan dat)
-      ;; a super-naive &quot;playback&quot; loop
-      (set! i (% (+ i 1) nsamp))
-      (* .2 (pref data i)))))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you re-evaluate &lt;em&gt;that&lt;/em&gt; &lt;code&gt;dsp&lt;/code&gt; closure, you should (a) hear the munged audio
-and (b) it should have been written to the “assets/samples/piano/60-munged.wav”
-file. Note that we re-used the &lt;code&gt;info&lt;/code&gt; data structure (which was populated with
-the info from &lt;code&gt;srcfile&lt;/code&gt;) in the &lt;code&gt;dstfile&lt;/code&gt; call—this is deliberate, and makes
-sure that we use the same file format for the output file as for the input file.
-If you want to write it in some &lt;em&gt;other&lt;/em&gt; format, then look at the libsndfile
-docs—there are lots of options.&lt;/p&gt;
-
-&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping up&lt;/h2&gt;
-
-&lt;p&gt;There’s lots more to explore, but I’ll leave it here for now. If you’ve got any
-comments, then get in touch on the &lt;a href=&quot;mailto:extemporelang@googlegroups.com&quot;&gt;Extempore mailing
-list&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;[c-xtlang-interop]:
-    There’s more detail on how this works in the
-    &lt;a href=&quot;https://extemporelang.github.io/docs/reference/c-xtlang-interop/&quot;&gt;Extempore
-    docs&lt;/a&gt;
-    if you’re interested.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:pm-all&quot;&gt;
-      &lt;p&gt;well, &lt;em&gt;pretty much&lt;/em&gt; all &lt;a href=&quot;#fnref:pm-all&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:sample&quot;&gt;
-      &lt;p&gt;&lt;code&gt;SAMPLE&lt;/code&gt; is an alias for &lt;code&gt;float&lt;/code&gt; by default &lt;a href=&quot;#fnref:sample&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="ux" /><summary type="html">Quick quiz: for the following language/system package managers, what’s the name of the subcommand to update1 your project/system to the latest version of one (or more) of your project’s dependencies? or, y’know, upgrade &amp;#8617;</summary></entry></feed>
