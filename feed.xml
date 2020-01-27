@@ -1,28 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-01-28T08:42:17+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-01-28T08:54:04+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
   &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
 &lt;/picture&gt;
 
-&lt;p&gt;If you’re in Canberra this Thursday Jan 30 then you should come to a (free) gig
-that the c/c/c studio is putting on. Get away from the (heartbreaking)
-&lt;a href=&quot;https://www.canberratimes.com.au/story/6600587/namadgi-fire-now-at-2575ha-total-fire-ban-declared/&quot;&gt;fires&lt;/a&gt;
-and come see us jam with special guest &lt;a href=&quot;https://www.fisounds.com&quot;&gt;Fiona
-Sullivan&lt;/a&gt; (USA). Details from the &lt;a href=&quot;https://www.facebook.com/events/541225126490467/&quot;&gt;FB event
-page&lt;/a&gt;:&lt;/p&gt;
+&lt;p class=&quot;hl-para&quot;&gt;If you’re in Canberra this Thursday Jan 30 then you should come to a (free) gig
+that the c/c/c studio is putting on in the &lt;a href=&quot;https://www.anu.edu.au/maps#show=29113&quot;&gt;Peter
+Karmel&lt;/a&gt; Big Band room (at the ANU School
+of Music).&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;an evening of &lt;strong&gt;experimental sounds&lt;/strong&gt; in &lt;strong&gt;processed voice&lt;/strong&gt;, &lt;strong&gt;livecoding&lt;/strong&gt;,
-and &lt;strong&gt;neural networks&lt;/strong&gt; with musicians from the &lt;strong&gt;ANU code/creativity/culture
-studio&lt;/strong&gt; and special guest &lt;strong&gt;Fiona Sullivan&lt;/strong&gt; (USA).&lt;/p&gt;
+&lt;p&gt;Get away from the &lt;a href=&quot;https://www.canberratimes.com.au/story/6600587/namadgi-fire-now-at-2575ha-total-fire-ban-declared/&quot;&gt;fires &amp;amp;
+smoke&lt;/a&gt;&lt;sup id=&quot;fnref:fires&quot;&gt;&lt;a href=&quot;#fn:fires&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
+and come see an evening of experimental sounds in processed voice, livecoding,
+and neural networks with musicians from the ANU code/creativity/culture studio
+and special guest &lt;a href=&quot;https://www.fisounds.com&quot;&gt;Fiona Sullivan&lt;/a&gt; (USA).&lt;/p&gt;
 
-  &lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;location&lt;/strong&gt; Big Band Room, Peter Karmel Building, ANU School of Music&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;cost&lt;/strong&gt;: free&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;time&lt;/strong&gt;: 5:45pm–7pm&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;location&lt;/strong&gt; Big Band Room, &lt;a href=&quot;https://www.anu.edu.au/maps#show=29113&quot;&gt;Peter Karmel
+Building&lt;/a&gt;, ANU School of Music&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;cost&lt;/strong&gt;: free&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Kieran with be livecoding visuals in GLSL, Charles will be (very musically!)
+&lt;p&gt;There’s also a &lt;a href=&quot;https://www.facebook.com/events/541225126490467/&quot;&gt;FB event page&lt;/a&gt;
+as well if you’re into that sort of thing.&lt;/p&gt;
+
+&lt;p&gt;Kieran will be livecoding visuals in GLSL, Charles will be (very musically!)
 fighting with his AI, I’ll be dropping beats in Extempore and Fi will be
-&lt;em&gt;amazing&lt;/em&gt;. See you there.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;picture&gt;
+&lt;em&gt;amazing&lt;/em&gt;. See you there.&lt;/p&gt;
+
+&lt;p&gt;Note: if you’ve never been there before, the &lt;a href=&quot;https://www.anu.edu.au/maps#show=29113&quot;&gt;Peter Karmel
+building&lt;/a&gt; is the one next to the “main”
+ANU School of Music building. The Big Band room is off the foyer/atrium, right
+near the main entrance.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:fires&quot;&gt;
+
+      &lt;p&gt;I know that you can’t get away from them; and the loss of flora &amp;amp; fauna is
+heartbreaking, not to mention the human cost. &lt;a href=&quot;#fnref:fires&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;picture&gt;
   &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
 &lt;/picture&gt;
 
