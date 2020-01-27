@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-01-28T09:21:35+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-01-28T09:25:31+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
   &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
 &lt;/picture&gt;
 
@@ -91,7 +91,7 @@ Here’s an example of the 17 different rhythms of length 16 (from 0 to 16
 inclusive). We can print out the patterns using this loop (using &lt;code&gt;'X&lt;/code&gt; for the
 “hit” marker so that it looks more prominent in a log view).&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(dotimes (i 17)
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(dotimes (i 17)
   (println (euclid i 16 'X)))
 &lt;/code&gt;&lt;/pre&gt;
 
