@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-02-01T09:41:01+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC ‘20 submissions now open</title><link href="https://benswift.me/blog/2020/01/29/acmc-20-submissions-now-open/" rel="alternate" type="text/html" title="ACMC '20 submissions now open" /><published>2020-01-29T00:00:00+11:00</published><updated>2020-01-29T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/29/acmc-20-submissions-now-open</id><content type="html" xml:base="https://benswift.me/blog/2020/01/29/acmc-20-submissions-now-open/">&lt;p&gt;Good news everyone; we’re hosting the annual &lt;a href=&quot;https://acmc2020.com/&quot;&gt;Australasian Computer Music
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-02-04T15:30:13+00:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ICLC Extempore workshop</title><link href="https://benswift.me/iclc-extempore-workshop/" rel="alternate" type="text/html" title="ICLC Extempore workshop" /><published>2020-02-06T00:00:00+00:00</published><updated>2020-02-06T00:00:00+00:00</updated><id>https://benswift.me/iclc-extempore-workshop</id><content type="html" xml:base="https://benswift.me/iclc-extempore-workshop/">&lt;p&gt;If you’re here for the &lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;ICLC Extempore
+workshop&lt;/a&gt;
+&lt;em&gt;Introduction to music-making in Extempore&lt;/em&gt;, then welcome!&lt;/p&gt;
+
+&lt;p&gt;Here are the details if you’re still trying to find us:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Date&lt;/strong&gt;: Thu 6 Feb 2020&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Time&lt;/strong&gt;: 14:30–18:30 GMT&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Location&lt;/strong&gt;: Room CSG-013, Computer Science Building (building 8 on the
+&lt;a href=&quot;https://www.ul.ie/buildings/sites/default/files/travel-uploads/Campus%20Map%20Update%2028-06-2017%20Website%20A3%20Final.pdf&quot;&gt;campus
+map&lt;/a&gt;),
+University of Limerick&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;workshop-outline&quot;&gt;Workshop outline&lt;/h2&gt;
+
+&lt;p&gt;Ok, here’s the plan:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1430&lt;/td&gt;
+      &lt;td&gt;intro &amp;amp; getting to know each other&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1500&lt;/td&gt;
+      &lt;td&gt;Extempore hacking&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1615&lt;/td&gt;
+      &lt;td&gt;afternoon tea break&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1630&lt;/td&gt;
+      &lt;td&gt;moar Extempore hacking&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1730&lt;/td&gt;
+      &lt;td&gt;demos&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1800&lt;/td&gt;
+      &lt;td&gt;open feedback&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;about me&lt;/li&gt;
+  &lt;li&gt;potted history of &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;what we will/might/won’t cover today (a JIT workshop!)&lt;/li&gt;
+  &lt;li&gt;meet one another, goal setting, CoC&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;two roads diverged...&quot; src=&quot;/assets/images/posts/jens-lelie-u0vgcIOQG08-unsplash.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;h2 id=&quot;extempore-hacking&quot;&gt;Extempore hacking&lt;/h2&gt;
+
+&lt;p&gt;First, set Extempore up on your machine using the &lt;a href=&quot;https://extemporelang.github.io/docs/overview/quickstart/&quot;&gt;quickstart
+instructions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then, depending on which path you’d like to go down first, continue to either
+the &lt;a href=&quot;https://extemporelang.github.io/docs/guides/sharedsystem/&quot;&gt;sharedsystem (synthesis &amp;amp; sampling)
+guide&lt;/a&gt; or the
+&lt;a href=&quot;https://extemporelang.github.io/docs/guides/pattern-language/&quot;&gt;pattern language
+guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;demo-time--open-feedback&quot;&gt;Demo time &amp;amp; open feedback&lt;/h2&gt;
+
+&lt;p&gt;At the end of the workshop, there will be a chance to share with the group both
+the things you’ve made today and any thoughts on how we can do things
+(Extempore-wise) better, friendlier, open-er and more accessible. Making the
+onboarding experience for Extempore is one of my big goals this year, so all
+attendees get a chance to contribute to that broader mission.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecode" /><category term="teaching" /><summary type="html">If you’re here for the ICLC Extempore workshop Introduction to music-making in Extempore, then welcome!</summary></entry><entry><title type="html">ACMC ‘20 submissions now open</title><link href="https://benswift.me/blog/2020/01/29/acmc-20-submissions-now-open/" rel="alternate" type="text/html" title="ACMC '20 submissions now open" /><published>2020-01-29T00:00:00+00:00</published><updated>2020-01-29T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/29/acmc-20-submissions-now-open</id><content type="html" xml:base="https://benswift.me/blog/2020/01/29/acmc-20-submissions-now-open/">&lt;p&gt;Good news everyone; we’re hosting the annual &lt;a href=&quot;https://acmc2020.com/&quot;&gt;Australasian Computer Music
 Conference&lt;/a&gt; (ACMC) at the ANU this year from July 8–11.
 ACMC is a festival of gigs, talks, installations and hands-on tutorials designed
 to inspire, challenge, and showcase the computer music community. There’s lots
@@ -32,45 +110,7 @@ email&lt;/a&gt;.&lt;/p&gt;
 (July 8–11) in your diary and stay tuned for when we release the program. We’re
 also going to be running a bunch of workshops in the days before &amp;amp; after the
 conference, so this could be your chance to start making music with computers
-like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;p&gt;If you’re coming to the upcoming &lt;a href=&quot;http://iclc.livecodenetwork.org/2020/index.html&quot;&gt;International Conference on Live
-Coding&lt;/a&gt; (ICLC ‘20) in Limerick,
-Ireland, then it’s not too late to sign up for my workshop &lt;strong&gt;Introduction to
-music-making in Extempore&lt;/strong&gt;. Even if you’re not coming to the rest of the
-conference, you can still sign up for the workshop.&lt;/p&gt;
-
-&lt;picture&gt;
-  &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;This workshop will provide a hands-on introduction to making music in the live
-coding programming environment &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;.
-The workshop will cover:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;the fundamentals of making sound (starting from “hello sine”)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;an overview of Extempore’s audio signal chain (especially the built-in and
-highly configurable modular synth)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;introduction to note-level live coding with the Extempore pattern language&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;No Extempore or previous live coding experience necessary (although experienced
-practitioners are welcome as well). Just bring a laptop with macOS, Windows or
-Ubuntu installed and we’ll start from scratch. All the required software is
-freely-available, and a binary release of Extempore will be provided (for
-Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p&gt;
-
-&lt;p&gt;Registration is through
-&lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;Eventbrite&lt;/a&gt;,
-and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
-or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html">If you’re coming to the upcoming International Conference on Live Coding (ICLC ‘20) in Limerick, Ireland, then it’s not too late to sign up for my workshop Introduction to music-making in Extempore. Even if you’re not coming to the rest of the conference, you can still sign up for the workshop.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
+like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+00:00</published><updated>2020-01-28T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
   &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
 &lt;/picture&gt;
 
@@ -145,7 +185,45 @@ near the main entrance.&lt;/p&gt;
 heartbreaking, not to mention the human cost. &lt;a href=&quot;#fnref:fires&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+11:00</published><updated>2020-01-27T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+00:00</published><updated>2020-01-28T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;p&gt;If you’re coming to the upcoming &lt;a href=&quot;http://iclc.livecodenetwork.org/2020/index.html&quot;&gt;International Conference on Live
+Coding&lt;/a&gt; (ICLC ‘20) in Limerick,
+Ireland, then it’s not too late to sign up for my workshop &lt;strong&gt;Introduction to
+music-making in Extempore&lt;/strong&gt;. Even if you’re not coming to the rest of the
+conference, you can still sign up for the workshop.&lt;/p&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This workshop will provide a hands-on introduction to making music in the live
+coding programming environment &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;.
+The workshop will cover:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the fundamentals of making sound (starting from “hello sine”)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;an overview of Extempore’s audio signal chain (especially the built-in and
+highly configurable modular synth)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;introduction to note-level live coding with the Extempore pattern language&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No Extempore or previous live coding experience necessary (although experienced
+practitioners are welcome as well). Just bring a laptop with macOS, Windows or
+Ubuntu installed and we’ll start from scratch. All the required software is
+freely-available, and a binary release of Extempore will be provided (for
+Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p&gt;
+
+&lt;p&gt;Registration is through
+&lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;Eventbrite&lt;/a&gt;,
+and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
+or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html">If you’re coming to the upcoming International Conference on Live Coding (ICLC ‘20) in Limerick, Ireland, then it’s not too late to sign up for my workshop Introduction to music-making in Extempore. Even if you’re not coming to the rest of the conference, you can still sign up for the workshop.</summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+00:00</published><updated>2020-01-27T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for
 generating &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_rhythm&quot;&gt;euclidean rhythms&lt;/a&gt;.
 I wrote it (in a recursive style) in Scheme using the algorithm described in
 &lt;a href=&quot;http://cgm.cs.mcgill.ca/~godfried/publications/banff-extended.pdf&quot;&gt;Godfried
@@ -187,7 +265,7 @@ inclusive). We can print out the patterns using this loop (using &lt;code&gt;'X&
 &lt;p&gt;Look, there’s probably some super-cool mathematical explanation for why this
 looks like that. Stephen Wolfram, if you’re reading, drop me a line and tell me
 what it is. But I just thought it looked cool—I’m sure there are generative
-art possibilities here as well (they may have already been explored).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">As part of the new Extempore pattern language stuff I added a helper for generating euclidean rhythms. I wrote it (in a recursive style) in Scheme using the algorithm described in Godfried Toussaint’s paper (although it’s credited to Bjorklund).</summary></entry><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
+art possibilities here as well (they may have already been explored).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">As part of the new Extempore pattern language stuff I added a helper for generating euclidean rhythms. I wrote it (in a recursive style) in Scheme using the algorithm described in Godfried Toussaint’s paper (although it’s credited to Bjorklund).</summary></entry><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+00:00</published><updated>2019-11-17T00:00:00+00:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
 design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
 tension in trying to just teach the fundamentals and keeping the coursework
 up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
@@ -228,7 +306,7 @@ using a utility class framework like &lt;a href=&quot;https://tailwindcss.com&qu
 &lt;p&gt;There’s no timeline on any of this, and I’m going to be busy with other things
 (e.g. my &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;Reimagine Fellowship&lt;/a&gt;, updating the
 &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; docs and generally &lt;a href=&quot;/research/&quot;&gt;doing good
-research&lt;/a&gt;).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="meta" /><category term="web" /><summary type="html">As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction design in COMP1720) there’s always a tension in trying to just teach the fundamentals and keeping the coursework up-to-date. For the latter, that doesn’t necessarily mean re-writing the course each year with the js framework-du-jour, but it’s useful to at least know what the best practices are and how to point students in a good direction if they want to go deeper.</summary></entry><entry><title type="html">COMP1720 2019 major project exhibtion</title><link href="https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion/" rel="alternate" type="text/html" title="COMP1720 2019 major project exhibtion" /><published>2019-11-08T00:00:00+11:00</published><updated>2019-11-08T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion</id><content type="html" xml:base="https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion/">&lt;p&gt;If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to
+research&lt;/a&gt;).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="meta" /><category term="web" /><summary type="html">As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction design in COMP1720) there’s always a tension in trying to just teach the fundamentals and keeping the coursework up-to-date. For the latter, that doesn’t necessarily mean re-writing the course each year with the js framework-du-jour, but it’s useful to at least know what the best practices are and how to point students in a good direction if they want to go deeper.</summary></entry><entry><title type="html">COMP1720 2019 major project exhibtion</title><link href="https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion/" rel="alternate" type="text/html" title="COMP1720 2019 major project exhibtion" /><published>2019-11-08T00:00:00+00:00</published><updated>2019-11-08T00:00:00+00:00</updated><id>https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion</id><content type="html" xml:base="https://benswift.me/blog/2019/11/08/comp1720-2019-major-project-exhibtion/">&lt;p&gt;If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to
 experience the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt; &lt;em&gt;Art &amp;amp;
 Interaction in New Media&lt;/em&gt; major project exhibition. This year’s theme is
 &lt;em&gt;listening &lt;strong&gt;in&lt;/strong&gt;/listening &lt;strong&gt;out&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
@@ -254,7 +332,7 @@ code/creativity/culture work going on here at the ANU.&lt;/p&gt;
   &lt;img alt=&quot;folks having fun at the COMP1720 exhibition&quot; src=&quot;/assets/images/posts/comp1720-mp-exhibition-2018-2.jpg&quot; /&gt;
 &lt;/picture&gt;
 
-&lt;p&gt;See you tomorrow 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ccc" /><category term="gigs" /><summary type="html">If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to experience the COMP1720 Art &amp;amp; Interaction in New Media major project exhibition. This year’s theme is listening in/listening out.</summary></entry><entry><title type="html">code/creativity/culture curriculum design workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="code/creativity/culture curriculum design workshop" /><published>2019-11-07T00:00:00+11:00</published><updated>2019-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;div class=&quot;hl-para&quot;&gt;
+&lt;p&gt;See you tomorrow 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ccc" /><category term="gigs" /><summary type="html">If you’re around the ANU campus tomorrow (Saturday Nov 9) then come along to experience the COMP1720 Art &amp;amp; Interaction in New Media major project exhibition. This year’s theme is listening in/listening out.</summary></entry><entry><title type="html">code/creativity/culture curriculum design workshop</title><link href="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/" rel="alternate" type="text/html" title="code/creativity/culture curriculum design workshop" /><published>2019-11-07T00:00:00+00:00</published><updated>2019-11-07T00:00:00+00:00</updated><id>https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop</id><content type="html" xml:base="https://benswift.me/blog/2019/11/07/codesign-culture-lab-workshop/">&lt;div class=&quot;hl-para&quot;&gt;
 
 &lt;strong&gt;tl;dr&lt;/strong&gt; in this workshop you’ll:
 
@@ -812,7 +890,7 @@ using this word so the c/c/c schtick makes sense. &lt;a href=&quot;#fnref:cultu
       &lt;p&gt;well, the PRNG in your web browser, anyway &lt;a href=&quot;#fnref:fate&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html"></summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+11:00</published><updated>2019-10-31T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html"></summary></entry><entry><title type="html">LENS showcase S2 2019</title><link href="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/" rel="alternate" type="text/html" title="LENS showcase S2 2019" /><published>2019-10-31T00:00:00+00:00</published><updated>2019-10-31T00:00:00+00:00</updated><id>https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019</id><content type="html" xml:base="https://benswift.me/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019/">&lt;p&gt;Last weekend the S2 2019
 &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/lens/&quot;&gt;LENS&lt;/a&gt; cohort (the ANU
 Laptop Ensemble) gave their final performances as part of the ANU School of
 Music’s composition showcase. Thanks to everyone who attended, and congrats
@@ -858,7 +936,7 @@ performances:&lt;/p&gt;
 
 &lt;p&gt;LENS will be back again in S1 2019, so if you’re interested then &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;shoot me an
 email&lt;/a&gt; and we can keep you in the loop about how to
-be involved.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="lens" /><category term="gigs" /><summary type="html">Last weekend the S2 2019 LENS cohort (the ANU Laptop Ensemble) gave their final performances as part of the ANU School of Music’s composition showcase. Thanks to everyone who attended, and congrats again to the students who learned a bunch of computer music stuff &amp;amp; build/composed and performed a working piece in one crazy semester. And an especially big thanks to my LENS co-directors Charles and Alec.</summary></entry><entry><title type="html">Ben and COMP2300 next year</title><link href="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/" rel="alternate" type="text/html" title="Ben and COMP2300 next year" /><published>2019-10-21T00:00:00+11:00</published><updated>2019-10-21T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year</id><content type="html" xml:base="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/">&lt;p&gt;Students&lt;sup id=&quot;fnref:organised-ones&quot;&gt;&lt;a href=&quot;#fn:organised-ones&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; are starting to turn their gaze towards 2020, and so
+be involved.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="lens" /><category term="gigs" /><summary type="html">Last weekend the S2 2019 LENS cohort (the ANU Laptop Ensemble) gave their final performances as part of the ANU School of Music’s composition showcase. Thanks to everyone who attended, and congrats again to the students who learned a bunch of computer music stuff &amp;amp; build/composed and performed a working piece in one crazy semester. And an especially big thanks to my LENS co-directors Charles and Alec.</summary></entry><entry><title type="html">Ben and COMP2300 next year</title><link href="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/" rel="alternate" type="text/html" title="Ben and COMP2300 next year" /><published>2019-10-21T00:00:00+01:00</published><updated>2019-10-21T00:00:00+01:00</updated><id>https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year</id><content type="html" xml:base="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/">&lt;p&gt;Students&lt;sup id=&quot;fnref:organised-ones&quot;&gt;&lt;a href=&quot;#fn:organised-ones&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; are starting to turn their gaze towards 2020, and so
 I’ve been getting a bunch of emails asking me if I’m teaching
 &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;COMP2300/6300&lt;/a&gt; &lt;em&gt;Computer Organisation
 &amp;amp; Program Execution&lt;/em&gt; again in Semester 1 2020.&lt;/p&gt;
@@ -881,88 +959,4 @@ then you should reach out to &lt;a href=&quot;mailto:charles.martin@anu.edu.au&q
       &lt;p&gt;well, the organised ones, anyway &lt;a href=&quot;#fnref:organised-ones&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Students1 are starting to turn their gaze towards 2020, and so I’ve been getting a bunch of emails asking me if I’m teaching COMP2300/6300 Computer Organisation &amp;amp; Program Execution again in Semester 1 2020. well, the organised ones, anyway &amp;#8617;</summary></entry><entry><title type="html">Making Altair/Vega-Lite charts readable without squinting</title><link href="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/" rel="alternate" type="text/html" title="Making Altair/Vega-Lite charts readable without squinting" /><published>2019-10-16T20:14:00+11:00</published><updated>2019-10-16T20:14:00+11:00</updated><id>https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting</id><content type="html" xml:base="https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/">&lt;p&gt;My love for the &lt;a href=&quot;https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448&quot;&gt;Grammar of
-Graphics&lt;/a&gt;
-runs deep, and in particular for Hadley Wickham’s famous &lt;code&gt;ggplot2&lt;/code&gt; which showed
-me the light back when I was a young PhD student. Seriously, once you have your
-head around how it works it gives you datavis superpowers. These days I often
-work in Python, and for datavis I’m enjoying
-&lt;a href=&quot;https://altair-viz.github.io/index.html&quot;&gt;Altair&lt;/a&gt; which is based around the same
-philosophy (and outputs to &lt;a href=&quot;https://vega.github.io/vega-lite/&quot;&gt;Vega-Lite&lt;/a&gt; for
-rendering in the browser).&lt;/p&gt;
-
-&lt;p&gt;Recently I’ve needed to (a) create some snazzy graphs with Altair and (b)
-display them in a slide deck. Part (a) was actually the easy part—the tricky
-part was (b) getting Altair to render charts with text &amp;amp; other marks that
-weren’t so small that the slide was unreadable.&lt;/p&gt;
-
-&lt;p&gt;Here’s an example: a &lt;a href=&quot;https://altair-viz.github.io/gallery/simple_line_chart.html&quot;&gt;simple line
-chart&lt;/a&gt; from the
-&lt;a href=&quot;https://altair-viz.github.io/gallery/index.html&quot;&gt;Altair Example Gallery&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import altair as alt
-import numpy as np
-import pandas as pd
-
-x = np.arange(100)
-source = pd.DataFrame({&quot;x&quot;: x, &quot;f(x)&quot;: np.sin(x / 5)})
-
-alt.Chart(source).mark_line().encode(x=&quot;x&quot;, y=&quot;f(x)&quot;).save(f&quot;{CHART_DIR}/sin-x.svg&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;which (with default settings) produces a chart that looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;f(x) = sin(x)/5&quot; src=&quot;/assets/images/posts/altair-charts/sin-x.svg&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;easy-tweaking-of-size-through-chart-themes&quot;&gt;Easy tweaking of “size” through chart themes&lt;/h2&gt;
-
-&lt;p&gt;Now, that figure might look fairly readable, but when it’s on a slide the text,
-labels &amp;amp; even lines are quite small&lt;sup id=&quot;fnref:examples&quot;&gt;&lt;a href=&quot;#fn:examples&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I don’t need &lt;a href=&quot;https://github.com/vega/vega-lite/issues/1714&quot;&gt;fine-grained
-control&lt;/a&gt; over the relative sizes
-of labels vs legend vs title, etc. I just want a simple knob for making all the
-text bigger so that my slides don’t double as an &lt;a href=&quot;https://en.wikipedia.org/wiki/Eye_chart&quot;&gt;eye
-chart&lt;/a&gt;. The Vega-Lite folks (the
-underlying vis engine which Altair uses) &lt;a href=&quot;https://github.com/vega/vega-parser/issues/18&quot;&gt;know about the issue, but don’t want
-to fix it&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;Note that when I’m talking about “size” I’m &lt;strong&gt;not&lt;/strong&gt; talking about the size &amp;amp;
-dimensions of the chart—I’m talking about the size of the text, lines &amp;amp; other
-marks &lt;em&gt;relative to&lt;/em&gt; the overall size of the chart.&lt;/p&gt;
-
-&lt;p&gt;The easiest way I found to fix this is to set a small width &amp;amp; height for the
-chart, then export to a vector format (e.g. svg) so that when the image gets
-displayed everything will be “stretched” up into big, bold sizes (and since it’s
-a vector format, things will still be nice and crisp). This chart code is the
-same except for the &lt;code&gt;.properties(width=100, height=60)&lt;/code&gt; part:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;alt.Chart(source).mark_line().encode(x=&quot;x&quot;, y=&quot;f(x)&quot;).properties(
-    width=100, height=60
-).save(f&quot;{CHART_DIR}/sin-x-big-text.svg&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img alt=&quot;f(x) = sin(x)/5 with bigger labels&quot; src=&quot;/assets/images/posts/altair-charts/sin-x-big-text.svg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Obviously I’m exaggerating here to make a point, but the key point is that there
-are just a couple of numbers to tweak (&lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) which control text
-&amp;amp; line size, label sizes, and also titles and legends (if present). And that’s
-not something that’s exposed as simply in any other way by the Altair/Vega-Lite
-API.&lt;/p&gt;
-
-&lt;p&gt;One final tip: if you want to have consistent sizes &amp;amp; aspect ratios across lots
-of charts (e.g. you’re batch exporting lots of charts for a presentation or
-report) you can create &lt;a href=&quot;https://altair-viz.github.io/user_guide/configuration.html#defining-a-custom-theme&quot;&gt;a custom
-theme&lt;/a&gt;,
-but otherwise you can just do it with a call to the &lt;code&gt;.properties()&lt;/code&gt; method as
-shown.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:examples&quot;&gt;
-
-      &lt;p&gt;To be honest, these simple examples from the example gallery don’t really
-help me make my point, they’re still pretty readable. But when the charts
-get more complicated &amp;amp; have more data marks then things get smaller &amp;amp; more
-zoomed out, and the problem gets much worse. &lt;a href=&quot;#fnref:examples&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><category term="python" /><summary type="html">My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Students1 are starting to turn their gaze towards 2020, and so I’ve been getting a bunch of emails asking me if I’m teaching COMP2300/6300 Computer Organisation &amp;amp; Program Execution again in Semester 1 2020. well, the organised ones, anyway &amp;#8617;</summary></entry></feed>
