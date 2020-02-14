@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/"},"url":"https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/","description":"As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.","@type":"BlogPosting","headline":"Command/Control: giving OS aware keybinding hints","dateModified":"2020-02-14T00:00:00+00:00","datePublished":"2020-02-14T00:00:00+00:00","@context":"https://schema.org"}</script>
+{"datePublished":"2020-02-14T00:00:00+00:00","dateModified":"2020-02-14T00:00:00+00:00","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/"},"url":"https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/","description":"As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.","@type":"BlogPosting","headline":"Command/Control: giving OS aware keybinding hints","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -89,11 +89,32 @@ convention on macOS vs Windows/Linux.</p>
 <p>which gets <em>really tedious</em> when you have to repeat it every time.</p>
 
 <p>So, I wrote a little bit of javascript which tries to solve the problem. It
-auto-detects<sup id="fnref:detection"><a href="#fn:detection" class="footnote">1</a></sup> if you’re on macOS and if so it replaces
-<code>&lt;kbd&gt;CTRL&lt;/kbd&gt;</code> with <code>&lt;kbd&gt;⌘&lt;/kbd&gt;</code>. If you’re interested, the (very small) js
-file is in <code>assets/js/os-aware-modifiers.js</code> in my <a href="https://github.com/benswift/benswift.github.io/blob/source/assets/js/os-aware-modifiers.js">blog source on
-GitHub</a>.</p>
+auto-detects<sup id="fnref:detection"><a href="#fn:detection" class="footnote">1</a></sup> if you’re on macOS and if so it replaces <kbd class="nopretty">CTRL</kbd> with <kbd class="nopretty">⌘</kbd>. It actually
+recognises all of <kbd class="nopretty">control</kbd>, <kbd class="nopretty">command</kbd>, <kbd class="nopretty">ctrl</kbd>, <kbd class="nopretty">ctl</kbd> or <kbd class="nopretty">cmd</kbd> and replaces them
+with <kbd class="nopretty">⌘</kbd> (macOS) or <kbd class="nopretty">CTRL</kbd>
+(otherwise). On the off chance that I actually don’t want it to do this, the
+script will skip any <code>&lt;kbd&gt;</code> element with a <code>nopretty</code> class.</p>
 
+<p>If you’re interested, the script looks like this:</p>
+
+<pre><code class="language-javascript">window.addEventListener('DOMContentLoaded', (event) =&gt; {
+
+  // replace all these with the appropriate modifier for the platform
+  let modKeys = ["control", "command", "ctrl", "ctl", "cmd"];
+
+  let modifier = navigator.appVersion.indexOf("Mac")!=-1 ? "⌘" : "CTRL";
+
+  for (const kbdElement of document.querySelectorAll("kbd")) {
+	if (modKeys.includes(kbdElement.textContent.toLowerCase()) &amp;&amp; !kbdElement.classList.contains("nopretty")){
+	  kbdElement.textContent = modifier;
+	}
+  }
+});
+</code></pre>
+
+<p>In case I make any tweaks, you can always find the latest version in my <a href="https://github.com/benswift/benswift.github.io/blob/source/assets/js/os-aware-modifiers.js">blog
+source on
+GitHub</a>.</p>
 <div class="footnotes">
   <ol>
     <li id="fn:detection">
@@ -150,8 +171,8 @@ GitHub</a>.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>183464acd</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/183464acd/_posts/2020-02-14-command-control-giving-os-aware-keybinding-hints.md">source
+	site revision <code>4d07513d2</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/4d07513d2/_posts/2020-02-14-command-control-giving-os-aware-keybinding-hints.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 
