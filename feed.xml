@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-02-09T08:20:14+00:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ICLC Extempore workshop</title><link href="https://benswift.me/iclc-workshop/" rel="alternate" type="text/html" title="ICLC Extempore workshop" /><published>2020-02-06T00:00:00+00:00</published><updated>2020-02-06T00:00:00+00:00</updated><id>https://benswift.me/iclc-extempore-workshop</id><content type="html" xml:base="https://benswift.me/iclc-workshop/">&lt;p&gt;If you’re here for the &lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;ICLC Extempore
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-02-14T16:43:58+00:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Command/Control: giving OS aware keybinding hints</title><link href="https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/" rel="alternate" type="text/html" title="Command/Control: giving OS aware keybinding hints" /><published>2020-02-14T00:00:00+00:00</published><updated>2020-02-14T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints</id><content type="html" xml:base="https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/">&lt;p&gt;As someone who writes a lot of &lt;a href=&quot;https://extemporelang.github.io&quot;&gt;web-based&lt;/a&gt;
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;documentation for&lt;/a&gt;
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;using&lt;/a&gt;
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;computers&lt;/a&gt;, it’s often useful to
+give people hints about keybindings which could make their lives easier.
+However, this is tricky when it comes to the control key/command key keybinding
+convention on macOS vs Windows/Linux.&lt;/p&gt;
+
+&lt;p&gt;In the past, I’ve just written things like:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To save the file, hit &lt;kbd class=&quot;nopretty&quot;&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt; to save
+(or &lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt; if you’re on macOS)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;which gets &lt;em&gt;really tedious&lt;/em&gt; when you have to repeat it every time.&lt;/p&gt;
+
+&lt;p&gt;So, I wrote a little bit of javascript which tries to solve the problem. It
+auto-detects&lt;sup id=&quot;fnref:detection&quot;&gt;&lt;a href=&quot;#fn:detection&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; if you’re on macOS and if so it replaces
+&lt;code&gt;&amp;lt;kbd&amp;gt;CTRL&amp;lt;/kbd&amp;gt;&lt;/code&gt; with &lt;code&gt;&amp;lt;kbd&amp;gt;⌘&amp;lt;/kbd&amp;gt;&lt;/code&gt;. If you’re interested, the (very small) js
+file is in &lt;code&gt;assets/js/os-aware-modifiers.js&lt;/code&gt; in my &lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/assets/js/os-aware-modifiers.js&quot;&gt;blog source on
+GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:detection&quot;&gt;
+      &lt;p&gt;it’ll work in &lt;em&gt;most&lt;/em&gt; cases; foolproof OS autodetection is really hard &lt;a href=&quot;#fnref:detection&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.</summary></entry><entry><title type="html">ICLC Extempore workshop</title><link href="https://benswift.me/iclc-workshop/" rel="alternate" type="text/html" title="ICLC Extempore workshop" /><published>2020-02-06T00:00:00+00:00</published><updated>2020-02-06T00:00:00+00:00</updated><id>https://benswift.me/iclc-extempore-workshop</id><content type="html" xml:base="https://benswift.me/iclc-workshop/">&lt;p&gt;If you’re here for the &lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;ICLC Extempore
 workshop&lt;/a&gt;
 &lt;em&gt;Introduction to music-making in Extempore&lt;/em&gt;, then welcome!&lt;/p&gt;
 
@@ -108,7 +137,45 @@ email&lt;/a&gt;.&lt;/p&gt;
 (July 8–11) in your diary and stay tuned for when we release the program. We’re
 also going to be running a bunch of workshops in the days before &amp;amp; after the
 conference, so this could be your chance to start making music with computers
-like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+00:00</published><updated>2020-01-28T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
+like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+00:00</published><updated>2020-01-28T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;p&gt;If you’re coming to the upcoming &lt;a href=&quot;http://iclc.livecodenetwork.org/2020/index.html&quot;&gt;International Conference on Live
+Coding&lt;/a&gt; (ICLC ‘20) in Limerick,
+Ireland, then it’s not too late to sign up for my workshop &lt;strong&gt;Introduction to
+music-making in Extempore&lt;/strong&gt;. Even if you’re not coming to the rest of the
+conference, you can still sign up for the workshop.&lt;/p&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This workshop will provide a hands-on introduction to making music in the live
+coding programming environment &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;.
+The workshop will cover:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the fundamentals of making sound (starting from “hello sine”)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;an overview of Extempore’s audio signal chain (especially the built-in and
+highly configurable modular synth)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;introduction to note-level live coding with the Extempore pattern language&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No Extempore or previous live coding experience necessary (although experienced
+practitioners are welcome as well). Just bring a laptop with macOS, Windows or
+Ubuntu installed and we’ll start from scratch. All the required software is
+freely-available, and a binary release of Extempore will be provided (for
+Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p&gt;
+
+&lt;p&gt;Registration is through
+&lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;Eventbrite&lt;/a&gt;,
+and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
+or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html">If you’re coming to the upcoming International Conference on Live Coding (ICLC ‘20) in Limerick, Ireland, then it’s not too late to sign up for my workshop Introduction to music-making in Extempore. Even if you’re not coming to the rest of the conference, you can still sign up for the workshop.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+00:00</published><updated>2020-01-28T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
   &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
 &lt;/picture&gt;
 
@@ -185,45 +252,7 @@ near the main entrance.&lt;/p&gt;
 heartbreaking, not to mention the human cost. &lt;a href=&quot;#fnref:fires&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+00:00</published><updated>2020-01-28T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;p&gt;If you’re coming to the upcoming &lt;a href=&quot;http://iclc.livecodenetwork.org/2020/index.html&quot;&gt;International Conference on Live
-Coding&lt;/a&gt; (ICLC ‘20) in Limerick,
-Ireland, then it’s not too late to sign up for my workshop &lt;strong&gt;Introduction to
-music-making in Extempore&lt;/strong&gt;. Even if you’re not coming to the rest of the
-conference, you can still sign up for the workshop.&lt;/p&gt;
-
-&lt;picture&gt;
-  &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;This workshop will provide a hands-on introduction to making music in the live
-coding programming environment &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;.
-The workshop will cover:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;the fundamentals of making sound (starting from “hello sine”)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;an overview of Extempore’s audio signal chain (especially the built-in and
-highly configurable modular synth)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;introduction to note-level live coding with the Extempore pattern language&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;No Extempore or previous live coding experience necessary (although experienced
-practitioners are welcome as well). Just bring a laptop with macOS, Windows or
-Ubuntu installed and we’ll start from scratch. All the required software is
-freely-available, and a binary release of Extempore will be provided (for
-Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p&gt;
-
-&lt;p&gt;Registration is through
-&lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;Eventbrite&lt;/a&gt;,
-and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
-or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html">If you’re coming to the upcoming International Conference on Live Coding (ICLC ‘20) in Limerick, Ireland, then it’s not too late to sign up for my workshop Introduction to music-making in Extempore. Even if you’re not coming to the rest of the conference, you can still sign up for the workshop.</summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+00:00</published><updated>2020-01-27T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+00:00</published><updated>2020-01-27T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for
 generating &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_rhythm&quot;&gt;euclidean rhythms&lt;/a&gt;.
 I wrote it (in a recursive style) in Scheme using the algorithm described in
 &lt;a href=&quot;http://cgm.cs.mcgill.ca/~godfried/publications/banff-extended.pdf&quot;&gt;Godfried
@@ -936,27 +965,4 @@ performances:&lt;/p&gt;
 
 &lt;p&gt;LENS will be back again in S1 2019, so if you’re interested then &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;shoot me an
 email&lt;/a&gt; and we can keep you in the loop about how to
-be involved.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="lens" /><category term="gigs" /><summary type="html">Last weekend the S2 2019 LENS cohort (the ANU Laptop Ensemble) gave their final performances as part of the ANU School of Music’s composition showcase. Thanks to everyone who attended, and congrats again to the students who learned a bunch of computer music stuff &amp;amp; build/composed and performed a working piece in one crazy semester. And an especially big thanks to my LENS co-directors Charles and Alec.</summary></entry><entry><title type="html">Ben and COMP2300 next year</title><link href="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/" rel="alternate" type="text/html" title="Ben and COMP2300 next year" /><published>2019-10-21T00:00:00+01:00</published><updated>2019-10-21T00:00:00+01:00</updated><id>https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year</id><content type="html" xml:base="https://benswift.me/blog/2019/10/21/ben-and-comp2300-next-year/">&lt;p&gt;Students&lt;sup id=&quot;fnref:organised-ones&quot;&gt;&lt;a href=&quot;#fn:organised-ones&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; are starting to turn their gaze towards 2020, and so
-I’ve been getting a bunch of emails asking me if I’m teaching
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;COMP2300/6300&lt;/a&gt; &lt;em&gt;Computer Organisation
-&amp;amp; Program Execution&lt;/em&gt; again in Semester 1 2020.&lt;/p&gt;
-
-&lt;p&gt;The short answer : &lt;strong&gt;no&lt;/strong&gt;. The slightly longer answer is that while I’ll always
-love COMP2300 (it’s the first course I got to design &amp;amp; write myself) my energies
-for the next couple of years are going to be poured into the &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;c/c/c
-studio&lt;/a&gt; (as part of my
-&lt;a href=&quot;/blog/2019/08/30/Im-a-reimagine-fellow/&quot;&gt;Reimagine Fellowship&lt;/a&gt;). In 2020, &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/charles-martin/&quot;&gt;Charles
-Martin&lt;/a&gt; will be
-convening &amp;amp; running COMP2300—and he’ll do a great job. I’ll probably pop in
-from time to time to give a guest lecture (and maybe even sing a revision song)
-but he’ll be the main convenor. So if you’ve got any questions about taking that
-course in 2020 (either as a student, or perhaps as part of the tutoring team)
-then you should reach out to &lt;a href=&quot;mailto:charles.martin@anu.edu.au&quot;&gt;Charles&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:organised-ones&quot;&gt;
-      &lt;p&gt;well, the organised ones, anyway &lt;a href=&quot;#fnref:organised-ones&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Students1 are starting to turn their gaze towards 2020, and so I’ve been getting a bunch of emails asking me if I’m teaching COMP2300/6300 Computer Organisation &amp;amp; Program Execution again in Semester 1 2020. well, the organised ones, anyway &amp;#8617;</summary></entry></feed>
+be involved.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="lens" /><category term="gigs" /><summary type="html">Last weekend the S2 2019 LENS cohort (the ANU Laptop Ensemble) gave their final performances as part of the ANU School of Music’s composition showcase. Thanks to everyone who attended, and congrats again to the students who learned a bunch of computer music stuff &amp;amp; build/composed and performed a working piece in one crazy semester. And an especially big thanks to my LENS co-directors Charles and Alec.</summary></entry></feed>

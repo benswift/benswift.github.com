@@ -201,6 +201,8 @@ code { font-family: "Fira Code", monospace; color: #9e1eba; background: -webkit-
 
 pre > code { background-color: #282c34; border-radius: 0; }
 
+kbd { border: 1px solid #666; border-radius: 4px; background: white; -webkit-box-shadow: 2px 2px #aaa; box-shadow: 2px 2px #aaa; padding: 3px 5px; margin: 2px; text-decoration: none; }
+
 .container { display: grid; grid-template-columns: 100vw; grid-template-rows: auto; grid-template-areas: "header" "main" "footer"; }
 
 .navigation { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; color: #333; padding: 0 0.6rem; }
