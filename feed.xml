@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-02-16T11:00:09+00:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Command/Control: giving OS aware keybinding hints</title><link href="https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/" rel="alternate" type="text/html" title="Command/Control: giving OS aware keybinding hints" /><published>2020-02-14T00:00:00+00:00</published><updated>2020-02-14T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints</id><content type="html" xml:base="https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/">&lt;p&gt;As someone who writes a lot of &lt;a href=&quot;https://extemporelang.github.io&quot;&gt;web-based&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-02-16T11:04:27+00:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Command/Control: giving OS aware keybinding hints</title><link href="https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/" rel="alternate" type="text/html" title="Command/Control: giving OS aware keybinding hints" /><published>2020-02-14T00:00:00+00:00</published><updated>2020-02-14T00:00:00+00:00</updated><id>https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints</id><content type="html" xml:base="https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/">&lt;p&gt;As someone who writes a lot of &lt;a href=&quot;https://extemporelang.github.io&quot;&gt;web-based&lt;/a&gt;
 &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;documentation for&lt;/a&gt;
 &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;using&lt;/a&gt;
 &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;computers&lt;/a&gt;, it’s often useful to
@@ -15,12 +15,19 @@ convention on macOS vs Windows/Linux.&lt;/p&gt;
 
 &lt;p&gt;which gets &lt;em&gt;really tedious&lt;/em&gt; when you have to repeat it every time.&lt;/p&gt;
 
-&lt;p&gt;So, I wrote a little bit of javascript which tries to solve the problem. It
-auto-detects&lt;sup id=&quot;fnref:detection&quot;&gt;&lt;a href=&quot;#fn:detection&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; if you’re on macOS and if so it replaces &lt;kbd class=&quot;nopretty&quot;&gt;CTRL&lt;/kbd&gt; with &lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt;. It actually
-recognises all of &lt;kbd class=&quot;nopretty&quot;&gt;control&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;command&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;ctrl&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;ctl&lt;/kbd&gt; or &lt;kbd class=&quot;nopretty&quot;&gt;cmd&lt;/kbd&gt; and replaces them
-with &lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt; (macOS) or &lt;kbd class=&quot;nopretty&quot;&gt;CTRL&lt;/kbd&gt;
-(otherwise). On the off chance that I actually don’t want it to do this, the
-script will skip any &lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt; element with a &lt;code&gt;nopretty&lt;/code&gt; class.&lt;/p&gt;
+&lt;p&gt;So, I wrote a little bit of javascript which&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;scans the document for any &lt;kbd class=&quot;nopretty&quot;&gt;control&lt;/kbd&gt; elements&lt;/li&gt;
+  &lt;li&gt;if it detects&lt;sup id=&quot;fnref:detection&quot;&gt;&lt;a href=&quot;#fn:detection&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; you’re viewing the site on macOS, changes it to
+&lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;It actually searches for all of &lt;kbd class=&quot;nopretty&quot;&gt;control&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;command&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;ctrl&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;ctl&lt;/kbd&gt; or &lt;kbd class=&quot;nopretty&quot;&gt;cmd&lt;/kbd&gt; and “normalises”
+them to &lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt; (macOS) or &lt;kbd class=&quot;nopretty&quot;&gt;CTRL&lt;/kbd&gt; (otherwise).&lt;/p&gt;
+
+&lt;p&gt;On the off chance that I actually don’t want it to do this, the script will skip
+any &lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt; element with a &lt;code&gt;nopretty&lt;/code&gt; class.&lt;/p&gt;
 
 &lt;p&gt;If you’re interested, the script looks like this:&lt;/p&gt;
 

@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"datePublished":"2020-02-14T00:00:00+00:00","dateModified":"2020-02-14T00:00:00+00:00","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/"},"url":"https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/","description":"As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.","@type":"BlogPosting","headline":"Command/Control: giving OS aware keybinding hints","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/"},"url":"https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/","description":"As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.","@type":"BlogPosting","headline":"Command/Control: giving OS aware keybinding hints","dateModified":"2020-02-14T00:00:00+00:00","datePublished":"2020-02-14T00:00:00+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -88,12 +88,19 @@ convention on macOS vs Windows/Linux.</p>
 
 <p>which gets <em>really tedious</em> when you have to repeat it every time.</p>
 
-<p>So, I wrote a little bit of javascript which tries to solve the problem. It
-auto-detects<sup id="fnref:detection"><a href="#fn:detection" class="footnote">1</a></sup> if you’re on macOS and if so it replaces <kbd class="nopretty">CTRL</kbd> with <kbd class="nopretty">⌘</kbd>. It actually
-recognises all of <kbd class="nopretty">control</kbd>, <kbd class="nopretty">command</kbd>, <kbd class="nopretty">ctrl</kbd>, <kbd class="nopretty">ctl</kbd> or <kbd class="nopretty">cmd</kbd> and replaces them
-with <kbd class="nopretty">⌘</kbd> (macOS) or <kbd class="nopretty">CTRL</kbd>
-(otherwise). On the off chance that I actually don’t want it to do this, the
-script will skip any <code>&lt;kbd&gt;</code> element with a <code>nopretty</code> class.</p>
+<p>So, I wrote a little bit of javascript which</p>
+
+<ol>
+  <li>scans the document for any <kbd class="nopretty">control</kbd> elements</li>
+  <li>if it detects<sup id="fnref:detection"><a href="#fn:detection" class="footnote">1</a></sup> you’re viewing the site on macOS, changes it to
+<kbd class="nopretty">⌘</kbd></li>
+</ol>
+
+<p>It actually searches for all of <kbd class="nopretty">control</kbd>, <kbd class="nopretty">command</kbd>, <kbd class="nopretty">ctrl</kbd>, <kbd class="nopretty">ctl</kbd> or <kbd class="nopretty">cmd</kbd> and “normalises”
+them to <kbd class="nopretty">⌘</kbd> (macOS) or <kbd class="nopretty">CTRL</kbd> (otherwise).</p>
+
+<p>On the off chance that I actually don’t want it to do this, the script will skip
+any <code>&lt;kbd&gt;</code> element with a <code>nopretty</code> class.</p>
 
 <p>If you’re interested, the script looks like this:</p>
 
@@ -171,8 +178,8 @@ GitHub</a>.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>ff320a373</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/ff320a373/_posts/2020-02-14-command-control-giving-os-aware-keybinding-hints.md">source
+	site revision <code>84348841b</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/84348841b/_posts/2020-02-14-command-control-giving-os-aware-keybinding-hints.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 
