@@ -197,11 +197,11 @@ h1, h2, h3, h4, h5, h6 { font-weight: 900; }
 
 strong { font-weight: 900; }
 
-code { font-family: "Fira Code", monospace; color: #9e1eba; background: -webkit-gradient(linear, left top, right top, from(#f7e6fb), to(#eec8f6)); background: linear-gradient(to right, #f7e6fb, #eec8f6); overflow-wrap: break-word; word-wrap: break-word; padding: 0.2rem; border-radius: 0.2rem; }
+code { font-family: "Fira Code", monospace; font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; color: #9e1eba; background: -webkit-gradient(linear, left top, right top, from(#f7e6fb), to(#eec8f6)); background: linear-gradient(to right, #f7e6fb, #eec8f6); overflow-wrap: break-word; word-wrap: break-word; }
 
 pre > code { background-color: #282c34; border-radius: 0; }
 
-kbd { border: 1px solid #666; border-radius: 4px; background: white; -webkit-box-shadow: 2px 2px #aaa; box-shadow: 2px 2px #aaa; padding: 3px 5px; margin: 2px; text-decoration: none; }
+kbd { font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; border: 1px solid #666; -webkit-box-shadow: 0.15em 0.15em #aaa; box-shadow: 0.15em 0.15em #aaa; background: white; text-decoration: none; }
 
 .container { display: grid; grid-template-columns: 100vw; grid-template-rows: auto; grid-template-areas: "header" "main" "footer"; }
 
