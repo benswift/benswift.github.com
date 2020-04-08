@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: HTMLProofer is run as part of jekyll build step\" && exit 1",
     "build": "bundle exec jekyll build",
-	"prettify": "npx prettier --write 'assets/css/*.scss' && npx prettier --write 'assets/js/*.js'"
+    "prettier": "npx prettier --write 'assets/css/*.scss' && npx prettier --write 'assets/js/*.js'"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,8 @@
   },
   "homepage": "https://benswift.me",
   "devDependencies": {
-    "browserify": "^16.5.0",
-    "prettier": "^1.19.1"
+    "browserify": "^16",
+    "prettier": "^2"
   },
   "dependencies": {}
 }
