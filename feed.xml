@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-04-30T20:14:00+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Two-way OSC communication between Extempore and Pd</title><link href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" rel="alternate" type="text/html" title="Two-way OSC communication between Extempore and Pd" /><published>2020-04-30T00:00:00+10:00</published><updated>2020-04-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd</id><content type="html" xml:base="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/">&lt;p&gt;Because &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-04-30T20:15:02+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Two-way OSC communication between Extempore and Pd</title><link href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" rel="alternate" type="text/html" title="Two-way OSC communication between Extempore and Pd" /><published>2020-04-30T00:00:00+10:00</published><updated>2020-04-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd</id><content type="html" xml:base="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/">&lt;p&gt;Because &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; and
 &lt;a href=&quot;https://puredata.info&quot;&gt;Pd&lt;/a&gt; are both multimedia programming environments, they
 both speak &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_Sound_Control&quot;&gt;OSC&lt;/a&gt; straight out
 of the box. If you need to send messages (numbers, strings, other data) from one
@@ -11,7 +11,7 @@ to do it.&lt;/p&gt;
 define a function to act as the OSC callback/handler, and start the OSC server
 listening on a particular port.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; the name of this function doesn't matter, as long as you specify the same
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;;; the name of this function doesn't matter, as long as you specify the same
 ;; name later when you start the server
 (define (osc-receive-handler timestamp address . args)
   (println 'osc-receive-handler address '-&amp;gt; args))
@@ -63,7 +63,7 @@ message to start Pd listening for incoming OSC messages.&lt;/p&gt;
 this part if you’re just sending data out of Extempore, but it’s required to set
 up some of the internal OSC infrastructure so you need to do it anyway.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; the name of this function doesn't matter, as long as you specify the same
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;;; the name of this function doesn't matter, as long as you specify the same
 ;; name later when you start the server
 (define (osc-receive-handler timestamp address . args)
   (println 'osc-receive-handler address '-&amp;gt; args))
@@ -74,7 +74,7 @@ up some of the internal OSC infrastructure so you need to do it anyway.&lt;/p&gt
 
 &lt;p&gt;Then, it’s a one-liner to send an OSC message to a particular host &amp;amp; port:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(io:osc:send (now) (cons &quot;localhost&quot; 7010) &quot;/test/msg&quot; &quot;Hello&quot; 500 6.6 &quot;World&quot; (random 10))
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(io:osc:send (now) (cons &quot;localhost&quot; 7010) &quot;/test/msg&quot; &quot;Hello&quot; 500 6.6 &quot;World&quot; (random 10))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;After the address argument (in this case &lt;code&gt;&quot;/test/msg&quot;&lt;/code&gt;) you can supply as many
@@ -99,7 +99,7 @@ you’re on a LAN, you’d need to specify the host &amp;amp; port with somethin
 argument is a &lt;em&gt;time&lt;/em&gt; argument. If you wanted to, e.g. send a message with a
 2-second delay after evaluating that line, you could do something like:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(io:osc:send (+ (now) (* *second* 2)) (cons &quot;localhost&quot; 7010) &quot;/test/msg&quot; &quot;Hello&quot; 500 6.6 &quot;World&quot; (random 10))
+&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(io:osc:send (+ (now) (* *second* 2)) (cons &quot;localhost&quot; 7010) &quot;/test/msg&quot; &quot;Hello&quot; 500 6.6 &quot;World&quot; (random 10))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;For a deeper dive on how time is handled in Extempore, see the &lt;a href=&quot;https://extemporelang.github.io/docs/overview/time/&quot;&gt;Extempore

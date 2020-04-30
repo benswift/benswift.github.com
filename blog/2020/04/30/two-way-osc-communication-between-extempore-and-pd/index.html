@@ -92,7 +92,7 @@ to do it.</p>
 define a function to act as the OSC callback/handler, and start the OSC server
 listening on a particular port.</p>
 
-<pre><code class="language-extempore">;; the name of this function doesn't matter, as long as you specify the same
+<pre><code class="language-xtlang">;; the name of this function doesn't matter, as long as you specify the same
 ;; name later when you start the server
 (define (osc-receive-handler timestamp address . args)
   (println 'osc-receive-handler address '-&gt; args))
@@ -144,7 +144,7 @@ message to start Pd listening for incoming OSC messages.</p>
 this part if you’re just sending data out of Extempore, but it’s required to set
 up some of the internal OSC infrastructure so you need to do it anyway.</p>
 
-<pre><code class="language-extempore">;; the name of this function doesn't matter, as long as you specify the same
+<pre><code class="language-xtlang">;; the name of this function doesn't matter, as long as you specify the same
 ;; name later when you start the server
 (define (osc-receive-handler timestamp address . args)
   (println 'osc-receive-handler address '-&gt; args))
@@ -155,7 +155,7 @@ up some of the internal OSC infrastructure so you need to do it anyway.</p>
 
 <p>Then, it’s a one-liner to send an OSC message to a particular host &amp; port:</p>
 
-<pre><code class="language-extempore">(io:osc:send (now) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
+<pre><code class="language-xtlang">(io:osc:send (now) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
 </code></pre>
 
 <p>After the address argument (in this case <code>"/test/msg"</code>) you can supply as many
@@ -180,7 +180,7 @@ you’re on a LAN, you’d need to specify the host &amp; port with something li
 argument is a <em>time</em> argument. If you wanted to, e.g. send a message with a
 2-second delay after evaluating that line, you could do something like:</p>
 
-<pre><code class="language-extempore">(io:osc:send (+ (now) (* *second* 2)) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
+<pre><code class="language-xtlang">(io:osc:send (+ (now) (* *second* 2)) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
 </code></pre>
 
 <p>For a deeper dive on how time is handled in Extempore, see the <a href="https://extemporelang.github.io/docs/overview/time/">Extempore
@@ -246,8 +246,8 @@ deal with some packet loss and
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>5eef7e806</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/5eef7e806/_posts/2020-04-30-two-way-osc-communication-between-extempore-and-pd.md">source
+	site revision <code>e6a459a74</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/e6a459a74/_posts/2020-04-30-two-way-osc-communication-between-extempore-and-pd.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 
