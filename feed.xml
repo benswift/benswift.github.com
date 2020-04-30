@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-04-26T11:06:56+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A call-up to fight covid19</title><link href="https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19/" rel="alternate" type="text/html" title="A call-up to fight covid19" /><published>2020-04-18T00:00:00+10:00</published><updated>2020-04-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19</id><content type="html" xml:base="https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19/">&lt;p&gt;As with many folks at the moment (both in Canberra and around the world) I’ve
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-04-30T20:12:12+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Two-way OSC communication between Extempore and Pd</title><link href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" rel="alternate" type="text/html" title="Two-way OSC communication between Extempore and Pd" /><published>2020-04-30T00:00:00+10:00</published><updated>2020-04-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd</id><content type="html" xml:base="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/">&lt;p&gt;Because &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; and
+&lt;a href=&quot;https://puredata.info&quot;&gt;Pd&lt;/a&gt; are both multimedia programming environments, they
+both speak &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_Sound_Control&quot;&gt;OSC&lt;/a&gt; straight out
+of the box. If you need to send messages (numbers, strings, other data) from one
+program to the other over the local network&lt;sup id=&quot;fnref:lan&quot;&gt;&lt;a href=&quot;#fn:lan&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; then OSC is a pretty good way
+to do it.&lt;/p&gt;
+
+&lt;h2 id=&quot;pd-extempore&quot;&gt;Pd-&amp;gt;Extempore&lt;/h2&gt;
+
+&lt;p&gt;To send OSC messages from Pd to Extempore, you’ll first need to start Extempore,
+define a function to act as the OSC callback/handler, and start the OSC server
+listening on a particular port.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; the name of this function doesn't matter, as long as you specify the same
+;; name later when you start the server
+(define (osc-receive-handler timestamp address . args)
+  (println 'osc-receive-handler address '-&amp;gt; args))
+
+;; start the server listening on port 7009
+(io:osc:start-server 7009 &quot;osc-receive-handler&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you evaluate those lines you’ll see a notification printed in the Extempore
+terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Starting OSC server on port: 7009 calling back to osc-receive-handler
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now that Extempore’s listening, you need to send a message with Pd. There’s a
+built-in &lt;code&gt;oscformat&lt;/code&gt; object for this. As usual in Pd, the easiest way to see how
+it works is to create an &lt;code&gt;oscformat&lt;/code&gt; object, then right-click to open up the
+&lt;code&gt;oscformat-help.pd&lt;/code&gt; patch.&lt;/p&gt;
+
+&lt;p&gt;Assuming you’re running Pd on the same computer as the Extempore OSC server you
+set up before, you can send your messages to &lt;code&gt;localhost&lt;/code&gt; (look for the &lt;code&gt;connect
+localhost 5000&lt;/code&gt; message in the Pd help patch). However, you need to make sure
+the ports match—the Extempore server is listening on port &lt;code&gt;7099&lt;/code&gt;, while the
+default port number in the &lt;code&gt;oscformat-help.pd&lt;/code&gt; patch is &lt;code&gt;5000&lt;/code&gt; (so you’ll need
+to change it before you send that &lt;code&gt;connect message&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Once you’ve done all that, you should be able to trigger the send messages (e.g.
+&lt;code&gt;1 2 3&lt;/code&gt;) near the top of the patch. They’ll be received by Extempore and passed
+as arguments to the &lt;code&gt;osc-receive-handler&lt;/code&gt; function, which (as defined above)
+just prints them to the log, so you’ll see output like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;osc-receive-handler &quot;/cat/horse/pig&quot; -&amp;gt; (1.000000 2.000000 3.000000)
+osc-receive-handler &quot;/cat/horse/pig&quot; -&amp;gt; (4.000000 5.000000 &quot;weasel&quot; 6.000000 7.000000 &quot;rat&quot;)
+osc-receive-handler &quot;/mouse/banana&quot; -&amp;gt; (1.000000 2.000000 3.000000)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Success! 🙌🎉🙌 Now, re-define your &lt;code&gt;osc-receive-handler&lt;/code&gt; to do something more
+interesting and you’re away.&lt;/p&gt;
+
+&lt;h2 id=&quot;extempore-pd&quot;&gt;Extempore-&amp;gt;Pd&lt;/h2&gt;
+
+&lt;p&gt;Sending OSC messages the opposite direction is pretty similar. In this case,
+it’s Pd’s &lt;code&gt;oscparse&lt;/code&gt; object that you’ll need. Again, go ahead an open up the
+&lt;code&gt;oscparse-help.pd&lt;/code&gt; patch. Find the “packets from network” part of the patch
+(again, make note of the port the server is listening on) and send the &lt;code&gt;listen&lt;/code&gt;
+message to start Pd listening for incoming OSC messages.&lt;/p&gt;
+
+&lt;p&gt;Then, start Extempore and start a listener again as before. You might not &lt;em&gt;use&lt;/em&gt;
+this part if you’re just sending data out of Extempore, but it’s required to set
+up some of the internal OSC infrastructure so you need to do it anyway.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; the name of this function doesn't matter, as long as you specify the same
+;; name later when you start the server
+(define (osc-receive-handler timestamp address . args)
+  (println 'osc-receive-handler address '-&amp;gt; args))
+
+;; start the server listening on port 7009
+(io:osc:start-server 7009 &quot;osc-receive-handler&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, it’s a one-liner to send an OSC message to a particular host &amp;amp; port:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(io:osc:send (now) (cons &quot;localhost&quot; 7010) &quot;/test/msg&quot; &quot;Hello&quot; 500 6.6 &quot;World&quot; (random 10))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After the address argument (in this case &lt;code&gt;&quot;/test/msg&quot;&lt;/code&gt;) you can supply as many
+arguments as you like—you just need to make sure you unpack them properly on
+the Pd side.&lt;/p&gt;
+
+&lt;p&gt;This time, if the messages gets through ok you’ll see the message received in
+your Pd log view, with stuff like:&lt;/p&gt;
+
+&lt;p&gt;parse-output: list test msg Hello 500 6.6 World 8
+   parse-output: list test msg Hello 500 6.6 World 0
+   parse-output: list test msg Hello 500 6.6 World 9&lt;/p&gt;
+
+&lt;p&gt;…plus a bunch more debugging output from the &lt;code&gt;oscparse-help.pd&lt;/code&gt; patch.&lt;/p&gt;
+
+&lt;p&gt;As in the Pd-&amp;gt;Extempore case, you’re sending the message to localhost, so if
+Extempore and Pd are running on the same machine then you’ll be golden. If
+you’re on a LAN, you’d need to specify the host &amp;amp; port with something like
+&lt;code&gt;(cons &quot;192.168.11.15&quot; 7011)&lt;/code&gt; or whatever.&lt;/p&gt;
+
+&lt;p&gt;The one other thing to note about the &lt;code&gt;io:osc:send&lt;/code&gt; function is that the first
+argument is a &lt;em&gt;time&lt;/em&gt; argument. If you wanted to, e.g. send a message with a
+2-second delay after evaluating that line, you could do something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(io:osc:send (+ (now) (* *second* 2)) (cons &quot;localhost&quot; 7010) &quot;/test/msg&quot; &quot;Hello&quot; 500 6.6 &quot;World&quot; (random 10))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For a deeper dive on how time is handled in Extempore, see the &lt;a href=&quot;https://extemporelang.github.io/docs/overview/time/&quot;&gt;Extempore
+docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy OSCing 😊&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:lan&quot;&gt;
+
+      &lt;p&gt;even if you’re on a WAN, there are ways to do it—but you might have to
+deal with some packet loss and
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Network_address_translation&quot;&gt;NAT&lt;/a&gt; issues &lt;a href=&quot;#fnref:lan&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Because Extempore and Pd are both multimedia programming environments, they both speak OSC straight out of the box. If you need to send messages (numbers, strings, other data) from one program to the other over the local network[^lan] then OSC is a pretty good way to do it.</summary></entry><entry><title type="html">A call-up to fight covid19</title><link href="https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19/" rel="alternate" type="text/html" title="A call-up to fight covid19" /><published>2020-04-18T00:00:00+10:00</published><updated>2020-04-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19</id><content type="html" xml:base="https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19/">&lt;p&gt;As with many folks at the moment (both in Canberra and around the world) I’ve
 been called up into a covid19 taskforce (an initiative of the ANU’s Software
 Innovation Institute, in partnership with the &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;RSCS&lt;/a&gt; &amp;amp;
 other parts of the ANU). I’m the technical lead on the part of the project which
@@ -318,7 +435,45 @@ email&lt;/a&gt;.&lt;/p&gt;
 (July 8–11) in your diary and stay tuned for when we release the program. We’re
 also going to be running a bunch of workshops in the days before &amp;amp; after the
 conference, so this could be your chance to start making music with computers
-like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
+like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;p&gt;If you’re coming to the upcoming &lt;a href=&quot;http://iclc.toplap.org/2020/&quot;&gt;International Conference on Live
+Coding&lt;/a&gt; (ICLC ‘20) in Limerick,
+Ireland, then it’s not too late to sign up for my workshop &lt;strong&gt;Introduction to
+music-making in Extempore&lt;/strong&gt;. Even if you’re not coming to the rest of the
+conference, you can still sign up for the workshop.&lt;/p&gt;
+
+&lt;picture&gt;
+  &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This workshop will provide a hands-on introduction to making music in the live
+coding programming environment &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;.
+The workshop will cover:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the fundamentals of making sound (starting from “hello sine”)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;an overview of Extempore’s audio signal chain (especially the built-in and
+highly configurable modular synth)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;introduction to note-level live coding with the Extempore pattern language&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No Extempore or previous live coding experience necessary (although experienced
+practitioners are welcome as well). Just bring a laptop with macOS, Windows or
+Ubuntu installed and we’ll start from scratch. All the required software is
+freely-available, and a binary release of Extempore will be provided (for
+Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p&gt;
+
+&lt;p&gt;Registration is through
+&lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;Eventbrite&lt;/a&gt;,
+and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
+or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html">If you’re coming to the upcoming International Conference on Live Coding (ICLC ‘20) in Limerick, Ireland, then it’s not too late to sign up for my workshop Introduction to music-making in Extempore. Even if you’re not coming to the rest of the conference, you can still sign up for the workshop.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
   &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
 &lt;/picture&gt;
 
@@ -395,45 +550,7 @@ near the main entrance.&lt;/p&gt;
 heartbreaking, not to mention the human cost. &lt;a href=&quot;#fnref:fires&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;p&gt;If you’re coming to the upcoming &lt;a href=&quot;http://iclc.toplap.org/2020/&quot;&gt;International Conference on Live
-Coding&lt;/a&gt; (ICLC ‘20) in Limerick,
-Ireland, then it’s not too late to sign up for my workshop &lt;strong&gt;Introduction to
-music-making in Extempore&lt;/strong&gt;. Even if you’re not coming to the rest of the
-conference, you can still sign up for the workshop.&lt;/p&gt;
-
-&lt;picture&gt;
-  &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;This workshop will provide a hands-on introduction to making music in the live
-coding programming environment &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;.
-The workshop will cover:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;the fundamentals of making sound (starting from “hello sine”)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;an overview of Extempore’s audio signal chain (especially the built-in and
-highly configurable modular synth)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;introduction to note-level live coding with the Extempore pattern language&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;No Extempore or previous live coding experience necessary (although experienced
-practitioners are welcome as well). Just bring a laptop with macOS, Windows or
-Ubuntu installed and we’ll start from scratch. All the required software is
-freely-available, and a binary release of Extempore will be provided (for
-Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p&gt;
-
-&lt;p&gt;Registration is through
-&lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;Eventbrite&lt;/a&gt;,
-and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
-or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html">If you’re coming to the upcoming International Conference on Live Coding (ICLC ‘20) in Limerick, Ireland, then it’s not too late to sign up for my workshop Introduction to music-making in Extempore. Even if you’re not coming to the rest of the conference, you can still sign up for the workshop.</summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+11:00</published><updated>2020-01-27T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+11:00</published><updated>2020-01-27T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for
 generating &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_rhythm&quot;&gt;euclidean rhythms&lt;/a&gt;.
 I wrote it (in a recursive style) in Scheme using the algorithm described in
 &lt;a href=&quot;http://cgm.cs.mcgill.ca/~godfried/publications/banff-extended.pdf&quot;&gt;Godfried
@@ -475,45 +592,4 @@ inclusive). We can print out the patterns using this loop (using &lt;code&gt;'X&
 &lt;p&gt;Look, there’s probably some super-cool mathematical explanation for why this
 looks like that. Stephen Wolfram, if you’re reading, drop me a line and tell me
 what it is. But I just thought it looked cool—I’m sure there are generative
-art possibilities here as well (they may have already been explored).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">As part of the new Extempore pattern language stuff I added a helper for generating euclidean rhythms. I wrote it (in a recursive style) in Scheme using the algorithm described in Godfried Toussaint’s paper (although it’s credited to Bjorklund).</summary></entry><entry><title type="html">benswift.me dev roadmap for 2020</title><link href="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/" rel="alternate" type="text/html" title="benswift.me dev roadmap for 2020" /><published>2019-11-17T00:00:00+11:00</published><updated>2019-11-17T00:00:00+11:00</updated><id>https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020</id><content type="html" xml:base="https://benswift.me/blog/2019/11/17/benswift-me-dev-roadmap-for-2020/">&lt;p&gt;As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction
-design in &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) there’s always a
-tension in trying to just teach the fundamentals and keeping the coursework
-up-to-date. For the latter, that doesn’t necessarily mean re-writing the course
-each year with the js framework-du-jour, but it’s useful to at least know what
-the best practices are and how to point students in a good direction if they
-want to go deeper.&lt;/p&gt;
-
-&lt;p&gt;I try and use this website as a bit of a test-bed for &lt;a href=&quot;https://benswift.me/blog/tag/meta/&quot;&gt;trying new
-things&lt;/a&gt; and staying up to date. So, here’s
-my list of things to try in 2020:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;update to Jekyll 4 (&lt;em&gt;update&lt;/em&gt;: done, as of
-&lt;a href=&quot;https://github.com/benswift/benswift.github.io/commit/fba9367965f00592ed98469aef3d8c925bc901cd&quot;&gt;fba9367&lt;/a&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;or&lt;/strong&gt; move this blog from Jekyll to &lt;a href=&quot;https://www.11ty.io&quot;&gt;Eleventy&lt;/a&gt; (because
-all the cool kids are on the &lt;a href=&quot;https://jamstack.org&quot;&gt;JAMstack&lt;/a&gt; these days)
-(&lt;em&gt;update: probably not, Jekyll is fine&lt;/em&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;switch to &lt;a href=&quot;https://www.netlify.com&quot;&gt;Netlify&lt;/a&gt; for hosting so that I can use
-their nice workflow stuff (e.g. serverless functions)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;package up my &lt;a href=&quot;/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/&quot;&gt;reveal slides&lt;/a&gt; plugin on npm (if
-I switch to Eleventy) or RubyGems (if I stay with Jekyll) so that others can
-use them&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;(maybe) re-write the CSS (from the current hand-rolled Sass) to something
-using a utility class framework like &lt;a href=&quot;https://tailwindcss.com&quot;&gt;Tailwind&lt;/a&gt;
-(&lt;em&gt;update: actually, my hand-rolled CSS is fine; I’ve got better things to do&lt;/em&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There’s no timeline on any of this, and I’m going to be busy with other things
-(e.g. my &lt;a href=&quot;/blog/2019/03/20/reimagine-fellow-project-pitch/&quot;&gt;Reimagine Fellowship&lt;/a&gt;, updating the
-&lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; docs and generally &lt;a href=&quot;/research/&quot;&gt;doing good
-research&lt;/a&gt;).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="meta" /><category term="web" /><summary type="html">As a developer of web tech curricula (specifically 2D graphics &amp;amp; interaction design in COMP1720) there’s always a tension in trying to just teach the fundamentals and keeping the coursework up-to-date. For the latter, that doesn’t necessarily mean re-writing the course each year with the js framework-du-jour, but it’s useful to at least know what the best practices are and how to point students in a good direction if they want to go deeper.</summary></entry></feed>
+art possibilities here as well (they may have already been explored).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">As part of the new Extempore pattern language stuff I added a helper for generating euclidean rhythms. I wrote it (in a recursive style) in Scheme using the algorithm described in Godfried Toussaint’s paper (although it’s credited to Bjorklund).</summary></entry></feed>

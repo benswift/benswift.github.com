@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Blog refresh | benswift.me</title>
+<title>Two-way OSC communication between Extempore and Pd | benswift.me</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Blog refresh" />
+<meta property="og:title" content="Two-way OSC communication between Extempore and Pd" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Another year, and another blog refresh. It’s still a clojure-powered static site with my own fumbling, hand-rolled css, but this time I’m using Cryogen which has been pretty nice to work with so far." />
-<meta property="og:description" content="Another year, and another blog refresh. It’s still a clojure-powered static site with my own fumbling, hand-rolled css, but this time I’m using Cryogen which has been pretty nice to work with so far." />
-<link rel="canonical" href="https://benswift.me/blog/2016/12/01/blog-refresh/" />
-<meta property="og:url" content="https://benswift.me/blog/2016/12/01/blog-refresh/" />
+<meta name="description" content="Because Extempore and Pd are both multimedia programming environments, they both speak OSC straight out of the box. If you need to send messages (numbers, strings, other data) from one program to the other over the local network[^lan] then OSC is a pretty good way to do it." />
+<meta property="og:description" content="Because Extempore and Pd are both multimedia programming environments, they both speak OSC straight out of the box. If you need to send messages (numbers, strings, other data) from one program to the other over the local network[^lan] then OSC is a pretty good way to do it." />
+<link rel="canonical" href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" />
+<meta property="og:url" content="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-12-01T00:00:00+11:00" />
+<meta property="article:published_time" content="2020-04-30T00:00:00+10:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Blog refresh" />
+<meta property="twitter:title" content="Two-way OSC communication between Extempore and Pd" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Ben Swift"},"headline":"Blog refresh","dateModified":"2016-12-01T00:00:00+11:00","datePublished":"2016-12-01T00:00:00+11:00","url":"https://benswift.me/blog/2016/12/01/blog-refresh/","description":"Another year, and another blog refresh. It’s still a clojure-powered static site with my own fumbling, hand-rolled css, but this time I’m using Cryogen which has been pretty nice to work with so far.","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2016/12/01/blog-refresh/"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Ben Swift"},"headline":"Two-way OSC communication between Extempore and Pd","dateModified":"2020-04-30T00:00:00+10:00","datePublished":"2020-04-30T00:00:00+10:00","url":"https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/","description":"Because Extempore and Pd are both multimedia programming environments, they both speak OSC straight out of the box. If you need to send messages (numbers, strings, other data) from one program to the other over the local network[^lan] then OSC is a pretty good way to do it.","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -63,39 +63,132 @@
 
 	  <main aria-label="Content">
 		<article>
-  <p class="post-date">01 Dec '16</p>
-  <h1>Blog refresh</h1>
+  <p class="post-date">30 Apr '20</p>
+  <h1>Two-way OSC communication between Extempore and Pd</h1>
   
 <p class="post-tag-container">
-  
-  <a class="post-tag" href='/blog/tag/meta'>
-	meta
-  </a>
-  
-  <a class="post-tag" href='/blog/tag/web'>
-	web
-  </a>
   
 </p>
 
 
-  <p>Another year, and another blog refresh. It’s still a clojure-powered static site
-with my own fumbling, hand-rolled css, but this time I’m using
-<a href="http://cryogenweb.org/">Cryogen</a> which has been pretty nice to work with so
-far.</p>
+  <p>Because <a href="https://github.com/digego/extempore">Extempore</a> and
+<a href="https://puredata.info">Pd</a> are both multimedia programming environments, they
+both speak <a href="https://en.wikipedia.org/wiki/Open_Sound_Control">OSC</a> straight out
+of the box. If you need to send messages (numbers, strings, other data) from one
+program to the other over the local network<sup id="fnref:lan"><a href="#fn:lan" class="footnote">1</a></sup> then OSC is a pretty good way
+to do it.</p>
 
-<p>Sorry that a bunch of links to old posts are broken at the moment—I’m in the
-process of fixing that up. If you’re really stuck trying to find something then
-<a href="mailto:ben.swift@anu.edu.au">send me an email</a>.</p>
+<h2 id="pd-extempore">Pd-&gt;Extempore</h2>
 
-<p>The other big change is that the Extempore documentation posts have all been
-removed. A little while ago I did some work to set up the Extempore docs on a
-<a href="http://digego.github.io/extempore/">separate site</a>, and that really is the best
-place to go for that stuff now. I considered keeping my old blog posts around
-for posterity, but a lot of it was out-of-date anyway, so I decided it was
-safest to get rid of it completely and redirect people to the new documentation
-site. As always, if you get stuck, let me know on the <a href="mailto:extemporelang@googlegroups.com">Extempore mailing
-list</a>.</p>
+<p>To send OSC messages from Pd to Extempore, you’ll first need to start Extempore,
+define a function to act as the OSC callback/handler, and start the OSC server
+listening on a particular port.</p>
+
+<pre><code class="language-extempore">;; the name of this function doesn't matter, as long as you specify the same
+;; name later when you start the server
+(define (osc-receive-handler timestamp address . args)
+  (println 'osc-receive-handler address '-&gt; args))
+
+;; start the server listening on port 7009
+(io:osc:start-server 7009 "osc-receive-handler")
+</code></pre>
+
+<p>Once you evaluate those lines you’ll see a notification printed in the Extempore
+terminal:</p>
+
+<pre><code>Starting OSC server on port: 7009 calling back to osc-receive-handler
+</code></pre>
+
+<p>Now that Extempore’s listening, you need to send a message with Pd. There’s a
+built-in <code>oscformat</code> object for this. As usual in Pd, the easiest way to see how
+it works is to create an <code>oscformat</code> object, then right-click to open up the
+<code>oscformat-help.pd</code> patch.</p>
+
+<p>Assuming you’re running Pd on the same computer as the Extempore OSC server you
+set up before, you can send your messages to <code>localhost</code> (look for the <code>connect
+localhost 5000</code> message in the Pd help patch). However, you need to make sure
+the ports match—the Extempore server is listening on port <code>7099</code>, while the
+default port number in the <code>oscformat-help.pd</code> patch is <code>5000</code> (so you’ll need
+to change it before you send that <code>connect message</code>).</p>
+
+<p>Once you’ve done all that, you should be able to trigger the send messages (e.g.
+<code>1 2 3</code>) near the top of the patch. They’ll be received by Extempore and passed
+as arguments to the <code>osc-receive-handler</code> function, which (as defined above)
+just prints them to the log, so you’ll see output like this:</p>
+
+<pre><code>osc-receive-handler "/cat/horse/pig" -&gt; (1.000000 2.000000 3.000000)
+osc-receive-handler "/cat/horse/pig" -&gt; (4.000000 5.000000 "weasel" 6.000000 7.000000 "rat")
+osc-receive-handler "/mouse/banana" -&gt; (1.000000 2.000000 3.000000)
+</code></pre>
+
+<p>Success! 🙌🎉🙌 Now, re-define your <code>osc-receive-handler</code> to do something more
+interesting and you’re away.</p>
+
+<h2 id="extempore-pd">Extempore-&gt;Pd</h2>
+
+<p>Sending OSC messages the opposite direction is pretty similar. In this case,
+it’s Pd’s <code>oscparse</code> object that you’ll need. Again, go ahead an open up the
+<code>oscparse-help.pd</code> patch. Find the “packets from network” part of the patch
+(again, make note of the port the server is listening on) and send the <code>listen</code>
+message to start Pd listening for incoming OSC messages.</p>
+
+<p>Then, start Extempore and start a listener again as before. You might not <em>use</em>
+this part if you’re just sending data out of Extempore, but it’s required to set
+up some of the internal OSC infrastructure so you need to do it anyway.</p>
+
+<pre><code class="language-extempore">;; the name of this function doesn't matter, as long as you specify the same
+;; name later when you start the server
+(define (osc-receive-handler timestamp address . args)
+  (println 'osc-receive-handler address '-&gt; args))
+
+;; start the server listening on port 7009
+(io:osc:start-server 7009 "osc-receive-handler")
+</code></pre>
+
+<p>Then, it’s a one-liner to send an OSC message to a particular host &amp; port:</p>
+
+<pre><code class="language-extempore">(io:osc:send (now) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
+</code></pre>
+
+<p>After the address argument (in this case <code>"/test/msg"</code>) you can supply as many
+arguments as you like—you just need to make sure you unpack them properly on
+the Pd side.</p>
+
+<p>This time, if the messages gets through ok you’ll see the message received in
+your Pd log view, with stuff like:</p>
+
+<p>parse-output: list test msg Hello 500 6.6 World 8
+   parse-output: list test msg Hello 500 6.6 World 0
+   parse-output: list test msg Hello 500 6.6 World 9</p>
+
+<p>…plus a bunch more debugging output from the <code>oscparse-help.pd</code> patch.</p>
+
+<p>As in the Pd-&gt;Extempore case, you’re sending the message to localhost, so if
+Extempore and Pd are running on the same machine then you’ll be golden. If
+you’re on a LAN, you’d need to specify the host &amp; port with something like
+<code>(cons "192.168.11.15" 7011)</code> or whatever.</p>
+
+<p>The one other thing to note about the <code>io:osc:send</code> function is that the first
+argument is a <em>time</em> argument. If you wanted to, e.g. send a message with a
+2-second delay after evaluating that line, you could do something like:</p>
+
+<pre><code class="language-extempore">(io:osc:send (+ (now) (* *second* 2)) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
+</code></pre>
+
+<p>For a deeper dive on how time is handled in Extempore, see the <a href="https://extemporelang.github.io/docs/overview/time/">Extempore
+docs</a>.</p>
+
+<p>Happy OSCing 😊</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:lan">
+
+      <p>even if you’re on a WAN, there are ways to do it—but you might have to
+deal with some packet loss and
+<a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT</a> issues <a href="#fnref:lan" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </article>
 
@@ -146,7 +239,7 @@ list</a>.</p>
   <!-- open source humblebrag -->
   <p>
 	site revision <code>94daff516</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/94daff516/_posts/2016-12-01-blog-refresh.md">source
+	<a href="https://github.com/benswift/benswift.github.io/blob/94daff516/_posts/2020-04-30-two-way-osc-communication-between-extempore-and-pd.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 
