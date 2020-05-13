@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-05-08T08:23:13+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Two-way OSC communication between Extempore and Pd</title><link href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" rel="alternate" type="text/html" title="Two-way OSC communication between Extempore and Pd" /><published>2020-04-30T00:00:00+10:00</published><updated>2020-04-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd</id><content type="html" xml:base="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/">&lt;p&gt;Because &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-05-14T09:41:39+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Two-way OSC communication between Extempore and Pd</title><link href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" rel="alternate" type="text/html" title="Two-way OSC communication between Extempore and Pd" /><published>2020-04-30T00:00:00+10:00</published><updated>2020-04-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd</id><content type="html" xml:base="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/">&lt;p&gt;Because &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; and
 &lt;a href=&quot;https://puredata.info&quot;&gt;Pd&lt;/a&gt; are both multimedia programming environments, they
 both speak &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_Sound_Control&quot;&gt;OSC&lt;/a&gt; straight out
 of the box. If you need to send messages (numbers, strings, other data) from one
-program to the other over the local network&lt;sup id=&quot;fnref:lan&quot;&gt;&lt;a href=&quot;#fn:lan&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; then OSC is a pretty good way
+program to the other over the local network&lt;sup id=&quot;fnref:lan&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:lan&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; then OSC is a pretty good way
 to do it.&lt;/p&gt;
 
 &lt;h2 id=&quot;pd-extempore&quot;&gt;Pd-&amp;gt;Extempore&lt;/h2&gt;
@@ -107,13 +107,13 @@ argument is a &lt;em&gt;time&lt;/em&gt; argument. If you wanted to, e.g. send a 
 docs&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Happy OSCing 😊&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:lan&quot;&gt;
+    &lt;li id=&quot;fn:lan&quot; role=&quot;doc-endnote&quot;&gt;
 
       &lt;p&gt;even if you’re on a WAN, there are ways to do it—but you might have to
 deal with some packet loss and
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Network_address_translation&quot;&gt;NAT&lt;/a&gt; issues &lt;a href=&quot;#fnref:lan&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Network_address_translation&quot;&gt;NAT&lt;/a&gt; issues &lt;a href=&quot;#fnref:lan&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="lens" /><summary type="html">Because Extempore and Pd are both multimedia programming environments, they both speak OSC straight out of the box. If you need to send messages (numbers, strings, other data) from one program to the other over the local network[^lan] then OSC is a pretty good way to do it.</summary></entry><entry><title type="html">A call-up to fight covid19</title><link href="https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19/" rel="alternate" type="text/html" title="A call-up to fight covid19" /><published>2020-04-18T00:00:00+10:00</published><updated>2020-04-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19</id><content type="html" xml:base="https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19/">&lt;p&gt;As with many folks at the moment (both in Canberra and around the world) I’ve
@@ -157,7 +157,7 @@ while in other ways this will be quite challenging (after all, it has &lt;em&gt;
 in the course title). The biggest thing is that the Ensemble is a relatively small (by CS
 course size standards) and engaged bunch of students, and so we can push some of
 the “what will this course look like if we can’t meet physically for the entire
-rest of the semester” question on to them&lt;sup id=&quot;fnref:lazy-pedagogy&quot;&gt;&lt;a href=&quot;#fn:lazy-pedagogy&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+rest of the semester” question on to them&lt;sup id=&quot;fnref:lazy-pedagogy&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:lazy-pedagogy&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you’re not familiar with the Laptop Ensemble course, we use a flipped
 lecture + weekly in-person crit/jam session model. Each week the students watch
@@ -197,12 +197,12 @@ nightclub) will &lt;em&gt;probably&lt;/em&gt; be an online streaming gig&lt;/p&g
 while the world collapses around us (seriously, though, be nice to each other,
 don’t hoard stuff and try and #flattenthecurve).&lt;/p&gt;
 
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:lazy-pedagogy&quot;&gt;
+    &lt;li id=&quot;fn:lazy-pedagogy&quot; role=&quot;doc-endnote&quot;&gt;
 
       &lt;p&gt;the best educators, like the &lt;a href=&quot;http://threevirtues.com&quot;&gt;best programmers&lt;/a&gt;,
-are &lt;a href=&quot;https://blog.optimus-education.com/why-lazy-teachers-are-best&quot;&gt;lazy&lt;/a&gt; &lt;a href=&quot;#fnref:lazy-pedagogy&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+are &lt;a href=&quot;https://blog.optimus-education.com/why-lazy-teachers-are-best&quot;&gt;lazy&lt;/a&gt; &lt;a href=&quot;#fnref:lazy-pedagogy&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="lens" /><category term="teaching" /><summary type="html">Well, as with all ANU courses, we’re taking the Laptop Ensemble (COMP2710/MUSI2205) course online.</summary></entry><entry><title type="html">Reimagine Fellowship UK trip report</title><link href="https://benswift.me/blog/2020/03/11/reimagine-fellowship-uk-trip-report/" rel="alternate" type="text/html" title="Reimagine Fellowship UK trip report" /><published>2020-03-11T00:00:00+11:00</published><updated>2020-03-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/03/11/reimagine-fellowship-uk-trip-report</id><content type="html" xml:base="https://benswift.me/blog/2020/03/11/reimagine-fellowship-uk-trip-report/">&lt;p&gt;I was lucky enough to be able to spend most of February in the UK on a research
@@ -290,7 +290,7 @@ convention on macOS vs Windows/Linux.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;scans the document for any &lt;kbd class=&quot;nopretty&quot;&gt;control&lt;/kbd&gt; elements&lt;/li&gt;
-  &lt;li&gt;if it detects&lt;sup id=&quot;fnref:detection&quot;&gt;&lt;a href=&quot;#fn:detection&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; you’re viewing the site on macOS, changes it to
+  &lt;li&gt;if it detects&lt;sup id=&quot;fnref:detection&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:detection&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; you’re viewing the site on macOS, changes it to
 &lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -320,10 +320,10 @@ any &lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt; element with a &lt;code&gt;nopr
 &lt;p&gt;In case I make any tweaks, you can always find the latest version in my &lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/assets/js/os-aware-modifiers.js&quot;&gt;blog
 source on
 GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:detection&quot;&gt;
-      &lt;p&gt;it’ll work in &lt;em&gt;most&lt;/em&gt; cases; foolproof OS autodetection is really hard &lt;a href=&quot;#fnref:detection&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:detection&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;it’ll work in &lt;em&gt;most&lt;/em&gt; cases; foolproof OS autodetection is really hard &lt;a href=&quot;#fnref:detection&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.</summary></entry><entry><title type="html">ICLC Extempore workshop</title><link href="https://benswift.me/iclc-workshop/" rel="alternate" type="text/html" title="ICLC Extempore workshop" /><published>2020-02-06T00:00:00+11:00</published><updated>2020-02-06T00:00:00+11:00</updated><id>https://benswift.me/iclc-extempore-workshop</id><content type="html" xml:base="https://benswift.me/iclc-workshop/">&lt;p&gt;If you’re here for the &lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;ICLC Extempore
@@ -486,7 +486,7 @@ Karmel&lt;/a&gt; Big Band room (at the ANU School
 of Music).&lt;/p&gt;
 
 &lt;p&gt;Get away from the &lt;a href=&quot;https://www.canberratimes.com.au/story/6600587/namadgi-fire-now-at-2575ha-total-fire-ban-declared/&quot;&gt;fires &amp;amp;
-smoke&lt;/a&gt;&lt;sup id=&quot;fnref:fires&quot;&gt;&lt;a href=&quot;#fn:fires&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
+smoke&lt;/a&gt;&lt;sup id=&quot;fnref:fires&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:fires&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
 and come see an evening of experimental sounds in processed voice, livecoding,
 and neural networks with musicians from the ANU code/creativity/culture studio
 and special guest &lt;a href=&quot;https://www.fisounds.com&quot;&gt;Fiona Sullivan&lt;/a&gt; (USA). There’s a
@@ -543,12 +543,12 @@ fighting with his AI, I’ll be dropping beats in Extempore and Fi will be
 building&lt;/a&gt; is the one next to the “main”
 ANU School of Music building. The Big Band room is off the foyer/atrium, right
 near the main entrance.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:fires&quot;&gt;
+    &lt;li id=&quot;fn:fires&quot; role=&quot;doc-endnote&quot;&gt;
 
       &lt;p&gt;I know that you can’t get away from them; and the loss of flora &amp;amp; fauna is
-heartbreaking, not to mention the human cost. &lt;a href=&quot;#fnref:fires&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+heartbreaking, not to mention the human cost. &lt;a href=&quot;#fnref:fires&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+11:00</published><updated>2020-01-27T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for

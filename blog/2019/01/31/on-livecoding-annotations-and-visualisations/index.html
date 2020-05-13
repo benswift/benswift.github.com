@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"datePublished":"2019-01-31T09:53:00+11:00","headline":"On livecoding annotations and visualisations","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/"},"author":{"@type":"Person","name":"Ben Swift"},"url":"https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/","description":"I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.","@type":"BlogPosting","dateModified":"2019-01-31T09:53:00+11:00","@context":"https://schema.org"}</script>
+{"headline":"On livecoding annotations and visualisations","dateModified":"2019-01-31T09:53:00+11:00","datePublished":"2019-01-31T09:53:00+11:00","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/"},"url":"https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/","description":"I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -109,7 +109,7 @@ bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it’s something Andrew Sorensen and I have written
 about before in our paper <a href="https://doi.org/10.1109/LIVE.2013.6617345">Visual Code Annotations for Cyberphysical
 Programming</a> (2013) in the <em>1st
-International Workshop on Live Programming (LIVE)</em><sup id="fnref:preprint"><a href="#fn:preprint" class="footnote">1</a></sup> (it’s reference
+International Workshop on Live Programming (LIVE)</em><sup id="fnref:preprint" role="doc-noteref"><a href="#fn:preprint" class="footnote">1</a></sup> (it’s reference
 #4 in the essay). I’ll refer to this a bit in this post, so let’s call it “the
 LIVE paper”.</p>
 
@@ -133,7 +133,7 @@ explicitly represented in the first place).</p>
 
 <p><strong>But</strong>, (you can probably tell that there was going to be a “but” somewhere)
 many of the cool annotations displayed don’t work while the code is being
-edited<sup id="fnref:broken"><a href="#fn:broken" class="footnote">2</a></sup>. In some cases they actually break the code (try editing one of
+edited<sup id="fnref:broken" role="doc-noteref"><a href="#fn:broken" class="footnote">2</a></sup>. In some cases they actually break the code (try editing one of
 the <code>'x*ox*xo--x*x*o'</code> patterns while the code’s running—you’ll end up with
 new stuff in your pattern that you didn’t put there).</p>
 
@@ -190,7 +190,7 @@ with your code is super helpful.</p>
 
 <p>In principle visual code annotations can be even more useful to the livecoder
 because they allow her to “audition” algorithmic changes to the code
-without<sup id="fnref:feedback"><a href="#fn:feedback" class="footnote">3</a></sup> actually eval-ing the code and changing the music. Here’s an
+without<sup id="fnref:feedback" role="doc-noteref"><a href="#fn:feedback" class="footnote">3</a></sup> actually eval-ing the code and changing the music. Here’s an
 example from the essay:</p>
 
 <pre><code class="language-js">Euclid(9, 16); /* 1010110101011010 */
@@ -241,33 +241,33 @@ further information in them not covered in this essay. Thank you!</p>
 </blockquote>
 
 <p>Oh well. Mad props to Charlie for putting this out there for comment and
-discussion, and hopefully there are a new generation of publications<sup id="fnref:distill"><a href="#fn:distill" class="footnote">4</a></sup>
+discussion, and hopefully there are a new generation of publications<sup id="fnref:distill" role="doc-noteref"><a href="#fn:distill" class="footnote">4</a></sup>
 where this stuff can be front-and-centre, not just a weird “supplemental web
 materials” section to a traditional pdf.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:preprint">
+    <li id="fn:preprint" role="doc-endnote">
 
       <p>if you don’t have institutional access to the IEEE then just <a href="mailto:ben.swift@anu.edu.au">email
-me</a> and I can send you a pre-print. <a href="#fnref:preprint" class="reversefootnote">&#8617;</a></p>
+me</a> and I can send you a pre-print. <a href="#fnref:preprint" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:broken">
-      <p>Charlie, if I’m doing it wrong, please let me know :) <a href="#fnref:broken" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:broken" role="doc-endnote">
+      <p>Charlie, if I’m doing it wrong, please let me know :) <a href="#fnref:broken" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:feedback">
+    <li id="fn:feedback" role="doc-endnote">
 
       <p>Yes, I know that the real-time feedback of hearing the sound is crucial, and
 I’m not for a second saying that we do away with it, but there are some
 situations where I want to check what the result of an algorithmic/parameter
-change might be without inflicting it on the audience. <a href="#fnref:feedback" class="reversefootnote">&#8617;</a></p>
+change might be without inflicting it on the audience. <a href="#fnref:feedback" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:distill">
+    <li id="fn:distill" role="doc-endnote">
 
       <p><a href="https://distill.pub/">Distill</a> is great, but it’s pretty DL/AI-focussed.
 The livecoding community needs something similar (although it does
 privilege livecoding environments which work in the brower, so that’s not
-ideal either. Hmm.) <a href="#fnref:distill" class="reversefootnote">&#8617;</a></p>
+ideal either. Hmm.) <a href="#fnref:distill" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -320,8 +320,8 @@ ideal either. Hmm.) <a href="#fnref:distill" class="reversefootnote">&#8617;</a
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>f9b619e04</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/f9b619e04/_posts/2019-01-31-on-livecoding-annotations-and-visualisations.md">source
+	site revision <code>2e298f468</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/2e298f468/_posts/2019-01-31-on-livecoding-annotations-and-visualisations.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 

@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"datePublished":"2019-10-16T20:14:00+11:00","headline":"Making Altair/Vega-Lite charts readable without squinting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/"},"author":{"@type":"Person","name":"Ben Swift"},"url":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/","description":"My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).","@type":"BlogPosting","dateModified":"2019-10-16T20:14:00+11:00","@context":"https://schema.org"}</script>
+{"headline":"Making Altair/Vega-Lite charts readable without squinting","dateModified":"2019-10-16T20:14:00+11:00","datePublished":"2019-10-16T20:14:00+11:00","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/"},"url":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/","description":"My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -115,7 +115,7 @@ alt.Chart(source).mark_line().encode(x="x", y="f(x)").save(f"{CHART_DIR}/sin-x.s
 <h2 id="easy-tweaking-of-size-through-chart-themes">Easy tweaking of “size” through chart themes</h2>
 
 <p>Now, that figure might look fairly readable, but when it’s on a slide the text,
-labels &amp; even lines are quite small<sup id="fnref:examples"><a href="#fn:examples" class="footnote">1</a></sup>. I don’t need <a href="https://github.com/vega/vega-lite/issues/1714">fine-grained
+labels &amp; even lines are quite small<sup id="fnref:examples" role="doc-noteref"><a href="#fn:examples" class="footnote">1</a></sup>. I don’t need <a href="https://github.com/vega/vega-lite/issues/1714">fine-grained
 control</a> over the relative sizes
 of labels vs legend vs title, etc. I just want a simple knob for making all the
 text bigger so that my slides don’t double as an <a href="https://en.wikipedia.org/wiki/Eye_chart">eye
@@ -153,14 +153,14 @@ theme</a>,
 but otherwise you can just do it with a call to the <code>.properties()</code> method as
 shown.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:examples">
+    <li id="fn:examples" role="doc-endnote">
 
       <p>To be honest, these simple examples from the example gallery don’t really
 help me make my point, they’re still pretty readable. But when the charts
 get more complicated &amp; have more data marks then things get smaller &amp; more
-zoomed out, and the problem gets much worse. <a href="#fnref:examples" class="reversefootnote">&#8617;</a></p>
+zoomed out, and the problem gets much worse. <a href="#fnref:examples" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -213,8 +213,8 @@ zoomed out, and the problem gets much worse. <a href="#fnref:examples" class="r
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>f9b619e04</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/f9b619e04/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md">source
+	site revision <code>2e298f468</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/2e298f468/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 
