@@ -6,6 +6,11 @@ GIT
     jekyll-paginate-v2 (2.0.0)
       jekyll (>= 3.6, < 5.0)
 
+PATH
+  remote: ../jekyll/jekyll-academicons-svg
+  specs:
+    jekyll-academicons-svg (0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -107,6 +112,7 @@ DEPENDENCIES
   bibtex-ruby (~> 5)
   html-proofer (~> 3)
   jekyll (~> 4)
+  jekyll-academicons-svg (~> 0.2)!
   jekyll-autoprefixer (~> 1)
   jekyll-compose
   jekyll-feed (~> 0)
