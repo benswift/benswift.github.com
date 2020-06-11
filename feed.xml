@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-06-02T10:38:23+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Two-way OSC communication between Extempore and Pd</title><link href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" rel="alternate" type="text/html" title="Two-way OSC communication between Extempore and Pd" /><published>2020-04-30T00:00:00+10:00</published><updated>2020-04-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd</id><content type="html" xml:base="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/">&lt;p&gt;Because &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-06-11T20:21:20+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LENS 2020 final gig stream tomorrow at 8pm</title><link href="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/" rel="alternate" type="text/html" title="LENS 2020 final gig stream tomorrow at 8pm" /><published>2020-06-11T00:00:00+10:00</published><updated>2020-06-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm</id><content type="html" xml:base="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/lens2020-final-gig-poster.jpg&quot; alt=&quot;LENS S1 2020 final gig poster&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re stuck at home this Friday night (or if you’ve got a good mobile data
+package) then you should tune in to see the final gig from the &lt;em&gt;LENS: ANU Laptop
+Ensemble&lt;/em&gt; S1 2020 cohort.&lt;/p&gt;
+
+&lt;p&gt;Gig details are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;date&lt;/strong&gt;: Friday June 12&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;time&lt;/strong&gt;: 8pm–10pm AEST&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;location&lt;/strong&gt;: live on the &lt;a href=&quot;https://www.youtube.com/channel/UCIU6SqIS02GJlnLOPqlwmpA&quot;&gt;LENS YouTube channel &lt;svg class=&quot;icon&quot;&gt;&lt;use xlink:href=&quot;#fab.fa-youtube&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Even if you miss the live event, you can still watch the video anytime. Like and subscribe!&lt;/p&gt;
+
+&lt;p&gt;There’s also a &lt;a href=&quot;https://www.facebook.com/events/2563515850576414&quot;&gt;Facebook
+event&lt;/a&gt; if you’re into that
+sort of thing.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="ccc" /><category term="lens" /><category term="gigs" /><summary type="html"></summary></entry><entry><title type="html">Two-way OSC communication between Extempore and Pd</title><link href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" rel="alternate" type="text/html" title="Two-way OSC communication between Extempore and Pd" /><published>2020-04-30T00:00:00+10:00</published><updated>2020-04-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd</id><content type="html" xml:base="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/">&lt;p&gt;Because &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; and
 &lt;a href=&quot;https://puredata.info&quot;&gt;Pd&lt;/a&gt; are both multimedia programming environments, they
 both speak &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_Sound_Control&quot;&gt;OSC&lt;/a&gt; straight out
 of the box. If you need to send messages (numbers, strings, other data) from one
@@ -551,46 +569,4 @@ near the main entrance.&lt;/p&gt;
 heartbreaking, not to mention the human cost. &lt;a href=&quot;#fnref:fires&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">Euclidean rhythms in Extempore</title><link href="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/" rel="alternate" type="text/html" title="Euclidean rhythms in Extempore" /><published>2020-01-27T00:00:00+11:00</published><updated>2020-01-27T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore</id><content type="html" xml:base="https://benswift.me/blog/2020/01/27/euclidean-rhythms-in-extempore/">&lt;p&gt;As part of the new Extempore pattern language stuff I added a helper for
-generating &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_rhythm&quot;&gt;euclidean rhythms&lt;/a&gt;.
-I wrote it (in a recursive style) in Scheme using the algorithm described in
-&lt;a href=&quot;http://cgm.cs.mcgill.ca/~godfried/publications/banff-extended.pdf&quot;&gt;Godfried
-Toussaint’s&lt;/a&gt;
-paper (although it’s credited to &lt;em&gt;Bjorklund&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;As well as the obvious musical possibilities, one of the things I noticed when I
-was playing around that if one loops through euclidean rhythms of increasing
-“density” the &lt;em&gt;visual representation&lt;/em&gt; exhibits some cool patterns as well.
-Here’s an example of the 17 different rhythms of length 16 (from 0 to 16
-inclusive). We can print out the patterns using this loop (using &lt;code&gt;'X&lt;/code&gt; for the
-“hit” marker so that it looks more prominent in a log view).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(dotimes (i 17)
-  (println (euclid i 16 'X)))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What gets printed to the log is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;(_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _)
-(X _ _ _ _ _ _ _ _ _ _ _ _ _ _ _)
-(X _ _ _ _ _ _ _ X _ _ _ _ _ _ _)
-(X _ _ _ _ _ X _ _ _ _ X _ _ _ _)
-(X _ _ _ X _ _ _ X _ _ _ X _ _ _)
-(X _ _ _ X _ _ X _ _ X _ _ X _ _)
-(X _ _ X _ X _ _ X _ _ X _ X _ _)
-(X _ _ X _ X _ X _ X _ _ X _ X _)
-(X _ X _ X _ X _ X _ X _ X _ X _)
-(X _ X X _ X _ X _ X _ X X _ X _)
-(X _ X X _ X _ X X _ X X _ X _ X)
-(X _ X X X _ X X _ X X _ X X _ X)
-(X _ X X X _ X X X _ X X X _ X X)
-(X _ X X X X X _ X X X X _ X X X)
-(X _ X X X X X X X _ X X X X X X)
-(X _ X X X X X X X X X X X X X X)
-(X X X X X X X X X X X X X X X X)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Look, there’s probably some super-cool mathematical explanation for why this
-looks like that. Stephen Wolfram, if you’re reading, drop me a line and tell me
-what it is. But I just thought it looked cool—I’m sure there are generative
-art possibilities here as well (they may have already been explored).&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><summary type="html">As part of the new Extempore pattern language stuff I added a helper for generating euclidean rhythms. I wrote it (in a recursive style) in Scheme using the algorithm described in Godfried Toussaint’s paper (although it’s credited to Bjorklund).</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry></feed>
