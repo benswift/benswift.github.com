@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-15T15:22:51+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-15T17:01:01+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
 been organising &lt;a href=&quot;https://acmc2020.com/&quot;&gt;ACMC2020&lt;/a&gt;: the &lt;em&gt;2020 Australasian Computer
 Music Conference&lt;/em&gt;. From the conference landing page:&lt;/p&gt;
 
@@ -12,24 +12,15 @@ are engaged in community music making, or who simply work outside of academia
 and mainstream institutions.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Well, the conference is now all done for 2020. It’s been a lot of hard work, but
-the ACMC community are &lt;em&gt;amazing&lt;/em&gt;, so it’s been pretty fun as well. A special
-shout out to the rest of the ACMC &lt;a href=&quot;https://acmc2020.com/#Organisers&quot;&gt;organising
+&lt;p&gt;Well, the conference is now all done for 2020 (although the videos are still
+freely available online; check out our
+&lt;a href=&quot;https://www.youtube.com/watch?v=v6muRCIp3Kg&amp;amp;list=PL4_Bp-PE5_5sgaN4pIzrz0KGBn0RXramC&quot;&gt;keynotes&lt;/a&gt;).
+It’s been a lot of hard work, but the ACMC community are &lt;em&gt;amazing&lt;/em&gt;, so it’s been
+pretty fun as well. A special shout out to the rest of the ACMC &lt;a href=&quot;https://acmc2020.com/#Organisers&quot;&gt;organising
 committee&lt;/a&gt; (Charles, Nat, Sia, Kit &amp;amp; Alec) for
 all their hard work—thanks team :) So even though I’m writing this blog post,
 these decisions &amp;amp; reflections are really the result of our combined labour, as
 well as feedback from the ACMC community during the conference.&lt;/p&gt;
-
-&lt;h2 id=&quot;tools-for-running-an-online-conference-in-2020&quot;&gt;Tools for running an online conference in 2020&lt;/h2&gt;
-
-&lt;p&gt;This post isn’t about the success (or otherwise) of ACMC2020 as an inclusive,
-affirming computer music conference. That post is in the works, but this isn’t
-it.&lt;/p&gt;
-
-&lt;p&gt;Instead, this post is a list of all the tools that we chose to use to put it all
-together, and the rationale behind those decisions. There are lots of people all
-around the world organising virtual conferences right now, so hopefully writing
-down our experiences is helpful.&lt;/p&gt;
 
 &lt;div id=&quot;toc&quot;&gt;
 
@@ -48,6 +39,52 @@ down our experiences is helpful.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
+
+&lt;h2 id=&quot;tools-for-running-an-online-conference-in-2020&quot;&gt;Tools for running an online conference in 2020&lt;/h2&gt;
+
+&lt;p&gt;This post isn’t about the success (or otherwise) of ACMC2020 as an inclusive,
+affirming computer music conference. I care about that a lot—and that post is
+in the works, but this isn’t it.&lt;/p&gt;
+
+&lt;p&gt;Instead, this post is a list of all the tools that we chose to use to put it all
+together, and the rationale behind those decisions. There are lots of people all
+around the world organising virtual conferences right now, so hopefully writing
+down our experiences is helpful.&lt;/p&gt;
+
+&lt;p&gt;As the hosts of a virtual ACMC, our priorities were:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;to minimise the risk technical difficulties, “live” activities were limited
+to those where they add value; for example all talks were pre-recorded &amp;amp;
+watched on YouTube to avoid the technical issues which come with live
+screen-shared zoom presentations&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;use synchronous communication modes for discussion and q&amp;amp;a, but with
+persistence: leave participants the option of returning to a discussion later
+(or for leaving a question for a presenter in a different timezone, to be
+answered at a friendlier time for them)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;where possible, use low-cost (because the ACMC doesn’t have a huge budget)
+and open-source tools (so that the things we learn can be built upon by
+others)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;automate all the things; it probably goes without saying if you know me or
+read my blog, but manual work makes me sad and continuous integration
+pipelines make me happy ☺&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;tl;dr&lt;/strong&gt; we used &lt;a href=&quot;https://easychair.org/&quot;&gt;EasyChair&lt;/a&gt; for submissions &amp;amp; peer
+review, a &lt;a href=&quot;https://github.com/australasian-computer-music-association/acmc2020&quot;&gt;customised
+version&lt;/a&gt;
+for the website, &lt;a href=&quot;https://support.google.com/youtube/answer/9080341?hl=en&quot;&gt;YouTube
+premiere&lt;/a&gt; for all
+submissions, and &lt;a href=&quot;https://discord.com/&quot;&gt;Discord&lt;/a&gt; for text/voice discussion and
+q&amp;amp;a (but read on for much detail &amp;amp; reflection on why we chose those things)&lt;/p&gt;
 
 &lt;h3 id=&quot;website&quot;&gt;Conference website&lt;/h3&gt;
 
@@ -239,7 +276,7 @@ conference as well)&lt;/p&gt;
 &lt;p&gt;YouTube is great for 1-many one-way broadcasting, but not so great for two-way
 communication, and especially not many-many interaction &amp;amp; discussion. For
 discussion, ACMC2020 went all in on text-based chat using
-&lt;a href=&quot;https://discord.com/new&quot;&gt;Discord&lt;/a&gt; (we created our own ACMC2020 Discord server
+&lt;a href=&quot;https://discord.com/&quot;&gt;Discord&lt;/a&gt; (we created our own ACMC2020 Discord server
 and sent an invite link to all conference participants).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/posts/acmc-discord-screenshot.png&quot; alt=&quot;ACMC Discord channel screenshot&quot; /&gt;&lt;/p&gt;

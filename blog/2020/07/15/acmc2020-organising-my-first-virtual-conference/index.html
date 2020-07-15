@@ -89,24 +89,15 @@ are engaged in community music making, or who simply work outside of academia
 and mainstream institutions.</p>
 </blockquote>
 
-<p>Well, the conference is now all done for 2020. It’s been a lot of hard work, but
-the ACMC community are <em>amazing</em>, so it’s been pretty fun as well. A special
-shout out to the rest of the ACMC <a href="https://acmc2020.com/#Organisers">organising
+<p>Well, the conference is now all done for 2020 (although the videos are still
+freely available online; check out our
+<a href="https://www.youtube.com/watch?v=v6muRCIp3Kg&amp;list=PL4_Bp-PE5_5sgaN4pIzrz0KGBn0RXramC">keynotes</a>).
+It’s been a lot of hard work, but the ACMC community are <em>amazing</em>, so it’s been
+pretty fun as well. A special shout out to the rest of the ACMC <a href="https://acmc2020.com/#Organisers">organising
 committee</a> (Charles, Nat, Sia, Kit &amp; Alec) for
 all their hard work—thanks team :) So even though I’m writing this blog post,
 these decisions &amp; reflections are really the result of our combined labour, as
 well as feedback from the ACMC community during the conference.</p>
-
-<h2 id="tools-for-running-an-online-conference-in-2020">Tools for running an online conference in 2020</h2>
-
-<p>This post isn’t about the success (or otherwise) of ACMC2020 as an inclusive,
-affirming computer music conference. That post is in the works, but this isn’t
-it.</p>
-
-<p>Instead, this post is a list of all the tools that we chose to use to put it all
-together, and the rationale behind those decisions. There are lots of people all
-around the world organising virtual conferences right now, so hopefully writing
-down our experiences is helpful.</p>
 
 <div id="toc">
 
@@ -125,6 +116,52 @@ down our experiences is helpful.</p>
 </ul>
 
 </div>
+
+<h2 id="tools-for-running-an-online-conference-in-2020">Tools for running an online conference in 2020</h2>
+
+<p>This post isn’t about the success (or otherwise) of ACMC2020 as an inclusive,
+affirming computer music conference. I care about that a lot—and that post is
+in the works, but this isn’t it.</p>
+
+<p>Instead, this post is a list of all the tools that we chose to use to put it all
+together, and the rationale behind those decisions. There are lots of people all
+around the world organising virtual conferences right now, so hopefully writing
+down our experiences is helpful.</p>
+
+<p>As the hosts of a virtual ACMC, our priorities were:</p>
+
+<ol>
+  <li>
+    <p>to minimise the risk technical difficulties, “live” activities were limited
+to those where they add value; for example all talks were pre-recorded &amp;
+watched on YouTube to avoid the technical issues which come with live
+screen-shared zoom presentations</p>
+  </li>
+  <li>
+    <p>use synchronous communication modes for discussion and q&amp;a, but with
+persistence: leave participants the option of returning to a discussion later
+(or for leaving a question for a presenter in a different timezone, to be
+answered at a friendlier time for them)</p>
+  </li>
+  <li>
+    <p>where possible, use low-cost (because the ACMC doesn’t have a huge budget)
+and open-source tools (so that the things we learn can be built upon by
+others)</p>
+  </li>
+  <li>
+    <p>automate all the things; it probably goes without saying if you know me or
+read my blog, but manual work makes me sad and continuous integration
+pipelines make me happy ☺</p>
+  </li>
+</ol>
+
+<p class="hl-para"><strong>tl;dr</strong> we used <a href="https://easychair.org/">EasyChair</a> for submissions &amp; peer
+review, a <a href="https://github.com/australasian-computer-music-association/acmc2020">customised
+version</a>
+for the website, <a href="https://support.google.com/youtube/answer/9080341?hl=en">YouTube
+premiere</a> for all
+submissions, and <a href="https://discord.com/">Discord</a> for text/voice discussion and
+q&amp;a (but read on for much detail &amp; reflection on why we chose those things)</p>
 
 <h3 id="website">Conference website</h3>
 
@@ -316,7 +353,7 @@ conference as well)</p>
 <p>YouTube is great for 1-many one-way broadcasting, but not so great for two-way
 communication, and especially not many-many interaction &amp; discussion. For
 discussion, ACMC2020 went all in on text-based chat using
-<a href="https://discord.com/new">Discord</a> (we created our own ACMC2020 Discord server
+<a href="https://discord.com/">Discord</a> (we created our own ACMC2020 Discord server
 and sent an invite link to all conference participants).</p>
 
 <p><img src="/assets/images/posts/acmc-discord-screenshot.png" alt="ACMC Discord channel screenshot" /></p>
@@ -440,8 +477,8 @@ as much time to get right as the rest of the website stuff combined 😞 <a hre
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>55840e43e</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/55840e43e/_posts/2020-07-15-acmc2020-organising-my-first-virtual-conference.md">source
+	site revision <code>9290913f8</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/9290913f8/_posts/2020-07-15-acmc2020-organising-my-first-virtual-conference.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 
