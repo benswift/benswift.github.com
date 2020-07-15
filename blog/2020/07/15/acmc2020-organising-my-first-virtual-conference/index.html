@@ -188,17 +188,17 @@ well.</p>
 <ul>
   <li>
     <p>in the end I think it looked really great (and we received some <a href="https://twitter.com/benswift/status/1280746825637453824">nice
-feedback</a>) but it was
-<a href="https://github.com/australasian-computer-music-association/acmc2020/pulse">a fair bit of
+feedback</a> from the
+creators of the template) but it was <a href="https://github.com/australasian-computer-music-association/acmc2020/pulse">a lot of
 work</a>
-requiring a fair amount of web development experience to get it to that point
-(Charles Martin helped me a lot with this)</p>
+requiring a non-trivial amount of web development experience to get it to that
+point (Charles Martin helped a lot with this)</p>
   </li>
   <li>
     <p>a static site which is automatically populated based on data in a CSV or YAML
-file is a good option for a conference like this—it means as long as
-whatever system you’re using to organise &amp; schedule the accepted papers can
-output a <code>.csv</code> file you can probably make it work with this website template</p>
+file is a good option—it means as long as whatever system you’re using to
+organise &amp; schedule the accepted papers can output a <code>.csv</code> file you can
+probably make it work with this website template</p>
   </li>
   <li>
     <p>if I had my time again, I’m undecided as to whether I’d use the same
@@ -211,10 +211,10 @@ has a more mature docs/ecosystem for static site building)</p>
 <h3 id="easychair">Submissions &amp; peer review</h3>
 
 <p>We used <a href="https://easychair.org/">EasyChair</a> for conference submissions,
-partially because the size of this conference meant that we were able to sneak
-in under the limits for their free tier. While the reviewing &amp; final decisions
-were done through EasyChair, at the end of that process we exported all the
-accepted submissions as a big <code>.csv</code> file (which we imported into Google
+partially because the small-ish size of the conference meant that we were able
+to sneak in under the limits for their free tier. While the reviewing &amp; final
+decisions were done through EasyChair, at the end of that process we exported
+all the accepted submissions as a big <code>.csv</code> file (which we imported into Google
 Docs—see below).</p>
 
 <h4 id="reflections-1">Reflections</h4>
@@ -225,7 +225,7 @@ Docs—see below).</p>
 majority of the audience for this conference are familiar with the whole “call
 for papers -&gt; peer review -&gt; notification -&gt; conference attendance” thing,
 however there were certainly people for whom this process was unfamiliar and a
-bit daunting</p>
+bit daunting (so we need to provide more guidance for those folks next time)</p>
   </li>
   <li>
     <p>EasyChair sucks, but the others (<a href="https://new.precisionconference.com/">Precision
@@ -233,13 +233,7 @@ Conference</a>,
 <a href="https://cmt3.research.microsoft.com/">CMT</a>) suck too, so I wouldn’t strongly
 push people one way on the other on this part of the process—as long as your
 choice allows you to export all accepted submissions &amp; their metadata in some
-sort of machine-readable format (e.g. CSV, YAML) then just use whatever you
-like</p>
-  </li>
-  <li>
-    <p>as a bonus, it allowed me to make a <a href="https://twitter.com/benswift/status/1280373973843247104">snarky
-tweet</a> (which is
-<em>always</em> a win)</p>
+sort of machine-readable format (e.g. CSV, YAML)</p>
   </li>
 </ul>
 
@@ -247,13 +241,14 @@ tweet</a> (which is
 
 <p>EasyChair worked fine for distributing the submissions for peer review &amp;
 selecting the ones we wanted in the conference. It doesn’t really have a nice
-story for how to organise those submissions into a coherent conference program.
-To do this, we used a shared Google Docs spreadsheet. Starting with a CSV
-export, the ACMC committee added information about which presentations should go
-in which sessions and in which order. Finally, to get this data into the
-<a href="#website">conference website</a> we needed to manually “Download as <code>.csv</code>”, then
-copy the file into the <code>sitedata</code> folder ready to be picked up by the next build
-of the conference website.</p>
+story for how to organise those submissions into a coherent conference program.</p>
+
+<p>To do this, we used a shared Google Docs spreadsheet. Starting with the CSV
+export from EasyChair, the ACMC committee added columns about which
+presentations should go in which sessions and in which order. To get this data
+into the <a href="#website">conference website</a> we needed to manually “Download as
+<code>.csv</code>”, then copy the file into the <code>sitedata</code> folder ready to be picked up by
+the next build of the conference website.</p>
 
 <h4 id="reflections-2">Reflections</h4>
 
@@ -267,13 +262,13 @@ colleague <a href="https://twitter.com/stevemblackburn">Steve Blackburn</a> has 
 blogpost in the works about this)</p>
   </li>
   <li>
-    <p>this step required the most manual work, which was certainly a hassle in the
-early stages of the scheduling process when things are changing a lot, however
-the convenience of being able to collaboratively work on the spreadsheet was a
-net win</p>
+    <p>this step required the most manual work (in particular the manual “Download as
+<code>.csv</code>” step) which was certainly a hassle in the early stages of the
+scheduling process when things are changing a lot, however the convenience &amp;
+familiarity of a spreadsheet was a net win</p>
   </li>
   <li>
-    <p>the <a href="#website">website infrastructure</a> has a place for writing python scripts,
+    <p>the <a href="#website">website infrastructure</a> has a place for putting python scripts,
 and <a href="https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py">we used this a
 lot</a>
 to run consistency checks &amp; other helpful analyses (because checking stuff
@@ -350,11 +345,14 @@ conference as well)</p>
 
 <h3 id="discord">Q&amp;A and discussion</h3>
 
-<p>YouTube is great for one-way one-to-many broadcasting, but not so great for
-two-way communication, and especially not many-to-many interaction &amp; discussion.
-Instead, ACMC2020 went all in on text-based chat using
-<a href="https://discord.com/">Discord</a> (we created our own ACMC2020 Discord server and
-sent an invite link to all conference participants).</p>
+<p>ACMC2020 went all in on text-based chat using <a href="https://discord.com/">Discord</a>
+(we created our own ACMC2020 Discord server and sent an invite link to all
+conference participants). YouTube is great for one-way one-to-many broadcasting,
+but not so great for two-way communication, and especially not many-to-many
+interaction &amp; discussion. And having all the discussion for the whole conference
+(with the ability to <code>@mention</code> participants across sessions) in one place
+helped with the feeling that this was a single event, rather than just a series
+of disconnected YouTube videos.</p>
 
 <p><img src="/assets/images/posts/acmc-discord-screenshot.png" alt="ACMC Discord channel screenshot" /></p>
 
@@ -477,8 +475,8 @@ as much time to get right as the rest of the website stuff combined 😞 <a hre
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>5294d3a83</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/5294d3a83/_posts/2020-07-15-acmc2020-organising-my-first-virtual-conference.md">source
+	site revision <code>1fbf6de09</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/1fbf6de09/_posts/2020-07-15-acmc2020-organising-my-first-virtual-conference.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 

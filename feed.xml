@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-15T21:59:27+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-16T09:04:25+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
 been organising &lt;a href=&quot;https://acmc2020.com/&quot;&gt;ACMC2020&lt;/a&gt;: the &lt;em&gt;2020 Australasian Computer
 Music Conference&lt;/em&gt;. From the conference landing page:&lt;/p&gt;
 
@@ -111,17 +111,17 @@ well.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;in the end I think it looked really great (and we received some &lt;a href=&quot;https://twitter.com/benswift/status/1280746825637453824&quot;&gt;nice
-feedback&lt;/a&gt;) but it was
-&lt;a href=&quot;https://github.com/australasian-computer-music-association/acmc2020/pulse&quot;&gt;a fair bit of
+feedback&lt;/a&gt; from the
+creators of the template) but it was &lt;a href=&quot;https://github.com/australasian-computer-music-association/acmc2020/pulse&quot;&gt;a lot of
 work&lt;/a&gt;
-requiring a fair amount of web development experience to get it to that point
-(Charles Martin helped me a lot with this)&lt;/p&gt;
+requiring a non-trivial amount of web development experience to get it to that
+point (Charles Martin helped a lot with this)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;a static site which is automatically populated based on data in a CSV or YAML
-file is a good option for a conference like this—it means as long as
-whatever system you’re using to organise &amp;amp; schedule the accepted papers can
-output a &lt;code&gt;.csv&lt;/code&gt; file you can probably make it work with this website template&lt;/p&gt;
+file is a good option—it means as long as whatever system you’re using to
+organise &amp;amp; schedule the accepted papers can output a &lt;code&gt;.csv&lt;/code&gt; file you can
+probably make it work with this website template&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;if I had my time again, I’m undecided as to whether I’d use the same
@@ -134,10 +134,10 @@ has a more mature docs/ecosystem for static site building)&lt;/p&gt;
 &lt;h3 id=&quot;easychair&quot;&gt;Submissions &amp;amp; peer review&lt;/h3&gt;
 
 &lt;p&gt;We used &lt;a href=&quot;https://easychair.org/&quot;&gt;EasyChair&lt;/a&gt; for conference submissions,
-partially because the size of this conference meant that we were able to sneak
-in under the limits for their free tier. While the reviewing &amp;amp; final decisions
-were done through EasyChair, at the end of that process we exported all the
-accepted submissions as a big &lt;code&gt;.csv&lt;/code&gt; file (which we imported into Google
+partially because the small-ish size of the conference meant that we were able
+to sneak in under the limits for their free tier. While the reviewing &amp;amp; final
+decisions were done through EasyChair, at the end of that process we exported
+all the accepted submissions as a big &lt;code&gt;.csv&lt;/code&gt; file (which we imported into Google
 Docs—see below).&lt;/p&gt;
 
 &lt;h4 id=&quot;reflections-1&quot;&gt;Reflections&lt;/h4&gt;
@@ -148,7 +148,7 @@ Docs—see below).&lt;/p&gt;
 majority of the audience for this conference are familiar with the whole “call
 for papers -&amp;gt; peer review -&amp;gt; notification -&amp;gt; conference attendance” thing,
 however there were certainly people for whom this process was unfamiliar and a
-bit daunting&lt;/p&gt;
+bit daunting (so we need to provide more guidance for those folks next time)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;EasyChair sucks, but the others (&lt;a href=&quot;https://new.precisionconference.com/&quot;&gt;Precision
@@ -156,13 +156,7 @@ Conference&lt;/a&gt;,
 &lt;a href=&quot;https://cmt3.research.microsoft.com/&quot;&gt;CMT&lt;/a&gt;) suck too, so I wouldn’t strongly
 push people one way on the other on this part of the process—as long as your
 choice allows you to export all accepted submissions &amp;amp; their metadata in some
-sort of machine-readable format (e.g. CSV, YAML) then just use whatever you
-like&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;as a bonus, it allowed me to make a &lt;a href=&quot;https://twitter.com/benswift/status/1280373973843247104&quot;&gt;snarky
-tweet&lt;/a&gt; (which is
-&lt;em&gt;always&lt;/em&gt; a win)&lt;/p&gt;
+sort of machine-readable format (e.g. CSV, YAML)&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -170,13 +164,14 @@ tweet&lt;/a&gt; (which is
 
 &lt;p&gt;EasyChair worked fine for distributing the submissions for peer review &amp;amp;
 selecting the ones we wanted in the conference. It doesn’t really have a nice
-story for how to organise those submissions into a coherent conference program.
-To do this, we used a shared Google Docs spreadsheet. Starting with a CSV
-export, the ACMC committee added information about which presentations should go
-in which sessions and in which order. Finally, to get this data into the
-&lt;a href=&quot;#website&quot;&gt;conference website&lt;/a&gt; we needed to manually “Download as &lt;code&gt;.csv&lt;/code&gt;”, then
-copy the file into the &lt;code&gt;sitedata&lt;/code&gt; folder ready to be picked up by the next build
-of the conference website.&lt;/p&gt;
+story for how to organise those submissions into a coherent conference program.&lt;/p&gt;
+
+&lt;p&gt;To do this, we used a shared Google Docs spreadsheet. Starting with the CSV
+export from EasyChair, the ACMC committee added columns about which
+presentations should go in which sessions and in which order. To get this data
+into the &lt;a href=&quot;#website&quot;&gt;conference website&lt;/a&gt; we needed to manually “Download as
+&lt;code&gt;.csv&lt;/code&gt;”, then copy the file into the &lt;code&gt;sitedata&lt;/code&gt; folder ready to be picked up by
+the next build of the conference website.&lt;/p&gt;
 
 &lt;h4 id=&quot;reflections-2&quot;&gt;Reflections&lt;/h4&gt;
 
@@ -190,13 +185,13 @@ colleague &lt;a href=&quot;https://twitter.com/stevemblackburn&quot;&gt;Steve Bl
 blogpost in the works about this)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;this step required the most manual work, which was certainly a hassle in the
-early stages of the scheduling process when things are changing a lot, however
-the convenience of being able to collaboratively work on the spreadsheet was a
-net win&lt;/p&gt;
+    &lt;p&gt;this step required the most manual work (in particular the manual “Download as
+&lt;code&gt;.csv&lt;/code&gt;” step) which was certainly a hassle in the early stages of the
+scheduling process when things are changing a lot, however the convenience &amp;amp;
+familiarity of a spreadsheet was a net win&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;the &lt;a href=&quot;#website&quot;&gt;website infrastructure&lt;/a&gt; has a place for writing python scripts,
+    &lt;p&gt;the &lt;a href=&quot;#website&quot;&gt;website infrastructure&lt;/a&gt; has a place for putting python scripts,
 and &lt;a href=&quot;https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py&quot;&gt;we used this a
 lot&lt;/a&gt;
 to run consistency checks &amp;amp; other helpful analyses (because checking stuff
@@ -273,11 +268,14 @@ conference as well)&lt;/p&gt;
 
 &lt;h3 id=&quot;discord&quot;&gt;Q&amp;amp;A and discussion&lt;/h3&gt;
 
-&lt;p&gt;YouTube is great for one-way one-to-many broadcasting, but not so great for
-two-way communication, and especially not many-to-many interaction &amp;amp; discussion.
-Instead, ACMC2020 went all in on text-based chat using
-&lt;a href=&quot;https://discord.com/&quot;&gt;Discord&lt;/a&gt; (we created our own ACMC2020 Discord server and
-sent an invite link to all conference participants).&lt;/p&gt;
+&lt;p&gt;ACMC2020 went all in on text-based chat using &lt;a href=&quot;https://discord.com/&quot;&gt;Discord&lt;/a&gt;
+(we created our own ACMC2020 Discord server and sent an invite link to all
+conference participants). YouTube is great for one-way one-to-many broadcasting,
+but not so great for two-way communication, and especially not many-to-many
+interaction &amp;amp; discussion. And having all the discussion for the whole conference
+(with the ability to &lt;code&gt;@mention&lt;/code&gt; participants across sessions) in one place
+helped with the feeling that this was a single event, rather than just a series
+of disconnected YouTube videos.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/posts/acmc-discord-screenshot.png&quot; alt=&quot;ACMC Discord channel screenshot&quot; /&gt;&lt;/p&gt;
 
