@@ -1,4 +1,317 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-13T14:46:21+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LENS 2020 final gig stream tomorrow at 8pm</title><link href="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/" rel="alternate" type="text/html" title="LENS 2020 final gig stream tomorrow at 8pm" /><published>2020-06-11T00:00:00+10:00</published><updated>2020-06-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm</id><content type="html" xml:base="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/lens2020-final-gig-poster.jpg&quot; alt=&quot;LENS S1 2020 final gig poster&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-15T15:18:52+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC2020: organising my first virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: organising my first virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
+been organising &lt;a href=&quot;https://acmc2020.com/&quot;&gt;ACMC2020&lt;/a&gt;: the &lt;em&gt;2020 Australasian Computer
+Music Conference&lt;/em&gt;. From the conference landing page:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This year’s conference theme is &lt;strong&gt;inclusion&lt;/strong&gt;. We want to highlight the
+diverse range of people who contribute to Australia’s computer/electronic
+music culture but may not normally attend an academic conference, including
+artists and scholars who are young/emerging, from regional/remote areas, who
+have a disability, who are First Nations People, who have low/no income, who
+are engaged in community music making, or who simply work outside of academia
+and mainstream institutions.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, the conference is now all done for 2020. It’s been a lot of hard work, but
+the ACMC community are &lt;em&gt;amazing&lt;/em&gt;, so it’s been pretty fun as well. A special
+shout out to the rest of the ACMC &lt;a href=&quot;https://acmc2020.com/#Organisers&quot;&gt;organising
+committee&lt;/a&gt; (Charles, Nat, Sia, Kit &amp;amp; Alec) for
+all their hard work—thanks team :) So even though I’m writing this blog post,
+these decisions &amp;amp; reflections are really the result of our combined labour, as
+well as feedback from the ACMC community during the conference.&lt;/p&gt;
+
+&lt;h2 id=&quot;tools-for-running-an-online-conference-in-2020&quot;&gt;Tools for running an online conference in 2020&lt;/h2&gt;
+
+&lt;p&gt;This post isn’t about the success (or otherwise) of ACMC2020 as an inclusive,
+affirming computer music conference. That post is in the works, but this isn’t
+it.&lt;/p&gt;
+
+&lt;p&gt;Instead, this post is a list of all the tools that we chose to use to put it all
+together, and the rationale behind those decisions. There are lots of people all
+around the world organising virtual conferences right now, so hopefully writing
+down our experiences is helpful.&lt;/p&gt;
+
+&lt;div id=&quot;toc&quot;&gt;
+
+  &lt;h2&gt;table of contents&lt;/h2&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#tools-for-running-an-online-conference-in-2020&quot; id=&quot;markdown-toc-tools-for-running-an-online-conference-in-2020&quot;&gt;Tools for running an online conference in 2020&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#website&quot; id=&quot;markdown-toc-website&quot;&gt;Conference website&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#easychair&quot; id=&quot;markdown-toc-easychair&quot;&gt;Submissions &amp;amp; peer review&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#google-docs&quot; id=&quot;markdown-toc-google-docs&quot;&gt;Scheduling/programming the sessions&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#youtube&quot; id=&quot;markdown-toc-youtube&quot;&gt;Video presentations&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#discord&quot; id=&quot;markdown-toc-discord&quot;&gt;Q&amp;amp;A and discussion&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#going-to-the-pub-after-the-session&quot; id=&quot;markdown-toc-going-to-the-pub-after-the-session&quot;&gt;Going to the pub after the session&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;website&quot;&gt;Conference website&lt;/h3&gt;
+
+&lt;p&gt;Initially we threw up simple &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; site (hosted using
+GitHub Pages) with the basic conference info &amp;amp; Call for Papers. This was
+super-easy and did the job through the initial phase of advertising the
+conference and drumming up submissions.&lt;/p&gt;
+
+&lt;p&gt;Around the time we were finalising the accepted papers &amp;amp; conference schedule,
+the ICLR team &lt;a href=&quot;https://news.ycombinator.com/item?id=23282113&quot;&gt;posted on HN&lt;/a&gt; that
+the tooling for their &lt;a href=&quot;https://iclr.cc/virtual_2020/index.html&quot;&gt;virtual
+conference&lt;/a&gt; was newly &lt;a href=&quot;https://github.com/Mini-Conf/Mini-Conf&quot;&gt;available on
+GitHub&lt;/a&gt;. We decided to use it as a
+starting point for building the ACMC2020 conference website.&lt;/p&gt;
+
+&lt;p&gt;The final version of the ACMC site is still live (and will remain so for a while
+at least) at &lt;a href=&quot;https://acmc2020.com/&quot;&gt;https://acmc2020.com/&lt;/a&gt;, and the &lt;a href=&quot;https://github.com/australasian-computer-music-association/acmc2020&quot;&gt;source is up on
+GitHub&lt;/a&gt; as
+well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/acmc-website-words-sounds-screenshot.png&quot; alt=&quot;ACMC website screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;reflections&quot;&gt;Reflections&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;in the end I think it looked really great (and we received some &lt;a href=&quot;https://twitter.com/benswift/status/1280746825637453824&quot;&gt;nice
+feedback&lt;/a&gt;) but it was
+&lt;a href=&quot;https://github.com/australasian-computer-music-association/acmc2020/pulse&quot;&gt;a fair bit of
+work&lt;/a&gt;
+requiring a fair amount of web development experience to get it to that point
+(a big shoutout to Charles Martin who was a big help with this)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a static site which is automatically populated based on data in a CSV or YAML
+file is a good option for a conference like this—it means as long as
+whatever system you’re using to organise &amp;amp; schedule the accepted papers can
+output a &lt;code&gt;.csv&lt;/code&gt; file you can probably make it work with this website template&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if I had my time again, I’m undecided as to whether I’d use the same
+&lt;a href=&quot;https://github.com/Mini-Conf/Mini-Conf&quot;&gt;Mini-Conf&lt;/a&gt; template as a starting
+point, or just write a new Jekyll plugin which adds similar features (and just
+has more mature docs/ecosystem for static site building)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;easychair&quot;&gt;Submissions &amp;amp; peer review&lt;/h3&gt;
+
+&lt;p&gt;We used &lt;a href=&quot;https://easychair.org/&quot;&gt;EasyChair&lt;/a&gt; for conference submissions,
+partially because the size of this conference meant that we were able to sneak
+in under the limits for their free tier. While the reviewing &amp;amp; final decisions
+were done through EasyChair, at the end of that process we exported all the
+accepted submissions as a big &lt;code&gt;.csv&lt;/code&gt; file (which we imported into Google Docs—see
+below).&lt;/p&gt;
+
+&lt;h4 id=&quot;reflections-1&quot;&gt;Reflections&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;since the &lt;a href=&quot;http://computermusic.org.au/&quot;&gt;ACMA&lt;/a&gt; has its roots in academia, the
+majority of the audience for this conference are familiar with the whole “call
+for papers -&amp;gt; peer review -&amp;gt; notification -&amp;gt; conference attendance” thing,
+however there were certainly people for whom this process was unfamiliar and a
+bit daunting&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;EasyChair sucks, but the others (Precision Conference, CMT) suck too, so I
+wouldn’t strongly push people one way on the other on this part of the
+process—as long as your choice allows you to export all accepted submissions
+&amp;amp; their metadata in some sort of machine-readable format (e.g. CSV, YAML) then
+just use whatever you like&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;as a bonus, it allowed me to make a &lt;a href=&quot;https://twitter.com/benswift/status/1280373973843247104&quot;&gt;snarky
+tweet&lt;/a&gt; (which is
+&lt;em&gt;always&lt;/em&gt; a win)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;google-docs&quot;&gt;Scheduling/programming the sessions&lt;/h3&gt;
+
+&lt;p&gt;EasyChair worked fine for distributing the submissions for peer review &amp;amp;
+selecting the ones we wanted in the conference. It doesn’t really have a story
+for how to organise those submissions into a coherent conference program. To do
+this, we used a shared Google Docs spreadsheet. Starting with a CSV export, the
+ACMC committee added information about which presentations should go in which
+sessions and in which order. Finally, to get this data into the &lt;a href=&quot;#website&quot;&gt;conference
+website&lt;/a&gt; we needed to manually “Download as &lt;code&gt;.csv&lt;/code&gt;”, then copy the
+file into the &lt;code&gt;sitedata&lt;/code&gt; folder ready to be picked up by the next build of the
+conference website.&lt;/p&gt;
+
+&lt;h4 id=&quot;reflections-2&quot;&gt;Reflections&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ACMA is lucky that &lt;em&gt;most&lt;/em&gt; of our community&lt;sup id=&quot;fnref:chronodiversity&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:chronodiversity&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; is based in Australia across a
+relatively small range of timezones—if you’re running an international
+conference then you need to think about the chronodiversity of your
+participants when you’re scheduling your conference sessions (my colleague
+&lt;a href=&quot;https://twitter.com/stevemblackburn&quot;&gt;Steve Blackburn&lt;/a&gt; has a blogpost in the
+works about this)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;this step required the most manual work, which was certainly a hassle in the
+early stages of the scheduling process when things are changing a lot, however
+the convenience of being able to collaboratively work on the spreadsheet was a
+net win&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;a href=&quot;#website&quot;&gt;website infrastructure&lt;/a&gt; has a place for writing python scripts,
+and &lt;a href=&quot;https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py&quot;&gt;we
+used&lt;/a&gt;
+to run consistency checks &amp;amp; other helpful analyses (because checking stuff
+with scripts is way more fun than checking it by eye, and &lt;em&gt;probably&lt;/em&gt; a
+time-saver…)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;youtube&quot;&gt;Video presentations&lt;/h3&gt;
+
+&lt;p&gt;All the AV content for the conference was streamed to “attendees” on YouTube.
+ACMC isn’t a traditional academic conference—there are audiovisual computer
+music performances alongside more traditional paper presentations—but we put
+everything on YouTube nonetheless.&lt;/p&gt;
+
+&lt;p&gt;A couple of the performances were livestreamed, but for the majority of the
+conferenc program participants were asked to submit a video representing their
+performance or paper presentation. Then, an &lt;a href=&quot;https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py&quot;&gt;elaborate series of ffmpeg
+scripts&lt;/a&gt;&lt;sup id=&quot;fnref:ffmpeg&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:ffmpeg&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;
+concatenated the videos to produce a single video per session, with consistent
+“titlecards” announcing the authors &amp;amp; title of each new video in the session.&lt;/p&gt;
+
+&lt;p&gt;Each session video was uploaded to YouTube, and scheduled for “simultaneous
+viewing” at the scheduled time using the &lt;a href=&quot;https://support.google.com/youtube/answer/9080341?hl=en&quot;&gt;YouTube
+Premiere&lt;/a&gt; feature.
+After the Premiere, the videos were (still are) left up on the &lt;a href=&quot;https://www.youtube.com/channel/UCKK95K68yVuok-qWNS4Z6Jw&quot;&gt;ACMC
+YouTube&lt;/a&gt; for people to
+catch up &amp;amp; watch at their leisure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/acmc-youtube-screenshot.png&quot; alt=&quot;ACMC YouTube channel screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;reflections-3&quot;&gt;Reflections&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;outsourcing the video delivery to YouTube (who, regardless of what you think
+of their business model, are &lt;strong&gt;really good&lt;/strong&gt; at delivering video) saved
+so much stress, and the ability to upload &amp;amp; schedule the video ahead of time
+but still watch it all-together allows for synchronous discussion and q&amp;amp;a
+amongst attendees&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;when the premiere is done, you don’t have to “put the videos online for those
+who missed them”; they’re already there (which is &lt;em&gt;so much easier&lt;/em&gt; than having
+to make talk recordings, edit them together, and then upload them somewhere)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;YouTube’s analytics are also really good, if you’re into that sort of thing,
+and you even get stuff like half-decent automatic subtitling and other
+accessibility wins&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;it’s hard to know what sort of viewership counts as “successful”, but the ACMC
+conference videos (in total) are currently at 2.2k views and ~500h watch time&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;in terms of wranging the videos pre-upload, &lt;a href=&quot;https://ffmpeg.org/&quot;&gt;&lt;code&gt;ffmpeg&lt;/code&gt;&lt;/a&gt; is
+&lt;em&gt;amazing&lt;/em&gt; for dealing with all the weird audio/video formats that presenters
+will send you, however until you grok that each &lt;code&gt;ffmpeg&lt;/code&gt; run is actually
+setting up a graph of audio &amp;amp; video sinks, sources &amp;amp; filters you’re doomed to
+copy-paste stuff from StackOverflow and then stare in bewilderment at cryptic
+error messages (trust me… I learned this the hard way 😢)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;not all presenters&lt;sup id=&quot;fnref:acmc-presenters&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:acmc-presenters&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; at an academic conference have the skills
+(or the inclination) to create an engaging video of their work, so depending
+on your community you might see the occasional “monotone drone over text
+slides” presentation (but you’d get bad presentations at an in-person
+conference as well)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;discord&quot;&gt;Q&amp;amp;A and discussion&lt;/h3&gt;
+
+&lt;p&gt;YouTube is great for 1-many one-way broadcasting, but not so great for two-way
+communication, and especially not many-many interaction &amp;amp; discussion. For
+discussion, ACMC2020 went all in on text-based chat using
+&lt;a href=&quot;https://discord.com/new&quot;&gt;Discord&lt;/a&gt; (we created our own ACMC2020 Discord server
+and sent an invite link to all conference participants).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/acmc-discord-screenshot.png&quot; alt=&quot;ACMC Discord channel screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;reflections-4&quot;&gt;Reflections&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;live video chat can be great for situations where everyone already knows
+everyone else, but video (and even audio) can be a bit intimidating for
+newcomers to a community, and we wanted to make the q&amp;amp;a as inclusive as
+possible&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;we considered Zoom, but it’s really a video platform—as a text chat platform
+it’s really bad (no persistent discussions, no ability to mention other
+participants, no emoji/reaction gifs, etc.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;within the ACMC2020 Discord server, we created a separate “channel” for each
+conference session, where the live discussion would happen (all presenters
+would hang out in that channel during the session), but this also allowed for
+persistent session-specific questions to be asked and returned to later with
+more thoughtful answers (or to get around timezone differences)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; would have probably worked similarly well to
+Discord, but we liked the fact that Discord makes it easy to jump into an
+“audio” chat—this was particularly useful for the keynote q&amp;amp;a sessions where
+the session chair could collate the questions from the text chat, but the
+speaker could respond using audio rather than having to type out their answers&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;going-to-the-pub-after-the-session&quot;&gt;Going to the pub after the session&lt;/h3&gt;
+
+&lt;p&gt;Sadly, the ACMC committee never found out a good way of recreating this part of
+the usual conference experience at an online conference. Some folks who were
+geographically co-located did get together and watch some of the streams
+together, but the recent &lt;a href=&quot;https://www.abc.net.au/news/2020-07-07/metropolitan-melbourne-suburbs-back-in-coronavirus-lockdown/12431564&quot;&gt;Melbourne covid19
+lockdown&lt;/a&gt;
+meant that some people couldn’t even do that.&lt;/p&gt;
+
+&lt;h4 id=&quot;reflections-5&quot;&gt;Reflections&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;some aspects of the online conference that I prefer, the ACMC community still
+needs to have some way of getting together in person to solidify the
+relationships which developed over the course of ACMC2020&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:weeks&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;well, it’s actually pretty common that I’m quiet for a few weeks, so I
+guess it’s business as usual &lt;a href=&quot;#fnref:weeks&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:chronodiversity&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;actually, we did have some overseas participants, and the async nature of
+the &lt;a href=&quot;#discord&quot;&gt;Discord chat&lt;/a&gt; meant that people could mention them in their
+questions in the text chat, and they could log in at a later time to provide
+answers—this worked really well on a few occasions &lt;a href=&quot;#fnref:chronodiversity&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:ffmpeg&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;while this worked really nicely in the end, those scripts probably took me
+as much time to get right as the rest of the website stuff combined 😞 &lt;a href=&quot;#fnref:ffmpeg&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:acmc-presenters&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;actually, all the ACMC presenters were great this year ☺ &lt;a href=&quot;#fnref:acmc-presenters&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I’ve been a bit quiet on this blog for the last few weeks[^weeks] because I’ve been organising ACMC2020: the 2020 Australasian Computer Music Conference. From the conference landing page:</summary></entry><entry><title type="html">LENS 2020 final gig stream tomorrow at 8pm</title><link href="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/" rel="alternate" type="text/html" title="LENS 2020 final gig stream tomorrow at 8pm" /><published>2020-06-11T00:00:00+10:00</published><updated>2020-06-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm</id><content type="html" xml:base="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/lens2020-final-gig-poster.jpg&quot; alt=&quot;LENS S1 2020 final gig poster&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you’re stuck at home this Friday night (or if you’ve got a good mobile data
 package) then you should tune in to see the final gig from the &lt;em&gt;LENS: ANU Laptop
@@ -454,45 +767,7 @@ email&lt;/a&gt;.&lt;/p&gt;
 (July 8–11) in your diary and stay tuned for when we release the program. We’re
 also going to be running a bunch of workshops in the days before &amp;amp; after the
 conference, so this could be your chance to start making music with computers
-like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Extempore workshop @ ICLC ‘20, Feb 6, Limerick IE</title><link href="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/" rel="alternate" type="text/html" title="Extempore workshop @ ICLC '20, Feb 6, Limerick IE" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie/">&lt;p&gt;If you’re coming to the upcoming &lt;a href=&quot;http://iclc.toplap.org/2020/&quot;&gt;International Conference on Live
-Coding&lt;/a&gt; (ICLC ‘20) in Limerick,
-Ireland, then it’s not too late to sign up for my workshop &lt;strong&gt;Introduction to
-music-making in Extempore&lt;/strong&gt;. Even if you’re not coming to the rest of the
-conference, you can still sign up for the workshop.&lt;/p&gt;
-
-&lt;picture&gt;
-  &lt;img alt=&quot;Harrison &amp;amp; Fi making mad beats with Extempore&quot; src=&quot;/assets/images/posts/extempore-iclc-workshop-promo.jpg&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;This workshop will provide a hands-on introduction to making music in the live
-coding programming environment &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;.
-The workshop will cover:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;the fundamentals of making sound (starting from “hello sine”)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;an overview of Extempore’s audio signal chain (especially the built-in and
-highly configurable modular synth)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;introduction to note-level live coding with the Extempore pattern language&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;No Extempore or previous live coding experience necessary (although experienced
-practitioners are welcome as well). Just bring a laptop with macOS, Windows or
-Ubuntu installed and we’ll start from scratch. All the required software is
-freely-available, and a binary release of Extempore will be provided (for
-Windows/macOS) so those users won’t need to build Extempore from scratch&lt;/p&gt;
-
-&lt;p&gt;Registration is through
-&lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;Eventbrite&lt;/a&gt;,
-and if you’ve got any questions &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;send me an email&lt;/a&gt;
-or &lt;a href=&quot;https://twitter.com/benswift&quot;&gt;ping me on twitter&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;p.s. shout-out to Harrison &amp;amp; Fi for posing for the workshop promo photo&lt;/em&gt; 📸&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecoding" /><summary type="html">If you’re coming to the upcoming International Conference on Live Coding (ICLC ‘20) in Limerick, Ireland, then it’s not too late to sign up for my workshop Introduction to music-making in Extempore. Even if you’re not coming to the rest of the conference, you can still sign up for the workshop.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
+like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
   &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
 &lt;/picture&gt;
 
