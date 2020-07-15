@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-15T15:20:01+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-15T15:22:51+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
 been organising &lt;a href=&quot;https://acmc2020.com/&quot;&gt;ACMC2020&lt;/a&gt;: the &lt;em&gt;2020 Australasian Computer
 Music Conference&lt;/em&gt;. From the conference landing page:&lt;/p&gt;
 
@@ -115,11 +115,13 @@ however there were certainly people for whom this process was unfamiliar and a
 bit daunting&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;EasyChair sucks, but the others (Precision Conference, CMT) suck too, so I
-wouldn’t strongly push people one way on the other on this part of the
-process—as long as your choice allows you to export all accepted submissions
-&amp;amp; their metadata in some sort of machine-readable format (e.g. CSV, YAML) then
-just use whatever you like&lt;/p&gt;
+    &lt;p&gt;EasyChair sucks, but the others (&lt;a href=&quot;https://new.precisionconference.com/&quot;&gt;Precision
+Conference&lt;/a&gt;,
+&lt;a href=&quot;https://cmt3.research.microsoft.com/&quot;&gt;CMT&lt;/a&gt;) suck too, so I wouldn’t strongly
+push people one way on the other on this part of the process—as long as your
+choice allows you to export all accepted submissions &amp;amp; their metadata in some
+sort of machine-readable format (e.g. CSV, YAML) then just use whatever you
+like&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;as a bonus, it allowed me to make a &lt;a href=&quot;https://twitter.com/benswift/status/1280373973843247104&quot;&gt;snarky
