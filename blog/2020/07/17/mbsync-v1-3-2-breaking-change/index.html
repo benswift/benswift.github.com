@@ -157,21 +157,21 @@ looks like this:</p>
 care about that stuff, and you (maybe?) should too. Anyway, here’s the relevant
 elisp to put in your Emacs init file.</p>
 
-<pre><code class="language-elisp">(defun mu4e-pretty-mbsync-process-filter (proc msg)
-(ignore-errors
-  (with-current-buffer (process-buffer proc)
-    (let ((inhibit-read-only t))
-      (delete-region (point-min) (point-max))
-      (insert (car (reverse (split-string msg "\r"))))
-      (when (re-search-backward "\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)")
-        (add-face-text-property
-         (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
-        (add-face-text-property
-         (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
-        (add-face-text-property
-         (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
-        (add-face-text-property
-         (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
+<pre><code class="language-scheme">(defun mu4e-pretty-mbsync-process-filter (proc msg)
+  (ignore-errors
+    (with-current-buffer (process-buffer proc)
+      (let ((inhibit-read-only t))
+        (delete-region (point-min) (point-max))
+        (insert (car (reverse (split-string msg "\r"))))
+        (when (re-search-backward "\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)")
+          (add-face-text-property
+           (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
+          (add-face-text-property
+           (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
+          (add-face-text-property
+           (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
+          (add-face-text-property
+           (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
 
 (advice-add
  'mu4e~get-mail-process-filter
@@ -226,8 +226,8 @@ elisp to put in your Emacs init file.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>2f431ab81</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/2f431ab81/_posts/2020-07-17-mbsync-v1-3-2-breaking-change.md">source
+	site revision <code>856df066d</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/856df066d/_posts/2020-07-17-mbsync-v1-3-2-breaking-change.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-17T14:17:17+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">mbsync v1.3.2 breaking change: `SubFolders` config required</title><link href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/" rel="alternate" type="text/html" title="mbsync v1.3.2 breaking change: `SubFolders` config required" /><published>2020-07-17T00:00:00+10:00</published><updated>2020-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change</id><content type="html" xml:base="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/">&lt;p&gt;As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-17T14:19:04+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">mbsync v1.3.2 breaking change: `SubFolders` config required</title><link href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/" rel="alternate" type="text/html" title="mbsync v1.3.2 breaking change: `SubFolders` config required" /><published>2020-07-17T00:00:00+10:00</published><updated>2020-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change</id><content type="html" xml:base="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/">&lt;p&gt;As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied
 user of the &lt;a href=&quot;https://www.djcbsoftware.nl/code/mu/&quot;&gt;mu&lt;/a&gt; email client. I even
 &lt;a href=&quot;https://github.com/djcb/mu/pull/1725&quot;&gt;wrote the latest CI infrastructure setup&lt;/a&gt;
 for the project as a way to give back to Dirk-Jan and the rest of the awesome mu
@@ -76,21 +76,21 @@ looks like this:&lt;/p&gt;
 care about that stuff, and you (maybe?) should too. Anyway, here’s the relevant
 elisp to put in your Emacs init file.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-elisp&quot;&gt;(defun mu4e-pretty-mbsync-process-filter (proc msg)
-(ignore-errors
-  (with-current-buffer (process-buffer proc)
-    (let ((inhibit-read-only t))
-      (delete-region (point-min) (point-max))
-      (insert (car (reverse (split-string msg &quot;\r&quot;))))
-      (when (re-search-backward &quot;\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)&quot;)
-        (add-face-text-property
-         (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
-        (add-face-text-property
-         (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
-        (add-face-text-property
-         (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
-        (add-face-text-property
-         (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
+&lt;pre&gt;&lt;code class=&quot;language-scheme&quot;&gt;(defun mu4e-pretty-mbsync-process-filter (proc msg)
+  (ignore-errors
+    (with-current-buffer (process-buffer proc)
+      (let ((inhibit-read-only t))
+        (delete-region (point-min) (point-max))
+        (insert (car (reverse (split-string msg &quot;\r&quot;))))
+        (when (re-search-backward &quot;\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)&quot;)
+          (add-face-text-property
+           (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
+          (add-face-text-property
+           (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
+          (add-face-text-property
+           (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
+          (add-face-text-property
+           (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
 
 (advice-add
  'mu4e~get-mail-process-filter
