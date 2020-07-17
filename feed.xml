@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-17T14:15:34+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">mbsync v1.3.2 breaking change: `SubFolders` config required</title><link href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/" rel="alternate" type="text/html" title="mbsync v1.3.2 breaking change: `SubFolders` config required" /><published>2020-07-17T00:00:00+10:00</published><updated>2020-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change</id><content type="html" xml:base="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/">&lt;p&gt;As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-17T14:17:17+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">mbsync v1.3.2 breaking change: `SubFolders` config required</title><link href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/" rel="alternate" type="text/html" title="mbsync v1.3.2 breaking change: `SubFolders` config required" /><published>2020-07-17T00:00:00+10:00</published><updated>2020-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change</id><content type="html" xml:base="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/">&lt;p&gt;As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied
 user of the &lt;a href=&quot;https://www.djcbsoftware.nl/code/mu/&quot;&gt;mu&lt;/a&gt; email client. I even
 &lt;a href=&quot;https://github.com/djcb/mu/pull/1725&quot;&gt;wrote the latest CI infrastructure setup&lt;/a&gt;
 for the project as a way to give back to Dirk-Jan and the rest of the awesome mu
@@ -14,7 +14,7 @@ to see how I set it all up.&lt;/p&gt;
 &lt;p&gt;Everything was working swimmingly, until a recent patch version update to mbsync
 (1.3.1 -&amp;gt; 1.3.2) broke things. All of a sudden, I started getting errors like:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Maildir error: found subfolder 'INBOX/Sent Items', but store 'fastmail-local' does not specify SubFolders style
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;Maildir error: found subfolder 'INBOX/Sent Items', but store 'fastmail-local' does not specify SubFolders style
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;There was no mention of a breaking change relating to &lt;code&gt;SubFolders&lt;/code&gt; style in the
@@ -69,7 +69,7 @@ following elisp snippet handy. It does some cool tricks with the
 &lt;code&gt;mu4e~get-mail-process-filter&lt;/code&gt; so that the “in-progress” output from mu, which
 looks like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;C: 1/1  B: 0/0  M: +0/0 *0/0 #0/0  S: +0/0 *0/0 #0/0
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;C: 1/1  B: 0/0  M: +0/0 *0/0 #0/0  S: +0/0 *0/0 #0/0
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;gets pretty colours in your &lt;code&gt;*mu4e-update*&lt;/code&gt; buffer. It’s purely cosmetic, but I
