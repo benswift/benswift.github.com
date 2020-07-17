@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-17T14:02:27+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">mbsync v1.3.2 breaks Maildir for fastmail</title><link href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail/" rel="alternate" type="text/html" title="mbsync v1.3.2 breaks Maildir for fastmail" /><published>2020-07-17T00:00:00+10:00</published><updated>2020-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail</id><content type="html" xml:base="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail/">&lt;p&gt;As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-17T14:15:34+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">mbsync v1.3.2 breaking change: `SubFolders` config required</title><link href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/" rel="alternate" type="text/html" title="mbsync v1.3.2 breaking change: `SubFolders` config required" /><published>2020-07-17T00:00:00+10:00</published><updated>2020-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change</id><content type="html" xml:base="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/">&lt;p&gt;As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied
 user of the &lt;a href=&quot;https://www.djcbsoftware.nl/code/mu/&quot;&gt;mu&lt;/a&gt; email client. I even
 &lt;a href=&quot;https://github.com/djcb/mu/pull/1725&quot;&gt;wrote the latest CI infrastructure setup&lt;/a&gt;
 for the project as a way to give back to Dirk-Jan and the rest of the awesome mu
@@ -7,9 +7,9 @@ team.&lt;/p&gt;
 &lt;p&gt;Anyway, mu doesn’t care how you get your email onto your machine (i.e. into your
 &lt;code&gt;~/Maildir&lt;/code&gt;), and so for that task I use
 &lt;a href=&quot;http://isync.sourceforge.net/mbsync.html&quot;&gt;isync/mbsync&lt;/a&gt; to download my mail
-(via IMAP) from &lt;a href=&quot;https://www.fastmail.com/&quot;&gt;fastmail&lt;/a&gt;. My fastmail &lt;a href=&quot;https://github.com/benswift/.dotfiles/blob/master/mbsyncrc&quot;&gt;config
-is&lt;/a&gt; if you want to
-see how I set it all up.&lt;/p&gt;
+(via IMAP) from &lt;a href=&quot;https://www.fastmail.com/&quot;&gt;fastmail&lt;/a&gt;. My fastmail &lt;a href=&quot;https://github.com/benswift/.dotfiles/blob/master/mbsyncrc&quot;&gt;config is
+online&lt;/a&gt; if you want
+to see how I set it all up.&lt;/p&gt;
 
 &lt;p&gt;Everything was working swimmingly, until a recent patch version update to mbsync
 (1.3.1 -&amp;gt; 1.3.2) broke things. All of a sudden, I started getting errors like:&lt;/p&gt;
@@ -54,7 +54,48 @@ mbsync’s historical style)&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;By setting &lt;code&gt;SubFolders Verbatim&lt;/code&gt; in my &lt;code&gt;.mbsyncrc&lt;/code&gt; things started working again.
-Hooray!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="emacs" /><summary type="html">As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team.</summary></entry><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
+Hooray!&lt;/p&gt;
+
+&lt;p&gt;Of course, it might be the case that this was all documented somewhere, or that
+I’m just &lt;a href=&quot;https://knowyourmeme.com/memes/youre-doing-it-wrong&quot;&gt;doing it wrong&lt;/a&gt;.
+But I hope that this is helpful for anyone who runs into the same issue, because
+having your email break is &lt;em&gt;super&lt;/em&gt; frustrating; email is such a crucial part of
+my (and everyone’s) job, so it just needs to work.&lt;/p&gt;
+
+&lt;h3 id=&quot;bonus-pretty-mu4e-mbsync-filter&quot;&gt;Bonus: pretty mu4e mbsync filter&lt;/h3&gt;
+
+&lt;p&gt;If you are using the same mu &amp;amp; mbsync combo for email, then you might find the
+following elisp snippet handy. It does some cool tricks with the
+&lt;code&gt;mu4e~get-mail-process-filter&lt;/code&gt; so that the “in-progress” output from mu, which
+looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;C: 1/1  B: 0/0  M: +0/0 *0/0 #0/0  S: +0/0 *0/0 #0/0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;gets pretty colours in your &lt;code&gt;*mu4e-update*&lt;/code&gt; buffer. It’s purely cosmetic, but I
+care about that stuff, and you (maybe?) should too. Anyway, here’s the relevant
+elisp to put in your Emacs init file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-elisp&quot;&gt;(defun mu4e-pretty-mbsync-process-filter (proc msg)
+(ignore-errors
+  (with-current-buffer (process-buffer proc)
+    (let ((inhibit-read-only t))
+      (delete-region (point-min) (point-max))
+      (insert (car (reverse (split-string msg &quot;\r&quot;))))
+      (when (re-search-backward &quot;\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)&quot;)
+        (add-face-text-property
+         (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
+        (add-face-text-property
+         (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
+        (add-face-text-property
+         (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
+        (add-face-text-property
+         (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
+
+(advice-add
+ 'mu4e~get-mail-process-filter
+ :override #'mu4e-pretty-mbsync-process-filter)
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="emacs" /><summary type="html">As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team.</summary></entry><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
 been organising &lt;a href=&quot;https://acmc2020.com/&quot;&gt;ACMC2020&lt;/a&gt;: the &lt;em&gt;2020 Australasian Computer
 Music Conference&lt;/em&gt;. From the conference landing page:&lt;/p&gt;
 

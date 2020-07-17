@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>mbsync v1.3.2 breaks Maildir for fastmail | benswift.me</title>
+<title>mbsync v1.3.2 breaking change: SubFolders config required | benswift.me</title>
 <meta name="generator" content="Jekyll v4.1.0" />
-<meta property="og:title" content="mbsync v1.3.2 breaks Maildir for fastmail" />
+<meta property="og:title" content="mbsync v1.3.2 breaking change: SubFolders config required" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team." />
 <meta property="og:description" content="As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team." />
-<link rel="canonical" href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail/" />
-<meta property="og:url" content="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail/" />
+<link rel="canonical" href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/" />
+<meta property="og:url" content="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-17T00:00:00+10:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="mbsync v1.3.2 breaks Maildir for fastmail" />
+<meta property="twitter:title" content="mbsync v1.3.2 breaking change: SubFolders config required" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"mbsync v1.3.2 breaks Maildir for fastmail","dateModified":"2020-07-17T00:00:00+10:00","datePublished":"2020-07-17T00:00:00+10:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail/"},"author":{"@type":"Person","name":"Ben Swift"},"url":"https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail/","description":"As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"mbsync v1.3.2 breaking change: SubFolders config required","dateModified":"2020-07-17T00:00:00+10:00","datePublished":"2020-07-17T00:00:00+10:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/"},"author":{"@type":"Person","name":"Ben Swift"},"url":"https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/","description":"As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -64,7 +64,7 @@
 	  <main aria-label="Content">
 		<article>
   <p class="post-date">17 Jul '20</p>
-  <h1>mbsync v1.3.2 breaks Maildir for fastmail</h1>
+  <h1>mbsync v1.3.2 breaking change: `SubFolders` config required</h1>
   
 <p class="post-tag-container">
   
@@ -88,9 +88,9 @@ team.</p>
 <p>Anyway, mu doesn’t care how you get your email onto your machine (i.e. into your
 <code>~/Maildir</code>), and so for that task I use
 <a href="http://isync.sourceforge.net/mbsync.html">isync/mbsync</a> to download my mail
-(via IMAP) from <a href="https://www.fastmail.com/">fastmail</a>. My fastmail <a href="https://github.com/benswift/.dotfiles/blob/master/mbsyncrc">config
-is</a> if you want to
-see how I set it all up.</p>
+(via IMAP) from <a href="https://www.fastmail.com/">fastmail</a>. My fastmail <a href="https://github.com/benswift/.dotfiles/blob/master/mbsyncrc">config is
+online</a> if you want
+to see how I set it all up.</p>
 
 <p>Everything was working swimmingly, until a recent patch version update to mbsync
 (1.3.1 -&gt; 1.3.2) broke things. All of a sudden, I started getting errors like:</p>
@@ -136,6 +136,47 @@ mbsync’s historical style)</p>
 
 <p>By setting <code>SubFolders Verbatim</code> in my <code>.mbsyncrc</code> things started working again.
 Hooray!</p>
+
+<p>Of course, it might be the case that this was all documented somewhere, or that
+I’m just <a href="https://knowyourmeme.com/memes/youre-doing-it-wrong">doing it wrong</a>.
+But I hope that this is helpful for anyone who runs into the same issue, because
+having your email break is <em>super</em> frustrating; email is such a crucial part of
+my (and everyone’s) job, so it just needs to work.</p>
+
+<h3 id="bonus-pretty-mu4e-mbsync-filter">Bonus: pretty mu4e mbsync filter</h3>
+
+<p>If you are using the same mu &amp; mbsync combo for email, then you might find the
+following elisp snippet handy. It does some cool tricks with the
+<code>mu4e~get-mail-process-filter</code> so that the “in-progress” output from mu, which
+looks like this:</p>
+
+<pre><code>C: 1/1  B: 0/0  M: +0/0 *0/0 #0/0  S: +0/0 *0/0 #0/0
+</code></pre>
+
+<p>gets pretty colours in your <code>*mu4e-update*</code> buffer. It’s purely cosmetic, but I
+care about that stuff, and you (maybe?) should too. Anyway, here’s the relevant
+elisp to put in your Emacs init file.</p>
+
+<pre><code class="language-elisp">(defun mu4e-pretty-mbsync-process-filter (proc msg)
+(ignore-errors
+  (with-current-buffer (process-buffer proc)
+    (let ((inhibit-read-only t))
+      (delete-region (point-min) (point-max))
+      (insert (car (reverse (split-string msg "\r"))))
+      (when (re-search-backward "\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)")
+        (add-face-text-property
+         (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
+        (add-face-text-property
+         (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
+        (add-face-text-property
+         (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
+        (add-face-text-property
+         (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
+
+(advice-add
+ 'mu4e~get-mail-process-filter
+ :override #'mu4e-pretty-mbsync-process-filter)
+</code></pre>
 
 </article>
 
@@ -185,8 +226,8 @@ Hooray!</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>b5bd71ae0</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/b5bd71ae0/_posts/2020-07-17-mbsync-v1-3-2-breaks-maildir-for-fastmail.md">source
+	site revision <code>485bf4f00</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/485bf4f00/_posts/2020-07-17-mbsync-v1-3-2-breaking-change.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 
