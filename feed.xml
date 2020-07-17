@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-16T09:04:25+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-07-17T14:02:27+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">mbsync v1.3.2 breaks Maildir for fastmail</title><link href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail/" rel="alternate" type="text/html" title="mbsync v1.3.2 breaks Maildir for fastmail" /><published>2020-07-17T00:00:00+10:00</published><updated>2020-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail</id><content type="html" xml:base="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaks-maildir-for-fastmail/">&lt;p&gt;As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied
+user of the &lt;a href=&quot;https://www.djcbsoftware.nl/code/mu/&quot;&gt;mu&lt;/a&gt; email client. I even
+&lt;a href=&quot;https://github.com/djcb/mu/pull/1725&quot;&gt;wrote the latest CI infrastructure setup&lt;/a&gt;
+for the project as a way to give back to Dirk-Jan and the rest of the awesome mu
+team.&lt;/p&gt;
+
+&lt;p&gt;Anyway, mu doesn’t care how you get your email onto your machine (i.e. into your
+&lt;code&gt;~/Maildir&lt;/code&gt;), and so for that task I use
+&lt;a href=&quot;http://isync.sourceforge.net/mbsync.html&quot;&gt;isync/mbsync&lt;/a&gt; to download my mail
+(via IMAP) from &lt;a href=&quot;https://www.fastmail.com/&quot;&gt;fastmail&lt;/a&gt;. My fastmail &lt;a href=&quot;https://github.com/benswift/.dotfiles/blob/master/mbsyncrc&quot;&gt;config
+is&lt;/a&gt; if you want to
+see how I set it all up.&lt;/p&gt;
+
+&lt;p&gt;Everything was working swimmingly, until a recent patch version update to mbsync
+(1.3.1 -&amp;gt; 1.3.2) broke things. All of a sudden, I started getting errors like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Maildir error: found subfolder 'INBOX/Sent Items', but store 'fastmail-local' does not specify SubFolders style
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There was no mention of a breaking change relating to &lt;code&gt;SubFolders&lt;/code&gt; style in the
+&lt;a href=&quot;https://sourceforge.net/projects/isync/files/isync/1.3.2/&quot;&gt;v1.3.2 release
+notes&lt;/a&gt;, but a look at
+the manual with &lt;code&gt;man mbsync&lt;/code&gt; revealed this info:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;SubFolders&lt;/strong&gt; &lt;code&gt;Verbatim|Maildir++|Legacy&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;The on-disk folder naming style used for hierarchical mailboxes. This option
+has no effect when &lt;code&gt;Flatten&lt;/code&gt; is used. Suppose mailboxes with the canonical
+paths &lt;code&gt;top/sub/subsub&lt;/code&gt; and &lt;code&gt;INBOX/sub/subsub&lt;/code&gt;, the styles will yield the
+following on-disk paths:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;em&gt;Verbatim&lt;/em&gt; - &lt;code&gt;Path/top/sub/subsub&lt;/code&gt; and &lt;code&gt;Inbox/sub/subsub&lt;/code&gt; (this is the style
+you probably want to use)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;em&gt;Maildir++&lt;/em&gt; - &lt;code&gt;Inbox/.top.sub.subsub&lt;/code&gt; and &lt;code&gt;Inbox/..sub.subsub&lt;/code&gt; (this style
+is compatible with Courier and Dovecot - but note that the mailbox metadata
+format is not compatible). Note that attempts to set Path are rejected in
+this mode.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;em&gt;Legacy&lt;/em&gt; - &lt;code&gt;Path/top/.sub/.subsub&lt;/code&gt; and &lt;code&gt;Inbox/.sub/.subsub&lt;/code&gt; (this is
+mbsync’s historical style)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;em&gt;Default&lt;/em&gt;: unset; will error out when sub-folders are encountered&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By setting &lt;code&gt;SubFolders Verbatim&lt;/code&gt; in my &lt;code&gt;.mbsyncrc&lt;/code&gt; things started working again.
+Hooray!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="emacs" /><summary type="html">As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team.</summary></entry><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
 been organising &lt;a href=&quot;https://acmc2020.com/&quot;&gt;ACMC2020&lt;/a&gt;: the &lt;em&gt;2020 Australasian Computer
 Music Conference&lt;/em&gt;. From the conference landing page:&lt;/p&gt;
 
@@ -348,7 +404,7 @@ as much time to get right as the rest of the website stuff combined 😞 &lt;a 
       &lt;p&gt;actually, all the ACMC presenters were great this year ☺ &lt;a href=&quot;#fnref:acmc-presenters&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I’ve been a bit quiet on this blog for the last few weeks[^weeks] because I’ve been organising ACMC2020: the 2020 Australasian Computer Music Conference. From the conference landing page:</summary></entry><entry><title type="html">LENS 2020 final gig stream tomorrow at 8pm</title><link href="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/" rel="alternate" type="text/html" title="LENS 2020 final gig stream tomorrow at 8pm" /><published>2020-06-11T00:00:00+10:00</published><updated>2020-06-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm</id><content type="html" xml:base="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/lens2020-final-gig-poster.jpg&quot; alt=&quot;LENS S1 2020 final gig poster&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html">I’ve been a bit quiet on this blog for the last few weeks[^weeks] because I’ve been organising ACMC2020: the 2020 Australasian Computer Music Conference. From the conference landing page:</summary></entry><entry><title type="html">LENS 2020 final gig stream tomorrow at 8pm</title><link href="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/" rel="alternate" type="text/html" title="LENS 2020 final gig stream tomorrow at 8pm" /><published>2020-06-11T00:00:00+10:00</published><updated>2020-06-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm</id><content type="html" xml:base="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/lens2020-final-gig-poster.jpg&quot; alt=&quot;LENS S1 2020 final gig poster&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you’re stuck at home this Friday night (or if you’ve got a good mobile data
 package) then you should tune in to see the final gig from the &lt;em&gt;LENS: ANU Laptop
@@ -804,81 +860,4 @@ email&lt;/a&gt;.&lt;/p&gt;
 (July 8–11) in your diary and stay tuned for when we release the program. We’re
 also going to be running a bunch of workshops in the days before &amp;amp; after the
 conference, so this could be your chance to start making music with computers
-like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry><entry><title type="html">Upcoming gig: smoke, Jan 30</title><link href="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/" rel="alternate" type="text/html" title="Upcoming gig: smoke, Jan 30" /><published>2020-01-28T00:00:00+11:00</published><updated>2020-01-28T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30</id><content type="html" xml:base="https://benswift.me/blog/2020/01/28/upcoming-gig-smoke-jan-30/">&lt;picture&gt;
-  &lt;img alt=&quot;ad for Smoke gig - see FB event for details&quot; src=&quot;/assets/images/posts/smoke-gig-ad-Jan-2020.jpg&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;Update: the &lt;a href=&quot;/livecoding/2020-01-30-smoke.html&quot;&gt;video is now online&lt;/a&gt;—thanks to Charles for putting it together.&lt;/p&gt;
-
-&lt;p&gt;If you’re in Canberra this Thursday Jan 30 then you should come to a (free) gig
-that the c/c/c studio is putting on in the &lt;a href=&quot;https://www.anu.edu.au/maps#show=29113&quot;&gt;Peter
-Karmel&lt;/a&gt; Big Band room (at the ANU School
-of Music).&lt;/p&gt;
-
-&lt;p&gt;Get away from the &lt;a href=&quot;https://www.canberratimes.com.au/story/6600587/namadgi-fire-now-at-2575ha-total-fire-ban-declared/&quot;&gt;fires &amp;amp;
-smoke&lt;/a&gt;&lt;sup id=&quot;fnref:fires&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:fires&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
-and come see an evening of experimental sounds in processed voice, livecoding,
-and neural networks with musicians from the ANU code/creativity/culture studio
-and special guest &lt;a href=&quot;https://www.fisounds.com&quot;&gt;Fiona Sullivan&lt;/a&gt; (USA). There’s a
-&lt;a href=&quot;https://www.facebook.com/events/541225126490467/&quot;&gt;FB event page&lt;/a&gt; as well if
-you’re into that sort of thing.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;time&lt;/strong&gt;: 5:45pm–7pm&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;location&lt;/strong&gt; Big Band Room, &lt;a href=&quot;https://www.anu.edu.au/maps#show=29113&quot;&gt;Peter Karmel
-Building&lt;/a&gt;, ANU School of Music&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;cost&lt;/strong&gt;: free&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here’s the setlist:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;time&lt;/th&gt;
-      &lt;th&gt;artist&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;6:00pm&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;http://charlesmartin.com.au&quot;&gt;Charles Martin&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;6:10pm&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.fisounds.com&quot;&gt;Fiona Sullivan&lt;/a&gt; (USA), Ben Swift, &lt;a href=&quot;https://kieranbrowne.com&quot;&gt;Kieran Browne&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;6:25pm&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://chloecomposes.com&quot;&gt;Chloë Hobbs&lt;/a&gt;, &lt;a href=&quot;https://www.alexanderhunter.com.au&quot;&gt;Alec Hunter&lt;/a&gt;, &lt;a href=&quot;http://charlesmartin.com.au&quot;&gt;Charles Martin&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;6:40pm&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.fisounds.com&quot;&gt;Fiona Sullivan&lt;/a&gt; (USA)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;em&gt;7:00pm&lt;/em&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;em&gt;finish&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;If you’re wondering when I’m on, I’m the “B” in FBK, alongside Kieran and Fiona.&lt;/p&gt;
-
-&lt;p&gt;Kieran will be livecoding visuals in GLSL, Charles will be (very musically!)
-fighting with his AI, I’ll be dropping beats in Extempore and Fi will be
-&lt;em&gt;amazing&lt;/em&gt;. See you there.&lt;/p&gt;
-
-&lt;p&gt;Note: if you’ve never been there before, the &lt;a href=&quot;https://www.anu.edu.au/maps#show=29113&quot;&gt;Peter Karmel
-building&lt;/a&gt; is the one next to the “main”
-ANU School of Music building. The Big Band room is off the foyer/atrium, right
-near the main entrance.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:fires&quot; role=&quot;doc-endnote&quot;&gt;
-
-      &lt;p&gt;I know that you can’t get away from them; and the loss of flora &amp;amp; fauna is
-heartbreaking, not to mention the human cost. &lt;a href=&quot;#fnref:fires&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry></feed>
+like you’ve always dreamed of 😊&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="gigs" /><category term="acma" /><category term="livecoding" /><summary type="html">Good news everyone; we’re hosting the annual Australasian Computer Music Conference (ACMC) at the ANU this year from July 8–11. ACMC is a festival of gigs, talks, installations and hands-on tutorials designed to inspire, challenge, and showcase the computer music community. There’s lots more information on the conference website.</summary></entry></feed>
