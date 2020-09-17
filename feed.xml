@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-09-08T22:08:13+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Parental leave, take 2</title><link href="https://benswift.me/blog/2020/09/08/parental-leave-take-2/" rel="alternate" type="text/html" title="Parental leave, take 2" /><published>2020-09-08T00:00:00+10:00</published><updated>2020-09-08T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/09/08/parental-leave-take-2</id><content type="html" xml:base="https://benswift.me/blog/2020/09/08/parental-leave-take-2/">&lt;p&gt;Our family has recently &lt;a href=&quot;https://github.com/benswift/benswift.github.io/commit/eb7fd10ac87c1059047e6e25783db01847c73e17&quot;&gt;grown by one
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-09-17T12:38:49+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Creative Computing ANU Extension course</title><link href="https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course/" rel="alternate" type="text/html" title="Creative Computing ANU Extension course" /><published>2020-09-17T00:00:00+10:00</published><updated>2020-09-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course</id><content type="html" xml:base="https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course/">&lt;div style=&quot;padding:75% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/454451852?color=be2edd&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;An update for those who have been following updates about &lt;a href=&quot;https://benswift.me/blog/tag/reimagine/&quot;&gt;my reimagine
+fellowship&lt;/a&gt;: a Creative Computing
+course (hosted by the c/c/c studio as part of the &lt;a href=&quot;https://extension.anu.edu.au/&quot;&gt;ANU Extension
+program&lt;/a&gt;) has been approved for delivery in 2021.
+So if you’re an ACT student heading into year 11 in 2021, and you want to make
+beats and/or art with code, then you should check it out. More details &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/news/2020/07/24/anu-extension-creative-computing.html&quot;&gt;on
+the&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html"></summary></entry><entry><title type="html">Parental leave, take 2</title><link href="https://benswift.me/blog/2020/09/08/parental-leave-take-2/" rel="alternate" type="text/html" title="Parental leave, take 2" /><published>2020-09-08T00:00:00+10:00</published><updated>2020-09-08T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/09/08/parental-leave-take-2</id><content type="html" xml:base="https://benswift.me/blog/2020/09/08/parental-leave-take-2/">&lt;p&gt;Our family has recently &lt;a href=&quot;https://github.com/benswift/benswift.github.io/commit/eb7fd10ac87c1059047e6e25783db01847c73e17&quot;&gt;grown by one
 member&lt;/a&gt;.
 I’m proud and exhausted and happy; it’s a really wild (and mostly very nice)
 cocktail of feelings. If you &lt;a href=&quot;https://twitter.com/benswift/status/1301318122356396038&quot;&gt;follow me on
@@ -803,80 +812,4 @@ GitHub&lt;/a&gt;.&lt;/p&gt;
       &lt;p&gt;it’ll work in &lt;em&gt;most&lt;/em&gt; cases; foolproof OS autodetection is really hard &lt;a href=&quot;#fnref:detection&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.</summary></entry><entry><title type="html">ICLC Extempore workshop</title><link href="https://benswift.me/iclc-workshop/" rel="alternate" type="text/html" title="ICLC Extempore workshop" /><published>2020-02-06T00:00:00+11:00</published><updated>2020-02-06T00:00:00+11:00</updated><id>https://benswift.me/iclc-extempore-workshop</id><content type="html" xml:base="https://benswift.me/iclc-workshop/">&lt;p&gt;If you’re here for the &lt;a href=&quot;https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819&quot;&gt;ICLC Extempore
-workshop&lt;/a&gt;
-&lt;em&gt;Introduction to music-making in Extempore&lt;/em&gt;, then welcome!&lt;/p&gt;
-
-&lt;p&gt;Here are the details if you’re still trying to find us:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Date&lt;/strong&gt;: Thu 6 Feb 2020&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Time&lt;/strong&gt;: 14:30–18:30 GMT&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Location&lt;/strong&gt;: Room CSG-013, Computer Science Building (building 8 on the
-&lt;a href=&quot;https://www.ul.ie/buildings/sites/default/files/travel-uploads/Campus%20Map%20Update%2028-06-2017%20Website%20A3%20Final.pdf&quot;&gt;campus
-map&lt;/a&gt;),
-University of Limerick&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;workshop-outline&quot;&gt;Workshop outline&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1430&lt;/td&gt;
-      &lt;td&gt;intro &amp;amp; getting to know each other&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1500&lt;/td&gt;
-      &lt;td&gt;Extempore hacking&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1615&lt;/td&gt;
-      &lt;td&gt;&lt;em&gt;afternoon tea break&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1630&lt;/td&gt;
-      &lt;td&gt;moar Extempore hacking&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1730&lt;/td&gt;
-      &lt;td&gt;demos&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1800&lt;/td&gt;
-      &lt;td&gt;open feedback&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;about me&lt;/li&gt;
-  &lt;li&gt;potted history of &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;what we will/might/won’t cover today (a JIT workshop!)&lt;/li&gt;
-  &lt;li&gt;meet one another, goal setting, CoC&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;picture&gt;
-  &lt;img alt=&quot;two roads diverged...&quot; src=&quot;/assets/images/posts/jens-lelie-u0vgcIOQG08-unsplash.jpg&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;h2 id=&quot;extempore-hacking&quot;&gt;Extempore hacking&lt;/h2&gt;
-
-&lt;p&gt;First, set Extempore up on your machine using the &lt;a href=&quot;https://extemporelang.github.io/docs/overview/quickstart/&quot;&gt;quickstart
-instructions&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Then, depending on which path you’d like to go down first, continue to either
-the &lt;a href=&quot;https://extemporelang.github.io/docs/guides/sharedsystem/&quot;&gt;sharedsystem (synthesis &amp;amp; sampling)
-guide&lt;/a&gt; or the
-&lt;a href=&quot;https://extemporelang.github.io/docs/guides/pattern-language/&quot;&gt;pattern language
-guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;demo-time--open-feedback&quot;&gt;Demo time &amp;amp; open feedback&lt;/h2&gt;
-
-&lt;p&gt;At the end of the workshop, there will be a chance to share with the group both
-the things you’ve made today and any thoughts on how we can do things
-(Extempore-wise) better, friendlier, open-er and more accessible. Improving the
-onboarding experience for Extempore is one of my big goals this year, so all
-attendees get a chance to contribute to that broader mission.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="livecode" /><category term="teaching" /><summary type="html">If you’re here for the ICLC Extempore workshop Introduction to music-making in Extempore, then welcome!</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.</summary></entry></feed>
