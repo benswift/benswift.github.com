@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-12-09T09:53:47+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Creative Computing ANU Extension course</title><link href="https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course/" rel="alternate" type="text/html" title="Creative Computing ANU Extension course" /><published>2020-09-17T00:00:00+08:00</published><updated>2020-09-17T00:00:00+08:00</updated><id>https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course</id><content type="html" xml:base="https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course/">&lt;div style=&quot;padding:75% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/454451852?color=be2edd&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-12-11T12:30:53+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Student project: animated 3D code rendering engine</title><link href="https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine/" rel="alternate" type="text/html" title="Student project: animated 3D code rendering engine" /><published>2020-12-11T00:00:00+08:00</published><updated>2020-12-11T00:00:00+08:00</updated><id>https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine</id><content type="html" xml:base="https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine/">&lt;p&gt;I’m trying to get better at writing down potential student project ideas as they
+come to me. For the moment, I’m doing this on my blog using the
+&lt;a href=&quot;https://benswift.me/blog/tag/student-project/&quot;&gt;&lt;code&gt;student-project&lt;/code&gt;&lt;/a&gt; tag.&lt;/p&gt;
+
+&lt;p&gt;As a &lt;a href=&quot;//livecoding/&quot;&gt;livecoder&lt;/a&gt; I care more than most about
+how my code looks on the screen. While I’ve &lt;a href=&quot;https://benswift.me/research/#swiftVisualCodeAnnotations2013&quot;&gt;written in the
+past&lt;/a&gt; about the
+potential of animated “tooltip” style code annotations, I’d love to have more
+detailed (parametric) control over the display of the code/text itself,
+especially in a “handwritten” style. Being able to “write” the code in real-time
+in sync with the music in a livecoding setup would look super cool, and I
+&lt;sup id=&quot;fnref:unproven-hypothesis&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:unproven-hypothesis&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; think that it might even help folks follow what’s going
+on in terms of which bits of code are responsible for which parts of the music.&lt;/p&gt;
+
+&lt;p&gt;Making this happen would require:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;a handwriting synthesis model (something like &lt;a href=&quot;https://github.com/sjvasquez/handwriting-synthesis&quot;&gt;this one by Alex
+Graves&lt;/a&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(optionally) a 3D version (which would give output like
+&lt;a href=&quot;https://www.youtube.com/watch?v=rA3QZVEfGpc&quot;&gt;this&lt;/a&gt;, but automated rather than
+manual)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a way of applying keyword colouring &amp;amp; other standard code display niceties
+(because it’d be nice to not &lt;em&gt;lose&lt;/em&gt; the things that a regular old IDE/text
+editor can do)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a protocol for a livecoding IDE to communicate (including timing information)
+with this code synthesis engine so that the code would be displayed/drawn (and
+re-drawn) in response to the music in funky ways&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;…and it’d all have to run in real-time during a performance (although it
+needn’t be running on the livecoder’s machine—as mentioned above it’d ideally
+use some sort of &lt;a href=&quot;https://nrepl.org/nrepl/index.html&quot;&gt;nrepl&lt;/a&gt;-style protocol and
+could be done over the network).&lt;/p&gt;
+
+&lt;p&gt;If you’re an ANU student and you want to do a research project along these lines
+with the &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;c/c/c studio&lt;/a&gt;, then
+&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;drop me a line&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:unproven-hypothesis&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I have no evidence for this… but I’d like to try and get some. &lt;a href=&quot;#fnref:unproven-hypothesis&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="student-project" /></entry><entry><title type="html">Creative Computing ANU Extension course</title><link href="https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course/" rel="alternate" type="text/html" title="Creative Computing ANU Extension course" /><published>2020-09-17T00:00:00+08:00</published><updated>2020-09-17T00:00:00+08:00</updated><id>https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course</id><content type="html" xml:base="https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course/">&lt;div style=&quot;padding:75% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/454451852?color=be2edd&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;An update for those who have been following updates about &lt;a href=&quot;https://benswift.me/blog/tag/reimagine/&quot;&gt;my reimagine
@@ -755,61 +807,4 @@ addition, I’m speaking next week at the National Future Schools festival (with
 &lt;a href=&quot;https://aca.edu.au/about/&quot;&gt;Bruce Fuda&lt;/a&gt;) on &lt;a href=&quot;https://www.terrapinn.com/exhibition/national-future-schools/speaker-ben-SWIFT.stm&quot;&gt;Teaching Code with Music and
 Teaching Music with
 Code&lt;/a&gt;,
-so if you’re in attendance you should come along and say hi.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">I was lucky enough to be able to spend most of February in the UK on a research visit as part of my Reimagine Fellowship—designing &amp;amp; delivering a “creative” coding extension course for ACT students in year 11 &amp;amp; 12.</summary></entry><entry><title type="html">Command/Control: giving OS aware keybinding hints</title><link href="https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/" rel="alternate" type="text/html" title="Command/Control: giving OS aware keybinding hints" /><published>2020-02-14T00:00:00+08:00</published><updated>2020-02-14T00:00:00+08:00</updated><id>https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints</id><content type="html" xml:base="https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/">&lt;p&gt;As someone who writes a lot of &lt;a href=&quot;https://extemporelang.github.io&quot;&gt;web-based&lt;/a&gt;
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;documentation for&lt;/a&gt;
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;using&lt;/a&gt;
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;computers&lt;/a&gt;, it’s often useful to
-give people hints about keybindings which could make their lives easier.
-However, this is tricky when it comes to the control key/command key keybinding
-convention on macOS vs Windows/Linux.&lt;/p&gt;
-
-&lt;p&gt;In the past, I’ve just written things like:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;To save the file, hit &lt;kbd class=&quot;nopretty&quot;&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt; to save
-(or &lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt; if you’re on macOS)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;which gets &lt;em&gt;really tedious&lt;/em&gt; when you have to repeat it every time.&lt;/p&gt;
-
-&lt;p&gt;So, I wrote a little bit of javascript which&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;scans the document for any &lt;kbd class=&quot;nopretty&quot;&gt;control&lt;/kbd&gt; elements&lt;/li&gt;
-  &lt;li&gt;if it detects&lt;sup id=&quot;fnref:detection&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:detection&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; you’re viewing the site on macOS, changes it to
-&lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;It actually searches for all of &lt;kbd class=&quot;nopretty&quot;&gt;control&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;command&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;ctrl&lt;/kbd&gt;, &lt;kbd class=&quot;nopretty&quot;&gt;ctl&lt;/kbd&gt; or &lt;kbd class=&quot;nopretty&quot;&gt;cmd&lt;/kbd&gt; and “normalises”
-them to &lt;kbd class=&quot;nopretty&quot;&gt;⌘&lt;/kbd&gt; (macOS) or &lt;kbd class=&quot;nopretty&quot;&gt;CTRL&lt;/kbd&gt; (otherwise).&lt;/p&gt;
-
-&lt;p&gt;On the off chance that I actually don’t want it to do this, the script will skip
-any &lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt; element with a &lt;code&gt;nopretty&lt;/code&gt; class.&lt;/p&gt;
-
-&lt;p&gt;If you’re interested, the script looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;window.addEventListener('DOMContentLoaded', (event) =&amp;gt; {
-
-  // replace all these with the appropriate modifier for the platform
-  let modKeys = [&quot;control&quot;, &quot;command&quot;, &quot;ctrl&quot;, &quot;ctl&quot;, &quot;cmd&quot;];
-
-  let modifier = navigator.appVersion.indexOf(&quot;Mac&quot;)!=-1 ? &quot;⌘&quot; : &quot;CTRL&quot;;
-
-  for (const kbdElement of document.querySelectorAll(&quot;kbd&quot;)) {
-	if (modKeys.includes(kbdElement.textContent.toLowerCase()) &amp;amp;&amp;amp; !kbdElement.classList.contains(&quot;nopretty&quot;)){
-	  kbdElement.textContent = modifier;
-	}
-  }
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In case I make any tweaks, you can always find the latest version in my &lt;a href=&quot;https://github.com/benswift/benswift.github.io/blob/source/assets/js/os-aware-modifiers.js&quot;&gt;blog
-source on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:detection&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;it’ll work in &lt;em&gt;most&lt;/em&gt; cases; foolproof OS autodetection is really hard &lt;a href=&quot;#fnref:detection&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">As someone who writes a lot of web-based documentation for using computers, it’s often useful to give people hints about keybindings which could make their lives easier. However, this is tricky when it comes to the control key/command key keybinding convention on macOS vs Windows/Linux.</summary></entry></feed>
+so if you’re in attendance you should come along and say hi.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><summary type="html">I was lucky enough to be able to spend most of February in the UK on a research visit as part of my Reimagine Fellowship—designing &amp;amp; delivering a “creative” coding extension course for ACT students in year 11 &amp;amp; 12.</summary></entry></feed>
