@@ -1,35 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-12-16T08:49:23+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Configuring Spacemacs org-roam &amp;amp; org-noter for academic writing bliss</title><link href="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/" rel="alternate" type="text/html" title="Configuring Spacemacs org-roam &amp;amp; org-noter for academic writing bliss" /><published>2020-12-16T00:00:00+08:00</published><updated>2020-12-16T00:00:00+08:00</updated><id>https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss</id><content type="html" xml:base="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/">&lt;p&gt;I’ve always had a decent memory, and so I’ve never really had a system for
-keeping track of who said what and in which paper. When it comes time to write
-something of my own I end up mostly just going from memory and
-re-google-scholaring things from scratch (often finding later that I already had
-that paper in my &lt;a href=&quot;https://www.zotero.org&quot;&gt;Zotero&lt;/a&gt; database already). As I get
-older, though, the memory isn’t as sharp, and so it’s time to use a more
-systematic workflow for writing; keeping notes stuff I’ve read &amp;amp; linking the
-ideas together.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2020-12-16T09:12:06+08:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Configuring Spacemacs org-roam &amp;amp; org-noter for academic writing bliss</title><link href="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/" rel="alternate" type="text/html" title="Configuring Spacemacs org-roam &amp;amp; org-noter for academic writing bliss" /><published>2020-12-16T00:00:00+08:00</published><updated>2020-12-16T00:00:00+08:00</updated><id>https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss</id><content type="html" xml:base="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/">&lt;p&gt;I’ve always had a decent memory, and so I’ve never really had a formal system
+for keeping track of who said what and in which paper. When it comes time to
+write something of my own I end up mostly just going from memory and
+re-&lt;a href=&quot;https://scholar.google.com&quot;&gt;google-scholaring&lt;/a&gt; things from scratch (often
+finding later that I already had that paper in my
+&lt;a href=&quot;https://www.zotero.org&quot;&gt;Zotero&lt;/a&gt; database already). As I get older my memory
+isn’t as sharp, so I think it’s time to use a more systematic workflow for
+writing—keeping notes about stuff I’ve read &amp;amp; linking the ideas together.&lt;/p&gt;
 
 &lt;p&gt;All the cool kids are raving about the &lt;a href=&quot;https://zettelkasten.de&quot;&gt;Zettelkasten&lt;/a&gt;
-method, and in particular the &lt;a href=&quot;https://www.orgroam.com&quot;&gt;org-roam&lt;/a&gt; package for
-this workflow in &lt;a href=&quot;/blog/tag/emacs/&quot;&gt;Emacs&lt;/a&gt;. To get the full
-experience, there are extensions for managing one’s paper library
+method, and the &lt;a href=&quot;https://www.orgroam.com&quot;&gt;org-roam&lt;/a&gt; package supporting this
+workflow in &lt;a href=&quot;/blog/tag/emacs/&quot;&gt;Emacs&lt;/a&gt;. There are also
+extensions for managing one’s paper library
 (&lt;a href=&quot;https://github.com/org-roam/org-roam-bibtex&quot;&gt;org-roam-bibtex&lt;/a&gt;) and
 reading/annotating pdf files
-(&lt;a href=&quot;https://github.com/weirdNox/org-noter&quot;&gt;org-noter&lt;/a&gt;), which when combined seem
-like having academic writing superpowers compared to my “sit around and hope I
-remember the reference” approach (see &lt;a href=&quot;https://emacsconf.org/2020/talks/17/&quot;&gt;Noorah Alhasan’s EmacsConf 2020
-talk&lt;/a&gt; for some concrete examples).&lt;/p&gt;
+(&lt;a href=&quot;https://github.com/weirdNox/org-noter&quot;&gt;org-noter&lt;/a&gt;). When combined, this all
+seems like having academic writing superpowers compared to my “sit around and
+hope I remember the reference” approach. See e.g. &lt;a href=&quot;https://emacsconf.org/2020/talks/17/&quot;&gt;Noorah Alhasan’s EmacsConf
+2020 talk&lt;/a&gt; for more detailed info on this
+workflow.&lt;/p&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;This post isn’t about how I’ve become amazingly productive; it’s about how I
+wasted a day yak-shaving just to get the software working 🙃&lt;/p&gt;
 
 &lt;h2 id=&quot;getting-it-all-to-play-nicely-in-spacemacs&quot;&gt;Getting it all to play nicely in Spacemacs&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.spacemacs.org&quot;&gt;Spacemacs&lt;/a&gt; (currently) has good org-mode support,
-but only rudimentary org-roam support, and doesn’t include the &lt;code&gt;org-roam-bibtex&lt;/code&gt;
-and &lt;code&gt;org-noter&lt;/code&gt; extensions. So I spent some time yesterday setting it all up.
-There were a couple of
+&lt;p&gt;&lt;a href=&quot;https://www.spacemacs.org&quot;&gt;Spacemacs&lt;/a&gt; (currently) has good
+&lt;a href=&quot;https://orgmode.org&quot;&gt;org-mode&lt;/a&gt; support, but only rudimentary org-roam support,
+and doesn’t include the org-roam-bibtex and org-noter extensions. So I spent
+some time yesterday setting it all up. There were a couple of
 &lt;a href=&quot;https://philipperambert.com/Installing-Org-Roam-Bibtex-In-Spacemacs&quot;&gt;blog&lt;/a&gt;
 &lt;a href=&quot;https://www.ianjones.us/org-roam-bibtex&quot;&gt;posts&lt;/a&gt; which were helpful, as well as
-the GitHub READMEs of the various packages—and you should check them out—but
-most only cover &lt;em&gt;some&lt;/em&gt; of the parts I wanted (e.g. &lt;code&gt;org-roam-bibtex&lt;/code&gt; but not
-&lt;code&gt;org-noter&lt;/code&gt;, or have all the parts but for
-&lt;a href=&quot;https://github.com/hlissner/doom-emacs&quot;&gt;doom&lt;/a&gt; rather than Spacemacs). So if
+the GitHub READMEs of the various packages—and you should check them out, this
+post isn’t meant to be a standalone “here’s everything you need” guide. But all
+the info I could find only covered &lt;em&gt;some&lt;/em&gt; of the parts I wanted (e.g. using
+org-roam-bibtex but not org-noter, or using all the parts I wanted but for
+&lt;a href=&quot;https://github.com/hlissner/doom-emacs&quot;&gt;Doom&lt;/a&gt; rather than Spacemacs). So if
 you’re trying to do the same thing as me this post will (hopefully) save you
 some time.&lt;/p&gt;
 
@@ -51,7 +56,7 @@ need these extra packages in &lt;code&gt;dotspacemacs-additional-packages&lt;/co
 &lt;code&gt;dotspacemacs-configuration-layers&lt;/code&gt; (you could probably do this in config hooks
 or even in &lt;code&gt;spacemacs/user-config&lt;/code&gt; as well—this is just how I did it).&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-emacs-lisp&quot;&gt;(bibtex
+&lt;pre&gt;&lt;code class=&quot;language-scheme&quot;&gt;(bibtex
  :variables
  bibtex-completion-bibliography (expand-file-name &quot;~/Documents/org/zotero.bib&quot;)
  org-ref-default-bibliography (list bibtex-completion-bibliography) ;; *must* be a list
@@ -67,13 +72,13 @@ or even in &lt;code&gt;spacemacs/user-config&lt;/code&gt; as well—this is just
  org-roam-db-location (concat org-roam-directory &quot;/db/org-roam.db&quot;))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Finally, since &lt;code&gt;org-roam-bibtex&lt;/code&gt;, &lt;code&gt;org-noter&lt;/code&gt; and &lt;code&gt;org-noter-pdftools&lt;/code&gt; aren’t
+&lt;p&gt;Finally, since org-roam-bibtex, org-noter and org-noter-pdftools aren’t
 Spacemacs layers (they’re just additional packages) you need to provide some
 extra configuration in &lt;code&gt;spacemacs/user-config&lt;/code&gt; to hook it all together. For
 convenience I put it in a separate &lt;code&gt;.el&lt;/code&gt; file which I load from
 &lt;code&gt;spacemacs/user-config&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-emacs-lisp&quot;&gt;(use-package org-roam-bibtex
+&lt;pre&gt;&lt;code class=&quot;language-scheme&quot;&gt;(use-package org-roam-bibtex
   :after org-roam
   :hook (org-roam-mode . org-roam-bibtex-mode)
   :custom
@@ -115,9 +120,9 @@ convenience I put it in a separate &lt;code&gt;.el&lt;/code&gt; file which I loa
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Once I’ve used this system a bit longer and ironed out any kinks I might submit
-a dedicated &lt;code&gt;org-roam-bibtex&lt;/code&gt; layer to Spacemacs (or add it to the &lt;code&gt;org&lt;/code&gt; layer).
-But for now I’ll just leave it here in case any other Spacemacs users are
-wondering how I did it.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="emacs" /><summary type="html">I’ve always had a decent memory, and so I’ve never really had a system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older, though, the memory isn’t as sharp, and so it’s time to use a more systematic workflow for writing; keeping notes stuff I’ve read &amp;amp; linking the ideas together.</summary></entry><entry><title type="html">Student project: animated 3D code rendering engine</title><link href="https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine/" rel="alternate" type="text/html" title="Student project: animated 3D code rendering engine" /><published>2020-12-11T00:00:00+08:00</published><updated>2020-12-11T00:00:00+08:00</updated><id>https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine</id><content type="html" xml:base="https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine/">&lt;p&gt;I’m trying to get better at writing down potential student project ideas as they
+a dedicated org-roam-bibtex layer to Spacemacs (or add it to the org layer). But
+for now I’ll just leave it here in case any other Spacemacs users are wondering
+how I did it.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="emacs" /><summary type="html">I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp;amp; linking the ideas together.</summary></entry><entry><title type="html">Student project: animated 3D code rendering engine</title><link href="https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine/" rel="alternate" type="text/html" title="Student project: animated 3D code rendering engine" /><published>2020-12-11T00:00:00+08:00</published><updated>2020-12-11T00:00:00+08:00</updated><id>https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine</id><content type="html" xml:base="https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine/">&lt;p&gt;I’m trying to get better at writing down potential student project ideas as they
 come to me. For the moment, I’m doing this on my blog using the
 &lt;a href=&quot;https://benswift.me/blog/tag/student-project/&quot;&gt;&lt;code&gt;student-project&lt;/code&gt;&lt;/a&gt; tag.&lt;/p&gt;
 

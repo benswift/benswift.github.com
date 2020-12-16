@@ -12,8 +12,8 @@
 <meta property="og:title" content="Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I’ve always had a decent memory, and so I’ve never really had a system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older, though, the memory isn’t as sharp, and so it’s time to use a more systematic workflow for writing; keeping notes stuff I’ve read &amp; linking the ideas together." />
-<meta property="og:description" content="I’ve always had a decent memory, and so I’ve never really had a system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older, though, the memory isn’t as sharp, and so it’s time to use a more systematic workflow for writing; keeping notes stuff I’ve read &amp; linking the ideas together." />
+<meta name="description" content="I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp; linking the ideas together." />
+<meta property="og:description" content="I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp; linking the ideas together." />
 <link rel="canonical" href="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/" />
 <meta property="og:url" content="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/" />
 <meta property="og:site_name" content="benswift.me" />
@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss","dateModified":"2020-12-16T00:00:00+08:00","datePublished":"2020-12-16T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"I’ve always had a decent memory, and so I’ve never really had a system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older, though, the memory isn’t as sharp, and so it’s time to use a more systematic workflow for writing; keeping notes stuff I’ve read &amp; linking the ideas together.","url":"https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss","dateModified":"2020-12-16T00:00:00+08:00","datePublished":"2020-12-16T00:00:00+08:00","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/"},"description":"I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp; linking the ideas together.","url":"https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -80,38 +80,43 @@
 </p>
 
 
-  <p>I’ve always had a decent memory, and so I’ve never really had a system for
-keeping track of who said what and in which paper. When it comes time to write
-something of my own I end up mostly just going from memory and
-re-google-scholaring things from scratch (often finding later that I already had
-that paper in my <a href="https://www.zotero.org">Zotero</a> database already). As I get
-older, though, the memory isn’t as sharp, and so it’s time to use a more
-systematic workflow for writing; keeping notes stuff I’ve read &amp; linking the
-ideas together.</p>
+  <p>I’ve always had a decent memory, and so I’ve never really had a formal system
+for keeping track of who said what and in which paper. When it comes time to
+write something of my own I end up mostly just going from memory and
+re-<a href="https://scholar.google.com">google-scholaring</a> things from scratch (often
+finding later that I already had that paper in my
+<a href="https://www.zotero.org">Zotero</a> database already). As I get older my memory
+isn’t as sharp, so I think it’s time to use a more systematic workflow for
+writing—keeping notes about stuff I’ve read &amp; linking the ideas together.</p>
 
 <p>All the cool kids are raving about the <a href="https://zettelkasten.de">Zettelkasten</a>
-method, and in particular the <a href="https://www.orgroam.com">org-roam</a> package for
-this workflow in <a href="/blog/tag/emacs/">Emacs</a>. To get the full
-experience, there are extensions for managing one’s paper library
+method, and the <a href="https://www.orgroam.com">org-roam</a> package supporting this
+workflow in <a href="/blog/tag/emacs/">Emacs</a>. There are also
+extensions for managing one’s paper library
 (<a href="https://github.com/org-roam/org-roam-bibtex">org-roam-bibtex</a>) and
 reading/annotating pdf files
-(<a href="https://github.com/weirdNox/org-noter">org-noter</a>), which when combined seem
-like having academic writing superpowers compared to my “sit around and hope I
-remember the reference” approach (see <a href="https://emacsconf.org/2020/talks/17/">Noorah Alhasan’s EmacsConf 2020
-talk</a> for some concrete examples).</p>
+(<a href="https://github.com/weirdNox/org-noter">org-noter</a>). When combined, this all
+seems like having academic writing superpowers compared to my “sit around and
+hope I remember the reference” approach. See e.g. <a href="https://emacsconf.org/2020/talks/17/">Noorah Alhasan’s EmacsConf
+2020 talk</a> for more detailed info on this
+workflow.</p>
+
+<p class="hl-para">This post isn’t about how I’ve become amazingly productive; it’s about how I
+wasted a day yak-shaving just to get the software working 🙃</p>
 
 <h2 id="getting-it-all-to-play-nicely-in-spacemacs">Getting it all to play nicely in Spacemacs</h2>
 
-<p><a href="https://www.spacemacs.org">Spacemacs</a> (currently) has good org-mode support,
-but only rudimentary org-roam support, and doesn’t include the <code>org-roam-bibtex</code>
-and <code>org-noter</code> extensions. So I spent some time yesterday setting it all up.
-There were a couple of
+<p><a href="https://www.spacemacs.org">Spacemacs</a> (currently) has good
+<a href="https://orgmode.org">org-mode</a> support, but only rudimentary org-roam support,
+and doesn’t include the org-roam-bibtex and org-noter extensions. So I spent
+some time yesterday setting it all up. There were a couple of
 <a href="https://philipperambert.com/Installing-Org-Roam-Bibtex-In-Spacemacs">blog</a>
 <a href="https://www.ianjones.us/org-roam-bibtex">posts</a> which were helpful, as well as
-the GitHub READMEs of the various packages—and you should check them out—but
-most only cover <em>some</em> of the parts I wanted (e.g. <code>org-roam-bibtex</code> but not
-<code>org-noter</code>, or have all the parts but for
-<a href="https://github.com/hlissner/doom-emacs">doom</a> rather than Spacemacs). So if
+the GitHub READMEs of the various packages—and you should check them out, this
+post isn’t meant to be a standalone “here’s everything you need” guide. But all
+the info I could find only covered <em>some</em> of the parts I wanted (e.g. using
+org-roam-bibtex but not org-noter, or using all the parts I wanted but for
+<a href="https://github.com/hlissner/doom-emacs">Doom</a> rather than Spacemacs). So if
 you’re trying to do the same thing as me this post will (hopefully) save you
 some time.</p>
 
@@ -133,7 +138,7 @@ need these extra packages in <code>dotspacemacs-additional-packages</code>:</p>
 <code>dotspacemacs-configuration-layers</code> (you could probably do this in config hooks
 or even in <code>spacemacs/user-config</code> as well—this is just how I did it).</p>
 
-<pre><code class="language-emacs-lisp">(bibtex
+<pre><code class="language-scheme">(bibtex
  :variables
  bibtex-completion-bibliography (expand-file-name "~/Documents/org/zotero.bib")
  org-ref-default-bibliography (list bibtex-completion-bibliography) ;; *must* be a list
@@ -149,13 +154,13 @@ or even in <code>spacemacs/user-config</code> as well—this is just how I did i
  org-roam-db-location (concat org-roam-directory "/db/org-roam.db"))
 </code></pre>
 
-<p>Finally, since <code>org-roam-bibtex</code>, <code>org-noter</code> and <code>org-noter-pdftools</code> aren’t
+<p>Finally, since org-roam-bibtex, org-noter and org-noter-pdftools aren’t
 Spacemacs layers (they’re just additional packages) you need to provide some
 extra configuration in <code>spacemacs/user-config</code> to hook it all together. For
 convenience I put it in a separate <code>.el</code> file which I load from
 <code>spacemacs/user-config</code>.</p>
 
-<pre><code class="language-emacs-lisp">(use-package org-roam-bibtex
+<pre><code class="language-scheme">(use-package org-roam-bibtex
   :after org-roam
   :hook (org-roam-mode . org-roam-bibtex-mode)
   :custom
@@ -197,9 +202,9 @@ convenience I put it in a separate <code>.el</code> file which I load from
 </code></pre>
 
 <p>Once I’ve used this system a bit longer and ironed out any kinks I might submit
-a dedicated <code>org-roam-bibtex</code> layer to Spacemacs (or add it to the <code>org</code> layer).
-But for now I’ll just leave it here in case any other Spacemacs users are
-wondering how I did it.</p>
+a dedicated org-roam-bibtex layer to Spacemacs (or add it to the org layer). But
+for now I’ll just leave it here in case any other Spacemacs users are wondering
+how I did it.</p>
 
 </article>
 
@@ -249,8 +254,8 @@ wondering how I did it.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>4a6405f3c</code>,
-	<a href="https://github.com/benswift/benswift.github.io/blob/4a6405f3c/_posts/2020-12-16-configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss.md">source
+	site revision <code>5b0f7b0ca</code>,
+	<a href="https://github.com/benswift/benswift.github.io/blob/5b0f7b0ca/_posts/2020-12-16-configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss.md">source
 	  available on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg></a>
   </p>
 
