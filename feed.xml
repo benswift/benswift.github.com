@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-01-25T11:49:05+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Independent Study Contract writing tips</title><link href="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/" rel="alternate" type="text/html" title="Independent Study Contract writing tips" /><published>2021-01-25T00:00:00+11:00</published><updated>2021-01-25T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips</id><content type="html" xml:base="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/">&lt;p&gt;Many students here at the ANU School of Computing take a capstone project at the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-01-25T11:53:19+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Independent Study Contract writing tips</title><link href="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/" rel="alternate" type="text/html" title="Independent Study Contract writing tips" /><published>2021-01-25T00:00:00+11:00</published><updated>2021-01-25T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips</id><content type="html" xml:base="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/">&lt;p&gt;Many students here at the ANU School of Computing take a capstone project at the
 end of their undergraduate degree. There are a few different variations (e.g.
 half-year vs full-year, “research” vs “implementation”, etc.), but overall these
 projects are a chance for students to put together all the skills they’ve
@@ -29,30 +29,50 @@ research, and something which you should be able to point to at the end and say
 &lt;h3 id=&quot;project-description&quot;&gt;Project Description&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;length: one or two paragraphs (it should fit in the space on the form), and
-should be understandable by one of your classmates&lt;/li&gt;
-  &lt;li&gt;don’t write it out by hand straight on to the form; this is the sort of thing
-you want to have a few drafts at (including getting feedback from your supervisor)&lt;/li&gt;
-  &lt;li&gt;don’t &lt;em&gt;just&lt;/em&gt; say vague stuff like “explore various techniques for…” or
+  &lt;li&gt;
+    &lt;p&gt;this is kindof a marketing exercise: you’re trying to “sell” your project to
+an interested observer, so make it seem interesting—give it a “hook”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;length: one or two paragraphs (it should fit in the space on the form), and
+should be understandable by one of your classmates&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;don’t write it out by hand straight on to the form; this is the sort of thing
+you want to have a few drafts at (including getting feedback from your supervisor)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;don’t &lt;em&gt;just&lt;/em&gt; say vague stuff like “explore various techniques for…” or
 “investigate different approaches to…”; if you’re gonna do that you need to
 also have something about what you’re trying to find with your
-explorations/investigations, and how you’ll measure whether you’,re successful&lt;/li&gt;
-  &lt;li&gt;if you’re going to create something (e.g. a piece of software, a user study)
-then mention it in the project description&lt;/li&gt;
+explorations/investigations, and how you’ll measure whether you’,re successful&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if you’re going to create something (e.g. a piece of software, a user study)
+then mention it in the project description&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;learning-outcomes&quot;&gt;Learning Outcomes&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;how many? you probably want 3 (±1)&lt;/li&gt;
-  &lt;li&gt;the “standard” way to frame learning outcomes is to write them as
+  &lt;li&gt;
+    &lt;p&gt;how many? you probably want 3 (±1)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the “standard” way to frame learning outcomes is to write them as
 continuations of the sentence: “at the end of this project, the student will
-be able to…”&lt;/li&gt;
-  &lt;li&gt;think about what you’d like to be able to do once you’ve completed the project
-and work backwards from there&lt;/li&gt;
-  &lt;li&gt;the Learning &amp;amp; Teaching centre at Adelaide Uni has some &lt;a href=&quot;https://www.adelaide.edu.au/learning/resources-for-educators/curriculum-resources/learning-outcomes/writing-learning-outcomes#application-of-learning-outcomes&quot;&gt;good tips on
-writing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ben Swift</name></author><summary type="html">Many students here at the ANU School of Computing take a capstone project at the end of their undergraduate degree. There are a few different variations (e.g. half-year vs full-year, “research” vs “implementation”, etc.), but overall these projects are a chance for students to put together all the skills they’ve learned in their degree program in a supervised project where they’re the boss.</summary></entry><entry><title type="html">Configuring Spacemacs org-roam &amp;amp; org-noter for academic writing bliss</title><link href="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/" rel="alternate" type="text/html" title="Configuring Spacemacs org-roam &amp;amp; org-noter for academic writing bliss" /><published>2020-12-16T00:00:00+11:00</published><updated>2020-12-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss</id><content type="html" xml:base="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/">&lt;p&gt;I’ve always had a decent memory, and so I’ve never really had a formal system
+be able to…”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;think about what you’d like to be able to do once you’ve completed the project
+and work backwards from there&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the Learning &amp;amp; Teaching centre at Adelaide Uni has some &lt;a href=&quot;https://www.adelaide.edu.au/learning/resources-for-educators/curriculum-resources/learning-outcomes/writing-learning-outcomes#application-of-learning-outcomes&quot;&gt;good tips on
+writing&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Many students here at the ANU School of Computing take a capstone project at the end of their undergraduate degree. There are a few different variations (e.g. half-year vs full-year, “research” vs “implementation”, etc.), but overall these projects are a chance for students to put together all the skills they’ve learned in their degree program in a supervised project where they’re the boss.</summary></entry><entry><title type="html">Configuring Spacemacs org-roam &amp;amp; org-noter for academic writing bliss</title><link href="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/" rel="alternate" type="text/html" title="Configuring Spacemacs org-roam &amp;amp; org-noter for academic writing bliss" /><published>2020-12-16T00:00:00+11:00</published><updated>2020-12-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss</id><content type="html" xml:base="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/">&lt;p&gt;I’ve always had a decent memory, and so I’ve never really had a formal system
 for keeping track of who said what and in which paper. When it comes time to
 write something of my own I end up mostly just going from memory and
 re-&lt;a href=&quot;https://scholar.google.com&quot;&gt;google-scholaring&lt;/a&gt; things from scratch (often
