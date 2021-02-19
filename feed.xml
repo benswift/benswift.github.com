@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-02-19T17:32:49+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/12/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-12-19T00:00:00+11:00</published><updated>2021-12-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/12/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/12/19/respectful-learning-memes/">&lt;p&gt;A few years ago I re-wrote one of our core &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;computer architecture
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-02-19T19:44:53+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/12/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-12-19T00:00:00+11:00</published><updated>2021-12-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/12/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/12/19/respectful-learning-memes/">&lt;p&gt;A few years ago I re-wrote one of our core &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;computer architecture
 courses&lt;/a&gt; (it has the course code
 COMP2300). While I’m not teaching it this semester, it’s still a course dear to
 my heart. It’s a large (400+ students) compulsory course, so there’s a spread of
@@ -25,11 +25,23 @@ concepts they’re strugging with in the course. And they’re &lt;em&gt;really&
 making &lt;strong&gt;memes&lt;/strong&gt;. Here are just a few of the ones which ended up on the allowed
 “cheat sheets” in the final exam.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg&quot; alt=&quot;COMP2300 offramp meme&quot; /&gt;
-&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg&quot; alt=&quot;COMP2300 galaxy brain meme&quot; /&gt;
-&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg&quot; alt=&quot;COMP2300 Joey from Friends meme&quot; /&gt;
-&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg&quot; alt=&quot;COMP2300 ObiWan meme&quot; /&gt;
-&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg&quot; alt=&quot;COMP2300 Anakin Skywalker meme&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg&quot; alt=&quot;COMP2300 offramp meme&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg&quot; alt=&quot;COMP2300 galaxy brain meme&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg&quot; alt=&quot;COMP2300 Joey from Friends meme&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg&quot; alt=&quot;COMP2300 ObiWan meme&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg&quot; alt=&quot;COMP2300 Anakin Skywalker meme&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I don’t know where they came from—at least some of them were created
 specifically for COMP2300. But I know from talking to students that they
