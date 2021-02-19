@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-01-27T21:18:58+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Independent Study Contract writing tips</title><link href="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/" rel="alternate" type="text/html" title="Independent Study Contract writing tips" /><published>2021-01-25T00:00:00+11:00</published><updated>2021-01-25T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips</id><content type="html" xml:base="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/">&lt;p&gt;Many students here at the ANU School of Computing take a capstone project at the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-02-19T17:31:51+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/12/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-12-19T00:00:00+11:00</published><updated>2021-12-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/12/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/12/19/respectful-learning-memes/">&lt;p&gt;A few years ago I re-wrote one of our core &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;computer architecture
+courses&lt;/a&gt; (it has the course code
+COMP2300). While I’m not teaching it this semester, it’s still a course dear to
+my heart. It’s a large (400+ students) compulsory course, so there’s a spread of
+different levels of interest, aptitude &amp;amp; enthusiasm in the student cohort.&lt;/p&gt;
+
+&lt;p&gt;One of the tricky parts of COMP2300 is that we don’t use a high-level
+programming language—one with recognisable keywords like &lt;code&gt;if&lt;/code&gt;, &lt;code&gt;else&lt;/code&gt;, &lt;code&gt;for&lt;/code&gt;, etc.
+Instead, all the programming is done in “assembly” language, which
+is &lt;em&gt;fairly&lt;/em&gt; close to the direct stream of bytes that the CPU sees as it’s
+executing your code. While this is a great chance to learn how CPUs work, the
+unfamiliarity can be challenging—and the students aren’t shy about saying so.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-hidden-communication-channels&quot;&gt;The hidden communication channels&lt;/h2&gt;
+
+&lt;p&gt;One thing that I’ve discovered over the last few years is that for every
+“official” course forum/communication channel there’s &lt;em&gt;at least&lt;/em&gt; one shadow
+channel that’s created somewhere else. These
+Facebook/WhatsApp/Insta/WeChat/TikTok/etc. groups are where the students really
+let their hair down and say what they think about the course.&lt;/p&gt;
+
+&lt;p&gt;One surprising (to me) upside of these channels is that as the students chat
+with one another, they come up with some really helpful explanations of the
+concepts they’re strugging with in the course. And they’re &lt;em&gt;really&lt;/em&gt; good at
+making &lt;strong&gt;memes&lt;/strong&gt;. Here are just a few of the ones which ended up on the allowed
+“cheat sheets” in the final exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg&quot; alt=&quot;COMP2300 offramp meme&quot; /&gt;
+&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg&quot; alt=&quot;COMP2300 galaxy brain meme&quot; /&gt;
+&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg&quot; alt=&quot;COMP2300 Joey from Friends meme&quot; /&gt;
+&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg&quot; alt=&quot;COMP2300 ObiWan meme&quot; /&gt;
+&lt;img src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg&quot; alt=&quot;COMP2300 Anakin Skywalker meme&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don’t know where they came from—at least some of them were created
+specifically for COMP2300. But I know from talking to students that they
+actually helped them understand and remember key concepts from the course.&lt;/p&gt;
+
+&lt;h2 id=&quot;harnessing-students-as-content-creators&quot;&gt;Harnessing students as content creators&lt;/h2&gt;
+
+&lt;p&gt;Like many academics around the world, I’m currently brushing up my course
+syllabus for the new semester (which starts &lt;em&gt;next week&lt;/em&gt; as I’m writing this).
+And I’m sure the students will make new memes for (among other things)
+explaining the course content to each other.&lt;/p&gt;
+
+&lt;p&gt;However, if that happens on the “secret” channels then that’s obviously not good
+for equity—I want to make sure all students benefit, not just the ones in the
+right FB Messenger group. So this year I’m going to include a meme thread as
+part of the official course forum. Since it’s an official course communication
+channel I’m sure it’ll be kept respectful, and all students can benefit. And as
+I teach bigger and more diverse classes, the chance to harness these students’
+brilliance in meme-making (and some of them are &lt;em&gt;seriously&lt;/em&gt; good at it) to help
+all my students learn seems like a win. Can’t wait to see what they come up with
+:)&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">A few years ago I re-wrote one of our core computer architecture courses (it has the course code COMP2300). While I’m not teaching it this semester, it’s still a course dear to my heart. It’s a large (400+ students) compulsory course, so there’s a spread of different levels of interest, aptitude &amp;amp; enthusiasm in the student cohort.</summary></entry><entry><title type="html">Independent Study Contract writing tips</title><link href="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/" rel="alternate" type="text/html" title="Independent Study Contract writing tips" /><published>2021-01-25T00:00:00+11:00</published><updated>2021-01-25T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips</id><content type="html" xml:base="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/">&lt;p&gt;Many students here at the ANU School of Computing take a capstone project at the
 end of their undergraduate degree. There are a few different variations (e.g.
 half-year vs full-year, “research” vs “implementation”, etc.), but overall these
 projects are a chance for students to put together all the skills they’ve
@@ -859,35 +911,4 @@ deal with some packet loss and
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Network_address_translation&quot;&gt;NAT&lt;/a&gt; issues &lt;a href=&quot;#fnref:lan&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="lens" /><summary type="html">Because Extempore and Pd are both multimedia programming environments, they both speak OSC straight out of the box. If you need to send messages (numbers, strings, other data) from one program to the other over the local network[^lan] then OSC is a pretty good way to do it.</summary></entry><entry><title type="html">A call-up to fight covid19</title><link href="https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19/" rel="alternate" type="text/html" title="A call-up to fight covid19" /><published>2020-04-18T00:00:00+10:00</published><updated>2020-04-18T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19</id><content type="html" xml:base="https://benswift.me/blog/2020/04/18/a-call-up-to-fight-covid19/">&lt;p&gt;As with many folks at the moment (both in Canberra and around the world) I’ve
-been called up into a covid19 taskforce (an initiative of the ANU’s Software
-Innovation Institute, in partnership with the &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;RSCS&lt;/a&gt; &amp;amp;
-other parts of the ANU). I’m the technical lead on the part of the project which
-is trying to wrap up epidemiological simulation models into usable &amp;amp; robust
-tools for seeing &amp;amp; understanding what the results of said models mean for the
-Canberra health system. How can we predict what will happen, and how can we
-manage our finite resources to deliver the best care possible—these are the
-questions we need to answer as the world settles in for (perhaps) a long period
-of on-and-off distancing &amp;amp; isolation. I’ll be able to share more details in the
-future, so if you’re interested in that sort of thing then come back to check
-for updates on this blog (I’ll use the &lt;code&gt;covid19&lt;/code&gt; tag).&lt;/p&gt;
-
-&lt;p&gt;That means that some aspects of my creative coding work are &lt;em&gt;temporarily&lt;/em&gt; on the
-back burner (although I’m still teaching the &lt;a href=&quot;/blog/tag/lens/&quot;&gt;Laptop Ensemble&lt;/a&gt;). I can’t complain too much—covid19 has put lots of stuff
-on the back burner all over the world. In fact, I’m thankful to (a) have a job
-and (b) have a sense of agency about all this stuff; the feeling of impotence as
-an individual in a big world beset by this pandemic can be hard to take
-sometimes.&lt;/p&gt;
-
-&lt;p&gt;The toolkit of computation as explored through the domain of making art &amp;amp; music
-is no less relevant when we’re all stuck at home in isolation. The arts can be a
-balm in difficult times, especially while many are staring down the barrel of
-unemployment &amp;amp; the need to re-skill. Our computers threaten to eat us and our
-happiness if we just sit at them passively consuming our social media &amp;amp; news
-feeds.&lt;/p&gt;
-
-&lt;p&gt;The c/c/c studio will still (fingers crossed) kick off formally in 2021 as
-anticipated, so stay tuned for more updates. And if you’re a schoolteacher in
-the Canberra region and you’d like to have a guest talk (or even an interactive
-workshop) on musical livecoding delivered via zoom over the next few months,
-&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="covid19" /><summary type="html">As with many folks at the moment (both in Canberra and around the world) I’ve been called up into a covid19 taskforce (an initiative of the ANU’s Software Innovation Institute, in partnership with the RSCS &amp;amp; other parts of the ANU). I’m the technical lead on the part of the project which is trying to wrap up epidemiological simulation models into usable &amp;amp; robust tools for seeing &amp;amp; understanding what the results of said models mean for the Canberra health system. How can we predict what will happen, and how can we manage our finite resources to deliver the best care possible—these are the questions we need to answer as the world settles in for (perhaps) a long period of on-and-off distancing &amp;amp; isolation. I’ll be able to share more details in the future, so if you’re interested in that sort of thing then come back to check for updates on this blog (I’ll use the covid19 tag).</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="lens" /><summary type="html">Because Extempore and Pd are both multimedia programming environments, they both speak OSC straight out of the box. If you need to send messages (numbers, strings, other data) from one program to the other over the local network[^lan] then OSC is a pretty good way to do it.</summary></entry></feed>
