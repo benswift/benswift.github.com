@@ -12,8 +12,8 @@
 <meta property="og:title" content="Respectful Learning Memes" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A few years ago I re-wrote one of our core computer architecture courses (it has the course code COMP2300). While I’m not teaching it this semester, it’s still a course dear to my heart. It’s a large (400+ students) compulsory course, so there’s a spread of different levels of interest, aptitude &amp; enthusiasm in the student cohort." />
-<meta property="og:description" content="A few years ago I re-wrote one of our core computer architecture courses (it has the course code COMP2300). While I’m not teaching it this semester, it’s still a course dear to my heart. It’s a large (400+ students) compulsory course, so there’s a spread of different levels of interest, aptitude &amp; enthusiasm in the student cohort." />
+<meta name="description" content="A few years ago I re-wrote one of our core computer architecture courses (it has the course code COMP2300). It’s a large (400+ students) compulsory course, so there’s a spread of different levels of interest, aptitude &amp; enthusiasm in the student cohort." />
+<meta property="og:description" content="A few years ago I re-wrote one of our core computer architecture courses (it has the course code COMP2300). It’s a large (400+ students) compulsory course, so there’s a spread of different levels of interest, aptitude &amp; enthusiasm in the student cohort." />
 <link rel="canonical" href="https://benswift.me/blog/2021/12/19/respectful-learning-memes/" />
 <meta property="og:url" content="https://benswift.me/blog/2021/12/19/respectful-learning-memes/" />
 <meta property="og:site_name" content="benswift.me" />
@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"datePublished":"2021-12-19T00:00:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/12/19/respectful-learning-memes/"},"@type":"BlogPosting","url":"https://benswift.me/blog/2021/12/19/respectful-learning-memes/","author":{"@type":"Person","name":"Ben Swift"},"description":"A few years ago I re-wrote one of our core computer architecture courses (it has the course code COMP2300). While I’m not teaching it this semester, it’s still a course dear to my heart. It’s a large (400+ students) compulsory course, so there’s a spread of different levels of interest, aptitude &amp; enthusiasm in the student cohort.","headline":"Respectful Learning Memes","dateModified":"2021-12-19T00:00:00+11:00","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Respectful Learning Memes","dateModified":"2021-12-19T00:00:00+11:00","datePublished":"2021-12-19T00:00:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/12/19/respectful-learning-memes/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"A few years ago I re-wrote one of our core computer architecture courses (it has the course code COMP2300). It’s a large (400+ students) compulsory course, so there’s a spread of different levels of interest, aptitude &amp; enthusiasm in the student cohort.","url":"https://benswift.me/blog/2021/12/19/respectful-learning-memes/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -78,69 +78,100 @@
 
   <p>A few years ago I re-wrote one of our core <a href="https://cs.anu.edu.au/courses/comp2300/">computer architecture
 courses</a> (it has the course code
-COMP2300). While I’m not teaching it this semester, it’s still a course dear to
-my heart. It’s a large (400+ students) compulsory course, so there’s a spread of
-different levels of interest, aptitude &amp; enthusiasm in the student cohort.</p>
+COMP2300). It’s a large (400+ students) compulsory course, so there’s a spread
+of different levels of interest, aptitude &amp; enthusiasm in the student cohort.</p>
 
-<p>One of the tricky parts of COMP2300 is that we don’t use a high-level
-programming language—one with recognisable keywords like <code>if</code>, <code>else</code>, <code>for</code>, etc.
-Instead, all the programming is done in “assembly” language, which
-is <em>fairly</em> close to the direct stream of bytes that the CPU sees as it’s
-executing your code. While this is a great chance to learn how CPUs work, the
-unfamiliarity can be challenging—and the students aren’t shy about saying so.</p>
+<p>One of the tricky parts of COMP2300 is that it doesn’t use a high-level
+programming language (with recognisable keywords like <code>if</code>, <code>else</code>, <code>for</code>, etc.)
+where a function which adds two integers (whole numbers) together might look
+like this:</p>
+
+<pre><code class="language-c">int add(int a, int b) {
+  return a + b;
+}
+</code></pre>
+
+<p>Instead, in COMP2300 all the programming is done in “assembly” language, which
+is fairly close to the direct stream of bytes that the CPU sees as it’s
+executing your code. But it’s less readable to humans—the above <code>add</code> function
+might look like this in assembly language:</p>
+
+<pre><code class="language-arm">add:
+  sub  sp, sp, #8
+  str  r0, [sp, #4]
+  str  r1, [sp]
+  ldr  r0, [sp, #4]
+  ldr  r1, [sp]
+  add  r0, r0, r1
+  add  sp, sp, #8
+  bx   lr
+</code></pre>
+
+<p>While this is a great chance to learn how CPUs work, the unfamiliarity can
+be challenging—and the students aren’t shy about saying so.</p>
 
 <h2 id="the-hidden-communication-channels">The hidden communication channels</h2>
 
-<p>One thing that I’ve discovered over the last few years is that for every
-“official” course forum/communication channel there’s <em>at least</em> one shadow
-channel that’s created somewhere else. These
-Facebook/WhatsApp/Insta/WeChat/TikTok/etc. groups are where the students really
-let their hair down and say what they think about the course.</p>
+<p>I’ve learned over the last few years is that for every “official” course
+forum/communication channel there’s <em>at least</em> one shadow channel that’s created
+somewhere else. These Facebook/WhatsApp/Insta/WeChat/TikTok/etc. channels are
+where the students really let their hair down and say what they think about the
+course.</p>
 
-<p>One surprising (to me) upside of these channels is that as the students chat
+<p>One unexpected (to me) upside of these channels is that as the students chat
 with one another, they come up with some really helpful explanations of the
-concepts they’re strugging with in the course. And they’re <em>really</em> good at
-making <strong>memes</strong>. Here are just a few of the ones which ended up on the allowed
-“cheat sheets” in the final exam.</p>
+concepts they’re struggling with in the course material. And they’re <em>really</em>
+good at making <strong>memes</strong>. Here are just a few of the ones which I’ve seen end up
+on the allowed “cheat sheets” in the COMP2300 final exam.</p>
 
-<p><img src="/assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg" alt="COMP2300 offramp meme" /></p>
-
-<hr />
-
-<p><img src="/assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg" alt="COMP2300 galaxy brain meme" /></p>
+<picture>
+  <img alt="COMP2300 offramp meme" src="/assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg" />
+</picture>
 
 <hr />
 
-<p><img src="/assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg" alt="COMP2300 Joey from Friends meme" /></p>
+<picture>
+  <img alt="COMP2300 galaxy brain meme" src="/assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg" />
+</picture>
 
 <hr />
 
-<p><img src="/assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg" alt="COMP2300 ObiWan meme" /></p>
+<picture>
+  <img alt="COMP2300 Joey from Friends meme" src="/assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg" />
+</picture>
 
 <hr />
 
-<p><img src="/assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg" alt="COMP2300 Anakin Skywalker meme" /></p>
+<picture>
+  <img alt="COMP2300 ObiWan meme" src="/assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg" />
+</picture>
 
-<p>I don’t know where they came from—at least some of them were created
-specifically for COMP2300. But I know from talking to students that they
-actually helped them understand and remember key concepts from the course.</p>
+<hr />
+
+<picture>
+  <img alt="COMP2300 Anakin Skywalker meme" src="/assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg" />
+</picture>
+
+<p>I don’t know where they came from—although clearly at least some of them were
+created specifically for COMP2300. But I know from talking to students that they
+really helped them understand and remember key concepts from the course.</p>
 
 <h2 id="harnessing-students-as-content-creators">Harnessing students as content creators</h2>
 
-<p>Like many academics around the world, I’m currently brushing up my course
-syllabus for the new semester (which starts <em>next week</em> as I’m writing this).
-And I’m sure the students will make new memes for (among other things)
-explaining the course content to each other.</p>
+<p>I’m currently brushing up my course syllabus for the new semester which starts
+next week. And I’m sure my students will make new memes for (among other things)
+explaining the course content to each other. But if these memes only appear on
+the “secret” channels then that’s not good from a student equity perspective. I
+want to make sure <em>all</em> students benefit, not just the ones in the right
+“hidden” channels.</p>
 
-<p>However, if that happens on the “secret” channels then that’s obviously not good
-for equity—I want to make sure all students benefit, not just the ones in the
-right FB Messenger group. So this year I’m going to include a meme thread as
-part of the official course forum. Since it’s an official course communication
-channel I’m sure it’ll be kept respectful, and all students can benefit. And as
-I teach bigger and more diverse classes, the chance to harness these students’
-brilliance in meme-making (and some of them are <em>seriously</em> good at it) to help
-all my students learn seems like a win. Can’t wait to see what they come up with
-☺</p>
+<p>So this year I’m going to include a meme thread as part of the official course
+forum. Since it’s an official course communication channel I’m sure it’ll be
+kept <a href="https://twitter.com/RespectfulMemes">respectful</a>, and then all my students
+can benefit. As I teach bigger and more diverse classes, the chance to harness
+these students’ brilliance in meme-making (and some of them are <em>seriously</em> good
+at it) to help all my students learn seems like a win. I can’t wait to see what
+they come up with ☺</p>
 
 </article>
 
@@ -190,8 +221,8 @@ all my students learn seems like a win. Can’t wait to see what they come up wi
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>a5ecc3d66</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/a5ecc3d66/_posts/2021-12-19-respectful-learning-memes.md">source</a>,
+	site revision <code>936f6a421</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/936f6a421/_posts/2021-12-19-respectful-learning-memes.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-12-19-respectful-learning-memes.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
