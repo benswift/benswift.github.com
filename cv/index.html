@@ -22,7 +22,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://benswift.me/cv/","author":{"@type":"Person","name":"Ben Swift"},"description":"livecoder &amp; researcher homepage - code, creativity, culture","headline":"Curriculum vitae","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Curriculum vitae","author":{"@type":"Person","name":"Ben Swift"},"description":"livecoder &amp; researcher homepage - code, creativity, culture","url":"https://benswift.me/cv/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -61,7 +61,28 @@
 
 	  <main aria-label="Content">
 		<article><h1><p>Curriculum vitae</p>
-</h1><div id="toc">
+</h1><style>
+@media print {
+  header,footer {
+    display: none;
+  }
+  #toc h2 {
+    text-align: left;
+    font-weight: 900;
+    color: #666;
+    background-color: unset;
+  }
+  main {
+    font-size: 12px;
+    padding: 12px;
+  }
+  .bibliography {
+    font-size: 90%;
+  }
+}
+</style>
+
+<div id="toc">
 
   <h2>table of contents</h2>
 
@@ -180,8 +201,8 @@ Deans of ICT Learning and Teaching
 Academy</em></a></p>
   </li>
   <li>
-    <p><strong>2016–</strong> Design Lead, <a href="#service">_CECS Teaching &amp; Learning Web
-infrastructure</a></p>
+    <p><strong>2016–</strong> Design Lead, <a href="#service"><em>CECS Teaching &amp; Learning Web
+infrastructure</em></a></p>
   </li>
 </ul>
 
@@ -252,11 +273,10 @@ be a computer scientist or engineer in the 21st century.</p>
   <li>
     <p><a href="https://cs.anu.edu.au/courses/comp2300/">COMP2300: Computer Organisation and Program
 Execution</a> is ANU’s introductory
-computer architecture course, which I wrote (with help from <a href="https://researchers.anu.edu.au/researchers/zimmer-ur">Uwe
-Zimmer</a>) and delivered
-from 2017–2018, and is now being delivered by <a href="http://charlesmartin.com.au/">Charles
-Martin</a>. In this course students take a complex
-computer system (<a href="http://www.st.com/en/evaluation-tools/32l476gdiscovery.html">the STM32L476G discovery “disco”
+computer architecture course, which I wrote and delivered from 2017–2018,
+and is now being delivered by <a href="https://researchers.anu.edu.au/researchers/zimmer-ur">Uwe
+Zimmer</a>. In this course
+students take a complex computer system (<a href="http://www.st.com/en/evaluation-tools/32l476gdiscovery.html">the STM32L476G discovery “disco”
 board</a>) home from
 week 1. That might seem daunting—and it’s true that there’s more stuff on
 such a board than one can master in one semester—but students can still
@@ -802,7 +822,8 @@ Swinburne and UTS)</p>
 
 <h3 id="invited-talks">Invited talks</h3>
 
-<p>A full list of talks can be found <a href="/talks/index.html">here</a>.</p>
+<p>See <a href="/talks/index.html">https://benswift.me/talks/</a> for a full list of invited
+talks.</p>
 
 <h3 id="curatedinvited-livecoding-performances">Curated/invited livecoding performances</h3>
 
@@ -1062,8 +1083,8 @@ Swinburne and UTS)</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>3cd2c8137</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/3cd2c8137/cv.md">source</a>,
+	site revision <code>a2a31b4bd</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/a2a31b4bd/cv.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/cv.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
