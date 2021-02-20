@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"On livecoding annotations and visualisations","dateModified":"2019-01-31T09:53:00+11:00","datePublished":"2019-01-31T09:53:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/"},"author":{"@type":"Person","name":"Ben Swift"},"description":"I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.","url":"https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/","@context":"https://schema.org"}</script>
+{"datePublished":"2019-01-31T09:53:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/"},"@type":"BlogPosting","url":"https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/","author":{"@type":"Person","name":"Ben Swift"},"description":"I’ve just finished reading Charlie Roberts’ interactive web essay on annotations and visualisations for live code. If you haven’t read it, go do that now—and make sure you have some speakers/headphones to listen to the code examples, because it would be a real shame to read it without watching/listening to his ideas in action. All the code samples (with the visual annotations) are live-editable, both running “whole blocks” and re-evaluating individual expressions with ctrl+enter.","headline":"On livecoding annotations and visualisations","dateModified":"2019-01-31T09:53:00+11:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -108,9 +108,10 @@ direct affect on musical / sonic output.</li>
 <a href="http://gibberwocky.cc/">gibberwocky</a>, both in an “all in” demo and then in
 bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it’s something Andrew Sorensen and I have written
-about before in our paper <a href="https://doi.org/10.1109/LIVE.2013.6617345">Visual Code Annotations for Cyberphysical
-Programming</a> (2013) in the <em>1st
-International Workshop on Live Programming (LIVE)</em><sup id="fnref:preprint" role="doc-noteref"><a href="#fn:preprint" class="footnote">1</a></sup> (it’s reference
+about before in our paper <a href="/research/#swiftVisualCodeAnnotations2013">Visual Code Annotations for Cyberphysical
+Programming</a> (2013) in
+the <em>1st International Workshop on Live Programming (LIVE)</em> (it’s
+reference
 #4 in the essay). I’ll refer to this a bit in this post, so let’s call it “the
 LIVE paper”.</p>
 
@@ -134,7 +135,7 @@ explicitly represented in the first place).</p>
 
 <p><strong>But</strong>, (you can probably tell that there was going to be a “but” somewhere)
 many of the cool annotations displayed don’t work while the code is being
-edited<sup id="fnref:broken" role="doc-noteref"><a href="#fn:broken" class="footnote">2</a></sup>. In some cases they actually break the code (try editing one of
+edited<sup id="fnref:broken" role="doc-noteref"><a href="#fn:broken" class="footnote">1</a></sup>. In some cases they actually break the code (try editing one of
 the <code>'x*ox*xo--x*x*o'</code> patterns while the code’s running—you’ll end up with
 new stuff in your pattern that you didn’t put there).</p>
 
@@ -191,7 +192,7 @@ with your code is super helpful.</p>
 
 <p>In principle visual code annotations can be even more useful to the livecoder
 because they allow her to “audition” algorithmic changes to the code
-without<sup id="fnref:feedback" role="doc-noteref"><a href="#fn:feedback" class="footnote">3</a></sup> actually eval-ing the code and changing the music. Here’s an
+without<sup id="fnref:feedback" role="doc-noteref"><a href="#fn:feedback" class="footnote">2</a></sup> actually eval-ing the code and changing the music. Here’s an
 example from the essay:</p>
 
 <pre><code class="language-js">Euclid(9, 16); /* 1010110101011010 */
@@ -242,17 +243,12 @@ further information in them not covered in this essay. Thank you!</p>
 </blockquote>
 
 <p>Oh well. Mad props to Charlie for putting this out there for comment and
-discussion, and hopefully there are a new generation of publications<sup id="fnref:distill" role="doc-noteref"><a href="#fn:distill" class="footnote">4</a></sup>
+discussion, and hopefully there are a new generation of publications<sup id="fnref:distill" role="doc-noteref"><a href="#fn:distill" class="footnote">3</a></sup>
 where this stuff can be front-and-centre, not just a weird “supplemental web
 materials” section to a traditional pdf.</p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:preprint" role="doc-endnote">
-
-      <p>if you don’t have institutional access to the IEEE then just <a href="mailto:ben.swift@anu.edu.au">email
-me</a> and I can send you a pre-print. <a href="#fnref:preprint" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
     <li id="fn:broken" role="doc-endnote">
       <p>Charlie, if I’m doing it wrong, please let me know :) <a href="#fnref:broken" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
@@ -321,8 +317,8 @@ ideal either. Hmm.) <a href="#fnref:distill" class="reversefootnote" role="doc-
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>936f6a421</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/936f6a421/_posts/2019-01-31-on-livecoding-annotations-and-visualisations.md">source</a>,
+	site revision <code>173ef2aae</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/173ef2aae/_posts/2019-01-31-on-livecoding-annotations-and-visualisations.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-01-31-on-livecoding-annotations-and-visualisations.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
