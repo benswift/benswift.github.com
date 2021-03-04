@@ -282,3 +282,7 @@ table td { vertical-align: top; }
 @media (min-width: 1000px) { .container { grid-template-columns: 1fr 800px 1fr; grid-template-areas: ". header ." ". main ." ". footer ."; } h1, h2, h3, h4, h5, h6, p { padding: 0; } table { width: 100%; margin: 0; } .navigation { padding: 0; } .navigation > * { padding: 0.4rem 0; } }
 
 svg.icon { width: 1em; height: 1em; vertical-align: -0.125em; fill: currentColor; }
+
+.canonical-web-box { display: none; }
+
+@media print { header, footer { display: none; } #toc h2 { text-align: left; font-weight: 900; color: #333; background-color: unset; } .canonical-web-box { display: initial; font-style: italic; color: #666666; } }
