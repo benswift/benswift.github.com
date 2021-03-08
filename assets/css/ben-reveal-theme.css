@@ -86,11 +86,9 @@
 
 :root { font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-:root { background-color: #fafafa; color: #333; font-size: 2.5vw; }
+:root { background-color: #fafafa; color: #333; font-size: 60px; }
 
-@media (max-aspect-ratio: 2/3) { :root { font-size: 3vh; } }
-
-.reveal .slides section { width: 90vw; padding: 0 5vw; margin-top: 1rem; font-weight: 300; line-height: 1.3; text-align: left; }
+.reveal .slides section { font-weight: 300; line-height: 1.3; text-align: left; }
 
 .reveal .slides section > * { margin-bottom: 1rem; }
 
@@ -102,9 +100,11 @@
 
 .reveal .slides section a:hover { color: #fafafa; background-color: #333; }
 
-.reveal .slides section h1 { font-size: 2rem; font-weight: 900; border-bottom-color: #be2edd; border-bottom-style: solid; border-bottom-width: 5px; }
+.reveal .slides section h1, .reveal .slides section h2 { font-weight: 900; margin-top: 0; }
 
-.reveal .slides section h2 { font-size: 1.6rem; font-weight: 900; }
+.reveal .slides section h1 { font-size: 2rem; border-bottom-color: #be2edd; border-bottom-style: solid; border-bottom-width: 5px; }
+
+.reveal .slides section h2 { font-size: 1.6rem; }
 
 .reveal .slides section[data-background-image] h1, .reveal .slides section[data-background-image] h2, .reveal .slides section[data-background-image] h3, .reveal .slides section[data-background-image] p { background-color: rgba(255, 255, 255, 0.75); display: table; padding: 0.2em 0.4em; }
 
