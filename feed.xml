@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-16T09:54:06+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
-for dissertations and other reports. It’s&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-16T09:57:11+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
+for dissertations and other reports, which is:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;complicated (more than 20 separate files!)&lt;/li&gt;
@@ -9,7 +9,7 @@ for dissertations and other reports. It’s&lt;/p&gt;
 bummer (even if it is probably a worthwhile skill in the long haul)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;When I wrote my PhD thesis back in the day I wrote my &lt;a href=&quot;https://github.com/benswift/academic-thesis-template&quot;&gt;own
+&lt;p&gt;When I wrote my PhD thesis back in the day I created my &lt;a href=&quot;https://github.com/benswift/academic-thesis-template&quot;&gt;own LaTeX
 template&lt;/a&gt;. Since then,
 I’ve been doing more and more of my writing in
 &lt;a href=&quot;https://www.markdownguide.org&quot;&gt;markdown&lt;/a&gt; rather than LaTeX, and I really enjoy
@@ -21,8 +21,8 @@ yak shaving as I am.&lt;/p&gt;
 
 &lt;p&gt;Because academic publishing is still primarily a world of bland simulacra, being
 able to create a &lt;code&gt;.pdf&lt;/code&gt; of one’s writing is essential. When writing in markdown
-in my &lt;a href=&quot;https://www.spacemacs.org&quot;&gt;favourite text editor&lt;/a&gt; I can create the a pdf
-using Pandoc. As &lt;a href=&quot;https://jeffreymoro.com/blog/2020-09-21-how-i-write/&quot;&gt;Jeffrey Moro so eloquently puts
+in my &lt;a href=&quot;https://www.spacemacs.org&quot;&gt;favourite text editor&lt;/a&gt; I can turn it into a
+pdf using Pandoc. As &lt;a href=&quot;https://jeffreymoro.com/blog/2020-09-21-how-i-write/&quot;&gt;Jeffrey Moro so eloquently puts
 it&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -88,9 +88,7 @@ fragments “straight through”. As per the &lt;code&gt;README.md&lt;/code&gt;:
 “drop down” into LaTeX when you need more control over the output (since
 pandoc passes raw LaTeX code straight through). This is basically the same
 workflow for which markdown was invented, except in that case for HTML.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
   &lt;p&gt;If the output you want is going to require lots of very specific control over
 the layout then you’re probably better off just writing in LaTeX directly, but
 if you want to mostly focus on the content but occasionally have more control
@@ -104,7 +102,7 @@ and so by including &lt;code&gt;\usepackage{tcolorbox}&lt;/code&gt; in the &lt;c
 able to use the &lt;code&gt;\begin{tcolorbox} ... \end{tcolorbox}&lt;/code&gt; environment in my &lt;code&gt;.md&lt;/code&gt;
 file, and got the nice coloured boxes in the pdf output.&lt;/p&gt;
 
-&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports. It’s</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
+&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports, which is:</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
 Learning and
 Teaching&lt;/a&gt;,
 and they asked if they could syndicate it on their Interact blog—so you can
