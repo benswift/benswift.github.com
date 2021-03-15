@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-13T13:39:01+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/12/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-12-19T00:00:00+11:00</published><updated>2021-12-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/12/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/12/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-16T09:41:05+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/12/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-12-19T00:00:00+11:00</published><updated>2021-12-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/12/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/12/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
 Learning and
 Teaching&lt;/a&gt;,
 and they asked if they could syndicate it on their Interact blog—so you can
@@ -109,7 +109,113 @@ enabled.&lt;/p&gt;
 
 &lt;picture&gt;
   &lt;img alt=&quot;MS Teams meme settings&quot; src=&quot;/assets/images/posts/respectful-learning-memes/teams-meme-settings.png&quot; /&gt;
-&lt;/picture&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Note: this post was noticed by the good folks at the ANU Centre for Learning and Teaching, and they asked if they could syndicate it on their Interact blog—so you can read it there as well.</summary></entry><entry><title type="html">Independent Study Contract writing tips</title><link href="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/" rel="alternate" type="text/html" title="Independent Study Contract writing tips" /><published>2021-01-25T00:00:00+11:00</published><updated>2021-01-25T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips</id><content type="html" xml:base="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/">&lt;p&gt;Many students here at the ANU School of Computing take a capstone project at the
+&lt;/picture&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Note: this post was noticed by the good folks at the ANU Centre for Learning and Teaching, and they asked if they could syndicate it on their Interact blog—so you can read it there as well.</summary></entry><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
+for dissertations and other reports. It’s&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;complicated (more than 20 separate files!)&lt;/li&gt;
+  &lt;li&gt;buggy; (by default it uses multiple conflicting packages, so that even a
+“clean” build produces a bunch of warnings)&lt;/li&gt;
+  &lt;li&gt;for new-to-CS-and-math students the LaTeX learning curve can be a bit of a
+bummer (even if it is probably a worthwhile skill in the long haul)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When I wrote my PhD thesis back in the day I wrote my &lt;a href=&quot;https://github.com/benswift/academic-thesis-template&quot;&gt;own
+template&lt;/a&gt;. Since then,
+I’ve been doing more and more of my writing in
+&lt;a href=&quot;https://www.markdownguide.org&quot;&gt;markdown&lt;/a&gt; rather than LaTeX, and I really enjoy
+the simplicity. You lose a little bit of control, but being limited to the
+features that markdown offers is actually really helpful if you’re as prone to
+yak shaving as I am.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-simple-pandoc-powered-markdown--pdf-document-template&quot;&gt;A simple Pandoc-powered markdown ⇒ pdf document template&lt;/h2&gt;
+
+&lt;p&gt;Because academic publishing is still primarily a world of bland simulacra, being
+able to create a &lt;code&gt;.pdf&lt;/code&gt; of one’s writing is essential. When writing in markdown
+in my &lt;a href=&quot;https://www.spacemacs.org&quot;&gt;favourite text editor&lt;/a&gt; I can create the a pdf
+using Pandoc. As &lt;a href=&quot;https://jeffreymoro.com/blog/2020-09-21-how-i-write/&quot;&gt;Jeffrey Moro so eloquently puts
+it&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;pandoc is amazing. I basically think it redeems computers. It can take
+basically any kind of text and turn it into other kinds of text. In my
+situation, it turns markdown files into…pretty much anything.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Still, getting from “writing my notes in a markdown file” to “having a
+nice-looking pdf for submission/printing” still has a few magical steps, so I’ve
+created a template project on GitHub which puts these pieces together in a
+sensible way. There are two “flavours”:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/master&quot;&gt;regular
+version&lt;/a&gt;
+(when you don’t need academic citations)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/bibtex&quot;&gt;bibtex
+version&lt;/a&gt;
+(when you do need academic citations)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m pumped to be able to share this template with the world under a permissive
+MIT licence. The project &lt;code&gt;README.md&lt;/code&gt; has all the details, but the main goodies
+this project provides are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;a &lt;code&gt;Makefile&lt;/code&gt; so that you don’t have to remember the arcane Pandoc CLI options
+for creating nice pdfs (via LaTeX)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a &lt;code&gt;pando-template.tex&lt;/code&gt; which has some (I think) sane defaults for the way the
+output pdf will look, but more importantly is easily there so that you can
+hack it the way you like it (which is sometimes challenging when working with
+Pandoc)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(on the &lt;code&gt;bibtex&lt;/code&gt; branch) a working example of how to include citations (from a
+BibTeX &lt;code&gt;.bib&lt;/code&gt; file, which you can create &amp;amp; manage however you like)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You’ll still need LaTeX installed on your machine (because that’s what it uses
+under the hood) but one other nice thing is that Pandoc handles all the
+&lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;bibtex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt; shenanigans for you (without
+needing external scripts like &lt;code&gt;LaTeXMk&lt;/code&gt;). If there are errors in your markup,
+then the error messages can still be a bit inscrutable, but no worse than
+regular LaTeX ones (maybe even a bit nicer because Pandoc tries to trim the
+irrelevant guff and just provide the actual error message).&lt;/p&gt;
+
+&lt;h2 id=&quot;inline-latex-for-greater-control&quot;&gt;Inline LaTeX for greater control&lt;/h2&gt;
+
+&lt;p&gt;One thing which is surprisingly useful is the way that Pandoc passes latex
+fragments “straight through”. As per the &lt;code&gt;README.md&lt;/code&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This template allows you to write most of your content in markdown, but then
+“drop down” into LaTeX when you need more control over the output (since
+pandoc passes raw LaTeX code straight through). This is basically the same
+workflow for which markdown was invented, except in that case for HTML.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If the output you want is going to require lots of very specific control over
+the layout then you’re probably better off just writing in LaTeX directly, but
+if you want to mostly focus on the content but occasionally have more control
+over the way it’s displayed, sprinkling your markdown files with LaTeX can be
+a useful option.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I find myself using this a fair bit, and it’s still nicer than having to work in
+LaTeX directly. One recent example: I needed some coloured boxes around my text,
+and so by including &lt;code&gt;\usepackage{tcolorbox}&lt;/code&gt; in the &lt;code&gt;pandoc-template.tex&lt;/code&gt; I was
+able to use the &lt;code&gt;\begin{tcolorbox} ... \end{tcolorbox}&lt;/code&gt; environment in my &lt;code&gt;.md&lt;/code&gt;
+file, and got the nice coloured boxes in the pdf output.&lt;/p&gt;
+
+&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports. It’s</summary></entry><entry><title type="html">Independent Study Contract writing tips</title><link href="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/" rel="alternate" type="text/html" title="Independent Study Contract writing tips" /><published>2021-01-25T00:00:00+11:00</published><updated>2021-01-25T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips</id><content type="html" xml:base="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/">&lt;p&gt;Many students here at the ANU School of Computing take a capstone project at the
 end of their undergraduate degree. There are a few different variations (e.g.
 half-year vs full-year, “research” vs “implementation”, etc.), but overall these
 projects are a chance for students to put together all the skills they’ve
@@ -247,7 +353,7 @@ or even in &lt;code&gt;spacemacs/user-config&lt;/code&gt; as well—this is just
  bibtex-completion-pdf-field &quot;file&quot;
  ;; org-ref stuff (but used by bibtex layer)
  org-ref-default-bibliography (list bibtex-completion-bibliography)
- org-ref-get-pdf-filename-function 'org-ref-get-pdf-filename-helm-bibtex)
+ org-ref-get-pdf-filename-function &apos;org-ref-get-pdf-filename-helm-bibtex)
 
 (org
  :variables
@@ -274,12 +380,12 @@ convenience I put it in a separate &lt;code&gt;.el&lt;/code&gt; file which I loa
   :after org-roam
   :hook (org-roam-mode . org-roam-bibtex-mode)
   :custom
-  (orb-preformat-keywords '(&quot;citekey&quot; &quot;title&quot; &quot;url&quot; &quot;author-or-editor&quot; &quot;keywords&quot; &quot;file&quot;))
+  (orb-preformat-keywords &apos;(&quot;citekey&quot; &quot;title&quot; &quot;url&quot; &quot;author-or-editor&quot; &quot;keywords&quot; &quot;file&quot;))
   (orb-process-file-keyword t)
-  (orb-file-field-extensions '(&quot;pdf&quot; &quot;epub&quot; &quot;html&quot;))
+  (orb-file-field-extensions &apos;(&quot;pdf&quot; &quot;epub&quot; &quot;html&quot;))
 
   (orb-templates
-   '((&quot;r&quot; &quot;ref&quot; plain (function org-roam-capture--get-point)
+   &apos;((&quot;r&quot; &quot;ref&quot; plain (function org-roam-capture--get-point)
       &quot;&quot;
       :file-name &quot;${citekey}&quot;
       :head &quot;#+TITLE: ${citekey}: ${title}
@@ -307,8 +413,8 @@ convenience I put it in a separate &lt;code&gt;.el&lt;/code&gt; file which I loa
 (use-package org-noter-pdftools
   :after org-noter
   :config
-  (with-eval-after-load 'pdf-annot
-    (add-hook 'pdf-annot-activate-handler-functions #'org-noter-pdftools-jump-to-note)))
+  (with-eval-after-load &apos;pdf-annot
+    (add-hook &apos;pdf-annot-activate-handler-functions #&apos;org-noter-pdftools-jump-to-note)))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Once I’ve used this system a bit longer and ironed out any kinks I might submit
@@ -473,17 +579,17 @@ elisp to put in your Emacs init file.&lt;/p&gt;
         (insert (car (reverse (split-string msg &quot;\r&quot;))))
         (when (re-search-backward &quot;\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)&quot;)
           (add-face-text-property
-           (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
+           (match-beginning 1) (match-end 1) &apos;font-lock-keyword-face)
           (add-face-text-property
-           (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
+           (match-beginning 2) (match-end 2) &apos;font-lock-function-name-face)
           (add-face-text-property
-           (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
+           (match-beginning 3) (match-end 3) &apos;font-lock-builtin-face)
           (add-face-text-property
-           (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
+           (match-beginning 4) (match-end 4) &apos;font-lock-type-face))))))
 
 (advice-add
- 'mu4e~get-mail-process-filter
- :override #'mu4e-pretty-mbsync-process-filter)
+ &apos;mu4e~get-mail-process-filter
+ :override #&apos;mu4e-pretty-mbsync-process-filter)
 &lt;/code&gt;&lt;/pre&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="emacs" /><summary type="html">As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team.</summary></entry><entry><title type="html">ACMC2020: tools for organising a virtual conference</title><link href="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/" rel="alternate" type="text/html" title="ACMC2020: tools for organising a virtual conference" /><published>2020-07-15T00:00:00+10:00</published><updated>2020-07-15T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference</id><content type="html" xml:base="https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/">&lt;p&gt;I’ve been a bit quiet on this blog for the last few weeks&lt;sup id=&quot;fnref:weeks&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:weeks&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because I’ve
 been organising &lt;a href=&quot;https://acmc2020.com/&quot;&gt;ACMC2020&lt;/a&gt;: the &lt;em&gt;2020 Australasian Computer
 Music Conference&lt;/em&gt;. From the conference landing page:&lt;/p&gt;
@@ -858,122 +964,4 @@ Ensemble&lt;/em&gt; S1 2020 cohort.&lt;/p&gt;
 
 &lt;p&gt;There’s also a &lt;a href=&quot;https://www.facebook.com/events/2563515850576414&quot;&gt;Facebook
 event&lt;/a&gt; if you’re into that
-sort of thing.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="ccc" /><category term="lens" /><category term="gigs" /><summary type="html"></summary></entry><entry><title type="html">Two-way OSC communication between Extempore and Pd</title><link href="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/" rel="alternate" type="text/html" title="Two-way OSC communication between Extempore and Pd" /><published>2020-04-30T00:00:00+10:00</published><updated>2020-04-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd</id><content type="html" xml:base="https://benswift.me/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd/">&lt;p&gt;Because &lt;a href=&quot;https://github.com/digego/extempore&quot;&gt;Extempore&lt;/a&gt; and
-&lt;a href=&quot;https://puredata.info&quot;&gt;Pd&lt;/a&gt; are both multimedia programming environments, they
-both speak &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_Sound_Control&quot;&gt;OSC&lt;/a&gt; straight out
-of the box. If you need to send messages (numbers, strings, other data) from one
-program to the other over the local network&lt;sup id=&quot;fnref:lan&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:lan&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; then OSC is a pretty good way
-to do it.&lt;/p&gt;
-
-&lt;h2 id=&quot;pd-extempore&quot;&gt;Pd-&amp;gt;Extempore&lt;/h2&gt;
-
-&lt;p&gt;To send OSC messages from Pd to Extempore, you’ll first need to start Extempore,
-define a function to act as the OSC callback/handler, and start the OSC server
-listening on a particular port.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;;; the name of this function doesn't matter, as long as you specify the same
-;; name later when you start the server
-(define (osc-receive-handler timestamp address . args)
-  (println 'osc-receive-handler address '-&amp;gt; args))
-
-;; start the server listening on port 7009
-(io:osc:start-server 7009 &quot;osc-receive-handler&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once you evaluate those lines you’ll see a notification printed in the Extempore
-terminal:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Starting OSC server on port: 7009 calling back to osc-receive-handler
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now that Extempore’s listening, you need to send a message with Pd. There’s a
-built-in &lt;code&gt;oscformat&lt;/code&gt; object for this. As usual in Pd, the easiest way to see how
-it works is to create an &lt;code&gt;oscformat&lt;/code&gt; object, then right-click to open up the
-&lt;code&gt;oscformat-help.pd&lt;/code&gt; patch.&lt;/p&gt;
-
-&lt;p&gt;Assuming you’re running Pd on the same computer as the Extempore OSC server you
-set up before, you can send your messages to &lt;code&gt;localhost&lt;/code&gt; (look for the &lt;code&gt;connect
-localhost 5000&lt;/code&gt; message in the Pd help patch). However, you need to make sure
-the ports match—the Extempore server is listening on port &lt;code&gt;7099&lt;/code&gt;, while the
-default port number in the &lt;code&gt;oscformat-help.pd&lt;/code&gt; patch is &lt;code&gt;5000&lt;/code&gt; (so you’ll need
-to change it before you send that &lt;code&gt;connect message&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Once you’ve done all that, you should be able to trigger the send messages (e.g.
-&lt;code&gt;1 2 3&lt;/code&gt;) near the top of the patch. They’ll be received by Extempore and passed
-as arguments to the &lt;code&gt;osc-receive-handler&lt;/code&gt; function, which (as defined above)
-just prints them to the log, so you’ll see output like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;osc-receive-handler &quot;/cat/horse/pig&quot; -&amp;gt; (1.000000 2.000000 3.000000)
-osc-receive-handler &quot;/cat/horse/pig&quot; -&amp;gt; (4.000000 5.000000 &quot;weasel&quot; 6.000000 7.000000 &quot;rat&quot;)
-osc-receive-handler &quot;/mouse/banana&quot; -&amp;gt; (1.000000 2.000000 3.000000)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Success! 🙌🎉🙌 Now, re-define your &lt;code&gt;osc-receive-handler&lt;/code&gt; to do something more
-interesting and you’re away.&lt;/p&gt;
-
-&lt;h2 id=&quot;extempore-pd&quot;&gt;Extempore-&amp;gt;Pd&lt;/h2&gt;
-
-&lt;p&gt;Sending OSC messages the opposite direction is pretty similar. In this case,
-it’s Pd’s &lt;code&gt;oscparse&lt;/code&gt; object that you’ll need. Again, go ahead an open up the
-&lt;code&gt;oscparse-help.pd&lt;/code&gt; patch. Find the “packets from network” part of the patch
-(again, make note of the port the server is listening on) and send the &lt;code&gt;listen&lt;/code&gt;
-message to start Pd listening for incoming OSC messages.&lt;/p&gt;
-
-&lt;p&gt;Then, start Extempore and start a listener again as before. You might not &lt;em&gt;use&lt;/em&gt;
-this part if you’re just sending data out of Extempore, but it’s required to set
-up some of the internal OSC infrastructure so you need to do it anyway.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;;; the name of this function doesn't matter, as long as you specify the same
-;; name later when you start the server
-(define (osc-receive-handler timestamp address . args)
-  (println 'osc-receive-handler address '-&amp;gt; args))
-
-;; start the server listening on port 7009
-(io:osc:start-server 7009 &quot;osc-receive-handler&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, it’s a one-liner to send an OSC message to a particular host &amp;amp; port:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(io:osc:send (now) (cons &quot;localhost&quot; 7010) &quot;/test/msg&quot; &quot;Hello&quot; 500 6.6 &quot;World&quot; (random 10))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After the address argument (in this case &lt;code&gt;&quot;/test/msg&quot;&lt;/code&gt;) you can supply as many
-arguments as you like—you just need to make sure you unpack them properly on
-the Pd side.&lt;/p&gt;
-
-&lt;p&gt;This time, if the messages gets through ok you’ll see the message received in
-your Pd log view, with stuff like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;parse-output: list test msg Hello 500 6.6 World 8
-parse-output: list test msg Hello 500 6.6 World 0
-parse-output: list test msg Hello 500 6.6 World 9
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;…plus a bunch more debugging output from the &lt;code&gt;oscparse-help.pd&lt;/code&gt; patch.&lt;/p&gt;
-
-&lt;p&gt;As in the Pd-&amp;gt;Extempore case, you’re sending the message to localhost, so if
-Extempore and Pd are running on the same machine then you’ll be golden. If
-you’re on a LAN, you’d need to specify the host &amp;amp; port with something like
-&lt;code&gt;(cons &quot;192.168.11.15&quot; 7011)&lt;/code&gt; or whatever.&lt;/p&gt;
-
-&lt;p&gt;The one other thing to note about the &lt;code&gt;io:osc:send&lt;/code&gt; function is that the first
-argument is a &lt;em&gt;time&lt;/em&gt; argument. If you wanted to, e.g. send a message with a
-2-second delay after evaluating that line, you could do something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-xtlang&quot;&gt;(io:osc:send (+ (now) (* *second* 2)) (cons &quot;localhost&quot; 7010) &quot;/test/msg&quot; &quot;Hello&quot; 500 6.6 &quot;World&quot; (random 10))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For a deeper dive on how time is handled in Extempore, see the &lt;a href=&quot;https://extemporelang.github.io/docs/overview/time/&quot;&gt;Extempore
-docs&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Happy OSCing 😊&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:lan&quot; role=&quot;doc-endnote&quot;&gt;
-
-      &lt;p&gt;even if you’re on a WAN, there are ways to do it—but you might have to
-deal with some packet loss and
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Network_address_translation&quot;&gt;NAT&lt;/a&gt; issues &lt;a href=&quot;#fnref:lan&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="extempore" /><category term="lens" /><summary type="html">Because Extempore and Pd are both multimedia programming environments, they both speak OSC straight out of the box. If you need to send messages (numbers, strings, other data) from one program to the other over the local network[^lan] then OSC is a pretty good way to do it.</summary></entry></feed>
+sort of thing.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="ccc" /><category term="lens" /><category term="gigs" /><summary type="html"></summary></entry></feed>

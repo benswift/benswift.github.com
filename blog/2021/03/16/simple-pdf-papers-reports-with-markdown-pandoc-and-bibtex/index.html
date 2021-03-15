@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss | benswift.me</title>
+<title>Simple pdf papers/reports with markdown, pandoc and bibtex | benswift.me</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss" />
+<meta property="og:title" content="Simple pdf papers/reports with markdown, pandoc and bibtex" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp; linking the ideas together." />
-<meta property="og:description" content="I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp; linking the ideas together." />
-<link rel="canonical" href="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/" />
-<meta property="og:url" content="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/" />
+<meta name="description" content="I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports. It’s" />
+<meta property="og:description" content="I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports. It’s" />
+<link rel="canonical" href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" />
+<meta property="og:url" content="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-16T00:00:00+11:00" />
+<meta property="article:published_time" content="2021-03-16T00:00:00+11:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss" />
+<meta property="twitter:title" content="Simple pdf papers/reports with markdown, pandoc and bibtex" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss","dateModified":"2020-12-16T00:00:00+11:00","datePublished":"2020-12-16T00:00:00+11:00","url":"https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/"},"@type":"BlogPosting","description":"I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp; linking the ideas together.","@context":"https://schema.org"}</script>
+{"headline":"Simple pdf papers/reports with markdown, pandoc and bibtex","dateModified":"2021-03-16T00:00:00+11:00","datePublished":"2021-03-16T00:00:00+11:00","url":"https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/"},"@type":"BlogPosting","description":"I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports. It’s","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -66,8 +66,8 @@
 
 	  <main aria-label="Content">
 		<article>
-  <p class="post-date">16 Dec '20</p>
-  <h1><p>Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss</p>
+  <p class="post-date">16 Mar '21</p>
+  <h1><p>Simple pdf papers/reports with markdown, pandoc and bibtex</p>
 </h1>
   
 <p class="post-tag-container">
@@ -76,145 +76,120 @@
 	research
   </a>
   
-  <a class="post-tag" href='/blog/tag/emacs'>
-	emacs
+  <a class="post-tag" href='/blog/tag/tools'>
+	tools
   </a>
   
 </p>
 
 
-  <p>I’ve always had a decent memory, and so I’ve never really had a formal system
-for keeping track of who said what and in which paper. When it comes time to
-write something of my own I end up mostly just going from memory and
-re-<a href="https://scholar.google.com">google-scholaring</a> things from scratch (often
-finding later that I already had that paper in my
-<a href="https://www.zotero.org">Zotero</a> database already). As I get older my memory
-isn’t as sharp, so I think it’s time to use a more systematic workflow for
-writing—keeping notes about stuff I’ve read &amp; linking the ideas together.</p>
-
-<p>All the cool kids are raving about the <a href="https://zettelkasten.de">Zettelkasten</a>
-method, and the <a href="https://www.orgroam.com">org-roam</a> package supporting this
-workflow in <a href="/blog/tag/emacs/">Emacs</a>. There are also
-extensions for managing one’s paper library
-(<a href="https://github.com/org-roam/org-roam-bibtex">org-roam-bibtex</a>) and
-reading/annotating pdf files
-(<a href="https://github.com/weirdNox/org-noter">org-noter</a>). When combined, this all
-seems like having academic writing superpowers compared to my “sit around and
-hope I remember the reference” approach. See e.g. <a href="https://emacsconf.org/2020/talks/17/">Noorah Alhasan’s EmacsConf
-2020 talk</a> for more detailed info on this
-workflow.</p>
-
-<p class="hl-para">This post isn’t about how I’ve become amazingly productive; it’s about how I
-wasted a day yak-shaving just to get the software working 🙃</p>
-
-<h2 id="getting-it-all-to-play-nicely-in-spacemacs">Getting it all to play nicely in Spacemacs</h2>
-
-<p><a href="https://www.spacemacs.org">Spacemacs</a> (currently) has good
-<a href="https://orgmode.org">org-mode</a> support, but only rudimentary org-roam support,
-and doesn’t include the org-roam-bibtex and org-noter extensions. So I spent
-some time yesterday setting it all up. There were a couple of
-<a href="https://philipperambert.com/Installing-Org-Roam-Bibtex-In-Spacemacs">blog</a>
-<a href="https://www.ianjones.us/org-roam-bibtex">posts</a> which were helpful, as well as
-the GitHub READMEs of the various packages—and you should check them out, this
-post isn’t meant to be a standalone “here’s everything you need” guide. But all
-the info I could find only covered <em>some</em> of the parts I wanted (e.g. using
-org-roam-bibtex but not org-noter, or using all the parts I wanted but for
-<a href="https://github.com/hlissner/doom-emacs">Doom</a> rather than Spacemacs). So if
-you’re trying to do the same thing as me this post will (hopefully) save you
-some time.</p>
-
-<p>I’m still tinkering with things, so if you want to see the latest version of my
-config then have a look at my public dotfiles repo (especially
-<a href="https://github.com/benswift/.dotfiles/blob/master/spacemacs"><code>.spacemacs</code></a> and
-<a href="https://github.com/benswift/.dotfiles/blob/master/ben-utils.el"><code>ben-utils.el</code></a>).</p>
-
-<p>First, make sure you’ve got the <code>org</code> and <code>bibtex</code> layers installed, and you’ll
-need these extra packages in <code>dotspacemacs-additional-packages</code>:</p>
+  <p>I’ve long raged against the machine of my institution’s default LaTeX template
+for dissertations and other reports. It’s</p>
 
 <ul>
-  <li><code>org-roam-bibtex</code></li>
-  <li><code>org-noter</code></li>
-  <li><code>org-noter-pdftools</code></li>
+  <li>complicated (more than 20 separate files!)</li>
+  <li>buggy; (by default it uses multiple conflicting packages, so that even a
+“clean” build produces a bunch of warnings)</li>
+  <li>for new-to-CS-and-math students the LaTeX learning curve can be a bit of a
+bummer (even if it is probably a worthwhile skill in the long haul)</li>
 </ul>
 
-<p>You’ll also need to provide some extra layer <code>:variables</code> to the associated layers in
-<code>dotspacemacs-configuration-layers</code> (you could probably do this in config hooks
-or even in <code>spacemacs/user-config</code> as well—this is just how I did it).</p>
+<p>When I wrote my PhD thesis back in the day I wrote my <a href="https://github.com/benswift/academic-thesis-template">own
+template</a>. Since then,
+I’ve been doing more and more of my writing in
+<a href="https://www.markdownguide.org">markdown</a> rather than LaTeX, and I really enjoy
+the simplicity. You lose a little bit of control, but being limited to the
+features that markdown offers is actually really helpful if you’re as prone to
+yak shaving as I am.</p>
 
-<pre><code class="language-scheme">(bibtex
- :variables
- bibtex-completion-bibliography (expand-file-name "~/Documents/org/zotero.bib")
- bibtex-completion-pdf-field "file"
- ;; org-ref stuff (but used by bibtex layer)
- org-ref-default-bibliography (list bibtex-completion-bibliography)
- org-ref-get-pdf-filename-function 'org-ref-get-pdf-filename-helm-bibtex)
+<h2 id="a-simple-pandoc-powered-markdown--pdf-document-template">A simple Pandoc-powered markdown ⇒ pdf document template</h2>
 
-(org
- :variables
- org-directory (expand-file-name "~/Documents/org")
- org-default-notes-file (concat org-directory "/inbox.org")
- ;; org-roam
- org-enable-roam-support t
- org-roam-directory (concat org-directory "/roam")
- org-roam-db-location (concat org-roam-directory "/db/org-roam.db"))
-</code></pre>
+<p>Because academic publishing is still primarily a world of bland simulacra, being
+able to create a <code>.pdf</code> of one’s writing is essential. When writing in markdown
+in my <a href="https://www.spacemacs.org">favourite text editor</a> I can create the a pdf
+using Pandoc. As <a href="https://jeffreymoro.com/blog/2020-09-21-how-i-write/">Jeffrey Moro so eloquently puts
+it</a>:</p>
 
-<p class="hl-para">Note: those first two config variables (the <code>bibtex-completion-*</code> ones) weren’t
-listed in the blog posts I found, but seemed to be necessary to get
-<a href="https://github.com/tmalsburg/helm-bibtex">helm-bibtex</a> to find my master
-reference file.</p>
+<blockquote>
+  <p>pandoc is amazing. I basically think it redeems computers. It can take
+basically any kind of text and turn it into other kinds of text. In my
+situation, it turns markdown files into…pretty much anything.</p>
+</blockquote>
 
-<p>Finally, since org-roam-bibtex, org-noter and org-noter-pdftools aren’t
-Spacemacs layers (they’re just additional packages) you need to provide some
-extra configuration in <code>spacemacs/user-config</code> to hook it all together. For
-convenience I put it in a separate <code>.el</code> file which I load from
-<code>spacemacs/user-config</code>.</p>
+<p>Still, getting from “writing my notes in a markdown file” to “having a
+nice-looking pdf for submission/printing” still has a few magical steps, so I’ve
+created a template project on GitHub which puts these pieces together in a
+sensible way. There are two “flavours”:</p>
 
-<pre><code class="language-scheme">(use-package org-roam-bibtex
-  :after org-roam
-  :hook (org-roam-mode . org-roam-bibtex-mode)
-  :custom
-  (orb-preformat-keywords '("citekey" "title" "url" "author-or-editor" "keywords" "file"))
-  (orb-process-file-keyword t)
-  (orb-file-field-extensions '("pdf" "epub" "html"))
+<ul>
+  <li>
+    <p>the <a href="https://github.com/benswift/simple-pandoc-pdf-template/tree/master">regular
+version</a>
+(when you don’t need academic citations)</p>
+  </li>
+  <li>
+    <p>the <a href="https://github.com/benswift/simple-pandoc-pdf-template/tree/bibtex">bibtex
+version</a>
+(when you do need academic citations)</p>
+  </li>
+</ul>
 
-  (orb-templates
-   '(("r" "ref" plain (function org-roam-capture--get-point)
-      ""
-      :file-name "${citekey}"
-      :head "#+TITLE: ${citekey}: ${title}
-#+ROAM_KEY: ${ref}
+<p>I’m pumped to be able to share this template with the world under a permissive
+MIT licence. The project <code>README.md</code> has all the details, but the main goodies
+this project provides are:</p>
 
-- tags ::
-- keywords :: ${keywords}
+<ul>
+  <li>
+    <p>a <code>Makefile</code> so that you don’t have to remember the arcane Pandoc CLI options
+for creating nice pdfs (via LaTeX)</p>
+  </li>
+  <li>
+    <p>a <code>pando-template.tex</code> which has some (I think) sane defaults for the way the
+output pdf will look, but more importantly is easily there so that you can
+hack it the way you like it (which is sometimes challenging when working with
+Pandoc)</p>
+  </li>
+  <li>
+    <p>(on the <code>bibtex</code> branch) a working example of how to include citations (from a
+BibTeX <code>.bib</code> file, which you can create &amp; manage however you like)</p>
+  </li>
+</ul>
 
-* ${title}
-  :PROPERTIES:
-  :Custom_ID: ${citekey}
-  :URL: ${url}
-  :AUTHOR: ${author-or-editor}
-  :NOTER_DOCUMENT: ${file}
-  :NOTER_PAGE:
-  :END:"))))
+<p>You’ll still need LaTeX installed on your machine (because that’s what it uses
+under the hood) but one other nice thing is that Pandoc handles all the
+<code>pdflatex</code>, <code>pdflatex</code>, <code>bibtex</code>, <code>pdflatex</code> shenanigans for you (without
+needing external scripts like <code>LaTeXMk</code>). If there are errors in your markup,
+then the error messages can still be a bit inscrutable, but no worse than
+regular LaTeX ones (maybe even a bit nicer because Pandoc tries to trim the
+irrelevant guff and just provide the actual error message).</p>
 
-(use-package org-pdftools
-  :hook (org-load . org-pdftools-setup-link))
+<h2 id="inline-latex-for-greater-control">Inline LaTeX for greater control</h2>
 
-(use-package org-noter
-  :after (:any org pdf-view)
-  :custom (org-noter-always-create-frame nil))
+<p>One thing which is surprisingly useful is the way that Pandoc passes latex
+fragments “straight through”. As per the <code>README.md</code>:</p>
 
-(use-package org-noter-pdftools
-  :after org-noter
-  :config
-  (with-eval-after-load 'pdf-annot
-    (add-hook 'pdf-annot-activate-handler-functions #'org-noter-pdftools-jump-to-note)))
-</code></pre>
+<blockquote>
+  <p>This template allows you to write most of your content in markdown, but then
+“drop down” into LaTeX when you need more control over the output (since
+pandoc passes raw LaTeX code straight through). This is basically the same
+workflow for which markdown was invented, except in that case for HTML.</p>
+</blockquote>
 
-<p>Once I’ve used this system a bit longer and ironed out any kinks I might submit
-a dedicated org-roam-bibtex layer to Spacemacs (or add it to the org layer). But
-for now I’ll just leave it here in case any other Spacemacs users are wondering
-how I did it.</p>
+<blockquote>
+  <p>If the output you want is going to require lots of very specific control over
+the layout then you’re probably better off just writing in LaTeX directly, but
+if you want to mostly focus on the content but occasionally have more control
+over the way it’s displayed, sprinkling your markdown files with LaTeX can be
+a useful option.</p>
+</blockquote>
+
+<p>I find myself using this a fair bit, and it’s still nicer than having to work in
+LaTeX directly. One recent example: I needed some coloured boxes around my text,
+and so by including <code>\usepackage{tcolorbox}</code> in the <code>pandoc-template.tex</code> I was
+able to use the <code>\begin{tcolorbox} ... \end{tcolorbox}</code> environment in my <code>.md</code>
+file, and got the nice coloured boxes in the pdf output.</p>
+
+<p>So, go forth, write, and produce nice pdfs!</p>
 
 </article>
 
@@ -265,8 +240,8 @@ how I did it.</p>
   <!-- open source humblebrag -->
   <p>
 	site revision <code>985c22d5a</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/985c22d5a/_posts/2020-12-16-configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2020-12-16-configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss.md">page history</a>
+	<a href="https://github.com/benswift/benswift.github.io/blob/985c22d5a/_posts/2021-03-16-simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-03-16-simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
