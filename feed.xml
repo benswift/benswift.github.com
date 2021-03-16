@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-16T09:57:11+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-16T13:33:59+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
 for dissertations and other reports, which is:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -102,7 +102,156 @@ and so by including &lt;code&gt;\usepackage{tcolorbox}&lt;/code&gt; in the &lt;c
 able to use the &lt;code&gt;\begin{tcolorbox} ... \end{tcolorbox}&lt;/code&gt; environment in my &lt;code&gt;.md&lt;/code&gt;
 file, and got the nice coloured boxes in the pdf output.&lt;/p&gt;
 
-&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports, which is:</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
+&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports, which is:</summary></entry><entry><title type="html">How to cite code? Leading by example in COMP1720</title><link href="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example-in-comp1720/" rel="alternate" type="text/html" title="How to cite code? Leading by example in COMP1720" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example-in-comp1720</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example-in-comp1720/">&lt;p&gt;In our &lt;a href=&quot;https://cs.anu.edu.au/hub/reading-group/&quot;&gt;Computing Education Reading
+Group&lt;/a&gt; yesterday we looked at Sheard
+et. al.’s paper on &lt;a href=&quot;https://doi.org/10.1145/3059009.3059064&quot;&gt;&lt;em&gt;Strategies for Maintaining Academic Integrity in
+First-Year&lt;/em&gt;&lt;/a&gt; from ITiCSE ‘17. It was a
+great discussion, with lots of new questions raised as directions for future
+work.&lt;/p&gt;
+
+&lt;p&gt;One of the topics raised in the paper and discussed in the group is the notion
+of “citing” code. When writing human-adjacent languages (like English), we all
+have a pretty good notion of what constitutes “acceptable referencing”
+practices, and we can get down to the important business of arguing about APA vs
+Chicago citation styles.&lt;/p&gt;
+
+&lt;p&gt;When it comes to citing code (which is often—but not always—acceptable in CS
+assignments) there are fewer conventions, and we don’t always explicitly teach
+our students how to do it.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-statement-of-originality-approach&quot;&gt;The &lt;em&gt;Statement of Originality&lt;/em&gt; approach&lt;/h2&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;The following examples are live on the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality&quot;&gt;COMP1720
+site&lt;/a&gt;;
+a course which is now delivered by the excellent &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/&quot;&gt;Charles
+Martin&lt;/a&gt;.
+However, all of the statement of originality stuff I mention here is still
+unchanged from when I wrote it a few years ago.&lt;/p&gt;
+
+&lt;p&gt;One thing I started doing a few years ago (in 2017 maybe?) in my courses is to
+get students to fill out a “Statement of Originality” alongside every assessment
+item. This isn’t a new idea, in fact it was explicitly mentioned in the &lt;em&gt;Sheard&lt;/em&gt;
+paper:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Alternatively, when submitting an assignment students make a declaration that
+the work is their own “They sign their life away physically or electronically
+when they submit things.” (I-1)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The “sign their life away” thing sounds a bit ominous, but when used well it’s a
+scaffolded way of getting students to list their sources &amp;amp; collaborators, and to
+declare that anything else is their own work.&lt;/p&gt;
+
+&lt;p&gt;For my courses, the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality&quot;&gt;course
+website&lt;/a&gt;
+has an example of what a “filled out” statement might look like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-YAML&quot;&gt;declaration: &amp;gt;-
+  I declare that everything I have submitted in this assignment is entirely my
+  own work, with the following exceptions:
+
+
+# add as many &quot;name+comment&quot; entries as necessary
+# (or remove it altogether if you haven&apos;t collaborated with anyone)
+collaboration:
+  - name: Alice McGuffin
+    comment: &amp;gt;-
+      Alice gave me some ideas for creating the animated ripple effect
+      in the background , but I never saw her assignment code
+  - name: Jerry Wang
+    comment: &amp;gt;-
+      Jerry painted the background artwork for my sketch
+
+# add as many &quot;url+licence+comment&quot; entries as necessary
+# (or remove it altogether if you haven&apos;t used any external code)
+code:
+  - comment: the code in my &quot;drawRandomImage&quot; function is based on some code from StackOverflow
+    url: &quot;https://stackoverflow.com/questions/51233447/p5js-image-array&quot;
+    licence: CC BY-SA 2.5 # this is the standard StackOverflow licence
+  - comment: my changeSize() function is taken from an example on the p5 reference page for mouseWheel
+    url: &quot;https://p5js.org/reference/#/p5.Element/mouseWheel&quot;
+    licence: &quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;
+
+
+# add as many &quot;url+licence+comment&quot; entries as necessary
+# (or remove it altogether if you haven&apos;t used any external assets)
+assets:
+  - comment: photo of potatoes by Scott Bauer
+    url: &quot;https://en.wikipedia.org/wiki/Potato#/media/File:Patates.jpg&quot;
+    licence: Public Domain
+  - comment: boat photo by Aaron Wu on Unsplash
+    url: &quot;https://unsplash.com/photos/_8rjlHwN4uk&quot;
+    licence: &quot;https://unsplash.com/license&quot;
+  - comment: some content in Artist Statement taken from Turner Wikipedia page
+    url: &quot;https://en.wikipedia.org/wiki/J._M._W._Turner&quot;
+    licence: CC-SA
+
+
+# sign *your* name and uid here
+name: Fleur DeLis
+uid: u1234567
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are a few things to note here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;this is from an art &amp;amp; code course, so there’s separate parts for citing code,
+vs other assets (images, audio)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;em&gt;code&lt;/em&gt; section contains an example from StackOverflow, since I didn’t know
+until I put this thing together what the licence for code found on SO actually
+is (it’s CC BY-SA 2.5)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;there’s no explicit &lt;em&gt;name&lt;/em&gt; field, because while the author name is super
+important for referencing quotes in an essay, in computing it’s sometimes hard
+to tell (for both “random code in blog post” situations and large open-source
+projects) who the author is&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;for &lt;em&gt;code&lt;/em&gt;, there is a &lt;em&gt;licence&lt;/em&gt; field, because that’s what actually matters
+when using other peoples’ code in the real world&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-yaml&quot;&gt;Why YAML?&lt;/h2&gt;
+
+&lt;p&gt;Sharp-eyed readers will have noticed that this whole statement of originality is
+a &lt;a href=&quot;https://phoenixnap.com/blog/what-is-yaml-with-examples&quot;&gt;YAML&lt;/a&gt; file, instead
+of just a &lt;code&gt;.txt&lt;/code&gt; or &lt;code&gt;.md&lt;/code&gt; or &lt;code&gt;.docx&lt;/code&gt;. In my courses I use the ANU’s
+(self-hosted) GitLab server for all submitted work, and I make heavy use of
+GitLab CI (continuous integration) scripts to provide instant feedback on
+various aspects of the students submissions&lt;sup id=&quot;fnref:autograding&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:autograding&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Using a
+machine-readable file format like YAML for this means that I can provide more
+targeted instant feedback about whether they’ve filled it out correctly.&lt;/p&gt;
+
+&lt;p&gt;Just because it’s got a YAML file extension doesn’t mean that the students don’t
+accidentally submit badly-formed files which don’t parse (even though there’s
+lots of tips on the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/resources/faq/#yaml&quot;&gt;FAQ
+page&lt;/a&gt;). For my
+purposes, that’s fine—I don’t dock any marks for that, and I don’t really care
+(because at present I don’t do much automated processing of the
+&lt;code&gt;statement-of-originality.yml&lt;/code&gt; files anyway). The main thing is that the
+students are given a chance in &lt;em&gt;every submitted piece of work&lt;/em&gt; to clearly
+declare their sources, along with examples of how it should be done. And I
+&lt;em&gt;think&lt;/em&gt; that it helps with at least some of the “whoops, I didn’t know I had to
+reference that” academic misconduct cases. And the fewer misconduct cases, the
+more time I have for caring about students and their learning.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:autograding&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;This isn’t auto-grading, it’s just automated feedback on boring bookkeeping
+stuff; have they included all the relevant files, does the code compile
+and/or run without error, etc. Anecdotally it does help eliminate most of
+the “whoops, you forgot to commit the file” problems, as well as minimising
+any manual “data cleaning” that my tutors &amp;amp; I have to do post-submission. &lt;a href=&quot;#fnref:autograding&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">In our Computing Education Reading Group yesterday we looked at Sheard et. al.’s paper on Strategies for Maintaining Academic Integrity in First-Year from ITiCSE ‘17. It was a great discussion, with lots of new questions raised as directions for future work.</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
 Learning and
 Teaching&lt;/a&gt;,
 and they asked if they could syndicate it on their Interact blog—so you can
@@ -942,24 +1091,4 @@ as much time to get right as the rest of the website stuff combined 😞 &lt;a 
       &lt;p&gt;actually, all the ACMC presenters were great this year ☺ &lt;a href=&quot;#fnref:acmc-presenters&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html">I’ve been a bit quiet on this blog for the last few weeks[^weeks] because I’ve been organising ACMC2020: the 2020 Australasian Computer Music Conference. From the conference landing page:</summary></entry><entry><title type="html">LENS 2020 final gig stream tomorrow at 8pm</title><link href="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/" rel="alternate" type="text/html" title="LENS 2020 final gig stream tomorrow at 8pm" /><published>2020-06-11T00:00:00+10:00</published><updated>2020-06-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm</id><content type="html" xml:base="https://benswift.me/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm/">&lt;picture&gt;
-  &lt;img alt=&quot;LENS S1 2020 final gig poster&quot; src=&quot;/assets/images/posts/lens2020-final-gig-poster.jpg&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;If you’re stuck at home this Friday night (or if you’ve got a good mobile data
-package) then you should tune in to see the final gig from the &lt;em&gt;LENS: ANU Laptop
-Ensemble&lt;/em&gt; S1 2020 cohort.&lt;/p&gt;
-
-&lt;p&gt;Gig details are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;date&lt;/strong&gt;: Friday June 12&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;time&lt;/strong&gt;: 8pm–10pm AEST&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;location&lt;/strong&gt;: live on the &lt;a href=&quot;https://www.youtube.com/channel/UCIU6SqIS02GJlnLOPqlwmpA&quot;&gt;LENS YouTube channel &lt;svg class=&quot;icon&quot;&gt;&lt;use xlink:href=&quot;#fab.fa-youtube&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Even if you miss the live event, you can still watch the video anytime. Like and subscribe!&lt;/p&gt;
-
-&lt;p&gt;There’s also a &lt;a href=&quot;https://www.facebook.com/events/2563515850576414&quot;&gt;Facebook
-event&lt;/a&gt; if you’re into that
-sort of thing.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="ccc" /><category term="lens" /><category term="gigs" /><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html">I’ve been a bit quiet on this blog for the last few weeks[^weeks] because I’ve been organising ACMC2020: the 2020 Australasian Computer Music Conference. From the conference landing page:</summary></entry></feed>
